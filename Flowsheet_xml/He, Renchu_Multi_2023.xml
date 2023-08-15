@@ -1,0 +1,1528 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pdf_text>Citation: He, R.; Ju, K.; Li, L.; Long, J.
+Multi-Objective Collaborative
+Optimization of Distillation Column
+Group Based on System
+Identiﬁcation. Processes 2023, 11, 436.
+https://doi.org/10.3390/pr11020436
+Academic Editors: Blaž Likozar
+and Vincenzo Russo
+Received: 10 January 2023
+Revised: 28 January 2023
+Accepted: 30 January 2023
+Published: 1 February 2023
+Copyright:
+© 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed
+under
+the
+terms
+and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+processes
+Article
+Multi-Objective Collaborative Optimization of Distillation
+Column Group Based on System Identiﬁcation
+Renchu He 1,2
+, Keshuai Ju 1, Linlin Li 3 and Jian Long 1,*
+1
+Key Laboratory of Smart Manufacturing in Energy Chemical Process, Ministry of Education,
+East China University of Science and Technology, Shanghai 200237, China
+2
+Engineering Research Center of Process System Engineering, Ministry of Education, East China University of
+Science and Technology, Shanghai 200237, China
+3
+School of Automation and Electrical Engineering, University of Science and Technology Beijing,
+Beijing 100083, China
+*
+Correspondence: longjian@ecust.edu.cn
+Abstract: In this paper, a multi-objective collaborative optimization (MOCO) strategy is proposed for
+making decisions on a distillation column group. Firstly, based on data preprocessing, the operating
+modes of the tower group are determined by use of the fuzzy C-means clustering method. Secondly,
+based on the proposed concept of a collaborative variable, the discrete state-space model of the main
+towers are constructed by the subspace identiﬁcation method. Then, a MOCO optimization model
+is designed for the ethylene plant. Finally, NSGA-III is used to solve the optimization problem. An
+analysis of a Pareto-optimal frontier and population is carried out. To illustrate the superiority of the
+proposed strategy, the results are compared with historical data and the appealing operation area is
+ﬁnally obtained.
+Keywords: multi-objective optimization; ethylene; propylene; clustering; distillation column group
+1. Introduction
+In the real world, most optimization problems have multiple conﬂicting objectives.
+Single objective optimization (SOO) which gives a single solution has difﬁculty weighing
+multiple objectives. Unlike SOO, multi-objective optimization (MOO) gives a set of optimal
+solutions, each of which corresponds to different values of the objective functions, which, in
+turn, can form a Pareto frontier to provide rational guidance to decision-makers. Therefore,
+MOO has many applications in renewable energy resources production optimization [1,2],
+energy saving optimization [3,4], and emission reduction optimization [5–7]. In trade-off
+MOO methods, priori methods, interactive methods, Pareto-dominated methods and new
+dominance methods are available [8].
+In recent years, there has been a wealth of MOO research on single towers and tower
+groups. Zhou et al. [9] optimized the decision variables of a methanol-to-propylene plant
+under different operating conditions based on a MOO framework and achieved a balance
+between total heating, cooling costs and product purity. For Fischer–Tropsch synthesis,
+Zhang et al. [10] transformed the design of a reactive distillation column into a MOO
+problem and determined the column structure based on the Pareto-optimal frontier. In [11],
+MOO was used to weigh the total annual cost and energy of a cyclohexane–isopropanol–
+water extractive distillation process. In [12], by considering three conﬂicting objectives, the
+total annual cost, the CO2 emissions and the molar purity of a biodiesel product, an algal
+biodiesel reactive distillation unit was optimized. Gu et al. [13] optimized heat-integrated
+pressure-swing distillation based on MOO to reduce the total annual cost and CO2 emis-
+sions, while saving energy. For similar purposes, MOO was also used for heteroazeotropic
+distillation processes [14], dividing wall columns [15,16]. It is worth noting that ethylene is
+one of the most produced chemical products in the world—the ethylene industry is also
+Processes 2023, 11, 436. https://doi.org/10.3390/pr11020436
+https://www.mdpi.com/journal/processes
+Processes 2023, 11, 436
+2 of 14
+the core of the petrochemical industry, but little research has been undertaken in this area.
+Shen et al. [17] targeted the chilling train and demethanization system in ethylene manufac-
+turing according to the Pareto-optimal frontier, and, by maximizing the exergy efﬁciency
+and minimizing the operational cost, the optimal operation was selected. Multi-objective
+adaptive surrogate model-assisted optimization was proposed by [18] et al. with energetic,
+economic and environmental MOO performed for a practical ethylene separation process.
+More research should be devoted to the ethylene industry.
+MOO studies of single towers and tower groups are essentially based on Aspen [9,11–18].
+To build an Aspen model of a tower or tower group, it is necessary to have in-depth knowledge
+of the physical parameters and it is difficult to obtain satisfactory Aspen models in the absence
+of sufficient parameters. The question arises of how to conduct a MOO study of a tower group
+in the absence of the necessary physical parameters or without access to Aspen software. This is
+a problem. In addition, the optimization of Aspen-based MOO studies is separated from the
+simulation of the process; interaction between software is required. Before population iteration,
+the data in Aspen needs to be updated to the optimization platform, either manually or with
+the help of plug-ins, which is inconvenient and inefficient.
+Under the above circumstances, it is important to study the MOO problem based on
+historical data for the manipulated variables and control variables, but this also raises the
+following questions: (1) How to handle contaminated data for modeling; (2) What kind of
+model to build in order to optimize; (3) How to design a MOO problem for a distillation
+column group.
+In order to address these problems, a multi-objective collaborative optimization
+(MOCO) strategy based on system identiﬁcation is proposed for an ethylene tower group.
+For the preprocessing of historical data, the Hampel method [19,20] is used to eliminate
+missing values and outliers. Gaussian ﬁltering [21] is used to smooth the noise present
+in the data. Considering the direct or indirect connection between towers, a collaborative
+variable is proposed and applied. Fuzzy C-means clustering [22–24], a soft clustering
+method, is used to distinguish the operating modes of the ethylene plant. Selecting the
+data near the main operating mode, collaborative-variable-based linear discrete state-space
+models of the target towers are constructed using a subspace identiﬁcation method [25].
+A MOCO problem with the objectives of minimizing the impurity content in the ethylene
+product, the impurity content in the propylene product, and the operating cost is designed
+to optimize the top reﬂux ﬂow rates and steam ﬂow rates of bottom reboilers. NSGA-III [26]
+is used to solve the optimization problem and the effectiveness of MOCO is analyzed.
+The remainder of this paper is organized as follows: Section 2 describes the ethylene
+plant under study. Section 3 describes a data-preprocessing scheme, determines the operat-
+ing modes, and constructs state-space models of the target towers. The MOCO problem is
+described in Section 4. Section 5 provides a MOCO case study and discussion based on
+historical data. The conclusions are presented in Section 6.
+2. Description of Ethylene Plant
+The ethylene plant studied in this paper has a target annual production of 1 million
+tons of ethylene and 500,000 tons of propylene. Without considering the product systems
+of ethylene and propylene, the tower group for the distillation process consists of a de-
+ethanizer (T1), a C2 hydrogenation reactor (R1), a green oil tower (T2), an ethylene distillation
+column (T3), a low pressure depropanizer (T4), a high pressure depropanizer (T5), a C3
+hydrogenation reactor (R2), a propylene distillation column A (T6), a propylene distillation
+column B (T7), a debutanizer (T8) and several dryers (DR) and heat exchangers (EX).
+The tower group is shown in Figure 1. The main control variables of T1 are the
+bottom C2 concentration (ethylene and ethane) and the top C3 concentration, which are
+measured by online analyzers on the bottom and top lines, respectively. The feed to T1 is
+the demethanizer bottom product in the upstream tower group. Its top product goes to R1,
+where acetylene is selectively hydrogenated to produce ethylene and ethane. The bottom
+product of R1 enters T3 after passing through T2 and a dryer. The main controlled variable
+Processes 2023, 11, 436
+3 of 14
+of T3 is the impurity content in the top ethylene product; the ethylene extracted from the
+tower side line is pumped out partially to the cryogenic tank area. The T4 bottom product
+is fed to T8 and the top product is used as another feed to T5. The T5 top product is fed
+to R2 after a dryer and an arsenic-protected bed, and is eventually provided as a feed to
+T7. R2 selectively hydrogenates the methylacetylene (MA) and propadiene (PD) from the
+T5 top product to produce propylene and propane. The propylene distillation column is
+a two-tower system, with the top product of T6 fed to T7 and the bottom product used
+for recirculation. The main controlled variable of T7 is the content of impurities in the top
+product, the bottom product is fed to T6 and the product extracted from the tower side line
+is used for polymerization.
+T8
+T7
+T6
+T5
+T4
+T3
+T2
+T1
+R1
+R2
+Ethylene distillation 
+column
+Green oil tower
+Low pressure 
+depropanizer
+High pressure 
+depropanizer 
+C2 hydrogenation 
+reactor
+Deethanizer 
+C3 hydrogenation 
+reactor
+Debutanizer
+Propylene 
+distillation 
+column A
+Propylene 
+distillation 
+column B
+Reflux 
+Drum
+Reflux 
+Drum
+Reflux 
+Drum
+Reflux 
+Drum
+Reflux 
+Drum
+Dryer
+Ethylene Plant
+Reflux 
+Drum
+Dryer
+Arsenic-
+protected bed
+Reflux 
+Drum
+C2(ppm):
+C2H4,
+C2H6
+C3(ppm):
+MA, PD,
+C3H6,
+C3H8
+Impurity(ppm):
+H2,CH4 
+CO, CO2,
+MA, PD,
+C2H2 ,C2H6,
+C3H6, C3H8
+Impurity(mol%):
+MA, PD,
+C3H6, C3H8,
+C4H6 ,C4H6,
+C4H10
+Impurity(mol%):
+CH4, C2H6
+C3H8
+(ppm):
+H2, C2H4,
+MA, PD
+Ethylene Product
+Propylene Product
+Figure 1. Diagrammatic sketch of an ethylene plant.
+3. Model Construction
+Data preprocessing is required before modeling with historical data, otherwise, it is
+difﬁcult to obtain accurate models. On the premise of ensuring the stable operation of the
+tower group, the operators need to complete the target according to the plan. Since the
+actual operators change shifts by turns, the operation of the tower group will ﬂuctuate,
+so it is necessary to identify the operating modes of the tower group. In addition, there is
+coupling between towers, which makes it difﬁcult to build a complex model of a tower
+group. Establishing a linear model of each tower near a certain operating point is a
+good choice.
+3.1. Data Preprocessing
+The Hampel method [19,20] was used to process the missing values and outliers in one
+year’s data for the manipulated and controlled variables for T1, T3, T5, T6, T7. Given the data
+Processes 2023, 11, 436
+4 of 14
+{x1, x2, . . . , xn}, and a sliding window of length k, the i-th median and standard-deviation
+estimate are shown in (1), (2), respectively.
+mi = median(xi−k, xi−k+1, xi−k+2, . . . , xi, . . . , xi+k−2, xi+k−1, xi+k)
+(1)
+σi = κ median (|xi−k − mi|, . . . , |xi+k − mi|)
+(2)
+where κ =
+1
+√
+2erfc−11/2 ≈ 1.4826. Near the sequence endpoints, the function truncating the
+window is used to compute (1), (2).
+If a sample xi satisﬁes (3) at a given threshold nσ, then the sample is considered as an
+outlier and mi is used to replace it.
+|xi − mi| &gt; nσσi
+(3)
+Since the controlled variables are all impurity contents measured by online analyzers,
+there is a certain amount of noise in the data. Therefore, the data of the controlled variables
+are smoothed using the Gaussian-weighted moving average [21] shown in (4).
+ˆxi =
+i+ p−1
+2
+∑
+i− p−1
+2
+wjxj
+(4)
+where ˆxi is the ﬁltered value, p is the window size, and wj is the weighting factor of the
+Gaussian distribution.
+3.2. Determination of Operating Modes
+Since the towers show certain linear characteristics near the stable operating point,
+it is necessary to determine the operating modes of the tower group in order to facilitate
+the construction of the linear model of each tower. Considering that the target products
+of the ethylene plant are ethylene and propylene, the preprocessed data for the impurity
+content of the T3 top product (D1), the impurity content on the 73rd tray of T6 (D2), and
+the impurity content of the T7 top product (D3) are selected and analyzed by a fuzzy
+C-means clustering method [22–24]. Using the membership function (MF), the degree of
+belongingness of a sample to a cluster can be quantiﬁed.
+Figure 2 shows the performance of clustering when the number of clusters is set to
+two. The reason for setting the number of clusters to two is that, during the one-year
+production process, the operation of a tower group may be affected by people or equipment
+and deviate from the main operating mode, that is, the ideal operating conditions of the
+tower group.
+0.2
+30
+0.25
+0.3
+D3 (mol/mol)
+0.35
+20
+400
+D2 (mol/mol)
+0.4
+300
+D1 (ppm)
+0.45
+10
+200
+100
+0
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+MF value
+(a)
+0.2
+30
+0.25
+0.3
+D3 (mol/mol)
+0.35
+20
+400
+D2 (mol/mol)
+0.4
+300
+D1 (ppm)
+0.45
+10
+200
+100
+0
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+MF value
+(b)
+Figure 2. Performance of fuzzy C-means clustering: (a) Operating mode 1; (b) Operating mode 2
+(main operating mode).
+Processes 2023, 11, 436
+5 of 14
+0.33
+15
+0.34
+0.35
+400
+0.36
+D3 (mol/mol)
+10
+0.37
+350
+D2 (mol/mol)
+0.38
+D1 (ppm)
+300
+0.39
+5
+250
+0
+200
+Samples under operating mode 1
+Samples under operating mode 2
+Figure 3. Samples with MF value above 0.8 under two operating modes.
+Two clusters correspond to two operating modes; the data with an MF value greater
+than 0.8 are presented in Figure 3. The number of samples with an MF value above 0.8
+under operating mode 1 is 490. In comparison, the number of data under operating mode
+2 is larger, which is 2634. Therefore, we regard operating mode 2 as the main operating
+mode; the 2634 data are used to construct the subsequent tower models.
+3.3. Subspace Identiﬁcation
+The linear discrete state-space model of each tower is constructed using the method of
+subspace identiﬁcation [25]. Consider the following state-space model
+� ¯x(t + 1)
+y(t)
+�
+=
+� A
+B
+C
+D
+�� ¯x(t)
+u(t)
+�
++
+� η(t)
+ν(t)
+�
+(5)
+where ¯x ∈ Rn is the estimated state, u ∈ Rm is the input, y ∈ Rp is the output. η and
+ν are residuals. The system parameter of the regression model is Θ :=
+� A
+B
+C
+D
+�
+∈
+R(n+p)×(n+m), and its least squares estimation form is shown in (6).
+Θ =
+�
+N−1
+∑
+t=0
+� ¯x(t + 1)
+y(t)
+��
+¯xT(t)
+uT(t)
+�
+��
+N−1
+∑
+t=0
+� ¯x(t)
+u(t)
+��
+¯xT(t)
+uT(t)
+�
+�−1
+(6)
+Equation (7) presents the covariance matrices of the residuals.
+� Q
+S
+ST
+R
+�
+= 1
+N
+N−1
+∑
+t=0
+� η(t)
+ν(t)
+��
+ηT(t)
+νT(t)
+�
+(7)
+The stable Kalman gain K can be obtained by solving an algebraic Riccati equation.
+ATXA − ETXE −
+�
+ATXB + S
+��
+BTXB + R
+�−1�
+BTXA + ST�
++ Q = 0
+(8)
+Processes 2023, 11, 436
+6 of 14
+Finally, an innovation model (9) is obtained.
+� ˆx(t + 1)
+y(t)
+�
+=
+� A
+B
+C
+D
+�� ˆx(t)
+u(t)
+�
++
+� K
+Ip
+�
+ˆe(t)
+(9)
+where ˆx is the estimate of the state vector, and ˆe is the estimate of the output prediction error.
+3.4. Collaborative-Variable-Based State-Space Model
+The towers considered for optimization are T1, T3, T5, T7. T6 is the upper tower of the
+propylene ﬁnal product. The content of its propylene product is associated with T7, so only
+T7 is considered in the two-tower system propylene distillation column.
+There often exists a direct (connection through pipelines) or indirect (connection
+without pipelines) connection between towers and this situation needs to be taken into
+account when building a single tower model. Therefore, we propose the concept of a
+collaborative variable—a variable that reﬂects the direct or indirect connection between two
+towers, which is a controlled variable of one tower and a “manipulated variable” of another
+tower. For example, the bottom product of T1 is directly used as a feed to T5, the bottom C2
+content of T1 can be considered as a direct collaborative variable to T5, the top product of T1
+is hydrogenated and dried as a feed to T3, and the top C3 content of T1 can be considered
+as an indirect collaborative variable to T3.
+Variables in the state-space models are given in Table 1. For T1, the manipulated
+variables are the top reﬂux ﬂow rate u1
+T1 and the bottom reboiler steam ﬂow rate u2
+T1.
+The controlled variables are the bottom C2 content y1
+T1 and the top C3 content y2
+T1. For T3,
+the manipulated variables are the top reﬂux ﬂow rate u1
+T3 and the bottom reboiler steam
+ﬂow rate u2
+T3. The controlled variable is the impurity content yT3 of the lateral line extraction
+product. For T5, the manipulated variables are the top reﬂux ﬂow rate u1
+T5 and the bottom
+reboiler steam ﬂow rate u2
+T5. The controlled variable is the impurity content yT5 of the top
+product. For T7, the manipulated variables are the top reﬂux ﬂow rate u1
+T7 and the bottom
+reboiler steam ﬂow rate u2
+T7. The controlled variable is the impurity content yT7 of the top
+product. Considering the connections between towers, the bottom C2 content of T1 can
+be considered as a direct collaborative variable c1
+T1 to T5, the top C3 content of T1 can be
+considered as an indirect collaborative variable c2
+T1 to T3, and the impurity content yT5 can
+be considered as an indirect collaborative variable cT5 to T7.
+Table 1. Variables in models.
+Tower
+Manipulated Variables
+Collaborative Variable(s)
+Controlled Variable(s)
+T1
+[u1
+T1, u2
+T1]T
+c1
+T1, c2
+T1
+y1
+T1, y2
+T1
+T3
+[u1
+T3, u2
+T3]T
+yT3
+T5
+[u1
+T5, u2
+T5]T
+cT5
+yT5
+T7
+[u1
+T7, u2
+T7]T
+yT7
+u: t/h; c, yT1, yT3, yT5: ppm; yT7: %/%
+The n4sid function in MATLAB was used to construct the multi-input and single-
+output (MISO) model of the above towers, and the model with optimal normalized root
+mean squared error (NRMSE) was selected from the 2nd–10th-order model, respectively.
+The formulation of NRMSE is shown in (10).
+NRMSE =
+�
+1 −
+∥ymeasured − ymodel ∥
+∥ymeasured − ymeasured ∥
+�
+× 100%
+(10)
+The details of each MISO state-space model identiﬁed are shown in Table 2. It can be
+seen that the identiﬁed model has high accuracy and the adopted fuzzy C-means clustering
+method distinguishes the operating modes well.
+Processes 2023, 11, 436
+7 of 14
+Table 2. Parameters of models.
+Output
+Input
+Initial State
+e
+NRMSE
+y1
+T1
+[u1
+T1, u2
+T1]T
+[−0.1287; 0.0088; −0.0987; 0.1041]
+4.57 × 10−4
+99.6%
+y2
+T1
+[u1
+T1, u2
+T1]T
+[−0.1749; 0.0151; −0.3372]
+3.36 × 10−2
+97.8%
+yT3
+[u1
+T3, u2
+T3, c1
+T1]T
+[1.4254; −0.0611; 0.7460; −12.1675]
+3.24 × 10−2
+97.6%
+yT5
+[u1
+T5, u2
+T5, c2
+T1]T
+[2.7991; 0.1510; −0.4182]
+5.24 × 10−5
+98.4%
+yT7
+[u1
+T7, u2
+T7, cT5]T
+[−2.7744; 4.1782; 56.4836; 835.3279]
+6.70 × 10−9
+98.2%
+e: Variance of white noise.
+4. Construction of MOCO Problem
+In order to facilitate giving the form of the optimization problem, considering one-step
+prediction, the expression of (9) is adjusted to (11).
+x(Ts) = Ax(0) + Bu(0) + Ke(0)
+y(Ts) = Cx(Ts) + Du(Ts) + e(Ts)
+(11)
+where Ts denotes the discretization time, which in our case is 0.5 h. x(0) denotes the initial
+state, x(Ts) denotes the next state, and y(Ts) denotes the predicted output of the next step.
+The operating cost of the tower group considered is obtained by weighting the top
+reﬂux ﬂow rate as well as the bottom reboiler steam ﬂow rate of each tower. Since the data
+obtained is the content of impurities in the product, minimizing the top impurity content
+of T3 and T7 is equivalent to maximizing the ethylene and propylene content. The form
+of the optimization objective is shown in (12), which is a three objective optimization
+problem, i.e., minimizing the content of impurities in the propylene product f1, the content
+of impurities in the ethylene product f2 and the total operating cost f3.
+min
+uj
+Ti,i∈I,j∈J
+( f1, f2, f3)
+(12)
+where uj
+Ti denotes the jth manipulated variable of the ith tower, and I, J are the correspond-
+ing index sets in the form shown in (13). The form of each sub-objective in (12) is shown
+in (14).
+i ∈ I = {1, 3, 5, 7},
+j ∈ J = {1, 2}
+(13)
+f1 = yT7(Ts) = CT7xT7(Ts) + DT7[u1
+T7, u2
+T7, cT5]T + eT7(Ts)
+f2 = yT3(Ts) = CT3xT3(Ts) + DT3[u1
+T3, u2
+T3, c2
+T1]T + eT3(Ts)
+f3 = ∑
+i,j
+Rj
+Tiuj
+Ti
+(14)
+R in (14) is the weight, c is the collaborative variable, and all collaborative variables are
+shown as
+cT5 = yT5(Ts) = CT5xT5(Ts) + DT5[u1
+T5, u2
+T5, c1
+T1]T + eT5(Ts)
+c1
+T1 = y1
+T1(Ts) = C1
+T1x1
+T1(Ts) + D1
+T1[u1
+T1, u2
+T1]T + e1
+T1(Ts)
+c2
+T1 = y2
+T1(Ts) = C2
+T1x2
+T1(Ts) + D2
+T1[u1
+T1, u2
+T1]T + e2
+T1(Ts)
+(15)
+The constraints are divided into manipulated variable constraints (16) and content
+constraints (17).
+uj
+Ti ⊗ [−1
+1]T ≤ Fj
+Ti
+(16)
+y1
+T1 ⊗ [−1
+1]T ≤ G1
+T1
+y2
+T1 ⊗ [−1
+1]T ≤ G2
+T1
+(17)
+Processes 2023, 11, 436
+8 of 14
+where ⊗ is the Kronecker product, and F and G are parameter vectors. The cnstraints in
+(17) are the bottom C2 and top C3 content constraint of T1.
+Combining the above equations, the MOCO problem takes the form shown in (18).
+min
+uj
+Ti,i∈I,j∈J
+( f1, f2, f3)
+s.t.
+Index sets deﬁned by (13)
+Sub-objectives deﬁned by (14)
+Collaborative variables deﬁned by (15)
+Manipulated variable constraints deﬁned by (16)
+Content constraints deﬁned by (17)
+(18)
+5. Case Study and Discussions
+This section describes a MOCO case study for an ethylene plant based on historical
+data of a chemical plant. The data-sampling interval is 0.5 h, and the data for one year are
+collected, with 17,523 samples in total. The Hampel and smoothdata function in MATLAB
+are used for data preprocessing. k in Hampel is set to 20 and the standard deviations are
+set to 2. A Gaussian method is applied in smoothdata and the window size p is set to 20. A
+total of 7420 data points are left after data preprocessing, and 2634 data points are used for
+system identiﬁcation. The parameters and parameter vectors in the constraints are shown
+in Table 3 and the coefﬁcient matrices are given in Appendix A.
+Table 3. Parameters in constraints.
+Parameter
+Parameter
+R1
+T1
+971.0
+F2
+T1
+[−775, 1703]T
+R2
+T1
+27.2
+F1
+T3
+[−519, 591]T
+R1
+T3
+1087.0
+F2
+T3
+[−135, 151]T
+R2
+T3
+27.2
+F1
+T5
+[−7.9, 11.2]T
+R1
+T5
+870.0
+F2
+T5
+[−15.7, 19.1]T
+R2
+T5
+27.2
+F1
+T7
+[−738, 910]T
+R1
+T7
+1004.3
+F2
+T7
+[−1963, 2372]T
+R2
+T7
+27.2
+G1
+T1
+[−6.5, 34.2]T
+F1
+T1
+[−93, 116]T
+G2
+T1
+[−30.8, 116.5]T
+R: $/h; F: t/h; G: ppm.
+Platemo, an evolutionary MOO platform developed by Tian et al. [27], is used to de-
+sign and solve the MOCO problem.
+The algorithm chosen is NSGA-III [26], which
+uses adaptive updating of multiple reference points to maintain the population diver-
+sity. Compared to MOEA/D [28] and NSGA-II [29], it can give satisfactory results on more
+2–15 objective problems.
+The number of populations is 105 and 100 iterations are performed using NSGA-III.
+The ﬁnal populations all meet the constraint requirements; the obtained Pareto frontiers
+are shown in Figure 4.
+After 100 iterations, the ﬁnal Pareto frontier approximation is presented as a plane
+which is shown in Figure 4. In order to increase the purity of the propylene product, it is
+necessary to increase the reﬂux ﬂow rates and the reboiler steam ﬂow rates of towers, which
+leads to an increase in cost. Therefore, the impurity content in the propylene product is
+negatively related to the total operating cost. However, the impurity content in the ethylene
+product does not show the above phenomenon, which is unreasonable. A MOO of the
+T1 and T3 is carried out to minimize the operating cost of both towers and the impurity
+content in the ethylene product; the Pareto frontier after 100 iterations is shown in Figure 5.
+Analysis of this ﬁgure shows that the impurity content in ethylene is negatively related
+Processes 2023, 11, 436
+9 of 14
+to the cost. The possible reasons for the above anomaly are that the cost of T5 and T7
+represents a greater proportion of the total operating cost and the purity of propylene
+product has more room for improvement. Therefore, in our case, the impurity content in
+the ethylene product has no signiﬁcant relationship with the total operating cost of the
+tower group. As for the relationship between propylene and ethylene content, since there is
+no connection between T3 and the two propylene distillation columns, these two objectives
+appear to be relatively independent.
+1.45
+0.36280
+1.5
+341.30
+1.55
+0.36285
+f3 ($/h)
+106
+1.6
+341.25
+1.65
+0.36290
+f1 (mol/mol)
+f2 (ppm)
+341.20
+1.7
+0.36295
+341.15
+0.36300
+341.10
+Figure 4. Pareto-optimal frontier for the three-objective optimization problem.
+341.05
+341.10
+341.15
+341.20
+341.25
+341.30
+f2 (ppm)
+679,800
+679,850
+679,900
+679,950
+680,000
+680,050
+operating cost ($/h)
+Figure 5. Pareto-optimal frontier for the two-objective optimization problem.
+Corresponding to Figure 4, the optimal values of the decision variables after 100 it-
+erations are shown in Figure 6. The subplots in each row of the ﬁgure correspond to the
+relationship between the same decision variable and different objectives, and the sub-
+plots in each column represent the relationships between the same objective and different
+decision variables. Analyzing the above three ﬁgures from the perspective of decision
+variables, it can be seen that the top reﬂux ﬂow rate of T3 and the bottom reboiler steam
+ﬂow rate of T7 are close to the lower boundary. For the objective of total operating cost f3,
+the weight of the T3 and T7 reﬂux ﬂow rates are the largest and the magnitude of these two
+variables is also large. Thus, the smaller reﬂux ﬂow rates of T3 and T7 imply lower cost.
+In our case, for the purpose of weighing the objectives and meeting the constraints of T1,
+NSGA-III tends to form a small T3 reﬂux ﬂow rate and to reduce the T7 reﬂux ﬂow rate.
+Processes 2023, 11, 436
+10 of 14
+Since the bottom reboiler steam ﬂow rate magnitude of T7 is the largest of all the decision
+variables in the solution set, this variable is also near the lower boundary. In the case of
+the three objective trade-offs, the solutions for the reﬂux ﬂow rate of T1 and T5, the reboiler
+steam ﬂow rates of T1 and T5 are mostly close to the lower boundary, with a small number
+of solutions distributed in other regions. The solutions for the T3 bottom reboiler steam
+ﬂow rate, as well as the T7 reﬂux ﬂow rate, are the most uniformly distributed of all the
+manipulated variables.
+90
+95
+100
+105
+110
+115
+0.3628
+0.3629
+0.363
+(a)
+90
+95
+100
+105
+110
+115
+341.1
+341.15
+341.2
+341.25
+(b)
+90
+95
+100
+105
+110
+115
+1.5
+1.6
+106
+(c)
+750
+800
+850
+900
+0.3628
+0.3629
+0.363
+(d)
+750
+800
+850
+900
+341.1
+341.15
+341.2
+341.25
+(e)
+750
+800
+850
+900
+1.5
+1.6
+106
+(f)
+519
+519.5
+520
+520.5
+521
+0.3628
+0.3629
+0.363
+(g)
+519
+519.5
+520
+520.5
+521
+341.1
+341.15
+341.2
+341.25
+(h)
+519
+519.5
+520
+520.5
+521
+1.5
+1.6
+106
+(i)
+135
+140
+145
+150
+155
+0.3628
+0.3629
+0.363
+(j)
+135
+140
+145
+150
+155
+341.1
+341.15
+341.2
+341.25
+(k)
+135
+140
+145
+150
+155
+1.5
+1.6
+106
+(l)
+7.9
+8
+8.1
+8.2
+8.3
+8.4
+0.3628
+0.3629
+0.363
+f1 (mol/mol)
+(m)
+7.9
+8
+8.1
+8.2
+8.3
+8.4
+341.1
+341.15
+341.2
+341.25
+f2 (ppm)
+(n)
+7.9
+8
+8.1
+8.2
+8.3
+8.4
+1.5
+1.6
+f3 ($/h)
+106
+(o)
+15.5
+16
+16.5
+17
+0.3628
+0.3629
+0.363
+(p)
+15.5
+16
+16.5
+17
+341.1
+341.15
+341.2
+341.25
+(q)
+15.5
+16
+16.5
+17
+1.5
+1.6
+106
+(r)
+700
+750
+800
+850
+900
+950
+0.3628
+0.3629
+0.363
+(s)
+700
+750
+800
+850
+900
+950
+341.1
+341.15
+341.2
+341.25
+(t)
+700
+750
+800
+850
+900
+950
+1.5
+1.6
+106
+(u)
+1963
+1964
+1965
+1966
+1967
+1968
+0.3628
+0.3629
+0.363
+(v)
+1963
+1964
+1965
+1966
+1967
+1968
+341.1
+341.15
+341.2
+341.25
+(w)
+1963
+1964
+1965
+1966
+1967
+1968
+1.5
+1.6
+106
+(x)
+Figure 6. The solution set of the considered decision variables. (a–x) Optimal values of the considered
+decision variables corresponding to the Pareto-optimal front.
+Analyzing Figure 6 from the perspective of the objective, an interesting phenomenon
+is that, although no connection exists between T3 and T7, there is a complementary relation-
+ship between the T3 bottom reboiler steam ﬂow rate and the T7 reﬂux ﬂow rate, i.e., under
+the same objective, the solutions for one variable are irregularly related to the objective,
+and the other shows a linear relationship with the objective. The possible reason for the
+above phenomenon is that the NSGA-III algorithm selects the above two manipulated
+variables directly related to the objective to maintain the diversity of the population. Based
+on the small variation in the other decision variables, the algorithm selects the variable
+Processes 2023, 11, 436
+11 of 14
+with the larger inﬂuence on the target of the two variables to increase the range of target
+variation. Since both the constraints and the model are linear, the remaining one variable
+shows a certain linear relationship with the objective.
+To verify the effectiveness of the proposed method, we further explored the sample
+data. Figure 7 shows the scatterplot corresponding to the sample data. It can be clearly seen
+that the total operating costs corresponding to the sample data are all above 1.5 × 106 $/h.
+A sample data point with low cost and moderate impurity content is selected as the most
+preferred point. Figure 8 gives a comparison of this preference point with the Pareto frontier
+of the MOCO. The part in the dashed box is the appealing operation area because the total
+operating cost under this area is below 1.5 × 106 $/h and the content of impurities in both
+ethylene and propylene products is lower than the preference point.
+1.5
+1.55
+1.6
+1.65
+1.7
+106
+f3 ($/h)
+0.34
+1.75
+1.8
+0.35
+f1 (mol/mol)
+370
+360
+0.36
+f2 (ppm)
+350
+0.37
+340
+330
+320
+Figure 7. Distribution of objective values corresponding to data for modeling.
+1.45
+341.30
+1.5
+0.36280
+1.55
+1.6
+f3 ($/h)
+106
+341.25
+0.36285
+1.65
+1.7
+341.20
+f2 (ppm)
+0.36290
+f1 (mol/mol)
+0.36295
+341.15
+0.36300
+341.10
+Individual
+Preferred point
+Figure 8. The appealing operation area in the optimal frontier under the guidance of a prefer-
+ence point.
+The above analysis shows that the proposed MOCO strategy for the ethylene plant can
+provide rational support for decision-makers to obtain higher product purity at lower cost.
+6. Conculsions
+A multi-objective collaborative optimization (MOCO) strategy is proposed for a distil-
+lation column group. Based on the preprocessing of historical data, the data for the impurity
+Processes 2023, 11, 436
+12 of 14
+content of the ethylene and propylene products and the propylene content on the 73rd tray,
+are selected to determine the operating modes of the tower group by the fuzzy C-means
+clustering method. Data with a membership function value greater than 0.8 under the main
+operating mode are selected for subsequent modeling. The state-space models of towers
+are constructed based on a subspace identiﬁcation method and collaborative variables.
+A MOCO case study is performed using MATLAB and Platemo,. The superiority of the
+proposed method in decision-making is veriﬁed by the Pareto-optimal frontier, population
+analysis and comparison with sample data.
+Author Contributions: Formal analysis, K.J. and R.H; funding acquisition, R.H. and J.L.; investiga-
+tion, L.L.; methodology, R.H. and K.J.; project administration, R.H.; resources, R.H.; software, K.J.;
+supervision, R.H., J.L. and L.L.; validation, R.H.; writing—original draft, K.J.; writing—review and
+editing, L.L. and J.L. All authors have read and agreed to the published version of the manuscript.
+Funding: This work was supported by National Key Research and Development Program of China
+(2022YFB3305901), National Natural Science Foundation of China (62073142, 62136003, 61973124),
+Fundamental Research Funds for the Central Universities and the Programme of Introducing Talents
+of Discipline to Universities (the 111 Project) under Grant B17017.
+Data Availability Statement: The data presented in this study are available in the manuscript.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+Appendix A
+Coefﬁcient matrices of models.
+A1
+T1 =
+
+
+0.9977
+-0.042
+4.2 × 10−3
+−1.7 × 10−3
+0.0381
+0.9720
+−0.217
+−0.023
+3.4 × 10−4
+0.1954
+0.8943
+−0.383
+−0.012
+4.5 × 10−3
+0.3584
+0.2068
+
+
+(A1)
+A2
+T1 =
+
+
+0.9982
+−0.069
+7.9 × 10−3
+0.0678
+0.9676
+−0.272
+−7.7 × 10−4
+0.2259
+0.7152
+
+
+(A2)
+AT3 =
+
+
+0.9923
+−0.150
+9.4 × 10−3
+−2.2 × 10−3
+0.1480
+0.9510
+−0.334
+−9.6 × 10−3
+0.0204
+0.2218
+0.6909
+−0.026
+−0.247
+0.2824
+1.9029
+−0.033
+
+
+(A3)
+AT5 =
+
+
+1.0011
+−0.020
+−1.8 × 10−3
+0.0340
+0.9868
+0.2708
+−0.018
+−0.222
+0.7400
+
+
+(A4)
+AT7 =
+
+
+0.9879
+−0.129
+0.0131
+−2.6 × 10−3
+0.1312
+0.9710
+−0.241
+−0.011
+7.9 × 10−3
+0.1992
+0.6855
+−0.1001
+−0.178
+−0.165
+−1.173
+−0.4213
+
+
+(A5)
+B1
+T1 =
+
+
+3.5 × 10−6
+1.1 × 10−8
+−1.5 × 10−4
+1.3 × 10−7
+1.4 × 10−4
+−5.6 × 10−6
+8.0 × 10−4
+−1.4 × 10−5
+
+
+(A6)
+B2
+T1 =
+
+
+3.1 × 10−5
+1.4 × 10−8
+−6.7 × 10−4
+−5.1 × 10−7
+−9.0 × 10−4
+4.1 × 10−6
+
+
+(A7)
+Processes 2023, 11, 436
+13 of 14
+BT3 =
+
+
+2.0 × 10−6
+−1.9 × 10−5
+−4.3 × 10−4
+1.3 × 10−5
+3.3 × 10−4
+−2.1 × 10−3
+2.7 × 10−4
+1.1 × 10−4
+−4.0 × 10−3
+−2.6 × 10−3
+−0.023
+−0.126
+
+
+(A8)
+BT5 =
+
+
+−6.0 × 10−5
+−2.4 × 10−5
+1.1 × 10−5
+9.3 × 10−4
+−1.1 × 10−3
+5.5 × 10−4
+−1.4 × 10−3
+−8.7 × 10−5
+−4.3 × 10−4
+
+
+(A9)
+BT7 =
+
+
+3.7 × 10−6
+−6.5 × 10−7
+0.0194
+−2.7 × 10−5
+6.3 × 10−6
+0.2329
+5.4 × 10−6
+−2.3 × 10−6
+1.0189
+−3.5 × 10−4
+5.8 × 10−5
+12.696
+
+
+(A10)
+C1
+T1 =
+� −239.9
+5.0507
+−0.902
+0.1595
+�
+C2
+T1 =
+� −396.2
+13.521
+−2.921
+�
+CT3 =
+�
+232.48
+−17.16
+3.7044
+0.1595
+�
+CT5 =
+�
+35.386
+−0.357
+−0.071
+�
+CT7 =
+� −0.146
+9.5 × 10−3
+−1.7 × 10−3
+9.5 × 10−5 �
+(A11)
+D1
+T1 =
+� −5.8 × 10−3
+−5.5 × 10−6 �
+D2
+T1 =
+� −0.012
+−2.5 × 10−5 �
+DT3 =
+�
+5.0 × 10−4
+−6.3 × 10−3
+0.2502
+�
+DT5 =
+� −1.1 × 10−3
+1.5 × 10−4
+−8.9 × 10−3 �
+DT7 =
+� −3.4 × 10−7
+1.1 × 10−7
+−6.7 × 10−4 �
+(A12)
+E1
+T1 =
+� −5.6 × 10−3
+0.0937
+−0.186
+0.0519
+�T
+E2
+T1 =
+� −2.2 × 10−3
+0.0166
+−0.010
+�T
+ET3 =
+�
+4.8 × 10−3
+−0.025
+0.0305
+0.0135
+�T
+ET5 =
+�
+0.0245
+−0.596
+−0.407
+�T
+ET7 =
+� −6.958
+53.443
+−60.08
+206.98
+�T
+(A13)
+References
+1.
+Mayer, M.; Szilágyi, A.; Gróf, G. Environmental and economic multi-objective optimization of a household level hybrid renewable
+energy system by genetic algorithm. Appl. Energy 2020, 269, 115058.
+2.
+Nuvvula, R.; Devaraj, E.; Madurai Elavarasan, R.; Iman Taheri, S.; Irfan, M.; Teegala, K. Multi-objective mutation-enabled
+adaptive local attractor quantum behaved particle swarm optimisation based optimal sizing of hybrid renewable energy system
+for smart cities in India. Sustain. Energy Technol. Assess. 2022, 49, 101689. [CrossRef]
+3.
+Chen, T.; Cheng, C.; Chou, Y. Multi-objective genetic algorithm for energy-efﬁcient hybrid ﬂow shop scheduling with lot
+streaming. Ann. Oper. Res. 2020, 290, 813–836. [CrossRef]
+4.
+Wang, X.; Mao, X.; Khodaei, H. A multi-objective home energy management system based on internet of things and optimization
+algorithms. J. Build. Eng. 2021, 33, 101603. [CrossRef]
+5.
+Karimi, H.; Jadid, S. Optimal energy management for multi-microgrid considering demand response programs: A stochastic
+multi-objective framework. Energy 2020, 195, 116992. [CrossRef]
+6.
+Khanali, M.; Akram, A.; Behzadi, J.; Mostashari-Rad, F.; Saber, Z.; Chau, K.; Nabavi-Pelesaraei, A. Multi-objective optimization
+of energy use and environmental emissions for walnut production using imperialist competitive algorithm. Appl. Energy 2020,
+284, 116342. [CrossRef]
+7.
+Sohani, A.; Dehnavi, A.; Sayyaadi, H.; Hoseinzadeh, S.; Goodarzi, E.; Garcia, D.; Groppi, D. The real-time dynamic multi-objective
+optimization of a building integrated photovoltaic thermal (BIPV/T) system enhanced by phase change materials. J. Energy
+Storage 2022, 46, 103777. [CrossRef]
+Processes 2023, 11, 436
+14 of 14
+8.
+Cui, Y.; Geng, Z.; Zhu, Q.; Han, Y. Review: Multi-objective optimization methods and application in energy saving. Energy 2017,
+125, 681–704. [CrossRef]
+9.
+Zhou, L.; Liao, Z.; Wang, L.; Zhang, L.; Ji, X.; Jiao, H.; Wang, J.; Yang, Y.; Dang, Y. Simulation-Based Multiobjective Optimization
+of the Product Separation Process within an MTP Plant. Ind. Eng. Chem. Res. 2019, 58, 12166–12178. [CrossRef]
+10.
+Zhang, Y.; He, N.; Masuku, C.; Biegler, L. A multi-objective reactive distillation optimization model for Fischer–Tropsch synthesis.
+Comput. Chem. Eng. 2020, 135, 106754. [CrossRef]
+11.
+Zhang, H.; Wang, S.; Tang, J.; Li, N.; Li, Y.; Cui, P.; Wang, Y.; Zheng, S.; Zhu, Z.; Ma, Y. Multi-objective optimization and control
+strategy for extractive distillation with dividing-wall column/pervaporation for separation of ternary azeotropes based on
+mechanism analysis. Energy 2021, 229, 120774.
+12.
+Mondal, B.; Rangaiah, G.; Jana, A. Optimizing algal biodiesel production from a novel reactive distillation based unit: Reducing
+CO2 emission and cost. Chem. Eng. Process. Process. Intensif. 2022, 176, 108948. [CrossRef]
+13.
+Gu, J.; Lu, S.; Shi, F.; Wang, X.; You, X. Economic and Environmental Evaluation of Heat-Integrated Pressure-Swing Distillation by
+Multiobjective Optimization. Ind. Eng. Chem. Res. 2022, 61, 9004–9014.
+14.
+Kruber, K.; Skiborowski, M. Topology-Based Initialization for the Optimization-Based Design of Heteroazeotropic Distillation
+Processes. Processes 2022, 10, 1482.
+15.
+Deshpande,G.; Shrikhande, S.; Patle, D.; Sawarkar, A. Simultaneous optimization of economic, environmental and safety criteria
+for algal biodiesel process retroﬁtted using dividing wall column and multistage vapor recompression. Process Saf. Environ. Prot.
+2022, 164, 1–14. [CrossRef]
+16.
+Pandit,S.; Jana, A. Transforming conventional distillation sequence to dividing wall column: Minimizing cost, energy usage and
+environmental impact through genetic algorithm. Sep. Purif. Technol. 2022, 297, 121437. [CrossRef]
+17.
+Shen, F.; Wang, M.; Huang, L.; Qian, F. Exergy analysis and multi-objective optimisation for energy system: A case study of a
+separation process in ethylene manufacturing. J. Ind. Eng. Chem. 2021, 93, 394–406.
+18.
+Dai, M.; Yang, F.; Zhang, Z.; Liu, G.; Feng, X. Energetic, economic and environmental (3E) multi-objective optimization of the
+back-end separation of ethylene plant based on adaptive surrogate model. J. Clean. Prod. 2021, 310, 127426. [CrossRef]
+19.
+Liu, H.; Shah, S.; Jiang, W. On-line outlier detection and data cleaning. Comput. Chem. Eng. 2004, 28, 1635–1647. [CrossRef]
+20.
+Suomela, J. Median Filtering is Equivalent to Sorting. arXiv 2014, arXiv:1406.1717.
+21.
+Shariﬁ, S.; Hendry, M.; Macciotta, R.; Evans, T. Evaluation of ﬁltering methods for use on high-frequency measurements of
+landslide displacements. Nat. Hazards Earth Syst. Sci. 2022, 21, 411–430. [CrossRef]
+22.
+Bezdek, J. Pattern Recognition with Fuzzy Objective Function Algorithms, 1st ed.; Springer: Boston, MA, USA, 1981; pp. 65–79.
+23.
+Shariﬁ, S.; Mazumdar, A.; Pal, S. Fuzzy Clustering with Similarity Queries. Adv. N.A. Inf. Process. Syst. 2021, 34, 789–801.
+24.
+Huleihel, W.; Miriyala, S.; Mitra, K. An Evolutionary Neuro-Fuzzy C-means Clustering Technique. Eng. Appl. Artif. Intell. 2020,
+89, 103435.
+25.
+Katayama, T. Subspace Methods for System Identiﬁcation, 1st ed.; Springer: Berlin, Germany; London, UK, 2005; pp. 6–9.
+26.
+Deb, K.; Jain, H. An Evolutionary Many-Objective Optimization Algorithm Using Reference-Point-Based Nondominated Sorting
+Approach, Part I: Solving Problems With Box Constraints. IEEE Trans. Evol. Computat. 2014, 18, 577–601. [CrossRef]
+27.
+Tian, Y.; Cheng, R.; Zhang, X.; Jin, Y. PlatEMO: A MATLAB Platform for Evolutionary Multi-Objective Optimization [Educational
+Forum]. IEEE Comput. Intell. Mag. 2017, 12, 73–87. [CrossRef]
+28.
+Zhang, Q.; Li, H. MOEA/D: A Multiobjective Evolutionary Algorithm Based on Decomposition. IEEE Trans. Evol. Computat.
+2007, 11, 712–731. [CrossRef]
+29.
+Deb, K.; Agrawal, S.; Pratap, A.; Meyarivan, T. A Fast Elitist Non-dominated Sorting Genetic Algorithm for Multi-objective
+Optimization: NSGA-II. IEEE Trans. Evol. Computat. 2002, 6, 182–197. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+</pdf_text>

@@ -1,0 +1,2759 @@
+,0,Class
+0,"Article
+Multi-Aspect Comparison of Ethyl Acetate
+Production Pathways: Reactive Distillation Process
+Integration and Intensiﬁcation via Mechanical and
+Chemical Approach",0
+1,"Branislav Šulgan, Juraj Labovský and Zuzana Labovská *",0
+2,"Institute of Chemical and Environmental Engineering, Faculty of Chemical and Food Technology,
+Slovak University of Technology in Bratislava, Radlinského 9, 812 37 Bratislava, Slovakia;
+branislav.sulgan@stuba.sk (B.Š.); juraj.labovsky@stuba.sk (J.L.)
+* Correspondence: zuzana.labovska@stuba.sk; Tel.: +421-918-674-251",0
+3,Received: 14 October 2020; Accepted: 2 December 2020; Published: 8 December 2020,0
+4,"Abstract: This paper provides a multi-aspect comparison of selected methods of ethyl acetate
+production and shows the possibility of further reactive distillation process integration and
+sophisticated intensiﬁcation including process stream regeneration. The production pathways
+were selected with respect to their practical applicability and suﬃcient experimental and feasibility
+studies already published. A total of four case studies were designed and compared: conventional
+process set-up (ethyl acetate is produced in a chemical reactor) is designed as a base case study; reactive
+distillation with a separation unit is derived from the conventional process set-up. The mechanical
+and chemical approach to reactive distillation process intensiﬁcation and integration were assumed:
+reactive distillation column with a stripper and reactive distillation column with an auxiliary chemical
+reaction (ethylene oxide hydration). Process models were compiled in the Aspen Plus software.
+Complex process ﬂowsheets of selected case studies including separation and regeneration were
+designed and optimized. Three diﬀerent points of view were applied to evaluate the selected process
+beneﬁts and drawbacks. Process energy, economy, and safety were assessed. As a result, a reactive
+distillation column with an auxiliary chemical reaction has been proven to be the most suitable
+pathway for ethyl acetate production assuming all three evaluated aspects.",0
+5,"Keywords: reactive distillation; process integration and intensiﬁcation; ethyl acetate; auxiliary
+reaction; ethylene oxide; energy-economy-safety aspects",0
+6,1. Introduction,0
+7,Ethyl acetate is known as one of the key organic solvents.,0
+8,"It is widely used in various
+industries mainly due to its reasonable price, low toxicity, and suitable properties as a solvent [1].
+Global consumption of ethyl acetate has been steadily increasing over the last decades [2]. At present,
+the world’s annual production capacity is estimated at 3 million tons, which increases due to the
+growing consumption of ethyl acetate expected in the following years. Therefore, it is necessary to
+intensify existing ethyl acetate production and to design new plants employing more eﬃcient processes
+compared to the conventionally used ones.",0
+9,"The use of direct Fischer esteriﬁcation is still the most commonly used method to produce
+ethyl acetate. Ethanol and acetic acid are used as reactants in the presence of an acidic catalyst.
+Other chemical paths for ethyl acetate production implemented on an industrial scale are based
+on ethylene acetylation or ethanol dehydrogenation respectively. However, these paths have been
+denoted as non-economic and even potentially dangerous [3]. Therefore, esteriﬁcation is still preferred,",0
+10,"Processes 2020, 8, 1618; doi:10.3390/pr8121618",0
+11,www.mdpi.com/journal/processes,0
+12,"Processes 2020, 8, 1618",0
+13,2 of 32,0
+14,"especially due to the possibility of using diﬀerent catalysts, the availability of raw materials from
+renewable sources, and the potential for process intensiﬁcation [4]. At present, much attention is given
+to overcoming the limitations associated with the equilibrium esteriﬁcation reaction; in particular,
+separation of azeotropic mixtures formed during the production process, distillation boundaries,
+by-product removal, energy consumption reduction, and improvement of process economy [5–7].",0
+15,"Several techniques are used to solve the separation of azeotropic mixtures containing water,
+ethyl acetate, and ethanol, for example, azeotropic distillation, pressure swing distillation, and extractive
+distillation. All these techniques are well known and the latest knowledge in this ﬁeld including
+heat integration [8], thermal coupling [9], dividing wall columns [10], pervaporation modules [11,12],
+use of a new class of solvents (ionic liquids) [13,14] can be applied eﬀectively. Although the separation
+of azeotropic mixtures is possible, high energy consumption and a high number of devices should
+be expected.",0
+16,"To overcome distillation boundaries and reduce energy demands and the number of equipment
+units, reactive distillation (RD) can be used [6]. The concept of RD combining simultaneous chemical
+reaction and separation in one unit has shown great potential in the production of esters [15,16].
+Industrial-scale plants combining a reactive distillation column with a separation unit can be found all
+over the world [16,17]. However, even though RD itself has brought beneﬁts compared to conventional
+production processes, it still shows potential for intensiﬁcation. Taking RD to the next level of
+process intensiﬁcation requires more advanced RD conﬁgurations allowing an additional range of
+operating conditions (not available in classic RD setups) [16]. Improvements can be achieved by
+physical, chemical, or mechanical methods [4,18]. Physical methods are based on improving the
+separation of reactive distillation products by adding a selective solvent (azeotropic reactive distillation
+(ARD), reactive extractive distillation (RED)), or by changing operation conditions (pressure-swing
+RD). The production of 2-phenylethyl acetate via azeotropic reactive distillation can be listed as
+an illustrative example [19]. Employing an auxiliary chemical reaction in the RD system is used as the
+chemical path of intensiﬁcation. One by-product of the main reaction is consumed by the auxiliary
+reaction; another valuable product can be obtained. Reactive distillation with an auxiliary reaction
+(RDAR) is a very innovative method that can improve the main reaction and separation at the same
+time [4,20]. Mechanical ways of RD intensiﬁcation are focused on the use of special internal equipment
+of columns to ease the separation (reactive distillation with a dividing wall (RDWC) and reactive
+distillation with pervaporation (RDPV)); which intensify the chemical reaction (special catalyst beds in
+case of a heterogeneous catalyst) [4]. Special attention is given to integrated columns with strippers
+(RDS), recompression of superheated vapor, etc. [18,21].",0
+17,1.1. Current Ethyl Acetate Production Methods,0
+18,"Usually, the esteriﬁcation reaction of acetic acid by ethanol is used to form ethyl acetate. The process
+composed of a continuous stirred tank reactor (CSTR) and several separation columns is reported
+as the most widespread ethyl acetate commercial production method [15]. At least three distillation
+columns are needed to separate the reaction mixture from the CSTR. First, unreacted acetic acid has
+to be regenerated—this separation is a high energy-consuming [4,15] and azeotropic distillation is
+recommended to reduce energy consumption in the ﬁrst column [17]. One of the process products
+(ethyl acetate) is used as an azeotropic agent. A decanter has to be deployed to overcome the distillation
+boundary and thus allow separation of pure ethyl acetate in a second distillation column. The third
+column is usually used for water regeneration. Despite several options for columns and recycles
+integration, this process is energy-intensive [5]. Moreover, large recycles are used due to the distillation
+boundary and the equipment has also to be relatively large. Reactive distillation is used as the
+second method for ethyl acetate industrial production [16]. RD column, decanter, and two distillation
+columns are employed. A water-ethanol-ethyl acetate azeotropic mixture is obtained in the RD column
+and it is then separated in a similar way as in the conventional method. However, many other RD
+conﬁgurations have been tested at a laboratory scale, including all three of the above-mentioned",0
+19,"Processes 2020, 8, 1618",0
+20,3 of 32,0
+21,"ways of improvement and intensiﬁcation [4]. The research has been mainly focused on RDWC [22];
+RDAR [23,24]; RDS [4,18], and RED [25]. However, so far, only a classic RD column with a separation
+unit is used at the industrial scale. This is mainly due to the simplicity of design and control of this
+approach compared to integrated RD conﬁgurations [15,16]. However, with the advancement of
+process regulation and production design, it is clear that many production lines will be transformed
+into fully integrated RD processes [16,22] in the future.",0
+22,1.2. Methodology,0
+23,"The main goal of this paper is the comparison of selected ethyl acetate production pathways
+and to point out the possibility of further reactive distillation process integration and sophisticated
+intensiﬁcation including process stream regeneration. Three diﬀerent points of view were applied
+to evaluate the selected process’s pros and cons. Process energy, economy, and safety are assessed.
+Comprehensive research has been accomplished to select case studies demonstrating more levels of
+process integration and intensiﬁcation [4,16]. The production pathways have been selected with respect
+to their practical applicability (both present and future), to suﬃcient experimental and feasibility studies
+already published, and the intensiﬁcation of reactive distillation via chemical and mechanical methods.
+As the base case study, a conventional process from [15,17] was adopted. Operation sequence according
+to Riemenschneider [1] consists of a continuous stirred tank reactor (CSTR) and several separation
+columns. A classic reactive distillation process design was used as the second case study because of its
+present practical industrial applicability [4]. Mechanical modiﬁcation of RD is represented by the third
+case study where an RD column with a stripper (RDS) is used. The RDS process set-up is well known
+in the petrochemical industry. In the fourth case study, an auxiliary chemical reaction is included
+as a chemical modiﬁcation of RD. Hydration of ethylene oxide is proposed as the auxiliary reaction.
+With this intensiﬁcation method, ethyl acetate–water azeotrope is removed and pure ethyl acetate is
+separated at the top of the RD column [23]. In addition, another valuable product (monoethylene
+glycol) is obtained when the auxiliary reaction is included.",0
+24,"Process modeling was performed using the Aspen Plus software [26]. Reliable and complex
+models were compiled to evaluate and compare individual case studies. An important beneﬁt of this
+work is the detailed design of all case studies including the rigorous non-equilibrium stage (NEQ)
+model of reactive distillation and separation columns. More accurate results are expected when using
+the NEQ model contrary to works where only the equilibrium stage model (EQ) is used [18–20]. Muthia
+(2018) has proved that the reactive distillation EQ model is useful in the process feasibility analysis [27].
+However, RD partial processes can be overestimated by this model; namely separation eﬃciency and
+chemical reaction rate. In the EQ model, the separation eﬃciency has to be estimated and thus it can
+be overestimated as well as underestimated.",0
+25,"The chemical reaction rate is inﬂuenced by mass transfer; therefore it can be signiﬁcantly
+overestimated [16,22]. Consequently, the equipment size is estimated incorrectly, and the energy
+consumption is often underestimated [28,29]. Therefore, the NEQ model should be preferred when
+assessing the economy and safety aspects [30,31].",0
+26,"Processes with uneven yield and poor recovery design have been compared previously [15,32].
+Conclusions from these results have been confused because of incomplete process material balance
+and comparison of incomplete design of process schemes. Therefore, recycling of process streams
+and uniﬁcation of case studies inlet and outlet streams have been included in this paper. With this
+improvement, reproducible comparison of individual case studies is achieved; ethyl acetate yield and
+water recovery problems are solved.",0
+27,1.3. Process Sustainability Indicators,0
+28,"To evaluate the process eﬃciency and compare it with other alternatives, several indicators,
+which consider energy, economy, and safety aspects of all selected process alternatives, are used.
+A summary of evaluated indicators provides better insight into process sustainability.",0
+29,"Processes 2020, 8, 1618",0
+30,4 of 32,0
+31,"Energy requirements of processes can be quantiﬁed by speciﬁc energy consumption (SEC) [5,15].
+SEC is expressed by Equation (1). In addition to SEC, process material eﬃciency is evaluated using
+suitable indicators such as recovery, productivity, etc. Material eﬃciency can be excluded when using
+identical material inputs and outputs from the designed process in compared alternatives.",0
+32,"Total production cost (TPC) can be used as an economic indicator. TPC is expressed by Equation (2);
+total annual cost (TAC); total capital cost (TCC) and pay-back period are included. The price of the
+equipment together with its installation represents the main part of TCC. TAC is composed of ﬁxed cost,
+utility cost, and raw materials cost [33]. Product sales are dependent on the actual market situation
+and therefore the price can be quite volatile. Consequently, the long-term average has to be considered.
+The proﬁtability of the process is reﬂected in the payback period. Thus, the complex economy of the
+process is considered via TPC. On the other hand, a detailed analysis of individual economic indicators
+(TCC, TAC, utility cost, etc.) is needed to identify bottlenecks in the process.",0
+33,Speciﬁc energy consumption (SEC) =,0
+34,Total production cost (TPC) =,0
+35,TAC,0
+36,1.4. Safety Indicators,0
+37,energy consumption (kW),0
+38,−1(cid:17),0
+39,mass of product (t),0
+40,"(cid:16)
+$ year
+1.1 × mass of product (t year−1)",0
+41,TCC ($),0
+42,+,0
+43,payback period (year),0
+44,-1,0
+45,-2,0
+46,"Overall safety analysis in this work is based on the Chemical Process Quantitative Risk Analysis.
+To evaluate and compare the safety aspects of the presented alternatives, the individual risk estimation
+was performed for each case study. A large amount of frequency and consequence information
+generated during quantitative process risk assessment must be integrated into a presentation that is
+relatively easy to understand and use. The form of the presentation varies depending on the goal of the
+analysis. As the main goal of the presented work is to evaluate process eﬃciency and to compare it with
+other alternatives, the presentation of individual risk as a function of distance (individual risk proﬁles)
+was chosen, which is a simpliﬁcation of the individual risk contour plot where two assumptions are
+used: risk source is compact (i.e., well approximated by a point source), and distribution of risk is equal
+in all directions. In the initials steps of conceptual design, the ﬁnal distribution of risk is unknown and
+therefore the mentioned assumptions do not aﬀect ﬁnal results.",0
+47,"Calculation of individual risk assumes that contributions of all incident outcome cases are
+additive [34]. Thus, the total individual risk of fatality at geographical location x, y (IRx,y) is equal to
+the sum of individual risks of fatality at geographical location x, y from incident outcome case i (IRx,y,i):",0
+48,"IRx,y =",0
+49,"IRx,y,i",0
+50,-3,0
+51,i=1,0
+52,"where n is the total number of incident outcome cases considered in the analysis and each individual
+risk of fatality from incident outcome case i (IRx,y,i) is obtained from the frequency of incident outcome
+case i (fi) and the probability that incident outcome case i results in a fatality at location x, y (pf,i):",0
+53,"IRx,y,i = fip f ,i = FIpo,ip f ,i",0
+54,-4,0
+55,"Calculation of frequency of incident outcome case i (fi) requires the evaluation of the frequency of
+incident I (FI) and the incident outcome probability (po,i). To estimate incident frequencies, the Fault
+Tree Analysis was used. Even Tree Analysis was used to quantitatively estimate the incident outcomes
+probability [34].",0
+56,n(cid:88),0
+57,"Processes 2020, 8, 1618",0
+58,2. Process Modeling,0
+59,2.1. Thermodynamic Model,0
+60,5 of 32,0
+61,"A multicomponent model system is presented in this work. The basic model system contains ethyl
+acetate (EtAc), ethanol (EtOH), water (H2O), and acetic acid (AA); one case study is extended by ethylene
+oxide (EO) and monoethylene glycol (MEG). This system is strongly non-ideal. Two homogeneous
+binary azeotropes (EtOH–H2O, EtOH–EtAc), one heterogeneous binary azeotrope (EtAc–H2O),
+and one homogeneous ternary azeotrope (EtAc–EtOH–H2O) are reported in the literature [35,36]
+and databases [26]. Despite acetic acid forming no azeotropic mixture with other participating
+compounds, it is known for its strong association in the vapor phase and the formation of dimers [37].
+Monoethylene glycol does not form an azeotropic mixture with other mentioned components.
+Unlike other components, ethylene oxide is a gas at room temperature [38]. For such a system,
+the NRTL-HOC thermodynamic model is highly recommended [15,22,28] as it is capable of calculating
+the VLLE (vapor–liquid–liquid phase equilibria) correctly including two liquid phases, azeotropic
+mixtures composition, and boing points, dimerization in the vapor phase. All the above-mentioned
+papers have shown simulation results to be in good agreement with experiment data. Moreover,
+reliable parameters for the NRTL-HOC model can be obtained from available databases (Aspen Plus [26],
+DECHEMA, NIST).",0
+62,2.2. Kinetic Model,0
+63,"Mechanism and reaction kinetics of the esteriﬁcation reaction of ethanol and acetic acid in the
+presence of acid catalysts has been studied in many works [1,39,40]. Three types of catalysis have
+been reported: autocatalysis, homogeneous catalysis, and heterogeneous catalysis. The reaction rate
+is low and achievable conversion is up to 20% at high residence times in the case of autocatalysis
+reaction [39]. Strong mineral acids, such as sulfuric acid and hydrochloric acid, are traditionally used
+as homogeneous catalysts [15]. High conversion, of up to 65.5%, is achieved in industrial applications
+using sulfuric acid [1] in the range from 0.2 to 1.0 volume percent of the reactive mixture [15,23].
+Acidic ion exchange resins in various forms have been used as heterogeneous catalysts to increase
+conversion (slightly below 70%); however, no solid heterogeneous catalyst has been found to increase
+the reaction rate in favor of ethyl acetate production better than sulfuric acid [15]. High reaction rate,
+high conversion, and a smaller amount of catalyst are preferred from the industrial point of view.
+In addition, process set-up and equipment design are much easier in the case of homogeneous catalysis.
+On the other hand, equipment corrosion and catalyst recycling are major drawbacks of homogeneous
+catalysis with sulfuric acid.",0
+64,−3 s,0
+65,"In this work, homogeneous catalysis using sulfuric acid was assumed, Equation (5). The reaction
+−1]) is expressed by Equation (6), which has been used in works [23,40]. The reaction
+rate (r [kmol m
+−3]) are used. The concentration
+occurs in the liquid phase; liquid phase molar concentrations (C [kmol m
+of sulfuric acid catalyst was low [15,25], so its presence in the phase equilibria calculation was neglected.
+As it was mentioned, an auxiliary chemical reaction was included to enhance the reactive
+distillation process in the last case study. This auxiliary reaction was chosen to ensure the removal
+of the main esteriﬁcation reaction by-product—water. Ethylene oxide (EO) hydration was used,
+Equation (7). Monoethylene glycol (MEG) is produced as the main product of the auxiliary reaction.
+Further reactions towards higher glycols (diethylene glycol, triethylene glycol) were omitted because of
+lower reaction rate and negligible change in the composition of product streams [23,38,41]. The auxiliary
+reaction rate is expressed by Equation (8) [23,41].",0
+66,-5,0
+67,"Processes 2020, 8, 1618",0
+68,r1 = 2.8 × 104 exp,0
+69,"(cid:18)−41, 868",0
+70,RT,0
+71,"(cid:19)
+CAACEtOH − 7.1 × 103 exp",0
+72,"(cid:18)−41, 868",0
+73,RT,0
+74,r2 = 3.15 × 1012 exp,0
+75,"(cid:18)−79, 374",0
+76,RT,0
+77,(cid:19),0
+78,CEOCH2O,0
+79,(cid:19),0
+80,CH2OCEtAc,0
+81,6 of 32,0
+82,-6,0
+83,-7,0
+84,-8,0
+85,2.3. Equipment Model,0
+86,"Aspen Plus V10 simulation environment provides several options to compile a process model.
+In this work, three main types of equipment models were used: chemical reactor, heat exchanger,
+and distillation column/reactive distillation column.",0
+87,"A chemical reactor is simulated by a model of continuous stirred tank reactor (CSTR) which
+assumes ideal mixing along with rate-controlled chemical reaction based on known kinetics. The reactor
+can be operated as an isothermal as well as an adiabatic one. The residence time parameter was used
+to achieve the desired conversion. Valid phases (liquid, vapor, vapor–liquid) for the chemical reaction
+were speciﬁed; in case of esteriﬁcation (5), the chemical reaction rate is expressed by Equation (6) and
+takes place only in the liquid phase.",0
+88,"Heat exchangers were simulated by the Heater and HeatX models, respectively. A shortcut set-up
+was applied to reach the desired stream temperature. Heat integration was applied to improve the
+optimal process design. The minimum stream temperature diﬀerence was set to 10",0
+89,C.,0
+90,◦,0
+91,"A Rigorous RadFrac column model was used for RD modeling as well as for conventional
+distillation. This model allows both EQ and NEQ approaches. Building an NEQ model of reactive
+separation or separation is not as straightforward as it is in the EQ model. The NEQ model requires
+much more reliable parameters compared to the EQ model. Consequently, the NEQ model is more
+diﬃcult to calculate and convergence problems often occur. To improve NEQ model convergence,
+a good initial guess of stage temperature, liquid phase composition, and vapor phase composition have
+to be used. For this purpose, the EQ model of each column was made in the ﬁrst step of the simulation
+using initial column parameters such as the number of theoretical stages (N), reactive zone (NR),
+feed stage position (f ), reﬂux ratio (R). These parameters can be found in the literature [5,15]. Results of
+the EQ model simulation provide a very good starting point for building the NEQ model [19,27].
+Another advantage of ﬁrst building the EQ model is the possibility of faster testing of individual case
+studies [28]. When the suitable case study concept is selected, the NEQ model is built based on the EQ
+model results.",0
+92,"Rate-based set-up must be enabled in the Aspen Plus [26] in the NEQ model. Therefore,
+detailed column internal conﬁguration is required next. A packed column is selected similarly
+to simulation-experimental works [22,28]. Mass and heat transfer correlation methods were selected
+according to the recommendation for the packing type (Rashing Ralu-Ring). Column hydraulics
+was simulated by Aspen Plus built-in hydraulic function assuming correlation for Rashing
+Ralu-Ring packing type. Column internal conﬁguration (internal diameter (d), packing height
+(H), packing dimensions) were set during the calculation procedure with regard to reasonable column
+hydraulics, pressure drop, and approach to ﬂood.",0
+93,"In the case of an RD column, the chemical reaction rate is expressed by Equations (6) and (8).
+A homogeneous catalyst (sulfuric acid) is fed to the column together with acetic acid [17,23].
+The esteriﬁcation reaction (5) is enabled in the reactive zone (NR) only, where acetic acid is presented.
+On the other hand, the hydration reaction (7) is enabled in the whole RD column because ethylene
+oxide reacts with water whenever they meet in the liquid phase. All the above-mentioned column
+parameters (N, NR, f, R, d, H . . . ) were optimized to meet the design criteria of individual columns as
+well as of the whole process.",0
+94,"Processes 2020, 8, 1618",0
+95,7 of 32,0
+96,2.4. Simulation Strategy and Design Speciﬁcation,0
+97,Global simulation strategy is focused on minimizing the number of process units within maximal,0
+98,raw material utilization and minimal energy consumption.,0
+99,"The separation sequence is designed to separate the component with the highest boiling point
+(or to consume it by a reaction); solve energy-intensive separation (azeotropic distillation, decanter with
+recirculation), and to regenerate other process streams (EtAc aqueous solutions). Process integration
+and intensiﬁcation were based on a conventional process case study. Other case studies (RD column
+with a separation unit, RD column with a stripper, and RD column with an auxiliary reaction) were
+derived from the base one. Also, heat integration was considered in all case studies.",0
+100,"input (10 kmol h
+25",0
+101,◦,0
+102,"C; atmospheric pressure.
+Process design speciﬁcations were deﬁned to produce 10 kmol h",0
+103,"The following initial input speciﬁcations were entered for all case studies: equimolar raw material
+−1 of both ethanol and acetic acid); process inlet and outlet streams temperature of
+−1 of pure ethyl acetate (99.9 mol.%),
+prevent ethyl acetate loss in other product streams (full EtAc recovery), separate process by-products
+(water or monoethylene glycol) in equimolar ratio to the main product (EtAc). Moreover, the total
+conversion of all reactants was attempted. Process parameters were optimized while maintaining
+ﬁxed design speciﬁcations. The optimization was based on minimizing vapor ﬂows in the individual
+columns. Subsequently, the economy and safety parameters were evaluated.",0
+104,3. Simulation Results,0
+105,3.1. Conventional Process Set-Up,0
+106,"Most ethyl acetate production plants apply the process described by Riemenschneider (2008) [1,17]
+which consists of a continuous stirred tank reactor (CSTR) and several separation columns. Even though
+the capacity of large plants can be up to about 100,000 tons of EtAc per year [2], this process is problematic
+and ineﬃcient for several reasons [15], separation of the reaction mixture from the CSTR reactor
+being the main problem. As is mentioned in Section 2.1, the azeotropic mixture is formed during the
+separation. Moreover, separation of unreacted acetic acid is an energy-intensive process, even in large
+distillation columns. Overcoming the distillation boundary to produce pure EtAc is reported as the
+next issue. A decanter is most often used for this purpose adding a certain amount of pure water to
+obtain an organic (EtAc rich) and an aqueous phase. Losses of ethyl acetate in the aqueous phase
+and the regeneration of used water have also to be solved. Thus, high recycle ﬂows and large energy
+consumption of this process are inevitable.",0
+107,3.1.1. Flowsheet Design (Figure 1),1
+108,"The conventional set-up consists of four key equipment units. Esteriﬁcation reaction proceeds in
+a CSTR reactor, which is followed by an azeotropic distillation column and two conventional columns.
+Detailed ﬂowsheet with streams attachment is depicted in Figure 1. Raw material streams (AA0
+and ETOH0) are mixed with recycled streams and lead to the adiabatic CSTR reactor (R1). As the
+esteriﬁcation reaction conversion is slightly over 60%, the reaction mixture contains four compounds
+(acetic acid, ethanol, water, and ethyl acetate). Reactor products stream (P1) is then preheated in heat
+exchanger EX1. This mixture is separated in azeotropic distillation column C1 (Figure 1) which has
+two feed streams: reaction mixture from the CSTR (P2) and pure ethyl acetate (AZ) used as azeotropic
+distillation entrainer. The bottom product (W11) contains unreacted acetic acid and water, and it is
+recycled back to the CSTR. The water-ethanol-ethyl acetate azeotropic mixture is obtained as a distillate
+(D11). Pure water is added to overcome the distillation boundary and the mixture (D12) is cooled down
+in heat exchanger EX2. The water phase (H2OL) and organic phase (ORG) are separated in decanter
+DEC (Figure 1). The organic phase contains mainly ethyl acetate. Pure ethyl acetate is separated in
+distillation column C2 as a bottom product (W21). A part of pure ethyl acetate ﬂow is recirculated
+as the azeotropic entrainer (AZ) back to column C1. The ﬁnal product (W22) is cooled down in heat",1
+109,"Processes 2020, 8, 1618",0
+110,8 of 32,0
+111,"exchanger EX7. The C2 column distillate (D21) contains a ternary mixture of water, ethanol, and ethyl
+acetate; it is cooled down in C2 preheater EX3 and recirculated back to the decanter. The water phase
+(H2OL) is rich in unreacted ethanol; thus, it is regenerated in distillation column C3 (Figure 1). The C3
+column feed (F31) is preheated in two heat exchangers: EX4 and EX5. Pure water (W31) is obtained as
+the C3 column bottom product and concentrated ethanol-water mixture is separated in distillate (D31)
+which is cooled down in EX4 and recirculated back to the CSTR. The bottom product (W31) is cooled
+down in EX5 and then divided into water ﬁnal product stream (H2OP1) and water for recirculation
+back to the decanter (H2OREC)",1
+112,3.1.2. Process Simulation Results & Equipment Parameters of Conventional Process Set-Up,1
+113,Process simulation of the material balance of the conventional process depicted in Figure 1 is,1
+114,"listed in Table 1. Energy and economy aspects are discussed in Sections 4.1 and 4.2, respectively.",0
+115,"The CSTR (Figure 1) reactor is designed as an adiabatic one with a residence time of 200 min [15].
+The esteriﬁcation reaction is described by reaction kinetics, Equation (6). Lower acetic acid conversion
+is achieved compared to that reported in the literature (53.0% compared to 63.0%). This is caused by the
+connection of recycled streams (D32, W12) in which, in addition to EtAc, water is present. Therefore,
+conversion in the CSTR reactor is slightly shifted towards the reactants side. The volume of the liquid
+phase in CSTR is calculated to be 8.9 m3.",1
+116,"Separation of unreacted acetic acid is the primary function of the C1 column (Figure 1) employing
+azeotropic distillation to make this process easier and less energy-intensive. No azeotropic agent
+selection was done as a suitable agent (EtAc) is produced in the process directly. The ratio of recirculated
+(AZ) and produced EtAc (W22) is set to 1. Such an amount of recirculated EtAc is suﬃcient to ensure
+desired C1 column speciﬁcations at reasonable energy demands. If the ratio is below 0.8, azeotropic
+distillation does not run. As EtAc forms a ternary azeotrope with water and ethanol at the lowest boiling
+temperature in the system, separation of AA in the bottom product (W11) is possible. Total recovery of
+AA in the bottom product (W11) is required (less than 0.001 mol.% of AA is allowed in the distillate
+(D11)). The desired purity of AA (W11) was set to 70 mol.% based on recycle ﬂow (W11) and energy
+consumption optimization. Consequently, the C1 column reboiler temperature was below 100
+C.
+Also, column hydraulics is an issue due to diﬀerent liquid ﬂows in the rectifying and stripping
+section, which is caused by two feed streams and process intensiﬁcation via azeotropic distillation.
+Therefore, two packing diameters (25 mm and 35 mm) are used within one column diameter (1.0 m).
+Designed C1 column parameters are listed in Table 2.",1
+117,◦,0
+118,"The next important separation step takes place in the decanter. Water to ethyl acetate mole ﬂow
+ratio in the stream (D13) is a crucial parameter of the decanter in overcoming the distillation boundary
+and thus allowing separation of pure EtAc. The ratio was set to 4.1 and therefore the EtAc concentration
+increased from 56.6 mol.% (D11) to 76.7 mol.% (ORG), Table 1. EtAc recovery in the decanter of over
+90% was achieved, which is common in the separation of two liquid phases [5,22].",1
+119,"Distillation column C2 (Figure 1) is designed for pure EtAc (99.9 mol.%) separation, which is
+a highly energy consuming process as EtAc–EtOH–water ternary azeotrope is formed in the distillate
+−1 of pure EtAc in the
+(D21) and it has to be recirculated back to the decanter. To obtain 20 kmol h
+−1 of organic phase ﬂow (ORG) from the decanter is
+C2 bottom product (W21), more than 41 kmol h
+needed and thus only 63.2% EtAc recovery can be achieved in the C2 column due to the distillation
+boundary and the azeotrope composition. A high reﬂux ratio is also required because the ternary
+azeotrope and pure ethyl acetate boiling point temperature are close. Designed C2 column parameters
+are listed in Table 2.",1
+120,"Processes 2020, 8, 1618",0
+121,9 of 32,0
+122,Figure 1. Ethyl acetate production via conventional process set-up.,1
+123,"Processes 2020, 8, 1618",0
+124,10 of 32,0
+125,Table 1. Material balance of designed conventional process set-up (Figure 1).,0
+126,ETOH0,0
+127,F11,0
+128,F21,0
+129,R1,0
+130,P1,0
+131,P2,0
+132,10,0
+133,22.64,0
+134,-,0
+135,"0.8325
+0.1673
+0.0002
+39.64
+101.3
+1.44",0
+136,"19.88
+0.0869",0
+137,-,0
+138,"0.1301
+0.7830
+29.38
+101.3
+1.19",0
+139,"42.52
+0.0407
+0.4433
+0.1499
+0.3662
+36.98
+101.3
+2.65",0
+140,"42.52
+0.2756
+0.2083
+0.3848
+0.1312
+39.01
+101.3
+2.66",0
+141,"42.52
+0.2756
+0.2083
+0.3848
+0.1312
+54.24
+101.3
+2.72",0
+142,−1],0
+143,"˙n [kmol h
+xH2O
+xAA
+xEtAc
+xEtOH
+◦
+T [
+C]
+P [kPa]
+.
+V [m3 h",0
+144,−1],0
+145,−1],0
+146,"˙n [kmol h
+xH2O
+xAA
+xEtAc
+xEtOH
+◦
+T [
+C]
+P [kPa]
+.
+V [m3 h",0
+147,−1],0
+148,AA0,0
+149,10,0
+150,-,0
+151,1,0
+152,"-
+-",0
+153,"25.00
+101.3
+0.56",0
+154,W22,0
+155,"10.00
+0.0003",0
+156,-,0
+157,"0.9990
+0.0007
+76.83
+101.3
+1.06",0
+158,"-
+-
+-",0
+159,"1.0000
+25.00
+101.3
+0.58",0
+160,W23,0
+161,"10.00
+0.0003",0
+162,-,0
+163,"0.9990
+0.0007
+25.00
+101.3
+0.98",0
+164,W11,0
+165,12.65,0
+166,-,0
+167,"0.7000
+0.2996
+0.0004
+98.20
+101.3
+0.95",0
+168,W12,0
+169,12.65,0
+170,-,0
+171,"0.7000
+0.2996
+0.0004
+49.01
+101.3
+0.88",0
+172,D11,0
+173,D12,0
+174,D13,0
+175,"39.86
+0.2940",0
+176,-,0
+177,"0.5660
+0.1400
+70.02
+101.3
+2.90",0
+178,"187.78
+0.7608",0
+179,-,0
+180,"0.1856
+0.0536
+48.97
+101.3
+6.71",0
+181,"187.78
+0.7608",0
+182,-,0
+183,"0.1856
+0.0536
+25.00
+101.3
+6.50",0
+184,ORG,0
+185,"41.21
+0.1604",0
+186,-,0
+187,"0.7672
+0.0724
+25.00
+101.3
+3.37",0
+188,F2,0
+189,"41.21
+0.1604",0
+190,-,0
+191,"0.7672
+0.0724
+41.79
+101.3
+3.45",0
+192,W21,0
+193,"20.00
+0.0003",0
+194,-,0
+195,"0.9990
+0.0007
+76.83
+101.3
+2.12",0
+196,AZ,0
+197,"10.00
+0.0003",0
+198,-,0
+199,"0.9990
+0.0007
+76.83
+101.3
+1.06",0
+200,D21,0
+201,D22,0
+202,H2OL,0
+203,BYPASS,0
+204,F31,0
+205,F32,0
+206,F33,0
+207,D31,0
+208,D32,0
+209,W31,0
+210,W32,0
+211,H2OREC H2OIN H2OP1,0
+212,"21.21
+0.3114",0
+213,-,0
+214,"0.5487
+0.1399
+70.02
+101.3
+1.51",0
+215,"21.21
+0.3114",0
+216,-,0
+217,"0.5487
+0.1399
+35.00
+101.3
+1.43",0
+218,"146.57
+0.9296",0
+219,-,0
+220,"0.0220
+0.0484
+25.00
+101.3
+3.18",0
+221,"29.31
+0.9296",0
+222,-,0
+223,"0.0220
+0.0484
+25.00
+101.3
+0.64",0
+224,"117.26
+0.9296",0
+225,-,0
+226,"0.0220
+0.0484
+25.00
+101.3
+2.55",0
+227,"117.26
+0.9296",0
+228,-,0
+229,"0.0220
+0.0484
+30.34
+101.3
+2.56",0
+230,"117.26
+0.9296",0
+231,-,0
+232,"0.0220
+0.0484
+72.79
+101.3
+59.33 a",0
+233,"9.87
+0.1749",0
+234,-,0
+235,"0.2619
+0.5632
+71.69
+101.3
+0.65",0
+236,"9.87
+0.1749",0
+237,-,0
+238,"0.2619
+0.5632
+35.00
+101.3
+0.61",0
+239,"107.38
+0.9990",0
+240,"107.38
+0.9990",0
+241,"97.37
+0.9990",0
+242,"0.02
+1.0000",0
+243,"10.00
+0.9990",0
+244,"-
+-",0
+245,"0.0010
+99.34
+101.3
+2.11",0
+246,"-
+-",0
+247,"0.0010
+40.34
+101.3
+1.98",0
+248,"-
+-",0
+249,"0.0010
+40.34
+101.3
+1.80",0
+250,"-
+-
+-",0
+251,"25.00
+101.3
+0.00",0
+252,"-
+-",0
+253,"0.0010
+40.34
+101.3
+0.18",0
+254,a vapor–liquid mixture.,0
+255,"Processes 2020, 8, 1618",0
+256,11 of 32,0
+257,Table 2. Parameters of designed columns—conventional set-up (Figure 1).,0
+258,"N
+f P12
+f AZ
+f F2
+f F33
+DS1
+DS2
+R
+P [kPa]
+Column geometry",0
+259,"Column section 1
+N1
+Packing type
+d1 [m]
+H1 [m]
+HETP1 [m]
+∆P1 [kPa]
+Column section 2
+N2
+Packing type
+d2 [m]
+H2 [m]
+HETP2 [m]
+∆P2 [kPa]",0
+260,C1,0
+261,"60
+35
+34
+-
+-",0
+262,"−5
+xD1(AA) = 10
+xW11(AA) = 0.70",0
+263,"2.00
+101.3",0
+264,"2–40
+39",0
+265,C2,0
+266,"60
+-
+-
+36
+-",0
+267,C3,0
+268,"30
+-
+-
+-
+18",0
+269,xW21(EtAc) = 0.999,0
+270,-,0
+271,"5.00
+101.3",0
+272,"2–59
+58",0
+273,"xW31(H2O) = 0.999
+xD31(EtOH) = 0.56",0
+274,"4.00
+101.3",0
+275,"2–29
+28",0
+276,RALU-RING 25 mm,0
+277,RALU-RING 25 mm,0
+278,RALU-RING 38 mm,0
+279,"1.0
+2 × 4.0
+0.21
+2.0",0
+280,41–59,0
+281,19,0
+282,RALU-RING 38 mm,0
+283,"1.0
+4.0
+0.21
+0.9",0
+284,"1.20
+2 × 3.5
+0.12
+1.8
+-
+-
+-
+-
+-
+-
+-",0
+285,"0.60
+2 × 4.0
+0.29
+0.8
+-
+-
+-
+-
+-
+-
+-",0
+286,"The aqueous phase from the decanter (H2OL) contains also ethanol and ethyl acetate. A part
+of this mixture is recirculated back to the decanter directly (BYPASS) as the water content is above
+90 mol.%. Into the decanter (DEC), a maximum of 20% of the aqueous phase stream (H2OL) can be
+directly recirculated, the remaining part of the aqueous phase has to be regenerated in distillation
+column C3 (Figure 1). The C3 column is designed to separate pure water as a bottom product (W31)
+and distillate containing all remaining ethanol and ethyl acetate (D31). Column design speciﬁcations
+are set for total EtOH recovery in the distillate and 99.9 mol.% purity of water in the bottom product.
+Designed C3 column parameters are listed in Table 2.",1
+287,3.2. Reactive Distillation Column with a Separation Unit,1
+288,"Integration and intensiﬁcation of the convention process set-up can be achieved by combining
+reaction and separation together via the reactive distillation process. Several RD plants for ethyl
+acetate production are operated worldwide with the reported individual plant annual production
+capacity of around 20,000 tons of EtAc [4,15]. As RD is a multifunctional reactor concept combining the
+mechanism of reaction and separation in one single unit, beneﬁts such as the reduction of equipment
+and plant size, improvement of process eﬃciency, and, consequently, better process economy are
+expected [19]. In this case study, the main beneﬁt expected is the reduction of the number of equipment
+units and overcoming the distillation boundary which limits the conventional set-up. CSTR, EX1,
+and C1 columns are put together into an RD column. As a result, one main equipment unit (CSTR) and
+two heat exchangers are removed from the process compared to the conventional set-up (Figure 1).",1
+289,3.2.1. Flowsheet Design (Figure 2),1
+290,"The reactive distillation set-up is derived from the conventional one (Figure 1). Reaction and
+separation are put together in one column (compare to three equipment units: CSTR, EX1, and C1,",1
+291,"Processes 2020, 8, 1618",0
+292,12 of 32,0
+293,"in Figure 1). A detailed process scheme is depicted in Figure 2. The reactive distillation column has
+two feed streams: acetic acid feed (AA0) and mixed ethanol feed (ETOH). Raw ethanol is added to the
+process in the (ETOH0) stream. All acetic acid is consumed in the RD. Therefore, RD distillate (D11)
+contains a nearly azeotropic mixture of EtAc-EtOH-water, while the bottom product (W11) contains
+a water-ethanol mixture (Figure 2). The distillate composition was from a diﬀerent distillation region
+than that of distillate in the conventional process set-up (D11 in Figure 1). Therefore, stream (D11 in
+Figure 2) can be separated directly. Distillation column C1 is deployed to separate the ﬁnal pure EtAc
+(Figure 2). The C1 column bottom product (W21) contains pure EtAc which is cooled down in heat
+exchanger EX5. The EtAc-EtOH-water ternary azeotrope is present in the C1 column distillate (D21 in
+Figure 2) Thus, columns C1 column (Figure 2) and C2 in conventional process set-up (Figure 1) are
+operated in the same way. The distillate (D21) is cooled down in heat exchangers EX1 and EX2 and
+fed into decanter DEC to extract EtAc (Figure 2). Pure water is fed to DEC; organic phase (ORG1)
+and aqueous phase (H2OL) are separated. The organic phase (ORG1) is preheated in EX1 and mixed
+with (D11). The aqueous phase (H2OL) contains some amount of EtOH and EtAc and therefore it
+has to be regenerated. The (H2OL) stream is mixed with the RD column bottom product (W11) and
+preheated in heat exchanger EX3 (Figure 2). For water regeneration, distillation column C2 is used
+(Figure 2). All EtOH and EtAc are obtained in the C2 distillate (D31) which is recirculated back to the
+RD column. Pure water is separated in the C2 bottom product (W31) and it is cooled down in EX3
+and EX4 (Figure 2). An equimolar ratio of water to EtAc product (W22) is separated (H2OP) as a ﬁnal
+by-product and the rest of the water is recirculated back to the decanter (H2OREC).",1
+294,3.2.2. Process Simulation & Equipment Parameters of Reactive Distillation Column with a Separation Unit,1
+295,"The reactive distillation column was designed according to the philosophy described in Sections 2.3
+and 2.4. However, column operating conditions are diﬀerent. As the esteriﬁcation reaction (5) proceeds,
+reactants conversion (acetic acid, ethanol) has to be considered. From an energetic point of view,
+consumption of all acetic acid is the most advantageous as no acetic acid is present in the distillate or the
+−5,
+bottom product of the RD column (Figure 2). To achieve total acetic acid conversion (xD11(AA) = 10
+−5), the RD column parameters were optimized including: acetic acid feed (f AA) and
+xW11(AA) = 10
+ethanol feed (f EtOH) position; reﬂux ratio (R); number of theoretical stages (N). The reactive zone (NR)
+is introduced from f AA to a reboiler. However, if the NEQ model is used to simulate the RD column,
+the packing height (H), column internal diameter (d) as well as the packing type are crucial parameters.
+Moreover, RD column hydraulics is limited by the reﬂux ratio with regard to design speciﬁcations.
+At reﬂux ratios below 2, AA is present in the distillate; on the other hand, at reﬂux ratios above 3.5,
+a part of the column is ﬂooded and total AA conversion cannot be achieved. Final RD column design
+parameters after the optimization are listed in Table 4.",1
+296,"Separation of pure EtAc is performed in distillation column C1 (Figure 2) designed in the same
+way as the C2 column in the conventional set-up (C2 in Figure 1). The ethyl acetate purity of 99.9 mol.%
+in the bottom product (W21) is set as the design criterion. Designed column (C1 in Figure 2) parameters
+are listed in Table 4. Overheated vapors from the C1 column contain almost 54 mol.% of EtAc (Table 3)
+which is extracted in decanter DEC (Figure 2). The same amount of water is added to DEC as in the
+conventional process (Figure 1). The separated organic phase (ORG1) contains 75.5 mol.% of EtAc and
+the overall EtAc yield in DEC is 90%.",1
+297,"The aqueous phase from decanter (H2OL) as well as the RD column bottom product (W11) are
+regenerated in the C2 distillation column (Figure 2) employed for total EtOH recovery. This separation
+is direct as pure water can be obtained in the bottom product (W31) and ethanol-water mixture in
+the distillate (D31). The optimum ethanol content in the distillate is determined to be 62 mol.%.
+Energy requirements are acceptable at the reﬂux ratio of 2.58, and the EtOH regeneration proceeds
+properly. The separation results and internal geometry of the C2 column are listed in Table 4.",1
+298,"Processes 2020, 8, 1618",0
+299,13 of 32,0
+300,Figure 2. Ethyl acetate production via reactive distillation column with a separation unit.,1
+301,"Processes 2020, 8, 1618",0
+302,14 of 32,0
+303,−1],0
+304,"˙n [kmol h
+xH2O
+xAA
+xEtAc
+xEtOH
+T [
+C]
+P [kPa]
+.
+V [m3 h",0
+305,◦,0
+306,−1],0
+307,−1],0
+308,"˙n [kmol h
+xH2O
+xAA
+xEtAc
+xEtOH
+T [
+C]
+P [kPa]
+.
+V [m3 h",0
+309,◦,0
+310,−1],0
+311,Table 3. Material balance of designed RD column with a separation unit (Figure 2).,0
+312,AA0,0
+313,10,0
+314,-,0
+315,1,0
+316,"-
+-",0
+317,"25.00
+101.3
+0.56",0
+318,ETOH0 ETOH,0
+319,D11,0
+320,W11,0
+321,W12,0
+322,10,0
+323,"-
+-
+-",0
+324,"1.0000
+25.00
+101.3
+0.58",0
+325,"18.66
+0.0909",0
+326,-,0
+327,"0.0855
+0.8236
+47.88
+101.3
+1.11",0
+328,"20.94
+0.2666",0
+329,-,0
+330,"0.5536
+0.1798
+70.02
+101.3
+1.54",0
+331,"7.72
+0.7918",0
+332,"-
+-",0
+333,"0.2082
+82.47
+101.3
+0.22",0
+334,"77.34
+0.9096",0
+335,-,0
+336,"0.0206
+0.0697
+31.20
+101.3
+1.75",0
+337,W13 a,0
+338,"77.34
+0.9096",0
+339,-,0
+340,"0.0206
+0.0698
+72.04
+101.3
+19.65a",0
+341,D31,0
+342,W31,0
+343,W32,0
+344,W33,0
+345,H2OP H2OREC,0
+346,H2OIN H2ODEC H2OL,0
+347,"8.66
+0.1958",0
+348,-,0
+349,"0.1842
+0.6200
+72.65
+101.3
+0.53",0
+350,"68.70
+0.9995",0
+351,"68.70
+0.9995",0
+352,"68.70
+0.9995",0
+353,"10.02
+0.9995",0
+354,"58.67
+0.9995",0
+355,"0.01
+1.0000",0
+356,"58.69
+0.9995",0
+357,"-
+-",0
+358,"0.0005
+99.50
+101.3
+1.35",0
+359,"-
+-",0
+360,"0.0005
+45.00
+101.3
+1.27",0
+361,"-
+-",0
+362,"0.0005
+25.00
+101.3
+1.25",0
+363,"-
+-",0
+364,"0.0005
+25.00
+101.3
+0.18",0
+365,"-
+-",0
+366,"0.0005
+25.00
+101.3
+1.06",0
+367,"-
+-
+-",0
+368,"25.00
+101.3
+0.00",0
+369,"-
+-
+-",0
+370,"25.00
+101.3
+1.06",0
+371,"69.62
+0.9227",0
+372,-,0
+373,"0.0229
+0.0544
+25.00
+101.3
+1.53",0
+374,ORG1 ORG2,0
+375,F2,0
+376,W21,0
+377,W22,0
+378,D21,0
+379,D22,0
+380,D23,0
+381,"19.66
+0.1632",0
+382,-,0
+383,"0.7558
+0.0811
+25.00
+101.3
+1.59",0
+384,"19.66
+0.1632",0
+385,-,0
+386,"0.7558
+0.0811
+60.00
+101.3
+1.68",0
+387,"40.60
+0.2165",0
+388,-,0
+389,"0.6515
+0.1320
+64.47
+101.3
+3.21",0
+390,"10.01
+0.0002",0
+391,-,0
+392,"0.9990
+0.0008
+76.84
+101.3
+1.06",0
+393,"10.01
+0.0002",0
+394,-,0
+395,"0.9990
+0.0008
+25.00
+101.3
+0.98",0
+396,"30.59
+0.2873",0
+397,-,0
+398,"0.5378
+0.1749
+70.01
+101.3
+2.20",0
+399,"30.59
+0.2873",0
+400,-,0
+401,"30.59
+0.2873",0
+402,-,0
+403,"0.5378
+0.1749
+25.00
+101.3
+2.06",0
+404,"0.5378
+0.1749
+45.84
+101.3
+2.12
+a vapor–liquid mixture.",0
+405,"Processes 2020, 8, 1618",0
+406,15 of 32,0
+407,Table 4. Parameters of designed columns—reactive distillation (RD) column with a separation unit (Figure 2).,0
+408,"N
+NR
+f A00
+f ETOH0
+f F2
+f W13
+DS1
+DS2
+R
+P [kPa]
+Column geometry",0
+409,"Column section 1
+N1
+Packing type
+d1 [m]
+H1 [m]
+HETP1 [m]
+∆P1 [kPa]
+Column section 2
+N2
+Packing type
+d2 [m]
+H2 [m]
+HETP2 [m]
+∆P2 [kPa]",0
+410,RD,0
+411,100,0
+412,25–100,0
+413,"25
+70
+-
+-",0
+414,"−5
+xD11(AA) = 10
+−5
+xW11(AA) = 10",0
+415,"2.40
+101.3",0
+416,"2–75
+74",0
+417,C1,0
+418,"60
+-
+-
+-
+38
+-",0
+419,C2,0
+420,"50
+-
+-
+-
+-
+32",0
+421,xW21(EtAc) = 0.999,0
+422,-,0
+423,"5.00
+101.3",0
+424,"2–59
+58",0
+425,"xW31(H2O) = 0.999
+xD31(EtOH) = 0.62",0
+426,"2.58
+101.3",0
+427,"2–49
+48",0
+428,RALU-RING 25 mm,0
+429,RALU-RING 25 mm,0
+430,RALU-RING 25 mm,0
+431,"0.75
+3 × 3.0
+0.12
+3.1",0
+432,76–99,0
+433,24,0
+434,RALU-RING 25 mm,0
+435,"0.75
+3.5
+0.15
+0.8",0
+436,"1.30
+2 × 3.5
+0.12
+2.8
+-
+-
+-
+-
+-
+-
+-",0
+437,"0.40
+2 × 3.0
+0.13
+1.6
+-
+-
+-
+-
+-
+-
+-",0
+438,The material balance of the whole process simulation is presented in Table 3. Energy and economy,0
+439,"aspects are discussed in Sections 4.1 and 4.2, respectively.",0
+440,3.3. Reactive Distillation Column with a Stripper,1
+441,"Even though the RD column with a separation unit (Figure 2) represents process integration and
+intensiﬁcation compared to the conventional set-up (Figure 1), there is still a place for improvement such
+as the reduction of the large ﬂow of the recycled stream to the decanter or reduction of equipment number.
+As the reaction in the RD process has overcome the distillation boundary, it is possible to remove the
+decanter and to solve azeotropic mixture regeneration via distillation. Also, the ethanol-water mixture
+from the RD column (W11 in Figure 2) can be easily separated into pure water (high boiling point) and
+ethanol-water mixture at high ethanol concentrations. Therefore, the ﬂowsheet of the RD column with
+a separation unit (Figure 2) was modiﬁed: C2 column is integrated into the bottom part of the RD
+column; decanter and heat exchangers EX1 and EX2 are removed; C1 column condenser is removed
+and overheated vapors from C1 are recirculated back to the RD column (Figure 3). Thus, the process
+scheme in Figure 3 contains two columns and three heat exchangers less than the process scheme
+shown in Figure 2.",1
+442,"The main idea of such integration is based on the thermal coupling. Two columns are thermally
+coupled if a vapor (liquid) stream is sent from the ﬁrst column to the second one and then a return
+liquid (vapor) stream is set between the same columns. These streams, when introduced at the top or
+bottom of a column, provide (at least partial) reﬂux or boil-up to this column [42]. This approach is
+commonly used in the petrochemical industry [43,44].",1
+443,"Processes 2020, 8, 1618",0
+444,16 of 32,0
+445,Figure 3. Ethyl acetate production via reactive distillation column with a stripper.,1
+446,"Processes 2020, 8, 1618",0
+447,17 of 32,0
+448,3.3.1. Flowsheet Design (Figure 3),1
+449,"This process set-up is composed of two columns: reactive distillation column RD and stripper
+column C1 (Figure 3). The reactive distillation column has three feed streams: (AA0) consists of pure
+acetic acid and is led to the upper section of the RD column; (ETOH0) contains pure ethanol and is
+attached to the bottom section of the RD column; and overheated vapors (AZ1) from stripper C1 fed in
+the middle of the RD column (Figure 3). The RD column has two product streams: liquid distillate
+(D1) brought to the head of stripper C1; liquid bottom product (W11) which is cooled down in heat
+exchanger EX1. The stripper column has only one product stream (W21), which is cooled down in heat
+exchanger EX2.",1
+450,3.3.2. Process Simulation and Equipment Parameters of Reactive Distillation Column with a Stripper,1
+451,"The main task in designing an RD column with a stripper (RDS in Figure 3) is to ensure total
+conversion of acetic acid in the RD column. Thus, no acetic acid should be present in the distillate or
+bottom product, the same as in the RD column with a separation unit concept (Figure 2). To meet this
+requirement, a high number of theoretical stages, suitable position of feed stages, proper RD column
+reﬂux ratio, and amount of recirculated vapors have to be considered. In contrast to the RD column
+with a separation unit (Figure 2), in the case of an RD column with a stripper (Figure 3), three feed
+streams are attached: two subcooled liquid streams and one overheated vapor stream (AZ1 in Figure 3).
+Composition of the (AZ1) stream is expected to be close to the azeotropic mixture EtAc-EtOH-water)
+and therefore is the (AZ1) stream feed stage (f AZ1) located in the middle part of the main RD column,
+between the acetic acid feed stage (f AA0) and the ethanol feed stage (f EtOH0). Acetic acid conversion is
+signiﬁcantly aﬀected by a change of f AZ1. If f AZ1 is attached above f AA0, the RD column does not work
+at all as the high amount of ethanol in (AZ1) stream cannot be consumed in the reaction (5). On the
+other hand, if f AZ0 is attached below f EtOH0, the esteriﬁcation reaction (5) is slowed down because
+of an excess of its products (EtAc and water) in the stripping section of the RD column. The reﬂux
+−5); however, it is also signiﬁcantly
+ratio is calculated based on the design speciﬁcation (xD1(AA) = 10
+inﬂuenced by stripper C1. Intense recirculation of overheated vapors leads to partial boil-up in the RD
+column while the RD column distillate (D1 in Figure 3) leads to liquid reﬂux of stripper C1. The vapors
+ﬂow (˙nAZ1 in Table 5) is the key process parameter along with the feed stage position (f AZ1). At least
+−1 of overheated vapor are needed to operate the process successfully. At lower vapor
+130 kmol h
+ﬂow, desired product purity (xW11(H2O) = 0.999 and xW21(EtAc) = 0.999) cannot be achieved either in
+−1,
+the RD column or in the C1 striper. A slightly higher amount of recirculated vapors (135.5 kmol h
+see Table 5) is used to ensure process stability and reasonable column hydraulics.",1
+452,Table 5. Material balance of the designed RD column with a stripper (RDS) process (Figure 3).,1
+453,"˙n [kmol h
+xH2O
+xAA
+xEtAc
+xEtOH
+T [
+C]
+P [kPa]
+.
+V [m3 h",1
+454,◦,0
+455,−1],0
+456,−1],0
+457,AA0,0
+458,10,0
+459,-,0
+460,1,0
+461,"-
+-",0
+462,"25.00
+101.3
+0.56",0
+463,ETOH0 W11,0
+464,10,0
+465,"-
+-
+-",0
+466,"1.0000
+25.00
+101.3
+0.58",0
+467,"10.00
+0.9990
+0.0008",0
+468,-,0
+469,"0.0002
+99.60
+101.3
+0.20",0
+470,W12,0
+471,"10.00
+0.9990
+0.0008",0
+472,-,0
+473,"0.0002
+25.00
+101.3
+0.18",0
+474,D1,0
+475,"145.54
+0.2738",0
+476,-,0
+477,"0.5902
+0.1360
+70.04
+101.3
+10.88",0
+478,AZ1 a,0
+479,"135.54
+0.2940",0
+480,-,0
+481,"0.5600
+0.1460
+70.04
+101.3",0
+482,3740.18 a,0
+483,W21,0
+484,"10.00
+0.0002",0
+485,-,0
+486,"0.9990
+0.0008
+76.84
+101.3
+1.06",0
+487,W22,0
+488,"10.00
+0.0002",0
+489,-,0
+490,"0.9990
+0.0008
+25.00
+101.3
+0.98",0
+491,a overheated vapor.,0
+492,"As stated above, various vapor ﬂows occur in the RD column and a diﬀerent column design is
+required when overheated vapor stream feed is present. Consequently, a RD column with two diﬀerent
+diameters is used; wider column internal diameter is used in the upper section (d1 = 1.15 m) compared",0
+493,"Processes 2020, 8, 1618",0
+494,18 of 32,0
+495,"to the bottom section (d2 = 0.65 m). Sections are divided by the (AZ1) feed stream. Detailed results are
+presented in Table 6.",1
+496,"The design of the C1 stripper column (Figure 3) is similar to that of columns for EtAc separation
+in previous case studies (C2 column in the conventional set-up (Figure 1) and C1 column in the RD
+column with a separation unit (Figure 2) but without the column condenser. Therefore, the C1 stripper
+column is composed of a column tower and a reboiler only. The C1 column (Figure 3) liquid reﬂux is
+directly dependent on the RD column distillate ﬂow (D11). Some diﬀerences in the column geometry
+can be observed compared to the previous case studies. Column diameter and overall packing height
+increased due to the larger ﬂow. The column parameters are listed in Table 6.",1
+497,Complete material balance of RDS (Figure 3) is presented in Table 5. Energetic aspects of the RDS,1
+498,conﬁguration are discussed in Section 4.1 in more detail.,1
+499,Table 6. Parameters of designed columns—RDS (Figure 3).,0
+500,"N
+NR
+f AA0
+f AZ1
+f EtOH0
+f D1
+DS1
+DS2
+R
+P [kPa]
+Column geometry",0
+501,"Column section 1
+N1
+Packing type
+d1 [m]
+H1 [m]
+HETP1 [m]
+∆P1 [kPa]
+Column section 2
+N2
+Packing type
+d2 [m]
+H2 [m]
+HETP2 [m]
+∆P2 [kPa]",0
+502,RD,0
+503,100,0
+504,30–100,0
+505,"30
+45
+60
+-",0
+506,"−5
+xD1(AA) = 10
+xW11(H2O) = 0.999",0
+507,"0.32
+101.3",0
+508,"2–44
+43",0
+509,C1,0
+510,"60
+-
+-
+-
+-
+1",0
+511,xW21(EtAc) = 0.999,0
+512,"-
+-",0
+513,101.3,0
+514,"1–59
+59",0
+515,RALU-RING 25 mm,0
+516,RALU-RING 25 mm,0
+517,"1.15
+3 × 3.4
+0.24
+3.6",0
+518,45–99,0
+519,55,0
+520,RALU-RING 15 mm,0
+521,"0.65
+3 × 4.0
+0.22
+2.4",0
+522,"1.30
+3 × 3.0
+0.15
+1.7
+-
+-
+-
+-
+-
+-
+-",0
+523,3.4. Reactive Distillation Column with an Auxiliary Reaction,1
+524,"The RD column with a stripper set-up (Figure 3) has reduced the number of equipment units
+signiﬁcantly compared to the conventional process set-up (Figure 1) and the RD column with
+a separation unit (Figure 2). Further process integration and intensiﬁcation is limited by the presence
+of water. As the ternary azeotrope EtAc-EtOH-water is formed, at least two columns (RDS) are needed
+for its separation. Moreover, equilibrium esteriﬁcation reaction (5) conversion is suppressed by the
+increasing concentration of products. Therefore, the removal of water as a by-product is attempted to
+intensify the process and reduce the number of equipment units.",1
+525,"Water can be consumed by an auxiliary chemical reaction [23]. If Ethylene oxide (EO) hydration
+is applied as the auxiliary chemical reaction; the ternary azeotrope is removed and another valuable
+product, monoethylene glycol (MEG), is obtained. The idea is derived from industrial glycol production.",1
+526,"Processes 2020, 8, 1618",0
+527,19 of 32,0
+528,"An RD column with total reﬂux and selective ethylene oxide hydration is used to obtain the desired
+glycol in the RD column bottom product [38,41].",1
+529,"Such an innovative approach was ﬁrst tested by Tavan [23] who used the simulation environment
+of Aspen HYSYS. However, inaccurate results can be obtained because of the presence of acetic acid.
+The Aspen Plus software is more suitable for the simulation of processes with organic acids as its built-in
+thermodynamic model NRTL-HOC, omitted in HYSYS [26], can be used. In this paper, a rigorous NEQ
+model of the RD column has been build and the RD column internals have been designed in more
+detail providing more accurate simulation results compared to the EQ model used by Tavan [23].",1
+530,3.4.1. Flowsheet Design (Figure 4),1
+531,"The last ﬂowsheet contains only one column (Figure 4) with three feed streams: raw acetic acid
+(AA0) is fed to the top section; raw ethanol (ETOH0) is fed to the middle section and pure ethylene
+oxide (EO) is fed to the lower part of the RD column. As this set-up is fully integrated and intensiﬁed,
+there are two product streams only: distillate (D1) contains pure EtAc and bottom product (W1)
+contains monoethylene glycol. Both product streams are cooled down in heat exchangers EX1 and
+EX2, respectively (Figure 4).",1
+532,Figure 4. Ethyl acetate production via reactive distillation column with an auxiliary reaction.,1
+533,"3.4.2. Process Simulation and Equipment Parameters of Reactive Distillation Column with
+Auxiliary Reaction",1
+534,"The design and simulation of the RD column with an auxiliary reaction (RDAR) are depicted
+in Figure 4. Despite the simplicity of the material balance of the overall system (Table 7),
+complex optimization is required to meet the design criteria (xD1(EtAc) = 0.999, xW1(MEG) = 0.999).
+Feed stage position of inlet streams (f AA, f EtOH, f EO), reﬂux ratio (R), and column internal design (d, H)
+are the key parameters.",1
+535,Two chemical reactions are employed: esteriﬁcation reaction (5) takes place from f AA to RD,1
+536,"column reboiler (NR1), and hydration (7) in the whole column (NR2).",1
+537,"The acetic acid feed stage (f AA) is located in the upper section of the column; the ethanol feed stage
+(f EtOH) is located at the bottom of the RD column like in all previous case studies. The ethylene oxide
+feed stage (f EO) has to be placed so that water is rapidly consumed by the auxiliary reaction. Based on
+previous case studies, the highest water concentration is under f EtOH. Therefore, f EO is attached at the
+bottom of the RD column, Table 8. If the (EO) stream is attached above f AA or between f AA and f EtOH,",1
+538,"Processes 2020, 8, 1618",0
+539,20 of 32,0
+540,"a large amount of EO passes into the distillate and its conversion is very low. The hydration reaction (7)
+is much faster than esteriﬁcation (5), however, hydration proceeds in the liquid phase only. Therefore,
+EO (gas) diﬀusion to the liquid phase is the process rate limiting factor. The diﬀusion rate is inﬂuenced
+by several aspects; however, the key one is the column hydraulics. If the EO feed stage is attached to
+the upper part of the column, the column can operate with high residence time and at a high reﬂux
+ratio only, which is not economical, and obtaining the desired product purity is also questionable.",1
+541,Table 7. Material balance of designed RD column with an auxiliary reaction (Figure 4).,1
+542,−1],0
+543,"˙n [kmol h
+xH2O
+xAA
+xEtAc
+xEtOH
+xEO
+xMEG
+◦
+T [
+C]
+P [kPa]
+.
+V [m3 h",0
+544,−1],0
+545,AA0,0
+546,10,0
+547,-,0
+548,1,0
+549,"-
+-
+-
+-",0
+550,"25.00
+101.3
+0.56",0
+551,ETOH0,0
+552,10,0
+553,EO,0
+554,10,0
+555,"-
+-
+-",0
+556,1,0
+557,"-
+-",0
+558,"25.00
+101.3
+0.58",0
+559,"-
+-
+-
+-",0
+560,1,0
+561,-,0
+562,"25.00
+101.3
+241.61 a",0
+563,a gas.,0
+564,D1,0
+565,10,0
+566,"-
+-",0
+567,"0.9993
+0.0004
+0.0003",0
+568,-,0
+569,"76.81
+101.3
+1.06",0
+570,D2,0
+571,10,0
+572,"-
+-",0
+573,"0.9993
+0.0004
+0.0003",0
+574,-,0
+575,"25.00
+101.3
+0.98",0
+576,W1,0
+577,10,0
+578,-,0
+579,"0.0004
+0.0003",0
+580,"-
+-",0
+581,"0.9993
+194.63
+101.3
+0.65",0
+582,W2,0
+583,10,0
+584,-,0
+585,"0.0004
+0.0003",0
+586,"-
+-",0
+587,"0.9993
+25.00
+101.3
+0.55",0
+588,Table 8. Parameters of the designed column—RDAR (Figure 4).,0
+589,"N
+NR1
+NR2
+f AA0
+f ETOH0
+f EO
+DS1
+DS2
+R
+P [kPa]",0
+590,Column geometry,0
+591,"Column section 1
+N1
+Packing type
+d1 [m]
+H1 [m]
+HETP1 [m]
+∆P1 [kPa]
+Column section 2
+N2
+Packing type
+d2 [m]
+H2 [m]
+HETP2 [m]
+∆P2 [kPa]",0
+592,RD,0
+593,80,0
+594,"20–80
+1–80
+20
+66
+72",0
+595,"xD1(EtAc) = 0.999
+xW1(MEG) = 0.999",0
+596,"3.43
+101.3",0
+597,"2–66
+65",0
+598,RALU-RING 25 mm,0
+599,"0.70
+4 × 4.0
+0.25
+4.2",0
+600,67–79,0
+601,13,0
+602,RALU-RING 15 mm,0
+603,"0.40
+4.0
+0.31
+1.1",0
+604,"Processes 2020, 8, 1618",0
+605,21 of 32,0
+606,"The desired purity of the ﬁnal products can be achieved by changing the reﬂux ratio (R). However,
+the range of the reﬂux ratio values is limited by column hydraulics and convergence stability. At reﬂux
+ratios below 2, a part of the column packing dries up due to insuﬃcient liquid ﬂow in the rectiﬁcation
+section while at reﬂux ratios above 4.2, the process simulation convergence is unstable. This may
+indicate multiple steady states as this behavior is well known from the production of glycols by
+hydration [41].",1
+607,"In this case study, total conversion of all reactants (AA, EtOH, and EO) is ensured by high packing
+height (H) to ensure high separation eﬃciency, and small packing diameter (25 mm and 15 mm
+RALU-RING) to increase the residence time, Table 8. Multidiameter column design is used because of
+various vapor and liquid ﬂows present in the RD column sections. Detailed RD column parameters
+are listed in Table 8.",1
+608,The complete material balance of RDAR (Figure 4) is presented in Table 7. Energetic aspects of the,1
+609,RDAR conﬁguration are discussed in Section 4.1 in more detail.,1
+610,4. Discussion,0
+611,4.1. Energy Requirements of Individual Case Studies,0
+612,".
+QW) and condenser duty (",0
+613,"Energy consumption of individual equipment units is calculated based on the simulation results.
+.
+QC) of each column are evaluated as well as the cooling duty
+Reboiler duty (
+of heat exchangers including heat integration. Overall energy consumption (OEC) is calculated as
+a sum of required heating or cooling duties respectively; heat integration is excluded. To better compare
+individual case studies, OEC is normalized to the speciﬁc energy consumption (SEC, Equation (1)),
+which is related to the production of one ton of pure EtAc. Summary results of energy requirements
+are listed in Table 9.",0
+614,"The conventional process set-up (Figure 1) has three distillation columns in which both reboiler
+and condenser are included. Thus, a highly energy-intensive process is expected. Distillation column
+for water regeneration C3 consumes almost 550 kW of heat, which represents 18.4% of the total heat
+duty required in whole the conventional path (Figure 1). However, the column for separation of
+unreacted acetic acid C1 and that for EtAc separation C2 are even more energy-consuming (Figure 1).
+Overall, 81.6% of the total required heat duty is consumed in these two columns. All three column
+condensers consume 2851 kW of cooling duty, which corresponds to 94.6% of the total cooling duty
+required. EX2, EX6, and EX7 heat exchangers consume less than 164 kW of cooling capacity to
+reach the required stream temperature. Therefore, from the energetic point of view, the C1 and C2
+columns are the key equipment units, Table 9. This is mainly due to large recycle ﬂows (Table 1) and
+energy-intensive separation of the azeotropic mixture. The process is even more energy-intensive if
+the C1column (Figure 1) is not operated as an azeotropic distillation column with an SEC of 3408 kW
+of heating duty and 3427 kW of cooling duty. Overall, ﬁve main equipment units along with seven
+heat exchangers are used (distillation columns reboilers and condensers are included as a part of the
+main column equipment), Table 9.",0
+615,"In the RD column with a separation unit (Figure 2), process energy demands are improved in
+more ways. Both heat consumption and cooling demands in the RD column are improved by 40.4%
+compared to the reaction part (CSTR reactor + C1 column) of the conventional process (Figure 1).
+This is mainly due to the process integration and reduction of the ﬂow of some streams. The process
+integration has a positive eﬀect on the regeneration of unreacted ethanol in distillation column C2
+(Figure 2). Here, 361.9 kW of heat duty is consumed in the column reboiler; 323.1 kW of cooling
+duty is required in the column condenser. This is by 34.1% less of reboiler duty and by 35.7% less
+of condenser duty compared to regeneration column C3 in the conventional path (Figure 1). It is
+−1 (Figure 2) compared
+caused by a lower amount of aqueous solution to be regenerated; 77 kmol h
+−1 in the conventional process (Figure 1). The water content showed a similar trend
+to 117 kmol h
+(91 mol.%). On the other hand, the separation of pure EtAc in distillation column C1 (Figure 2) is",0
+616,"Processes 2020, 8, 1618",0
+617,22 of 32,0
+618,"the most energy-consuming process. The C1 column (Figure 2) reboiler duty is 1760 kW, which is
+by almost 28.0% more energy-intensive than the separation of pure EtAc in the conventional process
+(Figure 1). A similar increase was observed for the cooling duty increase (around 30.7%) due to
+diﬀerent content of EtAc in the column feed stream (F2); 65 mol.% in the RD with a separation unit
+(Figure 2) compared to 77 mol.% in the conventional process (Figure 1). Consequently, EtAc separation
+from diluted aqueous solution is more energy-intensive. Some energy savings can be reached when
+higher water ﬂow to the decanter is used or a slightly diﬀerent column with higher packing height
+is used. However, the RD column with a separation unit (Figure 2) is more energy-eﬃcient than the
+conventional process (Figure 1). SEC is lower by 6.0% in case of both heat consumption and cooling
+demands. Moreover, the number of equipment units is lower; CSTR and two heat exchangers have
+been removed. Results can be found in Table 9.",0
+619,"RD column with a stripper (Figure 3) shows signiﬁcant process integration and intensiﬁcation.
+The process philosophy has been improved as several equipment were removed or integrated into the
+main two columns (Figure 3). The RD column reboiler duty (556 kW) is 2.31 times lower compared to
+that of the C1 stripper (Figure 3, 1286 kW). Also, vapor ﬂow in the stripper is almost three times higher
+than that in the second section of the RD column. Energy demands of both columns (Figure 3) are quite
+high compare to the conventional path (Figure 1) and the RD column with a separation unit (Figure 2).
+In the designed RD column, the heat consumption decreased by almost 21% compared to the RD
+column with a separation unit (Figure 2), (Table 9). The C1 stripper (Figure 3) reboiler duty is lower
+by 26.8% compared to that of the C1 distillation column for EtAc separation in the RD column with
+a separation unit (Figure 2). On the other hand, 1816 kW of cooling duty are required in the condenser
+of the designed RD column (Figure 3), the highest cooling duty of all designed equipment, mainly due
+to the large ﬂow of internal liquid recycle (D1 in Figure 3) and internal vapor recycle (AZ1 in Figure 3).
+Fortunately, no other condenser is included in the process (Figure 3). Consequently, the RD column
+condenser covers all main cooling demands. SEC has vastly decreased compared to the RD column
+with a separation unit (Figure 2); heat consumption is by almost 35% lower as well as the cooling
+duties (34.5%). The number of equipment units has decreased as a decanter, distillation column for
+water regeneration and three heat exchangers have been eliminated. Results are listed in Table 9.",0
+620,"RD column with an auxiliary reaction (Figure 4) represents a fully integrated and intensiﬁed
+concept. Several aspects have brought signiﬁcant energy savings; the synergy of two chemical reactions
+is used; reaction heat partially covers the process heating demands; product separation is enhanced
+by increased relative volatility of produced EtAc to MEG; the number of equipment units has been
+reduced to the RD column only. Designed RDAR energy requirements are very low compared to the
+previously designed processes (Figures 1–3). SEC has vastly decreased; cooling duties are by more than
+70% lower compared to the RDS (Figure 3); heat consumption is a tenth only of that in RDS. This can
+be explained by the hydration reaction of ethylene oxide (7) which is highly exothermic, reaction heat
+is −98,867.6 kJ kmol
+C. Therefore, almost 275 kW of heat generated by the hydration reaction
+is created in the RD column. This reaction-generated heat along with external heat (reboiler duty)
+suﬃces to operate the RD column. Results are listed in Table 9.",0
+621,−1 at 25,0
+622,◦,0
+623,"Processes 2020, 8, 1618",0
+624,23 of 32,0
+625,Table 9. Energy requirements and the number of the equipment for designed ethyl acetate production pathways.,0
+626,Conventional Process,0
+627,"Set-Up
+(Figure 1)
+.
+QW [kW]",0
+628,".
+QC [kW]",0
+629,-,0
+630,"1135.23
+1212.97
+502.97
+0.85
+25.01 b
+133.75
+31.04 b
+13.73 b
+131.31 b",0
+631,"3.10
+25.85
+3014.72
+3426.87",0
+632,-,0
+633,"1181.19
+1267.94
+549.35",0
+634,"-
+-
+-
+-
+-
+-
+-
+-",0
+635,"2998.48
+3408.41",0
+636,".
+QC [kW]
+676.69
+1750.31
+323.10",0
+637,-,0
+638,"8.07
+31.04 b
+28.61
+77.70 b
+27.83
+25.89",0
+639,"-
+-",0
+640,"2840.50
+3223.86",0
+641,"Equipment
+CSTR a/RD
+C1
+C2
+C3
+DEC
+EX1
+EX2
+EX3
+EX4
+EX5
+EX6
+EX7
+OEC
+SEC [kW t",0
+642,−1,0
+643,EtAc],0
+644,"Number of main equipment units
+Number of heat exchangers",0
+645,"2825.74
+3207.11",0
+646,"1857.69
+2110.30",0
+647,"1842.99
+2093.59",0
+648,"499.76
+567.68",0
+649,"152.57
+173.30",0
+650,"5
+7",0
+651,"2
+2
+a adiabatic reactor, b heat integration—no external energy source is required.",0
+652,"4
+5",0
+653,"1
+2",0
+654,"RD Column with
+a Separation Unit",0
+655,"(Figure 2)
+.
+QW [kW]",0
+656,"RD Column with
+a Stripper (RDS)",0
+657,"(Figure 3)
+.
+QW [kW]",0
+658,".
+QC [kW]
+1816.43",0
+659,RD Column with an Auxiliary,0
+660,Reaction (RDAR),0
+661,"(Figure 4)
+.
+QW [kW]",0
+662,".
+QC [kW]
+396.70",0
+663,"703.86
+1759.95
+361.93",0
+664,"-
+-
+-
+-
+-
+-
+-
+-
+-",0
+665,"-
+-
+-
+-",0
+666,"15.39
+25.87",0
+667,"-
+-
+-
+-
+-",0
+668,"556.42
+1286.57",0
+669,"-
+-
+-
+-
+-
+-
+-
+-
+-
+-",0
+670,"-
+-
+-
+-",0
+671,"25.85
+77.20",0
+672,"-
+-
+-
+-
+-",0
+673,152.57,0
+674,"-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-",0
+675,"Processes 2020, 8, 1618",0
+676,24 of 32,0
+677,4.2. Economy Aspects of Individual Case Studies,0
+678,"An economic evaluation of the presented case studies is based on optimized simulations of the
+process models. Prices of commodities were selected according to market research [45–47]. Prices of
+both reactants and products were chosen as a long-term average. Electricity, cooling water, and steam
+are considered to be energy utilities and their costs were obtained from the Aspen Plus database [26].
+These utility costs correspond with actual prices. Exact values are listed in Table 10.",0
+679,"Table 10. Prices of raw materials, products, and energy used in process economic evaluation.",0
+680,"Raw Materials
+EtOH
+AA
+EO
+Products
+EtAc
+MEG
+Energy
+Electricity
+cooling water
+steam (0.7 MPa)
+steam (2.7 MPa)",0
+681,"800
+400
+1000",0
+682,"1300
+1100",0
+683,"0.0775
+0.0317
+0.0179
+0.0258",0
+684,"−1
+−1
+−1",0
+685,"$ t
+$ t
+$ t",0
+686,"−1
+−1",0
+687,"$ t
+$ t",0
+688,−1,0
+689,"$ kWh
+−3
+$ m
+−1
+$ kg
+−1
+$ kg",0
+690,References,0
+691,"[46,47]",0
+692,"[46]
+[46]",0
+693,"[45]
+[46]
+[26]",0
+694,"Equipment cost was calculated using the Aspen Process Economic Analyzer software [26].
+Individual mapping and sizing of each equipment unit was applied, which is important as the case
+studies simulations were calculated using rate-based modeling with known equipment dimensions.
+Also, special RD column conﬁguration has been introduced in the RDS and RDAR case studies
+(Figures 3 and 4)—multiple diameter columns, stripper column (without condenser, etc.). Detailed
+individual equipment cost and installed cost are listed in Appendix A, Table A1.",0
+695,"Energy requirements of individual case studies (Table 9) were recalculated to utility consumption and
+further to the price per hour. The conventional production path (Figure 1) is the most energy-intensive,
+which is reﬂected in cooling water and steam consumption. The cooling water consumption was
+−1, which is by more than 5.8% higher compared to the RD column with a separation
+233.11 m3 h
+−1) and by more than 38.2% higher compared to the RD column with
+unit (Figure 2) (219.36 m3 h
+−1). The same trend was observed in steam consumption, Table 11.
+a stripper (Figure 3) (143.87 m3 h
+The RDAR set-up (Figure 4) has the lowest energy consumption. The cooling water ﬂow is by more
+than 83% lower compared to the conventional process (Figure 1). Despite the use of more expensive
+high-pressure steam (2.7 MPa) compared to all other case studies where low-pressure steam (0.7 MPa)
+is used, the RDAR set-up (Figure 4) has the lowest heating cost. Detailed results are listed in Table 11.
+Comparison of total installed cost and total utility cost of individual case studies is depicted in Figure 5.",0
+696,Table 11. Utility costs of designed ethyl acetate production pathways.,0
+697,Conventional Path,0
+698,"RD Column with
+a Separation Unit",0
+699,RDS,0
+700,RDAR,0
+701,(Figure 1),0
+702,(Figure 2),0
+703,(Figure 3),0
+704,(Figure 4),0
+705,Rate,0
+706,"104.17
+233.11
+5219.95",0
+707,-,0
+708,"Price
+[$ h−1]
+8.07
+7.39
+93.68",0
+709,-,0
+710,Rate,0
+711,"58.10
+219.36
+4920.70",0
+712,-,0
+713,"Price
+[$ h−1]
+4.50
+6.95
+88.31",0
+714,-,0
+715,Rate,0
+716,"56.05
+143.87
+3209.30",0
+717,-,0
+718,"Price
+[$ h−1]
+4.34
+4.56
+57.59",0
+719,-,0
+720,Rate,0
+721,"53.81
+38.71",0
+722,-,0
+723,302.55,0
+724,"Price
+[$ h−1]
+4.17
+1.23",0
+725,-,0
+726,7.81,0
+727,"electricity [kW]
+−1]
+cooling water [m3 h
+−1]
+steam (0.7 MPa) [kg h
+−1]
+steam (2.7 MPa) [kg h",0
+728,"Processes 2020, 8, 1618",0
+729,25 of 32,0
+730,"Figure 5.
+1—Conventional path; 2—RD column with a separation unit; 3—RDS; 4—RDAR.",0
+731,Total utilities cost and total installed equipment cost for individual case studies;,0
+732,"To complete the economic analysis, total capital costs, total annual costs, total raw material
+cost, and product sales were calculated. A return rate of 20% per year and an annual work fund of
+340 days were assumed. The capital costs are almost 10 mil. $ in the conventional path (Figure 1).
+Process integration and intensiﬁcation can decrease total capital cost by 11% (RD column with
+a separation unit); 35% (RDS); or even 57% (RDAR). Total raw materials cost is similar (5.45 mil. $)
+except for RDAS (Figure 4) as the price of ethylene oxide has to be included. However, the highest
+product sales are in the RDAS set-up (16.4 mil. $ compared to 10.3 mil. $). Finally, a simple payback
+period was calculated: two years of project feasibility and preparation (projecting, building, licensing,
+etc.) is included. The conventional process (Figure 1) has a payback period of over 10 years because of
+the highest capital and utilities cost. RD column with a separation unit (Figure 2) becomes proﬁtable
+1.5 years earlier than the conventional process (Figure 1). The payback period is almost halved in the
+case of RDS (Figure 3), and only one-third in the case of RDAR (Figure 4) compared to the conventional
+process (Figure 1). Finally, total production cost (TPC) was evaluated, Equation (2), and the results are
+presented in Table 12. Comparison of total capital and annual costs with product sales are presented in
+Figure 6. From Figure 6 and the TPC, it is clear that the most promising concepts are RDS (Figure 3)
+and RDAR (Figure 4) from the economic point of view.",0
+733,Table 12. Total annual costs of individual case studies.,0
+734,Conventional Path,0
+735,"RD Column with
+a Separation Unit",0
+736,RDS,0
+737,RDAR,0
+738,(Figure 1),0
+739,(Figure 2),0
+740,(Figure 3),0
+741,(Figure 4),0
+742,"Total capital cost [ mil. $]
+Total installed cost [mil. $]
+−1]
+Total annual cost [mil. $ year
+Total raw materials cost [mil. $ year
+−1]
+Total product sales [mil. $ year
+−1]
+Total utilities cost [mil. $ year
+Pay-back period [year]
+−1]
+Total production cost [$ t",0
+743,−1],0
+744,"9.91
+3.74
+9.15
+5.46
+10.27
+0.89
+10.86
+1273.91",0
+745,"8.84
+3.33
+9.04
+5.46
+10.27
+0.81
+9.19",0
+746,"6.43
+2.43
+8.65
+5.46
+10.27
+0.54
+5.97",0
+747,1266.14,0
+748,1231.32,0
+749,"4.24
+1.60
+13.72
+9.42
+16.40
+0.11
+3.58",0
+750,1018.09 a,0
+751,a both products (EtAc and MEG) are included.,0
+752,"Processes 2020, 8, 1618",0
+753,26 of 32,0
+754,"Figure 6. Total capital, total annual costs, and product sales for individual case studies; 1—Conventional
+path; 2—RD column with a separation unit; 3—RDS; 4—RDAR.",0
+755,4.3. Safety Aspects of Individual Case Studies,0
+756,"Individual risk is a risk assessment methodology that allows for numerical estimates of the level
+of risk associated with a certain activity or a series of activities to be estimated and then assessed.
+To identify the list of incidents a semi-automated approach was used. For each type of unit, a predeﬁned
+set of representative incidents was prepared. The ﬁnal choice of incidents is very diﬃcult and requires
+judgment from an analyst; therefore, three main factors were taken into consideration: the size
+of the release, state of releasing material (liquid, vapor), and whether the release is instantaneous
+or continuous.
+•
+•
+•",0
+757,"For distillation and reactive distillation columns, the incident list contained: liquid leaks (full bore
+rupture and hole equivalent to 20% of diameter), vapor leaks, and complete rupture of column.
+For heat exchangers, small leaks and full rupture were used.
+For all pipelines in the simulation, the only full rupture was considered.",0
+758,"For the list of representative incidents, a number of diﬀerent incident outcomes are possible.",0
+759,"To deﬁne the incident outcomes, three diﬀerent generic event trees were used:
+•
+•
+•",0
+760,"continuous liquid release,
+continuous gaseous release and
+instantaneous release.",0
+761,"Probabilities were adjusted based on a recommendation from [48]. Consequence modeling
+was performed using standard (and widely used) software system ALOHA (The Areal Location of
+Hazardous Atmospheres) provided by the US Environmental Protection Agency. Three representative
+−1 and atmospheric stability F, D, and C) were taken
+weather conditions (wind speed 1, 2, and 4 m s
+into account for all case studies. The wind was assumed to be uniformly distributed in all directions.
+Probabilities of individual representative weather conditions were adopted from information provided
+by the Slovak Hydrometeorological Institute.",0
+762,"Results of individual risk estimation for the presented case studies are depicted in Figure 7.
+To compare all investigated case studies, individual risk is presented in form of risk proﬁles as
+a function of distance. Based on the risk proﬁles, it is possible to conclude that, from the safety point of
+view, the conventional process set-up (Figure 1) and reactive distillation column with a separation
+unit (Figure 2) are the worst alternatives. Both proﬁles are practically identical. Close to the center
+of the production unit, the conventional process set-up (Figure 1) shows the highest individual risk
+from all presented case studies. If we focused only on the boundary of acceptable risk, 1 × 10
+−1
+−5 year",0
+763,"Processes 2020, 8, 1618",0
+764,27 of 32,0
+765,"for existing plants (Table 13), the least suitable set-up is the distillation column with a separation unit
+(Figure 2) due to the high number of equipment units but mainly due to the recirculation of large
+quantities of material and high ﬂow rates through the columns.",0
+766,"Based on the presented analysis, the best alternative, from the safety analysis point of view,
+is the reactive distillation column with an auxiliary reaction. This result can be a little bit surprising
+because in this case study, ethylene oxide (extremely ﬂammable, explosive, and toxic gas) is added
+as a feedstock. On the other hand, the main advantage of this set-up (Figure 4) compared with the
+previous three, is the minimal number of operation units and no material recycles. Main reactions
+and separation are performed only in one unit (reactive distillation column and vapor and liquid
+ﬂow through the column are lower than in all previous case studies. For this reason, the volume of
+hazardous materials in the column, reboiler, and other auxiliary equipment are also lower compared to
+the previous case studies. The concentration of the extremely ﬂammable ethylene oxide is very low
+in the column and its mole fraction in the whole system is below 10%; except for 10 trays close to its
+feed location.",0
+767,"From the comparison of individual risk of fatality estimation (Figure 7 resp. Table 13), it is clear
+that minimizing the number of equipment and internal recycles leads to a reduction of the level of risk.
+In the presented study, only the production and separation part of the case studies were evaluated. If
+required, the safety study can be extended to include storage facilities for each case study.",0
+768,"Table 13. Distance from the center for individual case studies up to which individual risk of fatality is
+lower than 10",0
+769,−5 resp. 10,0
+770,−4 year,0
+771,−1.,0
+772,"Individual Risk 10−5 Year−1
+Individual Risk 10−4 Year−1
+Distance from the Center [m] Distance from the Center [m]",0
+773,"Conventional path (Figure 1)
+RD column with separation unit (Figure 2)
+RDS (Figure 3)
+RDAR (Figure 4)",0
+774,"122
+166
+122
+62",0
+775,"95
+59
+43
+28",0
+776,Figure 7. Individual risk of fatality estimation for presented case studies.,0
+777,"Processes 2020, 8, 1618",0
+778,5. Conclusions,0
+779,28 of 32,0
+780,"Intensiﬁcation and integration of ethyl acetate production via reactive distillation have been studied.
+Four detailed process ﬂowsheets were designed: conventional process set-up (Figure 1); reactive
+distillation column with a separation unit (Figure 2), reactive distillation column with a stripper (RDS)
+(Figure 3), and reactive distillation column with an auxiliary reaction (RDAR) (Figure 4). A multi-aspect
+comparison of the set-ups covering energy requirements, economy, and safety analysis was done.",0
+781,"Process modeling was performed in Aspen Plus [26]. Thermodynamic model NTRL-HOC with
+reliable parameters was used for phase equilibrium calculations. Chemical reactions (esteriﬁcation
+(5) and hydration (7)) were modeled by rate Equations (6) and (8) obtained from extensive literature
+research. A rigorous non-equilibrium stage model of the distillation/reactive distillation column
+was used. Detailed column internal conﬁguration was designed (packed column) and therefore,
+more accurate simulation results were obtained including reasonable column hydraulics.",0
+782,"Process streams regeneration and recovery were solved to achieve deﬁned speciﬁcations
+−1 of pure ethyl acetate (99.9 mol.%); prevention of ethyl acetate losses in
+(production of 10 kmol h
+other product streams (full EtAc recovery); separation of process by-products (water or monoethylene
+glycol) in equal amount and purity as the main product (EtAc)). This was successfully achieved in
+all designed processes (Figures 1–4). In the conventional process set-up (Figure 1), regeneration was
+energy-intensive due to large recycle ﬂows. Energy requirements for recycle regeneration decreased
+signiﬁcantly due to process integration. Regeneration was less energy-intensive in the case of RD
+column with a separation unit (Figure 2) compared to the conventional set-up (Figure 1, by around 35%).
+No process stream regeneration was needed in the case of either RDS (Figure 3) or RDAR (Figure 4).
+Therefore, energy consumption was reduced by process integration and intensiﬁcation remarkably.
+The lowest energy consumption was achieved in a fully integrated and intensiﬁed process—RDAR
+(Figure 4), due to the synergy of two chemical reactions and enhanced product separation (Table 9).",0
+783,"Economic and energy aspects showed similar trends in the designed processes. The total utility
+costs were the highest in the case of commercial process set-up (Figure 1)—almost 0.9 mil. $ per year.
+Savings of 10% in the utility costs were observed when the conventional process (Figure 1) was replaced
+by an RD column with a separation unit (Figure 2). Further utilities cost savings were achieved by
+RD process integration and intensiﬁcation via RDS (Figure 3), up to 39%, and via RDAR (Figure 4) up
+to 88%, respectively. More remarkable savings were observed in total capital cost (TCC) (Table 12).
+As the number of equipment units was reduced, TCC decreased accordingly. On the other hand,
+the price of individual equipment units increased because of larger columns with sophisticated internal
+conﬁguration. Detailed prices of individual equipment are listed in the Appendix A in Table A1.",0
+784,"An integral part of the intensiﬁcation process of ethyl acetate production is the safety analysis.
+To translate the probability and impact of risk into a measurable quantity, individual risk estimation
+was used. Results in the form of risk proﬁles can be easily compared for several alternatives of ethyl
+acetate production and prioritize the safer ones. From the safety analysis point of view, a reactive
+distillation column with an auxiliary reaction (Figure 4) comes out as the best alternative even though
+ethylene oxide (extremely ﬂammable, explosive, and toxic gas) is added as feedstock. This is due to
+the minimum number of equipment and the elimination of recycles in the system.",0
+785,"Author Contributions: Conceptualization, B.Š. and Z.L.; methodology, B.Š., Z.L., and J.L.; software, B.Š., J.L.;
+validation, B.Š., Z.L.; formal analysis, B.Š., Z.L., and J.L.; investigation, B.Š.; resources, Z.L.; data curation,
+B.Š.; writing—original draft preparation, B.Š., Z.L., and J.L.; writing—review and editing, B.Š., Z.L., and J.L.;
+visualization, B.Š.; supervision, Z.L.; funding acquisition, Z.L. All authors have read and agreed to the published
+version of the manuscript.
+Funding: This research was funded by the Slovak Scientiﬁc Agency, Grant No. VEGA 1/0659/18; the Slovak
+Research and Development Agency, under contract No. APVV-18-0134, and by the Slovak University of Technology
+in Bratislava within the Young Scientist Support Program 2020.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.",0
+786,"Processes 2020, 8, 1618",0
+787,List of Symbols,0
+788,"C
+d
+f
+fi
+FI
+H
+IRx,y
+n
+˙n
+N
+NR
+pf,i
+po,i
+P
+∆P
+.
+QC
+.
+QW
+r
+R
+R
+T
+T
+.
+V
+x",0
+789,"molar concentration
+column internal diameter
+feed stage position
+frequency of incident outcome i
+frequency of incident I
+packed section height
+total individual risk of fatality at geographical location x, y
+total number of incident outcome case
+molar ﬂow
+number of theoretical stages, total condenser, and reboiler are included
+reactive section stages
+fatality at location x, y
+incident outcome probability
+total pressure
+column section pressure drop
+condenser duty
+reboiler duty
+reaction rate
+gas constant
+reﬂux ratio
+temperature
+thermodynamic temperature in Equations (6) and (8)
+volume ﬂow
+molar fraction in the liquid phase",0
+790,Subscripts,0
+791,29 of 32,0
+792,−3,0
+793,"kmol m
+m",0
+794,"−1
+−1",0
+795,−1,0
+796,"year
+year
+m
+year",0
+797,−1,0
+798,kmol h,0
+799,"kPa
+kPa
+kW
+kW
+kmol m
+kJ kmol
+◦",0
+800,C,0
+801,"−1
+−3 s
+−1 K
+−1",0
+802,"K
+m3 h",0
+803,−1,0
+804,"acetic acid
+condenser
+distillate
+ethyl acetate",0
+805,"AA
+C
+D
+EtAc
+EtOH ethanol
+F
+i
+I
+H2O
+R
+W
+x, y",0
+806,"feed
+incident outcome case
+incident
+water
+reaction occurrence
+reboiler
+geographical location",0
+807,Abbreviations,0
+808,"acetic acid
+azeotropic reactive distillation
+continuous stirred tank reactor
+design speciﬁcation
+equilibrium stage
+ethyl acetate",0
+809,"AA
+ARD
+CSTR
+DS
+EQ
+EtAc
+EtOH ethanol
+HETP height equivalent of theoretical plate
+HOC Hayden–O’Connell equation of state
+NEQ
+NRTL non-random two liquids",0
+810,non-equilibrium stage,0
+811,"Processes 2020, 8, 1618",0
+812,30 of 32,0
+813,"overall energy consumption
+reactive distillation",0
+814,reactive distillation with stripper,0
+815,"OEC
+RD
+RDAR reactive distillation with auxiliary reaction
+RDPV reactive distillation with pervaporation
+RDS
+RDWC reactive distillation with a dividing wall
+RED
+SEC
+TAC
+TCC
+TPC
+VL
+VLLE",0
+816,"reactive extractive distillation
+speciﬁc energy consumption
+total annual cost
+total capital cost
+total production cost
+vapor–liquid
+vapor–liquid–liquid phase equilibria",0
+817,kW,0
+818,"−1
+kW t
+EtAc
+−1
+$ year
+$
+−1
+$ t",0
+819,Appendix A,0
+820,Table A1. Equipment cost and total installed cost of individual equipment.,0
+821,Conventional Path,0
+822,(Figure 1),0
+823,"RD Column with
+Separation Unit",0
+824,(Figure 2),0
+825,RD Column with,0
+826,"Stripper
+(Figure 3)",0
+827,Equipment,0
+828,"Cost
+[103 $]
+173.7
+620.7
+594.5
+172.6
+16.1
+8.5
+39.3
+8.7
+8.5
+11.0
+8.5
+10.5
+1672.6",0
+829,Installed,0
+830,"Cost
+[103 $]
+334.3
+1147.2
+1138.1
+564.0
+108.9
+53.0
+120.0
+59.1
+45.7
+63.9
+45.7
+60.3
+3740.2",0
+831,Item,0
+832,CSTR/RD,0
+833,"C1
+C2
+C3
+DEC
+EX1
+EX2
+EX3
+EX4
+EX5
+EX6
+EX7
+Sum",0
+834,References,0
+835,Equipment,0
+836,"Cost
+[103 $]
+680.5
+610.6
+148.0",0
+837,Installed,0
+838,"Cost
+[103 $]
+1214.0
+1185.2
+487.8",0
+839,-,0
+840,"16.1
+8.7
+19.3
+9.9
+14.3
+10.9",0
+841,"-
+-",0
+842,-,0
+843,"108.9
+59.1
+85.4
+62.6
+70.7
+60.8",0
+844,"-
+-",0
+845,Equipment,0
+846,"Cost
+[103 $]
+840.5
+380.2",0
+847,Installed,0
+848,"Cost
+[103 $]
+1614.0
+695.2",0
+849,"-
+-
+-
+8.5
+10.5",0
+850,"-
+-
+-
+-
+-",0
+851,"-
+-
+-",0
+852,"58.6
+60.3",0
+853,"-
+-
+-
+-
+-",0
+854,"RD Column with
+Auxiliary Reaction",0
+855,(Figure 4),0
+856,Equipment,0
+857,"Cost
+[103 $]
+790.4",0
+858,Installed,0
+859,"Cost
+[103 $]
+1480.5",0
+860,"-
+-
+-
+-",0
+861,"10.1
+10.5",0
+862,"-
+-
+-
+-
+-",0
+863,"-
+-
+-
+-",0
+864,"61.0
+60.3",0
+865,"-
+-
+-
+-
+-",0
+866,1518.3,0
+867,3334.5,0
+868,1239.7,0
+869,2428.1,0
+870,811,0
+871,1601.8,0
+872,1,0
+873,"2.
+3.",0
+874,4,0
+875,5,0
+876,"Riemenschneider, W.; Bolt, H.M. Esters, Organic. In Ullmann’s Encyclopedia of Industrial Chemistry; Wiley-VCH
+Verlag GmbH & Co. KGaA: Weinheim, Germany, 2012.
+Cornils, B. Ethyl Acetate. In Catalysis from A to Z; Wiley-VCH: Weinheim, Germany, 2020; p. 2020.
+Srinivasan, R.; Nhan, N.T. A statistical approach for evaluating inherent benign-ness of chemical process
+routes in early design stages. Process Saf. Environ. Prot. 2008, 86, 163–174. [CrossRef]
+Li, C.; Duan, C.; Fang, J.; Li, H. Process intensiﬁcation and energy saving of reactive distillation for production
+of ester compounds. Chin. J. Chem. Eng. 2019, 27, 1307–1323. [CrossRef]
+Toth, A.J. Comprehensive evaluation and comparison of advanced separation methods on the separation of
+ethyl acetate-ethanol-water highly non-ideal mixture. Sep. Purif. Technol. 2019, 224, 490–508. [CrossRef]",0
+877,"6. Wierschem, M.; Górak, A. Reactive Distillation. In Reference Module in Chemistry, Molecular Sciences and",0
+878,7,0
+879,8,0
+880,"Chemical Engineering; Elsevier: Amsterdam, The Netherlands, 2018; pp. 1–10.
+Niesbach, A.; Kuhlmann, H.; Keller, T.; Lutze, P.; Górak, A. Optimisation of industrial-scale n-butyl acrylate
+production using reactive distillation. Chem. Eng. Sci. 2013, 100, 360–372. [CrossRef]
+Qasim, F.; Shin, J.S.; Park, S.J. A simulation study on selection of optimized process for azeotropic separation
+of methanol and benzene: Internal heat integration and economic analysis. Korean J. Chem. Eng. 2018, 35,
+1185–1194. [CrossRef]",0
+881,"Processes 2020, 8, 1618",0
+882,31 of 32,0
+883,9,0
+884,10,0
+885,"Timoshenko, A.V.; Anokhina, E.A.; Morgunov, A.V.; Rudakov, D.G. Application of the partially thermally
+coupled distillation ﬂowsheets for the extractive distillation of ternary azeotropic mixtures. Chem. Eng.
+Res. Des. 2015, 104, 139–155. [CrossRef]
+Staak, D.; Grützner, T. Process integration by application of an extractive dividing-wall column: An industrial
+case study. Chem. Eng. Res. Des. 2017, 123, 120–129. [CrossRef]",0
+886,"11. Lv, B.; Liu, G.; Dong, X.; Wei, W.; Jin, W. Novel Reactive Distillation–Pervaporation Coupled Process for
+Ethyl Acetate Production with Water Removal from Reboiler and Acetic Acid Recycle. Ind. Eng. Chem. Res.
+2012, 51, 8079–8086. [CrossRef]",0
+887,"12. Harvianto, G.R.; Ahmad, F.; Lee, M. A hybrid reactive distillation process with high selectivity pervaporation",0
+888,"for butyl acetate production via transesteriﬁcation. J. Membr. Sci. 2017, 543, 49–57. [CrossRef]",0
+889,"13. Graczová, E.; Šulgan, B.; Steltenpohl, P. Tert-Butanol–water mixture separation by extractive distillation:
+Application of experimental data in process simulations. Sep. Purif. Technol. 2020, 251, 116968. [CrossRef]
+14. Ma, S.; Shang, X.; Li, L.; Song, Y.; Pan, Q.; Sun, L. Energy-saving thermally coupled ternary extractive
+distillation process using ionic liquids as entrainer for separating ethyl acetate-ethanol-water ternary mixture.
+Sep. Purif. Technol. 2019, 226, 337–349. [CrossRef]
+Santaella, M.A.; Orjuela, A.; Narváez, P.C. Comparison of diﬀerent reactive distillation schemes for ethyl
+acetate production using sustainability indicators. Chem. Eng. Process. Process. Intensif. 2015, 96, 1–13.
+[CrossRef]",0
+890,15,0
+891,"16. Kiss, A.A.; Jobson, M. Taking Reactive Distillation to the Next Level of Process Intensiﬁcation. Chem. Eng.",0
+892,"2018, 69, 553–558. [CrossRef]",0
+893,"17. Raymond, K.E.; Othmer, D.F. Encyclopedia of Chemical Technology, 8th ed.; Wiley: Weinhem, Germany, 2007.
+Segovia-Hernández, J.G.; Hernández, S.; Petriciolet, A.B. Reactive distillation: A review of optimal design
+18.
+using deterministic and stochastic techniques. Chem. Eng. Process. Process. Intensif. 2015, 97, 134–143.
+[CrossRef]
+Šulgan, B.; Labovská, Z.; Markoš, J. Production of 2-phenylethyl acetate via reactive distillation. Chem. Pap.
+2020, 74, 2341–2356. [CrossRef]",0
+894,19,0
+895,"20. Dimian, A.C.; Bildea, C.; Omota, F.; Kiss, A. Innovative process for fatty acid esters by dual reactive distillation.",0
+896,"Comput. Chem. Eng. 2009, 33, 743–750. [CrossRef]",0
+897,"21. Harmsen, J. Reactive distillation: The front-runner of industrial process intensiﬁcation. Chem. Eng. Process.",0
+898,"Process. Intensif. 2007, 46, 774–780. [CrossRef]",0
+899,"22. Xie, J.; Li, C.; Peng, F.; Dong, L.; Ma, S. Experimental and simulation of the reactive dividing wall column",0
+900,"based on ethyl acetate synthesis. Chin. J. Chem. Eng. 2018, 26, 1468–1476. [CrossRef]",0
+901,"23. Tavan, Y.; Behbahani, R.M.; Hosseini, S.H. A novel intensiﬁed reactive distillation process to produce pure
+ethyl acetate in one column—Part I: Parametric study. Chem. Eng. Process. Process. Intensif. 2013, 73, 81–86.
+[CrossRef]",0
+902,"24. Huang, F.; Xu, S.; Li, T.; Zhu, N. Innovative Ethylene Glycol Diacetate synthesis process in a single reactive",0
+903,"distillation column. Chem. Eng. Process. Process. Intensif. 2016, 109, 80–89. [CrossRef]",0
+904,"25. Hu, S.; Zhang, B.J.; Hou, X.Q.; Li, D.L.; Chen, Q.L. Design and simulation of an entrainer-enhanced ethyl",0
+905,"acetate reactive distillation process. Chem. Eng. Process. Process. Intensif. 2011, 50, 1252–1265. [CrossRef]",0
+906,"26. ASPEN Technology. Aspen Plus®: Aspen Plus User Guide, Version 10.2; Aspen Technology Inc.: Cambridge,",0
+907,"MA, USA, 2000.",0
+908,"27. Muthia, R.; Reijneveld, A.G.; Van Der Ham, A.G.; Kate, A.J.T.; Bargeman, G.; Kersten, S.R.; Kiss, A.A. Novel
+method for mapping the applicability of reactive distillation. Chem. Eng. Process. Process. Intensif. 2018, 128,
+263–275. [CrossRef]
+Singh, D.; Gupta, R.K.; Kumar, V. Simulation of a plant scale reactive distillation column for esteriﬁcation of
+acetic acid. Comput. Chem. Eng. 2015, 73, 70–81. [CrossRef]",0
+909,28,0
+910,"29. Risco, A.; Plesu, V.; Heydenreich, J.A.; Bonet-Ruiz, A.-E.; Calvet, A.; Iancu, P.; Llorens, J. Pressure selection
+for non-reactive and reactive pressure-swing distillation. Chem. Eng. Process. Process. Intensif. 2019, 135,
+9–21. [CrossRef]
+Švandová, Z.; Labovský, J.; Markoš, J.; Jelemenský, L’. Impact of mathematical model selection on prediction
+of steady state and dynamic behaviour of a reactive distillation column. Comput. Chem. Eng. 2009, 33,
+788–793. [CrossRef]",0
+911,30,0
+912,"Processes 2020, 8, 1618",0
+913,32 of 32,0
+914,31,0
+915,32,0
+916,"Švandová, Z.; Markoš, J.; Jelemenský, L’. Multiple steady states in a CSTR with total condenser: Comparison
+of equilibrium and nonequilibrium models. Chem. Pap. 2006, 60, 432–440. [CrossRef]
+Sun, S.; Yang, A.; Chien, I.-L.; Shen, W.; Wei, S.; Ren, J.; Zhang, X. Intensiﬁcation and performance assessment
+for synthesis of 2-methoxy-2-methyl-heptane through the combined use of diﬀerent pressure thermally
+coupled reactive distillation and heat integration technique. Chem. Eng. Process. Process. Intensif. 2019, 142,
+107561. [CrossRef]",0
+917,"33. Couper, J.R.; Hertz, D.W.; Smith, F.L. Process Economics. In Perry’s Chemical Engineers’ Handbook, 8th ed.;",0
+918,"Green, D.W., Perry, R.H., Eds.; McGraw-Hill: New York, NY, USA, 2007.",0
+919,34. The Center for Chemical Process Safety. Guidelines for Chemical Process Quantitative Risk Analysis; American,0
+920,"Institute of Chemical Engineers: New York, NY, USA, 1989.",0
+921,"35. Troﬁmova, M.; Sadaev, A.; Samarov, A.; Golikova, A.; Tsvetov, N.; Toikka, M.; Toikka, A. Liquid-liquid
+equilibrium of acetic acid–ethanol–ethyl acetate–water quaternary system: Data review and new results at
+323.15 K and 333.15 K. Fluid Phase Equilibria 2020, 503, 112321. [CrossRef]",0
+922,"36. Wichterle, I.; Bogdani´c, G. Vapour–liquid and chemical equilibria in the ethyl ethanoate+ethanol+propyl
+ethanoate+propanol system accompanied with transesteriﬁcation reaction. Fluid Phase Equilibria 2012, 328,
+61–68. [CrossRef]",0
+923,"37. Hayden, J.G.; O’Connell, J.P. A Generalized Method for Predicting Second Virial Coeﬃcients. Ind. Eng. Chem.",0
+924,"Process. Des. Dev. 1975, 14, 209–216. [CrossRef]",0
+925,"38. Altiokka, M.R.; Akyalçin, S. Kinetics of the Hydration of Ethylene Oxide in the Presence of Heterogeneous",0
+926,"Catalyst. Ind. Eng. Chem. Res. 2009, 48, 10840–10844. [CrossRef]",0
+927,"39. Arnikar, H.J.; Rao, T.S.; Bodhe, A.A. A gas chromatographic study of the kinetics of the uncatalysed",0
+928,"esteriﬁcation of acetic acid by ethanol. J. Chromatogr. A 1970, 47, 265–268. [CrossRef]",0
+929,"40. Calvar, N.; González, B.; Dominguez, A. Esteriﬁcation of acetic acid with ethanol: Reaction kinetics and
+operation in a packed bed reactive distillation column. Chem. Eng. Process. Process. Intensif. 2007, 46,
+1317–1323. [CrossRef]",0
+930,"41. Monroy-Loperena, R.; Álvarez-Ramírez, J. On the Steady-State Multiplicities for an Ethylene Glycol Reactive",0
+931,"Distillation Column. Ind. Eng. Chem. Res. 1999, 38, 451–455. [CrossRef]",0
+932,"42. Doherty, M.F.; Fidkowski, Z.T.; Malone, M.F.; Taylor, R. Distillation. In Perry’s Chemical Engineers’ Handbook,",0
+933,"8th ed.; Green, D.W., Ed.; McGraw-Hill: New York, NY, USA, 2007.",0
+934,"43. Bagajewicz, M.; Ji, S. Rigorous Procedure for the Design of Conventional Atmospheric Crude Fractionation",0
+935,"Units. Part I: Targeting. Ind. Eng. Chem. Res. 2001, 40, 617–626. [CrossRef]",0
+936,"44. Glaviˇc, P. Integrated crude distillation design. Comput. Chem. Eng. 1995, 19. [CrossRef]
+45. Löser, C.; Urit, T.; Bley, T. Perspectives for the biotechnological production of ethyl acetate by yeasts.",0
+937,"Appl. Microbiol. Biotechnol. 2014, 98, 5397–5415. [CrossRef]",0
+938,"46. Chembid. Available online: www.chembid.com (accessed on 22 June 2020).
+47. Molbase. Available online: www.molbase.com (accessed on 22 June 2020).
+48. Vílchez, J.A.; Espejo, V.; Casal, J. Generic event trees and probabilities for the release of diﬀerent types of",0
+939,"hazardous materials. J. Loss Prev. Process. Ind. 2011, 24, 281–287. [CrossRef]",0
+940,"Publisher’s Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional
+aﬃliations.",0
+941,"© 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).",0

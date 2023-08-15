@@ -1,0 +1,1355 @@
+,0
+0,"Article
+A Detailed Process and Techno-Economic Analysis of Methanol
+Synthesis from H2 and CO2 with Intermediate Condensation Steps
+Bruno Lacerda de Oliveira Campos *, Kelechi John, Philipp Beeskow, Karla Herrera Delgado *
+,
+Nicolaus Dahmen and Jörg Sauer"
+1,", Stephan Pitter"
+2,"Institute of Catalysis Research and Technology (IKFT), Karlsruhe Institute of Technology (KIT),
+Hermann-von Helmholtz-Platz 1, D-76344 Eggenstein-Leopoldshafen, Germany
+* Correspondence: bruno.campos@kit.edu (B.L.d.O.C.); karla.herrera@kit.edu (K.H.D.)"
+3,"Abstract: In order to increase the typically low equilibrium CO2 conversion to methanol using
+commercially proven technology, the addition of two intermediate condensation units between
+reaction steps is evaluated in this work. Detailed process simulations with heat integration and
+techno-economic analyses of methanol synthesis from green H2 and captured CO2 are presented here,
+comparing the proposed process with condensation steps with the conventional approach. In the new
+process, a CO2 single-pass conversion of 53.9% was achieved, which is signiﬁcantly higher than the
+conversion of the conventional process (28.5%) and its equilibrium conversion (30.4%). Consequently,
+the total recycle stream ﬂow was halved, which reduced reactant losses in the purge stream and the
+compression work of the recycle streams, lowering operating costs by 4.8% (61.2 M€·a−1). In spite of
+the additional number of heat exchangers and ﬂash drums related to the intermediate condensation
+units, the ﬁxed investment costs of the improved process decreased by 22.7% (94.5 M€). This was a
+consequence of the increased reaction rates and lower recycle ﬂows, reducing the required size of the
+main equipment. Therefore, intermediate condensation steps are beneﬁcial for methanol synthesis
+from H2/CO2, signiﬁcantly boosting CO2 single-pass conversion, which consequently reduces both
+the investment and operating costs."
+4,"Keywords: methanol synthesis; CO2 utilization; power-to-X; intermediate condensation steps;
+product removal; techno-economic analysis; heat integration; plant simulation"
+5,1. Introduction
+6,"Sustainable solutions are required to reduce the greenhouse gas emissions of the
+transportation and industrial sectors, shrinking the dependency on fossil fuels. With the
+continuously increasing installed capacity of wind and solar power plants [1], adequate
+energy storage solutions have to be implemented in order to deal with their ﬂuctuating
+nature. Therefore, the conversion of electricity into valuable chemicals and fuels, a concept
+often called power-to-fuels or power-to-X, can make an important contribution to the
+future energy system [2]. In this context, key process steps are hydrogen generation via
+electrolysis (primary conversion) [3,4] and methanol synthesis (secondary conversion) [5].
+Methanol can be used as a fuel substitute or additive, either in fuel cells or via
+combustion [2], as a feedstock in the production of base chemicals (e.g., formaldehyde)
+and liquid fuels (e.g., gasoline, oxymethylene ethers, jetfuel) [6–8], and also as a solvent.
+Methanol fuel has recently attracted signiﬁcant interest, especially in China, where the
+consumption of methanol for thermal applications (e.g., boilers, kilns, cooking stoves) and
+in the transportation section amounted to 5.7 Mton·a−1 (year 2019) [9].
+The current global capacity of methanol production is 164 Mton·a−1 (year 2021), with
+an annual increase of 10% projected for the next decade [10]. Traditionally, methanol
+synthesis is fed by fossil-based syngas, which comes either from steam reforming of natural
+gas or from coal gasiﬁcation [11]. However, sustainable syngas production is gaining"
+7,"Citation: Lacerda de Oliveira
+Campos, B.; John, K.; Beeskow, P.;
+Herrera Delgado, K.; Pitter, S.;
+Dahmen, N.; Sauer, J. A Detailed
+Process and Techno-Economic
+Analysis of Methanol Synthesis from
+H2 and CO2 with Intermediate
+Condensation Steps. Processes 2022,
+10, 1535. https://doi.org/10.3390/
+pr10081535"
+8,"Academic Editors: Elio Santacesaria,
+Riccardo Tesser and Vincenzo Russo"
+9,"Received: 13 July 2022
+Accepted: 3 August 2022
+Published: 5 August 2022"
+10,"Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations."
+11,"Copyright: © 2022 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/)."
+12,"Processes 2022, 10, 1535. https://doi.org/10.3390/pr10081535"
+13,https://www.mdpi.com/journal/processes
+14,"Processes 2022, 10, 1535"
+15,2 of 24
+16,"importance, such as from renewable electricity and captured CO2, and also from biomass.
+In Figure 1, a scheme is presented showing the intermediate position of methanol in the
+conversion of both fossil-based and sustainable syngas to added-value chemicals and fuels,
+as well as methanol end-use applications."
+17,"Figure 1. The key position of methanol to convert syngas sources into added-value chemicals and
+fuels. Icons from: Freepik, Flaticon [12]."
+18,"The current world-scale technology for methanol synthesis is mostly based on the
+application of Cu/ZnO/Al2O3 (CZA) catalysts in either multi-tube reactors with boiling
+water as the cooling ﬂuid, normally called isothermal reactors (e.g., the Lurgi process, the
+Linde process), or adiabatic reactors with intermediate cold syngas quenching, generally
+named quench reactors (e.g., ICI and the Casale process, the Haldor Topsoe process) [11,13].
+Less common but also industrially applied are the adiabatic reactors with intermediate
+cooling (e.g., the Kellogg process, the Toyo process) [11,14]. Normally, temperatures
+between 200 and 300 ◦C and pressures between 50 and 100 bar are applied [13]."
+19,"Methanol can be produced from either CO (Equation (1)) or CO2 (Equation (2)),
+with the reverse water–gas shift reaction (rWGSR, Equation (3)) also occurring. If the
+feed gas contains both CO and CO2, there is a prevailing opinion that direct CO hy-
+drogenation (Equation (1)) on Cu/Zn-based catalysts is signiﬁcantly slower than CO2
+hydrogenation [15,16], and kinetic models not considering this reaction can adequately
+simulate experimental data [17–19]."
+20,"CO(g) + 2·H2(g)
+CO2(g) + 3·H2(g)
+CO2(g) + H2(g)"
+21,"(cid:29) CH3OH(g)
+(cid:29) CH3OH(g) + H2O(g)
+(cid:29) CO(g) + H2O(g)"
+22,"(3)
+With regard to the general use of CO2 as a carbon source, several process simulations
+and techno-economic analyses of methanol synthesis from green hydrogen and captured
+CO2 have been reported, with the CO2 source being either a cleaned industrial ﬂue gas or
+concentrated atmospheric CO2 (i.e., through carbon capture units, CCUs) [20–22]. Pérez-
+Fortes et al. [20] and Szima et al. [21] simulated a methanol synthesis plant with CZA,"
+23,∆H0
+24,"25 ◦C = −90.6 kJ·mol−1
+25 ◦C = −49.4 kJ·mol−1
+∆H0
+25 ◦C = 41.2 kJ·mol−1
+∆H0"
+25,(1)
+26,(2)
+27,"Processes 2022, 10, 1535"
+28,3 of 24
+29,"having a total production of 440 and 100 kton MeOH·a−1, respectively. Heat integration
+was considered in both studies, with the plant being energetically self-sufﬁcient. Cordero-
+Lanzac et al. [22] simulated the production of 275 kton MeOH·a−1 with an In2O3/Co
+catalyst. In all studies, it was concluded that economic viability can be achieved if reactant
+prices signiﬁcantly decrease or if CO2 taxation is enforced. Nonetheless, it is expected
+that the costs of electrolysis and CCUs might considerably decrease in the foreseeable
+future [23,24], and the ﬁrst industrial-scale plants to produce e-methanol and e-gasoline
+are expected to start operating in 2024–2025 [25,26]."
+30,"A general argument is the thermodynamic restrictions of CO2 conversion to methanol
+compared to CO conversion (see Figure 2), whereby only limited methanol yields are
+achievable even at elevated pressures and lower temperatures. Consequently, a low CO2
+single-pass conversion (XCO2,SP) is obtained independently of the reactor size, leading to
+large recycle streams, which increase operating costs and cause higher reactant losses in
+purge streams."
+31,"Figure 2. Methanol equilibrium yield as a function of temperature and pressure. Data generated with
+Aspen Plus. (a) H2/CO feed in a 2:1 ratio. (b) H2/CO2 feed in a 3:1 ratio."
+32,"If the products (i.e., methanol and water) are removed from the reacting system, the
+thermodynamic equilibrium is shifted towards a higher methanol yield. This strategy
+has been studied using alternative reactor designs with in situ condensation [27,28] or
+membrane reactors [29], but these technologies are not yet ready for commercialization.
+A feasible approach using commercially proven technology is the implementation of
+intermediate condensation steps between reactor units displaced in series. In the Davy
+series loop methanol process, two reactors with an intermediate condensation unit are
+proposed for large scale methanol production from CO-rich syngas [13,30]. Although the
+implementation of intermediate condensation steps is a promising strategy to increase
+methanol yield from H2/CO2 syngas, such an approach has still not received particular
+attention, and plant simulations with heat integration and techno-economic analyses are
+not available in the literature yet, to the best of our knowledge."
+33,"In this work, the conventional approach (named here the ‘one-step process’) is com-
+pared with a new alternative approach including two condensation steps (named here the
+‘three-step process’). Using our recently developed kinetic model for methanol synthesis [19],
+both processes were implemented in Matlab in order to critically analyze and select key
+process parameters (i.e., cooling ﬂuid temperature, number of reactor modules, and purge
+fraction). With the optimized parameters, detailed methanol synthesis plants with heat inte-
+gration were implemented in Aspen Plus, and techno-economic analyses were performed."
+34,"Processes 2022, 10, 1535"
+35,4 of 24
+36,"2. Methodology
+2.1. Process Overview"
+37,"In the present work, a methanol synthesis plant from H2/CO2 with a production of
+145 ton·h−1 is considered. This value is based on an ongoing power-to-gasoline project
+via H2/CO2 conversion to methanol [26], whose ﬁnal goal is a gasoline production of
+5.5·108 L·a−1, which corresponds to a methanol production of 1.16 Mton·a−1 or 145 ton·h−1
+(assuming a yield of 80% in the methanol-to-gasoline process and plant operating hours
+of 8000 h·a−1).
+In our simulations, feed carbon dioxide comes from the cleaned ﬂue gas of nearby
+industries (e.g., a cement industry) at 25 ◦C and 1 bar, with a purity of 99.5% mol/mol (the
+rest was water). Feed hydrogen comes from water electrolysis at 25 ◦C and 30 bar, with a
+purity of 99.5% mol/mol (the rest was nitrogen). Although it is possible to obtain these
+feedstocks in an extremely high purity (e.g., 99.99% mol/mol) [31,32], we chose a more
+conservative scenario, which also allows a proper simulation of inert material accumulation
+in the plant."
+38,"As pressure has a signiﬁcant inﬂuence on the thermodynamic equilibrium of methanol
+synthesis (see Figure 2), the reactor operating pressure was set to 70 bar. Although higher
+pressures are reported to have potential in methanol synthesis [33,34], they were out
+of the scope of this work, since considerable extrapolations in the kinetic model would
+be necessary, and condensation inside the reactor might have to be taken into account.
+Besides, higher pressures increase compression costs and might also require more expensive
+materials to build the equipment."
+39,"The dimensions of the reactor modules were chosen to be close to the upper size
+limits that are currently commercially available. That is, each reactor module consisted of
+a shell containing 33,000 tubes with 12.5 m length and an inner diameter of 3.75 cm.
+Since the heat generation in CO2 hydrogenation is lower than in CO hydrogenation
+(Equations (1) and (2)), less heat transfer area is necessary. Because of that, the tube inner
+diameter chosen in this work (3.75 cm) was larger than the size typically used for CO
+conversion to methanol (2.5 cm). Considering 1050 kg·m−3 as the apparent catalyst bed
+density [35], the total CZA catalyst loading of each reactor module was 478.13 ton. A total
+pressure loss of 0.75 bar was considered for each reactor module [36]."
+40,2.1.1. One-Step Approach—Process Description
+41,"In Figure 3, a detailed ﬂowsheet of the one-step process is presented. This is an
+adapted version from a concept reported in the literature [37–39]. Feed CO2 is mixed
+with a low-pressure recycle stream, and then compressed from 1 to 70 bar in a three-stage
+process, including intermediate cooling (reducing compression work) and intermediate
+phase separation (to remove condensed methanol and water from the recycle stream). The
+resulting compressed stream is mixed with feed H2 (compressed from 30 to 70 bar in one
+stage) and with a high pressure recycle stream. The mixed stream is preheated with the
+product gas and enters the inner tubes of parallel reactor modules, with the temperature
+being controlled by boiling water on the shell side.
+The product stream is cooled down to 30 ◦C in four heat exchangers, condensing
+water, methanol, and some CO2, which are separated from the light gases in a ﬂash drum.
+A fraction of the gas stream is purged, and the remaining stream is recompressed to 70 bar
+and recycled. The liquid stream from the ﬂash drum is depressurized to 1 bar and heated
+to 30 ◦C, vaporizing most remaining CO2. A liquid–gas separation is performed in another
+ﬂash drum. A fraction of the gas stream from the low-pressure ﬂash drum is purged, and
+the rest is recycled by mixing with feed CO2. The liquid stream from the low-pressure
+ﬂash drum is preheated and fed to a packed column, where methanol in high purity
+(>99.5% m/m) is recovered in the liquid distillate, water is recovered in the bottom, and
+most of the remaining CO2 is recovered in the gas distillate."
+42,"Processes 2022, 10, 1535"
+43,5 of 24
+44,"Figure 3. One-step process—detailed ﬂowsheet with a total of three reactor modules. Cooling water
+streams are omitted."
+45,"The purge streams are burned with 15% air excess in a ﬁred heater [40]. The heat of
+reaction of both the purge combustion and the methanol synthesis are used in a water
+Rankine cycle to produce electricity. The cycle starts with liquid water at 1 bar and 99.6 ◦C
+being pumped to a certain pressure, whose boiling temperature corresponds to the desired
+reactor temperature. Pressurized water reaches its boiling temperature in two steps (heat
+exchanger and ﬁred heater) and vaporizes inside the reactor modules. The produced
+saturated steam is further heated in the ﬁred heater and then performs work in a turbine,
+with a discharge pressure of 1.43 bar (Tboiling = 110 ◦C). The resulting low-pressure steam
+condenses partially in the column reboiler, and total condensation is completed in a heat
+exchanger, closing the water cycle."
+46,2.1.2. Three-Step Approach—Process Description
+47,"In Figure 4, a detailed ﬂowsheet of the three-step process is presented. In this approach,
+the feed compression and recycling of non-converted reactants occurs similarly to the one-
+step process. The mixed feed stream is preheated and enters the ﬁrst reactor module. The
+product gas is cooled down to 45 ◦C in three steps, and the condensed stream (mostly water,
+methanol, and some CO2) is separated from the light gases in a ﬂash drum. The gas stream
+is preheated and enters the second reactor module. The second product gas is cooled down
+to 30 ◦C in three steps, and the condensed stream (mostly water, methanol, and some CO2)
+is separated from the gas stream in another ﬂash drum."
+48,"Processes 2022, 10, 1535"
+49,6 of 24
+50,"Figure 4. Three-step process—detailed ﬂowsheet with a total of three reactor modules. Cooling water
+streams are omitted."
+51,"The gas phase is preheated and enters the third reactor module. The third product
+gas is cooled down, mixed with the condensed streams from the ﬁrst and second reaction
+stages, and further cooled down to 30 ◦C."
+52,"Similar to the one-step process, component separation of the product stream is per-
+formed with one ﬂash drum at high pressure, one ﬂash drum at ambient pressure, and one
+distillation column."
+53,"The purge stream is burned in a ﬁred heater with preheated air. In the water cycle,
+pressurized water is preheated and distributed to the reactor modules. A fraction of the
+produced saturated steam is split and used to preheat the water while the remaining steam
+is further heated in the ﬁred heater. Supersaturated steam performs work in a turbine, with
+a discharge pressure of 1.43 bar (Tboiling = 110 ◦C). The resulting low-pressure steam is
+partially condensed in the column reboiler, and total condensation is completed in a heat
+exchanger, closing the water cycle."
+54,"Processes 2022, 10, 1535"
+55,7 of 24
+56,2.2. Process Simulation in Matlab
+57,"Before implementing the ﬁnal version of each plant in Aspen Plus, different scenarios
+were investigated in Matlab. Therefore, optimal key parameters were selected, such as the
+total number of reactor modules, the purge fraction, and the temperature of the cooling
+ﬂuid in the reactor."
+58,"In order to simulate the reactor, the following considerations were made: there are only
+variations along the length of the reactor (1D assumption), the inﬂuence of back-mixing is
+neglected (plug ﬂow assumption), and the cooling ﬂuid temperature (Tw, in K) is constant.
+Starting from mass and energy balances, the differential equations of the total mole ﬂow of
+a single tube ( .n, in mol·s−1), the mole fraction of each component j (yj), and the temperature
+(T, in K) in the axial direction z are shown as follows:"
+59,"mCat
+L"
+60,· 6∑
+61,2∑
+62,j=1
+63,k=1
+64,(νjk·rk)
+65,(cid:41)
+66,=
+67,(cid:40)
+68,"d .n
+dz"
+69,"dyj
+dz"
+70,(cid:17)·
+71,(cid:34)
+72,=
+73,·
+74,"1
+.n
+− d .n
+dz"
+75,"1(cid:16) .n·CP, f"
+76,"dT
+dz"
+77,=
+78,"mCat
+L"
+79,· 2∑
+80,k=1
+81,"(νjk·rk) − yj· d .n
+(cid:18)
+dz"
+82,(cid:19)
+83,·h f − .n· 6∑
+84,j=1
+85,"hj· dyj
+dz"
+86,+ U·π·Di·(Tw − T)
+87,(4)
+88,(5)
+89,(6)
+90,(cid:35)
+91,"where mCat is the catalyst mass (kg), L is the reactor length (m), yjk is the stoichiometric
+coefﬁcient of component j in reaction k, rk is the rate of reaction k (mol·kgcat·s−1), CP, f is the
+heat capacity of the ﬂuid (J·mol·K−1), h f is the speciﬁc enthalpy of the ﬂuid (J·mol−1), hj is
+the speciﬁc enthalpy of component j, U is the global heat transfer coefﬁcient (W·m−2·K−1),
+and Di is the inner diameter of a single tube (m)."
+92,"The temperature-dependent parameters (CP, f , h f , hj, U) were updated in each in-
+tegration point in the axial direction. Heat capacity and enthalpy were calculated with
+the thermodynamic functions provided by Goos et al. [41], which are detailed in the
+Supplementary Material (Section A) along with the derivation of the differential equations.
+The global heat transfer coefﬁcient was estimated (U) by summing the heat transfer resis-
+tances in the axial direction, according to the methodology described in the literature [42,43]
+(see Section B of the Supplementary Material)."
+93,"The methodology to calculate the reaction rates (rk) is described in Section 2.3. The
+system of differential equations was solved with the Matlab function ode45, with absolute
+and relative tolerances set to 10−10."
+94,"In order to simplify the simulation of the separation steps in Matlab, the following
+procedure was applied. Both processes were implemented in Aspen Plus, considering a
+total of six reactor modules, a purge fraction of 2%, and Tw = 235 ◦C. The values of the split
+ratio of each component in the liquid and gas phase of each ﬂash drum and the distillation
+column were extracted. For example, in the column of the one-step process, the methanol
+distribution in the outlet streams was: 3.80% in the gas distillate, 96.13% in the liquid
+distillate, and 0.06% in the bottom. The split ratio of all the components were taken from
+Aspen Plus and were considered constant for the different scenarios investigated in Matlab
+(i.e., variations in the number of reactor modules, purge fraction, and Tw). These split ratios
+are provided in the Supplementary Material (Section C)."
+95,"Flowsheet convergence was achieved in Matlab by an iterative method, as there were
+two cycles of streams due to recycling unconverted reactants. First, educated initial guesses
+of the composition and total mole ﬂow of each recycle stream were given. In each iteration,
+the recycle stream mole ﬂow and its composition were calculated and used in the next
+iteration until the tolerance criterion was fulﬁlled:"
+96,"Processes 2022, 10, 1535"
+97,(cid:17)2
+98,"(cid:16) .nRe f ,k+1 − .nRe f ,k
+(cid:16) .nRe f ,k+1
+(cid:17)2"
+99,≤ Tolerance
+100,8 of 24
+101,(7)
+102,"where .nRe f ,k is the total mole ﬂow of the recycle stream at iteration k. The tolerance of the
+inner cycle and the outer cycle were set to 10−9 and 10−8, respectively."
+103,2.3. Kinetic Modeling of the Methanol Synthesis
+104,"The kinetic simulation of the methanol synthesis was performed with our previously
+published six-parameter model (Model-6p) [19], whose considerations regarding the reac-
+tion mechanism, the assumption of the rate determining steps, and the most abundant sur-
+face species were based on our detailed microkinetic model [15]. This six-parameter model
+was validated with 496 experimental points from different laboratory plants [15,18,44],
+which contemplated temperatures between 210 and 260 ◦C, pressures between 20 and 60 bar,
+gas hourly space velocities (GHSV) between 1.8 and 40 LS·h−1·gcat
+−1, and a variety of
+syngas (H2/CO/CO2/N2) feed compositions, including 126 points with only H2/CO2/N2
+in feed.
+and the rWGSR (Equation (3)). The reaction rates (rCO2 hyd., rrWGSR) in mol·kgcat
+described as follows:
+fCH3OH· fH2O
+· fCO2·K0
+fCO· fH2O
+fH2· fCO2·K0"
+105,"In this model, two main reactions are considered: CO2 hydrogenation (Equation (2))
+−1·s−1 are
+(cid:33)
+(cid:33)"
+106,"(cid:19)
+A2 − EA,2
+R·T
+(cid:19)"
+107,·φZn·θb·θc· fCO2· fH2O·
+108,"(cid:32)
+1 −
+(cid:32)"
+109,"·φZn·θb·θc· f 1.5
+H2"
+110,· fCO2·
+111,"A3 − EA,3
+R·T"
+112,rCO2 hyd. = exp
+113,rrWGSR = exp
+114,"(cid:18)
+(cid:18)"
+115,"f 3
+H2"
+116,"P,CO2 hyd."
+117,1 −
+118,"P,rWGSR"
+119,(8)
+120,(9)
+121,(10)
+122,(11)
+123,"Here, A2−3 and EA,2−3 are kinetic parameters, R is the universal gas constant, φZn is
+the zinc coverage on the surface, θb and θc are the free active sites b and c, fj is the fugacity
+of gas component j (bar), and K0"
+124,"P,k is the global equilibrium constant of reaction k."
+125,"The Peng–Robinson equation of state is used to calculate the fugacities [45], consider-
+ing the binary interaction parameters reported by Meng et al. [46] and Meng and Duan [47],
+and an effective hydrogen acentric factor of −0.05 proposed by Deiters et al. [48]."
+126,"The zinc coverage is dependent on temperature and gas concentration [49], and its
+exact quantiﬁcation under reaction conditions is difﬁcult to predict. The zinc coverage is
+then considered to be constant and equal to φZn = 0.50 for a general case, while it is set to
+φZn = 0.10 for CO2-rich feed (CO2/COx > 0.90). The free active sites are calculated with the
+following equations:"
+127,"(cid:16)
+K2· f 0.5
+(cid:16)
+H2
+K3· f −0.5
+H2"
+128,"(cid:17)−1
+· fCO2 + 1
+(cid:17)−1
+· fH2O + 1"
+129,θb =
+130,θc =
+131,"where K2−3 are adsorption parameters. In Table 1, the equilibrium constants as well as the
+previously estimated kinetic and adsorption parameters are summarized [19]."
+132,"The side products of methanol synthesis on Cu/Zn-based catalysts (e.g., hydrocarbons
+or dimethyl ether) are typically at low concentrations [13,50]. Several studies reported that
+syngas conversion to hydrocarbons or dimethyl ether on commercial CZA at moderate
+temperatures (T ≤ 260 ◦C) is signiﬁcantly low or even below detection range [15,18,44],
+while Condero-Lanzac et al. [22] reported low methane production from H2/CO2 on CZA
+at high temperatures (T ≥ 275 ◦C). Saito et al. [51] observed that side product formation is
+further reduced by increasing CO2/COX feed concentration. Therefore, the generation of
+side products is not considered in this work."
+133,"Processes 2022, 10, 1535"
+134,9 of 24
+135,"Table 1. Equilibrium constants, kinetic and adsorption parameters of Model-6p [19]. Reprinted with
+permission from [19]. Copyright 2021 American Chemical Society."
+136,Parameter
+137,"A2
+A3
+EA,2
+EA,3
+K2
+K3"
+138,K0
+139,"P,CO2 hyd.
+K0"
+140,"P,rWGSR"
+141,Value | Equation
+142,"14.41 ± 0.99
+29.13 ± 1.74
+94.73 ± 4.18
+132.79 ± 7.46
+0.1441 ± 0.0289
+49.44 ± 11.08"
+143,"(cid:18) 4755.7
+(cid:18)−5337.4"
+144,T
+145,"T−4.481· exp
+T−1.097· exp"
+146,+ 8.369
+147,+ 12.569
+148,T
+149,Unit
+150,"–
+–"
+151,"kJ·mol−1
+kJ·mol−1
+bar−1.5
+bar−0.5
+bar−2"
+152,–
+153,(cid:19)
+154,(cid:19)
+155,2.4. Process Analysis and Optimization
+156,"Considering the ﬁxed methanol production of 145 ton·h−1 or 1257.1 mol·s−1 and the
+99.5% mol/mol purity of the reactants, the minimum required feed is 1263.4 mol·s−1 of
+CO2 and 3790.3 mol·s−1 of H2, totalizing .n f eed,min = 5053.7 mol·s−1. Since there are reactant
+losses in the purge and product streams, an excess of feed is required. With a ﬁx feed ratio
+H2:CO2 of 3:1, the excess of feed (Exc) is deﬁned here as:"
+157,"(cid:16) .n f eed − .n f eed,min"
+158,(cid:17)
+159,".n f eed,min"
+160,Exc =
+161,·100%
+162,(12)
+163,"It is, of course, of interest to minimize feed consumption, due to its high costs. Feed
+consumption is affected by key variables, such as reactor temperature and pressure, the
+number of reactor modules (which deﬁnes the total catalyst mass), and purge fraction.
+Avoiding large recycle streams is also important, as compressor work is required to get
+the pressure back to 70 bar, and larger equipment (i.e., heat exchangers, ﬂash drums,
+compressors) are required to process higher ﬂows."
+164,"Simulations were performed for a different number of reactor modules (from 3 to 12)
+and different purge fractions (from 0.5 to 5%). For each case, an initial guess for the feed
+excess was given (Exc = 5%), and a ﬁx feed ratio H2:CO2 of 3:1 (a stoichiometric ratio) was
+applied. Then, an optimization problem was solved in Matlab with the function fminsearch
+(function tolerance = 0.1 mol·s−1, step tolerance = 0.1 ◦C), whose objective was to maximize
+methanol production by varying the reactor coolant temperature (Tw).
+With the optimum Tw, the required excess of feed was calculated to meet the methanol
+demand (1257.1 mol·s−1) with Newton’s method (function tolerance: 0.1 mol·s−1). The
+steps of the temperature optimization and Exc calculations were repeated until the temper-
+ature update was lower than 0.25 ◦C."
+165,2.5. Detailed Plant Simulation in Aspen Plus
+166,"After analyzing the results of the Matlab simulations, optimum parameters were
+selected for each approach (i.e., the number of reactor modules, purge fraction, cooling ﬂuid
+temperature) and a detailed plant simulation including heat integration was implemented
+in Aspen Plus V10."
+167,"The Peng–Robinson property method was selected for the reactor modules. All other
+equipment were simulated with the Non-Random Two-Liquid Model with a second set of
+binary parameters (NRTL2) as the property method."
+168,"The methanol synthesis reactor was simulated with the rigorous plug ﬂow reactor
+model (RPLUG unit) and the kinetics described in Section 2.3 were implemented as a
+Langmuir–Hinshelwood–Hougen–Watson (LHHW) reaction model. The rearrangement
+of the model parameters to follow the software’s speciﬁc input format is detailed in the
+Supplementary Material (Section D). Since the reactor cooling ﬂuid is at a constant tem-
+perature due to water evaporation, both co-current and counter-current operations give"
+169,"Processes 2022, 10, 1535"
+170,10 of 24
+171,"the same results. Therefore, the co-current operation was selected in order to simplify the
+mathematical calculations."
+172,"The combustion of the purge streams in a ﬁred heater was simulated with the RGIBBS
+unit, which considers that chemical equilibrium is achieved when the free Gibbs energy of
+the system is minimized.
+The heat exchangers were simulated in counter-current ﬂow with the HeatX unit, with
+a minimum temperature approach of 25 ◦C for the heat exchangers located inside the ﬁred
+heater and a minimum temperature approach of 10 ◦C for all the other heat exchangers.
+The compressors were modeled using the ASME method, assuming a mechanical
+efﬁciency of 0.95 and an isentropic efﬁciency of 0.80 [22]. The pump was simulated assum-
+ing an efﬁciency of 0.70. The turbine was simulated with the ASME method, assuming a
+mechanical efﬁciency of 0.95 and an isentropic efﬁciency of 0.90 [52].
+The distillation column was simulated with the rigorous RadFrac model, considering a
+kettle reboiler and a partial condenser at 53 ◦C with liquid and vapor distillate. A Murphree
+efﬁciency of 0.75 was set to all intermediate stages [53,54]. In both processes, the column
+had 30 stages and a reﬂux ratio of 2, with the feed entering above the 24th stage.
+The relative tolerance of all equipment calculations was set to 10−5. Flowsheet conver-
+gence was achieved using the Broyden method, with a relative tolerance of 10−4, which
+corresponds to a mass balance closure of 99.99%."
+173,2.6. Efﬁciency Evaluation
+174,"The chemical conversion efﬁciency (ηCCE) accounts for how much fuel energy remains
+in the ﬁnal product in relation to the reactants. For methanol synthesis from H2/CO2, it is
+calculated as follows: [55]"
+175,ηCCE =
+176,.mMeOH·LHVMeOH
+177,.mH2·LHVH2
+178,(13)
+179,(15)
+180,"where .mMeOH is the methanol mass production,
+.mH2 is the hydrogen feed demand, and
+LHV is the low heating value. The maximum possible efﬁciency (ηCCE,max) occurs at 100%
+overall H2 conversion to methanol (stoichiometric conversion):"
+181,"ηCCE,max ="
+182,"MMeOH ·LHVMeOH
+3·MH2·LHVH2"
+183,= 0.876
+184,(14)
+185,"Here, Mj is the molar mass of component j. In order to also account for heat and the"
+186,"work input, the exergy efﬁciency (ηEx) is calculated: [39]
+.mMeOH·eMeOH
+.mCO2·eCO2 + Pel + EQ"
+187,.mH2·eH2 +
+188,ηEx =
+189,"where ej is the speciﬁc exergy of component j, Pel is the total required electric power, and
+EQ is the total exergy input associated with heat demand."
+190,The specific exergy of a component (ej) is divided between thermal and chemical exergy: [39]
+191,"ej(T, p) ="
+192,"ej,therm"
+193,"+ ej,chem ="
+194,Hj − Sj·T0 − H0
+195,j + S0
+196,j ·T0
+197,+ HHVj
+198,(16)
+199,(cid:104)
+200,(cid:105)
+201,(cid:104)
+202,(cid:105)
+203,"Here, ej,therm and ej,chem are the thermal and chemical exergies, Hj is enthalpy, Sj is
+entropy, H0
+j are the enthalpy and entropy at reference conditions (298.15 K and 1 bar),
+T0 is the reference temperature, and HHVj is the high heating value. In the exergy efﬁciency
+calculation, the HHV is used instead of the LHV, as water is liquid at reference conditions."
+204,j and S0
+205,2.7. Techno-Economic Evaluation
+206,"In order to calculate the production costs, the standardized methodology from
+Albrecht et al. [56] was considered, which is a further development based on the work
+of Peters et al. [57]."
+207,"Processes 2022, 10, 1535"
+208,11 of 24
+209,"The main equipment costs (EC) were estimated based on reference equipment costs [57,58].
+The scale up to the required capacity was performed with speciﬁc equipment scaling factors,
+and price inﬂation was corrected to 2020 with the Chemical Engineering Plant Cost Indexes
+(CEPCI). In Equation (23), the costs of equipment j (ECj) is described:"
+210,(cid:33)M
+211,(cid:32)
+212,(cid:32) Cj
+213,"Cj,re f"
+214,·
+215,"CEPCI2020
+CEPCIre f"
+216,(cid:33)
+217,"ECj = ECj,re f·"
+218,"Here, the subscription ref relates to the reference equipment, C is the characteristic
+capacity, and M is the equipment scaling factor. The equipment is constructed with carbon
+steel. When the reference price is in US dollars (USD), a conversion to euros (EUR) of
+1.13 USD·EUR−1 is applied (February 2022) [59]."
+219,"The dimensions of the flash drums and the packed distillation column were calculated
+with the methodology reported by Towler and Sinnott [60]. The required heat transfer area of
+the heat exchangers, column condenser, and reboiler were estimated by assuming the typical
+global heat transfer coefficients reported by the VDI Atlas [43], according to each specific
+situation. Equipment dimensioning is detailed in the Supplementary Material (Section G)."
+220,"The ﬁxed capital investment (FCI) was estimated by multiplying the total EC with the
+Lang Factor (LF), which accounts for all direct and indirect costs related to the plant
+In this work, LF was assumed to be 4.86 (details are provided in the
+construction.
+Supplementary Material, Section H) [56,57]. A working capital (WC) of 10% of the total
+capital expenses (CAPEX) was considered [56]. Summarizing the equations:"
+221,(17)
+222,(18)
+223,(19)
+224,"FCI = LF· ∑ ECj
+CAPEX = FCI + WC
+WC = 0.10·CAPEX"
+225,"(20)
+The equivalent annual capital costs (ACC) were estimated by applying the annuity
+method on the FCI, assuming an annual interest rate (IR) of 10%, a plant operating life (tP)
+of 20 years, and no salvage value [61]. The working capital does not depreciate in value,
+and only its interest has to be taken into account [56]."
+226,ACCFCI =
+227,"FCI·IR·(1 + IR)tP
+[(1 + IR)tP − 1]"
+228,ACCWC = WC·IR
+229,ACC = ACCFCI + ACCWC =
+230,"FCI·IR·(1 + IR)tP
+[(1 + IR)tP − 1]"
+231,(21)
+232,(22)
+233,(23)
+234,+ WC·IR
+235,"The operating expenses (OPEX) were divided between direct and indirect costs. The
+costs related to the direct OPEX (OPEXdir) are presented in Table 2, which include raw
+materials, catalysts, process water treating, and electricity. A catalyst lifetime of three years
+was considered. In the Rankine water cycle, a clean water replacement of 1% of the total
+ﬂow was considered [62]."
+236,"The indirect OPEX consisted of operating labor (OL), operating supervision, mainte-
+nance, operating supplies, laboratory charges, taxes on property, insurance, plant overhead,
+administration, distribution, marketing, research, and development. The estimation of each
+of these items was based on typical values, which are dependent on OL, FCI, and the net
+production costs (NPC) (see Section H of the Supplementary Material) [56,57]. The total
+indirect OPEX (OPEXind) is calculated as follows:"
+237,OPEXind = 2.2125·OL + 0.081·FCI + 0.10·NPC
+238,(24)
+239,"Processes 2022, 10, 1535"
+240,12 of 24
+241,"Table 2. Costs of feedstock, catalyst, water treating, and electricity."
+242,"Item
+Hydrogen
+Carbon dioxide
+Cooling water
+Clean water
+Total organic carbon (TOC) abatement of process water
+Electricity
+Catalyst (Cu/ZnO/Al2O3)"
+243,"Costs
+3097.4 €·ton−1
+44.3 €·ton−1
+0.00125 €·ton−1
+2 €·ton−1
+1938 €·(ton C)−1
+90 €·MWh−1
+18,100 €·ton−1"
+244,"Ref.
+[22]
+[22]
+[56]
+[56]
+[63]
+[53]
+[64]"
+245,The required number of operators in a shift (nOP) was estimated with the following
+246,"equation: [65,66]"
+247,nOP = (6.29 + 0.23·Nnp)0.5
+248,"(25)
+where Nnp is the number of non-particulate main processing units. Considering daily
+working shifts, resting periods and vacations, the number of operators to fulﬁll each
+position in a continuous operation is approximately FOP = 4.5. Therefore, the total number
+of operators (NOP) is: [65,66]"
+249,NOP = FOP·nOP
+250,(26)
+251,The total costs of operating labor (OL) is then calculated as follows:
+252,OL = WOP · NOP
+253,(27)
+254,"where WOP is the wage rate of each operator (WOP = 72,000 €·a−1) [53]."
+255,The net production costs (NPC) are calculated in terms of average annual costs and in
+256,terms of average costs per kg of methanol:
+257,NPC
+258,"(cid:20) €
+(cid:21)
+(cid:21)
+(cid:20) €"
+259,a
+260,kg
+261,NPC
+262,3. Results and Discussion
+263,= ACC + OPEXdir + OPEXind
+264,=
+265,(ACC + OPEXdir + OPEXind)
+266,.mMEOH
+267,(28)
+268,(29)
+269,"In this section, process simulation and analysis are presented separately for the one-
+step and the three-step approaches. Finally, the techno-economic analysis of both ap-
+proaches is presented and discussed jointly."
+270,"3.1. One-Step Process
+3.1.1. One-Step Process—Selecting Key Parameters"
+271,"The one-step process was successfully implemented in Matlab. Different scenarios
+were simulated by varying the number of reactor modules and the purge fraction, with
+the optimal temperature for a ﬁxed methanol production (145 ton·h−1) being estimated
+in each case. In Figure 5, several contour plots are shown, where CO2 single-pass conver-
+sion (XCO2,SP) (Figure 5a), the required feed excess (Figure 5b), the optimal temperature
+(Figure 5c), and the total recycle stream (Figure 5d) are plotted against the number of reactor
+modules and the purge fraction."
+272,"CO2 single-pass conversion (Figure 5a) was considerably enhanced by increasing
+the number of reactor modules. This was not only because the gas hourly space velocity
+(GHSV) decreased, but also because the optimal temperature had lower values (Figure 5c),
+shifting the thermodynamic equilibrium towards higher methanol concentrations. In
+contrast, reducing the purge fraction had little effect on XCO2,SP. This should be the result
+of two competing effects: on one hand, a lower purge fraction means higher recycle
+streams (Figure 5d), which increases the GHSV, reducing XCO2,SP. On the other hand, the
+recycle stream has a H2:CO2 ratio greater than three due to a limited rWGSR extension."
+273,"Processes 2022, 10, 1535"
+274,13 of 24
+275,"By increasing the recycle stream, the H2:CO2 ratio of the reactor feed stream is enhanced,
+positively contributing to XCO2,SP."
+276,"Figure 5. One-step process—CO2 single-pass conversion (a), required feed excess (b), optimal
+temperature (c), and total recycle stream (d) as a function of the number of reactor modules and the
+purge fraction."
+277,"The required feed excess was signiﬁcantly decreased both by increasing the number
+of reactor modules and by reducing the purge fraction. This occurred because the former
+procedure increased XCO2,SP and the latter maintained XCO2,SP roughly constant while
+increasing the gas ﬂow inside the reactor modules."
+278,"Since the reactants (H2, CO2) represent the highest costs of the plant, it is important to
+minimize the required feed excess, which according to Figure 5b, occurred at 0.5% purge
+fraction. However, with such a low purge fraction, the total recycle stream was considerably
+high, demanding larger heat exchangers, ﬂash drums, and compressors, as well as higher
+power consumption. Therefore, an intermediate value of 2% as the purge fraction was
+selected for the detailed simulation in Aspen Plus, agreeing with other studies and typical
+industrial values [22,39,58]."
+279,"With the purge fraction ﬁxed at 2%, six reactor modules were used in the detailed
+study, because further increasing the number of reactor modules only slightly reduced the
+required excess feed, not justifying further expenses in equipment and catalyst.
+The value of the global heat transfer coefficient was updated point by point within mathe-
+matical integration along the reactor length. For the selected condition, Uz=0 = 160 W·m−2·K−1"
+280,"Processes 2022, 10, 1535"
+281,14 of 24
+282,"and Uz=12.5 = 150 W·m−2·K−1. Since Aspen Plus requires a constant value, the average
+value was used (Uavg = 155 W·m−2·K−1)."
+283,3.1.2. One-Step Process—Detailed Plant Simulation and Process Analysis
+284,"A detailed ﬂowsheet of the one-step process presented in Figure 3 was implemented
+in Aspen Plus, considering 2% purge fraction, six reactor modules working in parallel, and
+the optimized temperature of the reactor cooling ﬂuid (Tw = 247.5 ◦C). A picture of the
+ﬂowsheet in Aspen Plus, the properties of the streams, and a detailed plant description are
+provided in the Supplementary Material (Section E)."
+285,"In Figure 6, the concentration of the products along the reactor length is shown. The
+methanol and water feed concentrations were close to zero, and their outlet concentrations
+were 7.4 and 7.2% mol/mol, respectively. The nitrogen concentration remained relatively
+low (inlet: 4.95% mol/mol, outlet: 5.65% mol/mol). Due to the recycle streams, CO entered
+the reactor modules at 1.50% mol/mol, although it was not a feedstock in the plant. CO was
+produced through the rWGSR until the length of 1.5 m, where its concentration reached
+3.3% mol/mol. Then, due to the high water concentration (4.30% mol/mol), the WGSR
+became faster than its reverse reaction and started to consume CO, which exited the reactor
+at 1.76% mol/mol and a marginal selectivity (0.5%). This virtually stabilized CO content in
+the plant led to a high methanol selectivity (99.5%)."
+286,"Figure 6. One-step process—product concentration along the reactor length. Reactor feed concentra-
+tion: H2/CO/CO2/CH3OH/H2O/N2 = 71.3/1.5/21.9/0.3/0.0/5.0% mol/mol."
+287,"The CO2 single-pass conversion was 28.5%, close to the equilibrium conversion
+(30.4%), while the feed excess was 6.05%, which corresponded to an overall CO2 con-
+version to methanol of 94.3%. These values are in agreement with the Matlab simulations
+(XCO2,SP = 29.7%, feed excess = 5.75%, overall CO2 conversion to MeOH = 94.6%)."
+288,"The chemical conversion efﬁciency (ηCCE) of the process was 82.6%, which was close
+to the maximum possible value (ηCCE,max = 87.6%). With the heat integration, the one-step
+process was not only self-sufﬁcient, but had a heat excess that could be supplied to other
+processes, in agreement with the literature [21,39]. In our case, as is commonly performed
+in industrial methanol synthesis plants, the heat excess was used to generate electricity via
+a water Rankine cycle, reducing the electricity consumption from 47.4 to 17.6 MW."
+289,"In Figure 7, a global exergy balance and an exergy loss distribution are provided.
+No distinction was made between exergy destruction and exergy losses via side output
+streams (i.e., cooling water, process water, and ﬂue gas). The exergy efﬁciency (ηEx) of the
+process was 76.4%, with a total exergy loss of 281.9 MW. The main losses occurred due to
+the exothermic chemical reactions with heat recovery at low temperatures (reactor modules:
+58.1%, ﬁred heater: 14.8%). Additionally, exergy losses in the heat exchangers (11.1%) and
+in the column (9.0%) were also signiﬁcant, mainly due to heat transfer to cooling water."
+290,"Processes 2022, 10, 1535"
+291,15 of 24
+292,"Figure 7. One-step process—exergy analysis. (a) Global exergy balance. Total exergy input: 1194.5 MW.
+(b) Distribution of exergy losses (total = 281.9 MW)."
+293,"3.2. Three-Step Process
+3.2.1. Three-Step Process—Selecting Key Parameters"
+294,"The three-step process was successfully implemented in Matlab. In Figure 8, CO2
+single-pass conversion (XCO2,SP) (Figure 8a), the required feed excess (Figure 8b), the
+optimal temperature (Figure 8c), and the total recycle stream (Figure 8d) are described as
+a function of the number of reactor modules and the purge fraction. Since this process
+considers three reaction steps with intermediate cooling, the simulations were limited to
+multiples of three as the total number of reactor modules."
+295,"Figure 8. Three-step process—CO2 single-pass conversion (a), required feed excess (b), optimal
+temperature (c), and total recycle stream (d) as a function of the number of reactor modules and the
+purge fraction."
+296,"Processes 2022, 10, 1535"
+297,16 of 24
+298,"A signiﬁcant improvement was seen in the three-step process in relation to the one-step
+approach. For similar conditions (i.e., the same total number of reactor modules and purge
+stream fraction), CO2 single-pass conversion had approximately doubled, the required
+feed excess decreased by 60–70%, and the total recycle stream decreased by 50–70%. The
+optimal values for the reactor cooling ﬂuid remained close to the ones of the ﬁrst approach
+(between 230 and 260 ◦C)."
+299,"Similarly to the one-step process, a purge fraction equal to 2% was chosen here, having
+a good compromise between minimizing the feed requirements and minimizing the total
+recycle stream. With this ﬁxed purge fraction, a number of reactor modules equal to three
+was selected, as further increasing this amount gave limited improvement in the required
+feed excess and the total recycle stream, while considerably increasing equipment and
+catalyst costs."
+300,"When analyzing different scenarios in Matlab, the same cooling ﬂuid temperature
+(Tw) was considered for all reactors. A further optimization was possible by allowing this
+temperature to be independently operated in each reactor. This possibility was checked
+for the chosen condition (2% purge fraction, three reactor modules), but only a marginal
+improvement was obtained (see Table 3), probably not justifying the increase in plant
+complexity. Therefore, in the detailed analysis, the cooling ﬂuid temperature of all the
+reactors was set to 258.5 ◦C.
+Table 3. Three-step synthesis—Performance indicators for two process approaches: same cooling
+ﬂuid temperature in all reactors, and independent optimization of the cooling ﬂuid temperature in
+each reactor."
+301,"Approach
+Same Tw
+Varying Tw"
+302,"Tw,R1
+(◦C)
+258.5
+264.6"
+303,"Tw,R2
+(◦C)
+258.5
+259.9"
+304,"Tw,R3
+(◦C)
+258.5
+249.4"
+305,"XCO2,SP"
+306,"(%)
+54.1
+54.6"
+307,Feed
+308,Excess (%)
+309,Total Recycle
+310,Stream (kmol·h−1)
+311,"2.42
+2.35"
+312,"23,038
+22,464"
+313,"Similarly to the one-step process, the average heat transfer coefﬁcients were obtained
+for each reactor and given to Aspen Plus: U1 = 327 W·m−2·K−1, U2 = 285 W·m−2·K−1,
+U3 = 246 W·m−2·K−1. The decrease in the coefﬁcient values is associated with a decrease
+in total ﬂow, due to intermediate product removal. Still, the heat transfer coefﬁcients were
+higher than in the one-step process (155 W·m−2·K−1), which had lower ﬂows for each
+reactor module because of parallel operation."
+314,3.2.2. Three-Step Process—Detailed Plant Simulation and Process Analysis
+315,"A detailed ﬂowsheet of the three-step process presented in Figure 4 was implemented
+in Aspen Plus, considering a 2% purge fraction, three reactor modules working in series
+with intermediate product condensation, and the previously optimized temperature of the
+reactor cooling ﬂuid (Tw = 258.5 ◦C). A detailed plant description, stream properties, and a
+picture of the flowsheet in Aspen Plus are provided in the Supplementary Material (Section F).
+In Figure 9, the concentration of the products along the length of the three reactors is
+shown, as well as the product removal through the intermediate condensation steps. In
+Reactor 1, CO entered at a low concentration (1.3% mol/mol), peaked at z = 2.5 m, and
+left the reactor with a higher concentration (2.7% mol/mol). This CO production through
+the rWGSR increased the water concentration (yR1,out
+H2O = 5.6% mol/mol) and slowed down
+methanol production (yR1,out"
+316,MeOH = 4.7% mol/mol).
+317,"In Reactors 2 and 3, the CO inlet concentration was signiﬁcantly higher (3.0% mol/mol
+for both cases), causing its concentration peak to come much sooner (at 1.8 m and 1.25 m,
+respectively). After that, the WGSR was faster than its reverse reaction and the CO con-
+centration decreased, leaving both reactors with an overall positive CO consumption.
+Therefore, the water concentration in Reactors 2 and 3 was maintained at lower levels
+H2O = 4.7% mol/mol, yR3,out
+(yR2,out
+H2O = 4.5% mol/mol), enhancing the ﬁnal methanol concentra-
+tion (yR2,out"
+318,"MeOH = 5.6% mol/mol, yR3,out"
+319,MeOH = 5.8% mol/mol).
+320,"Processes 2022, 10, 1535"
+321,17 of 24
+322,"Figure 9. Three-step process—methanol, water, and CO concentration along the length of each reactor,
+as well as in the intermediate condensation steps (C1 and C2)."
+323,"Water is known to accelerate the deactivation of Cu-based catalysts [67]. Therefore,
+the lower water concentration of the three-step process in relation to the one-step process
+(y1s,out"
+324,"H2O = 7.2%) should not only beneﬁt the reaction rates, but also the catalyst lifetime."
+325,"In Table 4, the operating conditions and split ratios of the intermediate condensation
+steps are provided, while the reactor information is summarized in Table 5. Methanol and
+water were almost fully removed from the gas phase, but at the cost of ca. 9–13% CO2 con-
+densation. The split ratios of CO2 and methanol were strongly dependent on temperature,
+with the chosen values (T1 = 45 ◦C, T2 = 30 ◦C) being derived from a sensitivity analysis.
+Table 4. Three-step process—operating conditions and split ratios of the intermediate condensation steps."
+326,"Cond.
+Step"
+327,#1
+328,#2
+329,"Temp.
+(◦C)
+45"
+330,30
+331,"Pres.
+(Bar)"
+332,69.25
+333,68.50
+334,"Phase
+Gas"
+335,Liquid
+336,Gas
+337,Liquid
+338,CO2 (%)
+339,"90.66
+9.34
+87.36
+12.64"
+340,"Split Ratio
+MeOH (%)"
+341,"5.31
+94.69
+2.46
+97.54"
+342,H2O (%)
+343,"1.17
+98.83
+0.52
+99.48"
+344,"Table 5. Three-step process—heat transfer, inlet mole ﬂow, mole fractions, and methanol production
+in the reactor modules."
+345,"Reactor
+.
+Q (MW)"
+346,".nin (kmol·h−1)
+yH2,in (% mol/mol)
+yCO,in (% mol/mol)
+yCO2,in (% mol/mol)
+yMeOH,out (% mol/mol)
+yH2O,out (% mol/mol)
+∆ .nMeOH (kmol·h−1)"
+347,"#1
+−18.5
+40,833
+69.1
+1.3
+20.6
+4.7
+5.6
+1616"
+348,"#2
+−25.7
+33,209
+69.0
+3.0
+17.3
+5.6
+4.7
+1589"
+349,"#3
+−22.7
+26,366
+69.5
+3.0
+14.4
+5.8
+4.5
+1325"
+350,"The methanol production was similar in Reactors 1 and 2 (1616 and 1589 kmol·h−1,
+respectively), while it was 18% lower in Reactor 3 (1325 kmol·h−1). This shows the positive
+effect of a higher CO concentration in the reactor feed, despite the lower total feed ﬂow
+and CO2 inlet concentration of Reactors 2 and 3 in relation to Reactor 1."
+351,"The CO2 single-pass conversion (XCO2,SP) was 53.9%, with a selectivity to methanol
+of 99.8% and a selectivity to CO of 0.2%. The feed excess was 2.35%, leading to an overall
+conversion of CO2 to methanol of 97.7%. These values are in agreement with the Matlab
+simulations (XCO2,SP = 54.1%, Exc = 2.42%, overall CO2 conversion to MeOH = 97.6%)."
+352,"The three-step approach was signiﬁcantly superior to the one-step process, even using
+only half the number of reactor modules (three vs. six). This superiority is clear when"
+353,"Processes 2022, 10, 1535"
+354,18 of 24
+355,"looking at the CO2 single-pass conversion (53.9% vs. 28.5%), leading to a considerably
+higher overall conversion to methanol (97.7% vs. 94.3%)."
+356,"With the heat integration, the three-step process was also self-sufﬁcient in heat, while
+electricity was produced through a water Rankine cycle, reducing the total power consump-
+tion from 42.7 to 21.8 MW. The chemical conversion efﬁciency was η3s
+CCE = 85.6%, which
+was higher than the value of the one-step process (η1s
+CCE = 82.3%) and, therefore, even closer
+to the maximum possible value (ηCCE,max = 87.6%)."
+357,"In Figure 10, an exergy analysis of the process is presented. The exergy efﬁciency
+was η3s
+Ex = 78.8%, an improvement from the previous approach (η1s
+Ex = 76.4%), with the
+total exergy losses decreasing in 13% (245.3 vs. 281.9 MW). Although the total power
+consumption decreased (42.7 vs. 47.4 MW), the net power consumption increased slightly
+(21.8 vs. 17.6 MW). This occurred because power generation was signiﬁcantly lower in the
+three-step approach (20.8 vs. 29.8 MW) due to the much lower heat duty of the ﬁred heater,
+as less reactant was lost in the purge streams."
+358,"Figure 10. Three-step process—exergy analysis. (a) Global exergy balance (total exergy input = 1157.5 MW).
+(b) Distribution of exergy losses (total = 245.3 MW)."
+359,"Chemical reactions with heat recovery at low temperatures was also the main cause of
+exergy losses in the three-step approach (reactor modules: 66.0%, ﬁred heater: 6.0%). Both
+processes lost approximately the same exergy in the reactor modules and the distillation
+column. The main improvement in relation to the one-step process was a much lower exergy
+loss in the ﬁred heater (14.7 vs. 41.4 MW), as the total purge stream ﬂow decreased by 59%
+(455 against 1100 kmol·h−1). Despite the higher number of cooling and warming operations
+and the higher total heat transfer duty in the three-step process (357.1 vs. 310.2 MW),
+the exergy losses in the heat exchangers were slightly lower for the three-step process
+(29.4 vs. 31.4 MW). Finally, moderate improvements were also seen in the compressors and
+pump (8.2 vs. 9.1 MW) and in the valves and turbine (5.0 vs. 7.4 MW)."
+360,"In Table 6, the data comparing both processes is summarized, once again emphasizing"
+361,the superior performance of the three-step approach.
+362,Table 6. Data comparison between the one-step and the three-step approach.
+363,Total methanol production (kmol·h−1)
+364,Item
+365,CO2 single-pass conversion (%)
+366,Overall CO2 conversion to methanol (%)
+367,"Total exergy loss (MW)
+Exergy efﬁciency (%)"
+368,Feed excess (%)
+369,Methanol selectivity (%)
+370,Total recycle stream ﬂow (kmol·h−1)
+371,Maximum water concentration (% mol/mol)
+372,One-Step
+373,Three-Step
+374,"4527
+28.5
+94.3
+6.05
+99.5
+54,290"
+375,"7.2
+281.9
+76.4"
+376,"4525
+53.9
+97.7
+2.35
+99.8
+22,581"
+377,"5.6
+245.3
+78.8"
+378,"Processes 2022, 10, 1535"
+379,19 of 24
+380,3.3. Techno-Economic Analysis
+381,"In Figure 11a, the distribution of the equipment costs (EC) is presented, with the
+reactor modules and the compressors representing the majority of the costs (>75%). The
+total EC was 85.5 and 66.1 M€ for the one-step and the three-step approach, respectively.
+This signiﬁcant improvement of the three-step process was a consequence of the inter-
+mediate condensation steps, requiring a lower total reactor volume (due to an enhanced
+reaction velocity), lower compressor size (due to a lower recycle ﬂow), and lower fur-
+nace, turbine, and generator size (due to a lower purge ﬂow). The cost reduction in the
+aforementioned equipment was signiﬁcantly higher than the additional costs of the heat
+exchangers and ﬂash drums from the intermediate condensation units. The total ﬁxed
+capital investment (FCI) was 415.9 and 321.4 M€ for the one-step and three-step approach,
+respectively. The detailed estimated capacity and price of each equipment is presented in
+the Supplementary Material (Section H)."
+382,Figure 11. Distribution of the costs. (a) Equipment Costs (EC). (b) Net Production Costs (NPC).
+383,"In Figure 11b, the distribution of the net production costs (NPC) is detailed. The main
+operating costs were the reactant expenses (78–80% of NPC), with ACC contributing with
+only 4–5%, while the catalysts and electricity consisted of less than 3% of the NPC. Due
+to the higher overall CO2 conversion to methanol, the NPC of the three-step process was
+5.7% lower than the one-step approach. The detailed OPEX costs are presented in the
+Supplementary Material (Section H).
+In Table 7, a summary of the overall costs is presented. The NPC was 920 and 868
+€·ton−1 for the one-step and the three-step process, respectively, corresponding to an
+improvement of 5.7% for the new process. Besides the hydrogen and carbon dioxide costs,
+the ﬁxed capital investment (FCI) and the discount rate were the most sensitive parameters
+to the methanol selling price, as shown in the tornado analysis (see Figure 12)."
+384,Table 7. Summary of the costs of the one-step and the three-step process.
+385,Item
+386,Equipment Costs (EC)
+387,Fixed capital investment (FCI)
+388,Working capital (WC)
+389,Total CAPEX
+390,Annual Capital Costs (ACC)
+391,"Direct OPEX
+Indirect OPEX
+Total OPEX"
+392,Net Production Costs (NPC)
+393,Costs
+394,"One-Step
+85.5 M€
+415.9 M€
+46.2 M€
+462.1 M€
+53.5 M€·a−1
+874.9 M€·a−1
+143.4 M€·a−1
+1018.3 M€·a−1
+1071.8 M€·a−1"
+395,Three-Step
+396,"66.1 M€
+321.4 M€
+35.7 M€
+357.1 M€
+41.3 M€·a−1
+839.6 M€·a−1
+129.6 M€·a−1
+969.3 M€·a−1
+1010.6 M€·a−1"
+397,Decrease (%)
+398,"22.7
+22.7
+22.7
+22.7
+22.7
+4.0
+9.6
+4.8
+5.7"
+399,"Processes 2022, 10, 1535"
+400,20 of 24
+401,"Figure 12. Sensitivity analysis of the main cost factors in relation to the net production costs (NPC).
+Variation of ± 20% in each factor. (a) One-step process. (b) Three-step process."
+402,"In Figure 13, the net production costs are plotted against the hydrogen price. Although
+the methanol market price in Europe was still signiﬁcantly below the values (495 €·ton−1
+in February 2022), [68,69] the green methanol produced from the proposed process would
+become economically competitive if the green hydrogen price reached 1468 €·ton−1."
+403,Figure 13. Net production costs of methanol as a function of green hydrogen price.
+404,4. Conclusions
+405,"A detailed study of a methanol synthesis plant from H2 and CO2 with intermediate con-
+densation units (the three-step process) is presented and compared with the conventional
+approach (the one-step process). The total production was ﬁxed at 1.16 Mton MeOH·a−1.
+The processes were ﬁrst implemented in Matlab in order to critically analyze the number
+of reactor modules, the purge fraction, and the reactor operating temperature. Using the
+most suitable process parameters, detailed plants of both approaches were implemented
+in Aspen Plus, including heat integration and a water Rankine cycle to make use of the
+reaction enthalpy. Finally, techno-economic analyses were applied. Both processes offered
+an excess of heat, which was used to generate electricity in our work, but could alternatively
+supply other plants (e.g., CCU, OME synthesis) in a larger process integration."
+406,"It was demonstrated that CO2 single-pass conversion almost doubled when including
+intermediate condensation steps (53.9 vs. 28.5%), resulting in a signiﬁcantly higher overall
+conversion to methanol (97.7 vs. 94.3%) and in a higher exergy efﬁciency (78.8 vs. 76.4%).
+Because of the enhanced conversion, the new process required lower recycle and feed
+streams, decreasing net production costs by 61.2 M€·a−1 (5.7%). Although additional
+equipment (i.e., heat exchangers and gas–liquid separators) is necessary, the improved"
+407,"Processes 2022, 10, 1535"
+408,21 of 24
+409,"process was signiﬁcantly more efﬁcient than the conventional approach, requiring lower
+sizes of the main equipment (e.g., compressors, reactors, ﬁred heater). Consequently,
+according to our analysis, the total investment costs were 94.5 M€ (22.7%) lower than for
+the conventional process."
+410,"Intermediate condensation steps are therefore highly recommended for methanol
+production from H2/CO2, reducing costs by improving CO2 equilibrium conversion to
+methanol while using commercially proven technology. Besides, since water accelerates the
+deactivation of Cu-based catalysts, product intermediate removal should increase catalyst
+lifetime, as the average water concentration in the reactor is signiﬁcantly lower than in the
+conventional process.
+With our proposed process, the methanol net production costs amounted to 868 €·ton−1,
+which are still signiﬁcantly higher than the current market price (495 €·ton−1) but is believed
+to become economically viable with an effective reduction in the price of green hydrogen."
+411,"Supplementary Materials: The following supporting information can be downloaded at: https://
+www.mdpi.com/article/10.3390/pr10081535/s1, Figure S1: One-step process—Aspen Plus ﬂowsheet;
+Figure S2: Three-step process—Aspen Plus ﬂowsheet; Table S1: Parameters for the estimation of
+the speciﬁc heat capacity and speciﬁc enthalpy of selected components in the gas phase; Table S2:
+Liquid and gas fractions (% mol/mol) of the phase separation via ﬂash drums and the separation
+via the distillation column in the one-step process. Values taken from Aspen Plus calculations and
+used for the Matlab simulations; Table S3: Liquid and gas fractions (% mol/mol) of the phase
+separation via ﬂash drums and the separation via the distillation column in the three-step process.
+Values taken from Aspen Plus calculations and used for the Matlab simulations; Table S4: Aspen
+kinetic factor and Model-6p corresponding expressions; Table S5: Coefﬁcients of the driving force
+constant and the corresponding expressions from Model-6p; Table S6: Concentration exponents (υj)
+of the driving force expression; Table S7: Adsorption constants and the corresponding expression of
+Model-6p; Table S8: Concentration exponents and the corresponding values of Model-6p; Table S9:
+Properties of the streams from the one-step process; Table S10: Molar composition (% mol/mol)
+of the streams from the one-step process; Table S11: Properties of the streams from the three-step
+process; Table S12: Molar composition (% mol/mol) of the streams from the three-step process;
+Table S13: Dimension of the ﬂash drums of the one-step and the three-step processes; Table S14:
+Global heat transfer coefﬁcients, heat transfer duty, and estimated surface area of the heat exchangers
+of the one-step and the three-step process; Table S15: Calculation of the Capital Expenses (CAPEX)
+depending on the total equipment costs (EC); Table S16: Estimation of indirect operating expenses
+(OPEXind); Table S17: Equipment characteristic dimensions and equipment costs (EC) of the one-step
+approach. All equipment was built with carbon steel. All equipment reference prices were taken from
+Peters et al., except for the power generator, whose ref. price was taken from Henning and Haase;
+Table S18: Equipment characteristic dimensions and equipment costs (EC) of the three-step approach.
+All equipment was built with carbon steel, and the costs included 10% delivery costs. All equipment
+reference prices were taken from Peters et al., except for the power generator, whose ref. price was
+taken from Henning and Haase; Table S19: Detailed operating expenditures (OPEX) of the one-step
+and the three-step approach."
+412,"Author Contributions: Conceptualization, B.L.d.O.C. and J.S.; methodology, B.L.d.O.C., K.J. and P.B.;
+software, B.L.d.O.C., K.J. and P.B.; formal analysis, B.L.d.O.C.; writing—original draft preparation,
+B.L.d.O.C.; writing—review and editing, K.J., P.B., K.H.D., S.P., N.D. and J.S.; visualization, B.L.d.O.C.
+and P.B.; supervision, K.H.D., S.P., N.D. and J.S.; funding acquisition, K.H.D., S.P., and J.S. All authors
+have read and agreed to the published version of the manuscript."
+413,"Funding: This research was funded by Coordenação de Aperfeiçoamento de Pessoal de Nível
+Superior (CAPES) (process number: 88881.174609/2018-01) and by the Helmholtz Research Program
+“Materials and Technologies for the Energy Transition (MTET), Topic 3: Chemical Energy Carriers”.
+We also acknowledge the support from the KIT-Publication Fund of the Karlsruhe Institute of
+Technology."
+414,"Conﬂicts of Interest: The authors declare no conﬂict of interest. The funders had no role in the design
+of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or
+in the decision to publish the results."
+415,"Processes 2022, 10, 1535"
+416,22 of 24
+417,"References
+1.
+2."
+418,"Our World in Data. Renewable Energy. Available online: https://ourworldindata.org/renewable-energy (accessed on 4 April 2022).
+Daiyan, R.; MacGill, I.; Amal, R. Opportunities and challenges for renewable power-to-X. ACS Energy Lett. 2020, 5, 3843–3847.
+[CrossRef]
+Younas, M.; Shaﬁque, S.; Hafeez, A.; Javed, F.; Rehman, F. An overview of hydrogen production: Current status, potential, and
+challenges. Fuel 2022, 316, 123317. [CrossRef]
+Chisholm, G.; Zhao, T.; Cronin, L. 24—Hydrogen from water electrolysis. In Storing Energy, 2nd ed.; Letcher, T.M., Ed.; Elsevier:
+Amsterdam, The Netherlands, 2022; pp. 559–591. [CrossRef]
+Artz, J.; Müller, T.E.; Thenert, K.; Kleinekorte, J.; Meys, R.; Sternberg, A.; Bardow, A.; Leitner, W. Sustainable conversion of carbon
+dioxide: An integrated review of catalysis and life cycle assessment. Chem. Rev. 2018, 118, 434–504. [CrossRef] [PubMed]"
+419,3.
+420,4.
+421,5.
+422,"6. Wang, L.; Chen, M.; Küngas, R.; Lin, T.-E.; Diethelm, S.; Maréchal, F.; Van Herle, J. Power-to-fuels via solid-oxide electrolyzer:"
+423,7.
+424,8.
+425,"Operating window and techno-economics. Renew. Sustain. Energy Rev. 2019, 110, 174–187. [CrossRef]
+Bongartz, D.; Burre, J.; Ziegler, A.L.; Mitsos, A. Power-to-OME1 via direct oxidation of methanol: Process design and global
+ﬂowsheet optimization. In Computer Aided Chemical Engineering; Türkay, M., Gani, R., Eds.; Elsevier: Amsterdam, The Netherlands,
+2021; Volume 50, pp. 273–278.
+Schmidt, P.; Batteiger, V.; Roth, A.; Weindorf, W.; Raksha, T. Power-to-liquids as renewable fuel option for aviation: A review.
+Chem. Ing. Tech. 2018, 90, 127–140. [CrossRef]"
+426,9. Methanol Institute—Methanol Fuel in China 2020. Available online: https://www.methanol.org/methanol-fuel-in-china-full-
+427,report/ (accessed on 5 July 2022).
+428,10. Global Data—Methanol Market Capacity 2021. Available online: https://www.globaldata.com/store/report/methanol-market-
+429,analysis/ (accessed on 27 June 2022).
+430,"11. Bozzano, G.; Manenti, F. Efﬁcient methanol synthesis: Perspectives, technologies and optimization strategies. Prog. Energy"
+431,"Combust. Sci. 2016, 56, 71–105. [CrossRef]
+Freepik. Flaticon Icons. Available online: https://www.ﬂaticon.com/authors/freepik (accessed on 27 June 2022)."
+432,"12.
+13. Ott, J.; Gronemann, V.; Pontzen, F.; Fiedler, E.; Grossmann, G.; Kersebohm, D.B.; Weiss, G.; Witte, C. Methanol. In Ullmann’s"
+433,"Encyclopedia of Industrial Chemistry; Wiley: New York, NY, USA, 2012. [CrossRef]"
+434,"14. Toyo Engineering. G-Methanol. Available online: https://www.toyo-eng.com/jp/en/solution/g-methanol/ (accessed on 9 May 2022).
+15. Lacerda de Oliveira Campos, B.; Herrera Delgado, K.; Wild, S.; Studt, F.; Pitter, S.; Sauer, J. Surface reaction kinetics of the"
+435,16.
+436,"methanol synthesis and the water gas shift reaction on Cu/ZnO/Al2O3. React. Chem. Eng. 2021, 6, 868–887. [CrossRef]
+Studt, F.; Behrens, M.; Kunkes, E.L.; Thomas, N.; Zander, S.; Tarasov, A.; Schumann, J.; Frei, E.; Varley, J.B.; Abild-Pedersen,
+F.; et al. The mechanism of CO and CO2 hydrogenation to methanol over Cu-based catalysts. ChemCatChem 2015, 7, 1105–1111.
+[CrossRef]"
+437,"17. Bussche, K.M.V.; Froment, G.F. A steady-state kinetic model for methanol synthesis and the water gas shift reaction on a"
+438,18.
+439,"commercial Cu/ZnO/Al2O3Catalyst. J. Catal. 1996, 161, 1–10. [CrossRef]
+Slotboom, Y.; Bos, M.J.; Pieper, J.; Vrieswijk, V.; Likozar, B.; Kersten, S.R.A.; Brilman, D.W.F. Critical assessment of steady-state
+kinetic models for the synthesis of methanol over an industrial Cu/ZnO/Al2O3 catalyst. Chem. Eng. J. 2020, 389, 124181.
+[CrossRef]"
+440,"19. Lacerda de Oliveira Campos, B.; Herrera Delgado, K.; Pitter, S.; Sauer, J. Development of consistent kinetic models derived from a"
+441,"microkinetic model of the methanol synthesis. Ind. Eng. Chem. Res. 2021, 60, 15074–15086. [CrossRef]"
+442,"20. Pérez-Fortes, M.; Schöneberger, J.C.; Boulamanti, A.; Tzimas, E. Methanol synthesis using captured CO2 as raw material:"
+443,"Techno-economic and environmental assessment. Appl. Energy 2016, 161, 718–732. [CrossRef]
+Szima, S.; Cormos, C.-C. Improving methanol synthesis from carbon-free H2 and captured CO2: A techno-economic and
+environmental evaluation. J. CO2 Util. 2018, 24, 555–563. [CrossRef]"
+444,21.
+445,"22. Cordero-Lanzac, T.; Ramirez, A.; Navajas, A.; Gevers, L.; Brunialti, S.; Gandía, L.M.; Aguayo, A.T.; Mani Sarathy, S.; Gascon, J. A
+techno-economic and life cycle assessment for the production of green methanol from CO2: Catalyst and process bottlenecks.
+J. Energy Chem. 2022, 68, 255–266. [CrossRef]
+FFE München. Electrolysis, the Key Technology for Power-to-X. Available online: https://www.ffe.de/veroeffentlichungen/
+elektrolyse-die-schluesseltechnologie-fuer-power-to-x/ (accessed on 4 April 2022).
+Fasihi, M.; Eﬁmova, O.; Breyer, C. Techno-economic assessment of CO2 direct air capture plants. J. Clean. Prod. 2019, 224, 957–980.
+[CrossRef]"
+446,23.
+447,24.
+448,25. Carbon Recycling International. Renewable Methanol from Carbon Dioxide. Available online: https://www.carbonrecycling.is/
+449,26.
+450,"(accessed on 4 April 2022).
+Siemens Energy. The Haru Oni Hydrogen Plant. Available online: https://www.siemens-energy.com/global/en/news/
+magazine/2021/haru-oni.html (accessed on 1 February 2022)."
+451,"27. van Bennekom, J.G.; Venderbosch, R.H.; Winkelman, J.G.M.; Wilbers, E.; Assink, D.; Lemmens, K.P.J.; Heeres, H.J. Methanol"
+452,"synthesis beyond chemical equilibrium. Chem. Eng. Sci. 2013, 87, 204–208. [CrossRef]"
+453,"28. Bos, M.J.; Brilman, D.W.F. A novel condensation reactor for efﬁcient CO2 to methanol conversion for storage of renewable electric"
+454,"energy. Chem. Eng. J. 2015, 278, 527–532. [CrossRef]"
+455,"Processes 2022, 10, 1535"
+456,23 of 24
+457,29.
+458,30.
+459,"Seshimo, M.; Liu, B.; Lee, H.R.; Yogo, K.; Yamaguchi, Y.; Shigaki, N.; Mogi, Y.; Kita, H.; Nakao, S.-i. Membrane reactor for
+methanol synthesis using Si-Rich LTA Zeolite Membrane. Membranes 2021, 11, 505. [CrossRef]
+Johnson Mattey. Methanol Synthesis Technology. Available online: https://matthey.com/en/products-and-services/chemical-
+processes/core-technologies/synthesis (accessed on 9 May 2022)."
+460,"31. Guo, Y.; Li, G.; Zhou, J.; Liu, Y. Comparison between hydrogen production by alkaline water electrolysis and hydrogen production"
+461,"by PEM electrolysis. IOP Conf. Ser. Earth Environ. Sci. 2019, 371, 042022. [CrossRef]"
+462,"32. Porter, R.T.J.; Fairweather, M.; Kolster, C.; Mac Dowell, N.; Shah, N.; Woolley, R.M. Cost and performance of some carbon capture
+technology options for producing different quality CO2 product streams. Int. J. Greenh. Gas Control. 2017, 57, 185–195. [CrossRef]
+33. Bennekom, J.G.v.; Winkelman, J.G.M.; Venderbosch, R.H.; Nieland, S.D.G.B.; Heeres, H.J. Modeling and experimental studies on"
+463,"phase and chemical equilibria in high-pressure methanol synthesis. Ind. Eng. Chem. Res. 2012, 51, 12233–12243. [CrossRef]"
+464,"34. Gaikwad, R.; Bansode, A.; Urakawa, A. High-pressure advantages in stoichiometric hydrogenation of carbon dioxide to methanol."
+465,"J. Catal. 2016, 343, 127–132. [CrossRef]
+Süd-Chemie AG. Safety Data Sheet—MegaMax 700. 2006."
+466,"35.
+36. Zhu, J.; Araya, S.S.; Cui, X.; Sahlin, S.L.; Kær, S.K. Modeling and design of a multi-tubular packed-bed reactor for methanol steam"
+467,"reforming over a Cu/ZnO/Al2O3 Catalyst. Energies 2020, 13, 610. [CrossRef]"
+468,"37. Van-Dal, É.S.; Bouallou, C. Design and simulation of a methanol production plant from CO2 hydrogenation. J. Clean. Prod. 2013,"
+469,"57, 38–45. [CrossRef]"
+470,"38. Pontzen, F.; Liebner, W.; Gronemann, V.; Rothaemel, M.; Ahlers, B. CO2-based methanol and DME—Efﬁcient technologies for"
+471,"industrial scale production. Catal. Today 2011, 171, 242–250. [CrossRef]"
+472,"39. Bongartz, D.; Burre, J.; Mitsos, A. Production of oxymethylene dimethyl ethers from hydrogen and carbon dioxide—Part I:"
+473,"Modeling and analysis for OME1. Ind. Eng. Chem. Res. 2019, 58, 4881–4889. [CrossRef]"
+474,"40. Burners for Fired Heaters in General Reﬁnery Services. In Reference Practice (RP) 535, 3rd ed.; American Petroleum Institute (API):"
+475,"Washington, DC, USA, 2014."
+476,"41. Goos, E.; Burcat, A.; Ruscic, B. New NASA Thermodynamic Polynomials Database. Available online: http://garﬁeld.chem.elte."
+477,hu/Burcat/THERM.DAT (accessed on 4 March 2022).
+478,"42. Gruber, M. Detaillierte Untersuchung des Wärme und Stofftransports in einem Festbett-Methanisierungsreaktor für Power-to-Gas"
+479,"Anwendungen. Ph.D. Thesis, Karlsruhe Institute of Technology (KIT), Karlsruhe, Germany, 2019; 275p."
+480,"43. VDI Heat Atlas, 2nd ed.; Springer: Berlin-Heidelberg, Germany, 2010; p. 1585.
+44."
+481,"Seidel, C.; Jörke, A.; Vollbrecht, B.; Seidel-Morgenstern, A.; Kienle, A. Kinetic modeling of methanol synthesis from renewable
+resources. Chem. Eng. Sci. 2018, 175, 130–138. [CrossRef]"
+482,"45. Peng, D.-Y.; Robinson, D.B. A new two-constant equation of State. Ind. Eng. Chem. Fundam. 1976, 15, 59–64. [CrossRef]
+46. Meng, L.; Duan, Y.-Y.; Wang, X.-D. Binary interaction parameter kij for calculating the second cross-virial coefﬁcients of mixtures."
+483,"Fluid Phase Equilibria 2007, 260, 354–358. [CrossRef]"
+484,"47. Meng, L.; Duan, Y.-Y. Prediction of the second cross virial coefﬁcients of nonpolar binary mixtures. Fluid Phase Equilibria 2005, 238,"
+485,229–238. [CrossRef]
+486,"48. Deiters, U.K. Comments on the modeling of hydrogen and hydrogen-containing mixtures with cubic equations of state. Fluid"
+487,"Phase Equilibria 2013, 352, 93–96. [CrossRef]"
+488,"49. Kuld, S.; Thorhauge, M.; Falsig, H.; Elkjær, C.F.; Helveg, S.; Chorkendorff, I.; Sehested, J. Quantifying the promotion of Cu"
+489,"catalysts by ZnO for methanol synthesis. Science 2016, 352, 969–974. [CrossRef] [PubMed]"
+490,"50. CLARIANT. Catalysts for Methanol Synthesis, Product Data Sheet. 2017. Available online: https://www.clariant.com/-/media/Files/"
+491,51.
+492,"Solutions/Products/Additional-Files/M/18/Clariant-Brochure-Methanol-Synthesis-201711-EN.pdf (accessed on 4 April 2022).
+Saito, M.; Murata, K. Development of high performance Cu/ZnO-based catalysts for methanol synthesis and the water-gas shift
+reaction. Catal. Surv. Asia 2004, 8, 285–294. [CrossRef]"
+493,"52. Campos Fraga, M.M.; Lacerda de Oliveira Campos, B.; Lisboa, M.S.; Almeida, T.B.; Costa, A.O.S.; Lins, V.F.C. Analysis of a
+Brazilian thermal plant operation applying energetic and exergetic balances. Braz. J. Chem. Eng. 2018, 35, 1395–1403. [CrossRef]
+53. Nitzsche, R.; Budzinski, M.; Gröngröft, A. Techno-economic assessment of a wood-based bioreﬁnery concept for the production"
+494,"of polymer-grade ethylene, organosolv lignin and fuel. Bioresour. Technol. 2016, 200, 928–939. [CrossRef] [PubMed]
+54. Green, D.W.; Southard, M.Z. Perry’s Chemical Engineers’ Handbook, 9th ed.; McGraw Hill: New York, NY, USA, 2018.
+55. König, D.H.; Baucks, N.; Dietrich, R.-U.; Wörner, A. Simulation and evaluation of a process concept for the generation of synthetic"
+495,"fuel from CO2 and H2. Energy 2015, 91, 833–841. [CrossRef]"
+496,"56. Albrecht, F.G.; König, D.H.; Baucks, N.; Dietrich, R.-U. A standardized methodology for the techno-economic evaluation of"
+497,"alternative fuels—A case study. Fuel 2017, 194, 511–526. [CrossRef]"
+498,"57. Peters, M.S.; Timmerhaus, K.D.; West, R.E. Plant Design and Economics for Chemical Engineers, 5th ed.; McGraw-Hill Education Ltd.:"
+499,"Boston, MA, USA, 2002; p. 1008."
+500,"58. Hennig, M.; Haase, M. Techno-economic analysis of hydrogen enhanced methanol to gasoline process from biomass-derived"
+501,"synthesis gas. Fuel Processing Technol. 2021, 216, 106776. [CrossRef]"
+502,59. Travelex. Worldwide Money. Available online: https://www.travelex.com/currency/currency-pairs/usd-to-eur (accessed on
+503,4 April 2022).
+504,"Processes 2022, 10, 1535"
+505,24 of 24
+506,"60. Towler, G.; Sinnott, R. Chemical Engineering Design—Principles, Practice and Economics of Plant and Process Design, 2nd ed.; Elsevier:"
+507,"Amsterdam, The Netherlands, 2013."
+508,"61. Aden, A.; Ruth, M.; Ibsen, K.; Jechura, J.; Neeves, K.; Sheehan, J.; Wallace, B.; Montague, L.; Slayton, A.; Lukas, J. Lignocellulosic
+Biomass to Ethanol Process Design and Economics Utilizing Co-Current Dilute Acid Prehydrolysis and Enzymatic Hydrolysis for Corn
+Stover; National Renewable Energy Laboratory: Golden, CO, USA, 2002; 154p."
+509,"62. Cheremisinoff, N.P. Clean Electricity Through Advanced Coal Technologies; Elsevier: Amsterdam, The Netherlands, 2012. [CrossRef]
+63. Bustillo-Lecompte, C.F.; Mehrvar, M.; Quiñones-Bolaños, E. Cost-effectiveness analysis of TOC removal from slaughterhouse"
+510,"wastewater using combined anaerobic–aerobic and UV/H2O2 processes. J. Environ. Manag. 2014, 134, 145–152. [CrossRef]"
+511,"64. Tan, E.C.; Talmadge, M.; Dutta, A.; Hensley, J.; Snowden-Swan, L.J.; Humbird, D.; Schaidle, J.; Biddy, M. Conceptual process
+design and economics for the production of high-octane gasoline blendstock via indirect liquefaction of biomass through
+methanol/dimethyl ether intermediates. Biofuels Bioprod. Bioreﬁning 2016, 10, 17–35. [CrossRef]"
+512,"65. Ashraf, M.T.; Schmidt, J.E. Process simulation and economic assessment of hydrothermal pretreatment and enzymatic hydrolysis
+of multi-feedstock lignocellulose—Separate vs. combined processing. Bioresour. Technol. 2018, 249, 835–843. [CrossRef] [PubMed]
+66. Granjo, J.F.O.; Oliveira, N.M.C. Process simulation and techno-economic analysis of the production of sodium methoxide. Ind."
+513,"Eng. Chem. Res. 2016, 55, 156–167. [CrossRef]"
+514,"67. Prašnikar, A.; Pavlišiˇc, A.; Ruiz-Zepeda, F.; Kovaˇc, J.; Likozar, B. Mechanisms of copper-based catalyst deactivation during CO2"
+515,"reduction to methanol. Ind. Eng. Chem. Res. 2019, 58, 13021–13029. [CrossRef]"
+516,68. Argus Media. European Methanol Spot and Contract Prices. Available online: https://www.argusmedia.com/en/blog/2022
+517,/february/4/european-methanol-spot-and-contract-prices (accessed on 4 April 2022).
+518,"69. Methanol Institute—Methanol Prices, Supply and Demand. Available online: https://www.methanol.org/methanol-price-"
+519,supply-demand/ (accessed on 4 April 2022).

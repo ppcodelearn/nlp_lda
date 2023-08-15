@@ -1,0 +1,1065 @@
+,0,Class
+0,"Article
+A Hybrid Multi-Objective Optimization Framework
+for Preliminary Process Design Based on Health,
+Safety and Environmental Impact",0
+1,"Shin Yee Teh 1, Kian Boon Chua 1, Boon Hooi Hong 1, Alex J. W. Ling 1, Viknesh Andiappan 2
+Dominic C. Y. Foo 1
+1 Department of Chemical and Environmental Engineering/Centre of Excellence for Green Technologies,",0
+2,", Mimi H. Hassim 3 and Denny K. S. Ng 1,2,*",0
+3,",",0
+4,"The University of Nottingham Malaysia, Broga Road, Semenyih 43500, Malaysia;
+shinyee30@gmail.com (S.Y.T.); kianboon19@gmail.com (K.B.C.); b0onhui@hotmail.com (B.H.H.);
+alex1215.aiesec@gmail.com (A.J.W.L.); Dominic.Foo@nottingham.edu.my (D.C.Y.F.)
+School of Engineering and Physical Sciences, Heriot-Watt University Malaysia, Putrajaya 62200, Malaysia;
+v.murugappan@hw.ac.uk
+School of Chemical and Energy Engineering/Centre of Hydrogen Energy, Universiti Teknologi Malaysia,
+Johor Bahru 81310, Malaysia; mimi@cheme.utm.my",0
+5,2,0
+6,3,0
+7,* Correspondence: Denny.Ng@hw.ac.uk; Tel.: +603-8894-3784,0
+8,Received: 25 February 2019; Accepted: 25 March 2019; Published: 8 April 2019,0
+9,"Abstract: Due to increasingly stringent legal requirements and escalating environmental control costs,
+chemical industries have paid close attention to sustainable development without compromising
+their economic performance. Thus, chemical industries are in need of systematic tools to conduct
+sustainability assessments of their process/plant design. In order to avoid making costly retroﬁts
+at later stages, assessments during the preliminary design stage should be performed.
+In this
+paper, a systematic framework is presented for chemical processes at the preliminary design stage.
+Gross proﬁt, Health Quotient Index (HQI), Inherent Safety Index (ISI) and the Waste Reduction (WAR)
+algorithm are used to assess the economic performance, health, safety and environmental impact of
+the process, respectively. The fuzzy optimization approach is used to analyse the trade-oﬀ among the
+four aspects simultaneously, as they often conﬂict with each other. Deviation between the solution
+obtained from mathematical optimization model and process simulator is determined to ensure the
+validity of the model. To demonstrate the proposed framework, a case study on 1, 4-butanediol
+production is presented.",0
+10,Keywords: input-output model; fuzzy optimization; process synthesis; preliminary stage design,0
+11,1. Introduction,0
+12,"Process design is a core element in the ﬁeld of chemical engineering. It can be considered a
+centre point, bringing together all chemical engineering components as a whole. Process design
+is associated with creating processes or improving existing processes. An integral part of process
+design is process synthesis. Process synthesis is deﬁned as “the discrete decision-making activities of
+conjecturing (1) which of the many available component parts one should use, and (2) how they should
+be interconnected to structure the optimal solution to a given design problem.” [1]. The ﬁeld of process
+synthesis has seen signiﬁcant developments since its inception in the 1960s led by the late Roger W.
+H. Sargent [2]. Most notably, key pioneering contributions have been an integral part of establishing
+what process synthesis is and what it entails. For instance, Nishida et al. [3] provided an important
+overview of developments within the boundary of process synthesis and deﬁned process synthesis
+as “an act of determining the optimal interconnection of processing units as well as the optimal type",0
+13,"Processes 2019, 7, 200; doi:10.3390/pr7040200",0
+14,www.mdpi.com/journal/processes,0
+15,"Processes 2019, 7, 200",0
+16,2 of 18,0
+17,"and design of the units within a process system”. Meanwhile, the Onion model [4] was proposed as a
+systematic overview and guide to process synthesis thinking. The Onion model emphasized that a
+reactor is designed ﬁrst followed by separation and recycle streams, heat recovery systems and utility
+systems [4]. Foo and Ng [5] then extended the Onion model further by incorporating material recovery
+and treatment systems (see Figure 1). On the other hand, Douglas’ model is another well-accepted
+decision hierarchy approach that was proposed for process synthesis in the late 80s [6].",0
+18,"Figure 1. The extended Onion Model [5]. Reproduced with permission from Foo, D.C.Y.; Ng, D.K.S.,
+Process Integration for Cleaner Process Design; In Handbook of Process Integration: Minimisation of
+Energy and Water Use, Waste and Emissions; published by Elsevier Science, 2013.",0
+19,"To date,",0
+20,"there has been a vast number of developed process synthesis methodologies.
+Often, these methodologies pay close attention to the technical and economic performance of a
+process design. Meanwhile, other aspects such as safety, occupational health and environmental
+impacts are typically considered at the later/ﬁnal stages of design [7,8]. However, several papers argue
+that these aspects should be considered at the preliminary stage of process synthesis as the cost of
+process improvement and operational risks can be signiﬁcantly lowered compared to at the later stages
+(detailed design) [9,10]. In this respect, several alternative methods for evaluating occupational health,
+safety and environmental impacts have been presented.",0
+21,"In the area of safety evaluations, Edwards and Lawrence [11] developed the earliest method
+for assessing inherent safety in a given process. This method is known as Prototype Index of Inherent
+Safety (PIIS). PIIS ranks the inherent safety level of alternative chemical process routes based on main
+reactions and parameters such as pressure, temperature, yield, heat of reaction, inventory, ﬂammability,
+toxicity and explosiveness. Despite considering the mentioned parameters, PIIS focuses solely on
+the main reaction of a process and not the other parts of the process. In view of this, Heikkila [12]
+proposed an alternative approach called the Inherent Safety Index (ISI). ISI considers the same factors as
+in the PIIS along with additional ones such as corrosions, side reactions, and inventory for both inside",0
+22,"Processes 2019, 7, 200",0
+23,3 of 18,0
+24,"and outside the battery limits, types of equipment and process structure. Later, Palaniappan et al. [13]
+added a few supplementary indexes such as worst reaction index, overall chemical index and total
+chemical index to the previously proposed ISI to form i-Safe.",0
+25,"Aside from safety, various methods have been developed to evaluate occupational health.
+For example, Hassim and Edwards [14] developed Process Route Healthiness Index (PRHI) to rank the
+process alternatives based on the potential of working activities and process conditions that may harm
+workers. However, PRHI is not suitable for assessment in the preliminary design stage, as it requires
+complete process information (e.g., points for manual handling etc.). In this respect, Hassim et al.
+developed the Inherent Occupational Health Index (IOHI) [10], which is suitable for application at the
+initial stage of the process research and development (R&D). This work was then extended to a more
+detailed assessment called the Health Quotient Index (HQI), which uses detailed process information
+available in the preliminary design stage [15]. HQI is able to rank the process alternatives based on
+health risk values from the fugitive emissions and to calculate the risk of a given process.",0
+26,"Apart from occupational health, there are many well-established approaches reported in the
+literature on environmental impact assessments. The Environmental Hazard Index (EHI) [16] and
+Atmospheric Hazard Index (AHI) [17] are among the early methods that assess inherent environmental
+performance of chemical process routes. Later, Gunasekera and Edwards [18] integrated EHI with
+AHI into a new method which is known as Inherent Environmental Toxicity Hazard (IETH). IETH can
+estimate the inherent environmental friendliness of a chemical plant in all media including air, soil and
+aquatic due to total loss of contaminants. Cabezas et al. [19] then introduced the generalized Waste
+Reduction (WAR) algorithm. This algorithm determines the total environmental impacts based on the
+Potential Environmental Index (PEI) balance, which assigned environmental impact values to diﬀerent
+pollutants. Young and Cabezas [20] extended PEI balance to integrate the energy consumption of the
+chemical process into the environmental evaluation. Similarly, Andiappan et al. [21] presented the
+incremental environmental burden assessment (IEBA), which used the concept of economic potential
+assessment method developed by Seider et al. [22] to determine the new environmental burden for
+each process.",0
+27,"It is essential to note that the abovementioned evaluation methods focus only on assessing
+the performance of a process design based on just one aspect (e.g., safety or occupational health
+or environmental impact) and not addressing them simultaneously.
+In this respect, there have
+been attempts to develop process synthesis approaches that address safety, occupational health and
+environmental impacts simultaneously. For instance, Azapagic et al. [8] and Othman et al. [23] presented
+sustainable assessment and design selection approaches that consider economic, environmental,
+and social aspects. Besides, Al-Sharrah et al. [24] presented a multi-objective optimization model
+which considers environmental impact, economic performance and operational risk simultaneously
+for the petrochemical industry. Liew et al. [25] developed a systematic approach to the screening of
+sustainable chemical reaction pathways at the research and development (R&D) stage. Based on the
+proposed approach, fuzzy optimization is used to trade-oﬀ economic performance, health, safety and
+environmental impact. Similarly, Ng et al. [26] presented a multi-objective process synthesis approach
+which considered economic performance, health, safety and environmental impact for bioreﬁneries.
+Following this, a visualization tool called the Piper diagram was also proposed for considering economic,
+safety and environmental aspects simultaneously [27]. However, due to its graphical nature, the Piper
+diagram is unable to consider process optimization.",0
+28,"It is clear that the abovementioned work presents approaches to evaluate safety, occupational
+health and environmental impacts at the preliminary stage of design. However, these approaches focus
+on preliminary screening without considering operating conditions in a given process. The choice of
+process operating conditions has a process direct impact on screening decisions and this should be
+given closer attention. To address this, process simulators can be used to analyse operating conditions
+for a given process. Process simulators can be used to represent chemical processes in terms of
+mathematical models and solve them to attain insights on their performance [28]. Process simulation",0
+29,"Processes 2019, 7, 200",0
+30,4 of 18,0
+31,"is an essential and complementary task of process synthesis, as it predicts how a process design
+would behave under deﬁned operating conditions [29,30]. Despite the beneﬁts of process simulators,
+they suﬀer from various limitations. For instance, simulators are limited to considering a single
+objective (e.g., product yield or production rate) at a given run. This limitation disables simulators
+from ﬁnding a trade-oﬀ between multiple aspects such as process economics, occupational health,
+safety and environmental impacts for a given process design. In order to consider multiple aspects
+simultaneously, multi-objective optimization is required.",0
+32,"As such, this paper presents a systematic framework which combines the beneﬁts from both
+process simulation and multi-objective optimization to address economic, environmental, health and
+safety aspects simultaneously at the preliminary design stage. This paper is structured as follows:
+First, a formal problem statement is given in Section 2. A systematic framework for preliminary process
+design is presented in Section 3; To illustrate the proposed framework, a case study on the screening of
+1,4-butanediol production processes is presented in Section 4; and the work is ﬁnally concluded in
+Section 5.",0
+33,2. Problem Statement,0
+34,"The problem addressed in this work is stated as follows; given a set of alternative processes k to
+produce chemical product (in a given output stream) p. Each alternative process k has a set of unit
+operation j with operating capacities, xj,k and a set of (output) stream p to or from unit operation j
+represented by matrix ap,j,k. Alongside this, each alternative process k diﬀers in economic performance,
+health, safety and environment impacts. In this work, four objectives are considered for performing a
+preliminary evaluation and screening of alternative process k. The economic performance is determined
+based on the gross proﬁt of alternative process k (GP). The health impacts of process alternative k are
+evaluated using Health Quotient Index (HQI). Meanwhile, the safety and environmental impact of
+each alternative process k are determined via Inherent Safety Index (ISI) and Potential Environmental
+Index (WAR) respectively.",0
+35,"This work combines the advantages of process simulation, input-output modelling (IOM) and
+fuzzy optimization to determine the trade-oﬀ between the GP, HQI, ISI and WAR objectives. In fuzzy
+optimization, the degree of satisfaction (λk) is introduced to quantify the degree of satisfaction for four
+objectives in each alternative process k. Following this, the alternative process k with the highest λk
+will be selected. A detailed description of the proposed framework to address the stated problem is
+presented in the following section.",0
+36,3. Framework for Preliminary Process Design,0
+37,"Figure 2 presents the proposed framework for preliminary process design, which considers
+economic performance, health, safety and environment impacts simultaneously. As shown,
+the proposed framework begins by identifying the product i that is expected to be produced.
+Next, alternative process k which produce product i is determined. In order to analyse the performance
+of each alternative process k, process simulation tools (e.g., Aspen HYSYS, SuperPro Designer, PRO/II,
+etc.) can be used to simulate the process. Based on the simulation results, process data such as mass
+ﬂow rates and energy requirements for each process unit j can be determined. These data are then
+used to develop an input-output model for each process. Input-output model was presented by
+Leontief [31,32] to analyse the relationship among the raw materials requirement, goods production
+and the exchange of materials within diﬀerent economic sectors. Tan et al. [33] extended the usage
+of input-output model in life cycle assessment and ecological footprint analysis. Aviso et al. [34]
+integrated the approach with optimization framework to analyse the eco-industrial supply chain
+under a water footprint constraint. Recently, the input-output model has been used to describe the
+material and energy balance of processes in a system [35]. Based on the approach [35], the optimal
+operational adjustment in multi-functional energy systems in response to process inoperability can be
+determined. Kasivisvanathan et al. [36] also used the input-output model with robust optimization for",0
+38,"Processes 2019, 7, 200",0
+39,5 of 18,0
+40,"process synthesis and design of multi-functional energy systems with uncertainties. Most recently,
+Foong et al. [37] extended the use of the input-output model for sustainable oil palm plantation
+development. A detailed description on the procedure to develop an input-output model is presented
+with an example in Andiappan et al. [38]. The input-output model for each alternative process k,
+given as in Equation (1)",0
+41,"ap,j,kxj,k = yp,k∀p∀k",0
+42,-1,0
+43,J(cid:88),0
+44,j=1,0
+45,Figure 2. Systematic design framework for preliminary process design.,0
+46,"In Equation (1), ap,j,k represents the matrix of input or output mass ﬂow rate of stream p to/from
+unit operation j in process k. xj,k represents the capacity or size of the unit operation j in process k and
+yp,k is the net output of stream p in process k. A positive value of yp,k indicates that it is an output",0
+47,"Processes 2019, 7, 200",0
+48,6 of 18,0
+49,"stream which is either product or eﬄuent stream whereas a negative value indicates that it is an input
+stream and a value of zero denotes that it is an intermediate stream.",0
+50,"Meanwhile, the lower and upper limits of the capacity of unit operation j in process k are presented",0
+51,in Equation (2):,0
+52,"≤ xj,k ≤ xU",0
+53,"j,k",0
+54,∀j∀k,0
+55,"xL
+j,k",0
+56,-2,0
+57,"In addition to Equations (1) and (2), the economic, environmental, health and safety impact
+for each process k is determined. Firstly, in this work, economic performance for each process k is
+measured via gross proﬁt as shown in Equation (3):",0
+58,"p,k",0
+59,"p,k",0
+60,and CRaw,0
+61,"where yProd
+and yRaw
+p,k are the mass ﬂow rate of the products and raw materials in process k respectively;
+CProd
+p,k are the product price and cost of raw materials in process k respectively; AOTk is
+the annual operating time for process k. Note that yRaw
+is obtained from the input-output model
+p,k
+as a negative value. This is because it is an input stream into the system, as stated previously in
+Equation (1).",0
+62,"On the other hand, the environmental impact of each process k is also evaluated. For this work,
+the WAR algorithm is adapted to evaluate the environmental impact because it can determine the
+average possible impact of a chemical process on the environment, based on environmental impact
+values of diﬀerent pollutants and their respective mass ﬂows. According to the WAR algorithm,
+the total environmental impact generated by process k, WARk can be expressed as in Equation (4)
+as follows.",0
+63,"WARk = i(cp), out",0
+64,k,0
+65,#NAME?,0
+66,#NAME?,0
+67,k,0
+68,k,0
+69,∀k,0
+70,k,0
+71,"and i(cp),out",0
+72,"where i(cp),in
+power consumption for process k. The value of i(cp),out
+Equations (5)–(9) respectively:",0
+73,k,0
+74,k,0
+75,"are the input and output rates of impact in the process k, i(ep),out",0
+76,", i(cp),in",0
+77,"and i(ep),out",0
+78,k,0
+79,k,0
+80,"is the
+are determined through",0
+81,k,0
+82,-3,0
+83,-4,0
+84,-5,0
+85,-6,0
+86,-7,0
+87,-8,0
+88,-9,0
+89, P(cid:88),0
+90,p=1,0
+91,P(cid:88),0
+92,p=1,0
+93,AOTk∀k,0
+94,GPk =,0
+95,"yProd
+p,k CProd",0
+96,"p,k +",0
+97,"yRaw
+p,k CRaw
+p,k",0
+98,"I(cid:88)
+I(cid:88)",0
+99,i=1,0
+100,i=1,0
+101,"i(cp),out
+k",0
+102,=,0
+103,"i(cp),in
+k",0
+104,=,0
+105,"i(ep),out
+k",0
+106,=,0
+107,PEIa =,0
+108,PEIElec =,0
+109,"wa,j,kPEIa∀k",0
+110,"wa,j,kPEIa∀k",0
+111,"yIn
+i,k",0
+112,"yOut
+i,k",0
+113,j=1,0
+114,a=1,0
+115,a=1,0
+116,"A(cid:88)
+J(cid:88)
+A(cid:88)
+J(cid:88)
+I(cid:88)
+−yElec
+i,k PEIElec∀k
+L(cid:88)
+L(cid:88)",0
+117,"lPEIa,l∀k",0
+118,j=1,0
+119,l=1,0
+120,i=1,0
+121,α,0
+122,α,0
+123,lPEIElec,0
+124,l,0
+125,∀k,0
+126,l=1,0
+127,"where yElec
+is the power consumption of process k; PEIa and PEIElec are the score of the potential
+i,k
+environmental impact of chemical component a and electricity respectively; αl is the weighting factor
+of the impact at category l; PEIa,l and PEIElec
+are the potential environmental impact score of chemical
+component a and electricity at each of the category l respectively. Note that a total of eight categories are
+considered for PEI, that is, human toxicity potential by exposure, both dermal and inhalation (HTPE),",0
+128,l,0
+129,"Processes 2019, 7, 200",0
+130,7 of 18,0
+131,"human toxicity potential by ingestion (HTPI), aquatic toxicity potential (ATP), terrestrial toxicity
+potential (TTP), ozone depletion potential (ODP), global warming potential (GWP), acidiﬁcation
+potential (AP) and photochemical oxidation potential (PCOP).",0
+132,"In order to evaluate the health impact of process k, the Hazard Quotient Index (HQI) is selected for
+this work. This is because HQI can be used for simple process ﬂow diagrams (PFDs) containing limited
+information, namely process drawings and process descriptions. Such method is suitable for the case
+of preliminary process design optimization as it allows for the comparison of alternative processes by
+ranking them based on the risk value based on minimal available information. The calculation of HQI
+consists of four parts, i.e., estimation of fugitive emissions, air volumetric ﬂow rate, airborne chemical
+concentration and the health risk (HQI) value. Fugitive emission of each of the chemical components a
+in process k, ma,k can be calculated via Equation (10):",0
+133,"ma,k =",0
+134,"j,k wa,j,kFEp,j,k∀a∀k
+x0.5",0
+135,-10,0
+136,"where xj,k, wa,j,k and FEp,j,k are the capacity of the unit operations j, weight composition of chemical
+component a and the estimated fugitive emission rates in stream p to or from unit operation j respectively.
+The pre-calculated fugitive emission rates database for the unit operation stream can be obtained from
+Hassim et al. [15]. The air volumetric ﬂow rate is determined by the following Equations (11)–(14).",0
+137,J(cid:88),0
+138,P(cid:88),0
+139,j=1,0
+140,p=1,0
+141,AT,0
+142,∀k,0
+143,j=1,0
+144,k =,0
+145,"Aj,k",0
+146,"J(cid:88)
+(cid:17) 1
+(cid:16)
+2∀k
+sk =
+k = hksk∀k
+Ac
+∀k
+Qk= vAc
+k",0
+147,"AT
+k",0
+148,-11,0
+149,-12,0
+150,-13,0
+151,"(14)
+where AT
+k and Aj,k are the total process ﬂoor area and the ﬂoor area of each unit operations j in process
+k respectively; sk is the side length of the process k; Ac
+k is the cross-sectional area of the process; hk is the
+average height of the main unit operations in process k; Qk is the air volumetric ﬂow rate; v is the wind
+speed. The average concentration of the chemical components in the air at the downwind edge of the
+plot area, Ca,k can be determined using Equation (15):
+ma,k
+Qk",0
+152,∀a∀k,0
+153,"Ca,k =",0
+154,-15,0
+155,HQI of component a in process k can be calculated using Equations (16) and (17):,0
+156,"HQIa,k =",0
+157,HQIk =,0
+158,∀a∀k,0
+159,"Ca,k
+CEL
+a",0
+160,"HQIa,k∀k",0
+161,A(cid:88),0
+162,a=1,0
+163,-16,0
+164,-17,0
+165,"where HQIa,k is the HQI of each chemical components a; CEL
+a
+threshold limit of the chemical component a; HQIk is the total HQI of process k.",0
+166,is a constant which represents the,0
+167,"The safety impact of a process is assessed via Inherent Safety Index (ISI). ISI is selected because
+it is a simple scoring method that can be incorporated into an optimization framework. Moreover,
+ISI considers all parts of the process and equipment, unlike the PIIS method. The total ISI score for",0
+168,"Processes 2019, 7, 200",0
+169,"process k is represented by ISIk. ISIk is calculated by summing the Chemical ISI, Ik
+Ik",0
+170,PI as shown in Equation (18):,0
+171,ISIk = ICI,0
+172,"k + IPI
+k",0
+173,∀k,0
+174,8 of 18,0
+175,"CI and Process ISI,",0
+176,"The sub-index for Chemical ISI, Ik",0
+177,CI is expressed as below:,0
+178,"k = IRM, max
+ICI",0
+179,k,0
+180,#NAME?,0
+181,k,0
+182,#NAME?,0
+183,k,0
+184,#NAME?,0
+185,k,0
+186,#NAME?,0
+187,k,0
+188,#NAME?,0
+189,k,0
+190,#NAME?,0
+191,k,0
+192,-18,0
+193,-19,0
+194,∀k,0
+195,k,0
+196,k,0
+197,", IRS, max",0
+198,", IINT, max",0
+199,"where IRM, max
+are the sub-index for the
+factor of the heat of main reaction, heat of side reaction, chemical interaction, ﬂammability, explosiveness,
+toxic exposure and corrosiveness of the chemical components present in the process k respectively.
+The sub-index for process ISI, Ik",0
+200,"and ICOR, max",0
+201,PI is given as:,0
+202,", ITOX, max",0
+203,", IEX, max",0
+204,", IFL, max",0
+205,k,0
+206,k,0
+207,k,0
+208,k,0
+209,k,0
+210,"k = II
+IPI",0
+211,"k + IT, max",0
+212,k,0
+213,#NAME?,0
+214,k,0
+215,#NAME?,0
+216,k,0
+217,#NAME?,0
+218,k,0
+219,∀k,0
+220,-20,0
+221,",",0
+222,",",0
+223,k,0
+224,"IP, max
+k",0
+225,"IT, max
+k",0
+226,"IEQ, max
+k",0
+227,"and IST, max",0
+228,CI and Ik,0
+229,"where II
+k,
+are the sub-index for the factor of inventory,
+process temperature, process pressure, equipment safety and safe process structure, respectively.
+PI are performed on the basis of the worst-case scenario. Among all
+The calculations for both Ik
+chemical components present in the process, the scores of the chemical with the most severe hazard in
+CI calculation. Besides, the highest
+terms of ﬂammability, explosiveness and toxicity are used in the Ik
+temperatures of the main and side reaction and the worst possible chemical substance interaction
+in the process are considered. Meanwhile, the maximum expected values for inventory, process
+temperature, and pressure and the worst process structure are taken into account for the calculation
+of Ik
+k which is
+calculated using Equation (21):",0
+230,"PI. The sub-index for inventory is inﬂuenced by the total output of the process, yOut",0
+231,"yOut
+k =",0
+232,∀k,0
+233,"yOut
+p,k",0
+234,-21,0
+235,P(cid:88),0
+236,p=1,0
+237,"where yOut
+is the mass ﬂow rate of the output stream for product and eﬄuent streams. The score of the
+p,k
+sub-index for inventory is assigned using Equations (22) and (23) [39]. In Equation (22), Lk,r and Uk,r
+are the lower and upper bounds of a given criteria r. The criteria r can often be in the form of a range.
+For instance, r = 1 may refer to the criteria where mass ﬂowrate is between the range of 300 – 500 kg/hr.
+In this context, 300 kg/hr would be Lk,r and 300 kg/hr would be Uk,r. If yOut
+falls between this range r
+p,k
+= 1 or meets this criteria, Equation (22) will assign a speciﬁc score Sk,r, which is activated by binary
+variable bk,r.",0
+238,"(Lk,r − Uk,r) × bk,r < yOut",0
+239,k,0
+240,"− Uk,r < (Lk,r+1 − Uk,r) × (1 − bk,r)∀r∀k
+R(cid:88)",0
+241,"bk,r × Sk,r∀k",0
+242,"II
+k =",0
+243,r=1,0
+244,-22,0
+245,-23,0
+246,"Although several objectives are considered simultaneously in this work, it is important to
+note that these objectives conﬂict with each other. To address such conﬂict, this work employs a
+multi-objective approach known as fuzzy optimization. Fuzzy optimization is a simple multi-objective
+optimization approach that was founded upon the fuzzy decision-making approach introduced
+by Bellman and Zadeh [40]. Zimmermann [41] then extended the fuzzy approach to deal with
+linear and non-linear programming problems that contain multiple objectives. In this approach,
+a continuous interdependence variable, λ, which is also known as the degree of satisfaction, is introduced.
+Every fuzzy constraint will be satisﬁed partially at least to λ. Thus, the multi-objective functions in the
+optimization can be integrated into a single objective function within the optimization framework.",0
+247,"Processes 2019, 7, 200",0
+248,9 of 18,0
+249,"Fuzzy optimization has been widely used to determine the optimum process alternative that considers all
+aspects simultaneously based on the pre-deﬁned limits. The fuzzy optimization model is expressed as:",0
+250,K(cid:88),0
+251,λ =,0
+252,K(cid:88),0
+253,k=1,0
+254,λkbk,0
+255,k=1,0
+256,bk = 1,0
+257,-24,0
+258,-25,0
+259,"where integer variable, bk is used to indicate the existence (or absence) of λk of process k. Note that the
+formulation in Equation (24) results in the model being non-linear. The optimization objective of λ is
+maximized, subject to the predeﬁned upper and lower bounds. All ﬂexible targets (GP, HQI, ISI and
+WAR) are predeﬁned as fuzzy goals which are given by a linear membership function bounded by the
+upper (GPU, HQIU, ISIU, WARU) and lower limits (GPL, HQIL, ISIL, WARL). λ of each processes k is
+determined using Equations (26)–(29):",0
+260,≥ λk,0
+261,"GPk − GPL
+≥ λk
+GPU − GPL
+WARU − WARk
+WARU − WARL
+ISIU − ISIk
+≥ λk
+ISIU − ISIL
+HQIU − HQIk
+HQIU − HQIL",0
+262,≥ λk,0
+263,∀k,0
+264,∀k,0
+265,∀k,0
+266,∀k,0
+267,-26,0
+268,-27,0
+269,-28,0
+270,-29,0
+271,"Following this, the model is solved via fuzzy optimization to select a more sustainable process
+conﬁguration based on the aforementioned four objectives. Based on the optimized solution,
+the operating capacities, xj,k of the selected process conﬁguration are then examined. If the operating
+capacities do not diﬀer from the values used in the preliminary simulation, then the selected process k
+can be recommended for the next process design phase. However, if the operating capacities do diﬀer
+from the preliminary simulation, the selected process k would be re-simulated in accordance to the
+optimized operating capacities. Once the selected process k is re-simulated, the operating capacities
+are checked. In the event where the operating capacities in the simulation exceed an allowable error
+margin (i.e., ≥10%), the preliminary simulation must be revisited for troubleshooting. For cases where
+the operating capacities are within the allowed error margin, the re-simulated conditions for process k
+can be recommended for the next process design phase. Note that the error margin can be changed
+based on several factors such as type of industry, experience and knowledge of the decision-maker,
+and type of equipment used.",0
+272,4. Case Study,1
+273,"To illustrate the proposed framework, a case study on 1,4-butanediol (C4H10O2) production
+process is presented. 1,4-butanediol is a colorless and non-corrosive solution which is widely used as a
+solvent in the industry to manufacture elastic ﬁbers, technical plastics and polyurethanes [42]. Based on
+literature review, Reppe [42] and Davy [43,44] processes are the two common and well-established
+alternative processes available to produce 1,4-butanediol. Table 1 shows the reaction pathway for
+both processes.",1
+274,"Processes 2019, 7, 200",0
+275,10 of 18,0
+276,"Table 1. Reaction pathway for the production of 1,4-Butanediol (C4H10O2).",0
+277,Path,0
+278,"Reppe Process
+Davy Process",0
+279,Reaction,0
+280,Hydrogenation of Acetylene and Formaldehyde,0
+281,Hydrogenation of Dimethyl Maleate,0
+282,Chemical Reaction,0
+283,"C2H2 + 2 CH2O → C4H6O2
+2 H2 + C4H6O2 → C4H10O2",0
+284,C6H8O4 + 5H2 → C4H10O2 + 2 CH3OH,0
+285,◦,0
+286,"As shown in Table 1, the raw materials needed for Reppe process are formaldehyde (C2H2),
+acetylene (CH2O) and hydrogen (H2). Formaldehyde and acetylene are fed into two batch reactors
+which operate at 5 bar, 80
+C and are arranged in parallel. Formaldehyde is reacted with acetylene in
+the presence of copper, bismuth and silicon dioxide supporting catalyst to produce 1,4-butynediol as
+an intermediate product with a conversion rate of 60%. Aqueous sodium hydroxide and hydrochloric
+acid are used to maintain the pH of the medium in the reactor within the range of pH 6 to 8. Based on
+the reaction, process synthesis is started by establishing the remaining unit operations in the process.
+For example, the product from the batch reactors is sent to a buﬀer tank and is stored for approximately
+1–30 h before feeding to a distillation column for further separation. After separation, the bottom
+product stream of the distillation column is rich in 1,4-butynediol and is fed to a trickling and
+hydrogenation reactor for further reaction to produce 1,4-butanediol as the main product with a
+conversion rate of 90%. The operating condition of this reactor is 160
+C and 150 bar. Figure 3 shows
+the process ﬂow diagram for the Reppe process.",1
+287,◦,0
+288,◦,0
+289,"For the Davy process, the raw materials are dimethyl maleate (DMM), C6H8O4 and hydrogen, H2.
+DMM is completely vaporised with H2 before feeding into the ﬁrst ﬁxed bed reactor. The ﬁxed bed
+reactor operates at 15 bar, 150
+C and consists of two bed of catalysts which are palladium on alumina
+and copper-zinc oxide. In the reactor, DMM is fully converted into dimethyl succinate (DMS) through
+hydrogenation process in the presence of palladium on alumina as catalyst in the ﬁrst reaction stage.
+In the second reaction stage, DMS is mainly converted into gammabutyrolactone (GBL) with trace
+amounts of tetrahydrofuran (THF) and 1,4-butanediol in the presence of copper-zinc oxide as catalyst.
+The conversion rate of the second reaction is 97%. Based on these two reactions, process synthesis is
+conducted to list all the other required unit operations. For instance, the vapour-phase product from
+the reactor is condensed at 30
+C and is fed into a gas-liquid separator to remove the unreacted H2.
+The unreacted H2 is then being recycled to the ﬁxed bed reactor for further reaction. Then, the GBL
+rich stream from the ﬁrst reactor is fed into the second hydrogenation reactor for further reaction
+to produce 1,4-butanediol with trace amounts of methanol and THF as by-products. The operating
+condition of the second reactor is 210
+C and 75 bar. The catalyst used in the second hydrogenation
+reactor is copper-zinc oxide and the conversion of GBL to 1,4-butanediol is around 95%. The PFD
+for the Davy process is shown in Figure 4. The annual production rates for both Reppe and Davy
+process are assumed to be 60,000 tonnes of 1,4-butanediol, operating at 8000 h/y. The acceptable
+range of ﬂuctuation on the amount of the product output given by the decision maker is within
+±30%. The average height of the main unit operations in the process is assumed to be below 7 m [45].
+Wind speed is assumed to be 4 m/s, which is a typical value for outdoor facilities, since local average
+wind speed is not available [45].",1
+290,◦,0
+291,◦,0
+292,"Based on the information mentioned above, process simulation can be performed to analyse the
+performance for both Reppe and Davy processes. In this work, both processes are simulated with the
+aid of commercial process simulation software, Aspen HYSYS version 8.8 (Aspentech, Bedford, MA,
+USA, 2014) [46] (see simulation ﬂowsheets in Figures S1,S2 and simulation ﬁles in Supplementary
+Materials respectively). Settings and parameters used for both simulations are summarized in Tables
+S1 and S2 (Supplementary Materials) respectively.",0
+293,"Based on the simulation result, data such as input and output mass ﬂow rates and energy
+consumption are then extracted. The extracted data was then used to develop the input-output models
+for both processes (see Tables S3 and S4 in Supplementary Materials).",0
+294,"Processes 2019, 7, 200",0
+295,11 of 18,0
+296,"In the following step, the input-output models are evaluated based on economic, environmental,
+health and safety aspects. For the environmental aspects, the weighting factor of the impact at category
+l,αl is assumed as one. This indicates that the impact for each category is equally important. Meanwhile,
+Table 2 shows the information obtained for both Reppe and Davy processes prior to the optimisation
+step. As shown in Table 2, the Davy process has higher initial GP and WAR; however, with a lower
+score of HQI and ISI, compared with the Reppe process. The latter has a lower initial GP mainly due to
+its higher cost of raw materials. Its higher HQI score is mainly due to the presence of harmful chemical
+components in the process, such as formaldehyde and 1,4-butynediol. Note that the threshold limit
+(TLV) of formaldehyde and 1,4-butanediol are very low, that is, 1.228 mg/m3 and 0.5 mg/m3 respectively.
+Besides, the higher ISI score for the Reppe process is mainly due to its highly exothermic side reaction
+involving formaldehyde, acetylene and hydrogen to form 2-propanol. Note that the Reppe process has
+a lower score of WAR (i.e., it is safer) because it converts the hazardous raw material (formaldehyde)
+to a product (1,4-butanediol) with a lower environmental impact. As such, the selection between these
+two processes is complex, particularly when four diﬀerent aspects are considered simultaneously.",0
+297,"Processes 2019, 7, 200",0
+298,12 of 18,0
+299,Figure 3. Process ﬂow diagram of the Reppe Process.,0
+300,"Processes 2019, 7, 200",0
+301,13 of 18,0
+302,Figure 4. Process ﬂow diagram of the Davy Process.,0
+303,"Processes 2019, 7, 200",0
+304,14 of 18,0
+305,Table 2. Data obtained for Reppe and Davy processes before optimisation.,0
+306,Aspects,0
+307,Reppe Process,0
+308,Davy Process,0
+309,GPk (106 USD/y),0
+310,"HQIk
+ISIk
+WARk",0
+311,"45.633
+0.484",0
+312,36,0
+313,2.091,0
+314,"123.408
+0.025",0
+315,28,0
+316,33.679,0
+317,"In order to determine the optimum process with consideration of all aspects simultaneously, fuzzy
+optimisation is used. Based on Equations (26)–(29), it is noted that lower and upper limits for GP, HQI,
+ISI and WAR are required. To obtain these values, GPk is ﬁrst maximized to determine the upper limit
+GPU. The corresponding values for HQIk, ISIk and WARk are used as upper limits in HQIU, ISIU and
+WARU respectively. Following this, WARk is minimized to determine WARL. The corresponding GPk,
+ISIk and WARk values were taken as lower limits GPL, HQIL and ISIL respectively. The obtained values
+for GPU, GPL, HQIU, HQIL, ISIU, ISIL, WARU and WARL are 185.112 × 106 USD/y, 22.817 × 106 USD/y,
+0.593, 0.017, 36, 27, 50.519 and 1.045 respectively. The model is then solved by maximizing λ in
+Equation (24) with constraints in Equations (1)–(23) and (26)–(29). The model was solved using
+LINGO version 14.0 (Lindo Systems, Chicago, IL, USA, 2015) on a Lenovo P700 with 8 GB RAM and
+Intel®Core™ i7, 2.60 GHz Processor. The mixed integer non-linear programming (MINLP) model
+consists of 187 variables, 6 integers and 341 constraints.",0
+318,"Based on the results obtained, the Davy process was selected as it has a higher value of λ,
+that is, 0.467, as compared to that of the Reppe process (0.111). The production of 1,4-butanediol after
+optimisation is scaled down from 7.9 ton/h to 7.64 ton/h, which is within the acceptable range for
+the amount of product output. Table 3 shows the comparison of the four aspects before and after
+optimisation for the Davy process.",0
+319,Table 3. Comparison of the four aspects for the Davy process before and after optimisation step.,0
+320,Aspects,0
+321,"Capacity of process, xj,k",0
+322,GPk (106 USD/y),0
+323,"HQIk
+ISIk
+WARk",0
+324,Before,0
+325,1,0
+326,"123.408
+0.0246",0
+327,28,0
+328,33.679,0
+329,"After
+0.967
+119.293
+0.0242",0
+330,28,0
+331,32.556,0
+332,"After optimisation, it is observed that the operating capacity of the process has been scaled
+down by 3.3% from the target production to obtain a trade-oﬀ among economic, health, safety and
+environmental aspects. The reason for this is that, in order to achieve the trade-oﬀ solution shown
+in Table 3, the operating capacity for the Davy process has to be scaled down by 3.3%. From here,
+the new scaled down operating capacity of the Davy process is re-simulated to study the deviations.
+The net output of the process streams obtained from the developed model has a slight diﬀerence to the
+solution generated from process simulator with a deviation of less than 10%. This is mainly due to the
+diﬀerent models used in generating the solution. The solution obtained by the mathematical model is
+linear, while that used by the process simulator is in rigorous mode. Since the deviation obtained is
+small, the selected Davy process with its optimized operating capacity can be recommended for the
+next stage of design.",0
+333,5. Conclusions,0
+334,"In conclusion, this work presented a systematic framework to screen and select a sustainable
+chemical process at the preliminary design stage. The presented framework consists of three main
+tasks. First, process simulation was carried out to analyse the performance of each alternative process.
+Based on the simulation, process data such as mass ﬂow rates and energy requirements for each process",0
+335,"Processes 2019, 7, 200",0
+336,15 of 18,0
+337,"unit were determined. These data were then used in the next task, which is to develop an input-output
+model for each process. Each input-output model was formulated to address four conﬂicting objectives.
+These four objectives, namely economic performance, health, safety and environment aspects were
+assessed using gross proﬁt (GP), the Health Quotient Index (HQI), the Inherent Safety Index (ISI)
+and the WAR algorithm respectively. Following this, fuzzy optimization was used in the third task
+to optimize the abovementioned aspects simultaneously and to select the most sustainable process.
+A sustainable process in this context refers to the process with the highest degree of satisfaction (λ)
+among all four aspects considered. The proposed framework was illustrated with a case study on
+1,4-butanediol production, where the proposed framework was used to determine the most sustainable
+process to produce 1,4-butanediol. Two processes, namely the Reppe and Davy processes were
+considered. Each process was simulated using Aspen HYSYS Version 8.8 and subsequently underwent
+input-output modelling. The developed input-output models were then optimized using fuzzy
+optimization. Results from the case study indicate that the Davy process is more sustainable compared
+to the Reppe process. In particular, the Davy process had the highest λ value. Furthermore, the results
+suggest that the operating capacity of the Davy process should be scaled down by 3.3% to meet
+the trade-oﬀ scores determined by the λ value obtained. Based on this recommendation, the Davy
+process was re-simulated. It was found that there was a small percentage of deviations between the
+mathematical and process simulation models. This proved that the developed model is feasible for
+determining a more sustainable process conﬁguration. For future work, a selection of diﬀerent unit
+operations may be incorporated into the model to determine their impact on ﬂowsheet selection.",0
+338,"Supplementary Materials: The following are available online at http://www.mdpi.com/2227-9717/7/4/200/s1,
+Figure S1: Simulation Flowsheet of Davy Process via Aspen HYSYS version 8.8; Figure S2: Simulation Flowsheet of
+Reppe Process via Aspen HYSYS version 8.8; Table S1: Simulation Settings for Davy Process; Table S2: Simulation
+Settings for Reppe Process; Table S3: Input-Output Table for Reppe Process; Table S4: Input-Output Table for
+Davy Process; Simulation File for Davy Process (Filename: Davy Process); Simulation File for Reppe Process
+(Filename: Reppe Process).
+Author Contributions: Conceptualization, D.C.Y.F. and D.K.S.N.; methodology, S.Y.T., K.B.C., D.C.Y.F., D.K.S.N.
+and M.H.H.; software, S.Y.T., K.B.C., B.H.H., A.J.W.L. and V.A.; validation, V.A. and D.K.S.N.; formal analysis,
+S.Y.T., K.B.C. and B.H.H.; investigation, S.Y.T., K.B.C., B.H.H.; resources, D.K.S.N.; data curation, B.H.H., A.J.W.L.;
+writing—original draft preparation, S.Y.T., V.A.; writing—review and editing, V.A., D.C.Y.F., M.H.H. and D.K.S.N.;
+visualization, S.Y.T.; supervision, V.A., D.C.Y.F., M.H.H. and D.K.S.N.
+Funding: This research was funded by Ministry of Higher Education, Malaysia through the LRGS Grant
+(LRGS/2013/UKM-UNMC/PT/05).
+Acknowledgments: The authors would like to acknowledge the ﬁnancial support provided from the Ministry of
+Higher Education, Malaysia through the LRGS Grant (LRGS/2013/UKM-UNMC/PT/05).
+Conﬂicts of Interest: The authors declare no conﬂict of interest.",0
+339,Nomenclature,0
+340,"Index for stream of input or output
+Index for unit operations
+Index for alternative process
+Index for chemical components
+Index for environmental impact category
+Index for criteria with a given range",0
+341,"Index/Subscript
+p
+j
+k
+a
+l
+r
+Parameters
+ap,j,k
+xL
+j,k
+xU
+j,k
+AOTk
+CProd
+p,k
+CRaw
+p,k",0
+342,"Matrix of input or output mass ﬂow rate for stream p to or from unit operation j of process k
+Lower limit of the capacity for unit operation j in process k
+Upper limit of the capacity for unit operation j in process k
+Annual operating time for process k
+Product price of output p (products) in process k
+Cost of input p (raw materials) in process k",0
+343,"Processes 2019, 7, 200",0
+344,16 of 18,0
+345,"EPL
+EPU
+WARL
+WARU
+ISIL
+ISIU
+HQIL
+HQIU
+PEIa
+PEIa,l
+PEIElec
+αl
+FEi,j,k
+AT
+k
+Aj,k
+sk
+Ac
+k
+hk
+Qk
+V
+Ca,k
+CEL
+a
+Lk,r
+Uk,r
+Sk,r
+Variables
+xj,k
+yp,k
+yOut
+p,k
+yIn
+p,k
+yElec
+p,k
+wa,j,k
+ma,k
+GPk
+WARk
+i(cp),out
+k
+i(cp),in
+k
+i(ep),out
+k
+CI
+Ik
+PI
+Ik
+IRM, max
+k
+IRS, max
+k
+IINT, max
+k
+IFL, max
+k
+IEX, max
+k
+ITOX, max
+k
+ICOR, max
+k
+II
+k
+IT, max
+k
+IP, max
+k
+IEQ, max
+k
+IST, max
+k
+ISIk
+HQIa,k",0
+346,"Lower limit for gross proﬁt
+Upper limit for gross proﬁt
+Lower limit for environmental impact
+Upper limit for environmental impact
+Lower limit for inherent safety index
+Upper limit for inherent safety index
+Lower limit for health quotient index
+Upper limit for health quotient index
+Score of potential environmental impact for chemical component a
+Score of potential environmental impact for chemical component a at each of the category l
+Score of potential environmental impact for electricity
+Weighting factor of the impact at category l
+Estimated fugitive emission rates in stream i to or from unit operation j in process k
+Total process ﬂoor area in process k
+The ﬂoor area of each unit operations j in process k
+Side length of the process k
+Cross-sectional area of process k
+Average height of the main unit operations in process k
+Air volumetric ﬂow rate in process k
+Wind speed
+Average concentration of chemical components a in the air at downwind edge of the plot area
+Threshold limit of the chemical component a
+Lower bound for a given criteria r in process k
+Upper bound for a given criteria r in process k
+Score of sub-index for inventory in process k based on a given criteria r",0
+347,"Capacity or size of the unit operation j in process k
+Net input or output of stream p in process k
+Net output of stream p in process k
+Net input of stream p in process k
+Power consumption of process k
+Weight composition of chemical component a from unit j in process k
+Fugitive emission of each of the chemical components a in process k
+Gross proﬁt for process k
+Total environmental impact generated by process k
+Output rates of impact in the process k
+Input rates of impact in the process k
+Impact of power consumption for process k
+Chemical ISI score of process k
+Process ISI score of process k
+Sub-index for the factor of the heat of main reaction in process k
+Sub-index for the factor of the heat of side reaction in process k
+Sub-index for the factor of chemical interaction in process k
+Sub-index for the factor of ﬂammability in process k
+Sub-index for the factor of explosiveness in process k
+Sub-index for the factor of toxic exposure in process k
+Sub-index for the factor of corrosiveness of the chemical components in process k
+Sub-index for the factor of inventory in process k
+Sub-index for the factor of process temperature in process k
+Sub-index for the factor of process pressure in process k
+Sub-index for the factor of equipment safety in process k
+Sub-index for the factor of safe process structure in process k
+Total ISI score of process k
+HQI of each chemical components a in process k",0
+348,"Processes 2019, 7, 200",0
+349,17 of 18,0
+350,"HQIk
+λk
+bk",0
+351,"Total HQI score of process k
+Degree of satisfaction for multiple objectives in each alternative process k
+Existence of alternative process k",0
+352,References,0
+353,"1. Westerberg, A.W. Recent Developments in Chemical Process and Plant Design; Liu, Y.A., Henry, A., McGee, J.,",0
+354,2,0
+355,3,0
+356,4,0
+357,5,0
+358,"6.
+7.",0
+359,8,0
+360,9,0
+361,"Epperly, W.R., Eds.; John Wiley and Sons: New York, NY, USA, 1987.
+Stephanopoulos, G.; Reklaitis, G.V. Process systems engineering: From Solvay to modern bio- and
+nanotechnology. A history of development, successes and prospects for the future. Chem. Eng. Sci.
+2011, 66, 4272–4306. [CrossRef]
+Nishida, N.; Stephanopoulos, G.; Westerberg, A.W. A review of process synthesis. AIChE J. 1981, 27, 321–351.
+[CrossRef]
+Linnhoﬀ, B.; Townsend, D.W.; Boland, D.; Hewitt, G.F.; Thomas, B.E.A.; Guy, A.R.; Marsland, R.H. User Guide
+on Process Integration for the Eﬃcient Use of Energy; Institution of Chemical Engineers: Rugby, UK, 1982.
+Foo, D.C.Y.; Ng, D.K.S. Process Integration for Cleaner Process Design. In Handbook of Process Integration:
+Minimisation of Energy and Water Use, Waste and Emissions; Series in Energy No. 61; Klemeš, J.J., Ed.; Woodhead
+Publishing: Sawston, UK, 2013.
+Douglas, J.M. Conceptual Design of Chemical Processes; McGraw-Hill: New York, NY, USA, 1988.
+Azapagic, A.; Millington, A.; Collett, A. A methodology for integrating sustainability considerations into
+process design. Chem. Eng. Res. Des. 2006, 84, 439–452. [CrossRef]
+Azapagic, A.; Millington, A.; Collett, A. Process design for sustainability: The case of vinyl chloride monomer.
+In Sustainable Development in Practice: Case Studies for Engineers and Scientists; John Wiley & Sons, Ltd.:
+Hoboken, NJ, USA, 2004; pp. 201–249.
+Gentile, M.; Rogers, W.; Mannan, M. Development of a fuzzy logic-based inherent safety index. Process Saf.
+Environ. Prot. 2003, 81, 444–456. [CrossRef]",0
+362,"10. Hassim, M.; Hurme, M. Inherent occupational health assessment during preliminary design stage. J. Loss",0
+363,"Prev. Process Ind. 2010, 23, 476–482. [CrossRef]",0
+364,"11. Edwards, D.; Lawrence, D. Assessing the inherent safety of chemical process routes: Is there a relation",0
+365,"between plant costs and inherent safety? Process Saf. Environ. Prot. 1993, 71, 252–258.",0
+366,"12. Heikkila, A. Inherent Safety in Process Plant Design; Technical Research Centre of Finland: Espoo, Finland,",0
+367,1999,0
+368,"13. Palaniappan, C.; Srinivasan, R.; Tan, R. Expert system for the design of inherently safer processes. 1. Route",0
+369,"selection stage. Ind. Eng. Chem. Res. 2002, 41, 6698–6710. [CrossRef]",0
+370,"14. Hassim, M.; Edwards, D. Development of a methodology for assessing inherent occupational health hazards.",0
+371,"Process Saf. Environ. Prot. 2006, 84, 378–390. [CrossRef]",0
+372,"15. Hassim, M.H.; Perez, A.L.; Hurme, M. Estimation of chemical concentration due to fugitive emissions during",0
+373,"chemical process design. Process Saf. Environ. Prot. 2010, 88, 173–184. [CrossRef]",0
+374,"16. Cave, S.; Edwards, D. Chemical process route selection based on assessment of inherent environmental",0
+375,"hazard. Comput. Chem. Eng. 1997, 21, 965–970. [CrossRef]",0
+376,"17. Gunasekera, M.; Edwards, D. Estimating the environmental impact of catastrophic chemical releases to the
+atmosphere: An index method for ranking alternative chemical process routes. Process Saf. Environ. Prot.
+2003, 81, 463–474. [CrossRef]",0
+377,"18. Gunasekera, M.; Edwards, D. Chemical process route selection based upon the potential toxic impact on the",0
+378,"aquatic, terrestrial and atmospheric environments. J. Loss Prev. Process Ind. 2006, 19, 60–69. [CrossRef]",0
+379,"19. Cabezas, H.; Bare, J.; Mallick, S. Pollution prevention with chemical process simulators: The generalized",0
+380,"waste reduction (WAR) algorithm-full version. Comput. Chem. Eng. 1999, 23, 623–634. [CrossRef]",0
+381,"20. Young, D.; Cabezas, H. Designing sustainable processes with simulation: The waste reduction (WAR)",0
+382,"algorithm. Comput. Chem. Eng. 1999, 23, 1477–1491. [CrossRef]",0
+383,"21. Andiappan, V.; Ko, A.S.Y.; Lau, V.W.S.; Ng, L.Y.; Ng, R.T.L.; Chemmangattuvalappil, N.G.; Ng, D.K.S.
+Synthesis of sustainable integrated bioreﬁnery via reaction pathway synthesis: Economic, incremental
+enviromental burden and energy assessment with multiobjective optimization. AIChE J. 2015, 61, 132–146.
+[CrossRef]",0
+384,"Processes 2019, 7, 200",0
+385,18 of 18,0
+386,22,0
+387,"Seider, W.D.; Seader, J.D.; Lewin, D.R. Product and Process Design Principles: Synthesis, Analysis and Evaluation,
+2nd ed.; John Wiley & Sons, Ltd.: Hoboken, NJ, USA, 2004.",0
+388,"23. Othman, M.; Repke, J.; Wozny, G.; Huang, Y. A modular approach to sustainability assessment and decision",0
+389,"support in chemical process design. Ind. Eng. Chem. Res. 2010, 49, 7870–7881. [CrossRef]",0
+390,"24. Al-Sharrah, G.; Elkamel, A.; Almanssoor, A. Sustainability indicators for decisionmaking and optimisation in
+the process industry: The case of the petrochemical industry. Chem. Eng. Sci. 2010, 65, 1452–1461. [CrossRef]
+25. Liew, W.; Hashim, M.; Ng, D.; Hurme, M. Fuzzy Optimization for Screening of Sustainable Chemical Reaction",0
+391,"Pathways. Chem. Eng. Trans. 2012, 29, 529–534.",0
+392,"26. Ng, R.; Hassim, M.; Ng, D. Process synthesis and optimization of a sustainable integrated bioreﬁnery via",0
+393,"fuzzy optimisation. AIChE J. 2013, 59, 4212–4227. [CrossRef]",0
+394,"27. Teng, W.C.; Fong, K.L.; Shenkar, D.; Wilson, J.A.; Foo, D.C.Y. Piper Diagram–A Novel Visualisation Tool for",0
+395,"Process Design. Chem. Eng. Res. Des. 2016, 112, 132–145. [CrossRef]",0
+396,"28. Motard, R.L.; Shacham, M.; Rosen, E.M. Steady state chemical process simulation. AIChE J. 1975, 21, 417–436.",0
+397,[CrossRef],0
+398,"29. Dimian, A.C.; Bildea, C.S.; Kiss, A.A. Integrated Design and Simulation of Chemical Processes, 2nd ed.; Elsevier:",0
+399,30,0
+400,"Amsterdam, The Netherlands, 2014.
+Foo, D.C.Y.; Chemmangattuvalappil, N.; Ng, D.K.S.; Elyas, R.; Chen, C.-L.; Elms, R.D.; Lee, H.-Y.; Chien, I.-L.;
+Chong, S.; Chong, C.H. Chemical Engineering Process Simulation; Elsevier: Amsterdam, The Netherlands, 2017;
+ISBN 978-0-12-803782-9.",0
+401,"31. Leontief, W. Quantitative Input and Output Relations in the Economic Systems of the United States.",0
+402,"Rev. Econ. Stat. 1936, 18, 105–125. [CrossRef]",0
+403,"32. Leontief, W.W. The Structure of the AMERICAN Economy; Oxford University Press: New York, NY, USA, 1951.
+33. Tan, R.; Culaba, A.; Aviso, K. A fuzzy linear programming extension of the general matrix-based life cycle",0
+404,"model. J. Clean. Prod. 2008, 16, 1358–1367. [CrossRef]",0
+405,"34. Aviso, K.; Tan, R.; Culaba, A.; Cruz, J., Jr. Fuzzy input–Output model for optimizing eco-industrial supply",0
+406,"chains under water footprint constraints. J. Clean. Prod. 2011, 19, 187–196. [CrossRef]",0
+407,"35. Kasivisvanathan, H.; Barilea, I.D.U.; Ng, D.K.S.; Tan, R.R. Optimal Operational Adjustment in Multi-functional",0
+408,"Energy Systems in Response to Process Inoperability. Appl. Energy 2013, 102, 492–500. [CrossRef]",0
+409,"36. Kasivisvanathan, H.; Ubando, A.T.; Ng, D.K.S.; Tan, R.R. Robust Optimization for Process Synthesis and
+Design of Multifunctional Energy Systems with Uncertainties. Ind. Eng. Chem. Res. 2014, 53, 3196–3209.
+[CrossRef]
+Foong, S.Z.Y.; Goh, C.K.M.; Supramaniam, C.V.; Ng, D.K.S. Input–Output optimisation model for sustainable
+oil palm plantation development. Sustain. Prod. Consum. 2019, 17, 31–46. [CrossRef]",0
+410,37,0
+411,"38. Andiappan, V.; Ng, D.S.; Tan, R.R. Design operability and retroﬁt analysis (DORA) framework for energy",0
+412,"systems. Energy 2017, 134, 1038–1052. [CrossRef]",0
+413,"39. El-Halwagi, M.M. Process Integration; Academic Press: Cambridge, MA, USA, 2006.
+40. Bellman, R.E.; Zadeh, L.A. Decision making in a fuzzy environment. Manag. Sci. 1970, 17, 141–164.",0
+414,[CrossRef],0
+415,"41. Zimmermann, H. Fuzzy programming and liner programming with several objective functions. Fuzzy Sets",0
+416,"Syst. 1978, 1, 45–55. [CrossRef]",0
+417,"42. Haas, T.; Jaeger, B.; Weber, R.; Mitchell, S.; King, C. New diol processes: 1,3- propanediol and 1,4-butanediol.",0
+418,43,0
+419,"Appl. Catal. A Gen. 2005, 1, 83–88. [CrossRef]
+Schlander, J.; Turek, T. Gas-phase hydrogenolysis of dimethyl maleate to 1,4- butanediol and -butyrolactone
+over copper/zinc oxide catalysts. Ind. Eng. Chem. Res. 1999, 4, 1264–1270. [CrossRef]",0
+420,"44. Bertola, A. Process for the production of Tetrahydrofuran, Gammabutyrolactone and Butanediol. U.S. Patent",0
+421,"6248906B1, 19 June 2001.",0
+422,"45. Mecklenburgh, J.C. Process Plant Layout; Halstead Press: New York, NY, USA, 1985.
+46. Aspentech. Getting Started in Aspen HYSYS; Aspen Technology, Inc.: Bedford, MA, USA, 2014.",0
+423,"© 2019 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).",0

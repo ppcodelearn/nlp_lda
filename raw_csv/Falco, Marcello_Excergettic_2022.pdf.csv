@@ -1,0 +1,1175 @@
+,0
+0,"Article
+Exergetic Analysis of DME Synthesis from CO2 and
+Renewable Hydrogen
+Marcello De Falco 1,*
+Dariusz Wawrzy ´nczak 3"
+1,", Gianluca Natrella 2, Mauro Capocelli 1"
+2,and Izabela Majchrzak-Kuc˛eba 3
+3,", Paulina Popielak 3, Marcelina Sołtysik 3,"
+4,"1 Unit of Process Engineering, Department of Engineering, Università Campus Bio-Medico di Roma,"
+5,"Via Álvaro del Portillo 21, 00128 Rome, Italy; m.capocelli@unicampus.it"
+6,"2 Dipartimento di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni—DITEN,"
+7,"University of Genoa, DITEN, Via all’Opera Pia 11A, 16145 Genoa, Italy; gianluca.natrella@edu.unige.it"
+8,"3 Department of Advanced Energy Technologies, Faculty of Infrastructure and Environment, Czestochowa
+University of Technology, Dabrowskiego 73, 42-201 Czestochowa, Poland; paulina.popielak@pcz.pl (P.P.);
+marcelina.soltysik@pcz.pl (M.S.); dariusz.wawrzynczak@pcz.pl (D.W.);
+izabela.majchrzak-kuceba@pcz.pl (I.M.-K.)"
+9,* Correspondence: m.defalco@unicampus.it; Tel.: +39-347-6809041
+10,"Abstract: Carbon Capture and Utilization (CCU) is a viable solution to valorise the CO2 captured
+from industrial plants’ ﬂue gas, thus avoiding emitting it and synthesizing products with high added
+value. On the other hand, using CO2 as a reactant in chemical processes is a challenging task, and a
+rigorous analysis of the performance is needed to evaluate the real impact of CCU technologies in
+terms of efﬁciency and environmental footprint. In this paper, the energetic performance of a DME
+and methanol synthesis process fed by 25% of the CO2 captured from a natural gas combined cycle
+(NGCC) power plant and by the green hydrogen produced through an electrolyser was evaluated.
+The remaining 75% of the CO2 was compressed and stored underground. The process was assessed
+by means of an exergetic analysis and compared to post-combustion Carbon Capture and Storage
+(CCS), where 100% of the CO2 captured was stored underground. Through the exergy analysis, the
+quality degradation of energy was quantiﬁed, and the sources of irreversibility were detected. The
+carbon-emitting source was a 189 MW Brayton–Joule power plant, which was mainly responsible
+for exergy destruction. The CCU conﬁguration showed a higher exergy efﬁciency than the CCS,
+but higher exergy destruction per non-emitted carbon dioxide. In the DME/methanol production
+plant, the main contribution to exergy destruction was given by the distillation column separating
+the reactor outlet stream and, in particular, the top-stage condenser was found to be the component
+with the highest irreversibility (45% of the total). Additionally, the methanol/DME synthesis reactor
+destroyed a signiﬁcant amount of exergy (24%). Globally, DME/methanol synthesis from CO2 and
+green hydrogen is feasible from an exergetic point of view, with 2.276 MJ of energy gained per 1 MJ
+of exergy destroyed."
+11,Keywords: carbon capture and utilization; methanol and DME production; exergy analysis
+12,1. Introduction
+13,"Climate change mitigation is a worldwide effort that involves all countries around the
+world. Among all problems, greenhouse gas (GHG) emissions have a signiﬁcant impact on
+the environment. Regarding this matter, the Intergovernmental Panel on Climate Change
+(IPCC) and the United Nations Climate Change Conference have established the needs of
+reducing CO2 emissions (recognized as the gas mainly responsible for climate change) and
+mitigating the global average temperature increase. Targets were set up, proposals to reach
+them were provided, and some technologies were identiﬁed as a solution in counteracting
+this issue."
+14,"Citation: De Falco, M.; Natrella, G.;
+Capocelli, M.; Popielak, P.;
+Sołtysik, M.; Wawrzy ´nczak, D.;
+Majchrzak-Kuc˛eba, I. Exergetic
+Analysis of DME Synthesis from CO2
+and Renewable Hydrogen. Energies
+2022, 15, 3516. https://doi.org/
+10.3390/en15103516"
+15,"Academic Editors: Federica Raganati
+and Paola Ammendola"
+16,"Received: 12 April 2022
+Accepted: 9 May 2022
+Published: 11 May 2022"
+17,"Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations."
+18,"Copyright: © 2022 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/)."
+19,"Energies 2022, 15, 3516. https://doi.org/10.3390/en15103516"
+20,https://www.mdpi.com/journal/energies
+21,"Energies 2022, 15, 3516"
+22,2 of 20
+23,"The extensive concentration of carbon dioxide in the atmosphere is a threat to environ-
+mental safety, contributing to the greenhouse effect, but CO2 is a source of carbon for plants
+and can also be used as a reactant in chemical reactions [1–3]. This concept has led to the
+development of Carbon Capture and Utilization (CCU) technologies, which are perceived
+as a more justiﬁed and socially acceptable technology for CO2 management than Carbon
+Capture and Storage (CCS). However, even if they can be considered a feasible solution,
+their cost is still an issue. Hasan et al. proposed a national Carbon Capture Utilization and
+Storage (CCUS) supply chain network for a U.S. case study in their multiscale framework
+analysis [4]. With the proposed solution focused on proﬁt rather than maximizing CO2 uti-
+lization, average proﬁts between $0.3 and $17.6 per ton of CO2 were achieved (depending
+on the weighted average total costs of capturing and utilizing a ton of CO2)."
+24,"There are plenty of ways to apply CCU technology wherever there is a CO2-emitting
+source, e.g., energy-intensive industry branches, such as energy, petrochemical and cement
+or iron and steel production. Additionally, CCU reactions can be supported with green
+technologies, such as renewable energy sources (RES)."
+25,"The ﬁrst step in a CCU process is the capturing of CO2 through well-known technolo-
+gies, such as oxyfuel combustion, pre-combustion or post-combustion, or as a direct-air
+capture process [5,6]. Post-combustion carbon capture can be achieved by physical or
+chemical separation methods, such as membranes, adsorption, absorption and cryogenic
+processes. Many of these technologies are already applied in industry [7]. Pre-combustion
+processes capture CO2 prior to the combustion reaction and it can be achieved with the
+coal gasiﬁcation process or with oil or gas fuel-reforming processes [8]."
+26,"After having captured and concentrated the CO2, it can be fed to a chemical reactor for
+its conversion into products, such as syngas, urea, methane, ethanol, formic acid, etc. This
+paper is focused on the analysis of conﬁgurations to synthesize methanol and dimethyl
+ether (DME) from CO2."
+27,"Dimethyl ether (DME) or methoxymethane is the simplest aliphatic ether with the
+molecular formula CH3OCH3. It is a colourless, near-odourless gas under ambient con-
+ditions. It is neither a toxic nor carcinogenic compound, with properties similar to liquid
+petroleum gas (LPG); thus, it can be easily blended with it and used as a fuel [9–11]. In
+the chemical industry, it is mainly used to produce diethyl sulphate, methyl acetate, light
+oleﬁns and gasoline [12]. Nowadays, it is considered an alternative fuel with low emis-
+sions of NOx, hydrocarbons and carbon monoxide [2,13]. DME can be obtained in two
+ways: direct synthesis and through the methanol dehydration process. The ﬁrst method’s
+reactions are:"
+28,CO + 2H2 (cid:29) CH3OH
+29,2CH3OH (cid:29) CH3OCH3 + H2O
+30,H2O + CO (cid:29) H2 + CO2
+31,(1)
+32,(2)
+33,(3)
+34,"The process of direct DME synthesis is exothermic (c.a. 246.2 kJ/mol DME); therefore,
+the heat produced during the reactions has to be removed. The inlet reactant mixture is
+composed of CO and H2."
+35,"Methanol dehydration to produce DME is also an exothermic process. CO2 can be
+used to produce methanol and then dehydrate it to DME. This has been proven to be a very
+economical way of utilizing carbon dioxide [2,14,15]. The chemical reactions occurring
+during the process are presented below:"
+36,Methanol formation
+37,Methanol dehydration
+38,CO2 + 3H2 (cid:29) CH3OH + H2O
+39,2CH3OH (cid:29) CH3OCH3 + H2O
+40,(4)
+41,(5)
+42,"Energies 2022, 15, 3516"
+43,Reverse water–gas shift (rWGS)
+44,CO2 + H2 (cid:29) CO + H2O
+45,Net reaction
+46,2CO2 + 6H2 (cid:29) CH3OCH3 + 3H2O
+47,3 of 20
+48,(6)
+49,(7)
+50,"In Ref. [16], the authors explored the proﬁtability of DME production from biogas; in
+Ref. [17], a techno-economic assessment of bio-DME and bio-methanol production from
+oil palm residue was proposed. Methanol is a colourless, ﬂammable liquid under ambient
+conditions with a characteristic odour. As one of the most important raw materials, it is
+a substrate in many syntheses of chemical compounds, including formaldehyde, acetic
+acid and chloromethane. It is also a very good solvent and it is easily miscible with water,
+alcohols and organic solvents. Due to its wide application in many industries (fuel, chemical
+and other industries), the demand for methanol is constantly growing, i.e., from 47 Mt/a
+in 2011 [18] to 100 Mt/a in 2021 [19]. According to the report made by the International
+Renewable Energy Agency [19], in 2021, only 0.2% of global production of methanol came
+from renewable sources—more than 60% was converted by natural gas reformation and
+the rest was produced by natural coal gasiﬁcation."
+51,Methanol can be synthesized from a gas containing either carbon monoxide or carbon
+52,dioxide when it reacts with hydrogen:
+53,CO2 + 3H2 (cid:29) CH3OH + H2O
+54,(8)
+55,"(9)
+The main properties of DME and methanol in comparison with LNG and diesel oil are
+shown in Table 1. Moreover, several potential major applications of DME and methanol are
+shown below in Figures 1 and 2."
+56,CO + 2H2 (cid:29) CH3OH
+57,Table 1. Properties of DME and methanol compared with other fuels.
+58,Properties
+59,Molecular formula
+60,CAS Number
+61,"Molar mass (g/mol)
+Cetane number **
+Melting point (◦C)"
+62,Density at 25 ◦C and 1 atm (kg/m3)
+63,"Boiling point (◦C) at 1 atm
+Autoignition temperature (◦C)"
+64,Miscible with water?
+65,Miscible with organic solvents? ***
+66,"DME
+[20]"
+67,"C2H6O
+115-10-6"
+68,"46.07
+55 to 60
+−141
+−24.8
+668.3
+235
+Yes
+Yes"
+69,Methanol
+70,[18]
+71,"CH3OH
+67-58-1
+32.04
+~5
+−97.88
+64.65
+786.68"
+72,"440
+Yes
+Yes"
+73,Methane *
+74,0
+75,"[21]
+CH4
+74-82-8
+16.04
+−182.47
+−161.5
+0.657
+537
+Yes
+Yes"
+76,Diesel Fuel
+77,"[22,23]"
+78,—
+79,68334-30-5
+80,"—
+40 to 55
+−40
+141"
+81,800–910
+82,"250
+No
+Yes"
+83,"* Methane as main part of Liquid Natural Gas (LNG), ** average value, *** with most popular polar and nonpolar
+organic solvents."
+84,"Energies 2022, 15, 3516"
+85,4 of 20
+86,"Figure 1. Applications of DME [20,24]."
+87,"Figure 2. Applications of methanol [18,19,25]."
+88,State-of-the-Art Production of DME/Methanol from Green Hydrogen and CO2
+89,"Converting CO2 into DME requires an energy input in the form of hydrogen, as
+shown in Equations (1)–(9). In order to meet the goal of reducing carbon emissions, green
+hydrogen is needed [1,5,26,27]."
+90,"Hydrogen can be synthesized in different ways: chemical, biological, catalytic, electro-
+chemical and thermal. To reduce the carbon footprint of the CCU process, a low-emission
+hydrogen production technology has to be applied. Among several possible approaches,
+the production of “green hydrogen” using an electrolyser powered by a renewable energy
+source is the most interesting [28,29]."
+91,"Barbato et al. [24] presented a process for carbon dioxide conversion to green methanol
+where CO2 captured from a power plant was combined with hydrogen from an electrolyser"
+92,"Energies 2022, 15, 3516"
+93,5 of 20
+94,"powered by hydropower energy. In the calculations and conclusions, the price (with cost
+calculations at the prevailing rate) of methanol production resulted to be 294 €/ton and it
+was successfully reduced by 20% compared to the price of methanol produced traditionally.
+While there are a number of pilot or demonstration-scale facilities, there are a few
+commercial units producing either DME or methanol on an industrial scale. Regarding
+existing facilities with a power plant as a carbon dioxide source, two projects developed in
+Germany can be taken into consideration."
+95,"The ﬁrst was funded by Europe’s Horizon 2020 program (MefCO2, Project No. 637016).
+Nine partners established in 2014 an international cooperation to research the feasibility of
+CCU technology along with the production of green methanol. The main aims of the project
+were to demonstrate the economic feasibility of utilizing captured CO2 by converting it
+into a usable fuel, such as methanol, and further providing green hydrogen produced
+from excess energy from renewable sources. The source of carbon dioxide was a lignite-
+ﬁred power plant located in Niederaussem, Germany. The project ended in 2019 with the
+development of one of the largest facilities in the European Union to synthesize methanol
+from CO2 from ﬂue gases, capable of producing 1 ton of methanol per day while capturing
+more than 1.5 tons of carbon dioxide per day [30–37]."
+96,"Carbon Recycling International Ltd. (CRI, Reykjavik, Iceland), known for producing
+renewable methanol since 2007, participated in this project. CRI’s pilot unit is located near
+Iceland’s capital—Reykjavik. Industrial-scale green methanol production began in 2012 in
+the ﬁrst pilot plant with an annual capacity of about 4000 tonnes of methanol (c.a. 12 t/d).
+The process is based on the conversion of CO2 from geothermal sources with the hydrogen
+produced by water electrolysis using geothermal energy [1,36,38]. The methanol produced
+in this facility is used in a number of applications, including blending with gasoline,
+biodiesel production, and wastewater denitriﬁcation. Additionally, the CRI methanol
+production process reduces the environmental impact by 90% compared to conventional
+methods [19]. Furthermore, CRI, in cooperation with China Henan Shuncheng Group,
+developed in 2021 the world’s ﬁrst green methanol plant with a capacity of 110,000 tons
+per year [39]."
+97,"The ALIGN-CCUS (Project No 271501) demonstration plant is also located at Nieder-
+aussem, Germany. The project was funded through the ERA-NET ACT program and it was
+co-funded by the European Commission under the Horizon 2020 program ACT [40]. The
+source of the captured CO2 is a 1000 MW power plant unit, and the hydrogen comes from
+a 140 kWel alkaline electrolyser providing 22 kg of hydrogen per day. The daily production
+of DME is about 50 kg. For DME synthesis, a Mitsubishi Power bifunctional catalyst was
+used, which was responsible for both methanol synthesis and the dehydration process [41].
+In this paper, we evaluate the energetic performance of a DME and methanol syn-
+thesis process fuelled by the CO2 captured from a natural gas combined cycle (NGCC)
+power plant and by the green hydrogen produced using an electrolyser (alkaline). The
+process conﬁguration performance is assessed by means of an exergetic analysis and com-
+pared to a post-combustion CCS. Through exergy, these two different processes can be
+evaluated [42–44], assessing the quality degradation of energy and individuating sources
+of irreversibility."
+98,"The post-combustion CCS is a common basis to compare new strategies to avoid
+carbon emissions. Olaleye et al. deeply discussed post-combustion carbon capture from a
+coal-ﬁred power plant [45,46]."
+99,"Blumbert et al. presented an NG-based low-pressure synthesis process for the pro-
+duction of methanol with CO2 utilization [47]. In their paper, the authors conducted an
+extended exergy analysis dividing the methanol production plant into various subsystems
+and evaluated the performance of each of them. Nakyai et al. [48] conducted an energy
+and exergy analysis of the DME production from CO and CO2 in a single-stage process.
+Farooqui et al. [49] evaluated from an energetic and an exergetic point of view a poly-
+generation plant with oxyfuel carbon capture for combined power and DME production.
+In our paper, we proposed a new conﬁguration for DME and methanol production in a"
+100,"Energies 2022, 15, 3516"
+101,6 of 20
+102,"single-stage process, in which a 90% CO2 conversion rate was achieved. We compared this
+process with post-combustion CCS and evaluated all of the chain from the NGCC power
+plant to the DME and methanol production. Through the exergetic analysis, we spotted the
+irreversibilities, calculated the conventional performance indicators [45–47] and deﬁned
+new performance indicators to assess the goodness of our conﬁguration with respect to
+energy transformation and exergy destruction."
+103,"The proposed conﬁguration is described in Section 2. Section 3 introduces the adopted
+methodology and the process assumptions that were made. Section 4 presents the results
+of the exergy analysis and Section 5 gathers the main conclusions of the work."
+104,2. Systems Description
+105,"In this section, the proposed system to reduce carbon emissions and to produce
+valuable products, such as DME and methanol, is described (Figure 3). The carbon dioxide-
+emitting source is a natural gas combined cycle (NGCC) power plant whose ﬂue gas
+is washed with an MDEA water solution to capture the CO2 (refer to Section 2.1). The
+recovered carbon dioxide is partly stored underground and partly converted into DME and
+methanol, reported in Sections 2.2 and 2.3, respectively."
+106,Figure 3. Conﬁguration of the proposed solution (top) and of the comparison basis.
+107,2.1. Power Plant and Post Combustion Carbon Capture
+108,"The simpliﬁed scheme of the NGCC power plant with Post-Combustion Carbon
+Capture (PCCC) is depicted in Figure 4. The parameters and process conﬁguration are
+taken from [50]. The overall scheme is presented in Figure 4 and the main inputs, outputs
+and assumptions are listed in Table 2."
+109,"The Heat-Recovery Steam Generator (HRSG) of the power plant has three pressure levels:
+4.6 bar, low pressure (LP);
+40 bar, intermediate pressure (IP);
+150 bar, high pressure (HP)."
+110,"•
+•
+•"
+111,"Energies 2022, 15, 3516"
+112,7 of 20
+113,Figure 4. Power Plant—PCCC block scheme (the numbers represent the ﬂow rates between the units).
+114,Table 2. Power Plant and PCCC Process Assumptions.
+115,Operating Parameter
+116,Natural Gas Flow Rate (kg/h)
+117,Air Flow Rate (kg/h)
+118,Compressed Air Pressure (bar)
+119,"Gas Turbine Outlet Temperature (K)
+Compressors Polytropic Coefﬁcients
+Compressors Mechanical Efﬁciency"
+120,Turbines Mechanical Efﬁciency
+121,"TG Isentropic Efﬁciency
+Water Flow Rate (kg/h)"
+122,High Pressure (bar)
+123,Intermediate Pressure (bar)
+124,Low Pressure (bar)
+125,"HT Isentropic Efﬁciency
+IP Isentropic Efﬁciency
+LP Isentropic Efﬁciency"
+126,Condensing Temperature (K)
+127,Net Power from Power Plant (MW)
+128,Solvent
+129,Absorber Pressure (bar)
+130,Absorber Number of Stages
+131,Stripper Pressure (bar)
+132,Stripper Number of Stages
+133,Stripper Reboiler
+134,"Value
+50,000"
+135,"2,572,034"
+136,0.9215–0.9315
+137,"169,197"
+138,"18.2
+898"
+139,"0.9
+0.9
+0.75"
+140,"150
+40
+4.6
+0.92
+0.94
+0.88
+311.5
+188.5"
+141,"3.8
+10
+1.1
+5"
+142,Kettle
+143,40% MDEA (mass basis)
+144,"Energies 2022, 15, 3516"
+145,8 of 20
+146,"The outlet steam of the low-pressure turbine (LT) is condensed and fed to the deaerator
+unit with the condensate pump (CP) at 3 bar. Here, a vent is purged and the liquid collected
+at the bottom is pressurized at 4.6 bar with the low-pressure pump (LPP) before being
+mixed with the almost-saturated liquid water from the reboiler of the stripper column
+in the PCCC unit. The resulting liquid stream is partially vaporized in the HRSG. The
+liquid and vapour are separated, the vapour fraction is further heated in the HRSG, the
+liquid fraction is once again split, one part is fed to the intermediate pressure pump (IPP)
+and the other part to the high-pressure pump (HPP). Both pressurized liquids are heated
+in the HRSG; a fraction of the IP liquid is used to preheat the natural gas entering the
+combustion chamber and recirculate it with the saturated water from the reboiler of the
+stripper. The HP superheated steam is expanded in the high-pressure turbine (HT) to
+40 bar; it is then mixed with the IP superheated steam and reheated in the HRSG. The
+resulting IP superheated steam is expanded in the intermediate-pressure turbine (IT) to the
+LP level and again mixed with the LP superheated steam. The resulting stream is split to
+feed both the stripper reboiler and the deaerator. The remaining fraction is expanded in
+the LT."
+147,"The oxidant in the natural gas combustion is air, which is compressed at 18.2 bar in a
+three-stage intercooled compressor. After combustion, the ﬂue gas is expanded in a turbine
+(GT) until 1.03 bar [50]. The gas leaves the GT and enters the HRSG at 898 K, where it is
+cooled to 437 K. The heat recovered in the HRSG supplies the Rankine cycle. In the HRSG,
+the ﬂue gas is cooled to 303 K and subsequently compressed in a two-stage intercooled
+compressor at 4 bar to be fed to the PCCC unit. Condensed water is expelled at the outlet
+of each compression–refrigeration stage."
+148,"Flue gas is fed to an absorber working at 3.8 bar from the bottom of the column. In
+the outlet section, the CO2-rich stream is sent to a stripper, where the weak bond between
+MDEA and CO2 is thermally broken in the reboiler. The lean solvent is collected at the
+bottom of the stripper and recirculated to the absorber, while almost-pure CO2 is collected
+at the top of the stripper."
+149,"In particular, the polytropic coefﬁcient for compressors was set to equal 0.9215 for the"
+150,inter-refrigerated stages and equal 0.9315 for the non-inter-refrigerated ones.
+151,2.2. Underground Storage
+152,"One route to avoid carbon emissions is the underground storage of the captured CO2.
+This is accomplished by purifying and pressurizing the CO2 collected at the top of the
+stripper. Carbon dioxide can be stored at different thermodynamic conditions. In this work,
+we supposed storing it as a supercritical liquid. Therefore, the gas stream containing pure
+CO2 was pressurized at 153 bar in a ﬁve-stage intercooled compressor. Carbon dioxide was
+liqueﬁed and stored at 153 bar and 303 K. The overall scheme is presented in Figure 5 and
+the main inputs, outputs and assumptions are listed in Table 3."
+153,"Figure 5. Underground storage block scheme (line 11 is the inlet pure CO2 gas stream, line 12 is the
+pressurized and liqueﬁed CO2 stream)."
+154,"Energies 2022, 15, 3516"
+155,9 of 20
+156,Table 3. Underground storage process assumptions.
+157,Operating Parameter
+158,"Interstage Temperature (K)
+Stored CO2 Temperature (K)
+Stored CO2 Pressure (bar)"
+159,Pressure Drop at the inter coolers (bar)
+160,2.3. DME Production Plant
+161,"Value
+303.15
+303.15"
+162,"153
+0.2"
+163,"As an alternative to total carbon dioxide geological storage, we considered carbon
+utilization for dimethyl ether (DME) production in a single-step reaction process. In this
+conﬁguration, the DME production plant is fed with 25% of the total CO2, leaving the
+remaining share destined to the underground storage as in the previously described case.
+Figure 6 shows the CO2 conversion process scheme. A gaseous stream of CO2 collected at
+the top of the stripper in the PCCC unit is puriﬁed and pressurized at 30 bar in a four-step
+intercooled compressor [51]. Then, the stream from the compressor is mixed with a pure H2
+stream and the stream recirculated from the top of the distillation column and containing
+CO2 and H2. The ﬂow rate of H2 has the value needed to achieve a hydrogen to carbon
+ratio (H/C) equal to 3. Then, the H2–CO2 mixture is heated up to 473.15 K and fed to the
+reactor, where the reactions of CO2 hydrogenation, water–gas shift and methanol (MeOH)
+dehydration happen [51]:"
+164,"∆H0 = −49.4 kJ/mol
+CO2 + 3H2 (cid:29) CH3OH + H2O
+∆H0 = −41.0 kJ/mol
+CO + H2O (cid:29) CO2 + H2
+2CH3OH (cid:29) CH3OCH3 + H2O ∆H0 = −23.0 kJ/mol"
+165,(10)
+166,(11)
+167,(12)
+168,"Figure 6. DME production plant block scheme (the tag HE represents the heat exchangers, the tag C
+represents the columns for product separation)."
+169,"The heat generated by the exothermic reactions is removed from the reactor in order
+to maintain the temperature reaction constant at 473.15 K and supplied to the reboiler of
+column C-1. The duty from the reboiler covers around 43% of the thermal demand at
+the reboiler of column C-1. Then, the reaction products are cooled at 440 K in two heat"
+170,"Energies 2022, 15, 3516"
+171,10 of 20
+172,"exchangers. The heat exchanger HE2 supplies the duty of the column C-3 reboiler, while
+the heat exchanger HE3 provides the heat needed by the column C-2 reboiler. After being
+cooled, the reaction products enter column C-1 at 21.3 bar. Here the heavy compounds,
+MeOH and water, are separated from the light ones (DME, CO, CO2 and H2). The light
+compounds are collected at the top of C-1 as a vaporous mixture and fed to column C-2
+operating at 19 bar to separate the DME. The distillate of column C-2 contains unreacted
+CO, CO2 and H2, which are recycled to the reactor for 95% of their amount in the distillate,
+the remaining part enters a PSA to extract the hydrogen in it. Eighty percent of the
+hydrogen in the PSA is collected at the outlet section. The overall rate of CO2 conversion
+is around 90%. MeOH and water are collected at the bottom of column C-1 as a liquid
+mixture and separated in column C-3 operating at 1.8 bar. Both columns C-1 and C-2
+have partial condensers at their top stages working below the environmental temperature.
+In particular, the condensing temperatures at C-1 and C-2 are 262.48 K and 246.89 K,
+respectively. Therefore, refrigeration cycles are used to reach these temperatures, and 3.14
+is the value supposed for the Coefﬁcient of Performance (COP) of both cycles [52]. The
+overall scheme is presented in Figure 6 and the main inputs, outputs and assumptions are
+listed in Table 4."
+173,Table 4. DME production plant process assumptions.
+174,"Operating Parameter
+Reactor Pressure (bar)"
+175,Reaction Temperature (K)
+176,C-1 Pressure (bar)
+177,C-1 Number of Stages
+178,"C-1 Condenser
+C-1 Reboiler"
+179,C-2 Pressure (bar)
+180,C-2 Number of Stages
+181,"C-2 Condenser
+C-2 Reboiler"
+182,C-3 Pressure (bar)
+183,C-3 Number of Stages
+184,"C-3 Condenser
+C-3 Reboiler"
+185,COP
+186,Partial vapour
+187,Partial vapour
+188,Value
+189,30
+190,"473.15
+20.5
+15"
+191,Kettle
+192,"19
+15"
+193,Kettle
+194,"1.8
+15
+Total
+Kettle
+3.14"
+195,3. Assumptions and Methodology
+196,"All processes were simulated with the software Aspen Plus V10. The Peng–Robinson
+model was applied to the Brayton–Joule cycle of the power plant, while the Steam–Table
+model was chosen for the Rankine cycle of the plant. To control the process, eight design
+speciﬁcations were introduced to adjust the temperature at the outlet of the GT, the pinch
+temperature differences in the HRSG, the vent purge in the deaerator, the water make-up
+and the steam to be sent at the reboiler of the stripper in the PCCC unit. A calculator
+was used to evaluate the power generated by the plant. The natural gas properties were
+taken from [51]. The combustion chamber was simulated with an RGibbs reactor, which
+minimized the Gibbs free energy, and the deaerator with a Flash2 separator."
+197,"With respect to the PCCC unit, for all of the blocks within this unit, the ENRT-RK
+model was used, which consisted of an unsymmetric electrolyte NRTL model with the
+Redlich–Kwong equation of state and Henry’s law for electrolyte systems. The electrolyte
+species were due to the presence of the amine MDEA as solvent."
+198,"To control the PCCC process, four design speciﬁcations were introduced to adjust the
+CO2 content in the gas stream leaving the absorber from the top, the molar composition of
+the residue of the stripper, the water make-up and the solvent make-up. The absorber was
+simulated with a RadFrac column with no condenser nor reboiler of 10 theoretical stages
+working at 3.8 bar. The stripper was simulated with a RadFrac column too, without the"
+199,"Energies 2022, 15, 3516"
+200,11 of 20
+201,"condenser, but with a Kettle reboiler fed with the LP steam from the power plant. It had
+ﬁve theoretical stages and a working pressure of 1.1 bar."
+202,"Regarding the DME production plant, the NRTL and the Peng–Robinson models were
+implemented. The former was for the distillation columns, which worked below 20 bar,
+and the latter was used for the other blocks, which worked at higher pressures. The single-
+stage reactor was modelled with an RGibbs reactor minimizing the Gibbs free energy with
+an implemented temperature approach of equilibrium of 20 K. The distillation columns
+used to separate the reaction products were all modelled with the RadFrac column. Every
+distillation column had 15 theoretical stages and a Kettle reboiler. Columns C-1 and C-2
+were equipped with a partial condenser and their distillate was vaporous, while column
+C-3 had a total condenser providing a liquid distillate. DME was the primary product of
+the plant, while MeOH was a secondary product. The simulation included seven design
+speciﬁcations with the objective of setting the molar ratio between hydrogen and carbon at
+the inlet of the reactor and the distillates’ ﬂow rate and purity at each distillation column.
+The exergy analysis with the aim of evaluating thermodynamics inefﬁciencies and rig-
+orous performances of the process was based on the conventional methodology described
+in the following and found in some similar papers [45,47]."
+203,"The ambient conditions were assumed at 298.15 K and 1.013 bar. The exergy ﬂow
+rate Ei of the i-th stream was the sum of the physical and chemical exergies, as reported in
+Equation (13), and was obtainable from the Aspen Plus simulations, while the kinetic and
+potential exergies were neglected. For further details, please refer to [44]."
+204,Ei = EPH
+205,i + ECH
+206,i
+207,The exergy destruction rate in the j-th component was calculated as follows:
+208,"ED,j = EF,j + EP,j"
+209,(13)
+210,(14)
+211,"where EF,j, EP,j and ED,j are respectively the exergy of the streams fed to the j-th component,
+the exergy of the streams leaving the j-th component, and the exergy destroyed in the j-th
+component. Table 5 shows how EF,j and EP,j were deﬁned for each component."
+212,Table 5. Exergy of fuels and products for different components.
+213,Component
+214,EF
+215,EP
+216,Distillation Column
+217,E5 − E4
+218,E2 + E3 − E1 + E6 − E7
+219,Heat Exchanger
+220,E3 − E4
+221,E3 − E1
+222,Compressor
+223,E1 + W
+224,E2
+225,"Energies 2022, 15, 3516"
+226,12 of 20
+227,Table 5. Cont.
+228,Component
+229,Turbine
+230,Reactor
+231,Valve
+232,EF
+233,E1
+234,E1
+235,E1
+236,EP
+237,E2 + W
+238,E2 − E3 + E4
+239,E2
+240,"For every component, the following parameters were calculated:"
+241,δj =
+242,γj =
+243,"ED,j
+EF
+ED,j
+∑j ED,j"
+244,(15)
+245,(16)
+246,"where EF is the sum of the exergy of the inlet streams in every process and EP is the exergy
+of all the products of every process. For every unit, the exergy efﬁciency η is quantiﬁed by
+Equation (17)."
+247,"The novel performance parameter ν is introduced for the PCCC, the underground
+storage and the DME production plant, deﬁned by Equation (18) as the ratio between the
+destroyed exergy in the unit and the non-emitted CO2 ma"
+248,CO2:
+249,η =
+250,"EP
+EF"
+251,ν =
+252,"∑j ED,j
+ma
+CO2"
+253,(17)
+254,(18)
+255,"The values of the mass exergy of natural gas, DME, methanol and hydrogen were
+miscalculated by the software Aspen Plus V10; in fact, the software underestimated those
+values when the components were below their ignition point. The software mass exergy
+values for the streams carrying the above-mentioned components were corrected by adding
+the mass lower heating value weighted on the components’ mass fraction in the stream.
+The standard lower heating value of natural gas was taken from [50]. The standard lower
+heating values of DME, methanol and hydrogen were taken from [53]."
+256,4. Results and Discussion
+257,"Exergy analysis was performed to detect the inefﬁciencies of the proposed process
+scheme, to locate the elements showing interesting improvement potentials and to compare
+the suggested hybrid solution (Route 1) to the complete underground storage (Route 2).
+The power plant and the PCCC were analysed with a process-integrated approach as
+they represented the common path for both process conﬁgurations. Instead, a very de-
+tailed exergy analysis on the underground storage unit and on the DME production plant
+was performed."
+258,"Energies 2022, 15, 3516"
+259,13 of 20
+260,4.1. DME Synthesis and CO2 Underground Storage Conﬁguration (Route 1)
+261,"In this section, the exergy analysis of the proposed process solution to avoid carbon
+emissions is presented. The recovered carbon dioxide generated by the power plant was
+treated to be stored in geological sites for 75% and to be transformed into DME and MeOH
+for 25%. Table 6 shows the thermodynamic properties of the main material streams."
+262,Table 6. Thermodynamic properties of selected material streams.
+263,Unit
+264,Power Plant
+265,PCCC
+266,Underground Storage
+267,DME Production Plant
+268,"No.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22"
+269,Fluid
+270,Natural Gas
+271,Air
+272,"Off Gas
+H-Steam
+I-Steam
+L-Steam
+Flue Gas
+Clean Gas"
+273,Captured CO2
+274,Make up
+275,Liqueﬁed CO2
+276,CO2
+277,"CO2
+H2"
+278,"Reactants
+C-1 Feed
+C-2 Feed
+C-3 Feed
+Off Gas
+DME
+MeOH"
+279,Dirty Water
+280,"ξ (kJ/kg)
+47,206"
+281,0
+282,"1.877
+1491
+1390
+719
+122
+114
+5.13
+1.36
+4.75
+223
+4.62"
+283,"120,000
+15,991
+15,586
+17,858
+4523.9
+6580.8
+26,662
+19,497
+49.71"
+284,"m (kg/h)
+50,000"
+285,"2,572,034
+2,622,034
+323,828
+378,823
+168,047
+2,532,475
+2,410,825
+125,015"
+286,"3415
+89,288
+89,288
+29,780
+3751.35
+108,554
+108,554
+89,061
+19,493
+3931
+10,444
+3293.3
+16,200"
+287,"T (K)
+288.15
+298.15
+303.15
+813.15
+813.50
+489.37
+303.15
+303.15
+294.11
+311.15
+294.11
+303.15
+294.11
+473.15
+473.15
+440.63
+262.48
+382.38
+251.58
+343.10
+349.60
+384.00"
+288,P (bar)
+289,"18.2
+1.013
+1.03
+149.4
+39.2
+3.4
+3.8
+3.8
+1.1
+3.8
+1.1
+153
+1.1
+30
+30
+21.3
+19.5
+2.0
+1.3
+19
+1.8
+1.8"
+290,"For every component j in the DME production plant, the exergy destruction ED,j and"
+291,the parameters δj and γj were calculated based on the method reported in Table 5.
+292,The exergetic efﬁciencies of the different units were calculated as follows:
+293,ηBJ =
+294,"WNET,BJ + EHRSG"
+295,E2
+296,ηR =
+297,ηPCCC =
+298,"WNET,R + EReb"
+299,"EHRSG
+E8 + E9"
+300,Ereb + WPCCC + E3
+301,ηUS =
+302,E12
+303,E11 + WUS
+304,ηDME =
+305,E19 + E20 + E21 + E22
+306,"E13 + E14 + WDME + EF,HE1 + EF,C−3"
+307,(19)
+308,(20)
+309,(21)
+310,(22)
+311,(23)
+312,"where WNET,BJ and WNET,R are the net electric power in the Brayton–Joule and Rankine
+cycles, EHRSG is the exergy exchanged in the Heat Recovery Steam Generator, Ei is the
+exergy associated with the i-th stream in Figure 4, EReb is the exergy exported to the reboiler
+of the stripper in the PCCC unit, and WPCCC and WDME are the electric power demand in
+the PCCC and DME production plant units, respectively. The exergy associated with the
+compressor of the off gas (stream no. 3 in Figure 4) was counted in the PCCC unit. The
+heat exchanger HE1 in Figure 6 heated up the reactants to 473.15 K; such an amount of heat
+was not recovered from anywhere in the process and it was supposed to be provided by a
+hot source at a constant temperature of 488.15 K. Instead, HE2 and HE3 supplied the heat"
+313,"Energies 2022, 15, 3516"
+314,14 of 20
+315,"at the reboilers of C-3 and C-2 respectively. Approximately 42.65% of the heat needed at
+the reboiler of C-3 was supplied by the exothermic reactions (1)–(3). The remaining part
+was supposed to be provided by a hot source at a constant temperature of 479.64 K (15 K
+higher than the temperature at the reboiler of C-3). Therefore, the values of EF,HE1 and of
+EF,C−3 were calculated as shown in [54]."
+316,"The values of ηBJ, ηR, ηPCC, ηUS and ηDME, as well as the values of the destroyed
+exergies in the unit, are listed in Table 7, where the results of the exergy analysis of the
+different units are listed. The destroyed exergy in each unit was given by the difference
+between the denominator and the nominator of the corresponding exergy efﬁciency."
+317,Table 7. Exergy analysis results.
+318,Unit
+319,Brayton–Joule Cycle
+320,Rankine Cycle
+321,PCCC
+322,"Underground Storage
+DME Production Plant"
+323,ED (MW)
+324,"277.90
+108.96
+150.23
+3.25
+41.09"
+325,"η (%)
+45.57
+50.05
+36.96
+62.96
+75.74"
+326,ν (MJ/kg)
+327,"40.80
+0.13
+4.97"
+328,"Figures 7 and 8 show the result of the exergy analysis of the DME production plant. The
+distillation column C-1 was mainly responsible for the exergy destruction, as it represented
+45.19% of all exergy destruction, and its impact on exergy fuel reduction was worth 12.37%.
+In particular, the refrigeration cycle at the top stage of C-1 was the operation associated
+with the highest irreversibility, as shown in Figure 9. These values were higher than those of
+columns C-2 and C-3, because column C-1 dealt with higher ﬂow rates and separated very
+different chemical species. Furthermore, as shown in Table 6, much of the stream fed to
+column C-1 left the column from the top at a temperature lower than the feed temperature.
+This fact determines the high exergy destruction in the column C-1 condenser. The reactor
+was the second-most responsible unit for exergy destruction, and column C-3 was the third.
+In particular, the exergy destruction associated with column C-3 was due to the difference
+in the speciﬁc exergy ξ of the streams. This is shown in Table 6; in fact, the speciﬁc exergy
+of the residue ξ22 was lower than the speciﬁc exergy of the feed ξ18 and speciﬁcally of the
+distillate ξ21, but the mass ﬂow of the residue was almost ﬁve times the mass ﬂow of the
+distillate. The exergy destruction associated with the reactor was also due to the chemical
+exergy difference in reagents and products."
+329,Figure 7. Percentage of fuel exergy (EF = 150.13 MW) destroyed per component.
+330,"Energies 2022, 15, 3516"
+331,15 of 20
+332,"Figure 8. Percentage of destroyed exergy per component (∑j ED,j = 41.09 MW)."
+333,Figure 9. Distribution of destroyed exergy in C-1.
+334,"Figure 10 shows how the exergy destructions were distributed among the units. The
+Brayton–Joule cycle was mainly responsible for exergy destruction [55], while underground
+storage had the lowest impact."
+335,"Energies 2022, 15, 3516"
+336,16 of 20
+337,Figure 10. Distribution of exergy destruction between the units (total ED = 581.43 MW).
+338,4.2. Comparison with CO2 Underground Storage (Route 2)
+339,"The results of the previous section are hereby compared with the Route 2 solution
+to avoid carbon emissions, i.e., 100% underground storage of recovered CO2. The same
+power plant and PCCC were analysed; therefore the results for those units were the same
+as those in Route 1. The recovered carbon dioxide was supposed to be treated in order to
+be completely stored in geological sites. The thermodynamic properties of the material
+streams of the power plant and PCCC units in Table 6 are still valid. Figure 11 shows the
+exergy destructions distribution among the units."
+340,Figure 11. Distribution of exergy destruction between the units (total ED = 541.42 MW).
+341,"The same conditions for temperature and pressure were set for the underground
+stored carbon dioxide in both routes, as shown in Tables 6 and 8. Therefore, the exergy
+efﬁciencies of the underground storage unit in Route 1 and in Route 2 were the same, but
+exergy destruction in this case accounted for 4.33 MW."
+342,"Energies 2022, 15, 3516"
+343,17 of 20
+344,Table 8. Thermodynamic properties of selected stream materials.
+345,"No.
+11
+12"
+346,"Fluid
+CO2"
+347,Liqueﬁed CO2
+348,Unit
+349,ξ (kJ/kg)
+350,Underground Storage
+351,"4.75
+223"
+352,"m (kg/h)
+119,068
+119,068"
+353,"T (K)
+294.11
+303.15"
+354,P (bar)
+355,"1.1
+153"
+356,"The results show a decrease in the total exergy destruction of 6.88% due to the complete
+storage of the recovered carbon dioxide. Focusing on the units treating the recovered CO2,
+the destroyed exergy in Route 2 was approximately a tenth of the destroyed exergy in
+Route 1 (44.34 MW). Despite the consistent reduction in the destroyed exergy, the DME
+production plant unit had higher exergy efﬁciency than the underground storage unit. The
+process’ intrinsic exergy efﬁciency was higher, but the additional use of high-value energy
+and material streams increased the overall exergy destruction. The exergy efﬁciencies and
+the destroyed exergy per non-emitted CO2 coefﬁcient are presented in Table 9 for the units
+treating the recovered CO2."
+357,Table 9. Comparison between the Route 1 and Route 2 CO2-treating units.
+358,"Route 1
+Route 2"
+359,"η (%)
+75.03
+62.96"
+360,ν (MJ/kg)
+361,Avoided CO2
+362,"1.34
+0.13"
+363,"97.50%
+100%"
+364,"Furthermore, the DME production plant unit was able to release available energy to
+the environment in the form of DME and MeOH streams. This energy value was quantiﬁed
+with the lower heating value of material streams 20 and 21 in Figure 6. The energy gain
+(EG) we obtained from DME and MeOH production in the DME production plant was
+calculated as the ratio between the sum of the energy transported by streams 20 and 21 and
+the exergy destroyed in the Route 1 CO2-treating units:"
+365,EG =
+366,m20LHV20 + m21LHV21
+367,"ED,US + ED,DME"
+368,(24)
+369,"The EG value is 2.276 MJ/MJ; in particular, it was 1.875 MJ/MJ for DME production"
+370,and 0.401 MJ/MJ for MeOH production.
+371,5. Conclusions
+372,"In the present study, an exergy analysis of a process conﬁguration able to avoid carbon
+emissions and to produce DME and methanol is presented. The carbon-emitting source
+in this study was a 189 MW power plant. The Brayton–Joule cycle in the power plant
+was mainly responsible for exergy destruction, 75% of the produced carbon dioxide was
+captured to be stored underground and the remaining 25% was to be transformed into
+DME and methanol via reactions with hydrogen. In the plant, the total CO2 generated
+by the power cycle was 119,068 kg/h, the amount stored was 89,288 kg/h, the stream
+converted was 26,815 kg/h and the amount vented to the atmosphere was 2965 kg/h (2.5%
+of the total). The reaction sections converted the CO2 stream into DME (10,381 kg/h) and
+methanol (3214.1 kg/h). A second route was considered, i.e., the storage of 100% of the
+CO2 generated by the power plant."
+373,"Of those two routes to avoid carbon emissions, the underground storage offers a much
+lower exergy destruction per mass of non-emitted carbon. Inside the DME production plant,
+the main contribution to exergy destruction was from the distillation column separating
+the reactor outlet stream and, in particular, the top-stage condenser was found to be the
+component with the highest irreversibility. This DME synthesis showed a higher efﬁciency
+than the underground storage unit, but a higher exergy destruction per non-emitted carbon
+dioxide ratio. As a consequence, the process conﬁguration we propose has higher exergetic
+efﬁciency and exergy destruction than full geological storage, and produces valuable
+compounds, such as DME and methanol. Its feasibility is strictly correlated with the"
+374,"Energies 2022, 15, 3516"
+375,18 of 20
+376,"development of the hydrogen industry, and a future study should evaluate the impact of
+hydrogen production at different carbon dioxide shares between DME production and
+underground storage. Future works should investigate the optimal CO2 split between
+Route 1 and Route 2 and extend exergy analysis to green hydrogen production."
+377,"Author Contributions: Conceptualization, M.D.F., D.W., G.N. and M.C.; methodology, G.N., M.C.
+and M.D.F.; software, G.N.; validation, M.D.F., D.W. and G.N.; formal analysis, G.N., M.C. and M.D.F.;
+investigation, G.N., M.C. and M.D.F.; resources, P.P., M.S. and G.N.; data curation, G.N., M.D.F. and
+D.W.; writing—original draft preparation, G.N. and M.D.F.; writing—review and editing, P.P., D.W.,
+I.M.-K., M.S. and M.D.F.; visualization, G.N. and P.P.; supervision, M.D.F., D.W. and I.M.-K.; project
+administration, M.D.F., D.W. and I.M.-K.; funding acquisition, M.D.F., D.W. and I.M.-K. All authors
+have read and agreed to the published version of the manuscript."
+378,"Funding: This article has been supported by the Polish National Agency for Academic Exchange
+under Grant No. PPI/APM/2019/1/00042/U/00001."
+379,Conﬂicts of Interest: The authors declare no conﬂict of interest.
+380,Nomenclature
+381,"DME
+MeOH
+NGCC
+PCCC
+HRSG
+HP
+IP
+LP
+GT
+HT
+IT
+LT
+C-x
+HEx
+H/C
+COP
+EG
+Ei
+EPH
+i
+ECH
+i
+ED,j
+EF,j
+EP,j
+ξ
+m
+ma
+δj
+γj
+ν
+η
+T
+P"
+382,CO2
+383,"Dimethyl Ethanol
+Methanol
+Natural Gas Combined Cycle
+Post-Combustion Carbon Capture
+Heat Recovery Steam Generator
+High-Pressure Level
+Intermediate-Pressure Level
+Low-Pressure Level
+Gas Turbine
+High-Pressure Turbine
+Intermediate-Pressure Turbine
+Low-Pressure Turbine
+Distillation Column number x
+Heat Exchanger number x
+Hydrogen to Carbon ratio
+Coefﬁcient of Performance
+Energy Gain
+Exergy ﬂow rate of i-th material stream
+Physical Exergy ﬂow rate of i-th material stream
+Chemical Exergy ﬂow rate of i-th material stream
+Desytroyed Exergy ﬂow rate in the j-th component
+Fuel Exergy ﬂow rate to the j-th component
+Product Exergy ﬂow rate of the j-th component
+Speciﬁc Mass Exergy
+Mass ﬂow rate
+Mass ﬂow rate of avoided CO2
+Destroyed Exergy to Fuel Exergy ratio for the j-th component
+Speciﬁc Destroyed Exergy in the j-th component
+Destroyed exergy per avoided carbon emissions
+Exergetic Efﬁciency
+Temperature
+Pressure"
+384,"Energies 2022, 15, 3516"
+385,19 of 20
+386,"References
+1. Majchrzak-Kuc˛eba, I.; Szymanek, P. CCU Technologies in the Green Economy. Eng. Prot. Environ. 2018, 21, 261–271. [CrossRef]
+2.
+Catizzone, E.; Bonura, G.; Migliori, M.; Frusteri, F.; Giordano, G. CO2 recycling to dimethyl ether: State-of-the-art and perspectives.
+Molecules 2018, 23, 31. [CrossRef] [PubMed]"
+387,5.
+388,6.
+389,4.
+390,"3. Masson-Delmotte, V.P.; Zhai, A.; Pirani, S.L.; Connors, C.; Péan, S.; Berger, N.; Caud, Y.; Chen, L.; Goldfarb, M.I.; Gomis, M.; et al.
+The Physical Science Basis. Contribution of Working Group I to the 552 Sixth Assessment Report of the Intergovernmental Panel on Climate
+Change; Cambridge University Press: Cambridge, UK; New York, NY, USA, 2021.
+Hasan, M.M.F.; First, E.L.; Boukouvala, F.; Floudas, C.A. A multi-scale framework for CO2 capture, utilization, and sequestration:
+CCUS and CCU. Comput. Chem. Eng. 2015, 81, 2–21. [CrossRef]
+Koytsoumpa, E.I.; Bergins, C.; Kakaras, E. The CO2 economy: Review of CO2 capture and reuse technologies. J. Supercrit. Fluids
+2018, 132, 3–16. [CrossRef]
+Leung, D.Y.C.; Caramanna, G.; Maroto-Valer, M.M. An overview of current status of carbon dioxide capture and storage
+technologies. Renew. Sustain. Energy Rev. 2014, 39, 426–443. [CrossRef]
+Chauvy, R.; De Weireld, G. CO2 Utilization Technologies in Europe: A Short Review. Energy Technol. 2020, 8, 2000627. [CrossRef]
+Dieterich, V.; Buttler, A.; Hanel, A.; Spliethoff, H.; Fendt, S. Power-to-liquid via synthesis of methanol, DME or Fischer–Tropsch-
+fuels: A review. Energy Environ. Sci. 2020, 13, 3207–3252. [CrossRef]
+Lee, D.; Lee, J.S.; Kim, H.Y.; Chun, C.K.; James, S.C.; Yoon, S.S. Experimental study on the combustion and no x emission
+characteristics of DME/LPG blended fuel using counterﬂow burner. Combust. Sci. Technol. 2012, 184, 97–113. [CrossRef]"
+391,"7.
+8."
+392,9.
+393,"10. Kim, H.J.; Suh, H.K.; Park, S.H.; Lee, C.S. An experimental and numerical investigation of atomization characteristics of biodiesel,"
+394,"dimethyl ether, and biodiesel-ethanol blended fuel. Energy Fuels 2008, 22, 2091–2098. [CrossRef]"
+395,"11. Wang, S.; Fu, Z. Thermodynamic and economic analysis of solar assisted CCHP-ORC system with DME as fuel. Energy Convers."
+396,"Manag. 2019, 186, 535–545. [CrossRef]"
+397,"12. Cheng, C.; Zhang, H.; Ying, W.; Fang, D. Intrinsic kinetics of one-step dimethyl ether synthesis from hydrogen-rich synthesis gas"
+398,"over bi-functional catalyst. Korean J. Chem. Eng. 2011, 28, 1511–1517. [CrossRef]"
+399,"13. Zhang, Y.; Zhang, S.; Benson, T. A conceptual design by integrating dimethyl ether (DME) production with tri-reforming process"
+400,"for CO2 emission reduction. Fuel Process. Technol. 2015, 131, 7–13. [CrossRef]"
+401,"14. Catizzone, E.; Freda, C.; Braccio, G.; Frusteri, F.; Bonura, G. Dimethyl ether as circular hydrogen carrier: Catalytic aspects of"
+402,"hydrogenation/dehydrogenation steps. J. Energy Chem. 2021, 58, 55–77. [CrossRef]"
+403,"15. Bonura, G.; Todaro, S.; Frusteri, L.; Majchrzak-Kuc˛eba, I.; Wawrzy ´nczak, D.; Pászti, Z.; Tálas, E.; Tompos, A.; Ferenc, L.;
+Solt, H.; et al. Inside the reaction mechanism of direct CO2 conversion to DME over zeolite-based hybrid catalysts. Appl. Catal. B
+Environ. 2021, 294, 120255. [CrossRef]"
+404,"16. Baena-Moreno, F.M.; Gonzalez-Castaño, M.; Arellano-García, H.; Reina, T.R. Exploring proﬁtability of bioeconomy paths:"
+405,17.
+406,"Dimethyl ether from biogas as case study. Energy 2021, 225, 120230. [CrossRef]
+Im-orb, K.; Arpornwichanop, A. Comparative techno-economic assessment of bio-methanol and bio-DME production from oil
+palm residue. Energy Convers. Manag. 2022, 258, 115511. [CrossRef]"
+407,"18. Ott, J.; Gronemann, V.; Pontzen, F.; Fiedler, E.; Grossmann, G.; Kersebohm, B.; Weiss, G.; Witte, C. Methanol. In Ullmann’s"
+408,"Encyclopedia of Industrial Chemistry; Wiley-VCH Verlag GmbH & Co.: Berlin, Germany, 2012."
+409,"19. Kang, S.; Boshell, F.; Goeppert, A.; Prakash, S.G.; Landälv, I. Innovation Outlook: Renewable Methanol; IRENA: Abu Dhabi, United"
+410,"Arab Emirates, 2021."
+411,"20. Müller, M.; Hübsch, U. Dimethyl Ether. In Ullmann’s Encyclopedia of Industrial Chemistry; Wiley-VCH Verlag GmbH & Co.: Berlin,"
+412,"Germany, 2000."
+413,"21. PubChem. Available online: https://pubchem.ncbi.nlm.nih.gov/compound/Methane (accessed on 17 February 2022).
+22. Traﬁgura. Available online: https://www.traﬁgura.com/media/1687/en_sds_fuel-diesel-vgo_cas-68334-30-5.pdf (accessed on"
+414,"17 February 2021).
+Speight, J.G. Handbook of Petroleum Product Analysis; Wiley: Hoboken, NJ, USA, 2015; Volume 53."
+415,"23.
+24. Barbato, L.; Iaquaniello, G.; Mangiapane, A. Reuse of CO2 to Make Methanol Using Renewable Hydrogen. In CO2: A Valuable
+Source of Carbon; De Falco, M., Iaquaniello, G., Centi, G., Eds.; Green Energy and Technology; Springer: London, UK, 2013.
+[CrossRef]"
+416,"25. Hobson, C.; Marquez, C. Renewable Methanol Report; Methanol Institute: Brussels, Belgium, 2018.
+26. Huang, C.H.; Tan, C.S. A Review: CO2 Utilization. Aerosol Air Qual. Res. 2014, 14, 480–499. [CrossRef]
+27. de Falco, M.; Iaquaniello, G.; Centi, G. CO2: A Valuable Source of Carbon; Green Energy and Technology; Springer: London, UK,"
+417,"2013; Volume 137. [CrossRef]
+Scott, K. Sustainable and Green Electrochemical Science and Technology; John Wiley and Sons Ltd.: Hoboken, NJ, USA, 2016."
+418,"28.
+29. Pérez-Fortes, M.; Schöneberger, J.C.; Boulamanti, A.; Tzimas, E. Methanol synthesis using captured CO2 as raw material:"
+419,"Techno-economic and environmental assessment. Appl. Energy 2016, 161, 718–732. [CrossRef]"
+420,30. RWE. Available online: https://www.rwe.com/en/press/rwe-power/2019-05-28-niederaussem-becomes-the-setting-for-
+421,important-technological-progress (accessed on 22 February 2022).
+422,31. MefCO2. Available online: http://www.mefCO2.eu/ (accessed on 21 February 2022).
+423,"Energies 2022, 15, 3516"
+424,20 of 20
+425,32.
+426,33.
+427,"Freyr, Ó.; Magistri, L.; Licozar, B.; Diaz, A.S. Green Methanol for a Green Future. MefCO2. 2020. Available online: http:
+//www.mefco2.eu/news/green-methanol-for-a-green-future.php (accessed on 23 February 2022).
+Fernández-González, J.; Rumayor, M.; Domínguez-Ramos, A.; Irabien, A. Hydrogen Utilization in the Sustainable Manufacture
+of CO2-Based Methanol. Ind. Eng. Chem. Res. 2022. [CrossRef]"
+428,34. European Commission. Available online: https://cordis.europa.eu/article/id/257671-energyintensive-sectors-can-be-part-of-
+429,low-carbon-transition (accessed on 21 February 2022).
+430,"35. Ayala, P. Methanol Fuel from CO2. Synthesis of Methanol from Captured Carbon Dioxide Using Surplus Electricity. MefCO2.
+13 September 2018. Available online: https://etipwind.eu/wp-content/uploads/MefCO2-slides.pdf (accessed on 23 February
+2022)."
+431,36. Danish Energy Agency Technology Data for Renewable Fuels. 2017. Available online: https://ens.dk/en/our-services/
+432,projections-and-models/technology-data/technology-data-renewable-fuels (accessed on 24 February 2022).
+433,"37. Harp, G.; Tran, K.C.; Bergins, C.; Buddenberg, T.; Drach, I.; Sigurbjornsson, O. Application of Power to Methanol Technology to
+Integrated Steelworks for Proﬁtability, Conversion Efﬁciency, and CO2 Reduction. In Proceedings of the METEC 2nd ESTAD,
+Düsseldorf, Germany, 15–19 June 2016."
+434,"38. Andrei, B.D.; del Mar, P.F.M.; Evangelos, T.; Thea, S. Carbon Capture and Utilisation Workshop: Background and Proceedings;"
+435,"Publications Ofﬁce of the European Union: Luxembourg, 2013."
+436,"39. Carbon Recycling International Ltd. Available online: https://www.carbonrecycling.is/ (accessed on 22 February 2022).
+40. Mann, I. Deep Decarbonisation is Within Reach of Europe’s Industrial Regions. March 2021. Available online: https://www.
+alignccus.eu/news/align-ccus-ﬁndings-unveiled-deep-decarbonisation-within-reach-europe%E2%80%99s-industrial-regions
+(accessed on 24 February 2022).
+van Os, P. Accelerating low carbon industrial growth through carbon capture, utilization and storage (CCUS). Greenh. Gases Sci.
+Technol. 2018, 8, 994–997. [CrossRef]"
+437,41.
+438,"42. Moran, M.J.; Sciubba, E. Exergy Analysis: Principles and Practice. J. Eng. Gas Turbines Power 1994, 116, 285–290. [CrossRef]
+43. Mistry, K.H.; Lienhard, J.H. Generalized least energy of separation for desalination and other chemical separation processes."
+439,"Entropy 2013, 15, 2046. [CrossRef]"
+440,"44. Bejan, A. Advanced Engineering Thermodynamics; John Wiley & Sons: Hoboken, NJ, USA, 2016.
+45. Olaleye, A.K.; Wang, M.; Kelsall, G. Steady state simulation and exergy analysis of supercritical coal-ﬁred power plant with CO2"
+441,"capture. Fuel 2015, 151, 57–72. [CrossRef]"
+442,"46. Olaleye, A.K.; Wang, M. Conventional and advanced exergy analysis of post-combustion CO2 capture based on chemical"
+443,"absorption integrated with supercritical coal-ﬁred power plant. Int. J. Greenh. Gas Control 2017, 64, 246–256. [CrossRef]"
+444,"47. Blumberg, T.; Morosuk, T.; Tsatsaronis, G. Exergy-based evaluation of methanol production from natural gas with CO2 utilization."
+445,"Energy 2017, 141, 2528–2539. [CrossRef]"
+446,"48. Nakyai, T.; Saebea, D. Energy and exergy analyses of dimethyl ether production using CO and CO2 hydrogenation. Int. J. Smart"
+447,"Grid Clean Energy 2019, 8, 544–549. [CrossRef]
+Farooqui, A.; Di Tomaso, F.; Bose, A.; Ferrero, D.; Llorca, J.; Santarelli, M. Techno-economic and exergy analysis of polygeneration
+plant for power and DME production with the integration of chemical looping CO2/H2O splitting. Energy Convers. Manag. 2019,
+186, 200–219. [CrossRef]
+Fout, T.; Zoelle, A.; Keairns, D.; Turner, M.; Woods, M.; Kuehn, N.; Shah, V.; Chou, V.; Pinkerton, L. Cost and Performance Baseline
+for Fossil Energy Plants Volume 1a: Bituminous Coal (PC) and Natural Gas to Electricity Revision 3; National Energy Technology
+Laboratory (NETL): Pittsburgh, PA, USA; Morgantown, WV, USA, 2015; Volume 1a."
+448,49.
+449,50.
+450,"51. De Falco, M.; Capocelli, M.; Giannattasio, A. Membrane Reactor for one-step DME synthesis process: Industrial plant simulation"
+451,"and optimization. J. CO2 Util. 2017, 22, 33–43. [CrossRef]"
+452,"52. Dincer, I.; Rosen, M.A.; Khalid, F. Ocean (Marine) Energy Production. In Comprehensive Energy Systems; Elsevier: Amsterdam, The"
+453,"Netherlands, 2018; Volumes 3–5."
+454,"53. Perry, R.H.; Green, D.W. Perry’s Chemical Engineers’ Handbook, 8th ed.; McGraw-Hill: New York, NY, USA, 2013; Volume 53.
+54. Demirel, Y.; Sieniutycz, S. Nonequilibrium Thermodynamics: Transport and Rate Processes in Physical and Biological Systems."
+455,"Appl. Mech. Rev. 2003, 56, 275–540. [CrossRef]"
+456,"55. Ertesvåg, I.S.; Kvamsdal, H.M.; Bolland, O. Exergy analysis of a gas-turbine combined-cycle power plant with precombustion"
+457,"CO2 capture. Energy 2005, 30, 5–39. [CrossRef]"

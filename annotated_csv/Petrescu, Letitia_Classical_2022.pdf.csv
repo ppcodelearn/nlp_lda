@@ -1,0 +1,1513 @@
+,0,Class
+0,"Article
+Classical and Process Intensiﬁcation Methods for Acetic Acid
+Concentration: Technical and Environmental Assessment
+Letitia Petrescu * and Codruta-Maria Cormos",0
+1,"Faculty of Chemistry and Chemical Engineering, Babes, -Bolyai University, 11 Arany Janos,
+RO-400028 Cluj-Napoca, Romania
+* Correspondence: letitia.petrescu@ubbcluj.ro",0
+2,"Abstract: This study aims to investigate, from a technical and an environmental perspective, various
+alternatives for acetic acid concentration for maximizing acetic acid production, its purity, and in the
+meantime, minimizing the energy usage and the environmental impact. Liquid–liquid extraction
+followed by azeotropic distillation using different solvents such as: (i) ethyl acetate, (ii) isopropyl
+acetate, and (iii) a mixture containing isopropyl acetate and isopropanol were first explored, using
+process flow modeling software. The three cases were compared considering various technical key
+performance indicators (i.e., acetic acid flow-rate, acetic acid purity, acetic acid recovery, power con-
+sumption, thermal energy used, and number of equipment units involved) leading to the conclusion
+that the usage of the isopropyl acetate—isopropanol mixture leads to better technical results. The
+isopropanol-isopropyl acetate mixture was furthermore investigated in other two cases where process
+intensification methods, based on thermally coupled respectively the double-effect distillation process,
+are proposed. The highest quantity of pure acetic acid (e.g., 136 kmol/h) and the highest recovery
+rate (e.g., 97.74%) were obtained using the double-effect method. A cradle-to-gate life cycle assess-
+ment, involving ReCiPe method, was used to calculate and compare various environmental impact
+indicators (i.e., climate change, freshwater toxicity potential, human toxicity, etc.). Several steam
+sources (i.e., hard coal, heavy fuel oil, light fuel oil, natural gas, and biomass) were considered in the
+environmental evaluation. The results of the life cycle assessment show a reduction, by almost half, in
+all the environmental impact indicators when the double effect method is compared to the thermally
+coupled process. The usage of biomass for steam generation lead to lower impacts compared to steam
+generation using fossil fuels (i.e., hard coal, heavy fuel oil, light fuel oil, natural gas).",0
+3,"Keywords: acetic acid concentration; process intensiﬁcation; azeotropic distillation; thermally cou-
+pled process; double-effect distillation process; life cycle assessment",0
+4,1. Introduction,0
+5,"Acetic acid, also called ethanoic acid, is an organic compound with the chemical
+formula CH3COOH used in several domains such as chemical, pharmaceutical, polymer,
+paint, textile and food industries [1].",0
+6,"Around 15 million tons of acetic acid was used in the past year all over the world. It is
+expected that in the following years the demand will grow up to 18 million tons and there
+on to increase with 5% every year due to the enlarging range of utilization in the industrial
+domain. The biggest quantity of this liquid is produced in the Asia-Paciﬁc region, where
+it is also mostly consumed [2]. The demand for the acetic acid in 2020 was 11.9 tons and
+during the forecasted period, it is projected to grow with 4.8% in the following years [3]. At
+the beginning of 2022, it has been noticed that the Asia Paciﬁc area is the biggest producer
+and consumer of this substance, and the vinyl acetate monomer is using one-third of the
+total acetic acid obtained. In order to meet the growing request of the market for this
+product, new plants will be built in China. It is expected that the North American and
+European markets will decrease their demand since more production lines will be replaced",0
+7,"Citation: Petrescu, L.; Cormos, C.-M.
+Classical and Process Intensiﬁcation
+Methods for Acetic Acid
+Concentration: Technical and
+Environmental Assessment. Energies
+2022, 15, 8119. https://doi.org/
+10.3390/en15218119",0
+8,Academic Editor: Attilio Converti,0
+9,"Received: 28 September 2022
+Accepted: 26 October 2022
+Published: 31 October 2022",0
+10,"Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations.",0
+11,"Copyright: © 2022 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).",0
+12,"Energies 2022, 15, 8119. https://doi.org/10.3390/en15218119",0
+13,https://www.mdpi.com/journal/energies,0
+14,"Energies 2022, 15, 8119",0
+15,2 of 23,0
+16,"with those from Asia [4]. The biggest producers of this substance are China, where 55% of
+the total acetic acid is produced and the USA where 17% is produced [4], and the producers
+are represented by companies such as British Petroleum, Lyondell Basell, and Eastman and
+they ship it all over the globe [3]. The main consumers are located in China, the USA, Japan,
+Europe, and the Asia Paciﬁc region with the main representatives as Jiangsu Sopo Co.Ltd.,
+Shanghai Wujing Chemical, Indian Oil Corporation, DuPont. Lyondell Basel is involved
+in the production of polymers and plastics since it produces high amounts of household
+objects, construction materials, and car accessories [3].",0
+17,"Due to its broad spectrum of applications, acetic acid is a vastly used substance in the",0
+18,"food, pharmaceutical, and chemical industry as it can be seen in Figure 1.",0
+19,"Figure 1. Acetic acid conversion routes in the industry [5,6].",0
+20,"In countries such as China, the United States, Japan, and European countries, the major
+part of this substance is transformed into polymers obtained from vinyl acetate monomer
+which is used for synthetizing coatings, dyes, or adhesives [5,6]. Ethanoic acid is also used
+in synthesis plants in order to obtain polymers, dyes, paints, disinfectants, processing ﬁbers,
+or textiles [5]. A share of 18% of the total quantity of acetic acid is transformed into acetic
+anhydride, 17% of the acid is used for obtaining terephthalate acid, which is further used
+for obtaining polyethylene terephthalate, resins, or textile ﬁbers [1]. When mixing acetic
+acid with oleﬁns, acetate esters can be easily obtained and those can be used for obtaining
+soaps, lubricants, and adhesive paste. Acetate ester is used as a solvent for obtaining inks,
+coatings for ceramics and paints [5].",0
+21,"Acetic acid can be obtained using various industrial methods and various raw-
+materials such as synthesis gas, oil, and algae. The synthetic routes have been explored
+on a large scale since 1913 by the BASF Company, later by Monsanto, Celanese, and the
+Showa Denko companies [2,7]. The main methods of obtaining acetic acid are: methanol
+carbonylation, acetaldehyde oxidation, ethylene oxidation, fermentation (i.e., anaerobic,
+aerobic), and lignocellulosic matter distillation, being obtained in the biomass pretreatment
+phase [8]. These methods are schematically represented in Figure 2 [5].",0
+22,"Energies 2022, 15, 8119",0
+23,3 of 23,0
+24,Figure 2. The main methods for obtaining acetic acid [5].,0
+25,"Acetic acid being such an indispensable substance for the industry, the concentration
+and separation of this substance from its aqueous solution has been highly studied. Since
+the global industry is trying to make its way to a more sustainable and green future, the
+eco-friendly approaches are taken into consideration. Unfortunately, one of the main
+problems of obtaining acetic acid via the environmental-friendly methods is the fact that
+the ﬁnal product is obtained in a diluted solution and it must be concentrated in order
+to be further processed [2]. The fact that the acetic acid has low volatility compared to
+the water saturated solution is one of the main problems of the concentration process [2].
+Conventional distillation of acetic acid and water is an energy intensive process which is
+not used in practical applications due to the fact that acetic acid is the heavy component
+forcing large quantities of water to be condensed overhead. The conventional distillation
+of acetic acid and water requires also high boil-up ratios for high acetic acid purity [9].
+As mentioned by Javed and co-authors, distillation has relatively low thermodynamic
+efﬁciency, so it is a prime target for process intensiﬁcation studies. A small improvement
+in the thermodynamic efﬁciency of distillation columns can make a large difference in the
+overall process efﬁciency and proﬁtability [10].",0
+26,"In the above-mentioned context, several methods have been proposed and devel-
+oped to separate the main product using extractive distillation process [11], a salt-effect
+distillation process [12], or extraction of the acetic acid using the azeotropic distillation
+method [2].",0
+27,"The liquid–liquid extraction plays an important role in the separation methods since it
+implies low process costs. The key aspect of this extraction is the equilibrium relationship
+between the components; these systems need to be very well studied before choosing a
+suitable extraction component. Compared to the single solvent method, it has been noticed
+that a synergetic relationship is formed when a dual solvent is used and the process has
+better results than the classical method. The process of separating acetic acid and water
+from solution by the method of simple rectiﬁcation requires a high reﬂux ratio implying the
+use of columns with many stages, which lead automatically to higher prices. In practice,
+the extractive distillation method is used for the acid acetic solution that has a concentration
+between 50 and 70%. It has been noticed that a ternary system has a high separation ratio
+using less energy than in the classical method. For mixtures which contain less than 40%
+acetic acid, the single solvent method is optimum. For choosing the right extractant, the
+scientists need to take into account the extractive capacity of the solvent and the equilibrium
+characteristics of the system [13].",0
+28,"In the azeotropic distillation method, a compound that in combination with water
+can decrease the boiling temperature of the mixture is used. Usually, if the substance is",0
+29,"Energies 2022, 15, 8119",0
+30,4 of 23,0
+31,"not miscible with water, the distillation can be performed easily with high perspectives
+for recycling [2]. Even though acetic acid and water solution does not form an azeotropic
+mixture atmospheric pressure, the liquid system has a pinch tangent where they intercalate
+on the pure water end. Another issue with this system is that acetic acid and water have
+close boiling temperatures and that implies using multiple equilibrium stages and a huge
+reﬂux ratio which automatically leads to increased difﬁculty of operating and controlling
+the heterogenous azeotropic column. For these reasons, when separating the acetic acid
+from water, an entrainer is usually used such as ethanol or iso propylic alcohols [14] or a
+system formed from alcohol, cyclohexane, and water [15].",0
+32,"Hybrid separation is one of the methods for acetic acid recovery at industrial level. It
+involves the liquid–liquid extraction followed by distillation. The purpose of the extraction
+is to ﬁrst remove large amounts of water. The extraction is followed by two distillation
+columns, one column for acetic acid recovery and another column for solvent recovery.
+According to Angelo and co-authors, some important aspects should be taken into account
+when hybrid separation schemas are proposed. These aspects refer to the number of stages
+involved in the extraction column and in the distillation columns, but also to the extraction
+efﬁciency in order to minimize the amount of energy involved in the distillation and in the
+meantime to produce the desired acetic acid quantity and purity [9].",0
+33,"In the above-mentioned context, new methods for acetic acid concentration are in-
+vestigated. These new methods are based on the process intensiﬁcation (PI) principles.
+PI is a new area for research that has helped the chemical process industry gain new and
+innovative ideas to solve processing problems such as using more efﬁcient technology,
+designing smaller plants, assuring the safety and sustainability of a chemical process. Its
+work is oriented to use as few devices as possible (by integrating more utilizations for a
+single equipment), use mixing technologies so that heat and mass transfer are improved
+by developing shorter pathways to ensure the diffusion, use new separation approaches,
+new energy saving methods, new methods for better controlling, and having an optimized
+plant. The objective of PI is to obtain sustainable ﬂow-sheet possibilities that include unit
+operations that were subject to intensiﬁcation methods and who are subject to: already
+mentioned process limitations, design objectives, and performances as verifying criteria.
+When it comes to PI in the workplace, the main objective is to boost productivity, described
+as the relationship created connecting all of the resource inputs necessary to complete the
+activity and the production of an output [16–19]. PI has the ability to bring signiﬁcant bene-
+ﬁts in terms of: obtaining a better efﬁciency of the system, increase the energy savings of the
+plant, lower the costs that are implied by the buying of assets and the operation of the plant,
+reduce the quantity of byproducts and waste, ensure the safety of the process. An example
+of the PI use in the industry is the development and integration of the microreactors which
+allow a careful selection of the products from the chemical transformation by offering a
+precise process control, which ends up in decreasing the amount of waste that is produced
+and usage of raw materials [20]. PI has been proved to be very helpful in the technologies
+involving CO2 capture and utilization, resulting in lower energy consumption [21].",0
+34,"Distillation is a critical component of PI because it is an often-used separation technol-
+ogy involved in the industry of synthetizing new chemicals. The biggest problem regarding
+the distillation process is the amount of energy that is required [19]. This method uses
+around 40–60% of the total amount of energy that is used in the chemical plants [22,23]. For
+example, in the production of furfural, the reactive distillation column proved to be the
+most energy demanding part of the simulation with a 69.82% of exergy efﬁciency, which
+led to an overall exergy efﬁciency of 56.41%, even though the substance was obtained with
+an yield of 97.4% and a purity of 99.96%. It was analyzed that by a 10% reduction of the
+reboiler duty resulted in a 3.6% cost rate depletion [8].",0
+35,"Over time, several methods were developed (i.e., thermal coupling (TC), double effect
+distillation (DED), vapor recompression) for reducing the amount of energy used for this
+process [24]. As an alternative for using the TC method with similar energy savings, a PI",0
+36,"Energies 2022, 15, 8119",0
+37,5 of 23,0
+38,"alternative solution would be the use of a side stream conﬁguration which allows a better
+government of the production [25,26].",0
+39,"Moreover, the process of reactive distillation is complex since the analysis and the
+designing of the process can become challenging by introducing auxiliary reactions into
+the system. These problems were solved by Park and all (2020) by rigorously analyzing the
+simulations and taking into account a residue curve map [27].",0
+40,"A series of TC conﬁgurations can be realized by associating the reboilers or the con-
+densers from the system. The advantages of this technique are: a higher energy efﬁciency of
+the process by using only a single reboiler and condenser in the whole system, there is also
+zero external reﬂux and reboiler operation. All in all, this method has high potential and
+effectiveness for reducing the energy consumption of the chemical plant [28]. Researchers
+have shown that by using the TC conﬁgurations, the system could save up to 30% of its
+energy usage, in comparison to the conventional methods. Overall, the PI approach of
+distillation and the use of thermally coupled units open the door to numerous opportunities
+in multicomponent distillation. The TC systems have the advantage of providing the same
+results or better ones using fewer units of processing and it helps increase the suitability of
+a plant [29]. Unfortunately, the energy that is served in the process needs to be supplied
+to the reboiler at high temperatures and extracted from the condenser at low values of
+temperature. Operation of the plant is made more difﬁcult since there are more connections
+made between columns. Another issue is the increased number of trays and columns that
+should be used in the distillation column for obtaining the same results as in an ordinary
+system [29].",0
+41,"Another method for reducing the amount of energy used for a process is by using a
+distillation column that utilizes the heat integration technique. This means that a distillation
+column has a special conﬁguration that contains an internal heat integration. This is created
+using the stripping sections of the column, which will act as the heat sink, and the rectifying
+ones, that will produce the necessary heat used [30]. DED is usually used in combination
+with other energy efﬁcient methods with the scope of reducing the amount of energy that
+is consumed. In order to create a double-effect distillation, the heat used in a column is
+driven to the precedent column so that the heat of the vapor can be used for the process
+of the ﬁrst column, thus saving a reboiler or condenser regarding the heating and cooling
+utilities [31]. Scientists tried to experiment with the use of heat pumps for reducing the
+amount of resources used for the separation. For example, Gao and co-authors proposed a
+new methodology to obtain isopropyl acetate by using a heat pump reactive distillation
+process resulting in a decrease of the CO2 emissions by up to 13.25%, while the total annual
+cost of production was 13.46% of the original process [32].",0
+42,"One way of obtaining acetic acid is concentrating it from diluted solutions obtained
+using industrial or fermentation processes. Acetic acid is obtained and needs to be removed
+from the solution in order to be processed further into other compounds. This paper aims
+to simulate, using ChemCAD and COCO COFE software, different solvents and methods of
+concentrating acetic acid from a diluted water solution in order to have a high concentrated
+acetic acid and reduce the amount of energy consumed. The environmental evaluation is
+also performed in the present research using the life cycle assessment (LCA) methodology
+in order to ﬁnd relevant ways to reduce the impact of the proposed systems.",0
+43,The technical and environmental evaluations of the proposed cases for acetic acid,0
+44,concentration represent the novelty this research is bringing up.,0
+45,2. Material and Methods,0
+46,(i),0
+47,"In order to reach the proposed goal, the following approach was used:
+Perform the simulations for the various extractants (i.e., ethyl acetate, isopropanol,
+and an isopropyl acetate—isopropanol mixture);",0
+48,"(ii) Calculate the technical key performance indicators (i.e., acetic acid recovery, acetic
+acid purity, extractant quantity, power consumption, energy consumption) based on
+the material and energy balances derived from simulations;",0
+49,"Energies 2022, 15, 8119",0
+50,6 of 23,0
+51,"(iii) Screening of the best solvent, from the solvents listed in step (i), based on the results",0
+52,obtained in step (ii);,0
+53,"(iv) Apply process intensiﬁcation techniques (thermally coupling and double effect dis-
+tillation) for the solvent with the best technical key performance indicators (solvent
+decided in step (iii));",0
+54,"(v) Perform the environmental evaluation, using a cradle-to-gate LCA, on the cases",0
+55,(vi),0
+56,"decided on step (iv);
+Investigate, from environmental point of view, different scenarios for various steam
+generation sources (i.e., hard coal, heavy fuel oil, light fuel oil, natural gas and
+biomass);",0
+57,(vii) Discuss the obtained results and draw the conclusions.,0
+58,Details about process modeling and simulation as well as environmental evaluation,0
+59,are provided in Sections 2.1 and 2.2.,0
+60,2.1. Process Modelling and Simulation,1
+61,"The initial acetic acid solution, containing 0.139 mole fraction of acetic acid, the rest
+being water, needs to be concentrated. The most suitable way to separate acetic acid from
+water, with an optimum amount of energy, is investigated considering the following case
+studies.
+Case 1—Acetic acid concentration using ethyl acetate;
+Case 2—Acetic acid concentration using isopropyl acetate;
+Case 3—Acetic acid concentration using isopropyl acetate and isopropanol mixture;
+Case 4—Acetic acid concentration using isopropyl acetate and isopropanol mixture by TC;
+Case 5—Acetic acid concentration using isopropyl acetate and isopropanol mixture by
+DED.",1
+62,"In order to simulate the above-mentioned processes, ChemCAD process simulator
+software (version 6.5.7) [33] and COCO COFE Cape Open software (version 3.5) [34] were
+used. COCO (CAPE-OPEN to CAPE-OPEN) is a free-of-charge CAPE-OPEN compliant
+steady-state simulation environment. COFE—the CAPE-OPEN Flowsheet Environment
+is an intuitive graphical user interface to chemical ﬂow sheeting. COFE has sequential
+solution algorithm using automatic tear streams. It displays properties of streams, deals
+with unit-conversion, and provides plotting facilities. COFE ﬂowsheets can be used as
+CAPE-OPEN unit operations; COFE ﬂowsheets can be used as unit operation inside COFE
+(ﬂowsheets in ﬂowsheets) or inside other simulators.",0
+63,"The desired production capacity is 135 kmol/h (8095 kg/h) acetic acid (equivalent to
+an annual production of 65,000 tons/year); the desired purity of the acetic acid being 0.99
+(by weight).",1
+64,"UNIQUAC thermodynamic package was set for the ﬁve cases. It is assumed that
+all the water streams that leave the system are blended and processed in a waste–water
+treatment plant. The cases have been compared using technical KPIs indicators such as:
+acetic acid ﬂow-rate, acetic acid purity, power consumption, thermal energy consumption,
+number of unit operations, acetic acid recovery, etc. The description of each case as well as
+the main assumptions used in the process modelling and simulation are presented in the
+next section.",0
+65,2.1.1. Case 1—Acetic Acid Concentration Using Ethyl Acetate,1
+66,"Acetic acid concentration using ethyl acetate is presented in Figure 3. In this case, the
+simulation contains an extraction column (unit 1), an acid recovery column (unit 2), and a
+solvent recovery column (unit 7). The simulation also contains two heat exchangers, one
+cooler (unit 3) and one heater (unit 6), a decanter (unit 4) where the extractant (i.e., ethyl
+acetate) is collected.",1
+67,"Energies 2022, 15, 8119",0
+68,7 of 23,0
+69,Figure 3. Process ﬂow diagram for the acetic acid concentration process (case 1).,1
+70,"The stream S1 containing 1000 kmol/h of acetic acid solution with the following
+component ﬂow-rate: 861 kmol/h of water and 139 kmol/h acetic acid is sent to the
+extraction column (unit 1) together with the recycled stream S2 containing 740 kmol/h
+ethyl acetate, 176.53 kmol/h water, and 22.11 kmol/h acetic acid. The extracted acetic
+acid leaves the extraction column as stream S3 having a ﬂow-rate of 1262.18 kmol/h. This
+stream is sent to the acid recovery column represented in Figure 3 as unit 2. The rafﬁnate
+stream from the extractor, stream S9, containing water and some small quantities of acetic
+acid and ethyl acetate is sent to the mixer (unit 5) situated before the solvent recovery
+column (unit 7). The outputs stream of acid recovery column (unit 2) are: the acetic acid
+stream (the main product) deﬁned as S5 having a ﬂow-rate of 113.39 kmol/h and a purity
+of 0.94%, and the distillate stream, S4, containing 393.09 kmol/h water, 731.45 kmol/h ethyl
+acetate, and 24.28 kmol/h acetic acid. S4 stream is sent to the heat exchanger where the
+temperature is decreased from 77.17 ◦C to 25 ◦C. In the last distillation column, unit 7 in
+Figure 3, the ethyl acetate is recovered in order to be recycled. The role of the decanter is to
+store and recycle the solvent. The main design assumptions used in the present simulation
+are summarized in Table 1.",1
+71,Table 1. Design assumptions of the main units for case 1.,1
+72,Unit No.,0
+73,1,0
+74,2,0
+75,Equipment,0
+76,Role,0
+77,Extraction column,0
+78,Distillation column,0
+79,Design,0
+80,Assumptions,0
+81,Solvent used: ethyl acetate acetate,0
+82,Number of stages: 15,0
+83,Working pressure: 101.33 kPa,0
+84,Number of stages: 50,
+85,Bottom product ﬂow-rate: 113 kmol/h,0
+86,Feed tray for stream S3: 1,0
+87,Equilibrium column,0
+88,"Energies 2022, 15, 8119",0
+89,8 of 23,0
+90,Table 1. Cont.,0
+91,Unit No.,0
+92,3,0
+93,4,0
+94,"5
+6",0
+95,7,0
+96,Equipment,0
+97,Role,0
+98,Heat exchanger,0
+99,Decanter,0
+100,Mixer,0
+101,Heat exchanger,0
+102,Distillation column,0
+103,Design,0
+104,Assumptions,0
+105,Temperature out: 25 ◦C,0
+106,Flash separator,0
+107,"Working temperature: 25 ◦C
+Pressure out: 101.325 kPa
+Temperature out: 78 ◦C
+Number of stages: 50",0
+108,Ethyl acetate recovery: 0.999,0
+109,Feed tray for stream S3: 1,0
+110,Equilibrium column,0
+111,2.1.2. Case 2—Acetic Acid Concentration Using Isopropyl Acetate,1
+112,"Figure 4 presents the process ﬂow diagram of the acetic acid concentration process us-
+ing isopropyl acetate. The simulation contains four columns: one absorption column
+(unit 1), followed by an azeotropic distillation column (unit 3) and two dehydration
+columns (unit 5) and (unit 8).",1
+113,Figure 4. Process ﬂow diagram for the acetic acid concentration process (case 2).,1
+114,"The stream S1 containing 1000 kmol/h of acetic acid solution with the following
+component ﬂow-rate: 861 kmol/h of Water and 139 kmol/h acetic acid is mixed in the",1
+115,"Energies 2022, 15, 8119",0
+116,9 of 23,0
+117,"unit 2 with the recycle (S19 containing 17.79 kmol/h water, and 4.89 kmol/h isopropyl
+acetate) and the extractant (S20 with 124.01 kmol/h water, 7.86 kmol/h acetic acid, and
+337.96 kmol/h isopropyl acetate) streams. In the azeotropic column (unit 3), a two phases
+separation takes place: from the bottom part of the azeotropic column, 135.06 kmol/h
+of acetic acid with 0.99 mole fraction purity is extracted (S5 in Figure 4). The organic
+solution obtained from the top of the azeotropic column contains isopropyl acetate and
+water (S6 in Figure 4). The divider (unit 4) splits the stream in two parts. A ﬂow-ratio of
+0.72 of solution is recycled as an extractant via Pump 12. Stream S18 and S10 are mixed and
+reintroduced into the process, as Stream S20, while the rest of the ﬂow-rate that comes out
+of the divider 4 is passed through the dehydration columns (unit 5 and unit 8). Stream S9
+with a ﬂow-rate of 96.55 kmol/h of water (purity 99.14%), respectively stream S11 with
+679.29 kmol/h (purity 98.01%) of water are obtained from the bottom of the dehydration
+columns. These streams are mixed leading to Stream S12 which is sent to the wastewater
+treatment plant (total ﬂow-rate 866.69 kmol/h). The top streams from both the dehydration
+columns are mixed leading to Stream 19 having a ﬂow-rate of 22.69 kmol/h (containing
+17.769 kmol/h water, 1 and 4.89 kmol/h of isopropyl acetate) which is sent to the mixer
+(unit 2) for recycling. The main assumptions used in the process modelling and simulation
+of this case are presented in Table 2.",1
+118,Table 2. Design assumptions of the main units for case 2.,1
+119,Unit No.,0
+120,Equipment,0
+121,Role,0
+122,Design,0
+123,Assumptions,0
+124,1,0
+125,2,0
+126,3,0
+127,4,0
+128,5,0
+129,6,0
+130,7,0
+131,8,0
+132,Extraction column,0
+133,Mixer,0
+134,Azeotropic distillation,0
+135,column,0
+136,Solvent used: isopropyl acetate,0
+137,Number of stages: 10,0
+138,"Working pressure: 200 kPA
+Output pressure: 110 kPa",0
+139,Top pressure: 110 kPa,0
+140,No of stages: 37,0
+141,"Feed tray for stream 23: 1
+Feed tray for stream 3: 18",0
+142,Bottom component mole fraction: 0.999 acetic acid,0
+143,Divider,0
+144,Output stream 7: 0.72 Flow ratio,0
+145,Distillation column,0
+146,Component separator,0
+147,Mixer,0
+148,Distillation column,0
+149,No of stages: 36,0
+150,Feed stage for stream 7: 15,0
+151,Reﬂux ratio R/D: 2,0
+152,Bottom component fraction recovery: 0.995 water,0
+153,Pressure out: 110 kPa,0
+154,"Split fractions:
+Acetic acid: 0.999
+Isopropanol: 0.999",0
+155,"Isopropyl acetate: 0.999
+Pressure out: 110 kPa",0
+156,No of stages: 46,0
+157,Feed stage for stream 4: 29,0
+158,Bottom comp fraction recovery: 0.975 water,0
+159,"9
+10",0
+160,12–14,0
+161,"11
+13",0
+162,Pumps,0
+163,"Mixer
+Divider",0
+164,Outlet pressure: 250 kPa,0
+165,Efﬁciency: 0.75,0
+166,Pressure out: 250 kPa,0
+167,Output stream 18: 0.5 Flow ratio,0
+168,"Energies 2022, 15, 8119",0
+169,10 of 23,0
+170,"2.1.3. Case 3—Acetic Acid Concentration Using Isopropyl Acetate and Isopropanol Mixture
+The process is based on the information provided by Eun Joo Lee et al. [2]. The ﬁgure
+looks similar to Figure 4, only the extractant used is different. In this case, a mixture of
+isopropyl acetate and isopropanol was used.",1
+171,"The stream S1 containing 1000 kmol/h of acetic acid solution with the same compo-
+nent ﬂow-rate, 861 kmol/h of water and 139 kmol/h acetic acid considered also in the
+previous cases, is mixed in unit 2 with the recycle (S19 containing 45.48 kmol/h water,
+1.26 × 10−2 kmol/h acetic acid, 9.52 kmol/h isopropanol and 5.29 kmol/h isopropyl ac-
+etate) and the extractant streams (S20 with 173.58 kmol/h water, 15.38 kmol/h acetic acid,
+5.54 kmol/h isopropanol and 6.51 kmol/h isopropyl acetate). The obtained mixed stream,
+Stream S2, is sent to column 1 where the mixture is split in two fractions; the pressure of
+these streams is 152 kPa. In the azeotropic column (unit 3), a two-phase separation takes
+place: from the bottom part of the azeotropic column 134.89 kmol/h of acetic acid with
+0.99 mole fraction purity is extracted (S5 in Figure 4). The organic solution obtained in the
+top of the azeotropic column contains isopropanol and isopropyl acetate (S6 in Figure 4).
+The divider (unit 4) splits the stream into two parts: 387.42 kmol/h of solution is recycled
+as an extractant via Pump 12. Stream S18 and S10 are mixed and reintroduced into the
+process, as Stream S20, while the rest of 151.77 kmol/h that comes out of the divider 4
+is passed through the dehydration columns (unit 5 and 8). Stream S9 with a ﬂow-rate
+of 97.84 kmol/h of water (purity 99.99%), respectively stream S11 with 767.27 kmol/h
+(purity 99.45%) of water are obtained from the bottom of the dehydration columns. These
+streams are mixed leading to Stream S12 which is sent to the wastewater treatment plant.
+The top streams from both the dehydration columns are mixed leading to Stream 19 of
+60.29 kmol/h (containing 45.48 kmol/h water, 1.26 × 10−2 kmol/h acetic acid, 9.51 kmol/h
+of isopropanol and 5.29 kmol/h of isopropyl acetate) which is sent to the mixer (unit 2) for
+recycling. The main assumptions used in the process modelling and simulation of this case
+are presented in Table 3.",1
+172,Table 3. Design assumptions of the main units for case 3.,1
+173,Unit No.,0
+174,Equipment,0
+175,Role,0
+176,Design,0
+177,Assumptions,0
+178,1,0
+179,2,0
+180,3,0
+181,4,0
+182,5,0
+183,Component separator,0
+184,Pressure out: 152 kPa,0
+185,Split fractions: Water: 0.28,0
+186,"Acetic acid: 0.97
+Isopropanol: 0.65",0
+187,Isopropyl acetate: 0.98,0
+188,Mixer,0
+189,Output pressure: 110 kPa,0
+190,Azeotropic distillation,0
+191,column,0
+192,Top pressure: 110 kPa,0
+193,No of stages: 37,0
+194,"Feed tray for stream 23: 1
+Feed tray for stream 3: 18",0
+195,"Condenser duty, negative: −33,786 MJ/h",0
+196,Bottom component mole fraction: 0.999 Acetic Acid,0
+197,Divider,0
+198,Output stream 7: 0.72 Flow ratio,0
+199,Distillation column,0
+200,No of stages: 36,0
+201,Feed stage for stream 7: 15,0
+202,Reﬂux ratio: 2,0
+203,Water,0
+204,Bottom mole rate of one component: 97.83 kmol/h,0
+205,"Energies 2022, 15, 8119",0
+206,11 of 23,0
+207,Table 3. Cont.,0
+208,Unit No.,0
+209,Equipment,0
+210,Role,0
+211,Design,0
+212,Assumptions,0
+213,Component separator,0
+214,Mixer,0
+215,Distillation column,0
+216,Pressure out: 110 kPa,0
+217,Split fractions: Acetic acid: 0.999,0
+218,Isopropanol: 0.999,0
+219,"Isopropyl acetate: 0.999
+Pressure out: 110 kPa",0
+220,No of stages: 46,0
+221,Feed stage for stream 4: 29,0
+222,"Condenser duty, negative: −10,796.70 MJ/h
+Bottom comp fraction recovery: 0.99 Water",0
+223,Pumps,0
+224,"Mixer
+Divider",0
+225,Outlet pressure: 250 kPa,0
+226,Efﬁciency: 0.75,0
+227,Pressure out: 250 kPa,0
+228,Output stream 18: 0.5 Flow ratio,0
+229,6,0
+230,7,0
+231,8,0
+232,"9
+10
+12
+14
+11
+13",0
+233,"2.1.4. Case 4—Acetic Acid Concentration Using Isopropyl Acetate and Isopropanol
+Mixture by TC",1
+234,"Since both the dehydration columns presented in case 2 and case 3 have similar bottom
+compositions, the columns can be combined so that they work as a single side stripper
+azeotropic column as proposed by Caxiano et al. [35]. The simulation for case 4 contains
+three columns: one absorption column, followed by an azeotropic distillation column and
+a side stripper (see Figure 5).",1
+235,Figure 5. Process ﬂow diagram of the acetic acid concentration with TC (case 4).,1
+236,"Energies 2022, 15, 8119",0
+237,12 of 23,0
+238,"The stream S1 containing 1000 kmol/h of acetic acid solution with the following mole
+ﬂow-rate: 861 kmol/h of water and 139 kmol/h acetic acid is sent to unit 1 where it is
+blended with Stream S16 that contains 64.12 kmol/h water, 3.74 × 10−2 kmol/h acetic
+acid, 5.52 kmol/h isopropanol, and 420.55 kmol/h isopropyl acetate. Stream 2 is cooled
+in the heat exchanger (unit 2) from 120 ◦C to 92 ◦C and then sent to the Column 3. In
+the azeotropic column (unit 3), 134.05 kmol/h of acetic acid solution is extracted. The
+organic solution extracted from the top part of the unit 3, is split into two streams by the
+divider (unit 4): S7 is sent to the distillation column, unit 5. A ﬂow-rate of 823.17 kmol/h of
+mixture containing 813.82 kmol/h of water, Stream S9, that will be processed in the waste
+water treatment facility was obtained at the bottom of column 5. Stream S11, after being
+transported by pump 6, will be split in two streams: S17 that is reintroduced in column 3
+and S13 that is cooled to 70 ◦C in the heat exchanger, unit 8. The cooled stream, S14, is sent
+to the column 9, where 47.20 kmol/h of water are extracted from Stream 14 and the rest of
+the solution is recycled and reintroduced in the system through S16.",1
+239,Table 4 summarizes the main assumptions used in case 4.,0
+240,Table 4. Design assumptions for the main units for case 4.,1
+241,Unit No.,0
+242,Equipment,0
+243,Role,0
+244,Design,0
+245,"Assumptions
+No of stages: 20",0
+246,Top pressure: 200 kPa,0
+247,"Feed tray for stream S1: 1
+Feed tray for stream S16: 20",0
+248,Temperature of stream S3: 92.11 ◦C,0
+249,1,0
+250,2,0
+251,3,0
+252,4,0
+253,5,0
+254,6,0
+255,"7
+8",0
+256,9,0
+257,Liquid/Liquid extractor,0
+258,Heat exchanger,0
+259,Azeotropic distillation,0
+260,column,0
+261,No of stages: 42,0
+262,"Feed tray for stream 17: 1
+Feed tray for stream 10: 14
+Feed tray for stream 3: 22",0
+263,"Condenser duty, negative: −34,358 MJ/h",0
+264,Bottom component fraction recovery (acetic acid): 0.92,0
+265,"S8 stage 14, liquid mole ﬂow 180 kmol/h",0
+266,Divider,0
+267,Split based on molar ﬂow rate,0
+268,Output stream S7: 75 ﬂow rate kmol/h,0
+269,Distillation column,0
+270,Pump,0
+271,Divider,0
+272,Heat exchanger,0
+273,Component separator,0
+274,No of stages: 39,0
+275,"Feed stage for stream 8: 1
+Feed stage for stream 7: 23
+Feed stage for stream 4: 17",0
+276,Bottom mole ﬂow rate: 823.17 kmol/h,0
+277,Outlet pressure: 200 kPa,0
+278,Efﬁciency: 0.8,0
+279,Output stream S17: 0.3 ﬂow ratio,0
+280,Temperature of S14: 70 ◦C,0
+281,"Split fractions
+Water: 0.576
+Acetic acid: 1
+Isopropanol: 1",0
+282,Isopropyl acetate: 1,0
+283,"2.1.5. Case 5—Acetic Acid Concentration Using Isopropyl Acetate and Isopropanol
+Mixture by DED",1
+284,"The ﬁfth case contains three columns: one absorption column, followed by an azeotropic",1
+285,distillation column and a side stripper (Figure 6).,0
+286,"Energies 2022, 15, 8119",0
+287,13 of 23,0
+288,Figure 6. Process ﬂow diagram of the acetic acid concentration process with DED (case 5).,1
+289,"The stream S1 containing 1000 kmol/h of acetic acid solution having the same compo-
+sition as in the previous cases is sent to unit 1, which is a liquid–liquid extractor. Stream 2,
+containing the extractant with the following component ﬂow-rates: 114.57 kmol/h water,
+0.38 kmol/ acetic acid, 49.81 kmol/h isopropanol and 255.15 kmol/h isopropyl acetate,
+is also sent to unit 1. The output streams of the unit are S3 and S20. Stream 3 is sent
+to the azeotropic distillation column, unit 3, where the solution is separated as Stream 5
+containing 135.86 kmol/h of acetic acid and an organic solution, stream S6, that is cooled
+to 110 ◦C in heat exchanger 4. Unit 4 uses the ﬂow of cold solution that comes out of
+unit 8 and will be divided in S9 that is reused in the column 8 and S10 that is sent to the
+waste water treatment plant. S7 stream, further cooled by the heat exchanger 5, is split
+in S12 that is reused in column 8 and S13 that is sent to the divider 9. The remaining
+solution, that is removed from unit 8, is pumped using unit 10 in order to be recycled. The",1
+290,"Energies 2022, 15, 8119",0
+291,14 of 23,0
+292,"separator 11 removes 124 kmol/h of water from Stream 15; the resulting mixture containing
+isopropanol and isopropyl acetate is reused in the system.",1
+293,The main assumptions made for this simulation are presented in Table 5.,0
+294,Table 5. Design assumptions for the main units for case 5.,1
+295,Unit No.,0
+296,Equipment,0
+297,Design Assumptions,0
+298,1,0
+299,2,0
+300,3,0
+301,"4
+5
+6
+7",0
+302,8,0
+303,9,0
+304,10,0
+305,11,0
+306,Liquid/Liquid extractor,0
+307,Pump,0
+308,Azeotropic distillation column,0
+309,"Heat exchanger
+Heat exchanger",0
+310,"Divider
+Divider",0
+311,Distillation column,0
+312,Divider,0
+313,Pump,0
+314,Component separator,0
+315,No of stages: 10,0
+316,Top pressure: 100 kPa,0
+317,"Feed tray for stream S1: 1
+Feed tray for stream S12: 10",0
+318,Outlet pressure: 340 kPa,0
+319,"Efﬁciency: 0.85
+No of stages: 37",0
+320,"Feed tray for stream 4: 1
+Feed tray for stream 19: 18",0
+321,Bottom mole ﬂow-rate: 136 kmol/h,0
+322,"Heat duty: −16,153 MJ/h
+Heat duty: 13,672 MJ/h",0
+323,Output stream S12: 270 ﬂow rate kmol/h,0
+324,Output stream S9: 0.24766 ﬂow rate kmol/h,0
+325,Reﬂux pump press: 110 kPa,0
+326,No of stages: 40,0
+327,"Feed stage for stream 20: 21
+Feed stage for stream 12: 23
+Feed stage for stream 9: 40",0
+328,"Distillate mole ﬂow rate 200 kmol/h
+Output stream S19: 0.5034 ﬂow ratio",0
+329,Outlet pressure: 250 kPa,0
+330,"Efﬁciency: 0.85
+Split fractions
+Water: 0.6631",0
+331,2.2. Life Cycle Assessment,0
+332,"LCA is a standard methodology used for the environmental impact evaluation. Accord-
+ing to ISO 14040 and 14044, the methodology involves the compilation and quantiﬁcation
+of inputs and outputs for a given product/technology through its life cycle [36,37]. Data
+about raw-materials, auxiliary materials (i.e., catalysts, solvents), energy, infrastructure,
+product(s), by-product(s), various waste, and emissions have to be collected, quantiﬁed,
+and used within LCA. LCA methodology contains four main steps as follows: (i) deﬁnition
+of the goal and the scope of the LCA study, (ii) life cycle inventory (LCI), (iii) life cycle
+impact assessment (LCIA) evaluation, and (iv) interpretation of the results. Details of the
+above-mentioned steps are provided in the next section.",0
+333,"The goal of the present LCA was to compare the environmental aspects of acetic
+acid concentration using conventional and PI methods. Since the acetic acid concentration
+involves distillation processes in all investigated scenarios steam generation is an important
+parameter consequently, various sources for steam generation have been investigated. The
+electricity required for the processes is considered from the grid mix. The combination
+of various types of steam with the electricity grid mix for case 4 and case 5 leads to ten
+sub-cases which are summarized in Table 6.",0
+334,"Energies 2022, 15, 8119",0
+335,15 of 23,0
+336,Table 6. Sub-cases considered in the LCA study.,0
+337,Case Name,0
+338,Case 4,0
+339,"Sub-case 4.1
+Sub-case 4.2
+Sub-case 4.3
+Sub-case 4.4
+Sub-case 4.5",0
+340,Case 5,0
+341,"Sub-case 5.1
+Sub-case 5.2
+Sub-case 5.3
+Sub-case 5.4
+Sub-case 5.5",0
+342,Electricity Source,0
+343,Steam Source,0
+344,"Grid mix
+Grid mix
+Grid mix
+Grid mix
+Grid mix",0
+345,"Grid mix
+Grid mix
+Grid mix
+Grid mix
+Grid mix",0
+346,Hard Coal,0
+347,"Heavy fuel oil
+Light fuel oil
+Natural Gas",0
+348,Biomass,0
+349,Hard Coal,0
+350,"Heavy fuel oil
+Light fuel oil
+Natural Gas",0
+351,Biomass,0
+352,"The functional unit considered is one kg of acetic acid obtained.
+GaBi software, version 10.5, developed by spheraTM was used in order to perform
+the LCA calculations [38]. The study is a cradle-to-gate LCA study. The usage of the
+concentrated acetic acid is not considered in the present research.",0
+353,"Data derived from process modelling and simulation have been considered as inputs
+in the LCI. As underlined by Righi and co-authors [39], the usage of process simulators
+to generate data for the LCI offers a series of advantages such as: (i) detailed mass and
+energy data about each equipment involved in the process schema; (ii) a quick screening of
+alternative plant conﬁgurations; (iii) the possibility to perform sensitivity analysis in order
+to understand the inﬂuence of the input variables on the outputs; and (iv) a relative ease in
+studying opportunities of process integration. An example of LCI is provided in Figure 7.",0
+354,Figure 7. GaBi diagram for case 4.5.,0
+355,"ReCiPe impact assessment method was considered in the LCA for the environmental
+assessment. ReCiPe has been chosen since it is one of the most recent and updated impact
+assessment methods available to LCA practitioners [39]. It includes the impact categories
+listed in Figure 8.",0
+356,"Energies 2022, 15, 8119",0
+357,16 of 23,0
+358,Figure 8. ReCiPe impact indicators.,0
+359,The main LCA assumptions considered in the present study are summarized in Table 7.,0
+360,Table 7. LCA assumptions [38].,0
+361,Assumptions,0
+362,"Low-pressure methanol carbonylation in one step is considered. Methanol
+and carbon monoxide are continuously fed into the stirred reactor in which",0
+363,the reaction is conducted at 200 ◦C and 35 bars. Most noticeable,0
+364,"by-products (however produced in very little quantities) are propionic acid,",0
+365,"carbon dioxide, and hydrogen. The catalyst preparation is done in a",0
+366,separate reactor to ensure proper dissolving. In this process a rhodium,0
+367,catalyst is used.,0
+368,"Isopropanol is manufactured by propene by indirect hydrogenation in two
+steps: esteriﬁcation of sulphate acid with propene and hydrogenation of",0
+369,the formed sulphate esters with steam. The product is neutralized by,0
+370,"caustic soda solution and puriﬁed in a reﬁning column. The by-products
+(di iso-propyl ether and others) are recovered and recycled to the process.",0
+371,Isopropyl acetate was generated from acetic acid and isopropanol,0
+372,"according to the following chemical reaction:
+CH3COOH + C3H8O → C5H10O2 + H2O",0
+373,Stoichiometric quantities of materials have been considered in the LCA.,0
+374,"n
+o
+i
+t
+c
+u
+d
+o
+r
+p
+d
+i
+c
+a",0
+375,"c
+i
+t
+e
+c
+A",0
+376,"n
+o
+i
+t
+c
+u
+d
+o
+r
+p",0
+377,"l
+o
+n
+a
+p
+o
+r
+p
+o
+s
+I",0
+378,"n
+o
+i
+t
+c
+u
+d
+o
+r
+p
+e
+t
+a
+t
+e
+c
+a",0
+379,"l
+y
+p
+o
+r
+p
+-
+o
+s
+I",0
+380,"Energies 2022, 15, 8119",0
+381,17 of 23,0
+382,Table 7. Cont.,0
+383,Assumptions,0
+384,"x
+i
+m
+d
+i
+r
+g
+m
+o
+r
+f
+y
+t
+i
+c
+i
+r
+t
+c
+e
+l
+E",0
+385,"n
+o
+i
+t
+a
+r
+e
+n
+e
+g
+m
+a
+e
+t
+S",0
+386,"The national or regional speciﬁc electricity consumption mix is provided
+by the conversion of the different energy carriers to electricity and imports
+from neighboring countries. The electricity is either produced in energy
+carrier speciﬁc power plants and/or combined heat and power plants",0
+387,"(CHP). Moreover, the national and regional speciﬁc technology standards",0
+388,"of the power plants are considered with regard to efﬁciency, ﬁring",0
+389,"technology, ﬂue-gas desulphurization, NOx removal, and de-dusting. The
+fossil power plant models combine emission data from the literature with
+calculated values for non-measured emissions. Combustion residues from",0
+390,"solid fuels, such as gypsum, bottom ash, or ﬂy ash are assumed to be",0
+391,"reused. Waste treatment for these substances is not considered. The supply
+chain is modelled in speciﬁc national/regional energy carrier consumption",0
+392,"mixes (i.e., domestic production and imports), and considers",0
+393,"national/regional average energy carrier properties (i.e., elemental",0
+394,composition and energy content).,0
+395,"The process steam is produced in speciﬁc heat plants using hard coal,
+heavy fuel oil, heavy fuel oil, light fuel oil, natural gas or biomass. The
+national and regional speciﬁc technology standards of the heat plants are",0
+396,"also considered with regard to efﬁciency, ﬁring technology, ﬂue-gas
+desulphurization, NOx removal and de-dusting. Only single fuels are",0
+397,"considered; their combination was not investigated in the present research.
+The power plant models combine emission data from the literature with
+calculated values for non-measured. Combustion residues from solid fuels,",0
+398,"such as gypsum, bottom ash, or ﬂy ash are assumed to be reused. The",0
+399,supply chain of the raw-material used for steam generation is also,0
+400,"considered from exploration, production, processing, and transport of the",0
+401,fuels to the heat plants.,0
+402,"3. Results and Discussion
+3.1. Results and Discussions on Process Modelling and Simulation",0
+403,"The ﬁrst simulation, case 1, illustrated in Figure 3 was performed using the COCO
+COFE simulator and according to the literature [9]. The second and the third simulation,
+case 2 and case 3, illustrated in Figure 4, were performed according to the information
+from the original literature source [35]. In case 4, illustrated in Figure 5, the combination
+of the two columns into a single side stripper that is connected to the stream that comes
+out of the azeotropic column so that the TC process can be established between those two
+units is proposed. This case considered a PI improvement for two reasons: (i) a lower
+number of unit operations are used in this case compared to case 3 and (ii) according to
+the literature [40], the TC is a PI Process strategy that should lower the amount of energy
+consumed by up to 30%. The aim of the simulation for case 5, illustrated in Figure 6,
+was to reduce the energy consumption even more, using a DED conﬁguration, which is
+another method of PI. The side stripper from case 4 was redesigned into the thermally
+equivalent column 8 (case 5) so that a heat integrating system can be obtained with the
+azeotropic column. The above-mentioned conﬁgurations have been proposed considering
+their potential to reduce the energy and power consumption, to reduce the costs since
+less equipment pieces are involved and also to reduce the environmental impact of the
+acetic acid concentration system. The main streams resulting from process modeling and
+simulation for the ﬁve cases under study are summarized in the Supplementary Material
+as follows: Table S1 for case 1, Table S2 for case 2, Table S3 for case 3, Table S4 for case 4
+and Table S5 for case 5). In all the simulations, the quantity of the raw-material that is
+introduced in the system is 1000 kmol/h containing 0.139 acetic acid and 0.861 water (mole
+fraction). Beside the raw-material stream and the output streams, other recycled streams
+are considered for each case, their ﬂow-rates and compositions vary from case to case. The",0
+404,"Energies 2022, 15, 8119",0
+405,18 of 23,0
+406,"results obtained in the proposed simulations have been validated, being very close to the
+values from the original literature [9,35].",0
+407,"In order to compare the ﬁve cases under investigation, additional information is",0
+408,reported in Table 8.,0
+409,Table 8. Comparison between the three ﬁve cases regarding key characteristics of the process.,0
+410,Parameter,0
+411,Unit of Measure,0
+412,Acetic acid total stream,0
+413,kmol/h,0
+414,"Acetic acid purity
+Acetic acid ﬂow-rate
+Acetic acid recovery
+Extractant quantity",0
+415,Water,0
+416,"Acetic Acid
+Ethyl Acetate
+Isopropanol",0
+417,Isopropyl Acetate,0
+418,No. of equipment,0
+419,"Power consumption
+Energy consumption",0
+420,mole fraction,0
+421,kmol/h,0
+422,%,0
+423,kmol/h,0
+424,mole fraction,0
+425,"Columns
+Additional
+equipment *",0
+426,"[kW]
+[MJ/h]",0
+427,"Case 1
+113.39
+0.94
+106.34
+76.50
+938.65
+0.19
+0.02
+0.79
+0.00
+0.00",0
+428,3,0
+429,4,0
+430,-,0
+431,"39,798",0
+432,"Case 2
+135.06
+0.99
+134.93
+97.07
+395.49
+0.13",0
+433,7.72 × 10−5,0
+434,"0.00
+0.00
+0.87",0
+435,3,0
+436,11,0
+437,"2.77
+43,843",0
+438,"Case 3
+135.54
+0.99
+135.41
+97.42
+400.00
+0.13",0
+439,7.63 × 10−5,0
+440,"0.00
+0.01
+0.86",0
+441,3,0
+442,11,0
+443,"2.80
+43,896",0
+444,"Case 4
+134.07
+0.99
+134.05
+96.44
+490.23
+0.13",0
+445,7.63 × 10−5,0
+446,"0.00
+0.01
+0.86",0
+447,2,0
+448,7,0
+449,"0.06
+40,646",0
+450,"Case 5
+136.00
+0.99
+135.86
+97.74
+344.21
+0.54",0
+451,1.11 × 10−3,0
+452,"0.00
+0.07
+0.39",0
+453,2,0
+454,11,0
+455,"5.11
+33,640",0
+456,"* Additional equipment used in the simulation: mixers, pumps, heat exchangers, component separators, extractors.",0
+457,"As noticed from Table 8, the highest quantity of acid is obtained in case 5, followed
+closely by the results of case 3 and case 2 (e.g., 136 kmol/h in case 5 followed by 135.54 in
+case 3, respectively 135.06 kmol/h in case 2). The purity of the acid from case 1 is 0.94 while
+in cases 2, 3, 4, 5 it is higher having a value of 0.99. Another parameter which has been
+calculated is the acetic acid recovery. It is the ratio between the quantity of pure acetic acid
+obtained and the quantity of acetic acid introduced in the system by Stream 1, the diluted
+acetic acid solution which should be concentrated. The highest value for this parameter
+was registered for case 5 (i.e., 97.74%) being followed closely by the other PI case, case 4
+with a recovery rate of about 97.42%. The lowest value for this parameter is also registered
+in the ﬁrst case when ethyl acetate is used as an extractant.",0
+458,"The ﬂow-rates of extractants have also been reported in Table 8. The lowest quantity
+of extractant is used in case 5 (e.g., 344.21 kmol/h) while the highest ﬂow-rate is used in
+case 1 (e.g., 938.65 kmol/h).",0
+459,"By comparing the number of units utilized in the simulations, it can be noticed that
+the lowest number is registered for case 1 but also the performances of this case (i.e., acetic
+acid ﬂow-rate, acetic acid purity, acetic acid recovery) are not so high. Compering the other
+cases in terms of number of units used, it can be noticed that in case 4 a number of 9 units
+are used, in case 5 a number of 13 units are used while in cases 2 and 3 a number of 14 units
+are employed. Cases 4 and 5 are favorable because the number of columns is reduced from
+3 to 2. For case 2 and case 3, the number of units is determined by the presence of more
+mixers, pumps, and heat exchangers.",0
+460,"Observing the values from the power consumption parameter and energy parame-
+ter, it can be noticed that case 5 consumes the highest quantity of power, but it has the
+lowest usage of energy. The most power efﬁcient scenario for acetic acid concentration is
+represented by case 4.",0
+461,"In terms of energy consumption, case 5 is the optimum consumer, followed by case 4.
+The energy consumption in case 5 is lower than the amount of energy used in case 4 (e.g.,
+33,640 MJ/h in case 5 vs. 40,646 MJ/h in case 4), which means a reduction of the quantity of",0
+462,"Energies 2022, 15, 8119",0
+463,19 of 23,0
+464,"used energy of 17.23% which is in the range of the energy saving mentioned in the scientiﬁc
+literature [29]. When comparing case 5 to case 3, we notice that a consumption reduction of
+23.37% was registered. The energy consumption between cases 2 and 3 is pretty close as
+can be observed from Table 8.",0
+465,"As a general conclusion on the technical assessment, case 5 seems to be the most
+favorable one since: (i) The highest quantity of acetic acid is obtained (e.g., 135.86 kmol/h);
+(ii) it presents the highest acid recovery rate (e.g., 97.74%); (iii) it uses the lowest quantity of
+extractant (e.g., 344.21 kmol/h); (iv) a number of two columns are involved; (v) it presents
+the lowest energy usage (e.g., 33,640 MJ/h).",0
+466,3.2. Results and Discussion on LCA,0
+467,"After technical screening, the most promising cases, case 4 and case 5, were investi-
+gated from the environmental point of view. These cases lead to ten subcases as mentioned
+in Table 6. The most relevant environmental KPIs derived from the LCA study, using
+ReCiPe impact assessment method, are reported in Tables 9 and 10.",0
+468,"The LCA results reported in Tables 9 and 10 can be compared using three strategies
+as follows: (i) a general comparison (i.e., case 4 vs. case 5) and more detailed comparison
+referring to (ii) the results of various sub-cases which use the same steam source should be
+put one against the other (i.e., sub-case 4.1 vs. sub-case 5.1, sub-case 4.2 vs. sub-case 5.2,
+sub-case 4.3 vs. sub-case 5.3, etc.) and (iii) various sub-cases within the same case study
+(i.e., sub-case 4.1 vs. sub-cases 4.2, 4.3, 4.4., and 4.5, etc.).",0
+469,"Generally, the values for case 4 are higher than the values correspondent to case 5 except
+the values for the ozone depletion potential (ODP) indicator. The values are double or more
+than double for all the impact categories summarized in Tables 9 and 10. For instance, for
+the climate change, defined also as global warming potential (GWP) indicator, the ratio of the
+values for case 4 and the values for case 5 are in the range 2.10–2.35. The highest differences
+between case 4 and case 5 are registered for the human toxicity potential (HTP) indicator. For
+this indicator, the values are about 2.34 times higher in case 4 vs. the value registered for case 5.
+Having a look deeper into detail and comparing the same sub-cases, if for instance
+sub-case 4.1 is compared to sub-case 5.1, the values correspondent to the climate change
+are 10.95 kg CO2 eq./kg acetic acid respectively 5.22 kg CO2 eq./kg acetic acid. A detailed
+contribution to this indicator is illustrated in Figure 9. As noticed from Figure 9, the acetic
+acid production from methanol, isopropanol production, and steam production are the
+biggest contributors to the climate change indicator.",0
+470,"Table 9. LCA results, according to ReCiPe, for the sub-cases correspondent to case 4.",0
+471,Parameter,0
+472,Unit,0
+473,"GWP
+FEP
+ODP
+FDP
+FETP
+HTP
+MDP
+POFP
+TETP
+WDP
+METP
+MEP",0
+474,kg CO2 eq./kg acetic acid,0
+475,10−5 × kg P eq./kg acetic acid,0
+476,10−12 × kg CFC-11 eq./kg acetic acid,0
+477,kg oil eq./kg acetic acid,0
+478,"10−3 × kg 1,4-DB eq./kg acetic acid",0
+479,"kg 1,4-DB eq./kg acetic acid
+10−2 × kg Fe eq./kg acetic acid",0
+480,"10−2 × kg NMVOC eq./kg acetic acid
+10−4 × kg 1,4-DB eq./kg acetic acid",0
+481,10−2 × m3/kg acetic acid,0
+482,"10−3 × kg 1,4-DB eq./kg acetic acid",0
+483,10−3 × kg N eq./kg acetic acid,0
+484,Sub-Case,0
+485,"4.2
+10.88
+1.63
+2.71
+8.39
+3.77
+0.69
+6.40
+2.18
+6.74
+5.10
+1.65
+4.71",0
+486,"4.3
+10.92
+1.63
+2.71
+8.45
+3.78
+0.69
+6.44
+2.18
+6.76
+5.14
+1.67
+4.71",0
+487,"4.4
+10.80
+1.62
+2.71
+8.45
+3.75
+0.68
+6.57
+2.13
+6.76
+5.23
+1.61
+4.54",0
+488,"4.1
+10.95
+1.07
+2.71
+8.37
+3.74
+0.68
+6.49
+2.17
+6.66
+5.09
+1.61
+4.72",0
+489,"4.5
+10.38
+2.16
+2.71
+8.23
+3.78
+0.68
+6.41
+2.15
+6.65
+6.45
+1.62
+4.76",0
+490,"Energies 2022, 15, 8119",0
+491,"Table 10. LCA results, according to ReCiPe, for the sub-cases correspondent to case 5.",0
+492,Parameter,0
+493,Unit,0
+494,"GWP
+FEP
+ODP
+FDP
+FETP
+HTP
+MDP
+POFP
+TETP
+WDP
+METP
+MEP",0
+495,kg CO2 eq./kg acetic acid,0
+496,10−5 × kg P eq./kg acetic acid,0
+497,10−12 × kg CFC-11 eq./kg acetic acid,0
+498,kg oil eq./kg acetic acid,0
+499,"10−3 × kg 1,4-DB eq./kg acetic acid",0
+500,"kg 1,4-DB eq./kg acetic acid
+10−2 × kg Fe eq./kg acetic acid",0
+501,"10−2 × kg NMVOC eq./kg acetic acid
+10−4 × kg 1,4-DB eq./kg acetic acid",0
+502,10−2 × m3/kg acetic acid,0
+503,"10−3 × kg 1,4-DB eq./kg acetic acid",0
+504,10−3 × kg N eq./kg acetic acid,0
+505,Sub-Case,0
+506,"5.2
+5.12
+0.86
+2.89
+3.69
+2.17
+0.31
+2.81
+0.97
+2.99
+2.35
+0.72
+2.29",0
+507,"5.3
+5.12
+0.85
+2.89
+3.71
+2.17
+0.30
+2.81
+0.96
+2.97
+2.35
+0.73
+2.28",0
+508,"5.4
+4.93
+0.84
+2.89
+3.71
+2.12
+0.29
+3.01
+0.89
+2.96
+2.49
+0.64
+2.02",0
+509,"5.1
+5.22
+0.84
+2.89
+3.66
+2.13
+0.29
+2.94
+0.96
+2.88
+2.34
+0.66
+2.31",0
+510,20 of 23,0
+511,"5.5
+4.41
+1.66
+2.89
+3.46
+2.19
+0.29
+2.83
+0.94
+2.86
+4.37
+0.67
+2.40",0
+512,"Analyzing the LCA results within the same case study (i.e., sub-case 4.1, 4.2, 4.3,
+4.4, 4.5), it can be observed that the steam source inﬂuences the environmental indicators
+as follows: the highest values for the impact indicators are registered for the usage of
+fossil fuels while the lowest are registered for the biomass usage as steam source (i.e.,
+climate change indicator (GWP), fossil depletion potential (FDP), terrestrial ecotoxicity
+potential (TETP)). The exceptions are represented by the freshwater eutrophication potential
+indicator (FEP) and water depletion potential (WDP) where the opposite situation occurs.
+Other impact indicators such as ODP, HTP have constant or slightly different values
+independently of the steam generation source. Between the fossil fuels investigated for
+the steam generation, the usage of natural gas leads to lower environmental impact values
+compared to the usage of hard coal, heavy or light fuel oil.",0
+513,Figure 9. Cont.,0
+514,"Energies 2022, 15, 8119",0
+515,21 of 23,0
+516,Figure 9. Details about climate change indicator for (a) sub-process 4.1 and (b) sub-process 5.1.,0
+517,"From technical and environmental point of view, it can be concluded that the usage
+of double effect distillation using isopropanol and isopropyl acetate mixture as extractant
+coupled with the usage of biomass as a steam source represent the most efﬁcient and
+environmentally friendly option.",0
+518,4. Conclusions,0
+519,"The present study aims to investigate, using process modelling and environmental
+tools (i.e., ChemCAD, COCO COFE and GaBi software), which is the best conﬁguration,
+from technical and environmental perspectives, to concentrate acetic acid. Five case studies
+were explored and compared in the present research. The cases under investigation use
+different extractants (i.e., ethyl acetate, isopropanol and an isopropyl acetate—isopropanol
+mixture) and different technologies i) classical (i.e., extraction and azeotropic distillation)
+and ii) intensiﬁed (i.e., TC and DED). The ﬁve conﬁgurations under study are represented
+by extraction (case 1), azeotropic concentration design (case 2, case 3), and two process
+intensiﬁcation designs based on TC (case 4) and DED (case 5).",0
+520,"The main tools used in the present work for process modeling and simulation are
+ChemCAD version 6.5.7, developed by ChemstationsTM and COCO COFE simulator, ver-
+sion 3.5, developed by AmsterCHEM. GaBi software, version 10.5, developed by spheraTM,
+was used to perform the LCA.",0
+521,(i),0
+522,"The main ﬁndings derived from the work performed are summarized as follows:
+The technical comparison leads to the conclusion that the highest quantity of acetic
+acid is obtained in case 5. The purity is 0.94 in case 1, while for the rest of the cases it
+reaches 0.99. For properly comparing the three simulations, the energy consumption
+should be taken into consideration. In terms of energy consumption, case 5 is the
+optimum consumer, followed by case 1 and case 4. Even if the energy consumption
+in case 1 is low, the other technical KPIs (i.e., acetic acid ﬂow-rate, acetic acid purity,
+quantity of extractant used) are the highest and do not support this scenario.",0
+523,"(ii) The environmental comparison, based on the ReCiPe impact assessment method leads
+to the conclusion that the most environmentally friendly process is the DED coupled
+with steam generation from biomass.",0
+524,"Energies 2022, 15, 8119",0
+525,22 of 23,0
+526,"As future work, an economic evaluation of the involved technologies should be
+performed in order to have a complete view of the picture and to decide which technology
+is the most sustainable one.",0
+527,"Supplementary Materials: The following supporting information can be downloaded at: https:
+//www.mdpi.com/article/10.3390/en15218119/s1.",0
+528,"Author Contributions: C.-M.C. performed and validated three out of the ﬁve simulations, wrote the
+ﬁrst draft of the paper, and revised the last version of the manuscript. L.P. deigned the idea, provided
+guidance, performed two simulations, the LCA study, and revised the manuscript. All authors have
+read and agreed to the published version of the manuscript.",0
+529,Funding: This research received no external funding.,0
+530,Data Availability Statement: Not applicable.,0
+531,"Conﬂicts of Interest: Author Cormos Codruta-Maria is an employee of MDPI; however, she did not
+work for the journal “Energies” at the time of submission and publication.",0
+532,Abbreviations,0
+533,"Combined Heat and Power
+Double Effect Distillation Process
+Fossil Depletion Potential
+Freshwater Eutrophication Potential
+Freshwater Ecotoxicity Potential
+Global Warming Potential
+Human Toxicity Potential
+Ionizing Radiation Potential
+International Standard Organization
+Life Cycle Assessment
+Life Cycle Inventory
+Life Cycle Impact Assessment
+Marine Eutrophication Potential",0
+534,"CHP
+DED
+FDP
+FEP
+FETP
+GWP
+HTP
+IRP
+ISO
+LCA
+LCI
+LCIA
+MEP
+METP Marine Ecotoxicity Potential
+MDP Metal Depletion Potential
+NLT
+ODP
+POFP
+PI
+PMF
+Sx
+TAP
+TC
+WDP Water Depletion Potential",0
+535,"Natural Land Transformation
+Ozone Depletion Potential
+Photochemical Oxidant Formation Potential
+Process Intensiﬁcation
+Particulate Matter Formation
+Stream no x
+Terrestrial Acidiﬁcation Potential
+Thermally Coupled Process",0
+536,"References
+1.",0
+537,"Deshmukh, G.; Manyar, H. Production Pathways of Acetic Acid and Its Versatile Applications in the Food Industry; Basso, T.P., Ed.;
+IntechOpen: Rijeka, Croatia, 2020. [CrossRef]
+Lee, E.J.; Kim, Y.H. Energy saving in acetic acid process using an azeotropic distillation column with a side stripper. Chem. Eng.
+Commun. 2018, 205, 1311–1322. [CrossRef]
+Available online: https://www.chemanalyst.com/industry-report/acetic-acid-market-609 (accessed on 23 April 2022).
+Available online: https://ihsmarkit.com/products/acetic-acid-chemical-economics-handbook.html (accessed on 23 April 2022).
+Cheung, H.; Tanke, R.S.; Torrence, G.P. Acetic Acid. Ullmann’s Encyclopedia of Inustrial Chemistry; Wiley Online Library: Hoboken,
+NJ, USA, 2020; pp. 1–20. [CrossRef]",0
+538,2,0
+539,"3.
+4.
+5.",0
+540,"6. Malveda, M.; Funada, C. “Acetic Acid”. Chemicals Economic Handbook; SRI International: Menlo Park, CA, USA, 2003; p. 602.5000.
+Saka, S.; Minami, E.; Rabemanolontsoa, H.; Kawamoto, H. Advanced biotethanol production process with acetic acid fermentation
+7.
+from lignocellulosics. In Proceedings of the 2014 Grand Renewable Energy International Conference, P-Bm-2014, Tokyo, Japan, 27
+July–1 August 2014; pp. 1–9. Available online: https://www.researchgate.net/publication/264894561_Advanced_bioethanol_
+production_process_with_acetic_acid_fermentation_from_lignocellulosics (accessed on 10 April 2022).",0
+541,"Energies 2022, 15, 8119",0
+542,23 of 23,0
+543,"8. Wiranarongkorn, K.; Im-orb, K.; Panpranot, J.; Maréchal, F.; Arpornwichanop, A. Exergy and exergoeconomic analyses of",0
+544,"9.
+10.",0
+545,"sustainable furfural production via reactive distillation. Energy 2021, 226, 120339. [CrossRef]
+Lucia, A.; Amale, A.; Taylor, R. Energy efﬁcient Hybrid Separation Processes. Ind. Chem. Res. 2006, 45, 8319–8328. [CrossRef]
+Javed, A.; Hassan, A.; Babar, M.; Azhar, U.; Riaz, A.; Mujahid, R.; Ahmad, T.; Mubashir, M.; Lim, H.R.; Show, P.L.; et al. A
+Comparison of the Exergy Efﬁciencies of Various Heat-Integrated Distillation Columns. Energies 2022, 15, 6498. [CrossRef]",0
+546,"11. De Figueiredo, M.F.; Brito, K.D.; Ramos, W.B.; Sales Vasconcelos, L.G.; Brito, R.P. Effect of Solvent Content on the Separation and",0
+547,"the Energy Consumption of Extractive Distillation Columns. Chem. Eng. Commun. 2014, 202, 1191–1199. [CrossRef]",0
+548,"12. Garwin, L.; Hutchison, K.E. Separation of Acetic Acid and Water by Distillation. Effect of Calcium Chloride Addition. Ind. Eng.",0
+549,"Chem. 1950, 42, 727–730. [CrossRef]",0
+550,"13. Kalaichelvi, P.; Perumalsamy, M.; Arunagiri, A.; Soﬁya, K. Synergistic Extraction of Acetic Acid from Its Aqueous Solution. J.",0
+551,"Univ. Chem. Technol. Metall. 2007, 42, 291–294.",0
+552,"14. Huang, X.; Zhong, W.; Du, W.; Qian, F. Thermodynamic Analysis and Process. Simulation of an Industrial Acetic Acid",0
+553,"Dehydration System via Heterogeneous Azeotropic Distillation. Ind. Eng. Chem. Res. 2013, 52, 2944–2957. [CrossRef]",0
+554,"15. Wang, S.-J.; Huang, K. Design and control of acetic acid dehydration system via heterogeneous azeotropic distillation using",0
+555,"p-xylene as an entrainer. Chem. Eng. Process. Process Intensif. 2012, 60, 65–76. [CrossRef]",0
+556,"16. Keil, F.J. Process Intensiﬁcation. Rev. Chem. Eng. 2017, 34, 135–200. [CrossRef]
+17. Becht, S.; Franke, R.; Geißelmann, A.; Hahn, H. An industrial view of process intensiﬁcation. Chem. Eng. Process. Process Intensif.",0
+557,"2009, 48, 329–332. [CrossRef]",0
+558,"18. Raghavan, K.V.; Reddy, B.M. Industrial Catalysis and Separations: Innovations for Process Intensiﬁcation; Apple Academic Press:",0
+559,"Waretown, NJ, USA, 2014.",0
+560,"19. Caballero, J.A. Thermally Coupled Distillation. Comp. Aided Chem. Eng. 2009, 27, 59–64. [CrossRef]
+20. Yue, J. Green process intensiﬁcation using microreactor technology for the synthesis of biobased chemicals and fuels. Chem. Eng.",0
+561,"Process. Process Intensif. 2022, 177, 109002. [CrossRef]",0
+562,"21. Pahija, E.; Golshan, S.; Blais, B.; Bofﬁto, D.C. Perspectives on the process intensiﬁcation of CO2 capture and utilization. Chem.",0
+563,"Eng. Process. Process Intensif. 2022, 176, 108958. [CrossRef]",0
+564,"22. Humphrey, J.L. Separation technologies: An. opportunity for energy savings. Chem. Eng. Progress 1992, 88, 32–42.
+23.
+24.",0
+565,"Sholl, D.S.; Lively, R.P. Seven chemical separations to change the world. Nature 2016, 532, 435–437. [CrossRef] [PubMed]
+Saidur, R.; Elcevvadi, E.T.; Mekhilef, S.; Safari, A.; Mohammed, H.A. An overview of different distillation methods for small scale
+applications. Renew. Sustain. Energy Rev. 2011, 15, 4756–4764. [CrossRef]",0
+566,"25. Kong, Z.Y.; Sánchez-Ramírez, E.; Yang, A.; Shen, W.; Segovia-Hernández, J.G.; Sunarso, J. Process intensiﬁcation from conventional",0
+567,"to advanced distillations: Past, present, and future. Chem. Eng. Res. Des. 2022, 188, 378–392. [CrossRef]",0
+568,"26. Chen, Y.-Y.; Kong, Z.Y.; Yang, A.; Lee, H.-Y.; Sunarso, J. Design and control of an energy intensiﬁed side-stream extractive",0
+569,"distillation for binary azeotropic separation of nhexane and ethyl acetate. Sep. Purif. Technol. 2022, 294, 121176. [CrossRef]",0
+570,"27. Park, J.; Jeong, Y.; Han, M. Process intensiﬁcation of reactive distillation using improved RCMs: Acetic acid production. Chem.",0
+571,"Eng. Process. Process Intensif. 2020, 157, 108136. [CrossRef]
+Shah, V.H.; Agrawal, R. A matrix method for multicomponent distillation sequences. AIChE J. 2009, 56, 1759–1775. [CrossRef]",0
+572,"28.
+29. Kiss, A.A.; Smith, R. Rethinking energy use in distillation processes for a more sustainable chemical industry. Energy 2020, 203,",0
+573,117788. [CrossRef],0
+574,"30. Kiss, A.A.; Olujic, Z. A review on process intensiﬁcation in internally heat-integrated distillation columns. Chem. Eng. Process.",0
+575,"2014, 86, 125–144. [CrossRef]",0
+576,"31. Cui, C.; Sun, J.; Li, X. A hybrid design combining double-effect thermal integration and heat pump to the methanol distillation",0
+577,"process for improving energy efﬁciency. Chem. Eng. Process. Process Intensif. 2017, 119, 81–92. [CrossRef]",0
+578,"32. Gao, X.; Yang, Y.; Chen, M.; Cheng, Q.; Lu, K. Novel heat pump reactive distillation and dividing-wall column reactive distillation
+processes for synthesizing isopropyl acetate to save TAC and reduce CO2 emissions. Chem. Eng. Process. Process Intensif. 2022,
+171, 108746. [CrossRef]",0
+579,"33. Chemstations. ChemCAD, Chemical Process Simulation Software. Available online: www.chemstations.com (accessed on 20",0
+580,September 2022).,0
+581,"34. Available online: www.cocosimulator.org (accessed on 20 September 2022).
+35. Caxiano, I.N.; Junqueira, P.G.; Mangili, P.V.; Prata, D.M. Eco-efﬁciency analysis and intensiﬁcation of the acetic acid puriﬁcation",0
+582,36,0
+583,37,0
+584,"process. Chem. Eng. Process. Process Intensif. 2019, 147, 107784. [CrossRef]
+ISO 14040:2006; Environmental Management—Life Cycle Assessment—Principles and Framework. ISO—The International
+Organization for Standardization: Geneva, Switzerland, 2006.
+ISO 14044:2006; Environmental Management—Life Cycle Assessment—Requirements and Guidelines. International Organization
+for Standardization: Geneva, Switzerland, 2006.
+Sphera, GaBi Software. Available online: www.sphera.com (accessed on 15 September 2022).",0
+585,"38.
+39. Maranghi, S.; Brondi, C. Life Cycle Assessment in the Chemical Product Chain, Challenges, Methodological Approaches and Applications;",0
+586,"Springer: Berlin/Heidelberg, Germany, 2020.",0
+587,"40. Agrawal, R. Multieffect distillation for thermally coupled conﬁgurations. AIChE J. 2000, 46, 2211–2224. [CrossRef]",0

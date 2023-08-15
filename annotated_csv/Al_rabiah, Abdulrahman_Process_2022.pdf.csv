@@ -1,0 +1,839 @@
+,0,Class
+0,"Article
+Process Development for Methyl Isobutyl Ketone Production
+Using the Low-Pressure One-Step Gas-Phase Selective
+Hydrogenation of Acetone
+Abdulrahman A. Al-Rabiah 1,*",0
+1,", Raed R. Alkathiri 1 and Abdulaziz A. Bagabas 2",0
+2,"1 Chemical Engineering Department, King Saud University, P.O. Box 800, Riyadh 11421, Saudi Arabia
+2 National Petrochemical Technology Center (NPTC), King Abdulaziz City for Science and",0
+3,"Technology (KACST), P.O. Box 6086, Riyadh 11442, Saudi Arabia",0
+4,* Correspondence: arabiah@ksu.edu.sa; Tel.: +966-11-4676844; Fax: +966-11-4678770,0
+5,"Abstract: Methyl isobutyl ketone (MIBK) is a highly valuable product in the chemical industry. It is
+widely used as an extracting agent for heavy metals, antibiotics, and lubricating oils. Generally, MIBK
+can be produced by three-step and one-step liquid-phase methods. These methods are expensive
+and energy-demanding due to the high pressure and low conversion of acetone. A novel nano-
+Pd/nano-ZnCr2O4 catalyst was developed to produce MIBK with high conversion and selectivity
+of 77.3% and 72.1%, respectively, at 350 ◦C and ambient pressure, eliminating the need for high
+pressure in conventional MIBK processes. This study is the ﬁrst that proposes a newly developed
+process of methyl isobutyl ketone (MIBK) production using the low-pressure one-step gas-phase
+selective hydrogenation of acetone. In this work, a novel process ﬂow diagram has been developed
+for the production of MIBK using the developed nano-catalyst. The process was heat integrated,
+resulting in a 26% and a 19.5% reduction in the heating and cooling utilities, respectively, leading to
+a 12.6% reduction in the total energy demand. An economic analysis was performed to determine
+the economic feasibility of the developed process, which shows that the process is highly proﬁtable,
+in which it reduced both the capital and operating costs of MIBK synthesis and showed a return on
+investment (ROI) of 29.6% with a payback period of 2.2 years. It was found that the ROI could be
+increased by 18% when the reactor temperature is increased to 350 ◦C. In addition, the economic
+sensitivity analysis showed that the process is highly sensitive to product prices and least sensitive to
+utility prices, which is due to the versatility of the process that requires only a low amount of energy.",0
+6,"Keywords: methyl isobutyl ketone (MIBK); acetone self-condensation; selective hydrogenation;
+process development; heat integration; economic analysis; nano-Pd/nano-ZnCr2O4 catalyst",0
+7,1. Introduction,0
+8,"Methyl isobutyl ketone (MIBK) is an industrially important chemical worldwide. It can
+be used in a wide variety of important applications, including protective surface coating,
+vinyl, and acrylic resins, the extraction of metallic salts, and the removal of parafﬁn from
+mineral oils [1–5]. It is also used in the production of paints and rubber, as well as a solvent
+in a variety of pharmaceuticals and adhesives [6,7].",0
+9,"The global production of MIBK was 430,000 metric tons in 2020 [8]. The market
+for MIBK is expected to grow at a compound annual growth rate (CAGR) of more than
+6% by 2026. This is due to the increasing demand for MIBK, especially in the synthesis
+of antioxidant additives for rubber, and the growing demand for solvents in chemical
+processes [9].",0
+10,"In addition to MIBK, a crucial byproduct is also produced, which is isopropyl alcohol
+(IPA). It has tremendous industrial, medical, and hygienic applications, including alcohol
+wipes, hand sanitizers, disinfectants, and swabs, which increases the prospects of applying
+the MIBK process with minimal waste. According to the Centers for Disease Control and",0
+11,"Citation: Al-Rabiah, A.A.; Alkathiri,
+R.R.; Bagabas, A.A. Process
+Development for Methyl Isobutyl
+Ketone Production Using the
+Low-Pressure One-Step Gas-Phase
+Selective Hydrogenation of Acetone.
+Processes 2022, 10, 1992. https://
+doi.org/10.3390/pr10101992",0
+12,Academic Editor: Jean-Claude Assaf,0
+13,"Received: 1 September 2022
+Accepted: 27 September 2022
+Published: 2 October 2022",0
+14,"Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations.",0
+15,"Copyright: © 2022 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).",0
+16,"Processes 2022, 10, 1992. https://doi.org/10.3390/pr10101992",0
+17,https://www.mdpi.com/journal/processes,0
+18,"Processes 2022, 10, 1992",0
+19,2 of 14,0
+20,"Prevention (CDC) in the United States, alcohol-based hand sanitizers and cleansing wipes
+contain between 60% and 90% of alcohol, and the use of 70% of IPA is recommended [10].
+Medical IPA was scientiﬁcally proven as a disinfectant that inactivates viruses such as the
+COVID-19 virus.",0
+21,"MIBK can be produced by several processes, but essentially by a three-step [11] method
+and a single-step method [12–17]. Each of these processes can be carried out with different
+catalysts, raw materials, and reaction conditions [12]. The three-step method involves aldol
+condensation of acetone over homogeneous aqueous-based catalysts, such as sodium and
+calcium hydroxide, forming diacetone alcohol (DAA), which is subsequently dehydrated
+to mesityl oxide (MO). The ﬁnal step is the selective hydrogenation of the C=C bond of MO
+to MIBK using Cu or Ni catalysts [18,19]. The most commonly occurring side reactions are
+over-condensation and unselective hydrogenation [20].",0
+22,"The three-step process produces a considerable amount of wastewater containing
+acidic impurities due to the homogeneous catalyst, which creates a corrosive environment
+associated with high capital and operating costs for the neutralization process, acetone
+condensation, and product puriﬁcation [18,19,21]. Alternatively, the one-step process
+using a metal-supported catalyst was demonstrated to be more efﬁcient [22–28]. The
+support catalyzes acetone condensation to mesityl oxide (MO), an α,β-unsaturated ketone,
+followed by in situ catalytic reductions to MIBK using palladium on acidic ion-exchange
+resins [18,29,30], while there are other processes that use Pd/zirconium phosphate [31].
+In the one-step liquid-phase process, hydrogen and acetone are passed over metal base
+catalysts at moderate temperature and high pressure to produce MIBK in a single step,
+saving enormous costs that are required in the three-step method [32]. Under these reaction
+conditions, aldol condensation and dehydration are reversible [33], but the catalyst shifts
+the equilibrium toward MO, irreversibly hydrogenating it toward MIBK [28].",0
+23,"Despite the many advantages offered by the liquid-phase one-step process, it suffers
+from high pressure, ranging from 3 to 10 MPa [13], which signiﬁcantly increases the capital
+and operating costs. This is in addition to the large recycle ﬂow rate due to the low
+conversion of acetone, which increases the size of equipment in the recycle loop as well as
+the additional energy that is needed for recovering the unreacted acetone in the distillation
+column. Therefore, it is an industrial objective to reduce the pressure and increase the
+conversion and selectivity to make the process more proﬁtable.",0
+24,"Recently, Qianling et al. reported a bifunctional catalyst TiO2/Al2O32 and Pd/Cor for
+one-pot liquid-phase synthesis of MIBK from acetone, which provides acetone conversion
+of (35–45)% with a selectivity of (80–90)% to MIBK at 150 ◦C and 2.0 MPa [34]. However, the
+process still suffers from the high-pressure requirement with moderate acetone conversion.
+Baining et al. proposed an alternative support with high thermal stability and adjustable
+acid-base property using phosphor-doped h-BN that catalyzes the aldol condensation
+and dehydration to provide an acetone conversion of 58.24% and selectivity of 68.39%
+to MIBK [35]. In addition, various kinds of support, including metal oxides [19,36,37]
+and sulfonated graphene [38,39], have also been a prime focus in the development of the
+process.",0
+25,"In this context, a novel nanocrystalline zinc chromite-supported nanopalladium (nano-
+Pd/nano-ZnCr2O4) catalyst was developed by Bagabas et al. and Al-Rabiah et al. [20,40,41],
+which enables the production of MIBK in a one-step gas-phase reaction at atmospheric
+pressure. This can overcome the inﬁrmities that the conventional process suffers from.
+However, the process requires a temperature of (200–350) ◦C, which is higher than the
+conventional process, which uses a temperature of (120–160) ◦C [15].",0
+26,"The reaction involves base–acid coupling of acetone to form mesityl oxide (MO),
+followed by its hydrogenation to methyl isobutyl ketone (MIBK). The products with this
+catalyst are methyl isobutyl ketone (MIBK) as the main product, isopropyl alcohol (IPA) as
+the main byproduct, and diiasobutyl ketone (DIBK), mesityl oxide (MO), and mesitylene
+(M) are also formed [20,40,41]. The MIBK produced by low-pressure one-step gas-phase
+acetone condensation has an acetone conversion of (20–78)% and MIBK selectivities of",0
+27,"Processes 2022, 10, 1992",0
+28,3 of 14,0
+29,"(40–73)% for reaction temperatures of 200–350 ◦C with a hydrogen-acetone molar feed ratio
+of 1 to 6 [20,40,41].",0
+30,"This research work focuses on the development of a novel process for the production
+of methyl isobutyl ketone (MIBK) from hydrogen and acetone in a one-step gas-phase
+reaction at ambient pressure using a novel nano-Pd/nano-ZnCr2O4 catalyst. Heat inte-
+gration is conducted to reduce the process utilities. In addition, this work investigates
+process economics to measure the proﬁtability and the impact of market volatility on the
+proﬁtability of the process.",0
+31,2. MIBK Process Development,0
+32,"The developed process ﬂow diagram for the production of methyl isobutyl ketone is
+shown in Figure 1. A process simulation was conducted using CHEMCAD v.7.1 software
+based on a production of 30,000 metric tons of MIBK per annum with 30 days assigned for
+maintenance. The thermodynamic model chosen was UNIFAC as a cubic equation of state.
+The reactor conversion, selectivity, and feed ratio used in the simulation were based on the
+aforementioned experiment.",1
+33,Figure 1. Developed process ﬂow diagram (PFD) of the MIBK process.,0
+34,"The fresh acetone feed (stream 1) enters the process at 70 ◦C and 1.8 atm in a liquid
+phase and is mixed with the recycled acetone (stream 14), which enters at 74 ◦C and 1.8 atm.
+Before entering the reactor R-101, the mixed stream is heated to 300 ◦C. The hydrogen
+feed is mixed with recycled hydrogen (stream 11) before being heated to 300 ◦C and fed
+into reactor R-101. Both reactor feeds pass through valves, V-101 and V-102, to reduce the
+pressure in the reactor. The hydrogen–acetone molar feed ratio is maintained at 2:1, as
+recommended [40,41]. The reaction proceeds isothermally in the gas phase at 300 ◦C and
+1 atm in a ﬁxed bed catalytic reactor (R-101). The conversion of acetone is 66%, with a
+selectivity of 69.4% to methyl isobutyl ketone (MIBK). Other products, such as isopropanol
+(IPA) and diiasobutyl ketone (DIBK), are also produced. The selectivity of each of these
+substances was determined based on the experimental work, which is shown in Table 1.
+The reactor efﬂuent will then be compressed to 6.5 atm to compensate for pressure losses
+through the pipelines and to enhance the separation of hydrogen without major product
+losses from the process stream at low pressure and high temperature, preventing the use of
+cryogenic conditions. MIBK losses at 1 atm are approximately 6 kmol/h. Consequently,
+compression is mandatory to avoid cryogenic conditions. At 6.5 atm, the losses drop to
+about 0.7 kmol/h of MIBK. After compression, the stream is cooled to 35 ◦C in E-103
+before being fed into the ﬂash drum F-101. The overhead stream from ﬂash drum F-101
+contains nearly 99.996% of the unreacted hydrogen, which is recycled and mixed with the
+fresh hydrogen. The bottom stream from ﬂash drum F-101 (stream 12) is then throttled to
+1.8 atm in V-103 before entering the distillation column, T-101. Nearly 99% of the unreacted
+acetone is recovered in the overhead stream of T-101, using 48 stages, before being mixed",1
+35,"Processes 2022, 10, 1992",0
+36,4 of 14,0
+37,"with the fresh acetone. The acetone/water system forms an azeotropic mixture at higher
+compositions; therefore, about 0.04 of the entered water into the column is recovered into
+the top stream to maintain the mixture in the column below the azeotropic point. The
+bottom stream from T-101 is cooled to 70 ◦C in E-106 before being sent to a water decanter,
+D-101, where 90% of the water is removed. The second outlet stream from the decanter
+enters the distillation column, T-102, which consists of 34 stages, where 99.28% of the
+isopropanol (IPA) is recovered. The remaining water is also separated with IPA in the
+distillate stream, and the mixture is then cooled to 40 ◦C in E-109. The purity of IPA in the
+top stream of T-102 is almost 68%, which is highly recommended to be used as sanitizer
+in the medical industry, and therefore, there is no need to install a further distillation
+column for increasing the purity of the IPA. The bottom stream from T-102 enters another
+distillation column, T-103, which consists of 67 stages where 99% of the MIBK is recovered
+in the overhead stream with a purity of 99.83 wt.%, achieving the product speciﬁcations [14].
+The MIBK stream is then cooled to 40 ◦C in E-110 before being sent to the storage tank. The
+bottom stream from T-103, which contains the heavy components (e.g., DAA, MO, M, and
+DIBK), is cooled to 40 ◦C in E-111.",1
+38,"Table 1. The conversion and selectivity of the MIBK process at different temperatures [20,40,41].",0
+39,Temperature,0
+40,"(◦C)
+200
+250
+300
+350",0
+41,Acetone,0
+42,Conversion%,0
+43,"20.1
+40.7
+66
+77.3",0
+44,"MIBK
+40.6
+53.9
+69.4
+72.1",0
+45,"DIBK
+10.2
+12.3
+12.4
+13.5",0
+46,"Selectivity
+M
+2.1
+2.5
+2.6
+2.7",0
+47,"MO
+6.1
+4.4
+2.1
+2.2",0
+48,"IPA
+40.7
+25.8
+11.2
+5.4",0
+49,DA & Others,0
+50,"0.3
+1.1
+2.3
+4.1",0
+51,3. Heat Integration in the MIBK Process,0
+52,"Heat integration is an essential part of the process development. The reduction
+in energy usage not only reduces the operating costs but also prevents harmful carbon
+emissions in the environment. The required heating and cooling utilities were identiﬁed
+for the process as shown in Figure 1. Each process stream was drawn with a tail and a
+head representing the supplied temperature and the target temperature, respectively. The
+ﬁnal heat exchanger network is shown in Figure 2, where the red and blue lines denote the
+hot and cold streams, respectively. The constructed network utilizes the energy content
+and high temperature of the reactor efﬂuent to heat up the feed streams. The acetone feed
+(stream 2) leaving mixer M-101 will ﬁrst be heated by the reactor efﬂuent from 74.3 ◦C to
+242 ◦C, in which no further heating can occur due to the process constraint prohibiting
+phase change before the inlet of the compressor. The reactor efﬂuent will be further cooled
+by the hydrogen feed (stream 5) until it reaches a minimum temperature approach of
+10 ◦C to avoid an excessive large area. The outcome of the heat integration, as shown in
+Figure 3, is a reduction in the heating and cooling utilities by 26% and 19.5%, respectively.
+The reduction in the total utility demand is about 12.6%.
+In terms of economics, the
+implemented heat integration has resulted in an increase in the annualized capital cost
+by $12,134/year (for 10 years of operation). However, operating costs have decreased by
+$611,852/year, indicating a highly plausible energy utilization that satisﬁes both technical
+and economic aspects.",1
+53,"The blue columns in Figure 3 represent the utility demand before the heat integration,
+while the green columns represent the current value of the utility demand in the MIBK
+process after heat integration. In addition, the ﬁgure is divided into three sections, starting
+from the total utility demand, including the combined heating and cooling utilities, then
+the heating utility in the middle, while the cooling utility is placed on the right side. The
+process was re-simulated after the heat integration using CHEMCAD v.7.1. The developed
+ﬂowsheet after heat integration is shown in Figure 4. The material balances for the key
+streams of the developed MIBK process are shown in Table 2.",0
+54,"Processes 2022, 10, 1992",0
+55,5 of 14,0
+56,Figure 2. Heat exchanger network of the process streams for the developed process.,0
+57,Figure 3. Heat integration outcome for the developed process.,0
+58,Figure 4. Developed process ﬂow diagram (PFD) of the MIBK process after heat integration.,0
+59,"Processes 2022, 10, 1992",0
+60,6 of 14,0
+61,Table 2. Material balance of key streams for the developed MIBK process.,0
+62,Streams,0
+63,Acetone,0
+64,Mixed Feed,0
+65,(S-2),0
+66,Temperature,0
+67,(◦C),0
+68,Pressure,0
+69,(atm),0
+70,"Enthalpy
+(MJ/h)",0
+71,Molar vapor,0
+72,fraction,0
+73,Molar ﬂow,0
+74,rate,0
+75,"(kmol/h)
+Mass ﬂow
+rate (kg/h)",0
+76,"Hydrogen
+Acetone
+MIBK
+Water
+DAA
+MO
+M
+IPA
+DIBK",0
+77,74.29,0
+78,1.8,0
+79,"−37,473.6",0
+80,0.29,0
+81,160.11,0
+82,9224.8,0
+83,"0.0109
+158.3",0
+84,1.84,0
+85,0,0
+86,"0
+0
+0",0
+87,0,0
+88,0.00645,0
+89,"Hydrogen
+Mixed Feed",0
+90,(S-16),0
+91,"Reactor
+Efﬂuent",0
+92,(S-6),0
+93,34.74,0
+94,5.9,0
+95,−2720.4,0
+96,1,0
+97,342.63,0
+98,1266.14,0
+99,"331.31
+7.64
+0.75
+2.36
+0.0012
+0.0115
+0.0148
+0.5225
+0.0155",0
+100,300,0
+101,1,0
+102,"−35,506.3",0
+103,1,0
+104,443.12,0
+105,"10,491",0
+106,"272
+56.4
+38.75
+55.24
+1.26
+1.16
+0.9637
+12.79
+4.54",0
+107,"Acetone
+Recycle
+(S-19)",0
+108,61.49,0
+109,1.8,0
+110,"−10,788",0
+111,1,0
+112,50.13,0
+113,"Hydrogen
+Recycle
+(S-14)",0
+114,Waste-Water,0
+115,(S-22),0
+116,35,0
+117,5.9,0
+118,70,0
+119,1.4,0
+120,−2695.83,0
+121,"−12,968.1",0
+122,1,0
+123,283.34,0
+124,0,0
+125,45.94,0
+126,827.54,0
+127,45.94,0
+128,"0
+0
+0",0
+129,"0
+0
+0
+0
+0",0
+130,2837.35,0
+131,1146.63,0
+132,Component ﬂow rates (kmol/h),0
+133,"0.0109
+48.27",0
+134,1.84,0
+135,0.0065,0
+136,0,0
+137,"0
+0
+0",0
+138,0,0
+139,"272
+7.64
+0.75
+2.36
+0.0012
+0.0115
+0.0148
+0.5225
+0.0155",0
+140,"(IPA +
+Water)
+Product
+(S-25)",0
+141,40,0
+142,"1.4
+−5515",0
+143,0,0
+144,18.02,0
+145,−5515,0
+146,"MIBK
+Product
+(S-28)",0
+147,40,0
+148,1.9,0
+149,"(DIBK,",0
+150,"DAA, MO,
+M) Product",0
+151,(S-30),0
+152,40,0
+153,2.4,0
+154,"−12,209.8",0
+155,−3039.6,0
+156,0,0
+157,37.46,0
+158,3748.6,0
+159,0,0
+160,8.25,0
+161,1054.04,0
+162,0,0
+163,"0.49
+0.2492",0
+164,"5.1
+0
+0
+0",0
+165,12.18,0
+166,0,0
+167,"0
+0",0
+168,"0
+0",0
+169,0,0
+170,0,0
+171,37.37,0
+172,0.0065,0
+173,0.0883,0
+174,"0
+0",0
+175,0,0
+176,0.38,0
+177,"1.26
+1.15
+0.9489",0
+178,0,0
+179,4.53,0
+180,4. Economic Analysis,0
+181,"An economic analysis was performed to verify the proﬁtability of the process based
+on several economic indicators, including the return on investment, payback period, net
+present worth, and discounted cash ﬂow rate of return.",0
+182,"The return on investment (ROI) is expressed on an annual basis, and it is deﬁned as the
+average net proﬁt divided by the total ﬁxed capital investment as shown in Equation (1) [42].",0
+183,ROI =,0
+184,Yearly net proﬁts,0
+185,Fixed capital investement,0
+186,-1,0
+187,The payback period (PBP) is deﬁned as the required time to recoup the original,0
+188,depreciable ﬁxed capital investment as shown in Equation (2) [42].,0
+189,PBP =,0
+190,"Depreciable ﬁxed capital investment
+Avg. proﬁt/yr + avg. depreciation/yr",0
+191,-2,0
+192,The net present worth (NPW) is deﬁned as the difference between the present value of,0
+193,the annual cash ﬂow and the initial required investment as shown in Equation (3).,0
+194,NPW =,0
+195,Net cash ﬂow at time t,0
+196,(1 + interest rate)time of cash ﬂow,0
+197,-3,0
+198,"The discounted cash ﬂow rate of return (DCFRR) represents the maximum inter-
+est rate that a project can afford to pay for its total capital investment [43] as shown in
+Equation (4) [42].",0
+199,NPW =,0
+200,n=T∑,0
+201,n=1,0
+202,Cash ﬂow at time t,0
+203,(1 + DCFRR)n − Total capital investment = 0,0
+204,-4,0
+205,"In order to determine the economic indicators, the following should be calculated:
+(i) the cost of the equipment; (ii) the costs of raw materials and utilities; (iii) the total capital
+cost; and (iv) the total production cost.",0
+206,"Processes 2022, 10, 1992",0
+207,7 of 14,0
+208,4.1. Purchase Cost,0
+209,"In order to determine the purchase costs, the process equipment sizes must ﬁrst be
+calculated; the process simulator was used for this purpose. In addition, the costs were
+estimated using the CHEMCAD costing package, adjusting all the costs to 2022 using the
+Chemical Engineering Plant Cost Index (CEPCI) [44]. Figure 5 depicts the distribution
+of the process equipment costs. Note that the condensers and reboilers of the distillation
+columns are compiled with heat exchangers. The cost distribution of the process equipment
+indicates that the distillation columns account for the largest share of ﬁxed capital costs
+of around 40% as the most expensive units of the process, which is due to the byproducts
+generated by the process.",0
+210,Figure 5. Fixed capital cost distribution for the developed process.,0
+211,4.2. Raw Material and Utility Costs,0
+212,"Besides the ﬁxed capital costs, the raw materials and utility costs are major components
+of the production cost. The prices of the raw materials, utilities, and products are shown in
+Table 3.",0
+213,"Table 3. Cost input for the developed MIBK process [45,46].",0
+214,Item,0
+215,"Acetone
+Hydrogen",0
+216,Raw Materials,0
+217,Utilities,0
+218,High-pressure steam (hps),0
+219,Medium-pressure steam (mps),0
+220,Low-pressure steam (lps),0
+221,"Boiler feed water
+Cooling water (cw)",0
+222,Electricity,0
+223,Products,0
+224,Methyl isobutyl ketone (MIBK),0
+225,Isopropanol (IPA),0
+226,"(DAA, DIBK, MO, M)",0
+227,Price Unit,0
+228,"$790/ton
+$2500/ton",0
+229,"$5.66/GJ
+$4.77/GJ
+$4.54/GJ",0
+230,"$1.532/1000 kg
+$15.7/1000 m3
+$0.0674/kWh",0
+231,"$2120/ton
+$1540/ton
+$1300/ton",0
+232,"The distribution of the utility costs is depicted in Figure 6. It shows that electricity
+represents 35% of the total utility cost, which is due to its high prices. Low-pressure
+steam is the second most cost-intensive required utility that is used in the reboiler of T-101.
+Although cooling water is the most consumed in terms of volume, it accounts for only 5%",0
+233,"Processes 2022, 10, 1992",0
+234,8 of 14,0
+235,"of the total utility cost, which is due to the low price of cooling water compared to the other
+utilities.",0
+236,Figure 6. Utility cost distribution for the MIBK process.,0
+237,4.3. Total Capital Cost,0
+238,"The total production cost comprises all of the direct, indirect, and general expenses [42].
+The direct costs are estimated as a fraction of the purchased equipment costs and include
+all the prices of the delivery and installation of the purchased equipment, installed instru-
+mentation and control systems, installed piping, electrical systems, yard improvement,
+buildings, and service facilities [42]. The direct cost of the developed MIBK process is
+$18.34 million per annum. The indirect cost was calculated as a fraction of the direct cost
+provided in Plant Design and Economics for Chemical Engineers by Peter and Timmer-
+haus [42]. It includes the engineering and supervision costs, construction, legal, contractor,
+and contingency expenses, which represent $7.34 million [42]. The ﬁxed capital investment
+is the summation of the direct and indirect costs [42]; it is $25.68 million for the MIBK
+process. The total capital investment is a combination of the ﬁxed capital investment and
+the working capital. The working capital was taken as 0.15 of the total capital cost for the
+ﬂuid processing plant [42]. The total capital investment in the developed MIBK process is
+$30.21 million.",0
+239,4.4. Total Product Cost,0
+240,"The total product cost represents all of the annual expenses that are required for
+production. It includes raw material prices, utility costs, operating labor, maintenance and
+repairs, operating supplies, laboratory charges, royalties, taxes, ﬁnancing, insurance, rent,
+depreciation, plant overhead, administration, distribution and selling, and research and
+development expenses, all of which are fractions of the ﬁxed capital investment provided
+by Peter and Timmerhaus [42]. The total production cost, excluding depreciation, for the
+developed MIBK process is $55.78 million annually.",0
+241,4.5. Proﬁtability Evaluation,0
+242,"The process proﬁtability can now be evaluated after obtaining all of the necessary
+information. The total raw material cost is $42.71 million per year, which accounts for
+76.7% of the total product cost. The total product price is $83.81 million yearly, which
+shows a positive proﬁt margin. Therefore, ﬂuctuations in the raw material or product prices
+may have a considerable inﬂuence on the process proﬁtability; consequently, a sensitivity
+analysis is required for the price ﬂuctuation. The plant has shown its feasibility in being
+commercially applied; the return on investment for the plant is 29.6%/y, with a payback
+period of 2.2 years. Furthermore, the plant could generate $28.93 million proﬁts in 10 years",0
+243,"Processes 2022, 10, 1992",0
+244,9 of 14,0
+245,"of operation. The discounted rate of return on investment of the plant is 26.6%. Table 4
+summarizes the economic performance of the MIBK process.",0
+246,Table 4. The economic performance for the developed MIBK process.,0
+247,Factor,0
+248,Value,0
+249,Total Raw Material Cost,0
+250,Total Utility Cost,0
+251,"Fixed Capital Investment (FCI)
+Total Capital Investment (TCI)",0
+252,Depreciation,0
+253,Total Product Cost,0
+254,Revenue,0
+255,"$42.71 million/y
+$1.646 million/y
+$25.68 million
+$30.22 million",0
+256,"$55.78 million/y
+$83.81 million/y",0
+257,"MACRS, 5 years recovery period",0
+258,Return on Investment (ROI),0
+259,Payback Period,0
+260,Net Present Worth (at i = 15%),0
+261,Discounted Cash Flow Rate of Return (DCFRR),0
+262,29.6%/y,0
+263,2.2 y,0
+264,$28.93 million,0
+265,26.60%,0
+266,4.6. Economic Sensitivity Analysis,0
+267,"The petrochemical industry is a highly volatile market that has experienced many
+ups and downs throughout its market history [47,48]. Therefore, to account for these
+perturbations, raw material costs, product costs, utility costs, and ﬁxed capital costs were
+varied by ±15% of their current prices. Figure 7 shows the overall sensitivity analysis
+of the above factors at a constant production rate and 10 years of operation. It shows
+that the process is highly dependent on the product prices, in which a 10% increase could
+make the process an extremely lucrative process with an ROI of 54.3%. However, a 15%
+decrease could make the process unproﬁtable with an ROI of 4.1%. The ﬂuctuation in the
+product prices gave maximum and minimum values of ROI in the sensitivity analysis,
+which represents the importance of reducing the MIBK losses throughout the process. On
+the other hand, raw material prices come in as a second large contributor to the process
+proﬁtability, in which a 15% increase in the raw material prices decreases the ROI to
+12.7%, whereas a 15% reduction in the raw material prices increases the ROI to 46%. This
+highlights how crucial it is to properly recover unreacted raw materials (e.g., acetone
+and hydrogen), in addition to the great inﬂuence that the higher selectivity can have on
+the process proﬁtability. The ﬁxed capital investment was found to be the third largest
+contributor, with an ROI of 23.5% if its cost increased by 15% and an ROI of 37.7% if
+its cost decreased by 15%. This also highlights that even though recovering more of the
+product and raw materials can increase the TCI, it has a lower negative inﬂuence on the
+process proﬁtability than losing them. In addition, it is worth noting that the utility cost,
+as expected, has an insigniﬁcant impact on the ROI as the current utility cost is $1.646
+million per year, representing only 2.95% of the total product cost, which is due to the
+low-pressure requirement in the process compared to the conventional process, which is
+directly associated with the electricity consumption.",0
+268,"Processes 2022, 10, 1992",0
+269,10 of 14,0
+270,Figure 7. Return on investment under various market variations of the economic factors.,0
+271,4.7. Effect of Reaction Temperature on the Process Proﬁtability,0
+272,"The temperature for reactor operation proposed by Al-Rabiah et al. [40,41] is in the
+range of (200–350) ◦C. The conducted sensitivity analysis has shown that it is appealing
+to increase the conversion and selectivity of the process. In the current study, the used
+temperature is 300 ◦C. When the reactor temperature is increased to 350 ◦C, the conver-
+sion and selectivity are increased from 66% and 69.4% to 77.3% and 72.2%, respectively.
+Consequently, less acetone is required, and more MIBK is produced. Nevertheless, this
+also increases the heating requirement needed for the feed stream as well as the reactor
+cooling system. In order to determine the optimum temperature in terms of proﬁtability,
+the process was simulated at 350 ◦C. All costs were determined in the same manner as
+previously done. Figure 8 shows that as the reactor temperature increases, the ﬁxed capital
+investment decreases, which is due to the lower volume of the distillation column T-101 that
+is needed to separate acetone from the process stream. In addition, the rest of the columns’
+size remained almost the same as the production rate was ﬁxed. In addition, the cost of the
+compressor decreased because the numbers of unreacted moles of acetone and hydrogen
+were lower. On the other hand, the heating utility that is required to maintain the reactor
+temperature was increased by about 10%. In addition, more heating utility was required
+for E-102 because the minimum temperature approach was increased from 10 ◦C to 30 ◦C
+to prevent a phase change prior to the compressor. It is worth noting that even though
+the inlet temperature to E-105 was increased from 164 ◦C to 180 ◦C, the heat duty was
+about 11% less due to the lower ﬂow rate entering the heat exchanger. The condenser and
+reboiler heat loads of T-101 were also lower due to the lower amount of unreacted acetone.
+An overall assessment of energy consumption is shown in Figure 8, which indicates that
+increasing the temperature from 300 ◦C to 350 ◦C reduces the overall energy consumption
+of the process. Furthermore, the ROI increased to 34.3%, and the payback period decreased
+to 2 years.",0
+273,"Processes 2022, 10, 1992",0
+274,11 of 14,0
+275,Figure 8. A comparison between the effect of the eactor temperature on the FCI and the utility cost.,0
+276,"In terms of proﬁtability, the return on investment for the process when operating at
+350 ◦C is 35.1%/y, which is 18% higher while the net present worth has upsurged by 12%.
+Figure 9 depicts the cash ﬂow diagram of both process conditions.",0
+277,Figure 9. The cumulative cash ﬂow diagram for both reactor temperatures.,0
+278,5. Conclusions,0
+279,"Methyl isobutyl ketone (MIBK) is a chemical intermediate and an important solvent.
+It is used in several important applications in the chemical market. There are several
+methods to produce MIBK, either by the three-step process or by the one-step liquid-
+phase reaction method, which is commercially preferred. However, these methods require
+very high pressure, which is expensive and energy consuming. In contrast, a promising
+nano-Pd/nano-ZnCr2O4 catalyst was developed to produce MIBK in a one-step gas-phase",0
+280,"Processes 2022, 10, 1992",0
+281,12 of 14,0
+282,"reaction under ambient pressure, overcoming the drawback of the conventional process. In
+this work, a novel process ﬂowsheet has been developed and simulated. The developed
+process was heat integrated by matching the process streams to deliver the surplus heat
+to the heat deﬁcit streams, resulting in a 12.6% reduction in the total energy demand. A
+comprehensive economic analysis of the developed process was conducted and has shown
+that the process is highly proﬁtable with a return on investment (ROI) of 29.6% and a
+payback period of 2.2 years. It is shown that when the process is operated at a temperature
+of 350 ◦C, the economics improved, and the ROI increased to 34.3%.",0
+283,6. Patents,0
+284,"US Patent No. 7,951,976, 31 May 2011, US Patent No. 8,101,805, 24 January 2012, EP",0
+285,"Patent No. 2,532,642 B1, 25 January 2017, EP Patent No. 2418017B1, 21 November 2018.",0
+286,"Author Contributions: Conceptualization, A.A.A.-R.; methodology, A.A.A.-R.; software, A.A.A.-R.
+and R.R.A.; validation, A.A.A.-R. and R.R.A.; formal analysis, A.A.A.-R. and R.R.A.; investiga-
+tion, A.A.A.-R. and R.R.A.; resources, A.A.A.-R. and A.A.B.; data curation, A.A.A.-R. and A.A.B.;
+writing—original draft preparation, A.A.A.-R.; writing—review and editing, A.A.A.-R. and R.R.A.;
+visualization, A.A.A.-R. and R.R.A.; supervision, A.A.A.-R.; project administration, A.A.A.-R. and
+A.A.B.; funding acquisition, A.A.A.-R. and A.A.B. All authors have read and agreed to the published
+version of the manuscript.",0
+287,Funding: This research received no external funding.,0
+288,Data Availability Statement: Not applicable.,0
+289,"Acknowledgments: This project was supported by King Saud University, Deanship of Scientiﬁc
+Research, College of Engineering Research Center.",0
+290,Conﬂicts of Interest: The authors declare no conﬂict of interest.,0
+291,Abbreviations,0
+292,"Abbreviation Deﬁnition
+MIBK
+CAGR
+DAA
+MO
+DIBK
+M
+IPA
+W
+FCI
+TCI
+ROI
+DCFRR",0
+293,"Methyl Isobutyl Ketone
+Compound Annual Growth Rate
+Diacetone alcohol
+Mesityl oxide
+Diiasobutyl ketone
+Mesitylene
+Isopropyl alcohol
+Water
+Fixed Capital Investment
+Total capital investment
+Return on investment
+Discounted Cash Flow Rate of Return",0
+294,"References
+1.",0
+295,"Kurbatova, M.V.; Cherentsova, M.I.; Raskulova, T.V.; Fereferov, M.Y.; Ryabtsov, A.Y. Low-temperature dewaxing of oils in the
+presence of an individual solvent. Vestn. ANSTU 2018, 12, 69–72.
+Smirnova, A.; Grigor’eva, L.; Ostroukhov, N. Extraction of water-soluble phenols from shale-chemical process water. Solid Fuel
+Chem. 2016, 50, 371–375. [CrossRef]
+Roy, C.B.; Awual, M.; Goto, M. Effect of inorganic salts on ternary equilibrium data of propionic acid-water-solvents systems. J.
+Appl. Sci. 2007, 7, 1053. [CrossRef]
+Zhiyong, Z.; Wei, Q.; Weiyang, F.; Yigui, L. A study on stoichiometry of complexes of tributyl phosphate and methyl isobutyl
+ketone with lithium in the presence of FeCl3. Chin. J. Chem. Eng. 2012, 20, 36–39.
+Xiang, W.; Liang, S.; Zhou, Z.; Qin, W.; Fei, W. Lithium recovery from salt lake brine by counter-current extraction using tributyl
+phosphate/FeCl3 in methyl isobutyl ketone. Hydrometallurgy 2017, 171, 27–32. [CrossRef]
+Verma, R.K. Single-Step MIBK Process; IHS Markit: London, UK, 2019.",0
+296,2,0
+297,3,0
+298,4,0
+299,5,0
+300,6,0
+301,"Processes 2022, 10, 1992",0
+302,13 of 14,0
+303,7,0
+304,8,0
+305,9,0
+306,"Grosse, Y.; Baan, R.; Secretan-Lauby, B.; El Ghissassi, F.; Bouvard, V.; Benbrahim-Tallaa, L.; Guha, N.; Islami, F.; Galichet, L.;
+Straif, K. Carcinogenicity of Chemicals in Industrial and Consumer Products, Food Contaminants and Flavourings, and Water Chlorination
+Byproducts; Elsevier: Amsterdam, The Netherlands, 2011.
+Expert Market Research. “Global Methyl Isobutyl Ketone Market Report and Forecast 2022–2027.” Methyl Isobutyl Ketone
+Market Report, Size, Share, Analysis 2022–2027, 2021. Available online: https://www.expertmarketresearch.com/reports/
+methyl-isobutyl-ketone-market (accessed on 23 August 2022).
+Intelligence Mordor. “Methyl Isobutyl Ketone (MIBK) Market Size, Share: 2022–2027: Industry Analysis.” Methyl Isobutyl Ketone
+(MIBK) Market Size, Share | 2022–2027 | Industry Analysis, 2021. Available online: https://www.mordorintelligence.com/
+industry-reports/methyl-isobutyl-ketone-market (accessed on 23 August 2022).",0
+307,"10. Rutala, A.W.; Weber, D.J. Guideline for Disinfection and Sterilization in Healthcare Facilities, 2008; CDC: Atlanta, GA, USA, 2008.
+11. Weissermel, K.; Arpe, H.-J. Industrial Organic Chemistry; John Wiley & Sons: Hoboken, NJ, USA, 2008.
+12. Winter, F.; van Dillen, A.J.; de Jong, K.P. Single-stage liquid-phase synthesis of methyl isobutyl ketone under mild conditions. J.",0
+308,"Mol. Catal. A Chem. 2004, 219, 273–281. [CrossRef]",0
+309,"13. Torres, G.; Apesteguia, C.R.; di Cosimo, J.I. One-step methyl isobutyl ketone (MIBK) synthesis from 2-propanol: Catalyst and",0
+310,"reaction condition optimization. Appl. Catal. A Gen. 2007, 317, 161–170. [CrossRef]",0
+311,"14. Lei, Z.; Li, J.; Li, C.; Chen, B. Improvement of separation process of synthesizing MIBK by the isopropanol one-step method.",0
+312,"Korean J. Chem. Eng. 2006, 23, 264–270. [CrossRef]",0
+313,"15. Cosimo, J.; Torres, G.; Apesteguıa, C. One-step MIBK synthesis: A new process from 2-propanol. J. Catal. 2002, 208, 114–123.",0
+314,[CrossRef],0
+315,"16. Mattos, V.L.; Noronha, F.B.; Monteiro, J.L.F. Bifunctional metal/base catalysts (Pt/X) for the direct synthesis of MIBK from",0
+316,"acetone. J. Catal. 2002, 209, 166–176. [CrossRef]",0
+317,"17. Mayevskiy, M.; Frolkova, A.; Frolkova, A. Separation and puriﬁcation of methyl isobutyl ketone from acetone + isopropanol
++ water + methyl isobutyl ketone + methyl isobutyl carbinol + diisobutyl ketone mixture. ACS Omega 2020, 5, 25365–25370.
+[CrossRef] [PubMed]",0
+318,"18. Bagabas, A.A.; Mokhtar, M.; Akhmedov, V.; Narasimharao, K.; Basahel, S.N.; Al-Rabiah, A. Ru–C–ZnO Composite Catalysts for
+the Synthesis of Methyl Isobutyl Ketone via Single Step Gas Phase Acetone Self-Condensation. Catal. Lett. 2014, 144, 1278–1288.
+[CrossRef]",0
+319,"19. Gamman, J.J.; Jackson, S.D.; Wigzell, F.A. Synthesis of methyl isobutyl ketone over Pd/MgO/SiO2. Ind. Eng. Chem. Res. 2010, 49,",0
+320,8439–8443. [CrossRef],0
+321,"20. Bagabas, A.A.; Akhmedov, V.M.; Al-Rabiah, A.; Mostafa, M.M.M. Synthesizing and Utilizing Novel Nano Crystalline Zinc",0
+322,"Chromate Supported Nano Palladium Catalyst. U.S. Patent US 7,951,976, 31 May 2011.",0
+323,"21. Kelkar, V.V.; Vaibhav, V.; Lionel, K.; O’Young, C.; Wibowo, M.; Kelkar, H.; Chung, C. Two-Step System and Method for the",0
+324,22,0
+325,"Production of Methyl Isobutyl Ketone. U.S. Patent US 9120734B2, September 2015.
+Shylesh, S.; Hanna, D.; Gomes, J.; Canlas, C.G.; Head-Gordon, M.; Bell, A.T. The Role of Hydroxyl Group Acidity on the Activity
+of Silica-Supported Secondary Amines for the Self-Condensation of n-Butanal. ChemSusChem 2015, 8, 466–472. [CrossRef]
+[PubMed]",0
+326,"23. Talwalkar, S.; Mahajani, S. Synthesis of methyl isobutyl ketone from acetone over metal-doped ion exchange resin catalyst. Appl.",0
+327,"Catal. A Gen. 2006, 302, 140–148. [CrossRef]",0
+328,"24. Nicol, W.; du Toit, E.L. One-step methyl isobutyl ketone synthesis from acetone and hydrogen using Amberlyst®CH28. Chem.",0
+329,"Eng. Process. Process Intensif. 2004, 43, 1539–1545. [CrossRef]",0
+330,"25. Zhang, S.; Wu, P.; Yang, L.; Zhou, Y.; Zhong, H. An efﬁcient bifunctional catalyst of TiO2 coating and supported Pd on cordierite",0
+331,"for one-pot synthesis of MIBK from acetone. Catal. Commun. 2015, 71, 61–64. [CrossRef]",0
+332,"26. Rao, P.V.R.; Kumar, V.P.; Rao, G.S.; Chary, K.V. Vapor phase selective hydrogenation of acetone to methyl isobutyl ketone (MIBK)",0
+333,"over Ni/CeO2 catalysts. Catal. Sci. Technol. 2012, 2, 1665–1673. [CrossRef]",0
+334,"27. Nikolopoulos, A.; Jang, B.-L.; Spivey, J. Acetone condensation and selective hydrogenation to MIBK on Pd and Pt hydrotalcite-",0
+335,"derived MgAl mixed oxide catalysts. Appl. Catal. A Gen. 2005, 296, 128–136. [CrossRef]",0
+336,"28. Chen, Y.; Hwang, C.; Liaw, C. One-step synthesis of methyl isobutyl ketone from acetone with calcined Mg/Al hydrotalcite-",0
+337,"supported palladium or nickel catalysts. Appl. Catal. A Gen. 1998, 169, 207–214. [CrossRef]",0
+338,"29. Ho, C.R.; Zheng, S.; Shylesh, S.; Bell, A.T. The mechanism and kinetics of methyl isobutyl ketone synthesis from acetone over",0
+339,30,0
+340,"ion-exchanged hydroxyapatite. J. Catal. 2018, 365, 174–183. [CrossRef]
+Schmitt, K.; Disteldorf, J.; Flakus, W.; Hubel, W. Process for preparing methyl isobutyl ketone and catalyst. U.S. Patent US
+3,953,517, April 1976.",0
+341,"31. Rase, H.F. Handbook of Commercial Catalysts: Heterogeneous Catalysts; CRC Press: Boca Raton, FL, USA, 2000.
+32. Kozhevnikova, F.E.; Kozhevnikov, I.V. One-step synthesis of methyl isobutyl ketone from acetone catalysed by Pd supported on",0
+342,"ZnII–CrIII mixed oxide. J. Catal. 2006, 238, 286–292. [CrossRef]",0
+343,"33. Guisnet, M. Heterogeneous catalysis and ﬁne chemicals. In International Symposium on Heterogeneous Catalysis and Fine Chemicals",0
+344,"(1988: Poitiers, France); Distributors for the US and Canada; Elsevier Science Pub. Co.: Amsterdam, The Netherlands, 1988.",0
+345,"34. Zhu, Q.; Duan, H.; Lin, B.; Zhu, Y.; Hu, Y.; Zhou, Y. Higher Acetone Conversion Obtained Over a TiO2–Pd Bifunctional Catalyst
+for Liquid-Phase Synthesis of Methyl Isobutyl Ketone: The Role of Al2O3 Support. Catal. Lett. 2019, 149, 2636–2644. [CrossRef]",0
+346,"Processes 2022, 10, 1992",0
+347,14 of 14,0
+348,"35. Lin, B.; Xu, F.; Hu, Y.; Du, X.; Zou, Y.; Xie, H.; Wang, K.; Zhou, Y. An efﬁcient multifunctional catalyst for one-pot synthesis of
+methyl isobutyl ketone: Phosphor-doped h-BN with adjustable acid-base property as support. Catal. Commun. 2021, 150, 106276.
+[CrossRef]",0
+349,"36. Duan, H.; Wang, Z.; Cui, L.; Lin, B.; Zhou, Y. Stability Investigation of a Supported TiO2–Pd Bifunctional Catalyst over the
+One-Pot Liquid-Phase Synthesis of Methyl Isobutyl Ketone from Acetone and H2. Ind. Eng. Chem. Res. 2018, 57, 12358–12366.
+[CrossRef]",0
+350,"37. Zhu, Q.; Dai, H. Exposure Assessment of Emerging Chemicals and Novel Screening Strategies. In Emerging Chemicals and Human",0
+351,"Health; Springer: Berlin, Germany, 2019; pp. 9–26.",0
+352,"38. Zhu, Y.; Lin, B.; Hu, Y.; Cai, Z.; Xie, H.; Wang, K.; Zhou, Y. Enhanced stability of Pd/SPS catalyst over the one-pot liquid-phase",0
+353,"synthesis of methyl isobutyl ketone by adding GO. Mol. Catal. 2019, 478, 110609. [CrossRef]",0
+354,"39. Liu, M.; Liu, G.; Zhou, Y.; Han, K.; Ye, H. Sulfonated graphene oxide supported Pd bifunctional catalyst for one-pot synthesis of",0
+355,"methyl isobutyl ketone from acetone with high conversion and selectivity. J. Mol. Catal. A Chem. 2015, 408, 85–90. [CrossRef]",0
+356,"40. Al-Rabiah, A.A.; Bagabas, A.A.; Malik, A.V. Low Pressure One-Step Gas-Phase Process for Production of Methyl Isobutyl Ketone.",0
+357,"U.S. Patent US 8,101,805, 24 January 2012.",0
+358,"41. Al-Rabiah, A.A.; Bagabas, A.A.; Akhmedov, V.M. Low Pressure One-Step Gas-Phase Process for Production of Methyl Isobutyl",0
+359,"Ketone. E.P. Patent E.P. 2,532,642 B1, 25 January 2017.",0
+360,"42. Peters, M.; Timmerhaus, K.; West, R. Plant Design and Economics for Chemical Engineers, 5th ed.; McGraw Hill: New York, NY, USA,",0
+361,2016,0
+362,"43. Alexandre, C.D. Chapter 19—Economic Evaluation of Projects. In Computer Aided Chemical Engineering; Elsevier: Amsterdam, The",0
+363,"Netherlands, 2014; Volume 35, pp. 717–755.",0
+364,"44. Thomas, M. Chemical Engineering Plant Cost Index. In Chemical Engineering; The U.S. Department of Labor’s Bureau of Labor",0
+365,"Statistics: Washington, DC, USA, 2022.",0
+366,"45. Chemanalyst. Chemical Price Analysis, Chemical Latest Prices | ChemAnalyst. 2022. Available online: https://www.",0
+367,chemanalyst.com/Pricing/Pricingoverview (accessed on 23 August 2022).,0
+368,"46. Turton, R.; Bailie, R.C.; Whiting, W.B.; Shaeiwitz, J.A. Analysis, Synthesis, and Design of Chemical Processes, 5th ed.; Prentice Hall:",0
+369,"Hoboken, NJ, USA, 2018.",0
+370,"47. Hong, S.C.; Musso, T.J. Simons Oil-Price Shocks and the Chemical Industry: Preparing for a Volatile Environment; McKinsey and",0
+371,"Company: Atlanta, GA, USA, 2015.",0
+372,"48. Knight, P. Oil and Gas Market Volatile, Petrochemical Market May Follow Suit If Invasion Prolongs; University of California Press:",0
+373,"Berkley, CA, USA, 2022.",0

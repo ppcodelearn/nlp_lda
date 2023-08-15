@@ -1,0 +1,1416 @@
+,0
+0,"Review
+The Production of Isophorone
+Timm Ruther 1, Marc-André Müller 2, Werner Bonrath 2 and Matthias Eisenacher 1,*"
+1,"1 Circular Transformation Lab Cologne, TH Köln-University of Applied Sciences, 50678 Köln, Germany
+2 DSM Nutritional Products, 4303 Kaiseraugst, Switzerland
+* Correspondence: matthias.eisenacher@th-koeln.de"
+2,"Abstract: Isophorone is a technically important compound used as a high-boiling-point solvent
+for coatings, adhesives, etc., and it is used as a starting material for various valuable compounds,
+including isophorone diisocyanate, a precursor for polyurethanes. For over 80 years, isophorone
+has been synthesized via base-catalyzed self-condensation of acetone. This reaction has a complex
+reaction mechanism with numerous possible reaction steps including the formation of isophorone,
+triacetone dialcohol, and ketonic resins. This review provides an overview of the different production
+processes of isophorone in liquid- and vapor-phase and reviews the literature-reported selectivity
+toward isophorone achieved using different reaction parameters and catalysts."
+3,Keywords: catalysis; self-condensation; acetone; isophorone; base-catalyzed
+4,1. Introduction
+5,"In celebration of the 60th anniversary of the isophorone (IP) production at the Hilbernia
+AG production site in Herne (Germany), which today belongs to the Evonik AG [1,2], this
+review provides a detailed overview of the current state of science of the product IP, its
+applications, its production methods, and reviews the catalytic research for its synthesis.
+The technical importance of IP is justiﬁed by its use as a solvent and starting material
+for several chemical processes, and due to its possibility to be synthesized from acetone
+(Ace) [3–6]. Ace is the coproduct of the phenol production, the cumene process, with a
+global Ace production output of 7.8 Mio. tons in 2020 [7]. Although processes for the
+synthesis of IP from Ace were known before 1960, the major production of IP began in
+1962 in West Germany [1,2,8]. Today, there are mainly two production methods for IP,
+a liquid- and a vapor-phase process. The estimated annual production volume exceeds
+100,000 t/y [6] and the market is expected to further grow in the future [6,9,10]."
+6,2. Properties and Natural Occurrence
+7,"IP or α-isophorone, is an α,β-unsaturated carbonyl compound and a colorless-to-
+yellowish liquid [8,11–14] with a mint-like or camphor-like odor [13,14]. α-IP has two
+constitutional isomers (Table 1), β-isophorone and γ-isophorone [15]. Both are formed
+through the isomerization of α-IP [15–17]. Murphy et al. described that both the β- and γ-IP
+can be formed through the base-catalyzed isomerization of α-IP [15]. While the β-isomer
+is a common by-product of the isophorone synthesis [18], the γ-isomer is rarely reported
+in literature. This is supposedly due to the thermodynamical stability of the different
+isomers. Murphy et al. calculated that α-IP is the most stable and γ-IP the least stable of
+the three isomers [15]. Other options of the isomerization of α-IP are the acid-catalyzed
+isomerization to β-IP and the photocatalyzed isomerization to γ-IP [15–17]."
+8,"Citation: Ruther, T.; Müller, M.-A.;
+Bonrath, W.; Eisenacher, M. The
+Production of Isophorone.
+Encyclopedia 2023, 3, 224–244.
+https://doi.org/10.3390/
+encyclopedia3010015"
+9,"Academic Editors: George Z. Kyzas
+and Raffaele Barretta"
+10,"Received: 5 December 2022
+Revised: 13 February 2023
+Accepted: 16 February 2023
+Published: 22 February 2023"
+11,"Copyright: © 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/)."
+12,"Encyclopedia 2023, 3, 224–244. https://doi.org/10.3390/encyclopedia3010015"
+13,https://www.mdpi.com/journal/encyclopedia
+14,"Encyclopedia 2023, 3"
+15,225
+16,"Table 1. Physical properties of isophorone isomers [12,17,19,20]."
+17,Name
+18,α-Isophorone
+19,β-Isophorone
+20,γ-Isophorone
+21,structure
+22,"CAS-number
+Molar mass
+Density (20 ◦C)
+Melting point
+Boiling point"
+23,78-59-1
+24,"138.21 g/mol
+0.92 g/cm3
+−8.1 ◦C
+215 ◦C"
+25,471-01-2
+26,"138.21 g/mol
+0.91 g/cm3
+−40.7 ◦C"
+27,Decomposition
+28,"72212-29-4
+138.21 g/mol"
+29,"n/a
+n/a
+n/a"
+30,"IP occurs naturally in a variety of different plants and animals [13,14,21]. Plants con-
+taining IP are, e.g., saffron crocus (Crocus sativus) [13,22,23], Mary’s grass (Hierochloe odor-
+ata) [13], cranberry (Vaccinium macrocarpon) [13,14,24], and papaya (Carica papaya) [13,14].
+Isophorone is formed, for example, as a pheromone, by different types of beetles, including
+the male specimens of Homalinotus depressus [25] and female specimens of Ips typogra-
+phus [26,27], or as part of the defensive secretion of a grasshopper species [27]. Other
+isophorone sources are ﬂy coal ash [28], Burley tobacco [13], black tea, Parmesan cheese,
+roast beef [13,14], and honey [29,30]."
+31,3. Applications and Synthesis
+32,"IP is mainly used as a high-boiling-point (Table 1) solvent [2,8,12–14,18,19] and as a
+starting material for the synthesis of different bulk and ﬁne chemicals [3,8]. As solvent, it
+is used for solving polymers, oils, coatings, lacquer thinners, lacquers, adhesives, printer
+inks, paints, pesticides, etc. [2,12,18,31,32]. The few compounds that cannot be dissolved
+by isophorone include polyamides, polyurethanes, polyethylene, and polypropylene [8].
+Additionally, IP is a starting material for the manufacturing of various important
+compounds, with examples shown in Figure 1 [3,8]. For example, ketoisophorone (P2) can
+be synthesized directly from IP but is often synthesized through the intermediate β-IP
+(P1) via oxidation [33–41]. Ketoisophorone (P2) is used to synthesize carotenoids [33,35],
+vitamin E [42,43], and ﬂavoring agents [44–46] and is used as a fragrance additive [47].
+Another product made from isophorone is 3,5-xylenol (P3), produced via catalytic iso-
+merization [5,48–54]. 3,5-Xylenol is a starting material for various products, such as the
+disinfectants 4-chloroxylenol (P4) and 2,4-dichloroxylenol [8,50,54–56], resins [50], the in-
+secticide Methiocarb [54], vitamin E [54], and dl-α-tocopherol acetate [8]. Through partial
+hydrogenation of isophorone, 3,3,5-trimethyl-1-cyclohexanon (P5) is produced [3,8,57–61],
+which can be used as a solvent [8] and for the synthesis of peroxide polymerization ini-
+tiators [8,62]. 3,3,5-trimethyl-1-cyclohexanone (P5) can be oxidized by nitric acid to 2,4,4-
+and 2,2,4-trimethyladipic acid (P6), though the ratio depends heavily on the reaction con-
+ditions [63]. 2,2,4-Trimethyladipic acid (P6) is used to produce 2,2,4-trimethylhexane-1,6-
+diamine (P7) [3,64] and 2,2,4-trimethylhexane-1,6-diol (P8) [3]. 2,2,4-trimethylhexane-1,6-
+diamine (P7) can be used to synthesize polyamides [64] and 2,2,4-trimethylhexane-1,6-diol
+(P8) is used for polyester synthesis [3]. 3,3,5-Trimethyl-1-cyclohexanol (P9) is produced
+through the complete hydrogenation of isophorone [3,8]. 3,3,5-Trimethyl-1-cyclohexanol
+(P9) is used as a fragrance [8], as a fuel [65], and to produce vasodilator drugs [66–68], the
+combat agent EA 1511 (P10) [69,70] and the UV ﬁlter homosalate (P11) [71,72]. The most
+important products synthesized from isophorone are isophorone diamine (IPDA) (P12)
+and isophorone diisocyanate (IPDI) (P13) with a market value of over USD 600 million for
+IPDA in 2017 and a market value of over USD 700 million for IPDI in 2021 [8,73,74]. IP is"
+33,"Encyclopedia 2023, 3"
+34,226
+35,"thereby converted in a three-reaction process to IPDA [3,8,75–80]. IPDA (P12) can either be
+used as a monomer for the polyamide synthesis [81] or phosgenated to yield IPDI (P13) as
+the product [64,76,82]. IPDI is used for the production of light-stable polyurethanes [8,64]."
+36,"Figure 1. Products derived from IP [3,5,8,35,42,45,54,63,64,69,71,76]."
+37,"Aside from these products, there are other possible applications of IP [3,32,64]: new
+studies, for example, report the possible use of IP as a platform chemical to produce
+renewable products [83], e.g., bio-based cycloalkanes as ingredients for sustainable jet
+fuels [84–91], often synthesized through the dimerization of IP [92]."
+38,"IP is commercially obtained exclusively via self- condensation of acetone [8,64]. The
+starting material acetone is mainly produced via the cumene process, the world’s most
+used process to synthesize phenol and acetone [7,93–96]. To alternatively produce re-
+newable products from isophorone, bio-based acetone is used for the manufacturing of"
+39,"Encyclopedia 2023, 3"
+40,227
+41,"isophorone [1]. The production of bio-based acetone is carried out through fermentation,
+e.g., the acetone-butanol-ethanol (ABE) fermentation [97–100]."
+42,"While the self-condensation of acetone has been known for nearly 200 years and was
+ﬁrst described in 1838 by Kane [101,102], the characterization of the emerging phorones,
+the non-cyclic trimers of acetone, and isophorone lasted until the end of the 19th cen-
+tury [102–105]. In 1872, for example, Kachler published the physical properties of phorones
+produced in different experiments [104]. The composition of the product mixture of acetone
+condensation depends primarily on the type of the catalyst used (basic or acidic) [5]. Kane
+used sulfuric acid (H2SO4) as an acidic catalyst to obtain a product mixture rich in mesityl
+oxide (MO) and mesitylene [101]. With the use of alkaline catalysts, such as potassium
+or sodium hydroxide, product mixtures of primarily diacetone alcohol, mesityl oxide,
+phorones, isophorone, and isoxylitols are formed [5,102,106–108]."
+43,"The acetone condensation has a complex reaction mechanism with multiple possible
+reaction products, including mesityl oxide, phorone, mesitylene, isoxylitones, and ketonic
+resins [5,99,109–112]. In 1989, Salvapati et al. described the three-step reaction mechanism
+of acetone to isophorone shown in Figure 2 as the most likely reaction mechanism for
+the formation of isophorone [5]. Canning et al. proposed the same reaction mechanism
+in 2005 based on the results of experiments with deuterated acetone [113]. In addition,
+kinetic studies of the reaction were performed by Mei et al. [109] and others [114–122].
+Mei et al. identiﬁed the formation of mesityl oxide from acetone as the rate-determining
+step [109], Darda et al. established the formation of diacetone alcohol from acetone [118].
+In addition, Mei et al. and others found that the selectivity toward isophorone is higher
+than the selectivity towards higher condensation products at high temperatures [109,123]."
+44,"Figure 2. Reaction scheme for the synthesis of isophorone from acetone [5,113]."
+45,"The three reaction steps are: 1. Aldol condensation of two molecules of acetone to mesityl
+oxide [5,113]; 2. Michael addition of mesityl oxide and acetone to 4,4-dimethylheptane-2,6-
+dione [5,113]; and 3. Intramolecular aldol condensation of 4,4-dimethylheptane-2,6-dione
+to isophorone [5,113]."
+46,Reaction Mechanism
+47,"Based on the published literature, the reaction network shown in Figure 3 is proposed,
+excluding the formation of higher condensation products such as polymers [110,124,125]
+or oligomers of acetone and isophorone [4,111,126–131]. The reaction starts with ace-
+tone (1), which forms diacetone alcohol (4) through aldol reaction [5,99,132,133]. From
+diacetone alcohol (4), mesityl oxide (3) and iso-mesityl oxide (2) are formed via dehy-
+dration [5,99,134–136]. The aldol reaction of diacetone alcohol (4) and acetone yields
+triacetone dialcohol (9) [5,99,132,137]. Triacetone dialcohol (9) mostly reverts to acetone
+(1) but can also form semiphorone (8) or 2,2,6,6-tetramethylpyron-4-one (14) through dehy-
+dration [137–139]. Mesityl oxide (3) and iso-mesityl oxide (2), the unconjugated isomer of
+mesityl oxide, are in equilibrium, in favor of the thermodynamically more stable mesityl
+oxide (3) [8,99,140]. Further reactions from acetone and mesityl oxide (3) lead to four
+products: 4,6-dimethylheptane-3,5-diene-2-one (5) [5,134,135], 4,4-dimethylheptane-2,6-
+dione (6) [5,134,135], phorone (7) [5,134,135] and semiphorone (8) [99,141]. The ﬁrst three
+products (5-7) are assumed to be able to react further to isophorone [5,135]; however,
+mainly 4,4-dimethylheptane-2,6-dione (6) is expected to be the intermediate to isophorone
+because it rapidly converts to isophorone (11) via 1,6-aldol condensation [5,113,142]. 4,6-"
+48,"Encyclopedia 2023, 3"
+49,228
+50,"Dimethylheptane-3,5-diene-2-one (5) forms isophorone (11) via an internal Michael re-
+action [5] and mesitylene (10) through 1,6-aldol condensation [5]. Phorone (7) reacts to
+isophorone (11) via 1,6 internal Michael cyclization [5] and semiphorone (8) through hydra-
+tion [51,141]. Semiphorone (8) can cyclize to 2,2,6,6-tetramethylpyron-4-one (14) [5,51] and
+dehydrates to phorone (7) [51,99,139]. Isophorone (11) can rearrange to the constitutional
+isomer β-isophorone (12), and both are in equilibrium with about 97% α- (11) and 3%
+β-isophorone (12) [12,18,143]. α-Isophorone can react to mesitylene (10), and to 3,5-xylenol
+through the loss of methane [5,144]. The isoxylitones (e.g., 15–19) are obtained through
+the reaction of isophorone (11) with acetone [5,51,107,109]. The isoxylitone 5,5-dimethyl-
+3-(2-methylprop-1-en-1-yl)cyclohex-2-en-1-one (15), for example, can also be formed via
+the self-condensation of mesityl oxide (3) [107,145]. 5,5-Dimethyl-3-(2-methylprop-1-en-
+1-yl)cyclohex-2-en-1-one (15) can further react with acetone to (E)-3-(2,4-dimethylpenta-
+1,3-dien-1-yl)-5,5-dimethylcyclohex-2-en-1-one (20), which is also formed through the
+condensation of mesityl oxide (3) with isophorone (11) [109,143]. (E)-3-(2,4-dimethylpenta-
+1,3-dien-1-yl)-5,5-dimethylcyclohex-2-en-1-one cyclizes to 3,3,6,8,8-pentamethyl-3,4,7,8-
+tetrahydronaphthalen-1(2H)-one (21), which forms the insecticide 3,3,6,8-tetramethyl-3,4-
+dihydronaphthalen-1(2H)-one (22) through the loss of methane [109,128,146,147]."
+51,"Figure 3. Reaction network of the self-condensation of acetone [4,5,99,107,109,113,123,134–139,141,143,144]."
+52,"Encyclopedia 2023, 3"
+53,229
+54,4. Industrial Manufacturing of Isophorone
+55,"Today, isophorone is produced via liquid or vapor-phase base-catalyzed self-condensation
+of acetone [8,64,106,111,126,127,131,148,149]. The liquid-phase process has been known at
+least since 1941, with aqueous KOH or NaOH being used as catalysts [150]. However, the
+selectivity to isophorone is often less than 70% [8] because acetone and isophorone react
+to higher condensation products [5,8,107,110,124,128,151]. The vapor-phase condensation
+over heterogeneous solid base catalysts has been studied for over 80 years [152] and is
+considered to be the greener process [109], since the selectivity toward isophorone can be
+higher than the selectivity in the liquid-phase process and since no alkaline wastewater is
+produced [8,109], although the energy efﬁciency of the vapor phase process is lower [8]. To
+prevent the deactivation of the catalyst through coke formation, the acetone conversion is
+limited to a low level [109,153]. In the early years, calcium carbide (CaC2) was used as a
+catalyst, while mainly metal oxides are used today to catalyze the reaction [5,106,152]."
+56,"Whereas the total production output of isophorone was 15,000 to 20,000 t/y in the
+mid-1960s, it had more than doubled in the year 2000 with approx. 50,000 t/y [64], and had
+doubled again to 100,000 t/y in 2005 [6]. In 2016, the production volume in the United States
+amounted to 23,000 t/y [149]. The current isophorone market value is estimated to be worth
+USD 1.25 billion in 2022 with a compound annual growth rate of about 5% [9,10]. Some of
+the leading producers of isophorone and isophorone-related products such as IPDA and
+IPDI are Arkema SA, BASF SE, Covestro AG, and Evonik Industries AG [6,9,10,154–160]."
+57,4.1. Liquid-Phase Process
+58,"The liquid-phase condensation, known as the Scholven process [128], is primarily
+catalyzed using homogenous alkaline catalysts, mainly aqueous sodium hydroxide or
+potassium hydroxide solutions [5,106]. For the liquid-phase condensation, the typical reac-
+tion temperature is between 205 and 250 ◦C [8,161] and the pressure is approx. 3.5 MPa [8].
+A process scheme for the liquid-phase condensation of acetone to isophorone is depicted in
+Figure 4."
+59,"Figure 4. Process scheme of the liquid-phase production of isophorone [3,4,8,162]."
+60,"The pressure column (A) with head conditions of approx. 205 ◦C and approx. 3.5 MPa
+is fed with a mixture of acetone and an aqueous alkaline solution [8,106]. The condensation
+of acetone takes place in the upper trays of the column [8]. Unreacted acetone and water"
+61,"Encyclopedia 2023, 3"
+62,230
+63,"are distilled overhead as an azeotropic mixture, which is afterwards recycled to the col-
+umn [8]. High-boiling-point compounds move down the column, where, in the lower part
+of the column, by-products are cleaved into isophorone and acetone via alkali-promoted
+hydrolysis [8]. The mixture leaving the column is separated (B) into an organic and an
+aqueous layer and the latter is recycled into the column [8]. The isophorone-rich organic
+phase is subsequently removed from impurities by means of distillation in two columns (C,
+D), leaving pure isophorone (approx. 99%) as the desired product [8]. The pre-column (C)
+operates at the same pressure as the reactor (A), while the main column (D) is operated at a
+reduced pressure [163]."
+64,"To increase the isophorone yield, high-boiling side products (e.g., isoxylitones) can be
+hydrolyzed in a regeneration process to form acetone and isophorone [118,163–169]. Cook
+reported that by lowering the acetone feed rate, a higher yield can also be achieved [170].
+The product quality of the isophorone can be increased by removing and purifying
+color-forming substances from the pressure reaction column (A) [8,163,168]. The discol-
+oration is also carried out to increase the maximum storage time and can be achieved
+through various possible treatments [8] using phosphoric acid [171], an aromatic sulfonic
+acid such as p-toluenesulfonic acid [171,172], acid type fuller’s earth [173], diazines [174],
+diisopropylamine [175], mono- and polyhydroxybenzene derivatives [176], a strong caustic
+aqueous solution [177] or an acidic ion-exchange resin [178]."
+65,4.2. Vapor-Phase Process
+66,"For the vapor-phase condensation, heterogeneous catalysts such as mixed metal oxide
+catalysts are used [179–185], e.g., lanthanum aluminum magnesium oxide [186,187] or cal-
+cium aluminum magnesium oxide [185,187]. Typical reaction conditions are a temperature
+of 250–350 ◦C and atmospheric pressure [5,8]. To prevent catalyst deactivation through
+coke formation, the vapor-phase reaction is operated with a low conversion rate of acetone,
+usually between 10 and 35% [8,148]. A process scheme for the vapor-phase condensation
+of acetone to isophorone is depicted in Figure 5."
+67,Figure 5. Process scheme of the vapor-phase production of isophorone [188].
+68,"Encyclopedia 2023, 3"
+69,231
+70,"Acetone is gasiﬁed and fed into a ﬁxed bed reactor (E), where condensation takes
+place [188]. The gaseous product mixture is afterward cooled and liqueﬁed [188]. The
+product mixture is pumped into a column (F), where unreacted acetone is separated from
+the other components [188]. The unreacted acetone is mixed with the fresh acetone, gasiﬁed,
+and fed back into the reactor (E) [188]. The product mixture leaving the ﬂoor outlet of
+column (F) is fed into another column (G) [188]."
+71,"The purpose of columns G and H is identical to the purpose of columns C and D of
+the liquid-phase process [8,188]. In addition, the light and heavy components can partially
+be used for isophorone production, as in the liquid-phase process [148]."
+72,5. Catalysts
+73,"For the self- condensation of acetone to isophorone, basic catalysts are primarily
+used [106,148]. The acid-catalyzed condensation, with sulfuric acid or acidic zeolites,
+yields mesitylene as the main product [189–194]. As basic catalysts, either homogeneous
+or heterogeneous ones can be used [5,106,195]. In liquid-phase condensation, primar-
+ily homogeneous catalysts, such as the aqueous NaOH and KOH solutions, catalyze
+the reaction [8,64,148]. In the vapor-phase reaction, solid heterogeneous catalysts are
+used [8,64,148,196]. The uncatalyzed synthesis of isophorone is possible through electro-
+chemical conversion [197]."
+74,5.1. Catalysts for the Liquid-Phase Condensation
+75,"Many different catalysts such as sodium ethoxide and sodium amide were used as cata-
+lysts in the early days, though the alkali hydroxides NaOH and KOH have been the primar-
+ily used catalysts in industrial isophorone production since the 1940s [102,106,112,150,198].
+In the early years, the concentrations of used alkali hydroxide solutions were relatively high,
+at 20 to 30 wt%, and the reaction temperature was relatively low compared to later data with
+150–170 ◦C [5,106,150,198]. Ballard et al., for example, tested concentrations of 20 to 25 wt%
+of NaOH solution and about 30 wt% of KOH solution at 150 to 170◦C, respectively [150,198].
+They obtained a yield of up to 7% and a selectivity of up to 40% [150,198]."
+76,"With higher alkali concentrations, the reaction is faster, but many by-products are
+formed, which is why the selectivity to isophorone is lower [5,106]. In more recent studies,
+therefore, the focus has been on lower alkali concentrations and higher reaction temper-
+atures [114,161,199]. Walton and Yeomans reported a selectivity of 86% for a 0.75 wt%
+aqueous KOH solution at 205◦C reaction temperature [199]. Mao et al. studied the impact
+of different KOH concentrations (0.3–1.0 wt%), temperatures (150–250 ◦C), and reaction
+times (1–8 h) on the acetone conversion and isophorone selectivity and achieved the best
+result with a KOH concentration of 0.7 wt%, a reaction time of 4 h, and a temperature of
+250 ◦C [161]. The conversion of acetone was 68% and the selectivity towards isophorone
+was 93% [161]. Mao et al. also tested NaOH under the same conditions [161]. While the
+conversion of acetone was the same (68%), the selectivity was 84%, 9% lower than for
+KOH [161]. Li et al. studied the impact of changing reaction conditions (catalyst dosage,
+temperature and pressure) for a NaOH solution used as the catalyst [114]. The best result
+was achieved with a reaction time of 4 h, a temperature of 220 ◦C, and a NaOH concen-
+tration of approx. 4 wt% [114]. The selectivity for isophorone was 81% and the yield was
+53% [114]. In a continuous process with a work-up of the by-products, Chen et al. achieved
+a selectivity and a yield of >90% with both KOH and NaOH solutions [200]. The reactions
+were carried out under supercritical conditions at 320 ◦C and 20 MPa with 10 wt% aqueous
+alkali solution as catalyst [200]. The highest reported selectivity is 93% for the NaOH
+catalyzed reaction and 92% for the reaction catalyzed using the KOH solution [200]."
+77,"He et al. used microreactor technology to optimize the synthesis of isophorone [201].
+They carried out an experiment with a KOH concentration of 1.8 wt% at a temperature of
+280 ◦C and achieved an isophorone selectivity of approx. 90% [201]. A reaction time of a
+few minutes as described by Chen et al. requires harsh reaction conditions of 280–320 ◦C
+and 8–20 MPa [200]. Typical reaction conditions are milder using approx. 3.5 MPa and"
+78,"Encyclopedia 2023, 3"
+79,232
+80,"250 ◦C or even lower pressure and reaction temperature, which causes a higher reaction
+time between 0.5 and 4 h [8,106]."
+81,"As another class of homogeneous catalysts, organic quaternary ammonium hydroxides
+based on imidazole (a), pyridine (b), and methenamine (c) (Figure 6) are used [202–204].
+Zhou et al. tested eight of these catalysts at a temperature ranging from 150 to 180 ◦C with
+a reaction time from 5 to 8 h [202–204]. The achieved selectivity for isophorone ranged from
+63 to 71%, and the conversion from 55% to 68% [202–204]. The most efﬁcient of the tested
+catalysts was 1,3-di-n-butylimidazole hydroxide [202–204] at a reaction temperature of
+160◦C and a reaction time of 7 h [202]. The reported selectivity was 71% and the conversion
+was 62% [202]. The advantage of these catalysts is a lower reaction temperature compared
+to NaOH or KOH; however, a reaction time of 5 h and more is signiﬁcantly higher [202–204]."
+82,"Figure 6. Organic bases used as catalysts:
+derivates [202–204]."
+83,"(a) imidazole, (b) pyridine, and (c) methenamine"
+84,"Although heterogeneous catalysts are primarily used for the vapor-phase reaction,
+some of these catalysts were also tested in the liquid-phase [205–208]. In the last ten years,
+there has been continued interest in the use of calcium carbide (CaC2) as the catalyst in
+the liquid-phase condensation because it is inexpensive and acetylene is formed as a co-
+product [144,205,209,210]. Calcium carbide is a Lewis base catalyst [205], which was used
+as a catalyst for the vapor-phase condensation in the 1930s [152]. Li et al. obtained an
+isophorone yield of 21% and a conversion of 81% at 150 ◦C with CaC2 [205]."
+85,CaC2 + 2 H2O → Ca(OH)2 + C2H2
+86,"Other heterogeneous catalysts used are metal oxides [206–208]. In the ﬁrst step of a
+two-step process for the synthesis of isophorone, a basic anion exchange resin is used as the
+catalyst [206]. In the second step, a potassium hydroxide- and magnesium nitrate-doped
+aluminium oxide catalyst is used at 210 ◦C [206]. The reaction time is approx. 8 h, the
+achieved selectivity is up to 89%, and the reported yield is up to 71% [206]. Teissier and
+Kervennal used a magnesium–aluminium mixed metal oxide as the catalyst [208]. With a
+reaction time of 1 h and a temperature of 200 ◦C, they obtained a selectivity for isophorone
+of 51% and an acetone conversion of 31% [208]. Qiao et al. used a mixed metal oxide
+containing strontium, magnesium, aluminium, and praseodymium as the catalyst [207].
+The continuous reactor was operated with a residence time of 1 min under supercritical
+conditions of 300 ◦C and 8 MPa [207]. Qiao et al. achieved a selectivity towards isophorone
+of 91% and a conversion of 41% [207]."
+87,"The conversion, selectivity, and yield for the catalysts mentioned in Section 5.1 are"
+88,summarized in Table 2.
+89,"Encyclopedia 2023, 3"
+90,233
+91,"Table 2. Literature acetone conversions (X), selectivity for isophorone (S) and yield (Y) for different
+catalysts for the liquid-phase/supercritical condensation of acetone."
+92,"Catalyst a
+0.7% NaOH
+≈4% NaOH
+10% NaOH
+20% NaOH
+25% NaOH
+0.7% KOH
+0.75% KOH
+1.8% KOH
+10% KOH
+30.3% KOH"
+93,"Methylmetheneamine hydroxide
+Benzylmentheneamine hydroxide
+tert-Butylmethenamine hydroxide
+1,3-Dimethylimidazole hydroxide"
+94,"1,3-Di-tert-butylimidazole hydroxide
+1,3-Di-n-butylimidazole hydroxide
+N,3 Dimethylpyridine hydroxide"
+95,N-tert-butyl-3-methylpyridine hydroxide
+96,CaC2
+97,"Al2O3, basic resin
+Mg1−xAlxO1+x"
+98,Sr0.1Mg0.6Al0.15Pr0.05O
+99,"T (◦C)
+250
+220
+320
+150
+170
+250
+≈205
+280
+300
+169
+180
+150
+160
+180
+150
+160
+150
+160
+150
+210
+200
+270"
+100,"Reactor
+batch
+batch"
+101,continuous
+102,batch
+103,Time b
+104,"4 h
+4 h
+2 min
+3 h"
+105,continuous
+106,37 min
+107,batch
+108,"continuous
+continuous
+continuous
+continuous"
+109,"4 h
+n/a
+5 min
+1 min"
+110,17.5 min
+111,"batch
+batch
+batch
+batch
+batch
+batch
+batch
+batch
+batch
+batch
+batch"
+112,continuous
+113,"5 h
+6 h
+7 h
+5 h
+6 h
+7 h
+6 h
+7 h
+2 h
+7–8 h
+1 h
+1 min"
+114,X (%)
+115,S (%)
+116,"68
+n/a
+n/a
+n/a
+n/a
+68
+n/a
+>20
+n/a
+n/a
+55
+59
+60
+62
+67
+68
+55
+57
+81
+n/a
+38
+41"
+117,"84
+81
+93
+39
+n/a
+93
+86
+>90
+92
+n/a
+63
+65
+66
+71
+69
+71
+63
+62
+n/a
+89
+51
+91"
+118,"Y (%)
+n/a
+53
+93
+7
+4 c
+n/a
+7
+n/a
+91
+6
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+21
+71
+n/a
+n/a"
+119,"Refs.
+[161]
+[114]
+[200]
+[150]
+[198]
+[161]
+[199]
+[201]
+[200]
+[198]
+[203]
+[203]
+[203]
+[202]
+[202]
+[202]
+[204]
+[204]
+[205]
+[206]
+[208]
+[207]"
+120,"a Percentage refers to weight percentage (wt%). b Residence time for continuous and reaction time for batch.
+c Mass fraction of isophorone."
+121,"Although corrosion can be avoided using heterogeneous catalysts, isophorone con-
+tinues to be industrially produced using aqueous alkali hydroxide solutions in the liquid-
+phase [106]. The main reason for this is that this process has been continuously optimized
+and is currently very efﬁcient [11,148,163–167,171,199–201,211–216]. For the switch to the
+vapor-phase process to be proﬁtable, it must be more efﬁcient or less expensive than the
+liquid-phase process. In addition, the service life of the heterogeneous catalysts must be
+high. Over the years, however, various companies have also been established new patents
+on vapor-phase processes with improved processes [152,217–227]."
+122,5.2. Catalysts for the Vapor-Phase Condensation
+123,"While in the 1930s, calcium carbide, calcium oxide, and calcium hydroxide were used
+as catalysts for the vapor-phase condensation, mostly mixed/composite metal oxides, often
+containing aluminum and magnesium, are used as catalysts nowadays [5,106,152]. While
+pure magnesia can be used as a catalyst, the reported selectivity toward isophorone is 35 %
+and below [5,228]. A signiﬁcant increase in selectivity is possible through the combination
+of magnesium with other metals, mostly aluminum [106]."
+124,"Due to the high catalytic performance of magnesium–aluminum mixed oxide and its
+low cost, this is probably the most common catalyst for the vapor-phase reaction [106].
+Magnesium–aluminum mixed oxide is often synthesized using the coprecipitation method
+via calcination of hydrotalcite [229–232]. The investigations with magnesium–aluminum"
+125,"Encyclopedia 2023, 3"
+126,234
+127,"mixed oxide focus on the temperature range from 250 to 300 ◦C, with a residence time of 30 to
+60 min [184,186,229–233]. A selectivity range of approx. 20 to 95% is reported [184,186,229–233].
+Ordóñez et al. tested a temperature range of 50 to 450 ◦C and achieved the best selectivity
+to isophorone of 23% at 250 ◦C [229]. Kelkar and Schutz reported their highest selectivity
+toward isophorone to be 75% at 250 ◦C, 25% acetone conversion, and a catalyst particle
+size of 0.315 mm [230]. They investigated the temperature range from approx. 250 to
+315 ◦C and particle sizes from 0.315 to 6.35 mm [230]. Gao reached a selectivity of 65% at
+250 ◦C with Mg–Al mixed oxide as the catalyst [231]. The regenerated catalyst compared to
+fresh catalyst showed a selectivity decrease of approx. 5% [231]. Other data for the Mg–Al
+mixed oxide as the catalyst was published by Ma et al., Li et al., and Liu et al. [184,232,233].
+Ma et al. reported a selectivity of 86%, a yield of 73%, and a conversion of higher than
+70% at 250 ◦C [232], Li et al. a selectivity of 95% and a conversion of 36% at 290 ◦C [184],
+and Liu et al. a conversion of 20% and a selectivity of 56% at 300 ◦C [233]."
+128,"Other catalysts mentioned in the literature are mixed oxides of magnesium or mag-
+nesium and aluminum with other metals [181,185–187,227,234–236]. Zhang et al. pre-
+pared magnesium–aluminum–yttrium-layered double-oxides with different Y-doping [234].
+With a doping quantity of 1% they achieved a selectivity of 59% and a yield of 22% at
+300 ◦C [234]. Other metals that were used for mixed metal oxides are chromium, zirco-
+nium, lanthanum, calcium, barium, and cerium in different combinations [185–188,227,235].
+The reaction temperature for the different experiments were usually between 250 and
+450 ◦C [185–188,227,235]. The reported selectivity is about 60 to 80% [185–188,227,235]. An
+especially high selectivity was reported by Zhao et al. They prepared a Ca–Zr–Mg–Al
+mixed oxide catalyst, which achieved a selectivity of up to 97% at 300 ◦C and 1 MPa with
+an acetone conversion of 34% [227]. These results are part of a stability test to demonstrate
+the stability of the catalyst over 1000 h [227]. After the 1000 h, the selectivity was still over
+90%. The highest selectivity of 97% was measured after about 600 h [227]."
+129,"In addition, data on several other catalysts have also been published, including
+molecular sieves [237], cesium on carbon [238], CsOH/SiO2 [113], Na+/TiO2 [239], Na+-
+(VO)2P2O7 [240], NaOH [241], Ca(OH)2-CaO [242] and Ca(OH)2 [152]. Ma et al. used a
+modiﬁed X molecular sieve as a catalyst and achieved a selectivity of 52% [237]. Stevens
+et al. prepared cesium on nanoporous carbon as the catalyst [238]. The reported selectivity
+is 61% [238]. Canning et al. used cesium hydroxide on silica for their mechanistic study
+and achieved a selectivity of 19% [113]. Zamora et al. tested sodium–chloride-doped titania
+as the catalyst [239]. The selectivity was 4% [239]. Thomas et al. studied the aldol conden-
+sation of acetone with different alkali-modiﬁed vanadium phosphates as catalysts [240].
+With the most efﬁcient catalyst, a sodium-modiﬁed vanadium phosphate, they achieved a
+selectivity for isophorone of 95% [240]. Qian et al. used molted NaOH as the catalyst [241].
+The published selectivity is 60% [241]. Wang et al. prepared a catalyst containing Ca(OH)2
+and CaO through the calcination of Ca(OH)2 [242]. The catalyst, prepared with a calcination
+temperature of 550 ◦C, achieved a selectivity higher than 80% [242]. For pure Ca(OH)2 as
+the catalyst, Vaughn et al. reported as yield of 25% [152]."
+130,"The conversion, selectivity, and yield for the catalysts mentioned in Section 5.2 are"
+131,summarized in Table 3.
+132,"Table 3. Literature acetone conversions (X), selectivity for isophorone (S) and yield (Y) for different
+catalysts for the vapor-phase condensation of acetone."
+133,Catalyst
+134,"Magnesium oxide
+Mg–Al mixed oxide
+Mg–Al mixed oxide
+Mg–Al mixed oxide"
+135,"T (◦C)
+450
+250
+250
+250"
+136,Reactor
+137,Residence Time
+138,X (%)
+139,S (%)
+140,"continuous
+continuous
+continuous
+continuous"
+141,"n/a
+n/a"
+142,30 min
+143,1 h
+144,"37
+7
+25
+20"
+145,"33
+23
+75
+65"
+146,"Y (%)
+n/a
+n/a
+n/a
+n/a"
+147,"Ref.
+[228]
+[229]
+[230]
+[231]"
+148,"Encyclopedia 2023, 3"
+149,235
+150,Catalyst
+151,"Mg–Al mixed oxide
+Mg–Al mixed oxide
+Mg–Al mixed oxide"
+152,Mg–Al–Y-layered double-oxide
+153,"Cr–Mg–Al mixed oxide
+Zr–Mg–Al mixed oxide
+La–Mg–Al mixed oxide
+La–Mg–Al mixed oxide
+Ca–Mg–Al mixed oxide
+Ca–Mg–Al mixed oxide"
+154,Ca–Zr–Mg–Al mixed oxide
+155,Mg–Zr mixed oxide
+156,Mg-Al-Ca–Ba–Zr–Ce mixed oxide
+157,molecular sieve
+158,Cs/nanoporous carbon
+159,"CsOH/SiO2
+Na+/TiO2"
+160,Na+-(VO)2P2O7
+161,NaOH
+162,Ca(OH)2-CaO
+163,Ca(OH)2
+164,"Table 3. Cont.
+T (◦C)
+250
+290
+300
+300
+240
+240
+250
+250
+250
+250
+300
+450
+300
+350
+225
+400
+300
+400"
+165,220–350
+166,"550
+350"
+167,Reactor
+168,Residence Time
+169,"continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous
+continuous"
+170,"1 h
+n/a
+n/a"
+171,9.5 min
+172,"n/a
+n/a
+1 h"
+173,"37.5 min
+37.5 min"
+174,1 h
+175,30 min
+176,"n/a
+n/a"
+177,30 min
+178,"n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a"
+179,"X (%)
+n/a
+36
+20
+38
+25
+37
+29
+41
+28
+55
+35
+43
+86
+26
+12
+3
+20
+7
+32
+47
+n/a"
+180,S (%)
+181,Y (%)
+182,"86
+95
+56
+59
+74
+73
+64
+72
+80
+65
+97
+9
+n/a
+52
+61
+19
+4
+>95
+60
+>80
+n/a"
+183,"73
+n/a
+n/a
+22
+n/a
+n/a
+19
+29
+23
+36
+n/a
+n/a
+76
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+25"
+184,"Ref.
+[232]
+[184]
+[233]
+[234]
+[181]
+[181]
+[186]
+[187]
+[187]
+[185]
+[227]
+[235]
+[188]
+[237]
+[238]
+[113]
+[239]
+[240]
+[241]
+[242]
+[152]"
+185,"In addition to the 47 literature results presented in this review, many other studies"
+186,have been conducted [243–259] and many other patents have been published [260–269].
+187,6. Conclusions
+188,"The self-condensation of acetone has been known for nearly 200 years and with a
+growing production volume of acetone, it represents a suitable way to upgrade acetone.
+Isophorone is one of the main products of this reaction and is already used industrially for
+various purposes. Due to the complex reaction mechanism, very different product mixtures
+with widely varying isophorone yields are formed under different reaction conditions and
+with different catalysts. Therefore, the key to optimize the isophorone selectivity of this
+process is the optimization of the reaction parameters."
+189,"Today, the liquid-phase process is the one most commonly operated on a production
+scale; however, the disadvantage of the liquid-phase process is corrosion, while the vapor-
+phase process has a higher energy demand. Switching from the liquid-phase to the vapor-
+phase process is therefore not yet proﬁtable. However, a selectivity of more than 90% for
+isophorone was reported for both vapor-phase and supercritical condensation."
+190,"The trend over the last few years of improving the selectivity toward isophorone
+seems to develop toward short reaction times and high temperatures. This can also be
+observed for the heterogeneous catalyst Sr0.1Mg0.6Al0.15Pr0.05O, which showed a selectivity
+of 91.2% at 1 min reaction time under supercritical conditions."
+191,"In the vapor-phase, catalysts. e.g., Mg–Al mixed oxide and Ca–Zr–Mg–Al mixed oxide
+achieved a selectivity toward isophorone of more than 90%, too. Additionally, long-term
+tests over 1000h were carried out with these catalysts, which showed that there was no
+catalyst deactivation due to coking."
+192,"Encyclopedia 2023, 3"
+193,236
+194,"However, whether these vapor-phase processes will become more attractive in the
+future ultimately depends on whether these processes can be operated more cheaply
+and/or more easily than the established liquid-phase processes. Future developments will
+probably focus on further improving selectivity and on improving process efﬁciencies, e.g.,
+by increasing the acetone conversion while maintaining a high selectivity."
+195,"Author Contributions: Conceptualization, T.R. and M.E.; methodology, T.R.; validation, M.-A.M.,
+W.B. and M.E.; formal analysis, M.-A.M., W.B. and M.E.; investigation, T.R.; resources, M.-A.M. and
+W.B.; data curation, T.R.; writing—original draft preparation, T.R.; writing—review and editing,
+M.-A.M., W.B. and M.E.; visualization, T.R.; supervision, M.E.; project administration, M.-A.M., W.B.
+and M.E.; funding acquisition, M.E. All authors have read and agreed to the published version of
+the manuscript."
+196,"Funding: This research was funded by Koninklijke DSM N.V. The funding sponsors had no role in
+the design of the study, in the collection, analyses, or interpretation of data, in the writing of the
+manuscript, or in the decision to publish the results."
+197,Data Availability Statement: Not applicable.
+198,"Conﬂicts of Interest: M.E. has received a research grant from DSM Nutritional Products. M.-A.M.
+and W.B. are employees of the company DSM Nutritional Products."
+199,"References
+1."
+200,2.
+201,6.
+202,7.
+203,8.
+204,9.
+205,10.
+206,11.
+207,"Evonik-60 Years Isophorone Chemistry. Available online: https://crosslinkers.evonik.com/media/public/misc/zeitstrahl/index.
+html (accessed on 30 October 2022).
+Evonik Industries, A.G. Damit der Lack Nicht ab Ist: Isophoron. Available online: https://history.evonik.com/de/erﬁndungen/
+isophoron (accessed on 28 October 2022).
+Schmitt, K. Neuere Acetonchemie. Chem. Ind. 1966, 18, 204."
+208,"3.
+4. Matyschok, H. Preparation, properties, and applications of isophorone. Wiad. Chem. 1973, 27, 311.
+5."
+209,"Salvapati, G.S.; Ramanamurty, K.V.; Janardanarao, M. Selective catalytic self-condensation of acetone. J. Mol. Catal. 1989, 54, 9–30.
+[CrossRef]
+Guan, X.; Liu, X.; Li, G.; Dong, P.; Wang, Z.; Zhao, G. Production, Market and Application prospect of Isophorone. Chem. Technol.
+Mark. 2005, 5–8.
+Drönner, J.; Hausoul, P.; Palkovits, R.; Eisenacher, M. Solid Acid Catalysts for the Hock Cleavage of Hydroperoxides. Catalysts
+2022, 12, 91. [CrossRef]
+Braithwaite, J.K. Imaging Technology to Lanthanides. In Kirk-Othmer Encyclopedia of Chemical Technology, 4th ed.; Wiley: New
+York, NY, USA, 1995; Volume 14, pp. 485–506.
+Isophorone Market by Applications (Paints and Coatings, Printing Inks, Adhesives, Artiﬁcial Leather, Agrochemical, Composite),
+and Region (North America, Europe, Asia Paciﬁc, South America, Middle East & Africa): Global Forecast to 2030. Available online:
+https://www.marketsandmarkets.com/Market-Reports/isophorone-market-201664726.html (accessed on 19 December 2022).
+Isophorone Market: Isophorone Market Analysis By Product Type (Liquid Condensation & Solid Heterogeneous Catalytic
+Condensation) By End-Use and By Region–Global Market Insights 2022 to 2032. Analysis of Isophorone Market Covering 30
++ Countries Including Analysis of US, Canada, UK, Germany, France, Nordics, GCC Countries, Japan, Korea and Many More.
+Available online: https://www.factmr.com/report/966/isophorone-market (accessed on 19 December 2022).
+Schmitt, K.; Disteldorf, J.; Baron, W. Verfahren zur Herstellung von Isophoron. German Patent. German Patent 1 095 818, 29
+December 1960."
+210,12. Environmental Health Criteria 174: Isophorone. Available online: https://apps.who.int/iris/bitstream/handle/10665/36888/92
+211,41571748-eng.pdf?sequence=1&isAllowed=y (accessed on 30 October 2022).
+212,"13. Burdock, G.A. Fenaroli’s Handbook of Flavor Ingredients, 6th ed.; CRC Press: Bosa Roca, FL, USA, 2009.
+14. Burdock, G.A. Encyclopedia of Food and Color Additives; CRC Press: Bosa Roca, FL, USA, 1997.
+15. Murphy, E.F.; Bürgi, T.; Baiker, A. Reactive Sites in Isophorone Isomers: H/D-Exchange Studies and Quantum-Chemical"
+213,16.
+214,"Calculations. Helv. Chim. Acta 2001, 84, 2884–2894. [CrossRef]
+Shiloff, J.D.; Hunter, N.R. Solvent effects on the photocycloaddition and photoenolisation reactions of isophorone. Can. J. Chem.
+1979, 57, 3301–3303. [CrossRef]"
+215,"17. Rudolph, A.; Weedon, A.C. Acid catalysis of the photochemical deconjugation reaction of 3-alkyl-2-cyclohexenones. J. Am. Chem."
+216,"Soc. 1989, 111, 8756–8757. [CrossRef]
+Stoye, D.S. Solvents. In Ullmann’s Encyclopedia of Industrial Chemistry; Wiley-VCH Verlag: Weinheim, Germany, 2000; pp. 619–688.
+[CrossRef]
+Isophoron. Available online: https://roempp.thieme.de/lexicon/RD-09-01678 (accessed on 1 November 2022).
+3,5,5-Trimethyl-3-Cyclohexen-1-on. Available online: https://gestis.dguv.de/data?name=490204 (accessed on 30 October 2022)."
+217,18.
+218,"19.
+20."
+219,"Encyclopedia 2023, 3"
+220,237
+221,"21. Panighel, A.; Maoz, I.; de Rosso, M.; de Marchi, F.; Dalla Vedova, A.; Gardiman, M.; Bavaresco, L.; Flamini, R. Identiﬁcation of
+saffron aroma compound β-isophorone (3,5,5-trimethyl-3-cyclohexen-1-one) in some V. vinifera grape varieties. Food Chem. 2014,
+145, 186–190. [CrossRef]
+Si, W.; Xiong, L.; Zhou, H.; Wu, H.; Liu, Z.; Liu, G.; Liu, Y.; Shen, A.; Liang, X. Comprehensive characterization of ingredients
+in Crocus sativus L. from different origins based on the combination of targeted and nontargeted strategies. Food Chem. 2022,
+397, 133777. [CrossRef]"
+222,22.
+223,"23. Zarghami, N.S.; Heinz, D.E. Monoterpene aldehydes and isophorone-related compounds of saffron. Phytochemistry 1971, 10,"
+224,2755–2761. [CrossRef]
+225,"24. Kiran, I.; Öz¸sen, Ö.; Çelik, T.; ˙Ilhan, S.; Gürsu, B.Y.; Demirci, F. Microbial Transformations of Isophorone by Alternaria alternata"
+226,"and Neurospora crassa. Nat. Prod. Commun. 2013, 8, 59–61. [CrossRef]"
+227,"25. Vidal, D.M.; Moreira, M.A.B.; Coracini, M.D.A.; Zarbin, P.H.G. Isophorone derivatives as a new structural motif of aggregation"
+228,26.
+229,27.
+230,"pheromones in Curculionidae. Sci. Rep. 2019, 9, 776. [CrossRef] [PubMed]
+Francke, W.; Dettner, K. Chemical Signalling in Beetles. In The Chemistry of Pheromones and Other Semiochemicals II.; Topics in
+Current Chemistry; Schulz, S., Ed.; Springer: Berlin/Heidelberg, Germany, 2005; pp. 85–166. [CrossRef]
+Schulz, S.; Francke, W.; Edgar, J.; Schneider, D. Volatile compounds from androconial organs of danaine and ithomiine butterﬂies.
+Z. Für Nat. C 1988, 43, 99–104. [CrossRef]"
+231,28. California Air Resources Board. Isophorone. Available online: https://ww2.arb.ca.gov/sites/default/ﬁles/classic//toxics/tac/
+232,29.
+233,30.
+234,"tacil/isophoro.htm (accessed on 11 November 2022).
+Jerkovi´c, I.; Ku´s, P.M. Terpenes in honey: Occurrence, origin and their role as chemical biomarkers. RSC Adv. 2014, 4, 31710–31728.
+[CrossRef]
+IK, K. A Targeted Metabolomic Procedure for the Identiﬁcation of Isophorone Related Compounds in Honey. J. Plant Biochem.
+Physiol. 2018, 6, 1–6. [CrossRef]"
+235,31. United States Environmental Protection Agency. Ambient Water Quality Criteria for Isophorone. Available online: https:
+236,//www.epa.gov/sites/default/ﬁles/2019-03/documents/ambient-wqc-isophorone-1980.pdf (accessed on 15 April 2022).
+237,32. Discover the World of Isophorone Chemistry. Available online: https://crosslinkers.evonik.com/en/about/isophorone-chemistry
+238,(accessed on 30 October 2022).
+239,"33. Aranda, C.; Municoy, M.; Guallar, V.; Kiebist, J.; Scheibner, K.; Ullrich, R.; Del Río, J.C.; Hofrichter, M.; Martínez, A.T.; Gutiérrez, A.
+Selective synthesis of 4-hydroxyisophorone and 4-ketoisophorone by fungal peroxygenases. Catal. Sci. Technol. 2019, 9, 1398–1405.
+[CrossRef]"
+240,"34. Murphy, E.F.; Mallat, T.; Baiker, A.; Schneider, M. Catalytic gas phase oxidation of isophorone to ketoisophorone. Appl. Catal. A"
+241,"Gen. 2000, 197, 295–301. [CrossRef]"
+242,"35. Tavanti, M.; Parmeggiani, F.; Castellanos, J.R.G.; Mattevi, A.; Turner, N.J. One-Pot Biocatalytic Double Oxidation of α-Isophorone"
+243,"for the Synthesis of Ketoisophorone. ChemCatChem 2017, 9, 3338–3348. [CrossRef]"
+244,"36. Krill, S.; Giray, G.; Hubner, F.; Hahn, R.; Huthmacher, K.; Tanner, H. Method of Producing β-Isophorone by the Isomerization of"
+245,"α-Isophorone. U.S. Patent 5,907,065, 25 May 1999."
+246,"37. Becker, J.J.; Schulte-Elte, K.H.; Strickler, H.; Ohloff, G. 2,2,6-Trimethylcyclohex-5-ene-1,4-Dione. Swiss Patent 585 168, 28"
+247,February 1977.
+248,"38. Becker, J.J.; Skorianetz, W.; Hochstrasser, U.P. 2,2,6-Trimethylcyclohex-5-ene-1,4-Dione. Swiss Patent 599 917, 15 June 1978.
+39. Bellut, H. Preparation of 2,6,6-Trimethylcyclohex-2-Ene-1,4-Dione by Oxidation of β-Isophorone. German Patent 38 42 547, 21"
+249,June 1990.
+250,"40. Brenner, W. Ketoisophorone. Swiss Patent 605 535, 29 September 1978.
+41. Widmer, E.; Seuret, M. Ketoisophorone. Swiss Patent 611 590, 15 June 1979.
+42. Eggersdorfer, M.; Laudert, D.; Létinois, U.; McClymont, T.; Medlock, J.; Netscher, T.; Bonrath, W. One hundred years of vitamins-a"
+251,"success story of the natural sciences. Angew. Chem. 2012, 51, 12960–12990. [CrossRef]"
+252,"43. Müller, M.-A.; Schäfer, C.; Litta, G.; Klünter, A.-M.; Traber, M.G.; Wyss, A.; Ralla, T.; Eggersdorfer, M.; Bonrath, W. 100 Years of"
+253,"Vitamin E: From Discovery to Commercialization. Eur. J. Org. Chem. 2022, 2022, e202201190. [CrossRef]"
+254,"44. Demole, E.; Enggist, P. Novel Synthesis of 3,5,5-Trimethyl-4-(2-butenylidene)-cyclohex-2-en-1-one, a Major Constituent ofBurley"
+255,"Tobacco Flavour. Helv. Chim. Acta 1974, 57, 2087–2091. [CrossRef]"
+256,"45. Mayer, H.; Montavon, M.; Rüegg, R.; Isler, O. Synthesen in der Carotinoid-Reihe. 22. Mitteilung. Totalsynthese von Rhodoxanthin."
+257,46.
+258,"Helv. Chim. Acta 1967, 50, 1606–1618. [CrossRef]
+Shibagaki, M.; Shibata, S.; Kaneko, H. Syntheses of 8,9-Dehydrotheaspirone and trans- and cis -8,9-Dehydro-4,5-dihydrotheaspirone.
+Agric. Biol. Chem. 1981, 45, 2911–2913. [CrossRef]"
+259,"47. Weyerstahl, P.; Meisel, T.; Mewes, K.; Negahdari, S. Struktur und Geruch, XIII. Synthese und olfaktorische Eigenschaften von"
+260,"Megastigmatrienon-Analoga. Eur. J. Org. Chem. 1991, 1991, 19–25. [CrossRef]"
+261,"48. David Raju, B.; Rama Rao, K.; Salvapathi, G.; Sai Prasad, P.; Kanta Rao, P. Aromatization of isophorone to 3,5-xylenol over"
+262,"Cr2O3/SiO2 catalysts. Appl. Catal. A Gen. 2000, 193, 123–128. [CrossRef]"
+263,"49. Kirichenko, G.N.; Glazunova, V.I.; Kirichenko, V.Y.; Dzhemilev, U.M. Promising process for synthesis of 3,5-xylenol from"
+264,"isophorone. Pet. Chem. 2006, 46, 434–438. [CrossRef]
+van Seters, A.J.C.; Wattimena, F. 3,5-Dimethylphenol. Canadian Patent 1,196,622, 12 November 1985."
+265,50.
+266,"Encyclopedia 2023, 3"
+267,238
+268,"51. Zhang, X.; Wang, R.; Yang, X.; Yu, J. Central composite experimental design applied to the catalytic aromatization of isophorone"
+269,"to 3,5-xylenol. Chemom. Intell. Lab. Syst. 2007, 89, 45–50. [CrossRef]"
+270,"52. Wattimena, F. 3,5-Xylenol. U.S. Patent 4,086,282, 25 April 1978.
+53. Huizer, L.; van Namen, D.J.; Oranje, P.J.D. Puriﬁcation of 3,5-Xylenol. UK Patent 1 560 241, 30 January 1980.
+54."
+271,"Franck, H.-G.; Stadelhofer, J.W. Industrial Aromatic Chemistry: Raw Materials Processes Products; Springer: Berlin/Heidelberg,
+Germany, 1988. [CrossRef]"
+272,"55. McDonnell, G.E. Antisepsis, Disinfection, and Sterilization: Types, Action, and Resistance; ASM Press: Washington, DC, USA, 2007.
+56. Arivazhagan, M.; Gayathri, R. NBO, NMR, UV, FT-IR, FT-Raman spectra and molecular structure (monomeric and dimeric
+structures) investigation of 4-Chloro-3,5-Xylenol: A combined experimental and theoretical study. Spectrochim. Acta. Part A Mol.
+Biomol. Spectrosc. 2013, 116, 170–182. [CrossRef]"
+273,"57. Bonrath, W.; Medlock, J.; Müller, M.-A.; Schütz, J. Catalysis for Fine Chemicals; De Gruyter: Berlin, Germany; Boston, MA,"
+274,"USA, 2021. [CrossRef]"
+275,"58. Cotrupe, D.P.; Wellman, W.E.; Burton, P.E. Dihydroisophorone. U.S. Patent 3,446,850, 27 May 1969.
+59. Tungler, A.; Máthé, T.; Petró, J.; Tarnai, T. Enantioselective hydrogenation of isophorone. J. Mol. Catal. 1990, 61, 259–267."
+276,[CrossRef]
+277,"60. Xu, L.; Sun, S.; Zhang, X.; Gao, H.; Wang, W. Study on the selective hydrogenation of isophorone. RSC Adv. 2021, 11, 4465–4471."
+278,[CrossRef]
+279,"61. Rodríguez-García, L.; Hungerbühler, K.; Baiker, A.; Meemken, F. Enantioselection on Heterogeneous Noble Metal Catalyst:
+Proline-Induced Asymmetry in the Hydrogenation of Isophorone on Pd Catalyst. J. Am. Chem. Soc. 2015, 137, 12121–12130.
+[CrossRef] [PubMed]"
+280,"62. Ballova, G.D.; Egorova, E.I.; Romantsova, O.N.; Karmakova, V.G.; Prokhorova, L.V.; Zinchenko, V.A.; Emelin, Y.D.;"
+281,"Maladzyanova, L.F. High-Impact Weatherproof Graft Copolymers of Styrene. U.S.S.R. Patent 614118, 5 July 1978."
+282,"63. Camani, A. Beitrag zur Kenntnis der Trimethyladipinsäure und Deren Derivate. PhD Thesis, ETH Zürich, Zürich, Switzer-"
+283,64.
+284,"land, 1965.
+Siegel, H.; Eggersdorfer, M. Ketones. In Ullmann’s Encyclopedia of Industrial Chemistry; Wiley-VCH Verlag: Weinheim, Germany,
+2000; pp. 187–205. [CrossRef]"
+285,"Flitter, D. Puriﬁcation of Cyclandelate. U.S. Patent 3,663,597, 16 May 1972."
+286,"65. Kleiman, H.L.; Martinat, J.J. Fuel for Cooking, Heating, and Lighting. U.S. Patent 3,894,848, 15 July 1975.
+66.
+67. Takahashi, H. 3,3,5-Trimethylcyclohexyl Mandelate. Japanese Patent 48-43115, 17 December 1973.
+68. Yamauchi, K.; Yasui, T.; Fujii, K. 3,3,5-Trimethylcyclohexyl Mandelate. Japanese Patent 54-81240, 28 June 1979.
+69. Kolter, T. EA 1511. Available online: https://roempp.thieme.de/lexicon/RD-05-03539 (accessed on 1 November 2022).
+70. Dawson, T.P.; Williamson, C.E. 3-Pyridyl Phosphonates. U.S. Patent 3,903,098, 02 September 1975.
+71. Chen, H.; Wang, J.; Ma, Z.; Zhao, J.; Feng, G. Method for Synthesizing Homosalate. Chinese Patent 105541634, 4 November 2014.
+72. Qifa, L.; Rong, W. Method for Preparing Homosalate. Chinese Patent 105085273, 15 March 2017.
+73. Global Isophorone Diamine (IPDA) Market Research Report 2018. Available online: https://www.marketresearch.com/"
+287,QYResearch-Group-v3531/Global-Isophorone-Diamine-IPDA-Research-11788198/ (accessed on 1 January 2023).
+288,"74. Global Isophorone Diisocyanate (IPDI) Market Size 2023–2028 Forecast Growth Research, Growth Factor, Key Players, the
+Impact of COVID-19. Available online: https://www.marketwatch.com/press-release/global-isophorone-diisocyanate-ipdi-
+market-size-2023-2028-forecast-growth-research-growth-factor-key-players-the-impact-of-covid-19-2022-12-14 (accessed on 1
+January 2023)."
+289,"75. Takahoso, H.; Takahashi, N.; Midorikawa, K.; Sato, T. Method for production of 3-cyano-3,5,5-trimethylcyclohexanone. Japanese"
+290,"Patent 4-279559, 5 October 1992.
+Sonnenschein, M.F. Polyurethanes; Wiley: Hoboken, NJ, USA, 2021. [CrossRef]"
+291,"76.
+77. Huthmacher, K.; Schmitt, H. Process for the Preparation of 1,3,3-Trimethyl-5-oxo-Cyclohexanecarbonitrile. German Patent 39 42"
+292,"371, 21 May 1992."
+293,"78. Thunberg, J.C.; Begonis, W.B. Process for the Preparation of 3-cyano-3,5,5-Trimethylcyclohexanone by Addition of Hydrogen
+79. Pontoglio, E.; Parodi, S. Preparation of 3-Cyano-3,5,5(cid:48)-Trimethyl-1-Cyclohexanone from Isophorone and an Alkaline Cyanide."
+294,"Cyanide to Isophorone. U.S. Patent 5,011,968, 30 April 1991."
+295,"European Patent 0 425 806, 8 May 1991."
+296,"80. Merger, F.; Priester, C.U.; Witzel, T.; Koppenhoefer, G.; Harder, W. Process for Preparing 3-(Aminomethyl)-3,5,5-Trimethylcyclohexylamine."
+297,"German Patent 40 10 227, 2 October 1991."
+298,"81. Rautenberg, W.; Mosbach, N.; Erdmann, T. Polyamide Composition Which Is Dyed in Black and Production and Use Thereof."
+299,82.
+300,"International Patent 2017/144276, 31 August 2017.
+Schmitt, K.; Gude, F.; Rindtorff, K., Jr.; Disteldorf, J. Preparation of 1-Isocyanato-3-(Isocyanatomethyl)-3,5,5-Trimethylcyclohexane.
+German Patent 1 202 785, 14 October 1965."
+301,83. Evonik Launches First Renewable Isophorone-Based Products. Available online: https://crosslinkers.evonik.com/en/-169696.
+302,html (accessed on 6 August 2022).
+303,"84. Chen, F.; Li, N.; Wang, W.; Wang, A.; Cong, Y.; Wang, X.; Zhang, T. Catalytic conversion of isophorone to jet-fuel range aromatic"
+304,"hydrocarbons over a MoO(x)/SiO2 catalyst. Chem. Commun. 2015, 51, 11876–11879. [CrossRef] [PubMed]"
+305,"Encyclopedia 2023, 3"
+306,239
+307,"85. Muldoon, J.A.; Harvey, B.G. Bio-Based Cycloalkanes: The Missing Link to High-Performance Sustainable Jet Fuels. ChemSusChem"
+308,"2020, 13, 5777–5807. [CrossRef] [PubMed]"
+309,"86. Ryan, C.F.; Moore, C.M.; Leal, J.H.; Semelsberger, T.A.; Banh, J.K.; Zhu, J.; McEnally, C.S.; Pfefferle, L.D.; Sutton, A.D. Synthesis of"
+310,"aviation fuel from bio-derived isophorone. Sustain. Energy Fuels 2020, 4, 1088–1092. [CrossRef]"
+311,"87. Xie, J.; Zhang, L.; Zhang, X.; Han, P.; Xie, J.; Pan, L.; Zou, D.-R.; Liu, S.-H.; Zou, J.-J. Synthesis of high-density and low-
+freezing-point jet fuel using lignocellulose-derived isophorone and furanic aldehydes. Sustain. Energy Fuels 2018, 2, 1863–1869.
+[CrossRef]"
+312,"88. Xie, J.; Zhang, X.; Shi, C.; Pan, L.; Hou, F.; Nie, G.; Xie, J.; Liu, Q.; Zou, J.-J. Self-photosensitized [2 + 2] cycloaddition for synthesis"
+313,"of high-energy-density fuels. Sustain. Energy Fuels 2020, 4, 911–920. [CrossRef]"
+314,"89. Tang, H.; Li, N.; Li, S.; Chen, F.; Li, G.; Wang, A.; Cong, Y.; Wang, X.; Zhang, T. Synthesis of jet fuel rang cycloalkane from"
+315,"isophorone with glycerol as a renewable hydrogen source. Catal. Today 2017, 298, 16–20. [CrossRef]"
+316,"90. Wang, W.; Liu, Y.; Li, N.; Li, G.; Wang, W.; Wang, A.; Wang, X.; Zhang, T. Synthesis of renewable high-density fuel with isophorone."
+317,"Sci. Rep. 2017, 7, 6111. [CrossRef]"
+318,"91. Chen, F.; Li, N.; Li, S.; Li, G.; Wang, A.; Cong, Y.; Wang, X.; Zhang, T. Synthesis of jet fuel range cycloalkanes with diacetone"
+319,"alcohol from lignocellulose. Green Chem. 2016, 18, 5751–5755. [CrossRef]"
+320,"92. Gonçalves, H.; Robinet, G.; Barthelat, M.; Lattes, A. Supramolecularity and Photodimerization of Isophorone: FTIR and Molecular"
+321,"Mechanics Studies. J. Phys. Chem. A 1998, 102, 1279–1287. [CrossRef]"
+322,"93. Howard, W.L. Acetone. Kirk-Othmer Encyclopedia of Chemical Technology; John Wiley & Sons: Hoboken, NJ, USA, 2000; pp. 1–15."
+323,"[CrossRef]
+Jahn, U. Phenol. Available online: https://roempp.thieme.de/lexicon/RD-16-01576 (accessed on 4 August 2022)."
+324,"94.
+95. Zakoshansky, V. Phenol process celebrates its 60th anniversary: The role of chemical principles in technological breakthroughs."
+325,"Russ J. Gen. Chem. 2009, 79, 2244–2266. [CrossRef]"
+326,"96. Zakoshansky, V.M. The cumene process for phenol-acetone production. Pet. Chem. 2007, 47, 273–284. [CrossRef]
+97. Dürre, P.; Bahl, H.; Gottschalk, G. Die Aceton-Butanol-Gärung: Grundlage für einen modernen biotechnologischen Prozeß? Chem."
+327,"Ing. Tech. 1992, 64, 491–498. [CrossRef]"
+328,"98. Ni, Y.; Sun, Z. Recent progress on industrial fermentative production of acetone–butanol–ethanol by Clostridium acetobutylicum"
+329,"in China. Appl. Microbiol. Biotechnol. 2009, 83, 415–423. [CrossRef] [PubMed]"
+330,"99. Eisenacher, M.; Venschott, M.; Dylong, D.; Hoelderich, W.F.; Schütz, J.; Bonrath, W. Upgrading bio-based acetone to diacetone"
+331,"alcohol by aldol reaction using Amberlyst A26-OH as catalyst. React. Kinet. Catal. Lett. 2022, 135, 971–986. [CrossRef]"
+332,"100. Verseck, S.; Schaffer, S.; Freitag, W.; Schmidt, F.G.; Orschel, M.; Grund, G.; Schmidt, W.; Bahl, H.J.; Fischer, R.-J.; May, A.; et al. Fer-
+mentative Gewinnung von Aceton aus erneuerbaren Rohstoffen mittels neuen Stoffwechselweges. German Patent 10 2007 052 463,
+7 May 2009."
+333,"101. Kane, R. Ueber den Essiggeist und einige davon abgeleitete Verbindungen. J. Prakt. Chem. 1838, 15, 129–155. [CrossRef]
+102. Wagner, I.A. The Condensation Products of Acetone. PhD Thesis, Catholic University of America, Washington, DC, USA, 1913.
+103. Kerp, W. Zur Kenntniss des Kampherphorons, des Isophorons und des Mesityloxyds: [Erste Abhandlung.]. Eur. J. Org. Chem."
+334,"1896, 290, 123–152. [CrossRef]"
+335,"104. Kachler, J. Studien über die Verbindungen aus der Camphergruppe. Justus Liebigs Ann. Chem. 1872, 164, 75–92. [CrossRef]
+105. Knoevenagel, E.; Fischer, C. Synthese und Constitution des Isophorons. Eur. J. Org. Chem. 1897, 297, 185–203. [CrossRef]
+106. Li, Y.; Lü, J.; Jin, Z. Research progress in the synthesis of isophorone by acetone self-condensation. Chem. Ind. Eng. Prog. 2016, 35,"
+336,1190–1196. [CrossRef]
+337,"107. Ueda, H.; Takeo, K.; Tsai, P.-L.; Tatsumi, C. Syntheses of Terpenes by the Condensation of Aliphatic Compounds: Part II."
+338,"Self-Condensation of Mesityloxide and Structures of Isomeric Isoxylitones. Agric. Biol. Chem. 1966, 30, 1004–1014. [CrossRef]"
+339,"108. Bianchetti, G.; Pocar, D.; Stradi, R.; Dalla Croce, P.; Vigevani, A. Enamines. XXVI. Autocondensation products of acetone
+morpholinoenamine. 2-(2-Methyl-1-propenyl)-6,8,8-trimethylbicyclo[4.2.0]oct-2-en-4-one and 3,5,5,7-tetramethylcycloocta-2,7-
+dien-1-one. Gazz. Chim. Ital. 1967, 97, 872–884."
+340,"109. Mei, J.; Chen, Z.; Yuan, S.; Mao, J.; Li, H.; Yin, H. Kinetics of Isophorone Synthesis via Self-Condensation of Supercritical Acetone."
+341,"Chem. Eng. Technol. 2016, 39, 1867–1874. [CrossRef]"
+342,"110. Cataldo, F. Synthesis of ketonic resins from self-polymerization of acetone, 2. Action of bases on acetone and the synthesis of"
+343,"halogenated and diels-alder adducts. Angew. Makromol. Chem. 1996, 236, 21–33. [CrossRef]"
+344,"111. Sokoli, H.U.; Simonsen, M.E.; Nielsen, R.P.; Arturi, K.R.; Søgaard, E.G. Conversion of the matrix in glass ﬁber reinforced"
+345,"composites into a high heating value oil and other valuable feedstocks. Fuel Process. Technol. 2016, 149, 29–39. [CrossRef]"
+346,"112. Synthesis of Isophorone. Available online: https://www.chemicalbook.com/NewsInfo_3703.htm (accessed on 24 August 2022).
+113. Canning, A.S.; Jackson, S.D.; McLeod, E.; Vass, E.M. Aldol condensation of acetone over CsOH/SiO2: A mechanistic insight"
+347,"using isotopic labelling. Appl. Catal. A Gen. 2005, 289, 59–65. [CrossRef]"
+348,"114. Li, G.; Dong, Y.; Fan, Z.; Ma, J.; Yang, L.; Zhang, X.; Teng, Z. Kinetics model of synthesis of isophorone. Lanzhou Ligong Daxue"
+349,"Xuebao 2009, 35, 61–63."
+350,"115. Podrebarac, G.G.; Ng, F.; Rempel, G.L. A kinetic study of the aldol condensation of acetone using an anion exchange resin catalyst."
+351,"Chem. Eng. Sci. 1997, 52, 2991–3002. [CrossRef]"
+352,"Encyclopedia 2023, 3"
+353,240
+354,"116. Ku´strowski, P.; Sułkowska, D.; Chmielarz, L.; Rafalska-Łasocha, A.; Dudek, B.; Dziembaj, R. Inﬂuence of thermal treatment
+conditions on the activity of hydrotalcite-derived Mg–Al oxides in the aldol condensation of acetone. Microporous Mesoporous
+Mater. 2005, 78, 11–22. [CrossRef]"
+355,"117. Thotla, S.; Agarwal, V.; Mahajani, S.M. Simultaneous production of diacetone alcohol and mesityl oxide from acetone using"
+356,"reactive distillation. Chem. Eng. Sci. 2007, 62, 5567–5574. [CrossRef]"
+357,"118. Darda, P.J.; Ranade, V.V. Isophorone reactor: Modelling and performance enhancement. Chem. Eng. J. 2012, 207–208, 349–367."
+358,[CrossRef]
+359,"119. Huang, C.; Yang, L.; Ng, F.; Rempel, G.L. Application of catalytic distillation for the aldol condensation of acetone. Chem. Eng. Sci."
+360,"1998, 53, 3489–3499. [CrossRef]"
+361,"120. Bakker, R.; Hangx, G.; Kwant, G.; Maessen, H.; Markusse, P. Reaction and Catalyst Deactivation Kinetics of the Aldol Condensation
+of Acetone. Available online: https://www.yumpu.com/en/document/read/13734276/reaction-and-catalyst-deactivation-
+kinetics-of-the-cpi-research- (accessed on 1 February 2023)."
+362,"121. Lemcoff, N.O.; Cunningham, R.E. Kinetics of diacetone alcohol conversion to mesityl oxide catalyzed by ion exchange resin. J."
+363,"Catal. 1971, 23, 81–92. [CrossRef]"
+364,"122. Kim, Y.K.; Hatﬁeld, J.D. Kinetics and equilibrium data of the dehydration-hydration reaction between diacetone alcohol and"
+365,"mesityl oxide in phosphoric acid. J. Chem. Eng. Data 1985, 30, 149–153. [CrossRef]"
+366,"123. Sliepcevich, A.; Moscatelli, D.; Gelosa, S. Kinetic Study of the Polycondensation of Acetone to Produce Isophorone Adopting"
+367,"Alumina and Magnesia as Catalyst. Chem. Eng. Trans. 2007, 11, 605–610."
+368,"124. Bertrand, J.A.; Cheung, D.; Hammerich, A.D.; House, H.O.; Reichle, W.T.; Vanderveer, D.; Zaiko, E.J. Structure of the substance"
+369,"C27H38O formed by the base-catalyzed self-condensation of isophorone. J. Org. Chem. 1977, 42, 1600–1607. [CrossRef]"
+370,"125. Mucha, S.G.; Firlej, L.; Bantignies, J.-L.; ˙Zak, A.; Samo´c, M.; Matczyszyn, K. Acetone-derived luminescent polymer dots: A facile"
+371,"126. Kurzer, F.; Hawkes, J.E.; Cobb, J. Bicyclo[2.2.2]octane-2-spirocyclohexanes, Part 1. Production and Structure of Spirodiisophora-"
+372,"and low-cost synthesis leads to remarkable photophysical properties. RSC Adv. 2020, 10, 38437–38445. [CrossRef]
+3(cid:48),6-dione. Z. Für Nat. B 1991, 46, 1549–1556. [CrossRef]"
+373,"127. Kabas, G.; Rutz, H.C. The alkali-catalysed self-condensation of isophorone. Tetrahedron 1966, 22, 1219–1226. [CrossRef]
+128. Franck, H.G.; Turowski, J.; Eurnlu, K.; Storch, G.; Zander, M.; Lemke, R. 3.3.6.8-Tetramethyl-tetralon-(1), ein Kondensationspro-"
+374,"dukt des Acetons. Justus Liebigs Ann. Chem. 1969, 724, 94–101. [CrossRef]"
+375,"129. Knoevenagel, E.; Beer, H. Ueber die höhermolekularen Condensationsproducte des Acetons. (Saure Condensation des Acetons.)."
+376,"Ber. Dtsch. Chem. Ges. 1906, 39, 3457–3466. [CrossRef]"
+377,"130. Knoevenagel, E.; Blach, L. Ueber die höhermolekularen Condensationsproducte des Acetons (alkalische Condensation des"
+378,"Acetons). Ber. Dtsch. Chem. Ges. 1906, 39, 3451–3457. [CrossRef]"
+379,"131. Rissaﬁ, B.; El Louzi, A.; Loupy, A.; Petit, A.; Souﬁaoui, M.; Fkih Tétouani, S. Solvent-Free Synthesis of Diaryl α-Tetralones via"
+380,"Michael Addition under Microwave Irradiation. Eur. J. Org. Chem. 2002, 2002, 2518. [CrossRef]
+132. Craven, E.C.; Ward, W.R. Phorone and isomeric forms. J. Appl. Chem. 1960, 10, 18–23. [CrossRef]
+133. Clayden, J.; Greeves, N.; Warren, S.G. Organische Chemie, 2nd ed.; Oxford University Press: Oxford, UK, 2013.
+134. Faba, L.; Díaz, E.; Ordóñez, S. Base-Catalyzed Reactions in Biomass Conversion: Reaction Mechanisms and Catalyst Deactivation.
+In Reaction Pathways and Mechanisms in Thermocatalytic Biomass Conversion I; Green Chemistry and Sustainable Technology;
+Schlaf, M., Zhang, Z.C., Eds.; Springer: Singapore, 2016; pp. 87–122. [CrossRef]"
+381,"135. Faba, L.; Criado, Y.A.; Gallegos-Suárez, E.; Pérez-Cadenas, M.; Díaz, E.; Rodríguez-Ramos, I.; Guerrero-Ruiz, A.; Ordóñez, S.
+Preparation of nitrogen-containing carbon nanotubes and study of their performance as basic catalysts. Appl. Catal. A Gen. 2013,
+458, 155–161. [CrossRef]"
+382,"136. Wu, L.; Moteki, T.; Gokhale, A.A.; Flaherty, D.W.; Toste, F.D. Production of Fuels and Chemicals from Biomass: Condensation"
+383,"Reactions and Beyond. Chem 2016, 1, 32–58. [CrossRef]"
+384,"137. Seebald, H.J.; Schunack, W. Reaktionen an Aluminiumoxiden. 1. Umsetzungen von Aceton an Alumininumoxiden. Arch. Der"
+385,"Pharm. 1972, 305, 406–417. [CrossRef]"
+386,"138. Connolly, E.E. 93. Triacetone dialcohol and its dehydration products. J. Chem. Soc. 1944, 338–339. [CrossRef]
+139. Leopold, R.; Schacke, B. Verfahren zur Herstellung von Phoron und Halbphoron (2 • 6-Dimethylhepten 2-ol 6-on 4). German"
+387,"Patent 483 823, 23 October 1929."
+388,"140. Gillard, R.D.; Heaton, B.T.; Pilbrow, M.P. 4-METHYLPENT-4-EN-2-ONE (iso-MESITYL OXIDE). Org. Prep. Proced. Int. 1974, 6,"
+389,131–134. [CrossRef]
+390,"141. Cabani, S.; Ceccanti, N. Equilibria and kinetics of the hydration and cyclisation of semiphorone in acidic media. J. Chem. Soc. B"
+391,"1966, 77–86. [CrossRef]"
+392,"142. Fleischhauer, E.H. Heterogen katalysierte Aldolkondensationen für die Synthese von Duft- und Aromastoffen. PhD Thesis,"
+393,"RWTH Aachen, Aachen, Germany, 2011."
+394,"143. Ivakhnov, A.D.; Skrebets, T.E.; Bogdanov, M.V. Dehydrocondensation of Acetone under Supercritical Conditions. Russ. J. Phys."
+395,"Chem. B 2019, 13, 1125–1127. [CrossRef]"
+396,"144. Wang, D.; Liu, Z.; Liu, Q. One-Pot Synthesis of Methyl-Substituted Benzenes and Methyl-Substituted Naphthalenes from Acetone"
+397,"and Calcium Carbide. Ind. Eng. Chem. Res. 2019, 58, 6226–6234. [CrossRef]"
+398,"Encyclopedia 2023, 3"
+399,241
+400,"145. Roger, A.; Godfroid, J.J.; Wiemann, J. Self-condensation of mesityl oxide on magnesia under different pressures. I. Identiﬁcation"
+401,"of the reaction products. Bull. Soc. Chim. Fr. 1967, 3030."
+402,"146. Franck, H.-G.; Erünlü, R.K.; Lemke, R.; Storch, G.; Turowski, J.; Zander, M. Process for the Production of 3,3,6,8-Tetramethyl-"
+403,"tetralone- (1) from Isophorone Residues. German Patent 1 768 212, 16 December 1971."
+404,"147. Cyrot, E. Mixed condensations of a-ethylenic aldehydes and ketones by vapor-phase heterogeneous catalysis. Synthesis of"
+405,"a-tetralones. Ann. Chim. (Paris) 1971, 6, 413."
+406,"148. Orschel, M.; Jansen, R.; Maier, M.; Grund, G.; Schwarz, M.; Nitz, J.-J.; Hengstermann, A. Verfahren zur Herstellung von Isophoron."
+407,"German Patent 10 2010 062 587, 14 June 2012."
+408,"149. IARC Working Group on the Identiﬁcation of Carcinogenic Hazards to Humans. In 1,1,1-Trichloroethane and Four Other Industrial"
+409,"Chemicals; International Agency for Research on Cancer: Lyon, France, 2022; Volume 130.
+150. Ballard, S.A.; Haury, V.E. Production of Isophorone. U.S. Patent 2,344,226, 14 March 1944.
+151. Cataldo, F. Synthesis of ketonic resins from self-polymerization of acetone, 1. Action of protic and lewis acids on acetone. Angew."
+410,"Makromol. Chem. 1996, 236, 1–19. [CrossRef]"
+411,"152. Vaughn, T.H.; Jackson, D.R. Process for Preparing Isophorone. U.S. Patent 2,183,127, 12 December 1939.
+153. Di Cosimo, J.I.; Apesteguía, C.R. Study of the catalyst deactivation in the base-catalyzed oligomerization of acetone. J. Mol. Catal."
+412,"A Chem. 1998, 130, 177–185. [CrossRef]"
+413,"154. The Global Isophorone Market is Expected to Grow by $ 2.18 bn during 2022-2026 Progressing at a CAGR of 6.05% during the
+Forecast Period. Available online: https://ﬁnance.yahoo.com/news/global-isophorone-market-expected-grow-122700709.
+html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAFyIrTSyINEWi2V2
+i1BZEhPGkATucQAQ-JXnEUN3v261y-PtsVauoCON58rrt02LA20PZ0I_z4VGIQT0kec41cRl_MyG-ex5sIuD8ItfqX2Pp-SmnN8
+y9XNtiPiXCCebKY0xwaEpYcRZs6J12XhgkMknv-mLG6Sddjk2sLREW9yp (accessed on 26 October 2022)."
+414,155. Isophorone. Available online: https://www.arkema.com/global/en/products/product-ﬁnder/product/thiochemicals/
+415,solvents/isophorone/ (accessed on 28 October 2022).
+416,156. Solvents and Intermediates Based on Isophorone. Available online: https://crosslinkers.evonik.com/en/products/vestasol
+417,(accessed on 28 October 2022).
+418,157. Baxxodur®EC 201. Available online: https://products.basf.com/global/en/ci/baxxodur-ec-201.html (accessed on 28 Octo-
+419,ber 2022).
+420,158. Desmodur®I. Available online: https://solutions.covestro.com/de/products/desmodur/desmodur-i_00480770-12978368?
+421,SelectedCountry=US (accessed on 28 October 2022).
+422,"159. Evonik Celebrates 50 Years of Producing Isophorone Chemicals for Paint and Coatings Market. Available online: https://www.
+coatingsworld.com/issues/2013-01/view_suppliers-news/evonik-celebrates-50-years-of-producing-isophorone/ (accessed on
+28 September 2022)."
+423,"160. Isophorone Market: Isophorone Market: Global Industry Analysis, Size, Share, Growth, Trends, and Forecast, 2020–2030."
+424,Available online: https://www.transparencymarketresearch.com/isophorone-market.html (accessed on 19 December 2022).
+425,"161. Mao, L.; Li, Q.; Yin, D. The Liquid Phase Condensation of Acetone to Isophorone by One Step. Acta Sci. Nat. Univ. Norm."
+426,"Hunanensis 2000, 23, 67–71."
+427,"162. Hwang, Y.-L.; Bedard, T.C. Ketones. In Kirk-Othmer Encyclopedia of Chemical Technology; John Wiley & Sons: Hoboken, NJ,"
+428,"USA, 2000. [CrossRef]"
+429,"163. Nitz, J.-J.; Kohlstruk, S.; Jansen, R.; Orschel, M.; Merkel, A.; Demming, M.; Mendorf, M.; Doering, J.; Hengstermann, A.;
+Hoff, A.; et al. Hydrolyse der bei der Produktion von Isophoron anfallenden Rückstände zur Rückgewinnung von Isophoron
+und Acetonproduction. German Patent 10 2013 215 874, 12 February 2015."
+430,"164. Schmitt, K.; Disteldorf, J.; Baron, W. Verfahren zur Aufarbeitung von Nebenprodukten der Isophoronherstellung. German Patent"
+431,"1 205 525, 21 November 1965."
+432,"165. Ballard, S.A.; Haury, V.E. Hydrolysis of Acetone Autocondensation Products. U.S. Patent 2,419,051, 15 April 1947.
+166. Winkler, D.L.E.; Raab, W.J.; Ballard, S.A. Hydrolysis of Acetone Condensation Products. U.S. Patent 2,434,631, 13 January 1948.
+167. Societe Industrielle des Derives de L’acetylenene. Isophorone and Its Homologues. UK Patent 733,650, 13 July 1955.
+168. Cane, C.; Yeomans, B. Verfahren zur Herstellung von Isophoron. German Patent 26 45 281, 21 April 1977.
+169. Chen, Z.; Li, H.; Mao, J.; Yin, H.; Hu, B. Method of Hydrolysis of Acetone Polymer in Supercritical Water Medium. Chinese Patent"
+433,"103145541, 4 February 2015."
+434,"170. Cook, J.B. Industrial application of reduce-reuse-recycle strategies in the production of isophorone. Master’s Thesis, University of"
+435,"South Alabama, Mobile, AL, USA, 2007."
+436,"171. Cane, C.; Yeomans, B. Process for the Production of Isophorone. U.S. Patent 4,059,632, 22 November 1977.
+172. Fewlass, M.W. Puriﬁcation of Isophorone. UK Patent 833,099, 21 April 1960.
+173. Craven, E.C.; Fewlass, M.W. Puriﬁcation of Isophorone. UK Patent 832,124, 6 April 1960.
+174. Dannenberg, H. Stabilization of Unsaturated Ketones. U.S. Patent 2,566,792, 4 September 1951.
+175. Dannenberg, H. Stabilization of Unsaturated Ketones. U.S. Patent 2,444,006, 22 June 1948.
+176. Bailey, H.C.; Bartlett, J.S. Isophorone Compositions with Long Storage Life. UK Patent 2 029 415, 19 March 1980.
+177. Papa, A.J. Low Color Reﬁned Isophorone. U.S. Patent 4,434,301, 28 February 1984.
+178. Cheminal, B.; Kiener, P. Colorless and Stable Isophorone. U.S. Patent 4,248,673, 3 February 1981."
+437,"Encyclopedia 2023, 3"
+438,242
+439,"179. Jia, T.; Zhang, J.; Liu, Z. Preparation and property of Y-Mg-Al-layered double oxides. Adv. Mater. Res. 2012, 396-398, 764–767."
+440,[CrossRef]
+441,"180. Li, Y.; Jin, Z.; Lv, J. Isophorone Catalyst. Chinese Patent 106423125, 20 November 2018.
+181. Liu, Y.; Sun, K.; Ma, H.; Xu, X.; Wang, X. Cr, Zr-incorporated hydrotalcites and their application in the synthesis of isophorone."
+442,"Catal. Commun. 2010, 11, 880–883. [CrossRef]"
+443,"182. Faba, L.; Díaz, E.; Ordóñez, S. Gas phase acetone self-condensation over unsupported and supported Mg–Zr mixed-oxides"
+444,"catalysts. Appl. Catal. B Environ. 2013, 142–143, 387–395. [CrossRef]"
+445,"183. Bagabas, A.A.; Mokhtar, M.; Akhmedov, V.M.; Narasimharao, K.; Basahel, S.N.; Al-Rabiah, A. Ru–C–ZnO Composite Catalysts for
+the Synthesis of Methyl Isobutyl Ketone via Single Step Gas Phase Acetone Self-Condensation. Catal. Lett. 2014, 144, 1278–1288.
+[CrossRef]"
+446,"184. Li, K.; Chen, X.; Zhou, W.; Ma, Z.; Li, Z.; Zhao, Y.; Hou, L.; Wang, H.; Jiang, H. Heterogeneous Catalytic Method for Synthesis of"
+447,"Isophorone from Acetone. Chinese Patent 101875602, 24 April 2013."
+448,"185. Wu, Y.; Tan, J.; Liang, D.; Liu, J. Isophorone prepared with acetone by catalysis of composite oxide solid alkali. Petrochem. Technol."
+449,"2012, 19, 7–11."
+450,"186. Zhang, X.L. Research on Solid-base Catalysts for Synthesis Isophorone. Master’s Thesis, China University of Petroleum, Beijing,"
+451,"China, 2009."
+452,"187. Chen, F. Preparation of Isophorone by Condensation of Acetone Catalyzed by Magnesium-Aluminum Composite Oxide. Ph.D."
+453,"Thesis, Dalian University of Technology, Dalian, China, 2014."
+454,"188. Liu, Z.; Li, H. Catalyst for Preparing Isophorone by Acetone Condensation Method. Chinese Patent 101698147, 25 January 2012.
+189. Kane, S.M.; Timonen, R.S.; Leu, M.-T. Heterogeneous Chemistry of Acetone in Sulfuric Acid Solutions: Implications for the Upper"
+455,"Troposphere. J. Phys. Chem. A 1999, 103, 9259–9265. [CrossRef]"
+456,"190. Taco-Vasquez, S. Transformation of Acetone and Isopropanol to Hydrocarbons using HZSM-5 Catalyst. Master’s Thesis, Texas"
+457,"A&M University, College Station, TX, USA, 2009."
+458,"191. Faba, L.; Gancedo, J.; Quesada, J.; Diaz, E.; Ordóñez, S. One-Pot Conversion of Acetone into Mesitylene over Combinations of"
+459,"Acid and Basic Catalysts. ACS Catal. 2021, 11, 11650–11662. [CrossRef]"
+460,"192. Jahn, U. Mesitylen. Available online: https://roempp.thieme.de/lexicon/RD-13-01361 (accessed on 1 November 2022).
+193. Quesada, J.; Faba, L.; Díaz, E.; Ordóñez, S. Effect of catalyst morphology and hydrogen co-feeding on the acid-catalysed"
+461,"transformation of acetone into mesitylene. Catal. Sci. Technol. 2020, 10, 1356–1367. [CrossRef]"
+462,"194. Reif, P.; Rosenthal, H.; Rose, M. Biomass-Derived Aromatics by Solid Acid-Catalyzed Aldol Condensation of Alkyl Methyl"
+463,"Ketones. Adv. Sustain. Syst. 2020, 4, 1900150. [CrossRef]"
+464,"195. Kawai, W. Polymerization of Acetone. BCSJ 1962, 35, 516. [CrossRef]
+196. Ramanamurty, K.V.; Salvapati, G.S. Catalytic Cyclocondensation of acetone to isophorone. Indian J. Chem. Sect. B Org. Med. Chem."
+465,"1999, 38, 24–28."
+466,"197. Orschel, M.; Grund, G.; Schneider, R. Verfahren zur Elektrochemischen Herstellung von Isophoron. German Patent 10 2010 029"
+467,"272, 1 December 2011."
+468,"198. Ballard, S.A.; Haury, V.E. Production of Isophorone and Related Products. U.S. Patent 2,399,976, 7 May 1946.
+199. Walton, J.R.; Yeomans, B. Isophorone Production Using a Potassium Hydroxide Catalyst. U.S. Patent 3,981,918, 21 September 1976.
+200. Chen, Z.; Li, H.; Lin, H.; Xu, Y.; Wang, C. Method for Preparing Alpha-Isophorone. Chinese Patent 101633610, 17 October 2012.
+201. He, Y.; Yuan, M.; Li, H.; Ding, J.; Li, Y.; Du, Y.; Luo, W.; Zhao, W.; Zhang, Z.; Yu, X. Method for Preparing Isophorone by Acetone"
+469,"Liquid Condensation with Alkali Catalyst. Chinese Patent 102516051, 1 January 2014."
+470,"202. Zhou, Z.; Xu, J.; Fei, A.; Tan, C.; Huang, Z.; Xiao, S.; Yan, Y.N. A Kind of Preparation Method of the Isophorone Using Organic"
+471,"imidazoles System Quaternary Ammonium Strong Base Catalyst. Chinese Patent 106892807, 3 May 2019."
+472,"203. Zhou, Z.; Xu, J.; Fei, A.; Tan, C.; Huang, Z.; Xiao, S.; Yan, Y.N. A Kind of Preparation Method of the Isophorone Using Organic"
+473,"Methenamine System Quaternary Ammonium Strong Base Catalyst. Chinese Patent 106831377, 3 May 2019."
+474,"204. Zhou, Z.; Xu, J.; Fei, A.; Tan, C.; Huang, Z.; Xiao, S.; Yan, Y.N. A Kind of Preparation Method of the Isophorone Using Organic"
+475,"Pyridine System Quaternary Ammonium Strong Base Catalyst. Chinese Patent 106905128, 3 May 2019."
+476,"205. Li, Y.; Meng, H.; Lu, Y.; Li, C. Efﬁcient Catalysis of Calcium Carbide for the Synthesis of Isophorone from Acetone. Ind. Eng."
+477,"Chem. Res. 2016, 55, 5257–5262. [CrossRef]"
+478,"206. Nanjing Kaixuan Chemical Technology Co., Ltd., China. Preparation Method of Isophorone. Chinese Patent 112239400, 19"
+479,January 2021.
+480,"207. Qiao, S.; Zhang, Y.; Mao, J.; Yan, H.; Pan, H. Preparation Method of Alpha-Isophorone. Chinese Patent 110885286, 20 May 2022.
+208. Teissier, R.; Kervennal, J. Process for Obtaining Isophorone. U.S. Patent 5,849,957, 15 December 1998.
+209. Xu, X.; Meng, H.; Lu, Y.; Li, C. Aldol condensation of reﬂuxing acetone on CaC2 achieves efﬁcient coproduction of diacetone"
+481,"alcohol, mesityl oxide and isophorone. RSC Adv. 2018, 8, 30610–30615. [CrossRef]"
+482,"210. Rodygin, K.S.; Vikenteva, Y.A.; Ananikov, V.P. Calcium-Based Sustainable Chemical Technologies for Total Carbon Recycling."
+483,"ChemSusChem 2019, 12, 1483–1516. [CrossRef] [PubMed]"
+484,"211. McAllister, S.H.; Bailey, W.A. Separation of by-Products from Isophorone. U.S. Patent 2,351,352, 13 June 1944.
+212. Schmitt, K.; Disteldorf, J.; Baron, W. Verfahren zur Gewinnung von Reinisophoron. German Patent 1 144 269, 28 February 1963."
+485,"Encyclopedia 2023, 3"
+486,243
+487,"213. Schmitt, K.; Disteldorf, J.; Baron, W. Verfahren und Vorrichtung zur Herstellung von Reinem Isophoron. German Patent 1 165 018,"
+488,12 March 1964.
+489,"214. Yoshida, Y. Production of Isophorone. Japanese Patent 8-245486, 24 September 1996.
+215. Yoshida, Y. Production of Isophorone. Japanese Patent 8-245485, 24 September 1996.
+216. Orschel, M.; Jansen, R.; Maier, M.; Nitz, J.-J. Verfahren zur Herstellung von Isophoron in Gegenwart Mindestens Eines"
+490,"Entschäumers in der Abwasserkolonne im Aufarbeitungsteil. German Patent 10 2011 075 777, 15 November 2012."
+491,"217. Fukada, I.; Matsuba, K. Production of Acetone Dehydrocondensate. Japanese Patent 9-59204, 4 March 1997.
+218. Fukada, I.; Matsuba, K. Production of Acetone Dehydrative Condensation Product. Japanese Patent 9-151153, 10 June 1997.
+219. Fukada, I.; Matsuba, K. Production of Isophorone. Japanese Patent 9-157208, 17 June 1997.
+220. Fukada, I.; Matsuba, K. Production of Isophorone. Japanese Patent 9-157207, 17 June 1997.
+221. Fukada, I.; Matsuba, K. Production of Acetone Dehydrative Condensation Product. Japanese Patent 9-151152, 10 June 1997.
+222. Fukada, I.; Matsuba, K. Production of Isophorone. Japanese Patent 9-169687, 30 June 1997.
+223. Fukada, I.; Matsuba, K. Production of Isophorone. Japanese Patent 9-169688, 30 June 1997.
+224. Song, C.; Tain, B.; Tang, G.; Xiang, L. Composite oxide and preparation method and application thereof. Chinese Patent 114425318,"
+492,3 May 2022.
+493,"225. Schutz, A.A.; Cullo, L.A. Method of Making Isophorne. U.S. Patent 5,202,496, 13 April 1993.
+226. Sun, L.; Hou, Y.; Chai, Y.; Wang, F.; Liu, C. Equipment and Method for Preparing Isophorone by Acetone Gas Phase Condensation."
+494,"Chinese Patent 107573227, 17 October 2017."
+495,"227. Zhao, J.; Zhang, Y.; Li, C. Method for Preparing Catalyst Used in Synthesizing Isophorone through Acetone Multiphase Method."
+496,"Chinese Patent 102258994, 20 June 2012."
+497,"228. León, M.; Faba, L.; Díaz, E.; Bennici, S.; Vega, A.; Ordóñez, S.; Auroux, A. Consequences of MgO activation procedures on its"
+498,"catalytic performance for acetone self-condensation. Appl. Catal. B Environ. 2014, 147, 796–804. [CrossRef]"
+499,"229. Ordóñez, S.; Díaz, E.; León, M.; Faba, L. Hydrotalcite-derived mixed oxides as catalysts for different C–C bond formation reactions"
+500,"from bioorganic materials. Catal. Today 2011, 167, 71–76. [CrossRef]"
+501,"230. Kelkar, C.; Schutz, A. Efﬁcient hydrotalcite-based catalyst for acetone condensation to α-isophorone—Scale up aspects and"
+502,"process development. Appl. Clay Sci. 1998, 13, 417–432. [CrossRef]"
+503,"231. Gao, P. Study on Catalyst and Technology for Synthesis of Isophorone from Acetone in Gas-Solid Multiphase Process. Master’s"
+504,"Thesis, China University of Petroleum, Beijing, China, 2008."
+505,"232. Ma, C.-X.; Liu, G.; Zhu, W.-C.; Wang, L.-X.; Li, Y.-F.; Zhang, W.-X.; Jia, M.-J. Gas-phase Aldol Condensation of Acetone over"
+506,"Mg-Al Oxides Prepared by Co-precipitation Methods. Chem. J. Chin. Univ. 2009, 30, 2429–2433."
+507,"233. Liu, Z.; Liu, Y.; Lu, B. Hydrotalcite synthesis and the effect on acetone catalytic condensation to isophorone. J. Guangzhou Univ."
+508,"Nat. Sci. Ed. 2011, 4, 14–19. [CrossRef]"
+509,"234. Zhang, J.J.; Liu, Z.L.; Qin, Z.Z.; Liu, Y.; Wang, Q.Y.; Zou, H.B.; Chen, S.Z.; Liang, H. Preparation of MgAlY-LDO Solid Base
+Catalysts and their Catalytic Performance on the Synthesis of Isophorone via Acetone Condensation. AMR 2012, 550–553, 424–428.
+[CrossRef]"
+510,"235. Krivtsov, I.; Faba, L.; Díaz, E.; Ordóñez, S.; Avdin, V.; Khainakov, S.; Garcia, J.R. A new peroxo-route for the synthesis of Mg–Zr
+mixed oxides catalysts: Application in the gas phase acetone self-condensation. Appl. Catal. A Gen. 2014, 477, 26–33. [CrossRef]
+236. Manríquez, M.E.; Hernández-Cortez, J.G.; Wang, J.A.; Chen, L.F.; Zuñiga-Moreno, A.; Gómez, R. Synthesis of transition metal
+doped lamellar double hydroxides as base catalysts for acetone aldol condensation. Appl. Clay Sci. 2015, 118, 188–194. [CrossRef]"
+511,"237. Ma, L.; Jiang, B.; Ren, H. Synthesis of Isophorone from Acetone over CsX Molecular Sieves. Chem. Ind. Eng. 2018, 35, 12–18.
+238. Stevens, M.G.; Chen, D.; Foley, H.C. Oxidized caesium/nanoporous carbon materials: Solid-base catalysts with highly-dispersed"
+512,"active sites. Chem. Commun. 1999, 275–276. [CrossRef]"
+513,"239. Zamora, M.; López, T.; Gómez, R.; Asomoza, M.; Melendrez, R. Oligomerization of acetone over titania-doped catalysts (Li, Na, K"
+514,"and Cs): Effect of the alkaline metal in activity and selectivity. Catal. Today 2005, 107–108, 289–293. [CrossRef]"
+515,"240. Thomas, L.; Tanner, R.; Gill, P.; Wells, R.; Bailie, J.E.; Kelly, G.; Jackson, S.D.; Hutchings, G. Aldol condensation reactions of acetone"
+516,"over alkali-modiﬁed vanadium phosphate catalysts. Phys. Chem. Chem. Phys. 2002, 4, 4555–4560. [CrossRef]"
+517,"241. Qian, X.; Qian, J.; Cui, Y.; Chen, J. Method for Preparing Isophorone at Normal Pressure. Chinese Patent 102633612, 25 June 2014.
+242. Wang, Y.-H.; Wang, G.-J.; Xiao, J.-H.; Ma, J. The Condensation of Acetone over Solid Base Catalyst. Chem. J. Chin. Univ. 1993,"
+518,"14, 1448."
+519,"243. Al-Ghamdi, K. An investigation of Heterogeneous Base Catalysed Acetone Conversion. Ph.D. Thesis, University of Glasgow,"
+520,"Glasgow, UK, 2011."
+521,"244. Crossley, A.W.; Gilling, C. Preparation of Trimethylcyclohexenone (Isophorone) from Ethyl Malonate and Chlorodimethylcyclo-"
+522,"hexenone. Proc. Chem. Soc. London 1910, 25, 96."
+523,"245. Crossley, A.W.; Gilling, C. IV.—Hydroaromatic ketones. Part I. Synthesis of trimethylcyclohexenone (isophorone) and some"
+524,"homologues. J. Chem. Soc. Trans. 1909, 95, 19–29. [CrossRef]"
+525,"246. Flego, C.; Perego, C. Acetone condensation as a model reaction for the catalytic behavior of acidic molecular sieves: A UV–Vis"
+526,"study. Appl. Catal. A Gen. 2000, 192, 317–329. [CrossRef]"
+527,"247. Kozlowski, J.T. Carbon-Carbon Bond Forming Reactions over Metal Oxide Catalysts. PhD Thesis, University of Virginia,"
+528,"Charlottesville, VA, USA, 2013."
+529,"Encyclopedia 2023, 3"
+530,244
+531,"248. Ku´strowski, P.; Sułkowska, D.; Pytlowany, R.; Dziembaj, R. Kinetics of self-condensation of acetone over heterogeneous Ba(OH)2"
+532,"and Sr(OH)2 catalysts. React. Kinet. Catal. Lett. 2004, 81, 3–11. [CrossRef]"
+533,"249. Liu, R. Study of Acetone Condensation to Isophorone over Solid Catalyst. Master’s Thesis, Hebei University of Technology,"
+534,"Shijiazhuang, China, 2008."
+535,"250. Lu, J. Condensation process and kinetic characteristics of acetone in magnesia-alumina catalyst. Shihua Jishu Yu Yingyong 2002, 20,"
+536,15–18.
+537,"251. Orel, V.B.; Vitkovskaya, N.M.; Bobkov, A.S.; Semenova, N.V.; Schmidt, E.Y.; Troﬁmov, B.A. Aldol Condensation Versus Superbase-
+Catalyzed Addition of Ketones to Acetylenes: A Quantum-Chemical and Experimental Study. J. Org. Chem. 2021, 86, 7439–7449.
+[CrossRef]"
+538,"252. Peng, W.; Li, J.; Chen, B.; Wang, N.; Luo, G.; Wei, F. Mesoporous MgO synthesized by a homogeneous-hydrothermal method and"
+539,"its catalytic performance on gas-phase acetone condensation at low temperatures. Catal. Commun. 2016, 74, 39–42. [CrossRef]"
+540,"253. Shylesh, S.; Kim, D.; Gokhale, A.A.; Canlas, C.G.; Struppe, J.O.; Ho, C.R.; Jadhav, D.; Yeh, A.; Bell, A.T. Effects of Composition and
+Structure of Mg/Al Oxides on Their Activity and Selectivity for the Condensation of Methyl Ketones. Ind. Eng. Chem. Res. 2016,
+55, 10635–10644. [CrossRef]"
+541,"254. Veshchitsky, G.A.; Smirnov, A.V.; Mashchenko, N.V.; Koklin, A.E.; Bogdan, V.I. Self-Condensation of Acetone of Strontium"
+542,"Stannate under Supercritical Conditions. Russ. J. Phys. Chem. B 2021, 15, 1299–1302. [CrossRef]"
+543,"255. Diez, V.; Apesteguia, C.; Di Cosimo, J. Effect of the acid-base properties of Mg-Al mixed oxides on the catalyst deactivation"
+544,"during aldol condensation reactions. Lat. Am. Appl. Res. 2003, 33, 79–86."
+545,"256. Ku´strowski, P.; Sułkowska, D.; Chmielarz, L.; Cap, S. Production of isophorone by the vapour-phase self-condensation of acetone"
+546,"over the hydrotalcite-derived catalysts. Pol. J. Chem. Technol. 2004, 6, 41–46."
+547,"257. Liang, D. Study on Solid Bases: Synthesis and Their Catalytic Performance to Isoporone. Master’s Thesis, Dalian University of"
+548,"Technology, Dalian, China, 2011."
+549,"258. Yuan, L. Synthesis of isophoroneon acid-base bifunctional catalysts by machine mixing method. Chem. Ind. Eng. Prog. 2015, 34,"
+550,3060–3064.
+551,"259. Zamora, M.; López, T.; Gómez, R.; Asomoza, M.; Meléndrez, R. Acetone gas phase condensation on alkaline metals doped TiO2"
+552,"sol–gel catalysts. Appl. Surf. Sci. 2005, 252, 828–832. [CrossRef]"
+553,"260. Bruson, H.A. Preparation of Isophorones. U.S. Patent 2,148,103, 21 February 1939.
+261. Grebinoski, M.C.; Glassman, D.; Elias, C.L.; Schutz, A.A. Isophorone process. U.S. Patent 5,352, 839, 4 October 1994.
+262. He, Y.; Tian, B.; Yun, M.; Bian, L.; Dong, L.; Zhou, R.; Sun, Q.; Shi, D.; Liu, Z. Method and Chemical Apparatus for Preparing"
+554,"Isophorone from Acetone. Chinese Patent 112441896, 5 March 2021."
+555,"263. He, Y.; Li, Y.; Tian, B.; Bian, L.L.; Zhou, R.; Guan, M.; Li, J.; Sun, Y. Method for Preparing Isophorone by Using Plug Flow"
+556,"Rectiﬁcation Column Plate and Acetone Liquid Phase Condensation. Chinese Patent 110038317, 10 April 2020."
+557,"264. Jianming, C.; Cui, Y.; Yao, Z.; Zhu, H.; Yan, Y.; Jianjun, Z. Preparation Method of Isophorone. Chinese Patent 103467263, 17"
+558,June 2015.
+559,"265. Papa, A.J.; Kaiser, S.W. Preparation of Isophorone and Mesityl Oxide from Acetone. U.S. Patent 4,535,187, 13 August 1985.
+266. Park, J.W.; Row, K.; Park, J.W. Molded Catalyst from Catalyst Power and Binder for Producing Cyclic Ketone. Korean Patent"
+560,"10-2022-055782, 4 May 2022."
+561,"267. Xue, Y.; Qiao, X.; Post, M.; Jia, Z.; Li, J.; Sun, Y.; Jia, H. Preparation Method and Device of Isophorone. Chinese Patent 110903180, 8"
+562,November 2022.
+563,"268. Yoshihiko, H.; Katsuhiko, H. Production of Dimer and/or Trimer OF Acetone. Japanese Patent 1-175952, 12 July 1989.
+269. Zhang, J. Catalyst for Synthesizing Isophorone. Chinese Patent 103691416, 2 April 2014."
+564,"Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content."

@@ -1,0 +1,605 @@
+,0
+0,"Article
+Production of Butyric Anhydride Using Single
+Reactive Distillation Column with Internal
+Material Circulation"
+1,"Guanghui Chen, Fushuang Jin, Xiaokai Guo, Shuguang Xiang and Shaohui Tao *"
+2,"College of Chemical Engineering, Qingdao University of Science and Technology, Qingdao 266042, China;
+guanghui@qust.edu.cn (G.C.); fushuangjin521@163.com (F.J.); guoxiaokai0304@163.com (X.G.);
+xsg@qust.edu.cn (S.X.)
+* Correspondence: tau@qust.edu.cn; Tel.: +86-13869895813"
+3,Received: 22 November 2019; Accepted: 16 December 2019; Published: 18 December 2019
+4,"Abstract: The traditional two-column reactive distillation (RD) process is used for the production
+of butyric anhydride, which is synthesized with butyric acid and acetic anhydride via a reversible
+reaction.
+In this work, a novel process with a single RD column (SRDC) is designed for the
+production of butyric anhydride, where the second distillation column for separating excess reactant
+is removed based on the boiling point proﬁle of the reaction system. Two applications of the proposed
+SRDC process, namely SRDC with excess butyric acid or acetic anhydride circulating internally, are
+economically optimized, and the results show that both SRDC processes have a lower total annual
+cost (TAC) than the traditional two-column process. Furthermore, from the perspective of TAC,
+the application with an excess feed of butyric acid is better than the application with excess acetic
+anhydride. The developed technique may also be applied to retroﬁt other traditional two-column RD
+processes, where the overhead and bottom products are the lightest and heaviest components of the
+reaction system, respectively, and no azeotrope is involved in the RD column."
+5,"Keywords: butyric anhydride; single reactive distillation column; internal material circulation;
+dynamic control"
+6,1. Introduction
+7,"Butyric anhydride is an important intermediate product, which is mainly used in the production
+of cellulose acetate butyrate, butyl butyryl lactate, and spices. The existing production of butyric
+anhydride is a reversible anhydride exchange reaction of butyric acid and acetic anhydride. The
+boiling point proﬁle of the reaction systems shows that reactive distillation (RD) can be used to produce
+butyric anhydride. RD is an intensiﬁed process which couples the chemical reaction with distillation
+separation in one piece of equipment, thus equipment costs are reduced. RD can also improve the
+conversion and yield of the reversible reaction by removing the product from the reaction system in
+time; in addition, the concentration of reactants increases and the reaction rate also increases as the
+products are moved out. In the past decades, the batch RD process has been used to produce butyric
+anhydride [1], with the purity of butyric anhydride being high. The main disadvantages of the batch
+process include diﬃculty of operation, long production period, high labor costs due to the diﬃculty of
+automation, and high energy consumption due to the need to steam out the transition components [1].
+In recent years, continuous manufacturing processes have been introduced to produce ﬁne
+chemicals, such as butyric anhydride, due to the numerous advantages over batch-wise manufacturing;
+these include lower capital and operating costs, improved controllability and product consistency, and
+lower environmental footprint [2–4]."
+8,"Processes 2020, 8, 1; doi:10.3390/pr8010001"
+9,www.mdpi.com/journal/processes
+10,"Processes 2020, 8, 1"
+11,2 of 10
+12,"Gao [1] introduced continuous RD technology for producing butyric anhydride based on the
+analysis of the physical properties of the reaction system; results revealed that the continuous RD
+process is feasible for the production of butyric anhydride."
+13,"The operation of the continuous RD process can be classiﬁed into two types, namely, neat and
+excess. For neat operation, reactants are fed into the RD column at the same ratio as the stoichiometric
+of reaction, while the composition of the column overhead and bottom products are not determined
+in this situation, since strict ﬂow control cannot be guaranteed in practical production; for example,
+Xu et al. [5] compared the neat and excess operations for synthesizing N-propyl propionate, the
+dynamic simulation results show that the product purity requirements cannot be ensured during neat
+operation; Daniel et al. [6] showed the same result with a process combining a continuous stirred tank
+reactor and an RD column for production of isoamyl acetate on a pilot scale."
+14,"Therefore, the excess operation is often adopted in practice; this requires one feed for the reactants
+according to the reaction stoichiometric, which helps avoid the disadvantage of the neat operation,
+while an additional distillation column is needed to separate the excess reactant from the product.
+Chung et al. [7] studied the inﬂuence of the excess ratio on the reactant conversion and energy
+consumption, and the results show that there is an inherent trade-oﬀ between the number of reactive
+trays and energy consumption; Chua et al. [8] compared diﬀerent choices of excess reactant for
+producing isopropanol with the RD process."
+15,"As a result of the reliability of the excess operation, Li et al. [9] proposed a two-column RD process
+to produce butyric anhydride with an excess feed of butyric acid, thus the reliability of the process was
+validated by simulation and experiments."
+16,"In this paper, a novel continuous process with a single RD column (SRDC) is proposed to produce
+butyric anhydride using the excess operation, where the second distillation column in the traditional
+RD process for separating excess reactant is removed based on the analysis of the boiling point proﬁle
+of the reaction system. In order to ensure the stable composition of the RD column, an excess reactant
+is usually needed in the traditional RD process, and for this reason a second distillation column is
+needed to separate the product from the excess reactant. SRDC completes the separation of the excess
+reactant and the product in the stripping section or the rectifying section of the RD column. Compared
+with the traditional RD process, product puriﬁcation is removed and the total annual cost (TAC) of
+butyric anhydride production is greatly reduced."
+17,"The rest of this paper is organized as follows. Section 2 summarizes the reaction kinetics and
+thermodynamic data needed for the simulation of the RD process. The traditional two-column RD
+process for the production of butyric anhydride is simulated in Section 3. Section 4 analyzes the
+boiling point proﬁle of the reaction system and presents a novel SRDC process with internal material
+circulation for butyric anhydride production, where two diﬀerent applications are simulated and
+compared. Finally the paper is concluded in Section 5."
+18,2. Reaction System
+19,2.1. Synthesis of Butyric Anhydride
+20,"The reaction of acetic acid with butyric anhydride is homogeneous; it is also a series of reversible
+reactions without a catalyst, which is carried out in two steps as shown by Equations (1) and (2). The
+reaction rates of the two steps are quite diﬀerent, and the rate of Reaction (1) is much greater than that
+of the second step. According to Li et al. [10], the most suitable reaction temperature is 343.15 K."
+21,"CH3CH2CH2COOH + CH3(CO3C)CH3 ⇔
+CH3CH2CH2(CO3C)CH3 + CH3COOH"
+22,"CH3CH2CH2COOH + CH3CH2CH2(CO3C)CH3 ⇔
+CH3CH2CH2(CO3C)CH2CH2CH3 + CH3COOH"
+23,(1)
+24,(2)
+25,"Processes 2020, 8, 1"
+26,2.2. Reaction Kinetics
+27,3 of 10
+28,Li et al. [10] have studied and estimated the kinetics of Reactions (1) and (2) in the temperature
+29,"range of 323.15 K to 353.15 K, as shown by Equations (3) and (4):"
+30,(3)
+31,"− rAcAn = dcAcAn/dt = k1+cAcAncBuAc − k1−cBuAnAccHAC
+rBuAn = dcBuAn/dt = k2+cBuAnAccBuAc − k2−cBuAncHAC."
+32,"(4)
+In Equations (3) and (4), n is the reaction step; + and − represent forward and backward reaction
+−1, which"
+33,"respectively; kn+, kn− are the reaction rate constants for reaction n with unit dm3·mol
+are calculated by Equations (5)–(8):"
+34,−1·min
+35,"k1+ = 3.29 × 107e(−7115.86/T)
+k1− = 1.63 × 107e(−6202.74/T)
+k2+ = 7.93 × 104e(−6009.26/T)
+k2− = 7.45 × 105e(−6594.28/T)."
+36,(5)
+37,(6)
+38,(7)
+39,(8)
+40,2.3. Thermodynamics Data
+41,"Table 1 shows the information on reactants, products, and the boiling point at a reactive pressure"
+42,of 20 kPa. There is no binary or ternary azeotropic phenomenon in the system [10].
+43,Table 1. Information of pure components at a reactive pressure on 20 kPa.
+44,Component ID
+45,Component Name
+46,Formula
+47,"BuAc
+AcAn
+HAC
+BuAn
+BuAnAc"
+48,butyric acid
+49,acetic anhydride
+50,acetic acid
+51,butyric anhydride
+52,Butyric anhydride acetate
+53,"C3H7COOH
+(CH3CO)2O
+CH3COOH
+(C3H7CO)2O"
+54,C3H7(CO3C)CH3
+55,"Tb/K
+389.15
+364.15
+348.15
+417.15
+413.15"
+56,"As can be seen from Table 1, the reactants of the reaction, namely, acetic anhydride and butyric
+acid, have boiling points higher than the lighter product acetic acid, and lower than the heavier
+product butyric anhydride, which is key to the proposed SRDC process with the internal circulation of
+excess reactant."
+57,"Table 2 shows binary interaction parameters estimated using Aspen Plus (Aspen Plus 8.4, Aspen
+Tech, Bedford, CO, USA, 2014), VLE-HOC is a physical property method. The non-random two liquid
+(NRTL) activity coeﬃcient model was used to calculate phase equilibrium in this work [11], which is
+calculated by Equations (9)–(12):"
+58,(cid:18)(cid:88)
+59,(cid:88)
+60,(cid:19)
+61,(cid:88)
+62,(cid:88)
+63,(cid:104)τij −(cid:16)(cid:88)
+64,(cid:88)
+65,(cid:17)(cid:105)
+66,ln γi =
+67,τjiGjixj/
+68,j
+69,Gkixk
+70,k
+71,+
+72,(xjGij/
+73,j
+74,Gkjxk)
+75,k
+76,xkτkjGkj/
+77,k
+78,Gkjxk
+79,k
+80,τij = aij + bij/T + cij/T2
+81,"Gij = e(−αijτij)
+ij + β(cid:48)
+αij = α(cid:48)
+ijT"
+82,(9)
+83,(10)
+84,(11)
+85,(12)
+86,"Processes 2020, 8, 1"
+87,4 of 10
+88,"Component j
+Component i"
+89,source
+90,temp. unit
+91,"Aij
+Aji
+Bij
+Bji
+Cij"
+92,Table 2. Binary interaction parameters.
+93,"AcAn
+BuAc"
+94,VLE-HOC
+95,"K
+0
+0"
+96,"20.9697
+608.8256"
+97,0.3
+98,"HAC
+BuAc"
+99,K
+100,"VLE-HOC
+−0.564
+1.7591"
+101,"0
+0
+0.3"
+102,"HAC
+AcAn"
+103,VLE-HOC
+104,K
+105,"0.8146
+−0.5218
+−147.1604
+332.2892"
+106,0.3
+107,3. Simulation of Two-Column RD Process for the Production of Butyric Anhydride
+108,"According to the above reaction kinetic and thermodynamic data, and the process introduced in
+the literature [9], the traditional two-column RD process is operated with a 10% excess feed of butyric
+acid as simulated with Aspen Plus, where the pressure of both columns is 20 kPa, and the residence
+time of reactive tray is 6 min. Figure 1 shows the process parameters and simulation results of the
+process streams, where NF means feed position; Nr, Nrxn and Ns represent the number of rectifying,
+reactive, stripping trays, respectively; and NT means the total number of column trays. The reactants
+are fed into the RD column C1; the overhead discharge of C1 is acetic acid, while the bottom discharge
+is the mixture of excess butyric acid and butyric anhydride, which is fed into distillation column C2,
+whose overhead discharge is the excess butyric acid to be recycled back to C1, and the bottom discharge
+is the product butyric anhydride, whose purity is more than 94 mol %, as seen from Figure 1."
+109,Figure 1. Traditional two-column reactive distillation (RD) process.
+110,4. Single RD Column with Internal Material Circulation
+111,4.1. Principle and Two Applications
+112,"Before the reactants are fed, it is supposed that the excess operation has been used to prepare the
+initial bottom materials of the RD column before start-up, e.g., the mole ratio of acetic anhydride to"
+113,"Processes 2020, 8, 1"
+114,5 of 10
+115,"butyric acid is 1.1:2 for the bottom materials. The neat operation is used for the RD column after the
+process is running in a steady state. As a result of the diﬀerent boiling points of the pre-excessed acetic
+anhydride reactant and the acetic acid, they can be separated easily from in the rectifying section of
+the column. As shown by Figure 2a, the acetic anhydride is always excessive and circulates in the
+column, thus the conversion of butyric acid is very promising, similar to the case of the traditional
+two-column RD process with the excess feed of acetic anhydride. Of course, the condenser duty of the
+RD column in Figure 2a must be tuned carefully to implement the internal circulation of the excessed
+acetic anhydride."
+116,"Figure 2. A single RD column (SRDC) with internal circulating excess reactant. (a) SRDC with internal
+circulation of pre-excess AcAn; (b) SRDC with internal circulation of pre-excess BuAc."
+117,"Similarly, with an excess of butyric acid in the initial bottom material, the internal circulation of
+butyric acid can also be realized by tuning the reboiler duty of the RD column in Figure 2b carefully,
+since the diﬀerence in boiling points is also signiﬁcant between butyric acid and butyric anhydride.
+The above two applications of the single RD column with excess reactant circulating internally are"
+118,the bases of the proposed SRDC process.
+119,4.2. Simulation of the SRDC Process
+120,"The application of internal circulation of excess reactant depends on tuning the condenser duty or
+reboiler duty of the SRDC. Therefore, it is important to simulate the processes shown in Figure 2a,b
+whose corresponding ﬂowsheets in ASPEN are shown with Figure 3a,b. The position of the reactive
+section is ﬁxed, but the simulation strategy is diﬀerent depending on the diﬀerent excess feed. When
+acetic anhydride is in excess, the rectifying section and the reactive section are separated from the
+stripping section, the tear ﬂow is supplemented with an excess of 10% acetic anhydride, and the
+rectifying section is used to separate the excess acetic anhydride and acetic acid. When butyric acid is
+in excess, the rectifying section is separated from the reactive section and the stripping section, the
+tear ﬂow is supplemented with an excess of 10% butyric acid, and the stripping section is used for the
+separation of the excess butyric acid and butyric anhydride."
+121,"In Figure 3a, which represents the pre-excess of acetic anhydride, the upper column with the
+condenser is the only rectifying section of the SRDC, as shown in Figure 2a; the only material discharged
+from overhead is the acetic acid byproduct, the excess acetic anhydride circulates internally, while the"
+122,"Processes 2020, 8, 1"
+123,6 of 10
+124,"lower column with the reboiler only includes the reactive and stripping sections of the SRDC, whose
+bottom discharge is the butyric anhydride product."
+125,"Figure 3. Flowsheets of SRDC with internal circulation of excess reactant. (a) SRDC with internal
+circulation of pre-excess AcAn; (b) SRDC with internal circulation of pre-excess BuAc."
+126,"In Figure 3b, which represents the pre-excess of butyric acid, the upper column with the condenser
+only includes the reaction and rectifying sections of the SRDC, as shown in Figure 2b, whose overhead
+discharge is also the acetic acid byproduct; while the lower column with the reboiler only represents the
+stripping section of the SRDC, where the pre-excess butyric acid is separated from butyric anhydride
+and circulates internally; the bottom discharge is also the butyric anhydride product."
+127,4.3. Simulation Results of the Optimized SRDC
+128,"On the basis of the ﬂowsheets presented in Figure 3, sensitivity-based optimization was carried
+out to optimize the proposed two applications of the SRDC process, and the results are shown in
+the following."
+129,"Under the condition of a pre-excess of acetic anhydride, the simulation results of the optimized
+SRDC process are shown in Figure 4, the SRDC3 is the SRDC with excess acetic anhydride
+circulating internally."
+130,"Figure 4. SRDC3 (SRDC with excess acetic anhydride circulating internally) with excess acetic anhydride
+circulating internally."
+131,"Processes 2020, 8, 1"
+132,7 of 10
+133,"As seen from Figure 4, the purity of the butyric anhydride product is higher than in the traditional
+two-column process. Figure 5 shows the temperature and liquid composition proﬁles between the
+SRDC trays."
+134,"Figure 5. The temperature and liquid composition proﬁle between the SRDC3 trays. (a) The temperature
+proﬁle between SRDC3 trays; (b) the liquid composition proﬁle between SRDC3 trays."
+135,"Figure 6 shows the simulation results of the optimized SRDC under the condition of excess butyric
+acid, where the purity of the butyric anhydride product is also higher than that of the two-column
+process, the SRDC4 is the SRDC with excess butyric acid circulating internally."
+136,"Figure 6. SRDC4 (SRDC with excess butyric acid circulating internally) with excess butyric acid
+circulating internally."
+137,"Figure 7 shows the temperature and liquid composition proﬁles between the trays of the SRDC4,"
+138,which are similar to those under the condition of an excess feed of acetic anhydride.
+139,"Processes 2020, 8, 1"
+140,8 of 10
+141,"Figure 7. The temperature and liquid composition proﬁle between SRDC4 trays. (a) The temperature
+proﬁle between SRDC4 trays; (b) the liquid composition proﬁle between SRDC4 trays."
+142,The results of the three processes are compared in Table 3.
+143,Table 3. Results of the three processes.
+144,Parameter
+145,Traditional Two-Column RD Process
+146,Column C1
+147,Column C2
+148,SRDC3
+149,SRDC4
+150,"Conversion of BuAc/%
+Conversion of AcAn/%
+BuAc
+AcAn
+HAC
+BuAn
+BuAnAc"
+151,"Mole fraction
+of bottom/%"
+152,"95.37
+96.40"
+153,"3.97
+2.11 × 10
+−6
+4.87 × 10
+−6
+94.32
+1.71"
+154,Mole fraction
+155,of top/%
+156,Temperature/K
+157,"BuAc
+AcAn
+HAC
+BuAn
+BuAnAc
+Bottom"
+158,Top
+159,"1.57
+3.05
+95.37
+1.59 × 10
+−5
+2.27 × 10
+−5
+408.24
+345.77"
+160,"413.55
+391.50"
+161,"95.69
+96.70
+3.67
+1.43 × 10
+−4
+4.98 × 10
+−4
+94.71
+1.63
+1.49
+2.81
+95.70
+2.3 × 10
+−11
+4.72 × 10
+−9
+414.11
+345.76"
+162,"96.40
+97.60
+2.80
+2.11 × 10
+−4
+4.63 × 10
+−4
+95.29
+1.89
+1.50
+2.03
+96.46
+1.20 × 10
+−10
+1.17 × 10
+−8
+414.38
+345.76"
+163,The conversion of reactants and the purity of the product are higher than in the two-column process.
+164,4.4. Economic Comparison
+165,"In this section, the traditional two-column process with an excess of butyric acid and the proposed
+two applications of the SRDC process are compared from the perspective of TAC, the calculation
+of which is shown in Equation (13) [12], consisting of capital cost and energy cost. The capital cost
+includes the cost of the column, tray, and heat exchanger, and the energy cost includes the cost of steam
+and cooling water. As shown in Table 4, the TAC of the three processes are calculated and compared."
+166,TAC = capital cost/payback period + energy cost
+167,(13)
+168,"As seen in Table 4, both SRDC processes are more economical than the traditional two-column
+process. In addition, the excess of butyric acid is more economical than the excess of acetic anhydride
+for the SRDC process; this condition is the result of the removal of the second distillation column,"
+169,"Processes 2020, 8, 1"
+170,9 of 10
+171,Parameter
+172,Table 4. Economic comparison.
+173,Traditional Two-Column RD Process
+174,Column C1
+175,Column C2
+176,SRDC3
+177,SRDC4
+178,"Total number of trays (NT)
+Condenser duty (QC) (km)"
+179,"Heat transfer area of
+condenser (AC) (m2)"
+180,Reboiler duty (QR) (km)
+181,"Heat transfer area of
+reboiler (AR) (m2)
+Shell cost (106 $)"
+182,Heater exchanger (HX)
+183,"IDr (m)
+IDrxn (m)
+IDs (m)"
+184,cost (106 $)
+185,Energy cost (106 $/year)
+186,Capital (106 $)
+187,Total annual cost (TAC)
+188,(106 $/year)
+189,5. Conclusions
+190,"0.79
+0.68
+0.90
+18"
+191,165.44
+192,"5.49
+256.10"
+193,"18.10
+0.096"
+194,"0.070
+0.058
+0.166"
+195,0.152
+196,0.53
+197,"-
+-
+8"
+198,78.49
+199,"1.13
+80.28"
+200,"7.21
+0.027"
+201,"0.034
+0.018
+0.061"
+202,"0.79
+0.70
+0.89
+18"
+203,182.36
+204,"5.49
+275.07"
+205,"23.39
+0.097"
+206,"0.085
+0.062
+0.182"
+207,0.123
+208,"0.68
+0.67
+0.95
+18"
+209,165.40
+210,"5.49
+256.98"
+211,"23.84
+0.090"
+212,"0.085
+0.058
+0.175"
+213,0.116
+214,"In this paper, a novel process for a single reactive distillation column with excess reactant circulating
+internally is proposed for the production of butyric anhydride. Two applications with diﬀerent reactant
+pre-excesses are proposed, and the corresponding simulation method is also presented. On the basis of
+the simulation, the proposed SRDC process is compared to the traditional two-column process, and
+the results show the economical superiority of the SRDC. A more detailed analysis of the proposed
+process will be presented in the future."
+215,"Author Contributions: Conceptualization, S.T.; methodology, S.T.; software, F.J.; validation, G.C. and S.X.; formal
+analysis, F.J. and X.G.; investigation, G.C. and S.X.; resources, S.T.; data curation, F.J.; writing-original draft
+preparation, S.T. and F.J.; writing-review and editing, G.C., F.J., X.G., S.X., and S.T.; supervision, S.X.; project
+administration, G.C., F.J., X.G., S.X. and S.T. All authors have read and agreed to the published version of
+the manuscript.
+Funding: This work is supported by the National Natural Science Foundation of China (No. 21776145). The
+Innovation and Training Plan of the University Students in Qingdao University of Science and Technology
+(No. 201810426125).
+Conﬂicts of Interest: The authors declare no conﬂict of interest. The funders had no role in the design of the
+study; in the collection, analyses, or interpretation of data; in the writing of the manuscript, or in the decision to
+publish the results."
+216,Nomenclature
+217,"AcAn
+AC
+AR
+B
+BuAc
+BuAn
+BuAnAc
+D
+F
+HAC
+HX"
+218,"Acetic Anhydride
+the heat transfer area of condenser
+the heat transfer area of reboiler
+bottom rate
+butyric acid
+butyric anhydride
+butyric anhydride acetate
+distillate rate
+the fresh feed of the reactive distillation column
+acetic acid
+heater exchanger"
+219,"Processes 2020, 8, 1"
+220,10 of 10
+221,"−1·min
+−1
+−1·min
+−1"
+222,"the internal diameter of the rectifying section
+the internal diameter of the reaction section
+the internal diameter of the stripping section
+the forward reaction rate constants, dm3·mol
+the backward reaction rate constants, dm3·mol
+the number of trays
+the total number of trays
+the feed stage of the fresh feed
+the number of trays in rectifying section
+the number of trays in reactive section
+the number of trays in stripping section
+the total number of trays
+reboiler duty
+condenser duty
+the reﬂux ratio
+the recycled ﬂow of BuAc
+reactive distillation
+single reactive distillation column
+total annual cost
+boiling point"
+223,"IDr
+IDrxn
+IDs
+kn +
+kn−
+N
+NT
+NF
+Nr
+Nrxn
+Ns
+NT
+QR
+QC
+RR
+RF
+RD
+SRDC
+TAC
+Tb"
+224,References
+225,1.
+226,2.
+227,3.
+228,"Gao, F. Development of Continuous Reactive Distillation Process for Production of Butyric Anhydride.
+Master’s Thesis, Qingdao University of Science and Technology, Qingdao, China, 2007.
+Sahlodin, A.-M.; Barton, P.-I. Optimal Campaign Continuous Manufacturing. Ind. Eng. Chem. Res. 2015, 54,
+11344–11359. [CrossRef]
+Tian, H.; Zhao, S.; Zheng, H.; Haung, Z. Optimization of coproduction of ethyl acetate and butyl acetate by
+reactive distillation. Chin. J. Chem. Eng. 2015, 23, 667–674. [CrossRef]"
+229,"4. Mallaiah, M.; Kishore, K.-A.; Reddy, G.-V. Catalytic Reactive Distillation for the Esteriﬁcation Process:"
+230,5.
+231,6.
+232,7.
+233,8.
+234,9.
+235,"Experimental and Simulation. Chem. Biochem. Eng. Q. 2017, 31, 293–302. [CrossRef]
+Xu, H.; Ye, Q.; Zhang, H.; Qin, J.-W.; Li, N. Design and control of reactive distillation–recovery distillation
+ﬂowsheet with a decanter for synthesis of N-propyl propionate. Chem. Eng. Process. 2014, 85, 38–47.
+[CrossRef]
+Gonzalez, D.-R.; Bastidas, P.; Rodriguez, G.; Gil, I. Design alternatives and control performance in the pilot
+scale production of isoamyl acetate via reactive distillation. Chem. Eng. Res. Des. 2017, 123, 347–359.
+[CrossRef]
+Chung, Y.-H.; Peng, T.-H.; Lee, H.-Y.; Chen, C.-L.; Chien, I.-L. Design and control of reactive distillation
+system for esteriﬁcation of levulinic Acid and n-Butanol. Ind. Eng. Chem. Res. 2015, 54, 3341–3354. [CrossRef]
+Chua, W.-J.; Rangaiah, G.-P.; Hidajat, K. Design and optimization of isopropanol process based on two
+alternatives for reactive distillation. Chem. Eng. Process. 2017, 118, 108–116. [CrossRef]
+Li, B.-C.; Han, X.-P.; Zhang, W.-L.; Geng, C.-X. Simulation and experimental research on butyric anhydride
+synthesis by reactive distillation. J. Chem. Ind. Eng. 2017, 45, 72–78."
+236,"10. Li, B.-C.; Xue, X.-X.; Zhang, W.-L.; Geng, C.-X. Study on the kinetics of preparation of butyric anhydride by"
+237,"acylation. J. Chem. Ind. Eng. 2017, 45, 49–53."
+238,"11. Renon, H.; Prausnitz, J.-M. Local compositions in thermodynamic excess functions for liquid mixtures."
+239,"AI ChE J. 1968, 14, 135–144."
+240,"12. Luyben, W.-L. Design and control of a methanol reactor/column process. Ind. Eng. Chem. Res. 2010, 49,"
+241,6150–6163. [CrossRef]
+242,"© 2019 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/)."

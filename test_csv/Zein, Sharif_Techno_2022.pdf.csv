@@ -1,0 +1,1434 @@
+,0,Class
+0,"Article
+Techno-Economic Analysis and Feasibility of Industrial-Scale
+Activated Carbon Production from Agricultural Pea Waste
+Using Microwave-Assisted Pyrolysis: A Circular
+Economy Approach",0
+1,Sharif H. Zein *,0
+2,and Ansu Antony,0
+3,"Department of Chemical Engineering, Faculty of Science and Engineering, University of Hull (UoH),
+Kingston upon Hull HU6 7RX, UK
+* Correspondence: s.h.zein@hull.ac.uk; Tel.: +44-1482-466-753",0
+4,"Abstract: This paper examines a novel approach to activated carbon (AC) production that uses pea
+waste (PW) and to what extent it is economically competitive with current production methods.
+Additionally, the outcome is to provide a detailed economic analysis to understand whether this
+process is viable. The focus of this production route and the economic analysis will be on a United
+Kingdom (UK) basis. The plant will be located within the north UK to minimise storage and
+transportation costs. It also has extensive links to other clusters of nearby industries that would
+produce from this process in air pollution control or wastewater treatments. The overall production
+process is detailed, and detailed equipment speciﬁcations, including the sizing of equipment and
+utility requirements, were also given. Material balance calculations are carried out to assess the
+performance and improve process design. An economic analysis is performed to study the potential
+of biomass-to-AC conversion costs and commercialisation viability. The project’s investment is about
+£100 million. The cost of the plant can be recovered from year 3 (mid) for the 20-year life of the
+plant. The Net Present Value (NPV) is based on cumulative cash ﬂow. The NPV is calculated as GBP
+4,476,137,297.79 for 2020, and the associated internal rate of return (IRR) and the return on investment
+(ROI) for the project are 55% and 52%, respectively.",0
+5,"Keywords: activated carbon (AC); pea waste (PW); microwave heating; techno-economic analysis;
+inside battery limits (ISBL); offsite battery limits (OSBL); operational expenditure (OPEX); capital
+expenditure (CAPEX); ﬁxed capital investment",0
+6,1. Introduction,0
+7,"Converting waste into value-added compounds such as activated carbon (AC) is
+stemmed from the growing negative environmental impact and increasing limitations of
+fossil fuel resources. Research in this field has accelerated as energy consumption increases
+over time [1]. Utilising biomass provides a path to combat or mitigate the increasing
+worldwide demands for energy [2]. This international effort intends to utilise new and
+alternative technologies, which would lower the changes associated with environmental
+pollution and, in turn, global climate change through the development of industrial and
+agricultural technologies from renewable means such as biomass waste. The transition to
+cleaner energy or materials from renewable resources can be enhanced, allowing nations to
+have energy security and achieve sustainable development [3]. The significant challenges
+include integrating with the petrochemical industry, utilising robust technologies, and
+providing a surplus amount of biomass feedstock for valorisation. Determining a viable and
+sustainable process route can help increase stakeholder cooperation across value chains.",0
+8,"Biomass is predicted to play a key role in driving the energy transition towards ‘green
+energy’ and lessening the hold on limited fossil fuel supplies. The global energy production",0
+9,"Citation: Zein, S.H.; Antony, A.
+Techno-Economic Analysis and
+Feasibility of Industrial-Scale
+Activated Carbon Production from
+Agricultural Pea Waste Using
+Microwave-Assisted Pyrolysis: A
+Circular Economy Approach.
+Processes 2022, 10, 1702. https://
+doi.org/10.3390/pr10091702",0
+10,"Academic Editors: Avelino
+Núñez-Delgado and Jin Bai",0
+11,"Received: 19 June 2022
+Accepted: 23 August 2022
+Published: 26 August 2022",0
+12,"Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations.",0
+13,"Copyright: © 2022 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).",0
+14,"Processes 2022, 10, 1702. https://doi.org/10.3390/pr10091702",0
+15,https://www.mdpi.com/journal/processes,0
+16,"Processes 2022, 10, 1702",0
+17,2 of 22,0
+18,"from biomass has expanded progressively, accounting for 70% of the total renewable
+supply in 2017, with a technical potential estimated to be as high as 1500 EJ/year by
+2050 [4]. Tripathi et al. [5] reported increasing interest and development to utilise biomass
+residues, explicitly concentrating on the bioenergy sector. This would require signiﬁcant
+research and development investments in specialist product development for alternative
+fuels and biochar production. The global annual generation of biomass waste is estimated
+to be 140 Gt [5]. These can be feedstocks for various products ranging from the production
+of fuel, polymers, and wastewater treatment materials. The selection of using biomass
+from agricultural waste is an interesting route. There is a keen interest in using biomass to
+produce AC. It provides a two-fold solution for tackling the growing pollution strategy,
+considering global food waste statistics are estimated to be 1.3 billion tons annually [6]. The
+carbon derived from biomass prevents the production of carbon dioxide (CO2) or methane
+(CH4). Furthermore, it can produce industrially more useful AC and enter the natural
+carbon cycle process [7]. This development of utilising harvest waste will also implement
+a circular economy by utilising wastes as resources, which current policies have adapted
+in Europe [8]. Reducing waste levels and ﬁnding the most sustainable solution with an
+efﬁcient valorisation route to manage the remaining harvest waste will close the loop. [9].
+We recently demonstrated pea waste as a new and promising treatment for wastewater. A
+cost-effective alternative to AC is widely available. This will be particularly useful in newly
+industrialised countries facing high water pollution and needing a rapid, inexpensive, and
+efﬁcient solution [10].",0
+19,"In 2017, 40,000 hectares of peas were grown in the UK, and more than 30% (w/w) of
+waste is produced during pea harvesting [11]. The remaining unavoidable waste from
+harvesting leaves behind other parts of the plant: pods, stalks, vines, and leaves [12].
+Danish and Ahmad [7] studied the potential applications of biomass waste from harvest
+as a viable alternative to the expensive production process of AC from coal. In India, pea
+peel waste was used to produce cellulose as it was cheap and readily available. It was a
+valuable and unused form of energy to produce cellulase [13].",0
+20,"The potential of utilising agricultural waste to produce carbonaceous materials such
+as AC (derived from biochar) can be an efﬁcient process. There are different routes to
+produce biochar, including fast pyrolysis, slow pyrolysis, ﬂash pyrolysis, torrefaction and
+hydrothermal carbonization, and microwave-assisted pyrolysis (MAP) [14–18]. MAP uses
+microwave irradiation for pyrolysing biomass to produce bio-oil and biochar products.
+Ge et al. [19] reviewed the feasibility of using MAP on agricultural waste. Besides, MAP
+offers fast heating of the extraction mixture via microwave irradiation [20]. Touhami
+et al. [21] used rice husk as a heterogeneous acid catalyst and established 30 min for
+the optimal carbonisation duration of the MAP. Currently, using MAP large scale has
+not been understood for continuous production in terms of product yield and reactor
+design. Fodah et al. [18] compared the literature values of corn stover biomass (similar
+proximate analysis of PW) products yielded from a catalytic and non-catalytic MAP. It
+was found that the yield of biochar decreased when the MAP was increased from 500 W
+to 900 W. The bio-oil yield increased from 500 W to 700 W and decreased to 900 W. The
+relation between the lignocellulosic content of varying agricultural waste is important
+for MAP’s biochar and bio-oil product yield. Similar lignocellulosic content to PW was
+compared with that undergoing a valorisation process. Results indicate a 20–40% yield
+of biochar and bio-oil each. Xia et al. [12] utilised MAP on pea vine to produce bio-oil
+and biochar. The optimal production conditions were 300 ◦C, 250 psi, and 300 W for
+15 min. It was found that the bio-oil had a high content of phenolic compounds, and
+the biochar had a gross caloriﬁc value of 26.6 MJ kg−1. The caloriﬁc value indicates a
+viable and efﬁcient method of utilising PW to produce AC and bio-oil in conjunction (due
+to its phenolic content). Currently, biochar’s main uses include applying biochar to the
+soil to improve soil fertility [22] and ‘energy production, livestock production, carbon
+sequestration, wastewater treatment, toxins remediation’ [23]. However, AC is the main
+desired product for this plant. It has scope for many adsorptions and catalysis applications",0
+21,"Processes 2022, 10, 1702",0
+22,3 of 22,0
+23,"due to its high surface area, pore volume, and pore size distribution [24]. Biochar can
+also be used as a precursor of value-added AC. There are various methods of activation
+processes of biochar, including mechanical, physical, and chemical activation, which leads
+to different properties of AC. Chemical activation involves treating with acids, bases, and
+oxidisers, and thermal activation involves re-pyrolysing at a greater temperature than the
+initial production temperature of pyrolysis [25]. Chemical activation has gained increased
+attention. It has one-step and two-step methods, and the latter has an increased purity of
+99.9% in terms of porosity and yield (higher surface area and pore volume) [26].",0
+24,"Currently, there is no solid work or investments to utilise harvest waste biomass
+application of chars. The economic analysis will be novel as Kaczor et al. [9] reported
+that a comprehensive route has not been determined on an industrial scale, as the known
+production of biomass supply within the UK is unclear. One reason could be that there
+is a lack of industrial-scale plants [23] for this intended use. There is an absence of a
+comprehensive cost analysis for the whole biomass supply chain derived from harvest. The
+economic analysis identiﬁes favourable scenarios in the valorisation process [27,28].",0
+25,"Detailed economic analysis of the production plant from PW must consider the py-
+rolyser’s purchased and operating cost, feedstock’s price, and energy requirements. The
+capital costs will be similar for all biomasses [22]. Optimum operation performance will be
+the lowest possible temperature and the fastest time. Stella Mary [29] reported the opti-
+mum temperature for char yield was 300 ◦C, where maximum values in the pea pod were
+21.14 %, and the ﬁxed carbon content pod were lower when compared to peel and vine. It
+is also very important to consider the yield of biochar production. These parameters can
+be estimated based on TGA analysis [30]. The feedstock price will be the most signiﬁcant
+difference and impact the costs of biochar production. The biochar produced through the
+pyrolysis process in bioreﬁneries will be combusted to meet energy needs, and any excess
+energy can be sold to the electricity grid. The economic value of biochar can be improved
+by upgrading it to activated carbon.",0
+26,"Tadda et al. [31] reported that in 2014, there were about 1.1 million metric tons of AC
+from AC industries, with a 10% increase in the projected demand. In the USA, there is
+an expected increase in demand for AC due to new federal laws requiring the removal
+of heavy metals from efﬂuent streams. The world demand shows that the Global AC
+Market is forecasted to be worth USD 14.07 Billion by 2027, as reported by Emergen
+Research. The main applications are water treatment and air puriﬁcation. This increase
+in demand can introduce and enforce standards and legislation of various countries in
+the global effort to combat air and water pollution caused by fast industrialisation [32].
+The increasing manufacturing activity in developing countries will also be a factor in the
+increased demand for AC. The commercial application of AC is one of the most widely used
+industrial adsorbents for separation, puriﬁcation, and recovery processes [33]. The main
+route of producing AC from wood, petroleum coke, carbon black, coal, and lignite has high
+production costs. Hence, this generated the interest in utilising the low-cost agricultural
+wastes with relatively high carbon as the raw materials substitute for AC. The requirement
+for sewage and wastewater treatment is generating demand for AC. This can be due to
+the rising global pollution levels due to the growing population and requiring puriﬁcation.
+Despite the growing demand, the high price of raw materials impedes the market growth.
+This paper intends to determine an applicable route to produce AC from agricul-
+tural pea waste (PW) in the UK due to its multipurpose in industry processes (adsorption,
+wastewater treatments, and soil fertilisation) and to what extent it is economically com-
+petitive. This differs from the conventional route of slow pyrolysis to produce biochar, a
+precursor of AC. This route utilises microwave power for better heat transfer as well as
+uniformity. An extra activation unit will produce AC with a higher surface area. In addition,
+a bio-oil produced from the process can still be used as a valuable commodity to be sold.
+The process can provide economic, social, and environmental beneﬁts [34]. It will raise the
+issues of suitable infrastructure and require more integration within the food supply chain
+rather than working independently to allow for efﬁcient food waste management and a",0
+27,"Processes 2022, 10, 1702",0
+28,4 of 22,0
+29,"more sustainable solution. The plant’s location will be based in the UK, near the availability
+of peas [35]. Minimising transport costs will allow for sustainable infrastructure for future
+operations to decrease the biochar technology’s carbon footprint, enabling it to meet Net
+Zero standards. In addition, a process model to produce AC from agricultural PW will
+be delivered and, in turn, quantify, as far as possible, the potential effect of the selected
+through the costs and advantages of AC from agricultural PW within the UK. The economic
+analysis will be more conducive to determining whether using PW from the industry with
+the newly designed infrastructure can better manage the waste supply chain. Moreover, it
+will also indicate whether it can compete with the already current production method of
+AC from agricultural waste.",0
+30,2. Overall Process,0
+31,"The overall process will be discussed, including pre-treatment, pyrolysis, separation,
+and activation. Considerations into heat and mass transfer will be explained for the main
+unit operations (this will be shown on the process ﬂow diagram). Mass balance is provided
+as it is essential to control processing in terms of the yields of the products.",0
+32,2.1. Process Route,0
+33,"MAP involves storing feedstock, drying, pre-treatment, separation of biochar, bio-oil,
+and gas; the chemical activation of biochar, reﬁning the oil, and storing and transporting
+the products sold. The PW is initially dried and then shredded or milled through multiple
+grinders. It is dried typically using a rotary dryer with a moisture content of 5% [14]. Then
+the dry biomass goes through a MAP reactor such as a ﬂuidised bed or ﬁxed bed reactor.
+The reacted products then go through the cyclone, separating the products into gases. The
+liquid (bio-oil) is collected and condensed in a condenser to produce bio-oil [36]. The
+non-condensable gases (NCG) may be used for heating purposes or sold off. The biochar
+collected undergoes chemical activation and subsequent washing, drying, and storing of
+the ﬁnal carbonaceous product. The porosity of biochar produced from MAP is higher
+than that produced from conventional pyrolysis. Furthermore, the following assumptions
+were made due to the challenges of measuring a transient temperature within the heated
+feedstock.
+•
+•
+•
+• Neglect any effect related to a chemical reaction;
+• Need a microwave absorber energy balance/requirement—the energy streams in and
+out of the pyrolysis system are considered in the control volume and considered a
+closed system.",0
+34,"Uniform distribution of electromagnetic waves;
+All the heated materials are non-magnetic;
+Variations in volume and physical/electrical properties are considered negligible;",0
+35,2.2. Pre-Treatment Process,0
+36,"Pre-treatment methods are important for biomass as they make it more compatible
+with the speciﬁc energy conversion of pyrolysis and enhance its properties. The overall
+cost of the production process can be reduced by increasing the pre-treatment efﬁciency.
+Size reduction and pre-treatment process are signiﬁcant for thermochemical conversion.",0
+37,"Drying is the primary step as the quality of biochar or biofuel can be affected by the
+moisture content [12]. Reducing the water content to a level low enough can also prevent
+the growth of microorganisms, reduce enzymatic reactions, and improve the combustion
+performance [37,38]. The PW chosen for the study is assumed to have a moisture content of
+12.7% on dry basis from farmland drying, which needs to be dried further to 6–8% as this
+was ideal for optimum biochar characteristics [30] for pyrolysis. The dryer type selection is
+based on the bed height and airﬂow velocity at the speciﬁed temperature. This determines
+the energy requirement. Fluidised bed drying is most common as this can be batch or in",0
+38,"Processes 2022, 10, 1702",0
+39,5 of 22,0
+40,"continuous mode. This will be useful when scaling up this process [39]. Equation (1) gives
+the weight change within drying.",0
+41,∆W = Wf − Wo =,0
+42,1/100 − M f,0
+43,M f − Mo Mo,0
+44,Wo,0
+45,-1,0
+46,(cid:16),0
+47,(cid:17)(cid:16),0
+48,(cid:17),0
+49,"where ∆W = change in weight, Wf = ﬁnal weight, Wo = initial weight, Mf = ﬁnal moisture
+content (% wet basis), and Mo = initial moisture content (% wet basis).",0
+50,"After drying, milling is an important step despite the high energy requirements [40–42].
+The PW is shredded, ground, and sieved to 0–200 mesh (0–0.090 mm). After the necessary
+physical pre-treatment method steps, chemical pre-treatment is often used to prepare the
+biomass using an alkali, such as NaOH, and acids, such as H2SO4. These were found to be
+the most effective [41].",0
+51,2.3. MAP Pyrolysis for PW,0
+52,"Microwave heating is used for pyrolysis at medium speed with an effective heat
+transfer proﬁle. The appeal is the increased process yield, environmental ease, and lower
+space and capital equipment [43–45]. Ethaib et al. [46] summarised the pyrolysis reaction
+of biomass. However, there are currently no reports on the economic viability/feasibility
+of MAP reactors for large-scale applications of biomass pyrolysis for bio-oil and biochar
+production. Furthermore, the main operation mode of MAP was found to be a batch
+reaction on an experimental scale. The aim is to transfer this to a continuous mode carried
+out MAP of biomass in continuous mode with a higher rate of biomass recycling.",0
+53,2.3.1. Microwave Absorbers,0
+54,"MAP of biomass not only needs catalysts, but it also requires microwave absorbers as",0
+55,"biomass is generally not a good absorber of microwave [14,26,47].",0
+56,2.3.2. Catalyst Selection,0
+57,"The proposed plant is designed and modelled using the proximate, elemental analysis,
+and caloriﬁc value assumptions. The feedstock is entered at 1443 kg/hr, and the biochar
+produced is assumed to be at 35% of the initial feedstock at 498 kg/hr. The selection of
+catalysts is critical [48,49].",0
+58,2.3.3. Separation,0
+59,"The next step after the MAP reaction is separating the three main products. Separating
+the char is essential as it can act as a vapour cracking catalyst at lower temperatures.
+Moreover, it can form polycyclic aromatic hydrocarbons (PAHs) in pyrolysis processes.
+Multiple cyclones can separate the sold product (char) and condensed to separate the
+non-condensable gases and the bio-liquid. The initial separation can be operated similar to
+a ﬂash drum at a temperature of 100 ◦C and pressure of 1.01325 bars [50]",0
+60,2.3.4. Activation,0
+61,"The operating conditions of physical activation that affect the quality and yield of the
+AC produced are the activation time, the activation temperature and the vapour mass ratio of
+the char. Table 1 gives chemical activation process parameters for MAP. The activating agents
+affect activated biochar’s porosity (e.g., microporous, mesoporous). The main activating agents
+used are H3PO4, ZnCl2, NaOH, KOH, Na2CO3, and K2CO3. The main advantages of H3PO4
+are maximizing yield and surface area while minimizing activating agents and microwave
+energy [24]. The biochar is treated with H3PO4, heated between 300 ◦C and 600 ◦C, and then
+washed with acid or base to remove the activating agent [51]. The intensive washing required
+after activating can generate a significant amount of wastewater. Studies by Azargohar and
+Dalai [52] tested activation times between 0.9 h and 4 h, activation temperatures ranging from
+600 ◦C to 900 ◦C, and mass ratios of steam to char between 0.4 and 2.",0
+62,"Processes 2022, 10, 1702",0
+63,6 of 22,0
+64,Table 1. Chemical activation process parameters for MAP.,0
+65,Activation Process Parameters,0
+66,Activating Agents,0
+67,Phosphoric Acid (H3PO4),0
+68,"Activation agent to biochar ratio
+Activation temperature (◦C)",0
+69,Activation time (min),0
+70,01:02,0
+71,300–600,0
+72,5–20,0
+73,Reference,0
+74,"[52]
+[51]",0
+75,"[24,53]",0
+76,2.4. Main Unit Operations and Overall Process,1
+77,"The main unit operations of this process will be outlined, and a detailed description
+of the overall production process, with relevant design speciﬁcations of equipment that
+include the sizing of equipment and utility requirements, were also given. Table 2 provides
+equipment operating conditions. The process ﬂow diagram and material balance are given
+in Figure 1 and Table 3, respectively.",1
+78,"Dryer (V-101) is the first operation after PW transport and storage. Biomass was
+assumed to have a 12.7% moisture content after naturally drying. Then, 183.26 kg/h
+of moisture content is removed from the feedstock. Hence, the initial amount of PW is
+1260 kg/h. The dryer uses air-drying to reduce the moisture content to 1% (ideal for MAP).
+The required air for the drying was calculated at 5129.66 kg/hr. The air was heated with low-
+pressure steam at 210 ◦C calculated using Tube-Shell Heat Exchanger Design Calculation
+Software. It was modelled as a shell and tube heat exchanger (E-101) and can be calculated
+using air temperature, moisture content, and humidity ratio [54]. A rotary dryer would
+then be required to remove the water before entering the miller unit operation (V-102).
+The dryer operates at 200 ◦C at close to atmospheric pressure. It operates by utilising the
+gravitational forces to rotate the machinery. Rotary driers have high thermal efficiency. They
+also have relatively low capital and labour costs [55]. The remaining water is collected and
+utilised to optimise the plant operation. The calculation of air gas flow rate is provided
+in Appendix A. This is crucial because the higher moisture content in the feed consumes
+process heat downstream and contributes to lower process yields. A rotary dryer was
+selected as it is the most common for commercial processes. It also is beneficial as it is less
+sensitive to particle size. The final dried product has a composition of 12 kg/hr of water.",1
+79,"Miller unit operation (V-102) is intended for size reduction. It is an expensive and
+energy-intensive process. The intention is to reduce the dried PW of average 8 mm to
+3 mm. Without this unit operation, the feedstock would not be suitable for thermochemical
+conversion. The selection of the grinder is important for reducing energy. For example,
+if the grinding device is a knife, the geometry and direction of the cut affect the resulting
+feedstock’s conﬁguration. This will reduce power requirements and the quality of the
+surface of the feedstock. The grinding type affects the reaction’s efﬁciency as the raw
+biomass harvested from ﬁelds undergoes a coarse grinding process [56]. Newbolt [57]
+reported that the hammer mill is the most preferred for biomass size reduction. The tested
+variables were screen size, angular velocity, time, feed rate, type, feed size, load, moisture
+content, and process. The main measured factors for grinding are particle size distribution,
+speciﬁc grinding energy, geometric mean particle size, moisture content, bulk density, and
+absolute density [56].",1
+80,"Processes 2022, 10, 1702",0
+81,7 of 22,0
+82,Table 2. Equipment list summary for the process including operating conditions.,1
+83,Equipment,0
+84,"C-101
+CO-101",0
+85,"Description
+Compressor
+Condenser",0
+86,E-101,0
+87,TEMA shell and tube -Heat exchanger,0
+88,E-102,0
+89,"E-103
+E-104
+E-105
+E-106
+E-107
+E-108
+E-109
+M-101
+M-102
+P-101
+P-102
+P-103
+R-101
+R-102
+TK-101
+TK-102
+TK-103
+TK-104",0
+90,TK-105,0
+91,"TK-105
+TK-107
+TK-108
+TK-109",0
+92,V-101,0
+93,"V-102
+V-103
+V-104
+V-105
+V-106
+V-107
+V-108
+V-109",0
+94,Cooler,0
+95,"Heater
+Heater
+Heater
+Cooler
+Heater
+Cooler
+Cooler
+Mixer
+Mixer
+Pump
+Pump
+Pump",0
+96,MAP reactor Fluidised bed reactor,0
+97,Reactor Fixed bed,0
+98,Pea waste tank storage,0
+99,Tank for H2SO4,0
+100,"Tank
+Tank",0
+101,Tank,0
+102,"Tank
+Tank
+Tank
+Tank",0
+103,Rotary dryer,0
+104,Miller/Grinder,0
+105,"Extractor
+Cyclone",0
+106,Quenching tower,0
+107,Extractor,0
+108,"Vessel
+Filter
+Dryer",0
+109,Operating Conditions,0
+110,To be used for non-condensable gases,0
+111,To be used bio-oil (unreﬁned); 30 ◦C; 1 bara (close to atmospheric conditions),0
+112,"LP steam. Inlet: 650 ◦C; Outlet: 322 ◦C; Pressure: 1 Bar; 249.7 kg/h Air (for dryer);
+Inlet: 20 ◦C; Outlet: 210 ◦C; Pressure: 1.2 Bar; 5129.66 kg/h (Values calculated using",0
+113,Tube-Shell Heat Excanger Design Calculation Software);,0
+114,Cooler required after miller operation,0
+115,Cooled to 121 ◦C; 1 bara,0
+116,Heater for H2SO4; Heated to 120 ◦C,0
+117,Nitrogen heated from 50 ◦C to reaction temperature,0
+118,Reactants heated to 300 ◦C; 1.5 bara,0
+119,Products heated after reactor for separation; Heated to 350 ◦C,0
+120,Heated to 550 ◦C for activating reaction temperature,0
+121,"Extractor temperature. 200 ◦C; 2 bara
+Carbon washing temperature. 80 ◦C",0
+122,Chemical pre-treatment process. 121◦C; 1.5 bara,0
+123,"Mixer for reactant, including inert nitrogen. 150 ◦C; 1.5 bara",0
+124,"Increase the pressure of H2SO4 for the mixer to 1.5 bara from atmospheric pressure
+Increase the pressure of nitrogen for the mixer to 1.5 bara from atmospheric pressure",0
+125,Increase the pressure for extractor operation,0
+126,"Voidage = 0.8; Catalyst = Graphite; 300 ◦C; 500 W (microwave power); 1.5 bara
+Activating unit: Allows for impregnation of H3PO4 into biochar. 550 ◦C; 1 bara",0
+127,20 ◦C; 1 bara,0
+128,Dilute H2SO41.5% wt.,0
+129,Tank Holding Nitrogen. Atmospheric conditions,0
+130,Calcium oxide tank; Microwave absorber; Does not take part in reactions,0
+131,Activating agent. 85 wt.% H3PO4; 15 wt.% water; 50% of biochar feed ﬂow rat;,0
+132,Atmospheric conditions,0
+133,Unreﬁned bio-oil (tar also possibly present). 30 ◦C; 1 bara,0
+134,KOH tank. 10 wt.% KOH; 90 wt.% water; Mass ﬂowrate at 3 times the AC ﬂowrate,0
+135,Final activated carbon tank,0
+136,Biogas in gas storage,0
+137,Air dryer. Removes water content to leave 1% moisture content for dry feedstock.,0
+138,210 ◦C; 1.5 bara,0
+139,Dryer outlet conditions. Atmospheric pressure,0
+140,2 bara,0
+141,Solid separator. 350 ◦C,0
+142,"50 ◦C; 1 bara
+2 bara; 80 ◦C",0
+143,Carbon washing. 80 ◦C,0
+144,50 ◦C; 1 bara,0
+145,Air Dryer. 1 bara; 50 ◦C,0
+146,"Processes 2022, 10, 1702",0
+147,8 of 22,0
+148,Figure 1. Overall process ﬂow diagram of production of AC from PW.,1
+149,"The solvent extraction of chemical pre-treatment (V-103) involves mixing the H2SO4
+and water with the dried PW. The extractor operates at 121 ◦C and 2 bara. Chemical pre-
+treatment is a useful process after a mechanical operation. It is generally done to eliminate
+ash and hemicellulose [58]. The liquid to solid ratio is 1 to 10 with 20 wt% as H2SO4 and
+80 wt% water (dilute acidic system). Since acid can cause corrosion to the equipment,
+corrosion-resistant construction material is required, such as stainless steel 304 [55], which
+is generally expensive. A centrifuge system is typically used for a solid-liquid system. The
+extraction unit is assumed to have 98% efﬁciency but can reach 99%. This stream is now
+entering the reactor.",1
+150,"The most common reactor for MAP is the fixed bed and fluidised bed (R-101). Ge et al. [19]
+reported that biomass waste with a smaller particle size has a higher pyrolysis rate, achieving
+higher temperature with lesser heat loss. In that context, the fluidised bed reactor is more
+economical than a fixed bed reactor as large particles promote volumetric heating. However,
+there is a concern if rapid gas sparging in a fluidised bed reactor leads to significant heat loss,
+meaning the reactor requires a higher energy input (3.5–4.2 kJ/g) than the fixed bed reactor
+(2.2–2.5 kJ/g) for MAP. These reactors are proposed in terms of batch processing. The reactor
+configuration for continuous mode would be a rotary kiln, conveyor belt, or auger screw
+conveyor. The operating conditions of the reactor are at 300 ◦C, 500 W, and 1.5 bar, this reaction
+assumes something like batch operation, and in literature, it was reported that continuous
+mode has not been robust. The product conversion is assumed to be 35% for oil and char and
+30% for gas [14–17]. Due to higher pressure, nitrogen is mixed with 20% of the feed as inert to
+minimise explosions. Further, the graphite catalyst is going at a bed volume factor of 0.2, and a
+calcium oxide microwave absorber is placed in the reactor as 10% of the feed.
+The solid separator is designed as a cyclone (V-104) operating at 350 ◦C. The particle
+size of char is important as it affects the design and performance of cyclones and filters.
+More than one solid separator can be used. Cyclone is the most appropriate equipment to
+separate solid from gas streams for particulates with diameters greater than 0.01 mm. A
+mesh pad is used to separate liquids from gases. Ideally, it should be designed as a vertical
+drum with sieve plates to collect the oil. It was found that char can be collected more as the
+cylinder height is increased with a high flow rate. The safety issues are associated with the
+vertical orientation; therefore, wall thickness is important. The cyclone can be made from
+low alloy steel as the gas contains hydrogen, and the sieve plates are made out of stainless
+steel as the gas is corrosive [59]. The operation efficiency of the separator is assumed at 98%.",1
+151,"Processes 2022, 10, 1702",0
+152,9 of 22,0
+153,Table 3. Material balance across the process for Activated carbon from pea.,1
+154,"Components
+Raw Feed
+PW
+Nitrogen
+Water
+Biochar
+Bio-oil
+Biogas
+Potassium
+Hydroxide
+Phosphoric
+Acid
+Sulphuric
+Acid
+Calcium
+Oxide
+Activated
+Carbon
+Air
+Total (kg/h)
+Temperature
+(◦C)
+Pressure
+(bara)",0
+155,Stream No.,0
+156,1,0
+157,1260,0
+158,2,0
+159,3,0
+160,4,0
+161,5,0
+162,1260,0
+163,6,0
+164,7,0
+165,1260,0
+166,8,0
+167,9,0
+168,1260,0
+169,183.299,0
+170,249.7,0
+171,427.5,0
+172,12.83093,0
+173,101.8265,0
+174,114.6574,0
+175,112.3643,0
+176,2.293148,0
+177,10,0
+178,1260,0
+179,"252.5605
+2.293148",0
+180,11,0
+181,12,0
+182,13,0
+183,14,0
+184,15,0
+185,16,0
+186,17,0
+187,18,0
+188,19,0
+189,20,0
+190,21,0
+191,22,0
+192,23,0
+193,24,0
+194,25,0
+195,26,0
+196,27,0
+197,28,0
+198,29,0
+199,252.5605,0
+200,"2.525605
+2.293148",0
+201,250.0349,0
+202,"441
+441
+378",0
+203,"2.525605
+2.293148
+2.205
+441
+378",0
+204,"2.500349
+0.022931",0
+205,"2.205
+376.11",0
+206,"0.025256
+2.270217
+2.205
+438.795
+1.89",0
+207,438.795,0
+208,32.90963,0
+209,"32.90963
+438.795",0
+210,"31.26414
+4.38795",0
+211,"1.645481
+434.4071",0
+212,1202.518,0
+213,1202.518,0
+214,1142.392,0
+215,60.12588,0
+216,58.92337,0
+217,1.202518,0
+218,186.4879,0
+219,186.4879,0
+220,177.1635,0
+221,9.324394,0
+222,9.324394,0
+223,8.858174,0
+224,0.46622,0
+225,0.456895,0
+226,0.009324,0
+227,133.6131,0
+228,133.6131,0
+229,126.9324,0
+230,6.680654,0
+231,0.534452,0
+232,0.133613,0
+233,25.45662,0
+234,25.45662,0
+235,24.94749,0
+236,0.509132,0
+237,0.509132,0
+238,0.509132,0
+239,0.509132,0
+240,0.005091,0
+241,0.504041,0
+242,126.2802,0
+243,1443.299,0
+244,"22056.21
+22056.21",0
+245,249.7,0
+246,427.5,0
+247,1272.831,0
+248,127.2831,0
+249,1400.114,0
+250,137.3117,0
+251,1262.802,0
+252,1515.363,0
+253,252.5605,0
+254,126.2802,0
+255,1265.328,0
+256,250.0349,0
+257,826.5329,0
+258,380.8434,0
+259,445.6895,0
+260,438.795,0
+261,219.3975,0
+262,658.1925,0
+263,212.8156,0
+264,445.3769,0
+265,1336.131,0
+266,1779.862,0
+267,1280.354,0
+268,499.5078,0
+269,"2948.635
+2948.635",0
+270,"2948.635
+3008.55",0
+271,20,0
+272,1,0
+273,50,0
+274,1,0
+275,125,0
+276,210,0
+277,1.3,0
+278,1.5,0
+279,200,0
+280,1.5,0
+281,20,0
+282,1,0
+283,121,0
+284,2,0
+285,121,0
+286,2,0
+287,121,0
+288,1.5,0
+289,121,0
+290,1.5,0
+291,121,0
+292,1,0
+293,25,0
+294,1,0
+295,300,0
+296,1.5,0
+297,300,0
+298,1.5,0
+299,350,0
+300,1,0
+301,50,0
+302,2,0
+303,50,0
+304,1,0
+305,550,0
+306,1,0
+307,25,0
+308,1,0
+309,100,0
+310,1,0
+311,100,0
+312,2,0
+313,80,0
+314,2,0
+315,30,0
+316,1,0
+317,80,0
+318,1,0
+319,80,0
+320,1,0
+321,50,0
+322,1,0
+323,50,0
+324,1,0
+325,35,0
+326,1,0
+327,434.4071,0
+328,2.172035,0
+329,432.235,0
+330,432.235,0
+331,433.5805,0
+332,35,0
+333,1,0
+334,"Processes 2022, 10, 1702",0
+335,10 of 22,0
+336,"A quenching tower is used (V-105) to allow for a rapid condensing of the oil stream
+operating at 50 ◦C, allowing the volatile vapours to quench and avoid secondary reactions
+that convert condensable vapours to non-condensable gases [60]. The gas products go
+into the compressor (C-101) to maintain pressure. A centrifugal compressor is assumed
+to have an efﬁciency of 75% and can also be cooled to 43 ◦C. Condensers (CO-101) in
+this process are assumed to be only one; however, for greater efﬁciency, there should be
+three condensers and varying temperatures of 80, 50, and 30 ◦C in which the oil would be
+collected. Direct contact condensers are used for this process as they have lower capital
+and maintenance costs. It is simple to design high heat transfer rates and transfer areas.
+There is a reduction in the occurrence of problems with fouling and corrosion, especially in
+the pyrolysis environment.",1
+337,"Activating unit is a fixed bed reactor (R-102) where the mixing of activating reagent
+H3PO4 and water is entered at a 1:2 ratio with 85 wt% of acid. The reactor operates at atmo-
+spheric conditions of 550 ◦C, which is ideal for harvesting feedstock. Complete conversion of
+char was assumed. This could vary from 70 to 80%, depending on the reaction temperatures
+and reagent ratio. The subsequent washing and extraction were conducted in V-106 and 107,
+in which KOH and de-ionised water entered 3 times the AC flowrate with KOH at 10 wt%.
+Drying (V-109) for the activated carbon is a crucial step due to the crystalline structure of the
+AC. Fluidised bed dryers are suitable for granular and crystalline structures and ranges of
+1–3 mm particle size. They are also suitable for continuous operation. Furthermore, they
+are also appealing due to their short residence times and faster and uniform heat transfer;
+however, these dryers’ power requirements will be higher [55]. The amount of air required
+for the dryer was calculated based on humidity ratio and moisture content assumptions in
+Appendix B. The final product flow of AC is 433 kg/hr.",1
+338,3. Economic Analysis,0
+339,"The economic analysis is crucial to determine the viability of the selected process to
+be applied on an industrial scale. The proposed plant is based in the UK. The economic
+analysis will also identify the current market conditions and the pyrolysis plant, provide the
+investment requirements, and evaluate the sustainability of a project. Financial calculations
+will be provided to show baseline projections of the plant using the economic tools and
+relevant equations and assumptions.",0
+340,3.1. Location of Plant,0
+341,"The location of the plant is a crucial factor. It was already stated that the plant would
+be based in the UK. When choosing the UK location, it must consider its corporation tax
+and yearly revenues. It should factor in the location factor in the construction of equipment
+that would affect the capital cost of the plant [27]. Another factor that could be considered
+is the safety aspect of constructing the plant.",0
+342,3.2. Biochar Feedstock,0
+343,"The main factors in the cost of the biochar process include biochar production (feed-
+stock, transport, utilities, maintenance and operation, labour, and capital cost), trans-
+portation and storage (equipment, labour, and new covered storage facilities), and energy
+production (electricity value and heat energy value). The proﬁt of the biochar process
+includes process beneﬁts and reﬁnement, carbon abatement, and pollution abatement.",0
+344,3.3. Cost Analysis,0
+345,"The cost approximation will be based on variables from [55]. A class 5 estimate was
+given with an accuracy of 40%. The factors considered will be the operation cost, payback
+period (PBP), Net proﬁt loss and internal rate of return. The breakeven point (BEP) also
+shows the correlation between the potential plant cost and the rate of return. The breakeBEP
+is the point at which total cost and revenue are equal. The major three cost areas are the
+total project investment (capital investment) and the operating cost, which are the variable",0
+346,"Processes 2022, 10, 1702",0
+347,11 of 22,0
+348,"operating costs and ﬁxed operating costs. Variable operating costs were determined from
+the material and energy balance. The economic feasibility of the process will be evaluated
+using a discounted cash ﬂow rate of return (DCFROR) calculation [55]. An internal rate of
+return (IRR) of 10% was speciﬁed for the plant life of 20 years and straight-line depreciation
+over 10 years. The economic analysis will be handled by examining the total ﬁnancial
+costs associated with activated carbon production to the speciﬁed capacity.
+It would
+brieﬂy consider induvial parameters, such as ﬁxed cost of production and variable cost of
+production, as the lack of information could contribute to expenses. The additional products
+are produced to beneﬁt the process. These products can be sold after different processes or
+used for plant energy generation. Table 4 outlines the estimated production and operational
+hours per year. The initial feedstock of PW is 10,080 tonnes/yr, not including initial water
+content. This can be found in the attached material balance document. The total capital
+investment summary (CAPEX) is given in Table 5.",0
+349,Table 4. Estimated production of plant and assumptions.,0
+350,Parameters,0
+351,Scheduled hours per year,0
+352,Scheduled operating hours per day,0
+353,Plant Running Hours,0
+354,Feedstock requirement,0
+355,Initial feedstock of PW (tonne/yr),0
+356,Level,0
+357,"8000
+22",0
+358,"10,080",0
+359,"Product Yields (% of Prepared Feedstock Weight)
+Bio-oil
+Biochar
+Biogas",0
+360,"35
+35
+30",0
+361,Estimated Production (tonne/yr),0
+362,Bio-oil production,0
+363,AC production,0
+364,Biogas production,0
+365,"3565.516
+3468.644
+3046.747",0
+366,Table 5. Total capital investment summary (CAPEX).,0
+367,Cost Parameters,0
+368,"Inside Battery Limits (ISBL)
+Offsite Battery Limits (OSBL)",0
+369,Engineering and Construction Cost,0
+370,Contingency Charges,0
+371,Cost (GBP),0
+372,"GBP 49,730,603.44
+GBP 19,892,241.38
+GBP 6,962,284.48
+GBP 6,962,284.48",0
+373,Fixed Capital Cost,0
+374,"GBP 83,547,413.78",0
+375,Reference/Assumptions,0
+376,"Bridgewater equation
+Based on 40% of ISBL",0
+377,"Based on 10% of the direct capital cost (ISBL + OSBL).
+Based on 10% of the direct capital cost (ISBL + OSBL).",0
+378,"Sum of the inside battery limits (ISBL), the offsite
+battery limits (OSBL), the engineering cost, and the",0
+379,contingency cost.,0
+380,"Working Capital
+Start-Up Expense",0
+381,"GBP 10,443,426.72
+GBP 6,962,284.48",0
+382,"Based on 15% of the direct capital cost (ISBL + OSBL).
+Based on 10% of the direct capital cost (ISBL + OSBL).",0
+383,Total Capital Investment,0
+384,"GBP 100,953,124.99",0
+385,"Sum of ﬁxed capital cost, working capital, and",0
+386,start-up expense.,0
+387,3.4. Total Capital Investment,0
+388,"The total capital investment is calculated as the sum of the ﬁxed capital investment
+required for constructing the plant, the working capital essential for the early operation of
+the plant, and the starting expenses.",0
+389,"Processes 2022, 10, 1702",0
+390,12 of 22,0
+391,3.4.1. Inside Battery Limits,0
+392,"Bridgewater’s method uses a correlation of plant cost against the number of processing
+steps and is suitable for plants that process liquids and solids [55]. The information required
+for this method is the plant capacity in metric tonnes per year. The reactor conversion
+(based on the mass of the desired product per mass fed into the reactor) and the number of
+main unit operations (11) would have substantial costs, such as pressure vessels. Similarly,
+the plant capacity is 3468 tonnes per year of AC, where the reactor conversion is estimated
+to be 30–35% for biochar. Since the plant capacity for this project is less than 60,000 metric
+tonnes per year and the plant location is in North England, so the equation has to account
+for this instead of the US Gulf Coast on a 2003 basis [55] for the location factor. The location
+factors are based on the International Construction Cost Factor Location Manual. The
+factor for the US Gulf Coast is 1.00, and for the UK, it is 1.02. The cost escalation index
+is from Chemical Engineering Journal—Chemical Engineering Plant Cost Index (CEPCI).
+The CEPCI value published for 2000 is 394.1, and for 2020 is 604.1. The cost has also been
+inﬂated for the plant in 2020. Equation (2) is used for the ISBL cost estimation [55].",0
+393,(cid:18) Q,0
+394,(cid:19)0.3,0
+395,-2,0
+396,"C = 280, 000 ∗ N ∗",0
+397,S,0
+398,"where C = ISBL capital cost, Q = plant capacity, S = reactor conversion (mass of desired
+product per mass fed to the reactor), and N = number of functional units.",0
+399,"ISBL cost estimation ((Equation (2)) also must consider the cost of major equipment
+based on equipment speciﬁcations. The cost of installation can add to the accuracy of
+the cost estimate using the proposed installation factors, such as the Lang factor or Hand
+factor [55]. However, this could change the estimated cost based on electrical construction,
+piping, instrumentation, and control factors.",0
+400,3.4.2. Offsite Battery Limits (OSBL),0
+401,"The offsite battery limits cost is associated with the alteration and upgrades required
+for the site infrastructure. This cost is taken as an estimated proportion of the ISBL. This
+process is taken as 40% of the ISBL due to the unavailability of information on the site
+condition and knowledge of the additions required for the site’s infrastructure.",0
+402,3.4.3. Engineering and Construction Cost,0
+403,"The engineering and construction cost is taken as 10% of the direct capital cost
+(ISBL + OSBL). This is a highly dependent on the depends on the economic climate. The
+costs include the contactor’s proﬁt, detailed engineering design, and administrative charges.",0
+404,3.4.4. Contingency Charges,0
+405,"Contingency charges are a useful component for cost estimates if unexpected events
+occur. There would be suitable provisions to mitigate the high cost of preventing bankruptcy.
+This constitutes 10% of the direct capital cost but can increase by 50%. The unexpected
+events could be changes in project scope, currency ﬂuctuation, and labour disputes.",0
+406,3.4.5. Fixed Capital Cost,0
+407,"Fixed capital is the total cost of designing, constructing, installing, and modifying a
+plant [55]. This helps provide realistic budgeting to assume that a detailed risk analysis is
+performed in the early design stages. The ﬁxed capital investment is calculated as the sum
+of the ISBL, OSBL, engineering, and contingency costs.",0
+408,3.4.6. Working Capital,0
+409,"This is the cost associated with the plant’s operation, design, build, and commissioning.
+Taking the working capital as an estimate based on the forecast cost of production as the",0
+410,"Processes 2022, 10, 1702",0
+411,13 of 22,0
+412,"working capital is recovered at the end of the project. However, working capital is estimated
+as 15% of the direct capital cost (ISBL + OSBL).",0
+413,3.4.7. Start-Up Expense,0
+414,The start-up expenses are taken as 10% of the direct capital cost (ISBL + OSBL).,0
+415,3.5. Operating Expenditure Summary,0
+416,The operating cost comprises the ﬁxed and variable costs of production. Table 6,0
+417,provides Operating Expenditure (OPEX) summary.,0
+418,Table 6. Operating Expenditure (OPEX) summary.,0
+419,Fixed Cost of Production,0
+420,Variable cost of Production,0
+421,"Cost Parameters
+Operating labour",0
+422,"Supervision
+Overhead",0
+423,Maintenance,0
+424,Property taxes and insurance,0
+425,Rent of land,0
+426,"General plant overhead
+Environmental charges",0
+427,Raw materials,0
+428,Utilities,0
+429,Consumables,0
+430,Efﬂuent disposable,0
+431,Packaging and shipping,0
+432,Cost (GPB),0
+433,"GBP 1,344,000.00
+GBP 336,000.00
+GBP 840,000.00
+GBP 2,486,530.17
+GBP 745,959.05
+GBP 1,044,342.67
+GBP 3,254,244.61
+GBP 696,228.45
+GBP 2,212,387.62
+GBP 225,086.31
+GBP 393,901.04
+GBP 112,543.15
+GBP 112,543.15",0
+434,"References/Assumptions
+UK plant operator wages
+25% of operating labour",0
+435,50% of operating labour + supervision,0
+436,"5% of ISBL
+1.5 % of ISBL",0
+437,1.5% of ISBL and OSBL,0
+438,"65% of operating labour, supervision,",0
+439,"overhead, and maintenance",0
+440,1% of ISBL and OSBL,0
+441,Prices from market value and forecast,0
+442,"20% of revenue
+35% of revenue
+10% of revenue
+10% of revenue",0
+443,3.5.1. Fixed Cost of Production,0
+444,"The ﬁxed production costs are ﬁxed regardless of the running of the plant and can
+affect the cost estimations associated with the project. These categories are listed in Table 6.
+One of the main factors is labour costs and wages to plant operators and supervisors during
+operating hours. This is independent of the production rate. Labour cost is a function of
+the operators per shift position within the process plant. This is estimated on a UK basis,
+GBP 40,000 salary per year. The estimation of the minimum number of shift positions 4
+shifts. Supervision is taken as 25% of operating labour. Overhead cost is taken as 50% of
+operating labour + supervision. Maintenance cost is taken as 5% of the ISBL investment
+cost. The property taxes and insurance are taken 1.5% of the ISBL. The rent of land is
+assumed and not purchased. Therefore, the cost is not added to the ﬁxed capital investment
+and is recovered in the end. The overhead charges are taken as 65% of the sum of operating
+labour, supervision, direct overhead, and maintenance. The environmental charge is taken
+as 1% of ISBL + OSBL.",0
+445,3.5.2. Variable Cost of Production,0
+446,"The variable cost of production; the raw materials required for the process, the utilities,
+the consumables needed, disposal of the waste streams produced, and the packing and
+shipping costs needed for the distribution of the products. Optimisation in terms of design
+and operation may decrease cost. It was assumed that the pea waste could be purchased
+for GBP 15 per tonne. The reagents such as phosphoric acid, and sulfuric acid could be
+purchased for GBP 40 per kg and GBP 79.80 per litre. MW absorbers are accounted for in
+the raw materials. The utilities required to produce AC are electricity, microwave power,
+cooling water, and Low-pressure steam. It is assumed that the cost associated with the
+utilities is 20% of the total quantity of biodiesel produced. Both Packaging and disposal
+were taken as 10% of product revenue.",0
+447,"The revenue for the process is the sale of by-products produced (gas and oil) that could
+require puriﬁcation of this stream if it does not meet the required standards. Additional",0
+448,"Processes 2022, 10, 1702",0
+449,14 of 22,0
+450,"units such as condensers and ﬁlters would be required, increasing the capital cost. Table 7
+summarises the revenues for the project. Margin is considered the same as total revenue.",0
+451,Table 7. Revenue summary for project.,0
+452,Products,0
+453,Quantity (Tonne/yr.),0
+454,Price,0
+455,Activated Carbon,0
+456,"Bio-oil
+Biogas",0
+457,"3468.64
+3565.52
+3046.75",0
+458,Total Revenue,0
+459,"GBP 100 per tonne
+GBP 150 per tonne
+GBP 80 per tonne",0
+460,Revenue,0
+461,"GBP 346,864.38
+GBP 534,827.42
+GBP 243,739.76
+GBP 1,125,431.55",0
+462,"The gross margin is also calculated using Equation (3), and the result is provided in",0
+463,Table 8.,0
+464,Gross Margin = Revenues − Raw Material Cost,0
+465,-3,0
+466,Table 8. Gross margin of process.,0
+467,"Gross Margin
+Total Revenue",0
+468,Raw Material Cost,0
+469,Cost (GBP)/yr,0
+470,"731,530.51
+1,125,431.55",0
+471,"GBP 393,901.04",0
+472,"Proﬁts need to be determined. Hence, the cost of making the product without the
+return on the equity capital investment needs to be known. The cash cost of production
+is the sum of all the variable production costs. The proﬁt produced is subjected to UK
+corporation tax set at 19%. To determine the cash ﬂow after tax has been taken, the net proﬁt
+is calculated by subtracting the tax from the gross proﬁt. The amount of tax that would
+need to be paid every year would vary; therefore, it might require to be inﬂated and would
+need to be determined to get the best representation of after-tax cash ﬂow. The taxable
+income is determined by subtracting the tax allowance from the gross proﬁt. The annual
+depreciation allowance was calculated for the tax allowance. For the cash ﬂow diagram to
+understand the net present value, ROI, and IRR, the interest rate was set at 11% and the
+discounting factor set at 12%. The cash ﬂow initially ﬂows out of the company to pay for
+the costs of engineering, equipment procurement, and plant construction (typically 3 years).
+When the plant is constructed and begins operation, the revenues from the product’s sales
+will be included. The cash ﬂow diagram for 20 years is given in Figure 2. From the cash
+ﬂow diagram, various components were gathered, such as NPV, IRR, ROI, and PBP.",0
+473,Figure 2. Cash ﬂow diagram.,0
+474,"Processes 2022, 10, 1702",0
+475,15 of 22,0
+476,"The NPV is the net present value of the project. It helps understand the desirability of
+a potential project in terms of the cash ﬂow and the associated risks of the selected discount
+rate. The method involves calculating the discounted net cash ﬂow. A positive NPV would
+indicate the project is desirable and would gain a return. A negative NPV would show that
+the project is not going forward as it would be worthless. The discount rate is essential,
+mainly for the IRR, showing the minimum acceptable return. The discount rate and NPV
+can be inversely proportional [55]. The NPV is calculated using Equation (4), where CFn is
+the cash ﬂow in the year (n), t is the project life in years, and i is the interest rate [55].",0
+477,"NPV = Σn=t
+n=1",0
+478,CFn,0
+479,(1 + i)n,0
+480,-4,0
+481,"The IRR indicates the efﬁciency of the capital investment. This shows that the maxi-
+mum capital cost value before the project is considered unacceptable by equating the NPV
+to 0 by testing different discount rates. This is known as the discounted cash ﬂow rate of
+return (DCFROR). It shows the maximum interest rate that the project will pay and still
+break even at the end of the project. The IRR equation is given in Equation (5) where i’ is
+the discounted cash ﬂow rate of return [55].",0
+482,"IRR = ∑n=t
+n=1",0
+483,"CFn
+(1 + i(cid:48))n = 0",0
+484,-5,0
+485,"The return on investment (ROI) indicates the efﬁciency of the initial investment into
+the project. The objective is to get a high ROI, indicating a gain from the investment. The
+ROI does not account for the time value of money. Therefore, a pre-cash tax ﬂow is used, so
+this cannot be the only indicator used. The pre-tax ROI is calculated using Equation (6)",0
+486,− tax ROI =,0
+487,"cumulative pre − tax cash f low
+plant li f e × intial investment",0
+488,× 100,0
+489,-6,0
+490,3.6. Sensitivity Analysis and Economics Summary,0
+491,"The sensitivity analysis usually accounts for the volatile parameters and examines the
+effects of these uncertainties and their impact on the project’s viability. This would indicate
+when the NPV would be most affected due to variations in parameters such as material
+prices, as they can vary depending on the demand. More sophisticated analysis is necessary
+to recognise the variables with the largest inﬂuences. The sensitivity analysis will evaluate
+the discount rate’s effect on the NPV, and the increase in a discount rate decreased the net
+present value. The NPV was done for 20 yrs. With a 12% discount rate and was calculated
+at GBP 4,476,137,297.79. Therefore, this process is viable and can go ahead. The revenue
+was changed based on a typical start-up schedule. Year one is the designing phase of the
+project (starting point of the cash ﬂow), which is taken as 30% of ﬁxed capital. The second
+year is construction, which is taken as 50% of ﬁxed capital. The third year is an ongoing
+construction cost taken as 20% of ﬁxed capital and working capital, the full ﬁxed cost of
+production (FCOP), and 30% of the variable cost of production (VCOP). The fourth year is
+FCOP and 70% of VCOP. The ﬁfth year is FCOP + VCOP is 100% of design basis revenue.
+FCOP + VCOP is the cash cost of production (CCOP). The revenue is then inﬂated for each
+year. The cash ﬂow diagram was constructed by accounting for tax allowance and discount
+ﬂow. The ﬁnancial summary indicated IRR and ROI to be 55 and 52%, respectively. The
+payback is 3 years. The NPV proﬁle against varying discount rates for sensitivity analysis
+is given in Figure 3.",0
+492,"Processes 2022, 10, 1702",0
+493,16 of 22,0
+494,Figure 3. Net present value proﬁle against varying discount rates for sensitivity analysis.,0
+495,"The deployment and supply of biochar feedstock in UK need to be evaluated as
+this requires a ‘breakeven selling point’ for biochar [61]. Currently, there is difﬁculty in
+understanding the extent of feasibility, which will cause difﬁculties in determining these
+uncertainties due to the lack of data from demonstration or commercial facilities. Shackley
+et al. [61] demonstrated the costs and beneﬁts associated with pyrolysis-biochar systems in
+which the total cost of producing, delivering, and applying biochar is considered for the
+UK and total beneﬁts (selling value of biochar). The main factors in the cost of the biochar
+process include:
+•
+•
+•
+•
+•
+•
+•",0
+496,"Biochar production—feedstock, transport, utilities, maintenance and operation, labour,
+and capital cost;
+Transportation and storage—equipment, labour, and new covered storage facilities;
+Energy production—electricity value and heat energy value;
+Proﬁt of the biochar process include:
+Process beneﬁts and reﬁnement;
+Carbon abatement;
+Pollution abatement.
+Since there are limited data on large-scale MAP-biochar systems, there will be a
+degree of uncertainty. However, experimental work will be relied upon to recommend
+unit operations. In the context of techno-economic feasibility MAP system can only be
+economically viable if it has a sustainable feedstock supply (PW), scalable technology (from
+lab to pilot), and the capability for continuous operation for the long term (20-year plant
+life). In terms of optimisation, the process should aim to have a lower pyrolysis temperature
+with a shorter residence time without affecting the yield of char and AC.",0
+497,4. Conclusions,0
+498,"The study concludes with AC production currently viable based on these baseline
+productions. However, the bio-oil (unreﬁned) price is relatively high and might not be
+practical. The study aimed to perform an economic analysis to identify the viability of
+producing activated carbon from pea waste. The total investment required for the project is
+GBP 100,953,124.99. The plant cost can be recovered from year 3 (mid) for the 20-year life.
+The NPV calculated is GBP 4,476,137,297.79 for 2020, and the associated IRR for the project
+is 55%. The ROI in 2020 is 52%.",0
+499,"The study concludes that bio-oil production is not viable based on baseline productions.
+However, with detailed process economic calculations taken into account, a much better
+judgement can be made. The fault can lie with bio-oil price, with the sale price having to be
+substantially larger per quantity to generate a positive profit. Additional alternative scenarios
+need to be examined, with the highest sensitivity identified, to assess bio-oil production’s
+overall viability from PW accurately, explain the bio-oil quality, and improve profitability.",0
+500,"Processes 2022, 10, 1702",0
+501,17 of 22,0
+502,"To further assess the appropriateness of this production method for commercial AC,
+environmental issues should be considered when designing the process and the unit
+operations, along with their associated mitigating methods. This would affect the plant
+costing estimation. Similarly, process control piping and instrumentation and start-up and
+shut-down equipment need to be considered. A simulation package such as Aspen HYSYS
+to simulate the whole process and include a detailed sizing of the equipment should be
+used. This would allow for a better understanding of the purchase cost and installation
+of the process equipment appropriate for the process. This would also better inform the
+carbon dioxide emissions of the process for a better understanding of its ‘sustainability.",0
+503,"Author Contributions: S.H.Z.: Conceptualisation, Supervision, Writing—Original draft preparation,
+Reviewing and Editing. A.A.: Investigation, Data curation, Writing—Report. All authors have read
+and agreed to the published version of the manuscript.",0
+504,Funding: This research received no external funding.,0
+505,Institutional Review Board Statement: Not applicable.,0
+506,Informed Consent Statement: Not applicable.,0
+507,Data Availability Statement: Not applicable.,0
+508,"Conﬂicts of Interest: On behalf of all authors, the corresponding author states that there is no conﬂict
+of interest.",0
+509,Abbreviations,0
+510,"Activated carbon
+Breakeven Point
+Capital Expenditure
+Cash Cost of Production
+Chemical Engineering Plant Cost Index",0
+511,"AC
+BEP
+CAPEX
+CCOP
+CEPCI
+DCFROR Discounted Cash Flowrate of Return
+DTG
+FCOP
+IRR
+ISBL
+MAP
+NCG
+NPV
+OPEX
+OSBL
+PAHs
+PBP
+PW
+ROI
+SiC
+UK
+VCOP
+∆G
+∆H
+∆S",0
+512,"Derivative Thermogravimetry Peak Temperature
+Fixed Cost of Production
+Internal Rate of Return
+Inside Battery Limits
+Microwave-Assisted Pyrolysis
+non-condensable gases
+Net Present Value
+Expenditure
+Offsite Battery Limits
+Aromatic Hydrocarbons
+Payback Period
+Pea Waste
+Return on Investment
+Silicon Carbide
+United Kingdom
+Variable Cost of Production
+Free Gibbs Energy
+Enthalpy
+Changes in Entropy",0
+513,Appendix A. Calculation of Air Gas Flow Rate,0
+514,Unit Operation: Rotary Dryer,0
+515,"Processes 2022, 10, 1702",0
+516,18 of 22,0
+517,"Dyer one for the initial drying of feedstock as part of pretreatment method, The air ﬂowrate
+needs to be calculated for the amount of moisture to be dried.",0
+518,"Information known:
+Outlet Temperature (Solids) = 200 ◦C
+Outlet Temperature (Air) = 210 ◦C
+Inlet Temperature (Solids) = 20 ◦C
+Inlet Temperature (Air) = 210 ◦C
+Cp,g (Air) = 1.1 kJ/kg retrieved form Perry’s handbook
+Cp (solids) = 1.5 kJ/kg (average value from literature)
+Cp (liquids) = 4.18 kJ/kg as this is assumed to be only water
+Stream 1 (pea waste ﬂow in) = 1260 kg/hr
+Xin = 0.127
+X out = 0.01
+Yin = 0
+Unknown Information
+Y out = Unknown
+Stream 3 = Unknown
+λ = Latent heat of the liquid @ 210 ◦C = 1899.62 (from steam tables)
+Mass balance general equation for dryer
+Steam 3 *(Yin) + Steam 1*(Xin) = Stream 3 *Y out + Steam 5 X out
+(S3 × 0) + (1260 × 0.127) = (S3 Yout) + (1260 × 0.01)
+0 + 160.2 = S3 Yout + 12.6
+S3Y out = 147.42
+General Energy Balance for the dryer
+S3H in air + S5 H in, solids pw = S3 Hout, air + S5 H out, solid pw
+Enthalpies given as follows for solids (pea waste);
+Hi = Cp, solid*(Ti, solid − 0) + Cp, liquid*Xi*(Ti, liquid − 0)
+H in, solids = 1.5(293.15 − 0) + (4.18 × 0.127)(293.15 – 0 − 0) = 595.35 kJ/kg
+H in = 595.35 kJ/kg
+H out, solids = 1.5* (483.15 − 0) + (0.07 × 4.18)*(483.15 − 0) = 866.09 kJ/kg
+H out = −866.09 kJ/kg
+Enthalpies given as follows for Air;
+Hi = (Cp, air + Cp, liquid*Yi)(Ti, air − 0) + Yi*λ
+H in, air = (1 + 4.18 × 0)(483.15 − 0) + 0 × 1899.62 = 483.15 kJ/kg
+H out, air = (1 + 4.18 *Y out)(323.15 − 0) + Y out × 1899.62 = 483.15 kJ/kg + *",0
+519,"233,769.94 kJ/kg",0
+520,"Processes 2022, 10, 1702",0
+521,19 of 22,0
+522,equation and rearranging to ﬁnd Air ﬂow rate,0
+523,"Substituting the answer calculated from the mass balance into the energy balance
+S3*483.15 + 1260 × 595.35 = S3*(325.15 + 3290.467*Y out) + 1260 × 866.09
+483.15*S3 + 749,700 = 325.15*S3 + 3250.39*S3*Y out + 1,091,273.40
+160.15*S3 + 749,700 = 3250.39*S3*Y out + 1,091,273.40
+From previous calculations S3*Y out = 147.42
+160.15*S3 + 749,700 = 479172.05 + 1,091,273.40
+160.15*S3 = 820,745.45
+S3 = 820745.45
+160.15
+Air ﬂow in is = 5129.66 kg/hr",0
+524,Appendix B. Activated Carbon Dryer,0
+525,(Unit Operation: Rotary Dryer),0
+526,"General energy balance based on humidity ratio, moisture content",0
+527,".mair *W2 + .mAC*w1 = .mair*W1+ .mAC*w2
+W = absolute humidity
+W = moisture content
+.m(air) = mass ﬂow rate of air = 2948.63 kg/h
+.m(AC) = mass ﬂow rate of activated carbon = 493 kg/h
+Moisture content on dry basis",0
+528,"Mosture content (w1) = Ww
+Wd",0
+529,"Ww is water weight = 66.2 kg/h
+Wd is the dry weight of AC = 432.24 kg/h
+Moisture content (w1) is 0.153
+From the psychometric chart [62], it assumed that that AC stream has 60% humidity",0
+530,"at 50 ◦C, this streams leaves 35 ◦C.From graph humidity (W1) is 0.022
+at 60 ◦C, this streams leaves 35 ◦C.From graph humidity(W2) is 0.002",0
+531,"From the psychometric chart [62], it assumed that that Air stream has 30% humidity",0
+532,The ﬁnal moisture content (w2) of the AC product is 0.02,0
+533,"Processes 2022, 10, 1702",0
+534,20 of 22,0
+535,"References
+1.",0
+536,"Xu, Z.; Xiao, X.; Fang, P.; Ye, L.; Huang, J.; Wu, H.; Tang, Z.; Chen, D. Comparison of Combustion and Pyrolysis Behavior of the
+Peanut Shells in Air and N2: Kinetics, Thermodynamics and Gas Emissions. Sustainability 2020, 12, 464. [CrossRef]
+Rowena, C.; Tanquilut, M.; Genuino, H.C.; Wilbers, E.; Amongo, R.M.C.; Suministrado, D.C.; Yaptenco, K.F.; Elauria, M.M.;
+Elauria, J.C.; Heeres, H.J. Bioreﬁning of Pigeon Pea: Residue Conversion by Pyrolysis. Energies 2020, 13, 2778. [CrossRef]
+Chen, Q.; Tan, X.; Liu, Y.; Liu, S.; Li, M.; Gu, Y.; Zhang, P.; Ye, S.; Yang, Z.; Yang, Y. Biomass-derived porous graphitic carbon
+materials for energy and environmental applications. J. Mater. Chem. A 2020, 8, 5773–5811. [CrossRef]
+Popp, J.; Lakner, Z.; Harangi-Rakos, M.; Fari, M. The effect of bioenergy expansion: Food, energy, and environment. Renew.
+Sustain. Energy Rev. 2014, 32, 559–578. [CrossRef]
+Tripathi, N.; Hills, C.D.; Singh, R.S.; Atkinson, C.J. Biomass waste utilisation in low-carbon products: Harnessing a major potential
+resource. Clim. Atmos. Sci. 2019, 2, 35. [CrossRef]
+Abiad, M.G.; Meho, L.I. Food loss and food waste research in the Arab world: A systematic review. Food Secur. 2018, 10, 311–322.
+[CrossRef]
+Danish, M.; Ahmad, T. A review on utilization of wood biomass as a sustainable precursor for activated carbon production and
+application. Renew. Sustain. Energy Rev. 2018, 87, 1–21. [CrossRef]
+Foundation, E.M. Delivering the Circular Economy: A Toolkit for Policymakers; Ellen MacArthur Foundation: Cowes, UK, 2015.
+Kaczor, Z.; Buli ´nski, Z.; Werle, S. Modelling approaches to waste biomass pyrolysis: A review. Renew. Energy 2020, 159, 427–443.
+[CrossRef]",0
+537,2,0
+538,3,0
+539,4,0
+540,5,0
+541,6,0
+542,7,0
+543,"8.
+9.",0
+544,"10. Holliday, M.C.; Parsons, D.R.; Zein, S.H. Agricultural Pea Waste as a Low-Cost Pollutant Biosorbent for Methylene Blue Removal:",0
+545,"Adsorption Kinetics, Isotherm and Thermodynamic Studies. Biomass Conv. Bioref. 2022. [CrossRef]",0
+546,"11. Nimbalkar, P.R.; Khedkar, M.A.; Chavan, P.V.; Bankar, S.B. Biobutanol production using pea pod waste as substrate: Impact of",0
+547,"drying on sacchariﬁcation and fermentation. Renew. Energy 2018, 117, 520–529. [CrossRef]",0
+548,"12. Xia, H.; Houghton, J.A.; Clark, J.H.; Matharu, A.S. Potential Utilization of Unavoidable Food Supply Chain Wastes–Valorization",0
+549,"of Pea Vine Wastes. ACS Sustain. Chem. Eng. 2016, 4, 6002–6009. [CrossRef]",0
+550,"13. Verma, N.; Bansal, M.; Kumar, V. Pea peel waste: A lignocellulosic waste and its utility in cellulase production BY Trichoderma",0
+551,"reesei under solid state cultivation. BioResources 2011, 6, 1505–1519. [CrossRef]",0
+552,"14. Li, J.; Dai, J.; Liu, G.; Zhang, H.; Gao, Z.; Fu, J.; He, Y.; Huang, Y. Biochar from microwave pyrolysis of biomass: A review. Biomass",0
+553,"Bioenergy 2016, 94, 228–244. [CrossRef]",0
+554,"15. Motasemi, F.; Afzal, M.T. A review on the microwave-assisted pyrolysis technique. Renew. Sustain. Energy Rev. 2013, 28, 317–330.",0
+555,[CrossRef],0
+556,"16. Gezae, A.; Chandraratne, M. Biochar Production from Biomass Waste-Derived Material.",0
+557,"In Encyclopedia of Renewable and
+Sustainable Materials; Hashmi, S., Choudhury, I.A., Eds.; Elsevier: Amsterdam, The Netherlands, 2020; Volume 4, pp. 370–378.
+ISBN 9780128131961.",0
+558,"17. Kung, C.-C.; Mu, J.E. Prospect of China’s renewable energy development from pyrolysis and biochar applications under climate",0
+559,18,0
+560,"change. Renew. Sustain. Energy Rev. 2019, 114, 109343. [CrossRef]
+Fodah, A.E.M.; Ghosal, M.K.; Behera, D. Bio-oil and biochar from microwave-assisted catalytic pyrolysis of corn stover using
+sodium carbonate catalyst. J. Energy Inst. 2021, 94, 242–251. [CrossRef]",0
+561,"19. Ge, S.; Yek, P.N.Y.; Cheng, Y.W.; Xia, C.; Mahari, W.A.W.; Liew, R.K.; Peng, W.; Yuan, T.Q. Progress in microwave pyrolysis
+conversion of agricultural waste to value-added biofuels: A batch to continuous approach. Renew. Sustain. Energy Rev. 2021, 135,
+110148. [CrossRef]",0
+562,"20. Zein, S.H.; Asenso, B.; Skoulou, V.K. Nanocarbons from Acid pre-treated Waste Coffee Grounds using Microwave Radiation.",0
+563,"Mater. Lett. 2017, 193, 46–49. [CrossRef]",0
+564,"21. Touhami, D.; Zhu, Z.; Balan, W.S.; Janaun, J.; Haywood, S.; Zein, S. Characterization of rice husk-based catalyst prepared via",0
+565,"conventional and microwave carbonization. J. Environ. Chem. Eng. 2017, 5, 2388–2394. [CrossRef]",0
+566,"22. Kwoczynski, Z.; ˇCmelík, J. Characterization of biomass wastes and its possibility of agriculture utilization due to biochar",0
+567,"production by torrefaction process. J. Clean. Prod. 2020, 280, 124302. [CrossRef]",0
+568,"23. Khiari, B.; Jeguirim, M.; Limousy, L.; Bennici, S. Biomass derived chars for energy applications. Renew. Sustain. Energy Rev. 2019,",0
+569,"108, 253–273. [CrossRef]",0
+570,"24. Villota, E.M.; Lei, H.; Qian, M.; Yang, Z.; Villota, S.M.A.; Zhang, Y.; Yadavalli, G. Optimizing Microwave-Assisted Pyrolysis of
+Phosphoric Acid-Activated Biomass: Impact of Concentration on Heating Rate and Carbonization Time. ACS Sustain. Chem. Eng.
+2018, 6, 1318–1326. [CrossRef]",0
+571,"25. Gámiz, B.; Hall, K.; Spokas, K.A.; Cox, L. Understanding Activation Effects on Low-Temperature Biochar for Optimization of",0
+572,26,0
+573,"Herbicide Sorption. Agronomy 2019, 9, 588. [CrossRef]
+Foong, S.Y.; Liew, R.K.; Yang, Y.; Cheng, Y.W.; Yek, P.N.Y.; Mahari, W.A.W.; Lee, X.Y.; Han, C.S.; Vo, D.V.N.; Van Le, Q.; et al.
+Valorization of biomass waste to engineered activated biochar by microwave pyrolysis: Progress, challenges, and future directions.
+Chem. Eng. J. 2020, 389, 124401. [CrossRef]",0
+574,"27. Waudby, H.; Zein, S.H. A circular economy approach for industrial scale biodiesel production from palm oil mill efﬂuent using
+microwave heating: Design, simulation, techno-economic analysis and location comparison. Process Saf. Environ. Prot. 2021, 148,
+1006–1018. [CrossRef]",0
+575,"Processes 2022, 10, 1702",0
+576,21 of 22,0
+577,"28. Thoppil, Y.; Zein, S.H. Techno-economic analysis and feasibility of industrial-scale biodiesel production from spent coffee grounds.",0
+578,29,0
+579,"J. Clean. Prod. 2021, 307, 127113. [CrossRef]
+Stella Mary, G.; Sugumaran, P.; Niveditha, S.; Ramalakshmi, B.; Ravichandran, P.; Seshadri, S. Production, characterization and
+evaluation of biochar from pod (Pisum sativum), leaf (Brassica oleracea) and peel (Citrus sinensis) wastes. Int. J. Recycl. Org. Waste
+Agric. 2016, 5, 43–53. [CrossRef]",0
+580,"30. Müsellim, E.; Tahir, M.H.; Ahmad, M.S.; Ceylan, S. Thermokinetic and TG/DSC-FTIR study of pea waste biomass pyrolysis. Appl.",0
+581,"Therm. Eng. 2018, 137, 54–61. [CrossRef]",0
+582,"31. Tadda, M.A.; Ahsan, A.; Shitu, A.; ElSergany, M.; Arunkumar, T.; Jose, B.; Razzaque, M.A.; Daud, N.N.N. A review on activated",0
+583,"carbon: Process, application and prospects. J. Adv. Civ. Eng. Pract. Res. 2016, 2, 7–13.",0
+584,"32. Cukierman, A.L. Development and Environmental Applications of Activated Carbon Cloths. ISRN Chem. Eng. 2013, 2013, 261523.",0
+585,[CrossRef],0
+586,"33. Zhou, J.; Luo, A.; Zhao, Y. Preparation and characterisation of activated carbon from waste tea by physical activation using steam.",0
+587,"J. Air Waste Manag. Assoc. 2018, 68, 1269–1277. [CrossRef] [PubMed]",0
+588,"34. Garcia-Garcia, G.; Stone, J.; Rahimifard, S. Opportunities for waste valorisation in the food industry—A case study with four UK",0
+589,"food manufacturers. J. Clean. Prod. 2019, 211, 1339–1356. [CrossRef]",0
+590,"35. Tomczyk, A.; Sokołowska, Z.; Boguta, P. Biochar physicochemical properties: Pyrolysis temperature and feedstock kind effects.",0
+591,"Rev. Environ. Sci. Bio Technol. 2020, 19, 191–215. [CrossRef]",0
+592,"36. Huang, Y.-F.; Chiueh, P.-T.; Lo, S.-L. A review on microwave pyrolysis of lignocellulosic biomass. Sustain. Environ. Res. 2016, 26,",0
+593,103–109. [CrossRef],0
+594,"37. Kostas, E.T.; Beneroso, D.; Robinson, J.P. The application of microwave heating in bioenergy: A review on the microwave",0
+595,"pretreatment and upgrading technologies for biomass. Renew. Sustain. Energy Rev. 2017, 77, 12–27. [CrossRef]",0
+596,"38. Liu, H.; E, J.; Ma, X.; Xie, C. Inﬂuence of microwave drying on the combustion characteristics of food waste. Dry. Technol. 2016, 34,",0
+597,1397–1405. [CrossRef],0
+598,"39. Haque, N.; Somerville, M. Techno-Economic and Environmental Evaluation of Biomass Dryer. Procedia Eng. 2013, 56, 650–655.",0
+599,[CrossRef],0
+600,"40. Bai, X.; Wang, G.; Yu, Y.; Wang, D.; Wang, Z. Changes in the physicochemical structure and pyrolysis characteristics of wheat",0
+601,"straw after rod-milling pretreatment. Bioresour. Technol. 2018, 250, 770–776. [CrossRef]",0
+602,"41. Kalita, E. Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products. Front. Energy Res. 2018, 6, 141.
+42. Rehman, A.; Gulfraz, M.; Raja, G.K.; Haq, M.U.; Anwar, Z. A Comprehensive Approach to Utilize an Agricultural Pea peel (Pisum",0
+603,"sativum) Waste as a Potential Source for Bio-ethanol Production. Rom. Biotechnol. Lett. 2015, 20, 10422–10430.",0
+604,"43. Zhang, B.; Xiu, S.; Shahbazi, G. Microwave-Assisted Pyrolysis Oil: Process, Characterization, and Fractionation; Nova Science Publishers,",0
+605,"Inc.: New York, NY, USA, 2012; pp. 131–143.",0
+606,"44. Wu, C.; Budarin, V.L.; Gronnow, M.J.; De Bruyn, M.; Onwudili, J.A.; Clark, J.H.; Williams, P. Conventional and microwave-assisted",0
+607,"pyrolysis of biomass under different heating rates. J. Anal. Appl. Pyrolysis 2014, 107, 276–283. [CrossRef]",0
+608,"45. Miura, M.; Kaga, H.; Tanaka, S.; Takahashi, K.; Ando, K. Rapid microwave pyrolysis of wood. J. Chem. Eng. Jpn. 2000, 33, 299–302.",0
+609,[CrossRef],0
+610,"46. Ethaib, S.; Omar, R.; Kamal, S.M.M.; Awang Biak, D.R.; Zubaidi, S.L. Microwave-Assisted Pyrolysis of Biomass Waste: A Mini",0
+611,"Review. Processes 2020, 8, 1190. [CrossRef]",0
+612,"47. Zhao, X.; Wang, M.; Liu, H.; Zhao, C.; Ma, C.; Song, Z. Effect of temperature and additives on the yields of products and",0
+613,"microwave pyrolysis behaviors of wheat straw. J. Anal. Appl. Pyrolysis 2013, 100, 49–55. [CrossRef]",0
+614,"48. Doucet, J.; Laviolette, J.P.; Farag, S.; Chaouki, J. Distributed Microwave Pyrolysis of Domestic Waste. Waste Biomass Valorization",0
+615,"2014, 5, 1–10. [CrossRef]",0
+616,"49. Chen, T.; Liu, R.; Scott, N.R. Characterization of energy carriers obtained from the pyrolysis of white ash, switchgrass and corn",0
+617,50,0
+618,51,0
+619,"stover—Biochar, syngas and bio-oil. Fuel Process. Technol. 2016, 142, 124–134. [CrossRef]
+Srinophakun, T.; Hansirisawat, P. Techno-Economic of 100 kW Power Plant from Microwave-Assisted Biodiesel Pyrolysis. Int. J.
+Renew. Energy Res. 2020, 10, 1021–1030.
+Johnston, K. The Production, Characterization, and Upgrading of Biochars into Activated Carbon; The Honors College University of
+Maine: Orono, ME, USA, 2018.",0
+620,"52. Azargohar, R.; Dalai, A.K. Steam and KOH activation of biochar: Experimental and modeling studies. Microporous Mesoporous",0
+621,"Mater. 2008, 110, 413–421. [CrossRef]",0
+622,"53. Del Campo, B.G. Production of Activated Carbon from Fast Pyrolysis Biochar and the Detoxiﬁcation of Pyrolytic Sugars for",0
+623,"Ethanol Fermentation. Ph.D. Thesis, Iowa State University, Ames, IA, USA, 2015.",0
+624,"54. Gebreegziabher, T.; Oyedun, A.O.; Hui, C.W. Optimum biomass drying for combustion—A modeling approach. Energy 2013, 53,",0
+625,"67–73. [CrossRef]
+Sinnott, R.K.L.; Towler, G. Chemical Engineering Design, 6th ed.; Elsevier: Amsterdam, The Netherlands, 2019.",0
+626,"55.
+56. Tumuluru, J.S.; Heikkila, D. Biomass Grinding Process Optimization Using Response Surface Methodology and a Hybrid Genetic",0
+627,"Algorithm. Bioengineering 2019, 6, 12. [CrossRef]",0
+628,"57. Newbolt, G.S. Modelling of Biomass Milling. Ph.D. Thesis, University of Nottingham, Nottingham, UK, 2018.",0
+629,"Processes 2022, 10, 1702",0
+630,22 of 22,0
+631,"58. Mohammed, I.Y.; Abakr, Y.A.; Kazi, F.K.; Yusuf, S. Effects of Pretreatments of Napier Grass with Deionized Water, Sulfuric Acid",0
+632,"and Sodium Hydroxide on Pyrolysis Oil Characteristics. Waste Biomass Valorization 2017, 8, 755–773. [CrossRef]",0
+633,"59. Hung, J. The Production of Activated Carbon from Coconut Shells Using Pyrolysis and Fluidized Bed Reactors. Bachelor’s Thesis,",0
+634,"The University of Arizona, Tucson, AZ, USA, 2012.",0
+635,"60. Papari, S.; Hawboldt, K. A review on condensing system for biomass pyrolysis process. Fuel Process. Technol. 2018, 180, 1–13.",0
+636,61,0
+637,"[CrossRef]
+Shackley, S.; Hammond, J.; Gaunt, J.; Ibarrola, R. The feasibility and costs of biochar deployment in the UK. Carbon Manag. 2011,
+2, 335–356. [CrossRef]",0
+638,"62. Legg, R. Chapter 1—Properties of Humid Air. In Air Conditioning System Design; Butterworth-Heinemann: Oxford, UK, 2017; pp.",0
+639,1–28.,0

@@ -1,0 +1,1152 @@
+,0
+0,"Article
+Reduction of Cost, Energy and Emissions of the Formalin
+Production Process via Methane Steam Reforming"
+1,"Jan Puhar 1, Annamaria Vujanovi´c 1, Peter Awad 2 and Lidija ˇCuˇcek 1,*"
+2,1
+3,"Faculty of Chemistry and Chemical Engineering, University of Maribor, 2000 Maribor, Slovenia;
+jan.puhar@student.um.si (J.P.); annamaria.vujanovic@um.si (A.V.)"
+4,"2 Department of Applied Sciences, TU Delft, 2629 Delft, The Netherlands; P.W.A.A.Awad@tudelft.nl
+* Correspondence: lidija.cucek@um.si; Tel.: +386-2-229-44-54"
+5,"Abstract: Production of formalin, which is among the highest production volume chemicals, is highly
+energy-intensive; thus, reduction of energy use is very important in reducing cost and emissions. The
+aim of this and its larger overall research is to systemically analyze how to improve sustainability
+of processes producing formalin as an intermediate or ﬁnal product.
+In this part of the work,
+energy consumption requirements are analyzed for the conventional formalin production process
+via methane steam reforming, where opportunities for energy consumption reduction are identiﬁed.
+This work will serve as a base case for further investigation of alternative formalin production
+pathways. To achieve energy savings, heat integration technology by combined pinch analysis and
+mathematical programming is applied. The formalin production process is simulated using Aspen
+HYSYS, and heat integration of the production process was performed based on simulated design
+using GAMS software. Economic and environmental footprint analyses were performed for both
+non-integrated and integrated designs. Results show that heat integration reduces heat consumption
+by around 39%, leading to a saving of 11% in capital cost and turning annual operating cost into
+positive revenue. Heat integration also improves the environmental aspect, where a 7–22% reduction
+in selected environmental footprints is achieved."
+6,"Keywords: formalin production process; energy consumption reduction; heat integration; pinch
+analysis; mathematical programming; economic performance; environmental footprint analysis"
+7,1. Introduction
+8,"Modern chemical industries and supply chains currently face numerous challenges
+that threaten their continued success in an increasingly complex environment. The pressure
+on modern companies to go clean and sustainable to compete in an ever-changing economy
+is enormous. Circularity of production systems is important for sustainability and sustain-
+able systems to obtain minimal resource use and maximal reuse of energy and materials.
+Cyclic production systems are the goal of industrial ecology and the circular economy. The
+issue is being tackled on many fronts, from increasing the energy consumption of present
+technologies, to redesigning and challenging the conventional approaches on multiple
+levels along the supply chains [1]."
+9,"Modern complex systems that require a holistic approach rather than a linear one are
+best viewed through the lens of systems thinking, which enables a better understanding
+of the system and offers more effective solutions [2]. As a group of interconnected parts
+(process units and ﬂows) that together form a whole, every single chemical industrial
+process represents a system. The same is true for a factory with an organizational hierarchy
+and speciﬁed goals. In systemic structures, decisions are often derived from these complex
+hierarchies and can be better managed with systems thinking tools [3]. Various newly
+developed technologies and techniques are expected to improve the currently unsustainable
+state of industrial systems [4]. It is vital to adopt more sustainable technologies in supply"
+10,"Citation: Puhar, J.; Vujanovi´c, A.;
+Awad, P.; ˇCuˇcek, L. Reduction of Cost,
+Energy and Emissions of the
+Formalin Production Process via
+Methane Steam Reforming. Systems
+2021, 9, 5. https://doi.org/10.3390/
+systems9010005"
+11,"Received: 9 December 2020
+Accepted: 13 January 2021
+Published: 16 January 2021"
+12,"Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
+iations."
+13,"Copyright: © 2021 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/)."
+14,"Systems 2021, 9, 5. https://doi.org/10.3390/systems9010005"
+15,https://www.mdpi.com/journal/systems
+16,"Systems 2021, 9, 5"
+17,2 of 17
+18,"chains [5], to interconnect different industrial processes, and directly use secondary raw
+materials, byproducts and waste as inputs, especially in the production of bulk chemicals.
+One of these bulk chemicals is formalin, which is a 37% aqueous solution of formalde-
+hyde and ranks in the top 50 chemicals produced worldwide [6]. It is a key platform
+chemical and an important precursor for a variety of products and value-added chemicals,
+such as the production of resins, disinfectants, adhesives, coatings and many other products
+for various industries [7], while it also offers potential applications in the future energy
+sector [8]. Most of the formalin is currently produced by methanol oxidation [8], while
+methanol is typically produced from natural gas producing syngas, converting syngas to
+crude methanol and purifying methanol [9]. Most of the methanol, which is highly-energy
+intensive [10], is used in the production of formaldehyde [9]. Contrary to current practice,
+methanol and formalin production processes could be operated sustainably regarding
+materials and energy [11]."
+19,"In this work, the main goal is to obtain a formalin production process with minimum
+energy requirements. A formalin production process was ﬁrst simulated; heat integration
+(HI) was then applied to reduce utility consumption by a combination of pinch analysis
+(PA) and mathematical programming (MP) [12], where a sequential three-step approach
+was used. The ﬁrst two steps were optimization steps to achieve minimum utility cost with
+the least number of heat exchange units. Based on these two steps, the heat exchanger
+network (HEN) of the process was designed. The economic and environmental impacts of
+implementing HI within the process were further evaluated. Both capital and operating cost
+were calculated, while environmental footprints were calculated based on life cycle analysis
+(LCA). By applying process systems engineering (PSE) techniques, a more sustainable
+formalin production process was designed."
+20,"Few studies have dealt with the applications of PSE to the formalin production process.
+Kovaˇc Kralj [13] used the PA method to perform total site HI between production processes
+of solvent, methanol and formalin. However, in this study, capital cost and environmental
+impacts were not assessed. Qi and Li [14] used the PA method to analyze an existing
+HEN for a simulated methanol-to-formaldehyde production process, where savings in hot
+and cold utility consumption were achieved. Studies also analyzed how HI affects utility
+consumption and subsequently the economic and environmental impacts of methanol
+production process. Kijevˇcanin et al. [15] used PA to reduce utility consumption and
+achieve a viable trade-off between capital and utility cost. Chen et al. [16] developed a
+simultaneous HI approach based on linear programming formulations and applied it to
+a methanol production process. Maréchal et al. [17] modiﬁed the methanol process by
+applying simulation models and a new synthesis strategy. Improvements in overall energy
+balance and conversion were achieved; however HEN was not designed in detail."
+21,"Several investigations have also been undertaken on the economic and environmen-
+tal analysis of various systems, such as diffusion of electric vehicles [18], wastewater
+management [19], bioenergy systems [20], biogas supply networks [21], company supply
+networks [22] and many others. Based on the literature review, it was found that no studies
+had dealt with systematic analysis of cost, energy and emissions of the formalin production
+process, even though formaldehyde is among the top chemicals produced in the United
+States by quantity [23] and is among the basic organic chemicals. Analysis had not been
+performed for either the classical process via methane steam reforming (MSR) or for the
+more sustainable process, such as formalin produced by captured CO2 and renewable
+hydrogen, produced by biomass gasiﬁcation and the like."
+22,"In this work a comprehensive technical, economic and environmental footprint analy-
+sis of the formalin production process via MSR is performed. The process is ﬁrst simulated
+using Aspen HYSYS software, where energy consumption requirements are analyzed.
+Moreover, HI was applied to improve energy efﬁciency and to enhance energy savings
+in formalin industries. Additionally, economic evaluation and environmental footprint
+analysis were carried out for both non-integrated and heat-integrated processes. The
+conclusions of this work will serve as a basis for technical, economic and environmental"
+23,"Systems 2021, 9, 5"
+24,3 of 17
+25,"assessment of more sustainable formaldehyde production and production processes that
+use formaldehyde as a raw material."
+26,2. Methodology
+27,"Reduction of energy consumption, and consequently the cost of and emissions from
+the formalin production process by the most common method MSR are analyzed by a
+sequential HI approach. In this section, a general description of the formalin production
+process via MSR is ﬁrst presented. The methodology for HI, and economic and envi-
+ronmental footprint analysis are then described. Energy use, operating and capital cost
+and environmental footprints were evaluated for both the non-integrated (simulated) and
+heat-integrated process."
+28,"Simulation of MSR to methanol and further to formalin was carried out using Aspen
+HYSYS software [24]. Based on the simulation, a sequential three-step approach was used
+to obtain HEN design and a proposed heat-integrated process ﬂowsheet by combined
+PA/MP."
+29,"Economic evaluation was carried out by calculating operating cost and capital cost
+based on the factors method [25]. Environmental footprint analysis was performed using
+OpenLCA software [26], where various environmental footprints (greenhouse gas (GHG),
+nitrogen, phosphorus, ecological and energy footprints) and human toxicity potential
+were evaluated. A ﬂowchart showing the framework of applied methodology is shown in
+Figure 1."
+30,Figure 1. Flowchart of performed steps in the study.
+31,2.1. Formalin Production via Methane Steam Reforming
+32,"Formalin is a 37 wt % aqueous solution of formaldehyde and is the most common
+formaldehyde product [27]. Most formaldehyde is produced by subsequent processes of
+methane steam reforming (MSR), synthesis of methanol and synthesis of formaldehyde
+from methanol and air. Figure 2 shows a simpliﬁed block diagram of the formalin pro-
+duction process via MSR. The ﬂowsheet is composed of three different production parts:
+(i) MSR, (ii) methanol synthesis and (iii) formalin synthesis. Formalin is obtained as the
+desired product, along with an aqueous mixture of methanol as a byproduct."
+33,"Systems 2021, 9, 5"
+34,4 of 17
+35,Figure 2. Formalin production via methane steam reforming.
+36,"MSR is one of the most common processes for syngas production, from which a variety
+of bulk chemicals are produced, like hydrogen, ammonia, methanol and many others. The
+reactions occurring during the MSR process are shown in Equations (1) and (2). Equation (1)
+stands for methane reforming, which is an endothermic reaction, where CH4 reacts with
+high-temperature steam under pressure to syngas, consisting of CO and H2. Equation (2)
+represents the water gas shift (WGS) reaction to enhance H2 production efﬁciency."
+37,"CH4+H2O → CO + 3H2, ∆H0
+CO + H2O ↔ H2+CO2, ∆H0"
+38,"r = 206kJ/mol
+r = −41kJ/mol"
+39,(1)
+40,(2)
+41,"Moreover, methanol is produced from syngas, based on equilibrium reactions of"
+42,oxocarbons and hydrogen:
+43,"CO2+3H2 ↔ CH3OH + H2O,∆H0
+CO2+H2 ↔ CO + H2O,∆H0
+CO + 2H2 ↔ CH3OH,∆H0"
+44,"r = −49kJ/mol
+r = 41kJ/mol
+r = −91kJ/mol"
+45,(3)
+46,(4)
+47,(5)
+48,"In the last part of the process, formalin is produced from methanol and air, where the
+overall process is a combination of partial oxidation and dehydrogenation reactions [28]:"
+49,"2CH3OH + 0.5O2 → 2CH2O + H2O + H2, ∆H0"
+50,r = −36kJ/mol
+51,(6)
+52,2.2. Energy Consumption Reduction
+53,"Heat integration (HI) was performed in three steps: (i) minimizing utility cost; (ii)
+minimizing the number of heat exchange units and (iii) heat exchanger network (HEN)
+design. The general algebraic modeling system (GAMS) [29] was used for minimizing
+utility cost and for minimizing the number of heat exchange units."
+54,"Stream data was ﬁrst extracted from Aspen HYSYS simulation. Then, in the ﬁrst
+step of HI, utility cost was minimized with a linear programming (LP) model by using
+an expanded transshipment model [30]. The objective function for the model is shown in
+Equation (7):"
+55,"min∑
+HU"
+56,"∑
+CU"
+57,(cHU·QHU + cCU·QCU)
+58,(7)
+59,"where QHU and QCU are the consumption of hot and cold utilities, and cHU and cCU are
+the cost coefﬁcients of hot and cold utilities."
+60,"In the second step, the number of heat exchange units was minimized. The transship-
+ment model was expanded to include binary variables representing connections between
+the hot and cold streams. This was solved using a mixed-integer linear programming
+(MILP) model, which is called the MILP expanded transshipment model [30]. Heat duty
+values for speciﬁc utilities as obtained from the ﬁrst step were ﬁxed in the model. A set
+of binary variables yi,j and a set of equations connecting the variables to the streams were"
+61,"Systems 2021, 9, 5"
+62,5 of 17
+63,"added to the model. The objective in the second step was to minimize the sum of binary
+variables, as shown in Equation (8):"
+64,"min∑
+i"
+65,"∑
+j"
+66,"(yi,j)"
+67,(8)
+68,"where yi,j are the available connections between hot and cold streams exchanging heat.
+The minimum number of heat exchange units and a table displaying the amount of heat
+exchanged between streams were obtained as results. GAMS was also used for the second
+step."
+69,"In the third step, HEN was obtained based on the results from the second step and
+heuristics, and a ﬂowsheet of the production process based on HI was proposed. A
+minimum temperature approach (∆Tmin) and the cp inequality rule [25] were considered
+for each individual match for designing HEN. For HEN design, parallel arrangement was
+prioritized over a series arrangement [31]. Finally, the heat exchangers were arranged
+in such a way as to minimize the total heat exchanger area. The heat exchanger area
+calculation is shown in Equation (9):"
+70,A =
+71,Q
+72,U·∆Tln
+73,(9)
+74,"where Q is the heat transferred between streams, U is the heat transfer coefﬁcient and ∆Tln
+is the logarithmic mean temperature difference. As a result of the HEN design, total utility
+consumption, exchanged heat and total heat exchanger area were obtained."
+75,2.3. Economic and Environmental Footprint Analysis
+76,"For economic evaluation, both capital and operating costs were calculated. For capital
+cost estimation, the factors method [32] was used. The base factor for capital cost is the
+delivered (purchased) cost of process equipment, calculated for each piece of equipment
+depending on its material and size. Equipment cost is further adjusted for inﬂation
+using the chemical engineering plant cost index (CEPCI) [32]. Operating costs were
+calculated on a yearly basis and comprise costs for the following: raw materials, utilities,
+labor, maintenance, quality assurance and depreciation cost, which depend on the total
+depreciable capital investment."
+77,"Environmental footprint analysis was performed using the cradle-to-gate approach
+and was based on the production of 1 kg of formalin. Selected environmental footprints
+were evaluated using OpenLCA software [26], such as GHG, nitrogen, phosphorus, ecolog-
+ical and energy footprints and human toxicity potential."
+78,3. Description of the Formalin Production Process and Heat Integration Approach
+79,"In this section, the formalin production process is described in detail. The sequential
+HEN design method approach for HI is then presented, including extracted data for the
+HEN design."
+80,3.1. Process Description
+81,"The formalin production process is presented in Figure 3, where physical properties
+for all mixtures in the MSR part and in the methanol synthesis loop were estimated using
+Peng–Robinson equations of state. MSR is a catalytic process, which occurs in three phases:
+methane steam reforming, WGS and water removal. Methane reforming takes place in the
+reactor R1 over the Ni/α-Al2O catalyst [33], where the inlet ﬂow of methane is 53.5 m3/h
+and steam 35.5 m3/h. The inlet ﬂows were ﬁrst heated to the reforming conditions. The
+outﬂow temperature after reactor R1 was 850 ◦C, which was cooled to 200 ◦C (hot stream
+H1) and introduced into the equilibrium reactor R2, where the low-temperature WGS
+reaction takes place (Equation (2)). The stream was further cooled to 40 ◦C (hot stream
+H2). Water was then eliminated in separator S1 prior to introduction to compressors. A"
+82,"Systems 2021, 9, 5"
+83,6 of 17
+84,"multistage compression train was implemented with interstage coolers to 40 ◦C, where a
+maximum compression factor of 5 was observed throughout the simulation. Condensate
+water collected from separators S1 and S2 was pressurized via pumps P1 and P2 to the
+same pressure downstream of compressor C3 (considering the pressure drop in H5). In this
+way, it is possible to introduce the syngas stream combined with water to the R3 reactor."
+85,Figure 3. Formalin production process.
+86,"Methanol synthesis was simulated using a Gibbs reactor R3, where reactions occur
+as speciﬁed in Equations (3)–(5). A Gibbs reactor is a HYSYS built-in module, which
+minimizes Gibbs free energy for the reaction products at equilibrium [24]. The R3 reactor
+outﬂow was later expanded with expander E1 to 10 bar and introduced to separator S3,
+where non-condensable (H2, CO2 and CH4) were separated from the methanol-water ﬂow.
+Stream 27 represents recycling of 60% non-condensable back to the methane inﬂow, and
+stream 28 the purge gas outﬂow, which contained about 78.7% CH4, 18.1% H2 and small
+amounts of CO2 and methanol. This stream was further compressed, cooled and separated
+in S4 prior to burning in a furnace."
+87,"For the formalin synthesis, the NRTL property package was used to predict liquid
+phase activity coefﬁcients. The methanol-water stream and air inlet stream (75 m3/h) were
+preheated to 150 ◦C and introduced to the R4 conversion reactor, where formaldehyde was
+synthesized. A conversion of 87.4% was achieved using a silver catalyst [34]. The outlet
+stream was cooled to 50 ◦C and introduced into the S5 separator, where separation of the
+formaldehyde-water stream and other gases (H2, N2, O2 with some H2O, CH3OH and
+CH2O) occurred. Stream 44 was then introduced to distillation column DC, from which
+37.5% formalin and an aqueous mixture of CH3OH were obtained. Gases emerging from
+separator S5 were cooled further to 50 ◦C and separated again in separator S6, to separate
+the residual of CH2O, CH3OH and H2O, which was recycled. The process was scaled to
+produce about 1075 t of formalin per day."
+88,3.2. Heat Integration of the Formalin Process
+89,"The process of formalin production was highly energy intensive. Table 1 shows utility
+consumption in the formalin production process obtained from the simulation in Aspen
+HYSYS (schematic representation is shown in Figure 3). For heating, ﬁred heat (FH) with
+temperatures between 1000 and 150 ◦C was used, while for cooling, air was used. MP"
+90,"Systems 2021, 9, 5"
+91,7 of 17
+92,"steam was also generated in the process, with temperatures between 25 and 200 ◦C. The
+consumption of hot utility (FH) was 151.7 MW, with a heat transfer area of 27,824 m2.
+The consumption of cold utility (air) was 9.8 MW, with a heat exchange area of 2616 m2.
+Additionally, 141.4 MW of medium pressure steam (MPS) was generated, as shown in
+Table 1. The total energy consumption of the process before HI was 302.9 MW and the heat
+exchanger area was 45,045 m2."
+93,Table 1. Utility streams.
+94,"Utility
+Fired heat (FH)
+Air
+MPS generation (MPSG)"
+95,"Type
+Hot
+Cold
+Cold"
+96,"Tsupply (◦C)
+1000
+30
+25
+199"
+97,"Ttarget (◦C)
+150
+35
+199
+200"
+98,"Heat Duty (MW)
+151.7
+9.8
+141.4"
+99,"Combined PA/MP [12] was used to evaluate the opportunities for energy consumption
+reduction. The problem table for HI is shown in Table 2, which gave the supply and target
+temperatures, heat duties and ﬂowrates of each hot and cold stream. The process contained
+9 hot streams (H1-H9) and 7 cold streams (C1–C7); see also Figure 3. ∆Tmin of 10 ◦C was
+assigned to all heat exchangers."
+100,Table 2. Problem table.
+101,Stream
+102,"H1
+H2
+H3
+H4
+H5
+H6
+H7
+H8
+H9
+C1
+C2
+C3
+C4
+C5
+C6
+C7"
+103,"Type
+Hot
+Hot
+Hot
+Hot
+Hot
+Hot
+Hot
+Hot
+Hot
+Cold
+Cold
+Cold
+Cold
+Cold
+Cold
+Cold"
+104,Tsupply (◦C)
+105,Ttarget (◦C)
+106,Heat Duty (MW)
+107,Flowrate (t/h)
+108,"850.0
+303.6
+249.0
+252.0
+162.4
+342.1
+343.0
+50.0
+109.7
+106.4
+25.0
+102.7
+25.0
+600.0
+150.0
+121.4"
+109,"200.0
+40.0
+40.0
+40.0
+112.3
+40.0
+50.0
+40.0
+105.2
+600.0
+600.0
+150.0
+150.0
+850.0
+343.0
+121.5"
+110,"45.9
+29.5
+13.0
+10.7
+2.4
+10.2
+32.2
+0.9
+6.4
+20.4
+34.7
+2.5
+2.3
+59.0
+21.8
+11.1"
+111,"79.2
+79.2
+53.3
+53.3
+49.7
+19.0
+109.1
+68.0
+14.5
+44.5
+34.7
+44.5
+65.4
+79.2
+109.1
+63.6"
+112,"Figure 4 shows the grand composite curve (GCC) of the process. The pinch tempera-
+ture was at 600/610 ◦C. Minimum energy requirements for heating were 42.02 MW and
+68.25 MW for cooling. However, in the study it was considered that the heat from the
+reactions in R1 and R4, which were not process streams, and heat for distillation (reboiler
+and condenser), where temperature control is difﬁcult [25], were not available for HI.
+Consequently, the utility consumption obtained was higher than the target."
+113,"The extracted data in the problem table and utility data were entered into the expanded
+transshipment model in GAMS [30] to minimize the cost/maximize proﬁt. In the second
+step, the number of heat exchange units was minimized by a MILP expanded transshipment
+model [30], also in GAMS. In the third step, the heat exchangers were arranged using
+heuristics and the results from the second step, as described in Section 2.2. The HI results
+and the proposed heat-integrated production process based on HI are shown in Section 5."
+114,"Systems 2021, 9, 5"
+115,8 of 17
+116,Figure 4. Grand composite curve of the process.
+117,4. Economic Performance and Footprint Analysis
+118,"In this section, evaluation of the economic performance, environmental footprints and
+human toxicity potential was described. The calculation procedure for obtaining capital
+investment cost and total annual cost is shown. For footprint and human toxicity potential
+assessment, a description was provided, including life cycle inventory (LCI) for the process
+before and after HI."
+119,4.1. Economic Performance
+120,"To evaluate economic performance, capital cost, which consists of direct and indirect
+cost, was ﬁrst estimated using the factors method [32]. Equipment delivered (purchased)
+cost was ﬁrst calculated for each process unit, based on the equations factoring in variables
+for size and material. The following variables were considered: power required for com-
+pressors and expanders, diameter, height and number of trays for distillation columns,
+heat exchange area for heat exchangers, volume ﬂow and electric motor power required
+for pumps and height and diameter for vessels (reactors and separators). For mixers and
+splitters, cost was considered negligible. The equations used in this section are based on
+the literature [32]. Total equipment delivered cost was converted to EUR and adjusted to
+2019 value [35] using the CEPCI index [36]."
+121,"Direct cost was calculated using factors for installation, which include the costs for
+equipment erection, piping, instrumentation, electrical installation, insulation, buildings,
+site preparation and off-sites. Direct cost (CD) was calculated using Equation (10), where
+installation factors were accumulated:"
+122,CD = 2.62·CE
+123,(10)
+124,where CE is equipment cost.
+125,using Equation (11):
+126,Indirect cost (CI) includes the cost of engineering and construction and was calculated
+127,CI = 1.00·CE
+128,"(11)
+The cost for contractors and contingencies (CCC) was next calculated using Equation (12):"
+129,CCC = 0.15·(CD + CI)
+130,The capital cost (CCAP) was calculated using Equation (13):
+131,CCAP = CCC + CD + CI
+132,(12)
+133,(13)
+134,"Systems 2021, 9, 5"
+135,Working capital and start-up cost (CWC) was calculated using Equation (14):
+136,CWC = 0.05·CCAP
+137,"Finally, total capital investment (CINV) was calculated using Equation (15):"
+138,CINV = CWC+CCAP
+139,9 of 17
+140,(14)
+141,(15)
+142,"Total annual cost was then estimated, factoring in the cost of raw materials, utilities,
+labor, maintenance, quality assurance and depreciation cost. The depreciation cost (CDEP)
+depends on the total depreciable capital and was calculated using Equation (16):"
+143,CDEP =
+144,CCAP
+145,N
+146,(16)
+147,"where N is the plant lifespan, which was assumed to be 25 years."
+148,The maintenance cost (CMAIN) also depends on the capital cost and was calculated:
+149,CMAIN = 0.06·CCAP
+150,(17)
+151,The annual costs of tax and insurance and miscellaneous costs were labeled as other
+152,"costs (COTHER), and were calculated using Equation (18):
+COTHER = 0.08·CCAP"
+153,(18)
+154,"The labor cost (CL) was estimated to depend on the hourly wage and number of
+employees. The quality assurance cost (CQA) was assumed to be 15% of the labor cost. The
+utility (CUTIL) and raw material costs (CRM) were based on consumption and market prices.
+Finally, the total annual cost (CTAC) was calculated using Equation (19):"
+155,CTAC = CDEP + CMAIN + COTHER + CL + CQA + CUTIL + CRM
+156,(19)
+157,4.2. Footprint Analysis
+158,"Environmental impact assessment was performed based on the production of 1 kg
+of formalin before and after HI. Different footprints were evaluated in close relation to
+worldwide concerns over threats to human society. The ﬁve most important footprints
+from the “Footprint Family” [37] and high-risk planetary boundaries [38] were considered,
+such as GHG, nitrogen, phosphorus, ecological and energy footprint and human toxicity
+potential [39]."
+159,"The GHG footprint reﬂects total GHG emissions over the life cycle of a product,
+expressed as kg of CO2 equivalent [39]. It was calculated using the IPCC 2013 GWP
+methodology over a 100-y time horizon. The nitrogen footprint measures all the nitrogen
+compounds except N2 released into the environment over the life cycle of a product and
+is expressed in mass units of N [39]. The phosphorus footprint reﬂects the phosphorus
+imbalance [39] that occurs because of the increasing phosphorus consumption by humans
+and livestock [40] and is expressed in mass units of P. The ecological footprint measures the
+biologically productive land and sea area required to supply resources over the life cycle of
+a product [39]. It is measured in units of biologically productive global land area (in m2·y).
+The energy footprint represents the consumption of non-renewable or renewable energy
+sources across the product life cycle [41]. Human toxicity potential reﬂects the effects of
+toxic substances on human health. It enables relative comparisons between a large number
+of chemicals that may contribute to cancer or other negative human effects for an inﬁnite
+time horizon [42]. It is expressed as 1,4-dichlorobenzene equivalents."
+160,"To evaluate the environmental footprints and human toxicity potential of the formalin
+process, OpenLCA 1.10.3 software [26], the Ecoinvent 3.6 database [43] and the data
+obtained from the simulations in Aspen HYSYS were used. The LCA study was performed
+applying a cradle-to-gate variant, which is a partial LCA utilizing a systemic approach to"
+161,"Systems 2021, 9, 5"
+162,10 of 17
+163,"calculate environmental impacts associated with a product, taking into account all relevant
+inputs and outputs of a product system during its lifetime. As LCA studies consider
+entire supply chains of materials and utilities, there is potential to signiﬁcantly reduce
+environmental impacts and increase sustainability."
+164,"Table 3 summarizes the main life cycle inventory (LCI) data for the formalin production
+process before and after HI. LCI includes the main inputs of raw materials and utilities, and
+the main outputs (products and emissions) and is shown for 1 kg of formalin production."
+165,"Table 3. Life cycle inventory (LCI) for formalin production process before and after heat integration
+(HI) per 1 kg of formalin."
+166,"Parameter
+Inputs
+Natural gas
+Steam
+Air
+BFW
+Fired Heat
+Electricity
+Outputs
+Gases to furnace 1
+Fuel and air 2
+Methanol 3
+Steam
+Formalin"
+167,Before HI
+168,After HI
+169,Unit
+170,"0.406
+0.874
+0.002
+4.803
+4.814
+2.682"
+171,"0.184
+1.671
+0.061
+6.639
+1.000"
+172,"0.406
+0.874
+0.002
+3.676
+2.782
+2.682"
+173,"0.184
+1.671
+0.061
+4.955
+1.000"
+174,"kg
+kg
+m3
+kg
+MJ
+MJ"
+175,"kg
+kg
+kg
+kg
+kg"
+176,"1 After combustion: 0.404 kg CO2, 0.922 kg H2O, 2 75.5 wt % N2, 2.6 wt % methanol, 2.5 wt % H2O, 2.4 wt %
+formaldehyde, 1.6 wt % O2, 3 36.7 wt % methanol, 63.2 wt % H2O."
+177,5. Results and Discussion
+178,Sequential three-step HI was performed for the energy-intensive formalin production
+179,"process to reduce energy use, cost and emissions."
+180,"In the ﬁrst step, an expanded transshipment model was used to obtain a minimum
+utility consumption of 183.0 MW, of which 91.8 MW was for heating and 91.2 MW for
+cooling (targets are 42.0 and 68.3 MW, as shown from GCC in Figure 4). Fired heat was
+assumed to be used for heating, and MP steam and air for cooling. MP steam was also
+generated to cool the ﬁred heater fuel to 150 ◦C. In this way, 37.7 MW of MP steam was
+generated, as shown in Table 4. By performing HI, hot utility consumption was reduced
+from 151.7 to 91.8 MW, while cold utility consumption was reduced from 151.2 to 91.3 MW
+(see also Table 1), representing a 39.5% reduction in hot and 39.6% reduction in cold
+utility consumption."
+181,"In the second step, the values for utility consumption were ﬁxed as obtained from
+the ﬁrst step. The MILP expanded transshipment model was used to obtain the minimum
+number of heat exchange units, which was 17. A table displaying the amount of heat
+exchanged between the streams was also obtained.
+In the third step, HEN was obtained using the data from the second step and heuristics.
+Heat exchange matches were arranged according to ∆Tmin of 10 ◦C and the cp inequality
+rule, as described in Section 2.2. Table 4 shows heat exchange matches, where each column
+represents one heat exchange match. Cumulative utility consumption, total exchanged
+heat, and total heat exchange area are also presented in Table 4, where utility consumption
+amounts to 183.1 MW, and 59.9 MW of heat was exchanged. A similar value was obtained
+in the ﬁrst step of the sequential HEN design method. The slight difference in the value
+was attributed to changing certain matches due to constraints. The calculated total heat
+exchange area of the HEN was 43,522.2 m2, reduced from 45,045 m2 before HI. The total
+number of heat exchangers in the HEN was 17, as also obtained in the second step where
+it was minimized. Therefore, this number of heat exchangers represents the minimum
+number of units."
+182,"Systems 2021, 9, 5"
+183,Hot
+184,Stream
+185,"Cold
+Stream Match
+MPSG
+MPSG
+MPSG
+MPSG
+MPSG"
+186,"1
+H2
+2
+H3
+3
+H4
+4
+H7
+5
+FH
+6
+H5
+7
+H8
+8
+H9
+9
+H6
+15
+FH
+16
+FH
+FH
+17
+Total utility consumption
+10
+H2
+11
+H7
+12
+H6
+13
+H1
+H1
+14"
+187,Total heat exchanged
+188,"Air
+Air
+Air
+Air
+C7
+C6
+C5"
+189,"C4
+C3
+C2
+C1
+C2"
+190,Table 4. Heat exchange matches obtained in the third HI step.
+191,Heat Duty
+192,"(MW)
+27.2
+13.0
+10.7
+29.7
+37.7
+2.4
+0.9
+6.4
+1.0
+11.1
+21.8
+59.0
+183.1
+2.3
+2.5
+9.2
+20.4
+25.5
+59.9"
+193,"U (kJ/h
+m2 ◦C)
+683.5
+683.5
+683.5
+683.5
+683.5
+257.0
+257.0
+257.0
+257.0
+257.0
+257.0
+257.0"
+194,"41.4
+692.5
+360.0
+360.0
+360.0"
+195,"Thot,in
+(◦C)
+283.1
+249.1
+252.0
+320.0
+397.3
+162.4
+50.0
+109.7
+69.1
+470.0
+612.9
+1000.0"
+196,"303.7
+343.0
+342.0
+850.0
+850.0"
+197,"Thot,out
+(◦C)
+40.0
+40.0
+40.0
+50.0
+150.0
+112.3
+40.0
+105.2
+40.0
+397.3
+470.0
+612.9"
+198,"283.1
+320.0
+69.1
+164.7
+225.7"
+199,"Tcold,in
+(◦C)
+25.0
+25.0
+25.0
+25.0
+25.0
+30.0
+30.0
+30.0
+30.0
+121.4
+150.0
+600.0"
+200,"25.0
+102.7
+25.0
+106.4
+177.7"
+201,"Tcold,out
+(◦C)
+200.0
+200.0
+200.0
+200.0
+200.0
+35.0
+35.0
+35.0
+35.0
+121.5
+343.0
+850.0"
+202,"∆Tln
+(◦C)
+39.8
+28.8
+29.8
+60.6
+158.4
+103.2
+12.3
+74.9
+19.6
+310.8
+294.2
+55.9"
+203,"150.0
+150.0
+177.7
+600.0
+600.0"
+204,"201.4
+204.9
+91.4
+131.7
+122.4"
+205,Total area
+206,11 of 17
+207,"Area
+(m2)
+4178.2
+2927.5
+2368.5
+3160.3
+1318.2
+324.6
+1111.4
+1202.8
+715.3
+601.7
+1248.4
+17,809.7"
+208,"1006.8
+64.3
+1208.7
+1875.8
+2400.1
+43,522.2"
+209,"The data from Table 4 was used for a schematic design of HEN, which is shown
+in Figure 5. After HI, nine coolers (marked in blue), three heaters (marked in red), ﬁve
+process-to-process heat exchangers (indicated with grey) and one utility-to-utility heat
+exchanger (indicated with green) were suggested. Cold process streams C1, C2, C3 and C4
+were heated completely by exchanging heat with the hot streams and did not require hot
+utilities. Heat exchangers 13 and 14 together accounted for 76.6% of the heat duty reduction
+(45.9 MW out of 59.9 MW, see also Table 4). As described in the Methodology section, the
+utility streams for air and MP steam generation were split for the heat exchangers to be
+connected in parallel. Heat exchangers utilizing ﬁred heat were connected in series, which
+was done because of temperature difference constraints."
+210,"Figure 6 shows the proposed heat integrated formalin production process. The pro-
+posed formalin production process ﬂowsheet was obtained by combining the ﬂowsheet
+before HI (Figure 3) with the HEN shown in the grid diagram in Figure 5. The numbered
+heat exchange units in Table 4, and in the grid diagram in Figure 5 matched those in the
+proposed formalin production process ﬂowsheet in Figure 6.
+Cost analysis was performed before and after HI. A notable reduction in equipment
+cost was achieved, from 32.3 × 106 EUR before HI, to 28.8 × 106 EUR after HI. Part of
+the reduced cost was due to reduced heat exchange area, and to some ﬁred heater units
+being replaced by less costly shell-and-tube heat exchangers. The heat exchange area was
+reduced from 45,045 to 43,522 m2 (by 3.4%). In total, the purchased cost of all heat exchange
+units was reduced by 29.5% after HI. These reduced equipment costs had a direct effect on
+other investment costs, as described in the Methodology section. Purchased equipment
+cost was reduced by 10.9%, and subsequently, total capital investment was reduced from
+141.3 × 106 EUR to 125.8 × 106 EUR (also by 10.9%). All cost reductions are shown in
+Table 5."
+211,"Systems 2021, 9, 5"
+212,12 of 17
+213,Figure 5. Grid diagram for the heat-integrated process.
+214,Figure 6. Proposed formalin production process based on the heat integration.
+215,"Systems 2021, 9, 5"
+216,13 of 17
+217,Table 5. Breakdown of economic analysis results before and after HI.
+218,"Parameter
+Heat exchange area (m2)
+Heat exchanger cost (EUR)
+Purchased equipment cost (EUR)
+Installed equipment cost (EUR)
+Total capital investment (EUR)
+Utility revenue (EUR/y)
+Total annual cost (EUR/y)"
+219,"Before HI
+45,045
+12.0 × 106
+32.3 × 106
+84.6 × 106
+141.3 × 106
+8.8 × 106
+16.1 × 106"
+220,"After HI
+43,522
+8.4 × 106
+28.8 × 106
+75.4 × 106
+125.8 × 106
+29.4 × 106
+−7.2 × 106"
+221,"Reduction (%)
+3.4
+29.5
+10.9
+10.9
+10.9"
+222,"Operating cost also decreased after HI. The most signiﬁcant decrease was achieved in
+the utility cost, where revenue was obtained rather than decreased cost. This was attributed
+to the signiﬁcant amounts of MP steam being generated. Steam was generated and sold in
+both integrated and non-integrated designs, and owing to the decrease in heating costs
+of ﬁred heat after HI, these revenues increased from 8.8 × 106 to 29.4 × 106 EUR. The
+revenues were large enough to offset other cost such as depreciation and maintenance cost,
+and as a result, total annual costs were turned from a loss to a proﬁt after HI. Changes in
+utility revenue and total annual cost can also be seen in Table 5."
+223,"The pie charts shown in Figure 7 indicate the contributions of various categories to
+the total annual cost of the process before and after HI, including utility revenues. The
+increase in utility revenues is shown as the most notable change, where the increase after
+HI caused utility revenues to exceed the total annual cost."
+224,Figure 7. Cost contributions including utility revenue before (left) and after HI (right).
+225,"Among annual costs, other costs form the largest contribution (32%). They were
+followed by depreciation cost (23%) and maintenance cost (21%), while labor and raw
+material cost contributed only a small percentage of the annual cost (around 1%). After HI,
+equipment and capital costs were reduced, and thus a notable reduction in these categories
+was obtained (see Figure 7, right, vs. Figure 7, left).
+Total annual costs represented in the pie charts amount to 30.1 × 106 EUR/y before
+HI (Figure 7, left) and 26.9 × 106 EUR/y after HI (Figure 7, right). If utility revenues were
+not considered, other costs amounted to 41% of total annual costs, and the remaining costs
+largely comprised depreciation and maintenance costs. The distribution of these categories
+remained the same before and after HI."
+226,"Environmental evaluation of the process was ﬁnally performed before and after HI.
+The data for footprint and human toxicity potential analysis are as shown in Table 3. The"
+227,"Systems 2021, 9, 5"
+228,14 of 17
+229,"footprint and human toxicity potential values per kg of formalin before and after HI are
+shown in Figure 8. After HI, all six evaluated environmental categories were reduced.
+Reductions in the evaluated environmental footprints are shown in Table 6, where the
+highest reduction percentage was obtained for GHG and ecological footprints."
+230,Figure 8. Environmental footprints per t of formalin before and after HI.
+231,Table 6. Reductions of evaluated environmental footprints and human toxicity potential.
+232,"Footprint Category
+GHG footprint (kg CO2-eq.)
+Nitrogen footprint (g N)
+Phosphorus footprint (g P)
+Energy footprint (kJ)
+Human toxicity potential (kg 1,4-DCB-eq.)
+Ecological footprint (m2·y)"
+233,Before HI
+234,Reduction after HI (%)
+235,"1.372
+0.226
+0.213
+1.028
+0.148
+3.211"
+236,"21%
+18%
+18%
+7%
+12%
+22%"
+237,"Figure 9 displays contributions to the GHG footprint in both the non-integrated and
+integrated designs. After HI, the GHG footprint was reduced because of the reduced
+inputs of ﬁred heat and boiler feed water used to generate steam. The footprint values
+for electricity (used for compressors, pumps and air coolers) and natural gas remained
+the same before and after HI. Electricity contributed the most to the energy footprint,
+while natural gas contributes the most to human toxicity potential. The column labeled
+“Other*” reﬂected the contribution of gaseous outputs to the GHG footprint during the
+production process."
+238,Figure 9. Greenhouse gas (GHG) footprints per kg of formalin before and after HI.
+239,"Systems 2021, 9, 5"
+240,15 of 17
+241,6. Conclusions
+242,"The formalin production process was ﬁrst simulated and included three production
+parts, MSR, methanol synthesis and formaldehyde synthesis. Based on the simulated
+design, HI using PA/MP was performed. With 53 m3/h of methane, 35 m3/h of steam
+and 75 m3/h of air as raw materials, 39.5 t/h of 37.5% formalin and 2.4 t/h of aqueous
+methanol mixture were obtained."
+243,"The process, as shown in Figure 3, consumed 151.7 MW of hot utilities and 151.2 MW of
+cold utilities. After performing HI, consumption of both hot and cold utilities was reduced
+by 59.9 MW (by about 39.5%), and total utility consumption was reduced by 119.9 MW.
+The total heat exchange area was also reduced, from 45,045 to 43,522 m2 (by 1523 m2 or
+3.4%). The total number of heat exchangers was 17 in both the non heat-integrated and
+heat-integrated designs.
+Economic analysis of the process before and after HI showed that total capital invest-
+ment cost was reduced by 15.4 × 106 EUR or 10.9%. With reduced utility consumption
+after HI, utility revenues increased by 20.7 × 106 EUR/y, turning a total annual cost into
+positive revenue."
+244,"Analysis of environmental footprints showed that selected footprint categories were
+reduced by 7–22% owing to reduced utility consumption. All the analyzed environmental
+categories showed that reductions in consumption of a boiler feed water and ﬁred heat
+contributed the most to reducing environmental burden."
+245,"In future work, different, more sustainable formalin production routes, sourced from
+renewables and waste (such as from biomass or waste CO2 from larger point sources) will
+be synthesized and compared to the conventional process of MSR. Additionally, for each
+technology, sustainability evaluation (economic, environmental and social assessment) will
+be performed. As in the case of formalin, simulations will be performed for urea production
+from renewable and waste sources and technical, economic and environmental evaluation
+will be carried out. The ﬁnal aim was to synthesize and comprehensively evaluate different
+routes for more sustainable melamine etheriﬁed resin (MER) ﬁber production."
+246,"Author Contributions: Conceptualization, A.V. and L. ˇC.; methodology, A.V., J.P. and L. ˇC.; software,
+P.A.; validation, P.A., A.V., L. ˇC. and J.P.; investigation, A.V., L. ˇC. and J.P.; data curation, P.A., A.V.,
+L. ˇC. and J.P.; writing—original draft preparation, A.V. and J.P.; writing—review and editing, A.V.,
+L. ˇC., P.A. and J.P.; visualization, J.P.; supervision, L. ˇC.; project administration, A.V. All authors have
+read and agreed to the published version of the manuscript."
+247,"Funding: This research was funded by the Ministry of Education, Science and Sport of Republic
+of Slovenia and European Regional Development Fund for the project No. 5442-1/2018/106 and
+Slovenian Research Agency (core research funding No. P2-0412 and project N2-0138)."
+248,Conﬂicts of Interest: The authors declare no conﬂict of interest.
+249,Abbreviations
+250,"CEPCI Chemical Engineering Plant Cost Index
+FH
+GAMS General Algebraic Modeling System
+GCC
+GHG
+HEN
+HI
+LCA
+LCI
+LP
+MER
+MILP Mixed-Integer Linear Programming
+MP"
+251,"Grand Composite Curve
+Greenhouse gas
+Heat Exchanger Network
+Heat Integration
+Life Cycle Analysis
+Life Cycle Inventory
+Linear Programming
+Melamine Etheriﬁed Resin"
+252,Fired heat
+253,Mathematical Programming
+254,"Systems 2021, 9, 5"
+255,16 of 17
+256,Medium pressure steam
+257,"MPS
+MPSG MPS generation
+MSR
+NF
+PA
+PSE
+PF
+WGS Water–gas shift"
+258,"Methane Steam Reforming
+Nitrogen footprint
+Pinch Analysis
+Process Systems Engineering
+Phosphorus footprint"
+259,"References
+1."
+260,"Koh, S.C.L.; Gunasekaran, A.; Morris, J.; Obayi, R.; Ebrahimi Seyed, M. Conceptualizing a circular framework of supply chain
+resource sustainability. Int. J. Oper. Prod. Manag. 2017, 37, 1520–1540. [CrossRef]"
+261,"2. Monat, J.; Amissah, M.; Gannon, T. Practical Applications of Systems Thinking to Business. Systems 2020, 8, 14. [CrossRef]
+3. Hossain, N.U.I.; Dayarathna, V.L.; Nagahi, M.; Jaradat, R. Systems thinking: A review and bibliometric analysis. Systems 2020,"
+262,"8, 23. [CrossRef]"
+263,"4. Hoekstra, A.Y.; Wiedmann, T.O. Humanity’s unsustainable environmental footprint. Science 2014, 344, 1114–1117. [CrossRef]"
+264,5.
+265,"6.
+7."
+266,"[PubMed]
+Shongwe, M.I.; Bezuidenhout, C.N.; Sibomana, M.S.; Workneh, T.S.; Bodhanya, S.; Dlamini, V.V. Developing a Systematic
+Diagnostic Model for Integrated Agricultural Supply and Processing Systems. Systems 2019, 7, 15. [CrossRef]
+Roode-Gutzmer, Q.I.; Kaiser, D.; Bertau, M. Renewable Methanol Synthesis. Chembioeng Rev. 2019, 6, 209–236. [CrossRef]
+Shakeel, K.; Javaid, M.; Muazzam, Y.; Naqvi, S.R.; Taqvi, S.A.A.; Uddin, F.; Mehran, M.T.; Sikander, U.; Niazi, M. Performance
+Comparison of Industrially Produced Formaldehyde Using Two Different Catalysts. Processes 2020, 8, 571. [CrossRef]"
+267,"8. Heim, L.E.; Konnerth, H.; Prechtl, M.H. Future perspectives for formaldehyde: Pathways for reductive synthesis and energy"
+268,9.
+269,"storage. Green Chem. 2017, 19, 2347–2355. [CrossRef]
+Dalena, F.; Senatore, A.; Basile, M.; Knani, S.; Basile, A.; Iulianelli, A. Advances in methanol production and utilization, with
+particular emphasis toward hydrogen generation via membrane reactor technology. Membranes 2018, 8, 98. [CrossRef]"
+270,"10. Marlin, D.S.; Sarron, E.; Sigurbjörnsson, Ó. Process advantages of direct CO2 to methanol synthesis. Front. Chem. 2018, 6, 446."
+271,[CrossRef]
+272,"11. Martín, M.; Grossmann, I.E. Towards zero CO2 emissions in the production of methanol from switchgrass. CO2 to methanol."
+273,"Comput. Chem. Eng. 2017, 105, 308–316. [CrossRef]"
+274,"12. Merli, R.; Preziosi, M.; Acampora, A. How do scholars approach the circular economy? A systematic literature review. J. Clean."
+275,"Prod. 2018, 178, 703–722. [CrossRef]"
+276,"13. Kovaˇc Kralj, A. A simple graphical utilities targeting method for heat integration between processes. Ind. Eng. Chem. Res. 2012,"
+277,"51, 14171–14177. [CrossRef]"
+278,"14. Qi, S.-N.; Li, S.-Y. Simulation and energy efﬁciency optimization of methanol to formaldehyde process. Mod. Chem. Ind. 2014,"
+279,"3, 47."
+280,"15. Kijevˇcanin, M.L.; Ðor ¯devi´c, B.; Oci´c, O.; Crnomarkovi´c, M.; Mari´c, M.; Šerbanovi´c, S.P. Energy and economy savings in the"
+281,"process of methanol synthesis unsig Pinch technology. J. Serb. Chem. Soc. 2004, 69, 827–837. [CrossRef]"
+282,"16. Chen, Y.; Eslick, J.C.; Grossmann, I.E.; Miller, D.C. Simultaneous process optimization and heat integration based on rigorous"
+283,"process simulations. Comput. Chem. Eng. 2015, 81, 180–199. [CrossRef]"
+284,"17. Maréchal, F.; Heyen, G.; Kalitventzeff, B. Energy savings in methanol synthesis: Use of heat integration techniques and simulation"
+285,"tools. Comput. Chem. Eng. 1997, 21, S511–S516."
+286,"18. Pautasso, E.; Osella, M.; Caroleo, B. Addressing the Sustainability Issue in Smart Cities: A Comprehensive Model for Evaluating"
+287,"the Impacts of Electric Vehicle Diffusion. Systems 2019, 7, 29. [CrossRef]"
+288,"19. Mohammadifardi, H.; Knight, M.A.; Unger, A.A. Sustainability assessment of asset management decisions for wastewater"
+289,"infrastructure systems—Implementation of a system dynamics model. Systems 2019, 7, 34. [CrossRef]"
+290,"20. Zhao, N.; Lehmann, J.; You, F. Poultry Waste Valorization via Pyrolysis Technologies: Economic and Environmental Life Cycle"
+291,"Optimization for Sustainable Bioenergy Systems. ACS Sustain. Chem. Eng. 2020, 8, 4633–4646. [CrossRef]"
+292,"21. Egieya, J.M.; ˇCuˇcek, L.; Zirngast, K.; Isaﬁade, A.J.; Kravanja, Z. Optimization of biogas supply networks considering multiple"
+293,"objectives and auction trading prices of electricity. BMC Chem. Eng. 2020, 2, 1–23. [CrossRef]"
+294,"22. Vujanovi´c, A.; ˇCuˇcek, L.; Pahor, B.; Kravanja, Z. Multi-objective synthesis of a company’s supply network by accounting for"
+295,"several environmental footprints. Process Saf. Environ. Prot. 2014, 92, 456–466. [CrossRef]"
+296,"23. Loeschen, D. The Top 10 Chemicals Produced in the United States. Available online: https://www.mixerdirect.com/blogs/"
+297,mixer-direct-blog/the-top-10-chemicals-produced-in-the-united-states (accessed on 26 November 2020).
+298,"Smith, R. Chemical Process: Design and Integration; John Wiley & Sons: Chichester, UK, 2005."
+299,"24. Aspen Technology Inc. Aspen HYSYS User’s Guide; Aspen Technology Inc.: Burlington, MA, USA, 2009.
+25.
+26. GreenDelta. OpenLCA V1.10.3. 2020. Available online: https://www.openlca.org (accessed on 21 December 2020).
+27. PubChem. Formaldehyde. Available online: https://pubchem.ncbi.nlm.nih.gov/compound/Formaldehyde (accessed on 21"
+300,August 2019).
+301,"Systems 2021, 9, 5"
+302,17 of 17
+303,"28. Millar, G.J.; Collins, M. Industrial production of formaldehyde using polycrystalline silver catalyst. Ind. Eng. Chem. Res. 2017, 56,"
+304,9247–9265. [CrossRef]
+305,29. GAMS Development Corporation. GAMS—Documentation. Available online: https://www.gams.com/latest/docs/gams.pdf
+306,(accessed on 29 November 2019).
+307,"30. Papoulias, S.A.; Grossmann, I.E. A structural optimization approach in process synthesis—II: Heat recovery networks. Comput."
+308,31.
+309,32.
+310,"Chem. Eng. 1983, 7, 707–721. [CrossRef]
+Jäschke, J.; Skogestad, S. Parallel Heat Exchanger Control. EU/UK Patent Application pct/ep2013/059304 and gb1207770.7, 7
+November 2013.
+Seider, W.D.; Seader, J.D.; Lewin, D.R. Product & Process Design Principles: Synthesis, Analysis and Evaluation; John Wiley & Sons:
+New York, NY, USA, 2009."
+311,"33. Hou, K.; Hughes, R. The kinetics of methane steam reforming over a Ni/α-Al2O catalyst. Chem. Eng. J. 2001, 82, 311–328."
+312,[CrossRef]
+313,"34. Qian, M.; Liauw, M.A.; Emig, G. Formaldehyde synthesis from methanol over silver catalysts. Appl. Catal. A 2003, 238, 211–222."
+314,35.
+315,"[CrossRef]
+Jenkins, S. 2019 Chemical Engineering Plant Cost Index Annual Average. Available online: https://www.chemengonline.com/20
+19-chemical-engineering-plant-cost-index-annual-average/ (accessed on 3 April 2020)."
+316,"36. Vatavuk, W.M. Updating the CE Plant Cost Index. Chem. Eng. 2002, 109, 62–70.
+37. Vanham, D.; Leip, A.; Galli, A.; Kastner, T.; Bruckner, M.; Uwizeye, A.; Van Dijk, K.; Ercin, E.; Dalin, C.; Brandão, M. Environmental
+footprint family to address local to planetary sustainability and deliver on the SDGs. Sci. Total Environ. 2019, 693, 133642.
+[CrossRef]
+ˇCuˇcek, L.; Klemeš, J.J.; Varbanov, P.S.; Kravanja, Z. Signiﬁcance of environmental footprints for evaluating sustainability and
+security of development. Clean Technol. Environ. Policy 2015, 17, 2125–2141. [CrossRef]
+ˇCuˇcek, L.; Klemeš, J.J.; Kravanja, Z. A review of footprint analysis tools for monitoring impacts on sustainability. J. Clean. Prod.
+2012, 34, 9–20. [CrossRef]"
+317,38.
+318,39.
+319,"40. Brownlie, W.; Spears, W.; Carmen, E.; Sutton, M. Managing our Human Phosphorus Footprint: The Greatest Phosphorus
+Sustainability Issue? Available online: https://www.phosphorusplatform.eu/images/Conference/ESPC2-materials/Brownlie%
+20poster%20ESPC2.pdf (accessed on 21 November 2020).
+Frischknecht, R.; Jungbluth, N.; Althaus, H.-J.; Bauer, C.; Doka, G.; Dones, R.; Hischier, R.; Hellweg, S.; Humbert, S.; Köllner, T.
+Implementation of Life Cycle Impact Assessment Methods; Citeseer: Dübendorf, Switzerland, 2007.
+ILCD Handbook. Analysis of existing Environmental Impact assessment methodologies for use in Life Cycle Assessment. Jt. Res.
+Cent.-Eur. Commun. 2010, 1, 21."
+320,41.
+321,42.
+322,"43. Ecoinvent Version 3.6, 12th ed.; Ecoinvent: Zurich, Switzerland, 2019."

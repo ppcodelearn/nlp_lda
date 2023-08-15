@@ -1,0 +1,567 @@
+,0,Class
+0,"Article
+Techno-Economic Assessment of Benzene Production
+from Shale Gas",0
+1,"Salvador I. Pérez-Uresti 1
+and Arturo Jiménez-Gutiérrez 1,*
+1 Departamento de Ingeniería Química, Instituto Tecnológico de Celaya, Celaya Gto. 38010, Mexico;",0
+2,", Jorge M. Adrián-Mendiola 1, Mahmoud M. El-Halwagi 2",0
+3,salvaperez91@hotmail.com (S.I.P.-U.); jorge.adrian.mendiola@outlook.com (J.M.A.-M.),0
+4,"2 Chemical Engineering Department, Texas A&M University, College Station, TX 77843, USA;",0
+5,el-halwagi@tamu.edu,0
+6,* Correspondence: arturo@iqcelaya.itc.mx; Tel.: +52-461-611-7575 (ext. 5577),0
+7,"Academic Editors: Fausto Gallucci and Vincenzo Spallina
+Received: 8 May 2017; Accepted: 19 June 2017; Published: 23 June 2017",0
+8,"Abstract: The availability and low cost of shale gas has boosted its use as fuel and as a raw material
+to produce value-added compounds. Benzene is one of the chemicals that can be obtained from
+methane, and represents one of the most important compounds in the petrochemical industry. It can
+be synthesized via direct methane aromatization (DMA) or via indirect aromatization (using oxidative
+coupling of methane). DMA is a direct-conversion process, while indirect aromatization involves
+several stages. In this work, an economic, energy-saving, and environmental assessment for the
+production of benzene from shale gas using DMA as a reaction path is presented. A sensitivity analysis
+was conducted to observe the effect of the operating conditions on the proﬁtability of the process.
+The results show that production of benzene using shale gas as feedstock can be accomplished with a
+high return on investment.",0
+9,Keywords: benzene; shale gas; direct methane aromatization; energy integration; CO2 emissions,0
+10,1. Introduction,0
+11,"The recent discoveries of large unconventional shale gas reserves have sparked a signiﬁcant
+interest in their use as an energy source. Although methane is the main shale gas component, heavier
+hydrocarbons such as C2, C3, and some inorganic gases (N2 and CO2) are also present in shale gas
+reserves [1]. Because of the low permeability of rocks, shale gas extraction is more complicated than
+that for natural gas. Nonetheless, an extraction technique that combines horizontal drilling with
+hydraulic fracturing has been developed to provide shale gas for industrial processing [2]. The Energy
+Information Administration [3] has reported that 32% of natural gas reserves are found as shale gas,
+and that in 2009 proven shale gas reserves in the US numbered 60 TCF, while in 2013 this number
+increased to 160 TCF [4]. Additionally, the production of shale gas in the US has increased substantially
+in recent years, from 1.3 TCF in 2007 to nearly 15.2 TCF in 2015 [5]. The availability of shale gas has
+not only led to a reduction in the price of natural gas, but has also motivated research to explore its use
+as a feedstock for the synthesis of value-added chemicals [6–9].",0
+12,"Other transformations of shale gas into chemicals are open for analysis. One such case is the
+synthesis of benzene, one of the most important compounds in the petrochemical industry. Among
+other uses, benzene serves as a starting molecule for ethylbenzene, which is then used for the
+production of polystyrene. The benzene global demand in 2015 for its use in the chemical industry
+was 46 million tons. In particular, that year the US industry imported more than 1.8 million tons [10].
+Traditionally, benzene has mainly been produced from two processes based on catalytic reforming and
+steam cracking.",0
+13,"Processes 2017, 5, 33; doi:10.3390/pr5030033",0
+14,www.mdpi.com/journal/processes,0
+15,"Processes 2017, 5, 33",0
+16,2 of 10,0
+17,"In this work, a design and analysis of a process to convert shale gas into benzene is presented.
+The process is based on the direct methane aromatization route. The base economic results are
+complemented with an analysis on potential heat integration and an environmental assessment in
+terms of CO2 emissions.",0
+18,2. The Direct Methane Aromatization (DMA) Process,0
+19,"The direct aromatization of methane represents an attractive route for obtaining benzene from
+shale gas. Although this reaction has thermodynamic limitations, its high selectivity towards benzene
+makes it suitable for consideration [11]. Early reports on this option, however, were not totally
+promising. Wang et al. [12] reported that methane can be used over a Mo/HZSM-5-based catalyst to
+produce benzene as part of a complex reaction with a high selectivity (100%) but a low conversion
+level (7.2%). Efforts to improve the yield of benzene using other metals such as Ru, W, and V did
+not provide signiﬁcant improvement [13–16]. One of the main problems to overcome has been the
+formation of carbonaceous products, favored at the high operating conditions required for the reaction,
+which causes catalyst deactivation issues [17,18]. Efforts to synthesize more resistant catalysts for coke
+formation have been reported [19–21], as well as operating strategies such as the addition of CO and
+CO2 to the reactor feed to improve the lifetime of the catalyst [22–24]. Because of the unavoidable
+coke formation, a continuous catalyst replacement is necessary in order to carry out a continuous
+operation [25]. Some reactor designs have been explored in order to reduce the catalyst deactivation
+effects [26–29]. Xu et al. [25,30] proposed the use of a reactor with three mobile beds; two of those are
+used as catalyst regenerators and the third is used as the methane producer. Within this operation,
+a complete regeneration of the catalyst can be achieved.",0
+20,"Different byproducts can be obtained from benzene processes, depending on catalyst used and
+the operating conditions. Ethylene can be formed as an intermediate compound in the methane
+aromatization process, and has also been detected as a source of coke formation [15–18]. In other cases,
+naphthalene and toluene can be obtained as byproducts [30–32]. In particular, for the DMA process
+Xu et al. [30] reported selectivities of 62% and 17% for benzene and naphthalene, respectively, with
+23% of methane conversion at 800 ◦C and 101.3 KPa. Chen et al. [33] reported conditions under which
+ethylene and propylene can be produced from natural gas.",0
+21,"Recent reports show the interest in improving catalyst performance and testing different reactor
+arrangements to improve the performance of the DMA process. The Mo/HZSM-5 catalyst was tested
+in the form of zeolite capsules, and was shown to offer several advantages as compared to the solid
+catalyst, such as an improved methane conversion, catalyst stability, rate of benzene formation, and
+coke formation [34]. A test on the catalyst formulation showed that a reduction of Mo below 2% at
+temperatures between 550 and 700 ◦C can provide signiﬁcant improvement in the oxidative stability
+of the Mo/HZSM-5 catalyst [35]. To prevent coke formation, an operation mode based on periodic
+oxygen pulsing added to the methane feed resulted in the production of synthesis gas as the main
+sideproduct of the coke combustion, along with an improved bezene yield [36]. The combination
+with membrane reactors has also been explored. An oxygen-transporting membrane was coupled to
+an MDA reactor to improve its performance due to a better oxygen distribution into the reactor [37],
+and the integration of an electrochemical BaZrO3-based membrane into an MDA reactor also resulted
+in improved aromatics yields, as well as better catalyst stability [38].",0
+22,3. Process Description and Results,1
+23,"The process ﬂowsheet developed in this work to produce benzene from shale gas is based on the
+methane dehydroaromatization reaction path. The best operating conditions reported in the literature
+are considered. In the ﬂowsheet, a fresh stream of methane is fed into the process, mixed with a
+methane-rich recycle stream; the mixture is heated to 800 ◦C and sent to the DMA reactor, which
+operates at 800 ◦C and 1 atm [30]. The product of the reaction is sent to a membrane separation
+system to remove the hydrogen produced [39]. The remaining gases are cooled and compressed before",1
+24,"Processes 2017, 5, 33",0
+25,3 of 10,0
+26,"being sent to a ﬂash separator to recover the unreacted methane as a top product. Part of this stream
+is purged, and the rest is returned to the reactor. The liquid obtained in the ﬂash unit is sent to a
+distillation column, which puriﬁes the benzene product, with naphthalene obtained at the bottom of
+the column as a byproduct. The process ﬂowsheet is shown in Figure 1.",1
+27,Figure 1. Flowsheet for the direct methane aromatization-based benzene process.,1
+28,"The Aspen Plus process simulator was used for the technical analysis of the ﬂowsheet. For the
+MDA reactor, the use of the Mo/HZSM-5 catalyst was assumed. Although no kinetic model was found
+for this reaction, the overall catalyst performance for benzene selectivity and methane conversion
+reported by Xu et al. [30] provided the basis for modeling the unit as an RStoich reactor. The catalyst
+performance includes the effect of a regeneration cycle using H2, which also limits the amount of
+CO and CO2 produced with respect to an oxidative option. The membrane unit was modeled as a
+separation module using the data reported by De vos [39]. As for coke, it was simulated as carbon [11,17].
+Distillation columns were simulated using the Radfrac module, with 36 stages, condenser and
+reboiler temperatures of 160 ◦C and 305 ◦C, a pressure condenser of 10 atm, and a pressure drop of
+0.1 atm/stage.",0
+29,"The initial results, based on a feed ﬂowrate of 1000 kmol/h of puriﬁed shale gas, are reported in
+Table 1. The temperature and pressure conditions for each stream of the ﬂowsheet are included.
+It can be observed that the benzene product is obtained with a purity of 97%, and that the
+formation of hydrogen and naphthalene byproducts amounts to 1564 and 16.5 kmol/h, respectively.
+The recirculation stream to the reactor contains 99% of methane.",1
+30,"Two major variables that affect the performance of the process are the operating conditions of the
+reactor and the ﬂash separation unit. A sensitivity analysis was then carried out in order to assess the
+effect of such variables in the ﬂowsheet and detect the best operating conditions. The initial expectation
+for the reactor is that that higher temperatures favor the reaction conversion, while lower pressures
+promote the reaction towards the benzene product. For the ﬂash unit, the use of lower temperatures
+and higher pressures favors the recovery of benzene. We proceeded to analyze the effect of temperature
+and pressure of these units on the technical and economic performance of the process.",0
+31,"For the economic analysis, the return on investment (ROI) was used to assess the process",0
+32,proﬁtability [40]:,0
+33,ROI = (Annual income−Annual Operating cost−Depreciation)(1−Tax Rate)+Depreciation,0
+34,Total Capital Investment,0
+35,× 100,0
+36,-1,0
+37,"A tax rate of 30% and working capital investment of 15% of the total capital investment were
+assumed, with a 10-year linear depreciation rate, an operating time of 7920 h/year, and a salvage value
+of 10% of the capital investment.",0
+38,"Processes 2017, 5, 33",0
+39,Table 1. Key stream data for the benzene process.,0
+40,Benzene Toluene Naphthalene Coke,0
+41,Total (kmol/h),0
+42,P (atm),0
+43,4 of 10,0
+44,"T (◦C)
+25
+800
+800
+800
+800
+200
+200
+20
+20
+20
+20
+15
+160
+308",0
+45,"1
+0.3
+0.3
+1
+0.3
+2
+1
+10
+10
+10
+10
+1
+10
+10",0
+46,"Stream Label Methane H2
+0
+0",0
+47,"Feed
+FR1
+OR1
+COKE
+OR2
+MF",0
+48,Hydrogen,0
+49,"FF
+VF
+LF",0
+50,"PURGE
+RECIRC
+BENZENE
+NAPHTHA",0
+51,"1000
+2748
+1778",0
+52,0,0
+53,"1778
+1778",0
+54,0,0
+55,"1778
+1775",0
+56,3,0
+57,"26.6
+1748
+3.09",0
+58,0,0
+59,"2.53
+2.53",0
+60,0,0
+61,"99
+1",0
+62,"0
+0",0
+63,0,0
+64,16.5,0
+65,1564,0
+66,0,0
+67,0,0
+68,0,0
+69,0,0
+70,"0.17
+2.53",0
+71,"16.5
+16.5",0
+72,"1564
+1564
+1564",0
+73,"18.2
+118
+0
+118
+118
+0
+118
+18.5
+100
+0.27
+18.25",0
+74,"1000
+2767
+3666
+187
+3479
+3479
+1564
+1915
+1794
+121.79
+26.87
+1766
+102.3
+19.6
+Flows given in kmol/h. Labels for the streams refer to Figure 1.",0
+75,"0
+0
+187
+187
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0",0
+76,"2.53
+0.17
+2.3
+0",0
+77,"0.17
+0.23
+2.11",0
+78,"0
+0
+0
+0
+0
+0
+0",0
+79,0,0
+80,0,0
+81,"0
+0
+0",0
+82,16.5,0
+83,16.49,0
+84,16.49,0
+85,"For the estimation of the process investment, the report by DuBose [41] for a gas-to aromatics
+process was taken as a basis. For a process with a capacity of 50,000 barrels of liquid product, which
+includes a stage of catalyst regeneration, the investment was reported as 1.82 billion dollars. Using the
+6/10 rule, we adjusted this value for our base benzene production of 100 kmol/h as 231.7 $MM.",0
+86,"The price of benzene was set at $1025/T. Prices for naphthalene and hydrogen obtained as
+byproducts were taken as $552/T and $2/kg, respectively. The purchase price of puriﬁed shale gas
+was set at $3.5/KSCF. Prices for heating utilities, cooling utilities, and power consumption were taken
+as $4/MMBTU, $1.94/MMBTU, and $0.05/KWh [6,40].",0
+87,The analysis was carried out using the following constraints:,0
+88,reactor [30].,0
+89,in conversion [30].,0
+90,"• Minimum reaction temperature of 700 ◦C. Using a lower temperature leads to a signiﬁcant drop
+• Maximum reaction temperature of 800 ◦C. This value is the highest operating temperature of the
+• Minimum reaction pressure of 0.3 bar. Set as an operation limit.
+• Maximum reaction pressure of 2.026 bar. Higher pressures decrease conversion values significantly.
+• Minimum temperature of the ﬂash unit of 20 ◦C. Lower temperatures would require the use
+• Minimum ﬂash pressure of 10 bar. Lower pressures lead to poor benzene recoveries.
+• Maximum reaction pressure of 20 bar. Benzene recovery does not improve signiﬁcantly at",0
+91,of refrigerants.,0
+92,higher pressures.,0
+93,"It should be noted that the limits on temperature considered here reﬂect the reported behavior of
+the Mo/HZSM-5 catalyst for the DMA process. While high temperatures are desired to provide higher
+rates of reaction, temperatures above 800 ◦C cause catalyst deactivation due to coke formation.",0
+94,"Figure 2 shows the results obtained from the sensitivity analysis on the reactor operating
+conditions. The effect of the two limits on the reactor temperature and of the operating pressure
+is reported. The highest ROI value of 27% was obtained when the operating conditions for the reactor
+were 800 ◦C and 0.3 bar, conditions under which the reaction conversion was 35% (see Figure 3).
+As far as the ﬂash unit, the best operating conditions were 20 ◦C and 10 bar. It was expected that,
+using a lower temperature and a higher pressure, conditions that promote the maximum recovery of
+benzene would beneﬁt the process proﬁtability, but the operating and ﬁxed costs adversely affected
+the process economics.",0
+95,"Processes 2017, 5, 33",0
+96,5 of 10,0
+97,Figure 2. Sensitivity analysis for the reactor conditions.,0
+98,Figure 3. Effect of reactor conversion on return on investment values.,0
+99,"With the best conditions detected for the reactor and ﬂash operation unit, the total annual cost
+was estimated as 55.2 $MM/year. The ROI estimated for the benzene process was 27%, which indicates
+that the process could provide an attractive option from an economic point of view.",0
+100,3.1. Effect of Energy Integration,0
+101,"Given that heating and cooling utilities provide a signiﬁcant share of the process operating cost,
+an analysis on the effect of energy integration was conducted. Two heaters and three coolers are part
+of the process, and their heat duties can be reduced by energy integration. The stream data given in
+Table 2 was used for the analysis; heat duties associated with the operation of distillation units were
+not included. A pinch analysis was ﬁrst developed to obtain targets for heat integration. Based on a
+minimum driving force of 10 K, the grand composite curve shown in Figure 4 was obtained. The target
+values for energy integration show that the heating and cooling utilities could be reduced to 31.08 and
+11.73 MW, which amount to reductions of 53.7 and 75.3%, respectively, as shown in Figure 5. Under
+these conditions, an increase of 1.7% in the ROI would be observed.",0
+102,"Processes 2017, 5, 33",0
+103,6 of 10,0
+104,Table 2. Process data for heat integration.,0
+105,Heat,0
+106,"Exchanger Tag
+OR-COOL (H1)
+FLAS-C (H2)
+M-COOL (H3)
+F-HEAT-1 (C1)
+F-HEAT-2 (C2)",0
+107,Description,0
+108,Supply,0
+109,Temperature (K),0
+110,Target,0
+111,Temperature (K),0
+112,Cooler output reactor,0
+113,"Cooler output membrane
+Cooler feed to membrane",0
+114,"Heater feed to reactor
+Heater feed to reactor",0
+115,"1073
+639.7
+563.6
+291.4
+449.4",0
+116,"473
+293
+473
+523
+1073",0
+117,Heat Duty,0
+118,"(MW)
+30.83
+11.33
+3.86
+7.44
+28.74",0
+119,Figure 4. Grand Composite Curve for the process at 1073 K.,0
+120,Figure 5. Effect of energy integration on heating and cooling requirements.,0
+121,"A heat exchanger network that meets the minimum utility requirements was then designed, and
+the resulting network shown in Figure 6 was obtained. Three heat exchangers are needed for the
+implementation of the integration network, and the temperatures for each stream after each exchanger
+are indicated. The duty of the feed to the reactor is met by integration with the feed stream to the
+membrane followed by the permeate stream from the membrane. The other exchanger is used to
+preheat the feed to the reactor with the output stream from the same unit.",0
+122,"Given the fairly simple structure of the heat exchanger network, its implementation provides an",0
+123,incentive to achieve a more proﬁtable process.,0
+124,"Processes 2017, 5, 33",0
+125,7 of 10,0
+126,Figure 6. Heat exchanger network implemented for the benzene process.,0
+127,3.2. Environmental Assessment,0
+128,"CO2 emissions were calculated to assess the environmental impact of the benzene process.
+CO2 equivalent values due to electricity were calculated using a factor of 0.73 Tons of CO2/MWh [42].
+The emissions from heating utilities were estimated using the Environmental Protection Agency (EPA)
+method for stationary combustion sources [43]. For a given amount of fuel used for combustion, F, the
+calculation for CO2 emissions (kg/day) were conducted with the following relationship:",0
+129,(cid:18) 44 kg of CO2,0
+130,(cid:19),0
+131,CO2 emissions = F × HCfuel×Cfuel ×,0
+132,12 kg of C,0
+133,-2,0
+134,"where F is in standard cubic feet/day, HCFuel is the heat content of the fuel, and CFuel is the coefﬁcient
+for fuel carbon content. Natural gas was assumed as the fuel, with a heat content of 1029 BTU/SCF
+and a carbon content coefﬁcient of 14.47 kg of carbon/MMBTU.",0
+135,"Table 3 shows the details of the CO2 emissions estimated for the process. The effect of energy
+integration is also included.
+It can be observed that the implementation of the heat integration
+network promotes a reduction of 16.3% on CO2 emissions, which provides another incentive for
+its consideration.",0
+136,"Processes 2017, 5, 33",0
+137,8 of 10,0
+138,Table 3. CO2 process emissions (105 T/y).,0
+139,"Source
+Streams",0
+140,Total,0
+141,Burning Fuels,0
+142,Electricity,0
+143,Original Process,0
+144,Integrated Process,0
+145,"1.54
+0.96
+0.68
+3.19",0
+146,"1.54
+0.44
+0.68
+2.67",0
+147,4. Conclusions,0
+148,"A process for the production of benzene from shale gas using direct methane aromatization
+technology as a basis has been designed. Aided by the use of the Aspen Plus process simulator, the
+developed ﬂowsheet was shown to be technically effective to carry out the required transformation.
+The two major parts of the ﬂowsheet that affect the process proﬁtability are the reactor and the ﬂash
+units, and the best operating conditions for such units were detected. The results show high potential
+of proﬁtability for this technology. It was also shown that heat integration can be worth consideration,
+given the simple structure of the integration network and its impact on both process economics and
+environmental implications.",0
+149,"Acknowledgments: Support from the National Council for Science and Technology, CONACYT, Mexico, for
+six-month stays of S.I. Pérez-Uresti and J.M. Adrián-Mendiola at Texas A&M University is gratefully
+acknowledged.
+Author Contributions: Salvador I. Pérez-Uresti and Jorge M. Adrián-Mendiola carried out the design and
+simulations of the process as part of their Master of Science theses, under the supervision of the other two authors.
+Mahmoud M. El-Halwagi and Arturo Jiménez-Gutiérrez prepared the manuscript.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.",0
+150,"Abbreviations
+The following abbreviations are used in this manuscript",0
+151,"DMA
+ROI",0
+152,"Direct methane aromatization
+Return on investment",0
+153,References,0
+154,1,0
+155,"Bullin, K.A.; Krouskop, P.E. Compositional variety complicates processing plans for US shale gas. Oil Gas J.
+2009, 107, 50–55.",0
+156,"2. Natesakhawat, S.; Means, N.C.; Howard, B.H.; Smith, M.; Abdelsayed, V.; Nicot, J.P.; Scanlon, B. Water Use",0
+157,3,0
+158,4,0
+159,5,0
+160,6,0
+161,"for Shale-gas Production in Texas, U.S. Environ. Sci. Technol. 2012, 46, 3580–3586.
+U.S. Energy Information Administration. Technically Recoverable Shale Oil and Shale Gas: An Assessment of 137
+Shale Formation in 41 Countries Outside the United States; U.S. Energy Information Administration: Washington,
+DC, USA, 2013.
+U.S. Energy Information Administration. Shale Gas Proved Reserves; U.S. Energy Information Administration:
+Washington, DC, USA, 2015. Available online: http://www.eia.gov/dnav/ng/ng_enr_shalegas_dcu_nus_a.
+htm (accessed on 10 July 2015).
+Al-Douri, A.; Sengupta, D.; El-Halwagi, M.M. Shale gas monetization: A review of downstream processing
+to chemicals and fuels. J. Nat. Gas Sci. Eng. 2017, 45, 436–455. [CrossRef]
+Ehlinger, V.; Gabriel, K.; Noureldin, M.; El-Halgawi, M.M. Process desing and integration of shale gas to
+methanol. ACS Sustain. Chem. Eng. 2014, 2, 30–37. [CrossRef]",0
+162,"7. Martínez, Y.D.; Jiménez-Gutiérrez, A.; Linke, P.; Gabriel, K.J.; Noureldin, M.M.B.; El-Halwagi, M.M.
+Water ane energy issues in gas-to-liquid processes: Assessment and Integration of different reforming
+alternatives. ACS Sustain. Chem. Eng. 2014, 2, 216–225. [CrossRef]
+Julián-Durán, L.M.; Ortiz-Espinoza, A.P.; El-Halwagi, M.M.; Jiménez-Gutiérrez, A. Techno-economic
+assessment and environmental impact of shale gas alternatives to methanol. ACS Sustain. Chem. Eng.
+2014, 2, 2338–2344. [CrossRef]",0
+163,8,0
+164,"Processes 2017, 5, 33",0
+165,9 of 10,0
+166,9,0
+167,"Jasper, S.; El-Halwagi, M.M. A Techno-Economic Comparison between Two Methanol-to-Propylene Processes.
+Processes 2015, 3, 684–698. [CrossRef]",0
+168,"10. Plotkin, J.S. Benzene’s Unusual Supply–Demand Dilemma.",0
+169,Ind. Chem. Eng. 2015. Available online:,0
+170,11,0
+171,"http://www.acs.org/content/acs/en (accessed on 10 January 2017).
+Spivey, J.J.; Hutchings, G. Catalytic aromatization of methane. Chem. Soc. Rev. 2014, 43, 792–803. [CrossRef]
+[PubMed]",0
+172,"12. Wang, L.; Tao, L.; Xie, M.; Xu, G. Dehydrogenation and aromatization of methane under non-oxidizing",0
+173,"conditions. Catal. Lett. 1993, 21, 53–67. [CrossRef]",0
+174,"13. Xu, Y.; Lin, L. Recent advances in methane dehydro-aromatization over transition metal ion-modiﬁed zeolite",0
+175,"catalysts under non-oxidative conditions. Appl. Catal. A 1999, 188, 53–67. [CrossRef]",0
+176,"14. Zeng, J.L.; Xiong, Z.T.; Zhang, H.B.; Lin, G.D.; Tsai, K.R. Nonoxidative dehydrogenation and aromatization",0
+177,15,0
+178,"of methane over W/HZSM-5-based catalysts. Catal. Lett. 1998, 53, 119–124. [CrossRef]
+Iliuta, M.C.; Iliuta, I.; Grandjean, B.P.A.; Larachi, F. Kinetics of Methane Nonoxidative Aromatization over
+Ru-Mo/ HZSM-5 Catalyst. Ind. Eng. Chem. Res. 2003, 42, 3203–3209. [CrossRef]",0
+179,"16. Wang, D.Y.; Kan, Q.B.; Xu, N.; Wu, P.; Wu, T.H. Study on methane aromatization over MoO3/HMCM-49",0
+180,17,0
+181,"catalyst. Catal. Today 2004, 93–95, 75–80. [CrossRef]
+Song, Y.; Xu, Y.; Suzuki, Y.; Nakagome, H.; Zhang, Z.G. A clue to exploration of the pathway of coke formation
+on Mo/HZSM-5 catalyst in the non-oxidative methane dehydroaromatization at 1073 K. Appl. Catal. A 2014,
+482, 387–396. [CrossRef]",0
+182,"18. Karakaya, C.; Zhu, H.; Kee, R.J. Kinetic modeling of methane dehydroaromatization chemistry on Mo/Zeolite",0
+183,"catalysts in packed-bed reactors. Chem. Eng. Sci. 2015, 123, 474–486. [CrossRef]",0
+184,"19. Zhang, C.L.; Li, S.; Yuan, Y.; Zhang, W.X.; Wu, T.H.; Lin, L.W. Aromatization of methane in the absence
+of oxygen over Mo-based catalysts supported on different types of zeolites. Catal. Lett. 1998, 56, 207–213.
+[CrossRef]",0
+185,"20. Ding, W.P.; Meitzner, G.D.; Iglesia, E. The Effects of Silanation of External Acid Sites on the Structure and",0
+186,"Catalytic Behavior of Mo/H–ZSM5. J. Catal. 2002, 206, 14–22. [CrossRef]",0
+187,"21. Burns, S.; Hargreaves, J.S.J.; Pal, P.; Parida, K.M.; Parija, S. The effect of dopants on the activity of
+MoO3/ZSM-5 catalysts for the dehydroaromatisation of methane. Catal. Today 2006, 114, 383–387. [CrossRef]
+22. Li, Y.; Su, L.; Wang, H.; Liu, H.; Shen, W.; Bao, X.; Xu, Y. Combined single-pass conversion of methane via",0
+188,"oxidative coupling and dehydroaromatization. Catal. Lett. 2003, 89, 275–279. [CrossRef]",0
+189,"23. Liu, B.; Yang, Y.; Sayari, A. Non-oxidative dehydroaromatization of methane over Ga-promoted",0
+190,24,0
+191,"Mo/HZSM-5-based catalysts. Appl. Catal. A 2001, 214, 95–102. [CrossRef]
+Skutil, K.; Taniewski, M. Some technological aspects of methane aromatization (direct and via oxidative
+coupling). Fuel Process. Technol. 2006, 87, 511–521. [CrossRef]",0
+192,"25. Xu, Y.; Lua, J.; Wang, J.; Suzuki, Y.; Zhang, Z.G. The catalytic stability of Mo/HZSM-5 in methane
+dehydroaromatization at severe and periodic CH4–H2 switch operating conditions. Chem. Eng. J. 2011, 168,
+390–402. [CrossRef]",0
+193,"26. Gimeno, M.P.; Soler, J.; Herguido, J.; Menendez, M. Counteracting Catalyst Deactivation in Methane
+Aromatization with a Two Zone Fluidized Bed Reactor. Ind. Eng. Chem. Res. 2010, 49, 996–1000. [CrossRef]
+Skutil, K.; Taniewski, M. Indirect methane aromatization via oxidative coupling, products separation and
+aromatization steps. Fuel Process. Technol. 2007, 88, 877–882. [CrossRef]",0
+194,27,0
+195,"28. Cook, B.; Mousko, D.; Hoelderich, W.; Zennaro, R. Conversion of methane to aromatics over Mo2C/ZSM-5",0
+196,"catalyst in different reactor types. Appl. Catal. A 2009, 365, 34–41. [CrossRef]",0
+197,"29. Natesakhawat, S.; Means, N.C.; Howard, B.H.; Smith, M.; Abdelsayed, V.; Baltrus, J.P.; Cheng, Y.;
+Lekse, J.W.; Link, D.; Morreale, B.D. Improved benzene production from methane dehydroaromatization
+over Mo/HZSM-5 catalysts via hydrogen-permselective palladium membrane reactors. Catal. Sci. Technol.
+2015, 5, 5023–5036. [CrossRef]",0
+198,"30. Xu, Y.; Lua, J.; Suzukia, Y.; Zhanga, Z.G.; Ma, H.; Yamamotoca, Y. Performance of a binder-free,
+spherical-shaped Mo/HZSM-5 catalyst in the non-oxidative CH4 dehydroaromatization in ﬁxed- and
+ﬂuidized-bed reactors under periodic CH4–H2 switch operation. Chem. Eng. Process. 2013, 72, 90–102.
+[CrossRef]",0
+199,"31. Yamada, S.; Yamada, T.; Ogawa, Y.; Akiyama, H.; Hatagishi, T. Catalyst for Aromatization of Lower
+Hydrocarbons and Process for Production of Aromatic Compounds. U.S. Patent 8,278,237 B2, 2 October 2012.",0
+200,"Processes 2017, 5, 33",0
+201,10 of 10,0
+202,"32. Menéndez, M.S.; Huerta, J.H.; Téllez, C.; Soler, J.; Gimeno, M.P. Method for Obtaining Aromatic",0
+203,"Hydrocarbons from Methane. U.S. Patent 8,697,926 B2, 15 April 2014.",0
+204,"33. Chen, J.Q.; Vora, B.V.; Pujadó, P.R.; Fuglerud, T. Most Recent developments in ethylene and propylene
+production from natural gas using the UOP/Hydro MTO process. In Studies in Surface Science and Catalysis;
+Bao, X., Xu, Y., Eds.; Elsevier: Amsterdam, The Netherlands, 2004; Volume 147, pp. 1–6.",0
+205,"34. Zhu, P.; Yang, G.; Sun, J.; Fan, R.; Zhang, P.; Yoneyama, Y.; Tsubaki, N. A hollow Mo/HZSM-5 zeolite capsule
+catalyst: Preparation and enhanced catalytic properties in methane dehydroaromatization. J. Mater. Chem. A
+2017, 5, 8599–8607. [CrossRef]",0
+206,"35. Kosinov, N.; Coumans, F.J.A.G.; Li, G.; Uslamin, E.; Mezari, B.; Wijpkema, A.S.G.; Pidko, E.A.;
+Hensen, E.J.M. Stable Mo/HZSM-5 methane dehydroaromatization catalysts optimized for high-temperature
+calcination-regeneration. J. Catal. 2017, 346, 125–133. [CrossRef]",0
+207,"36. Kosinov, N.; Coumans, F.J.A.G.; Uslamin, E.; Kapteijn, F.; Hensen, E.J.M. Selective coke combustion of
+oxygen pulsing during Mo/ZSM-5-catalized methane dehydroaromatization. Angew. Chem. Int. Ed. 2016,
+55, 15086–15090. [CrossRef] [PubMed]",0
+208,"37. Cao, Z.; Jiang, H.; Luo, H.; Baumann, S.; Meulenberg, W.A.; Assmann, J.; Mleczko, L.; Liu, Y.; Caro, J.
+Nautral gas to fuels and chemicals: Improved methane aromatization in an oxygen-permeable membrane
+reactor. Angew. Chem. 2013, 125, 14039–14042. [CrossRef]",0
+209,"38. Morejudo, S.H.; Zanón, R.; Escolástico, S.; Yuste-Tirados, I.; Malerod-Fjeld, H.; Vestre, P.K.; Coors, W.G.;
+Martínez, A.; Norby, T.; Serra, J.M.; et al. Aromatic conversion of methane to aromatics in a catalytic co-aionic
+membrane reactor. Science 2016, 353, 563–566. [CrossRef] [PubMed]",0
+210,"39. De Vos, R.M.; Verweij, H. Improved performance of silica membranes for gas separation. J. Memb. Sci. 1998,",0
+211,"143, 37–51. [CrossRef]",0
+212,"40. El-Halwagi, M.M. Sustainable Design through Process Integration: Fundamentals Applications to Industrial
+Pollution Prevention, Resource Conservation, and Proﬁtability Enhancement; Butterworth-Heinemann: Oxford,
+UK, 2012.",0
+213,"41. DuBose, B. IRPC’15: New gas-to-aromatic technology offers hugh potential—GTC. 2015. Available online:",0
+214,"http://www.hydrocarbonprocessing.com/conference-news/2015/06/irpc-15-new-gas-to-aromatics-
+technology-offers-huge-potential-gtc (accessed on 24 February 2017).",0
+215,"42. U.S. Energy Information Administration. Electricity Emission Factors, Voluntary Reporting of Greenhouse Gases",0
+216,"Program; U.S. Energy Information Administration: Washington, DC, USA, 2014.",0
+217,43. U.S. Environmental Protection Agency. Direct Emissions from Stationary Combustion Sources; EPA430-K-08-003;,0
+218,"Environmental Protection Agency: Washington, DC, USA, 2008.",0
+219,"© 2017 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).",0

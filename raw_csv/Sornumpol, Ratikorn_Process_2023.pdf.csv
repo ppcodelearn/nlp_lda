@@ -1,0 +1,994 @@
+,0
+0,"Article
+Process Optimization and CO2 Emission Analysis of
+Coal/Biomass Gasiﬁcation Integrated with a Chemical
+Looping Process
+Ratikorn Sornumpol 1, Dang Saebea 2, Amornchai Arpornwichanop 3"
+1,"and Yaneeporn Patcharavorachot 1,*"
+2,"1 Department of Chemical Engineering, School of Engineering, King Mongkut’s Institute of Technology Ladkrabang,"
+3,"Bangkok 10520, Thailand"
+4,"2 Research Unit of Developing Technology and Innovation of Alternative Energy for Industries, Burapha University,"
+5,"Chonburi 20131, Thailand"
+6,"3 Center of Excellence in Process and Energy Systems Engineering, Department of Chemical Engineering,"
+7,"Faculty of Engineering, Chulalongkorn University, Bangkok 10330, Thailand"
+8,* Correspondence: yaneeporn.pa@kmitl.ac.th
+9,"Abstract: Biomass gasification is an attractive technology and one of the pathways for producing
+hydrogen. Due to the variable seasons and low calorific value of biomass, the addition of coal in the
+gasifier is suggested because coal has a high calorific value and carbon-to-hydrogen ratio. In general, the
+gaseous product obtained in gasification always contains a high amount of carbon dioxide, therefore, the
+co-gasification of biomass and coal should integrate with the calcium looping carbon dioxide capture
+process to provide purified hydrogen. In this work, the model of the co-gasification of biomass and
+coal integrated with the calcium looping carbon dioxide capture process was developed through an
+Aspen Plus simulator. The developed model was used to analyze the performance of this process. The
+sensitivity analysis demonstrated that increasing the gasification temperature, steam-to-feed (S/F) ratio,
+calcium oxide-to-feed (CaO/F) ratio, and regenerator temperature could improve hydrogen production.
+Next, further optimization was performed to identify the optimal operating condition that maximizes
+hydrogen production. The results showed that the optimal operating temperature of the gasifier is
+700 ◦C with an S/F mass ratio of 2 and coal to biomass (C/B) mass ratio of 0.75:0.25. However, the
+carbonator and regenerator temperatures should be 450 ◦C and 950 ◦C, respectively, with a CaO/F mass
+ratio of 3. Under these operating conditions, the maximum H2 content and H2 yield can be provided as
+99.59%vol. (dry basis) and 92.38 g hydrogen/kg biomass feeding. The other results revealed that the
+energy efficiency and carbon capture efficiency of this process are 42.86% and 99.99%, respectively, and
+that the specific emission of released CO2 is 80.77 g CO2/MJ."
+10,Keywords: co-gasiﬁcation; calcium looping; biomass; coal; CO2 emission
+11,1. Introduction
+12,"Nowadays, conventional power generation based on fossil fuels encounters several
+problems, including the depletion of fossil fuel resources and CO2 emissions as a green-
+house gas. To solve these problems, many researchers have tried to develop alternative
+renewable energy sources to replace fossil fuels. Hydrogen in particular is often perceived
+as an energy carrier for the future since it is a clean, efﬁcient, renewable, and non-polluting
+energy source with a high energy density (33.3 kW h/kg) [1]. This makes it a promising
+source of renewable energy that could address the global energy crisis while also meeting
+environmental concerns [2]. Nowadays, hydrogen can be used as fuel for mobile and
+stationary applications through fuel cells or internal engines without carbon emissions [3],
+however, it should be derived from renewable resources, e.g., biomass [4], ethanol [5,6],
+and biodiesel [7], to support a sustainable energy system."
+13,"Biomass, as an agricultural residue, is an alternative renewable energy source since it
+is abundant, readily available, and inexpensive. The main advantage of biomass is CO2"
+14,"Citation: Sornumpol, R.; Saebea, D.;
+Arpornwichanop, A.;
+Patcharavorachot, Y. Process
+Optimization and CO2 Emission
+Analysis of Coal/Biomass
+Gasiﬁcation Integrated with a
+Chemical Looping Process. Energies
+2023, 16, 2728. https://doi.org/
+10.3390/en16062728"
+15,Academic Editor: Javier Fermoso
+16,"Received: 14 February 2023
+Revised: 12 March 2023
+Accepted: 13 March 2023
+Published: 15 March 2023"
+17,"Copyright: © 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under
+the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/)."
+18,"Energies 2023, 16, 2728. https://doi.org/10.3390/en16062728"
+19,https://www.mdpi.com/journal/energies
+20,"Energies 2023, 16, 2728"
+21,2 of 17
+22,"neutrality, which is a balance between CO2 emission from the production process and CO2
+adsorption by the plant. In general, biomass is widely used for energy and heat production
+through the combustion process [8]. In addition, the conversion of biomass into fuels,
+chemicals, or gaseous products has received signiﬁcant attention since the energy storage
+in this product form is easy to store, transport, and handle."
+23,"The selection of methods to produce a chemical product from biomass depends on the
+desired product. This research focuses on hydrogen production from biomass and thus,
+the gasiﬁcation process is recommended. Although the product obtained from biomass
+gasiﬁcation is synthesis gas or syngas, hydrogen can be further produced through various
+puriﬁcation processes. At present, the investigation of the gasiﬁcation process has received
+more attention in both the experiment and process simulation. Syngas production through
+the gasiﬁcation process is affected by both the operating conditions of the gasiﬁer and
+gasifying agent types. Arteaga-Pérez et al. [9] studied the gasiﬁcation of sugarcane bagasse
+in a bubbling ﬂuidized bed gasiﬁer through simulation with the Aspen Plus simulator.
+They reported that under the condition of 750 ◦C with an equivalent ratio of 0.3, the total
+exergy efﬁciency and energy efﬁciency are the highest. The gasifying agent fed to react
+with the biomass has an effect on both the composition and heating values of the syngas.
+Fernandez-Lopez et al. [10] investigated the gasiﬁcation of animal wastes in a dual ﬂuidized
+bed gasiﬁer by using the Aspen Plus simulator. At different ratios, two types of gasifying
+agents, i.e., steam and CO2, were studied. The result indicated that the use of steam as a
+gasifying agent can produce a higher H2/CO ratio than that of CO2. Shen et al. [11] studied
+the CO2 gasiﬁcation of woody biomass in a lab-scale auto-thermal gasiﬁer. Their result
+showed that the CO composition increased while CH4 decreased because of the Boudouard
+reaction; carbon conversion and cold gas efﬁciency (CGE) increased with the CO2 addition.
+Although biomass is renewable and available, its amounts may ﬂuctuate depending
+on agriculture, season, cultivated area, and volume of agricultural production. Therefore,
+biomass power plants cannot operate in some seasons. In addition, the use of biomass has
+some obstacles to operation since it has a high moisture content, low bulk density, and low
+caloriﬁc value, which have an impact on hydrogen production [12]. In order to resolve the
+utilization of biomass, there are many researchers focusing on the co-gasiﬁcation of biomass
+and coal [13–15]. Not only is coal cheap, easily transportable, and abundant in resources, but
+coal gasiﬁcation has a high efﬁciency in hydrogen production. In addition, coal has a high
+energy caloriﬁc value because the thermodynamic efﬁciency of coal is higher than biomass.
+Shahabuddin and Bhattacharya [16] assessed the co-gasiﬁcation of coal and biomass with a
+CO2 agent by using the Aspen Plus process simulator. They reported that the blending of
+coal and biomass in an equal amount can provide a higher lower heating value (LHV) and
+CGE than pure coal by 12% and 18%, respectively. Biomass blending of up to 50% favors
+gasiﬁcation performance with an LHV of 12 MJ/kg and a CGE of 78%. Howaniec et al. [17]
+determined the reactivity of coal, biomass, and fuel blends in a laboratory-scale ﬁxed bed
+reactor which was operated at 700, 800, and 900 ◦C. Their results showed that the reactivity
+of fuel blends of coal and biomass had the highest value compared to coal and biomass char
+reactivity at the same operating conditions. Secer et al. [18] implemented response surface
+methodology (RSM) to determine the optimal operating conditions of the hydrothermal
+co-gasiﬁcation of sorghum at a constant temperature of 500 ◦C for maximum hydrogen
+content. Their results showed that the highest total gas and hydrogen volumes could be
+obtained under conditions where the higher levels of the water volume of the reactor and
+lower levels of the coal percentage of the coal/biomass mixture were combined."
+24,"In general, the syngas product derived from gasiﬁcation is composed of H2, CO, CO2,
+and CH4. However, to enhance the H2 yield in the syngas product, CO and CO2 must be
+removed. Calcium looping is the most promising technology for the CO2 capture process
+and offers many beneﬁts [19]. Calcium oxide (CaO) is cheap and widely distributed; as
+a sorbent, it can save operation costs and be environmentally friendly [20,21]. When the
+syngas obtained from the gasiﬁcation process is delivered to the calcium looping process,
+the CO2 in the syngas will adsorb on the surface of CaO where the carbonation reaction as"
+25,"Energies 2023, 16, 2728"
+26,3 of 17
+27,"an exothermic reaction can occur (referred to as carbonator), and thus, calcium carbonate
+(CaCO3) can be generated. Since CO2 is produced from the water gas shift reaction while
+the CO2 is removed from the carbonation reaction, it is possible to perform the separation
+of CO2 simultaneously during the water gas shift reaction in a single unit. When CO2
+is produced from the water gas shift reaction, it will be adsorbed into CaO through the
+carbonation reaction. Thus, the CO2 removal causes a shift in the equilibrium of the water
+gas shift reaction to the product side. The occurrence of the two following reactions: the
+water gas shift and carbonation reactions in a single reactor, which is referred to as the
+sorption-enhanced water-gas shift (SE-WGS) reaction, can reduce not only CO2 but also CO.
+After the carbonation reaction is complete, CaCO3 is sent to the regenerator reactor where
+CaCO3 can be desorbed to CO2 and CaO. Since the reaction occurring in the regenerator
+(called the calcination reaction) is an endothermic reaction, a high external heat source is
+required. A number of works have focused on the SE-WGS reaction with wider types of
+sorbents [21–23]; for example, Wang et al. [21] revealed that Ni-doped CaO (Ni-CaO) could
+promote a SE-WGS reaction."
+28,"Most of the previous publications focusing on gasiﬁcation integrated with the calcium
+looping process have performed a sensitivity analysis of operating conditions. However,
+optimization should be performed to determine the global optimal operating condition
+of gasiﬁcation and calcium looping that can provide the maximum H2 product. In this
+research, the statistical method is introduced to discover the important parameters that
+inﬂuence process efﬁciency. In addition to performance analysis and optimization, an
+environmental assessment in terms of carbon emission should be considered to ensure that
+the proposed system has no negative effect on the environment."
+29,"This research aims to study hydrogen production from the co-gasiﬁcation of biomass
+and coal integrated with the calcium looping process through the Aspen Plus simulator
+version 10. Firstly, the effect of operating conditions in gasiﬁcation (i.e., gasiﬁcation tem-
+perature, steam to feed ratio, and coal to biomass mass ratio) and the calcium looping
+process (i.e., carbonator temperature, regeneration temperature, and CaO to feed mass ratio)
+on hydrogen production is investigated. Next, the optimization of the gasiﬁcation and
+calcium looping process is performed by using Design Expert 11 where the maximum H2
+production is the main objective function. Finally, the energy analysis and carbon dioxide
+emission-to-energy consumption of the co-gasiﬁcation of biomass and coal integrated with
+the calcium looping process is determined."
+30,2. Process Flow Diagram Description
+31,"Figure 1 presents a schematic diagram of the integrated co-gasiﬁcation with calcium
+looping process designed in the Aspen Plus simulator. The black line represents the material
+stream, whereas the blue and red lines demonstrate the water or steam and energy streams.
+In this research, the mixture of pellet pine wood and lignite coal is selected as the raw
+material for hydrogen production. The process is divided into two sections that include
+(1) the gasiﬁcation process and (2) the puriﬁcation of H2 from raw syngas through the
+calcium looping process. Firstly, biomass (BIOMASS) and coal (COAL) are separately fed
+into a dryer (DRY), which is modeled by the Sep model to remove moisture from the biomass
+and coal. Next, the dried biomass (BIO-1) and dried coal (BIO-2) are separately supplied
+to the decomposition reactor (DECOM) which is represented by the RYield reactor model.
+In the Aspen Plus simulation, both the biomass and coal are deﬁned as non-conventional
+components. They must be decomposed into conventional components which include the
+conventional elements: C, H, N, O, S, etc. The components of biomass and coal are deﬁned
+based on proximate and ultimate data, as shown in Table 1. Next, the outlet product
+from each decomposition reactor (BIO-3 for biomass and BIO-4 for coal) is mixed and
+delivered to a gasiﬁer (GASIFIER) corresponding with steam (STEAM). The gasiﬁer, which
+is modeled by the RGibbs reactor model, can calculate the gas composition at the chemical
+equilibrium through the minimization of the Gibbs free energy method. The type of gasiﬁer
+reactor used in this study is a ﬂuidized bed gasiﬁer. Although the RGibbs reactor model"
+32,"Energies 2023, 16, 2728"
+33,4 of 17
+34,"does not require the speciﬁcation of chemical reactions, the possible chemical reactions
+occurring in the gasiﬁer have been listed in Equations (1)–(7)."
+35,"Figure 1. The schematic process ﬂow diagram of the co-gasiﬁcation of biomass and coal integrated
+with the calcium looping carbon dioxide capture process."
+36,"Table 1. Proximate analysis, ultimate analysis (wet basis), lower heating values, and CO2 emission
+factors of pellet pine wood, lignite coal, and rice husk."
+37,"Proximate analysis (wt.%, wet basis)"
+38,"Ultimate analysis (wt.%, dry basis)"
+39,"Fixed Carbon
+Volatile matter
+Moisture
+Ash"
+40,"C
+H
+N
+O
+S"
+41,"LHV (kJ/g)
+CO2-emission factors (kg/MJ)"
+42,Fuel Type
+43,Pellet Pine Wood
+44,Lignite Coal
+45,Rice Husk
+46,"14.85
+74.94
+10.00
+0.18"
+47,"50.50
+5.90
+0.30
+43.00
+0.20
+17.30"
+48,0
+49,"33.60
+28.82
+31.20
+6.38"
+50,"47.83
+6.67
+0.52
+37.95
+0.65
+19.29
+0.0946"
+51,"14.99
+55.54
+9.95
+19.52"
+52,"39.44
+3.22
+0.08
+37.74
+0.01
+13.52"
+53,0
+54,"Energies 2023, 16, 2728"
+55,Combustion reaction
+56,"C + O2 → CO2
+H2 + 0.5O2 → H2O"
+57,"−394 kJ/mol
+−242 kJ/mol"
+58,C + CO2 ↔ 2CO
+59,+172 kJ/mol
+60,Boudouard reaction
+61,Water gas reaction
+62,C + H2O ↔ H2 + CO
+63,+131 kJ/mol
+64,Water gas shift reaction
+65,CO + H2O ↔ H2 + CO2
+66,−41 kJ/mol
+67,Methane formation
+68,C + 2H2 ↔ CH4
+69,−74 kJ/mol
+70,Steam methane reforming
+71,CH4 + H2O ↔ CO + 3H2
+72,+206 kJ/mol
+73,5 of 17
+74,(1)
+75,(2)
+76,(3)
+77,(4)
+78,(5)
+79,(6)
+80,(7)
+81,"The gas product obtained from gasiﬁcation (SYNGAS) is further supplied to a cyclone
+(SEP-ASH) to separate carbon and ash (ASH) from the syngas. Then, the produced syngas
+(RAWSYNGA) can be provided."
+82,"Next, the produced syngas, consisting of H2, H2O, CO, CO2, and CH4, is cooled
+through a cooler (COOL) before feeding into the calcium looping process (ADSORBER)
+which is modeled by the RGibbs reactor model. In this reactor, CO is further reduced
+through a water gas shift reaction (Equation (5)). CO2 is produced from the water gas
+shift reaction and the gasiﬁcation process is captured by CaO (MIXCAO) as a sorbent
+through the carbonation reaction (Equation (8)). When CO2 is removed from the syngas,
+the H2 yield in the syngas product is higher. Next, the puriﬁed H2 is separated from the
+CaCO3 and other contaminants through a gas-solid separator (SEP-1). Then, the CaCO3 is
+sent to the regenerator reactor (DESORP) which is modeled by the RGibbs reactor model.
+When the CaCO3 desorbs CO2 it is converted back into CaO through a calcination reaction
+(Equation (9)). Some regenerated CaO is deactivated from the regenerator and accumulated
+in the system. Therefore, it is necessary to split out CaO, recycle it to mix with makeup
+CaO, and then send it to the carbonator reactor."
+83,Carbonation and calcination reaction
+84,"CaO + CO2 → CaCO3
+CaCO3 → CaO + CO2"
+85,−178 kJ/mol
+86,+178 kJ/mol
+87,(8)
+88,(9)
+89,"3. Methodology
+3.1. Parametric Analysis"
+90,"The investigation of hydrogen production through co-gasiﬁcation integrated with the
+calcium looping process is performed through the Aspen Plus simulator version 10. The
+following assumptions are used in the simulation: (1) the process is operated under steady
+state and isothermal conditions, (2) the pressure drop and heat loss are negligible, (3) the
+chemical reactions that occurred in the process reached chemical equilibrium, (4) the gasiﬁer
+does not produce tar under a high-temperature operation, and (5) charcoal is assumed to
+be carbon. Although tar formation has not been considered in this work, it should be noted"
+91,"Energies 2023, 16, 2728"
+92,6 of 17
+93,"that tar can be represented with a complex mixture of aromatic compounds; for example,
+toluene, phenol, or naphthalene [24]. In this study, the Peng–Robinson thermodynamic
+model is selected to predict the gas composition obtained from co-gasiﬁcation integrated
+with the calcium looping process. The inlet composition of biomass, coal, steam, and CaO
+can be speciﬁed based on the coal to biomass (C/B), steam to feed (S/F), and CaO to feed
+(CaO/F) mass ratios which are expressed as Equations (10)–(12)."
+94,"C
+B"
+95,=
+96,".mcoal
+.mbiomass
+.msteam
+.mbiomass +
+.mCaO
+.mbiomass +"
+97,"S
+F"
+98,=
+99,CaO
+100,=
+101,.mcoal
+102,(10)
+103,(11)
+104,(12)
+105,".mcoal
+where .mi represents the mass ﬂow rate of component i."
+106,F
+107,"Table 2 presents the input parameters of each stream and unit operation. The calcu-
+lations of the gas composition obtained from the gasiﬁer, adsorber, and regenerator are
+based on the method of minimizing Gibbs’s free energy. In order to investigate the H2
+production from an integrated system, the gas product composition (% dry basis) at the
+outlet of the gasiﬁcation reactor (SYNGAS stream) and CO2 mole ﬂow rate at the exit of
+the carbonator reactor (OUTADSOR stream) are determined with a wider range of gasiﬁ-
+cation temperature, C/B mass ratio, S/F mass ratio, CaO/F mass ratio, regenerator, and
+carbonator temperature."
+108,"Table 2. Input parameters of each stream and unit operation used in the simulation [13,14]."
+109,Parameters
+110,Atmospheric condition (atm)
+111,Biomass ﬂow rate (kg/h)
+112,Coal ﬂow rate (kg/h)
+113,Coal: Biomass
+114,"Steam ﬂow rate (kg/h)
+Steam temperature (◦C)
+Calcium oxide (kg/h)
+Gasiﬁer temperature (◦C)
+Carbonator temperature (◦C)
+Regenerator temperature (◦C)"
+115,Value
+116,1
+117,"1000
+1000
+1:1
+2000
+800
+2000
+700
+450
+900"
+118,3.2. Experimental Design and Optimization
+119,"Factorial designs are widely used in experiments involving several factors where it
+is necessary to study the combined effect of the factors on a response. The 2k factorial
+design is instrumental in the early stages of experimental work when there are many
+factors to be investigated [25]. In this study, the 2k factorial design analysis is used to
+investigate the main effects and interactions of the parameters related to H2 mole fraction
+for the gasiﬁcation process and CO2 capture efﬁciency for the calcium looping process.
+Two levels of the following ﬁve varying parameters: the gasiﬁcation temperature (A), S/F
+mass ratio (B), C/B mass ratio (C), carbonator temperature (D), and CaO/F mass ratio (E)
+are investigated."
+120,"In this study, the parameters and their levels are selected from the result obtained in
+Section 5.1. A response surface method (RSM) analysis is an efﬁcient experimental strategy
+to determine optimal conditions for a multivariable system. The process variable and
+function of each factor are represented by"
+121,y = β0 + β1X1 + β2X2 + ε
+122,(13)
+123,"Energies 2023, 16, 2728"
+124,7 of 17
+125,"where y is the response variable, X1 and X2 are dependent variables, β0, β1, and β2 are
+regression coefﬁcients evaluated with the least square method, and ε is the error observed
+in response variable y [25]."
+126,"In this study, the optimization of operating conditions in an integrated system to maximize"
+127,H2 mole fraction and CO2 capture efficiency is performed through Design Expert V11.
+128,3.3. Energy Efﬁciency Analysis
+129,"The energy efﬁciency of hydrogen production through the co-gasiﬁcation process is
+used to measure the thermal efﬁciency of the integrated process and can be calculated from
+the below equation."
+130,.mH2 LHVH2
+131,× 100
+132,(14)
+133,ηH2 (%) =
+134,".mbiomass,"
+135,".mbiomassLHVbiomass +
+.mcoal and .msteam stand for the mass ﬂow rate of hydrogen, the biomass,
+where .mH2,
+coal, and steam, respectively. LHVH2, LHVbiomass, and LHVcoal are the lower heating values
+of hydrogen, the biomass, and coal, respectively. It is noted that hsteam refers to the speciﬁc
+enthalpy of steam at 800 ◦C = 3663.84 kJ/kg."
+136,.mcoalLHVcoal +
+137,.msteamhsteam
+138,3.4. Environmental Impact Analysis
+139,"In order to study the environmental impact of the co-gasification of biomass and coal
+integrated with the calcium looping carbon dioxide capture process, the carbon dioxide
+emission is evaluated. In this process, CO2 and other greenhouse gas are considered in terms
+of the CO2 equivalent based on their relative global warming potential (GWP). In this study,
+the CO2 equivalent calculated from accepted US EPA and IPCC standards can be found in the
+Aspen Plus simulator. In addition, the carbon dioxide to energy output, which refers to the
+carbon dioxide emission to net energy, is evaluated by using the following Equation (15) [26]."
+140,εem =
+141,".mCO2,em
+Wnet"
+142,=
+143,".mCO2,em
+.mH2 LHVH2"
+144,(15)
+145,"where εem is the speciﬁc emission of released CO2 to the atmosphere, Wnet is the net power
+output from the process, and .mCO2,em stands for the total mass ﬂow rate of CO2 equivalent
+.mCO2,em is based on LTCO2, LTCAOSPL,
+emission to the atmosphere. According to Figure 1,
+and DRYH2 streams."
+146,4. Model Validation
+147,"In this study, the simulated gasification results of the biomass and coal are validated with
+experimental data to ensure that the proposed model can provide predictable results. Loha
+et al. [27] studied the conversion of rice husk into syngas. Rice husk with a proximate and
+ultimate analysis, as listed in Table 1, was fed at 1 kg/h into a fluidized bed gasifier at 750 ◦C
+and 1.05 bar. The comparison between the simulated results and experimental data, as seen in
+Figure 2, indicates that the model underpredicts the experimental values for CO and CH4 and
+overpredicts the value of H2 and CO2, but the trend of changing the compositions with the
+steam-to-biomass ratio agrees with the experimental data. Minutillo et al. [28] experimented
+with a downdraft gasifier at a temperature of 900 ◦C and an air-to-pellet pine wood ratio of
+1.96. The result, as shown in Figure 2, indicated that the model is in good agreement with the
+experimental data. However, the amount of CH4 obtained from the experiment is higher than
+that from the simulation. This is due to the fact that the calculation is performed based on
+the equilibrium while the experimental test may not be progressed to chemical equilibrium.
+Nevertheless, the obtained results are consistent with the literature [13]. Finally, the simulation
+result is validated for the coal gasification process with experimental data extracted from
+Mota et al. [29]. In their experiment, the bubbling fluidized bed reactor was operated at
+a temperature of 750 ◦C with an oxygen carrier-to-carbon ratio of 1. Figure 2 presents the"
+148,"Energies 2023, 16, 2728"
+149,8 of 17
+150,"model prediction of the simulation result and experimental result. It is found that the syngas
+compositions obtained from the model agree with experimental data."
+151,"Figure 2. Comparison of the syngas composition obtained from the model prediction and experimen-
+tal data of Loha et al. [27], Mota et al. [28], and Minutillo et al. [29]."
+152,"For the CO2 capture process, the simulated results are compared with the experimental
+results of Atsonios et al. [30]. In their experiment, the CO2 adsorption and desorption
+were operated at temperatures of 600–700 ◦C in a 10 kW dual ﬂuidized bed (DFB) reactor
+while that of the regenerator temperature is above 850 ◦C. The comparison between the
+simulated results and experimental results, as shown in Table 3, reveals that the model
+prediction is in good agreement with experimental data from Atsonios et al. [30]. The CO2
+mole fraction value predicted and the CO2 capture efﬁciency predicted are matched with
+the experiments."
+153,"Table 3. Comparison of the CO2 mole fraction exited from the carbonator reactor and CO2 capture
+efﬁciency from the model prediction and experimental data of Atsonios et al. [30]."
+154,Parameters
+155,"Wet gas composition (mole fraction) CO2, out"
+156,CO2 capture efﬁciency
+157,"0.00456
+88.06"
+158,"0.018
+85.57"
+159,This Study
+160,Atsonios et al. [30]
+161,"Energies 2023, 16, 2728"
+162,9 of 17
+163,5. Result and Discussion
+164,"The results of this study can be divided into four parts. First, the sensitivity analysis of
+the operating parameters in the gasiﬁer (i.e., gasiﬁer temperature and S/F mass ratio) and
+adsorber (i.e., CaO/F mass ratio, carbonator temperature, and regenerator temperature) on
+hydrogen production are investigated. In the second part, the DOE method is applied to
+identify the optimal operating condition of both processes that can provide the maximum
+H2 amount; the response parameters considered are the H2 mole fraction. Next, the energy
+analysis is performed to determine the useful energy obtained from this process. Lastly, the
+environmental assessment is studied to predict the carbon dioxide emission."
+165,"5.1. Sensitivity Analysis
+5.1.1. Effect of Gasiﬁcation Temperature on H2 Production
+Figure 3 shows the effect of gasiﬁcation temperature on compositions of H2, CO, CO2,
+and CH4 (dry basis). The gasiﬁcation temperature is varied in a range of 500–1000 ◦C,
+whereas the S/F mass ratio of 1 and pressure of 1 atm are ﬁxed as a constant value. It is
+noted that the mass ﬂow rates of biomass and coal are equal to 1000 kg/h. As shown in
+Figure 3, the mole fraction of H2 increases when the temperature increases from 500 ◦C
+to 700 ◦C. However, the mole fraction of H2 will be stable at a gasiﬁer temperature above
+700 ◦C because the chemical equilibrium is limited at this temperature. Unlike H2, the mole
+fraction of CO2 and CH4 decrease with increasing gasiﬁcation temperature. This is because
+the Boudouard (Equation (3)), water gas (Equation (4)), and steam methane reforming
+(Equation (7)) as the endothermic reaction can shift forward to the product side when the
+gasiﬁer is operated at a high temperature. It is noted that the mole of CH4 at 700 ◦C is
+equal to zero since CH4 is completely consumed at this temperature. Thus, CO, CO2, and
+CH4 can convert to more H2 under a high-temperature operation of a gasiﬁer. From the
+simulation result, it is found that the optimal gasiﬁer temperature is 700 ◦C."
+166,"Figure 3. Effect of gasiﬁcation temperature on the gas product composition exited from the gasiﬁer
+at an S/F mass ratio = 1, CaO/F mass ratio = 1, carbonator temperature = 450 ◦C, and regenerator
+temperature = 950 ◦C."
+167,"Energies 2023, 16, 2728"
+168,10 of 17
+169,"5.1.2. Effect of S/F Mass Ratio on H2 Production
+Figure 4 demonstrates the effect of the S/F mass ratio on the production of H2, CO,
+CO2, and CH4 (dry basis). The gasiﬁer is operated at a temperature of 700 ◦C and pressure
+of 1 atm, whereas the S/F mass ratio increases from 0 to 10. The simulation results indicate
+that the H2 mole fraction increases tremendously with the increasing S/F mass ratio in a
+range of 0–2 and reaches a constant value once the S/F mass ratio is above 2. Increasing the
+S/F mass ratio means that more steam is fed into the gasiﬁer. This result occurs because
+more steam feeding into the gasiﬁer can shift reactions (Equations (4) and (7)) forward. In
+the same manner, higher steam in the process can shift the water gas shift reaction, where
+CO is converted into H2 and CO2. Therefore, Figure 4 shows the reduction in CO and the
+increase in CO2 with an increase in the S/F mass ratio. From the simulation result, it can be
+observed that the CH4 mole fraction becomes zero at an S/F mass ratio above 1. This is due to
+the fact that CH4 is completely consumed at this ratio. In general, water is typically reactive
+at temperatures greater than 800 ◦C and thus, the effect of the S/F mass ratio on hydrogen
+production is further investigated at a temperature above 800 ◦C. However, the simulation
+results show that the mole fraction of H2 is slightly decreased when the gasifier increases.
+This can be confirmed considering that the chemical equilibrium is limited at 700 ◦C."
+170,"Figure 4. Effect of the S/F mass ratio on the gas product composition exited from a gasiﬁer at a gasiﬁer
+temperature = 700 ◦C, CaO/F mass ratio = 1, carbonator temperature = 450 ◦C, and regenerator
+temperature = 950 ◦C.
+5.1.3. Effect of CaO/F Mass Ratio on H2 Production
+In this section, the inﬂuence of the CaO/F mass ratio varied from 0 to 6 on H2
+production is studied, as shown in Figure 5. When the carbonator temperature is at 450 ◦C,
+increasing the CaO/F mass ratio from 0 to 2 can strongly enhance the H2 concentration in
+the gas product since CO2 is suddenly removed from the syngas. When the CaO/F ratio is
+higher than 2, the H2 amount drops slightly and reaches a constant value. This is because a
+CaO/F value of more than 2 may be excess from the stoichiometric value. Unlike H2, an
+increase in the CaO/F mass ratio causes signiﬁcant decreases in the amount of CO, CO2,
+and CH4. This is because CO2 is adsorbed on CaO as an adsorbent. Therefore, the H2
+content is higher while the amount of CO2 drops through the carbonation reaction. When
+CO2 is removed from the system, the amount of CO and CH4 decrease due to the shifting
+of the water gas shift reaction to the product side. Since a CaO/F mass ratio of more than
+2 does not affect H2 production, the suitable CaO/F mass ratio is 2."
+171,"Energies 2023, 16, 2728"
+172,11 of 17
+173,"Figure 5. Effect of the CaO/F mass ratio on the gas product composition exited from a carbonator at
+a gasiﬁer temperature = 700 ◦C, S/F mass ratio = 1, carbonator temperature = 450 ◦C, and regenerator
+temperature = 950 ◦C.
+5.1.4. Effect of Carbonator Temperature on H2 Production"
+174,"The impact of the carbonator temperature increasing from 400 ◦C to 800 ◦C on H2
+production is also investigated, as illustrated in Figure 6. Because a wide range of carbonator
+temperatures is investigated, the presence of two plateaus can be observed. The ﬁrst plateau
+can be observed when the carbonator operates at a low temperature (400–650 ◦C). The H2
+mole fraction can be improved while CO2 is not present since the carbonator reaction as an
+exothermic reaction is favorable to low-temperature operation. Under this low-temperature
+range, all of the CO2 can be removed from the syngas and thus, a stable amount of H2 can
+be provided. In contrast, the H2 mole fraction will drop and the presence of CO and CO2
+can be observed when the carbonator is operated at a high temperature (above 650 ◦C).
+Increasing the carbonator temperature can shift the chemical equilibrium backward and
+thus, CO2 is desorbed from CaCO3. In addition, the reversed water gas shift reaction can
+occur at high carbonator temperatures, which reduces the CO2 and H2 amounts. However,
+it can be observed that the amount of H2 is almost constant when the temperature is higher
+than 800 ◦C (second plateau). This implies that the chemical equilibrium of reactions is
+limited at this temperature."
+175,"Figure 6. Effect of carbonator temperature on the gas product composition exited from a carbonator
+at a gasiﬁer temperature = 700 ◦C, S/F mass ratio = 1, CaO/F mass ratio = 2, and regenerator
+temperature = 950 ◦C."
+176,"Energies 2023, 16, 2728"
+177,12 of 17
+178,"5.1.5. Effect of Regenerator Temperature on CO2 Removal
+Figure 7 presents the variation in the CO2 amount when the regenerator temperature is
+adjusted from 400 ◦C to 1400 ◦C, whereas the CaO/F mass ratio and carbonator temperature
+are set as 2 and 600 ◦C, respectively. The simulation result indicates that the regeneration
+process begins to desorb CO2 at a temperature of 900–1000 ◦C. This can be observed from
+the production of CO2 at this temperature. However, when the temperature is higher than
+950 ◦C, the CO2 concentration will be constant. From this study, the optimal regenerator
+temperature is 950 ◦C."
+179,"Figure 7. Effect of regenerator temperature on the CO2 mole flow rate released from CaCO3 at a gasifier
+temperature = 700 ◦C, S/F mass ratio = 1, CaO/F mass ratio = 2, and carbonator temperature = 600 ◦C.
+5.2. Design of Experimental Procedure"
+180,"Since the sensitivity analysis can indicate the trend of results and some operating con-
+ditions must be carefully selected, the optimal operating conditions in the gasification and
+calcium looping process are determined by using the DOE method. From the results obtained
+in Section 5.1, it can be seen that both the gasifier temperature and S/F mass ratio have
+significant influences on H2 production. In addition, the proportion of coal in the biomass, or
+the coal-to-biomass (C/B) mass ratio, is also an important parameter. Therefore, the selected
+parameters in the co-gasification of biomass and coal consist of (A) the gasifier temperature,
+(B) the S/F mass ratio, and (C) the C/B mass ratio. In this way, the full factorial design of three
+factors with two levels is determined; thus, there are eight numbers in the experiment. The
+response results from the 23 factorial experimental design analyses with a single replicate are
+shown in Table 4. The ANOVA statistical analysis of the results obtained with a confidence
+level of 95% or a p-value equal to 0.05 is summarized in Table 5."
+181,"Table 4. The response results from the 23 factorial experimental design analysis of the co-gasiﬁcation
+of biomass and coal with Aspen Plus simulator version 10."
+182,Run
+183,Gasiﬁcation Temperature (◦C)
+184,S/F
+185,Mass Ratio
+186,C/B
+187,Mass Ratio
+188,H2 Content
+189,"(%vol., Dry Basis)"
+190,"1
+2
+3
+4
+5
+6
+7
+8"
+191,"700
+700
+700
+750
+750
+750
+700
+750"
+192,"Code variable: −1 (Low) Gasiﬁer temperature = 700 ◦C, S/F mass ratio = 1, and C/B mass ratio = 0.5:0.5. +1 (High)
+Gasiﬁer temperature = 750 ◦C, S/F mass ratio = 2, and C/B mass ratio = 0.75:0.25."
+193,"1
+1
+2
+1
+2
+1
+2
+2"
+194,"0.5:0.5
+0.75:0.25
+0.5:0.5
+0.75:0.25
+0.75:0.25
+0.5:0.5
+0.75:0.25
+0.5:0.5"
+195,"61.12
+61.96
+64.09
+61.81
+64.68
+61.04
+65.09
+64.09"
+196,"Energies 2023, 16, 2728"
+197,13 of 17
+198,"Table 5. Analysis of variance (ANOVA) for the regression model of H2 content (%vol., dry basis)."
+199,"Source
+Model
+B-S/F
+C-C/B
+Residual
+Cor Total
+Std. Dev."
+200,"Mean
+C.V. %"
+201,Sum of Squares
+202,"19.34
+18.05
+1.29
+0.0978
+19.44
+0.1398
+62.98
+0.222"
+203,"df
+2
+1
+1
+5
+7"
+204,Mean Square
+205,"9.67
+18.05
+1.29
+0.0196"
+206,R2
+207,"Adjusted R2
+Predicted R2
+Adeq Precision"
+208,"F-Value
+494.63
+923.32
+65.95"
+209,"0.995
+0.993
+0.987
+44.464"
+210,"p-Value
+<0.0001
+<0.0001
+0.0005"
+211,signiﬁcant
+212,"The selected process parameters for the calcium looping carbon dioxide capture
+process are (D) carbonator temperature and (E) CaO/F mass ratio. The full factorial design
+of two factors with two levels (22) will provide four numbers in the experiment with a
+single replicate which are shown in Table 6. The ANOVA statistical analysis of the results
+obtained with a conﬁdence level of 95% is summarized in Table 7."
+213,"Table 6. The response results from the 22 factorial experimental design analysis of the carbon dioxide
+capture process with Aspen Plus V10."
+214,Carbonator Temperature (◦C)
+215,CaO/F
+216,Mass Ratio
+217,CO2 Capture
+218,H2 Content
+219,"(%vol., Dry Basis)"
+220,Run
+221,"1
+2
+3
+4"
+222,"Source
+Model
+E-CaO/F
+Residual
+Cor Total
+Std. Dev."
+223,"Mean
+C.V. %"
+224,"550
+450
+550
+450"
+225,"1
+3
+3
+1"
+226,"(%)
+79.87
+99.99
+99.65
+78.42"
+227,"98.47
+99.59
+99.53
+99.01"
+228,"Code variable: −1 (Low) Carbonator temperature = 450 ◦C, CaO/F mass ratio = 1. +1 (High) Carbonator
+temperature = 550 ◦C, CaO/F mass ratio = 3."
+229,Table 7. ANOVA for the regression model of % CO2 capture in the calcium looping process.
+230,Sum of Squares
+231,"427.22
+427.22
+1.11"
+232,"3151.42
+0.745
+89.49
+0.832"
+233,"df
+1
+1
+2
+3"
+234,Mean Square
+235,"427.22
+427.22
+0.555"
+236,R2
+237,"Adjusted R2
+Predicted R2
+Adeq Precision"
+238,"F-Value
+769.02
+769.02"
+239,"0.997
+0.996
+0.9896
+39.217"
+240,"p-Value
+0.0013
+0.0013"
+241,signiﬁcant
+242,5.2.1. Effect of Process Parameters on the Gasiﬁcation Process
+243,"From the ANOVA as shown in Table 5, it is found that the p-value for the (B) S/F
+mass ratio and (C) C/B mass ratio are signiﬁcant variables because the p-value is less
+than 0.05. The response surface shown in Figure 8 reveals that increasing the S/F mass
+ratio from 1 to 2 has a positive effect on the %vol. of H2. This is because the steam in the
+feed can shift the chemical equilibrium of the water gas (Equation (4)) and water gas shift
+(Equation (5)) reactions. In addition, the result shows that increasing the C/B mass ratio
+can increase the H2 composition since the biomass has a ﬁxed carbon content less than coal.
+Therefore, a high biomass content can reduce CO production [31,32]."
+244,"Energies 2023, 16, 2728"
+245,14 of 17
+246,"Figure 8. Response surface plot of H2 content (%vol., dry basis) in the co-gasiﬁcation process as a
+function of the gasiﬁer temperature and S/F mass ratio."
+247,5.2.2. Effect of Process Parameters on the CO2 Capture Process
+248,"In Table 7, which presents the results from the ANOVA method, it is found that only
+the CaO/F mass ratio inﬂuences the %CO2 capture. The effect of the CaO/F mass ratio on
+the %CO2 capture, as illustrated in Figure 9, indicates that increasing the CaO/F mass ratio
+from 1 to 3 can signiﬁcantly improve the %CO2 capture from ~78% to ~100%."
+249,"Figure 9. Response surface plot of %CO2 capture in the calcium looping process as a function of the
+CaO/F mass ratio and carbonator temperature."
+250,"5.3. The Energy Efﬁciency of Co-Gasiﬁcation of Biomass and Coal Integrated with Calcium Looping
+Carbon Dioxide Capture Process"
+251,"From the study on the co-gasiﬁcation of biomass and coal integrated with the calcium
+looping carbon dioxide capture process in Sections 5.1 and 5.2, it is found that the optimal
+operating temperature of the gasiﬁer is at 700 ◦C with an S/F mass ratio of 2 and C/B ratio
+of 0.75:0.25 while the carbon dioxide capture process should be operated at a carbonator
+temperature of 450 ◦C and a regenerator temperature of 950 ◦C with a CaO/F mass ratio of 3.
+Under these operating conditions, a CO2 capture of 99.99%, a maximum H2 of 99.59%vol.,
+and a hydrogen yield of 92.38 g hydrogen/kg biomass feeding can occur. Further, an energy
+analysis is performed, and the heat duty of each unit in the integrated process is shown in
+Table 8. The simulation result reveals that the energy efﬁciency of H2 production through
+the co-gasiﬁcation process is 42%."
+252,"Energies 2023, 16, 2728"
+253,15 of 17
+254,"Table 8. The heat duty of each unit in the co-gasiﬁcation of biomass and coal integrated with the
+calcium looping carbon dioxide capture process."
+255,"Heat Duty of Each Unit (kW)
+Gasiﬁer unit
+Regenerator unit
+Carbonator unit"
+256,"Values
+3332.32
+3207.00
+−3023.59"
+257,5.4. The Environmental Impact Assessment
+258,"In this section, the environmental impact in terms of the CO2 equivalent emission and
+speciﬁc carbon dioxide emission are investigated. It should be noted that the carbon emis-
+sion produced by supplying the necessary heat to the process was not taken into account in
+this work. Four cases of the chemical looping process operating at different conditions of
+carbonator temperature and CaO/F mass ratio are considered. The environmental impact
+assessment is performed to identify the optimal operating conditions that provide the least
+amount of CO2 emission. It is noted that all cases are operated at the gasiﬁer temperature
+of 700 ◦C, S/F mass ratio of 2, C/B mass ratio of 0.75:0.25, and regenerator temperature of
+950 ◦C. Differences in the carbonator temperature and CaO/F mass ratio inﬂuence not only
+the CO2 emissions but also H2 production, CO2 capture efﬁciency, and energy efﬁciency.
+Table 9 shows the results of the performance analysis and environmental assessment at
+different carbonator temperatures and CaO/F mass ratios. The results show that the mass
+ﬂow rate of CO2 equivalent emissions from the co-gasiﬁcation of biomass and coal inte-
+grated with the calcium looping carbon dioxide capture process is around 1788–1808 kg/h
+and that the speciﬁc emission of released CO2 to the atmosphere is 79.77–80.77 g CO2/MJ.
+However, it should be noted that this process utilizes a high coal-to-biomass ratio and thus,
+the CO2 emission will likely increase compared to conventional biomass-based processes.
+Although the chemical looping process is operated at different CaO/F mass ratios and
+carbonation temperatures, the mass ﬂow rate of CO2 equivalent emissions and speciﬁc
+emission of released CO2 to the atmosphere are not different. From the environmental
+point of view, the operation of a chemical looping process at a CaO/F mass ratio of 1 and
+carbonation temperature of 450 ◦C is the most suitable in terms of the high amount of
+hydrogen and high energy efﬁciency with a low amount of CO2 emission."
+259,"Table 9. Results of the performance analysis and environmental assessment with different conditions
+of carbonator temperatures and CaO/F mass ratios."
+260,"Parameters
+CaO/F mass ratio (−)
+Carbonator temperature (◦C)
+Hydrogen production (kg/h)
+Hydrogen content (%vol., dry basis)
+% CO2 capture (%)
+Energy efﬁciency of hydrogen production (%)
+Total mass ﬂow rate of CO2 equivalent emission (kg/h)
+Speciﬁc emission of released CO2 (g CO2/MJ)"
+261,6. Conclusions
+262,Case No.
+263,"1
+1
+450"
+264,"183.82
+99.01
+78.42
+42.64
+1788.15
+80.26"
+265,"2
+1
+550"
+266,"182.92
+98.47
+79.87
+42.43
+1768.59
+79.77"
+267,"3
+3
+450"
+268,"184.75
+99.59
+99.99
+42.86
+1808.62
+80.77"
+269,"4
+3
+550"
+270,"184.72
+99.53
+99.65
+42.85
+1807.86
+80.75"
+271,"This work proposed the co-gasiﬁcation of biomass and coal integrated with the calcium
+looping carbon dioxide capture process to produce puriﬁed H2. The performance of the
+hydrogen production process is studied through the Aspen Plus process simulator. Further,
+the statistical method is used to determine the optimal operating conditions of the co-
+gasiﬁcation and the calcium looping carbon dioxide capture process and the effects of
+the gasiﬁer temperature, S/F mass ratio, C/B mass ratio, CaO/F mass ratio, carbonator
+temperature, and regenerator temperature on H2 production are investigated."
+272,"Energies 2023, 16, 2728"
+273,16 of 17
+274,"The sensitivity analysis found that the H2 concentration is improved when the gasiﬁer
+temperature, S/F mass ratio, CaO/F mass ratio, and regenerator temperature increase.
+However, the results obtained from the sensitivity analysis cannot indicate the optimal
+operating condition of this process. Therefore, optimization is further performed through
+the DOE method. The ANOVA results revealed that the maximum H2 content of 99.59%vol.
+can be obtained when co-gasiﬁcation is operated at a gasiﬁer temperature of 700 ◦C with an
+S/F mass ratio of 2 and a C/B mass ratio of 0.75:0.25, while the CO2 capture process should
+be operated at a carbonator temperature of 450 ◦C and a regenerator temperature of 950 ◦C
+with a CaO/F mass ratio of 3. The results of the sensitivity analysis and optimization
+revealed that a yield of 92.38 g hydrogen/kg biomass feeding of hydrogen gas and CO2
+capture efﬁciency of 99.99% were obtained. The energy analysis indicated that the energy
+efﬁciency of the co-gasiﬁcation process is 42.86% and the speciﬁc emission of released CO2
+is 80.77 g CO2/MJ."
+275,"Author Contributions: Conceptualization, Y.P.; methodology, R.S. and Y.P.; software, R.S.; validation,
+R.S.; formal analysis, R.S.; investigation, D.S. and A.A.; resources, R.S. and Y.P.; data curation,
+R.S.; writing—original draft preparation, R.S.; writing—review and editing, D.S., A.A. and Y.P.;
+visualization, D.S. and A.A.; supervision, Y.P.; project administration, Y.P.; funding acquisition, Y.P.
+All authors have read and agreed to the published version of the manuscript."
+276,"Funding: This research was funded by supporting from King Mongkut’s Institute of Technology Ladkra-
+bang and the National Research Council of Thailand (NRCT) under grant no. NRCT5-RSA63024-02."
+277,Data Availability Statement: Not applicable.
+278,"Acknowledgments: The authors gratefully acknowledge King Mongkut’s Institute of Technology
+Ladkrabang who supported the APC."
+279,Conﬂicts of Interest: The authors declare no conﬂict of interest.
+280,"References
+1.
+2."
+281,"Singh, S.B.; De, M. Thermally exfoliated graphene oxide for hydrogen storage. Mater. Chem. Phys. 2020, 239, 122102. [CrossRef]
+Bérubé, V.; Radtke, G.; Dresselhaus, M.; Chen, G. Size effects on the hydrogen storage properties of nanostructured metal
+hydrides: A review. Int. J. Energy Res. 2007, 31, 637–663. [CrossRef]
+Felseghi, R.-A.; Carcadea, E.; Raboaca, M.S.; TRUFIN, C.N.; Filote, C. Hydrogen Fuel Cell Technology for the Sustainable Future
+of Stationary Applications. Energies 2019, 12, 4593. [CrossRef]
+Prestipino, M.; Piccolo, A.; Polito, M.F.; Galvagno, A. Combined Bio-Hydrogen, Heat, and Power Production Based on Residual
+Biomass Gasification: Energy, Exergy, and Renewability Assessment of an Alternative Process Configuration. Energies 2022, 15, 5524.
+[CrossRef]
+Ulejczyk, B.; Józwik, P.; Nogal, Ł.; Młotek, M.; Krawczyk, K. Efﬁcient Conversion of Ethanol to Hydrogen in a Hybrid Plasma-
+Catalytic Reactor. Energies 2022, 15, 3050. [CrossRef]"
+282,"6. Matus, E.; Sukhova, O.; Ismagilov, I.; Kerzhentsev, M.; Stonkus, O.; Ismagilov, Z. Hydrogen Production through Autothermal"
+283,3.
+284,4.
+285,5.
+286,7.
+287,8.
+288,9.
+289,10.
+290,11.
+291,"Reforming of Ethanol: Enhancement of Ni Catalyst Performance via Promotion. Energies 2021, 14, 5176. [CrossRef]
+Lin, K.-W.; Wu, H.-W. Thermodynamic analysis and experimental study of partial oxidation reforming of biodiesel and hy-
+drotreated vegetable oil for hydrogen-rich syngas production. Fuel 2019, 236, 1146–1155. [CrossRef]
+Rekleitis, G.; Haralambous, K.-J.; Loizidou, M.; Aravossis, K. Utilization of Agricultural and Livestock Waste in Anaerobic
+Digestion (A.D): Applying the Bioreﬁnery Concept in a Circular Economy. Energies 2020, 13, 4428. [CrossRef]
+Arteaga-Pérez, L.E.; Casas-Ledón, Y.; Pérez-Bermúdez, R.; Peralta, L.M.; Dewulf, J.; Prins, W. Energy and exergy analysis of a
+sugar cane bagasse gasiﬁer integrated to a solid oxide fuel cell based on a quasi-equilibrium approach. Chem. Eng. J. 2013, 228,
+1121–1132. [CrossRef]
+Fernandez-Lopez, M.; Pedroche, J.; Valverde, J.L.; Sánchez-Silva, L. Simulation of the gasiﬁcation of animal wastes in a dual
+gasiﬁer using Aspen Plus®. Energy Convers. Manag. 2017, 140, 211–217. [CrossRef]
+Shen, Y.; Li, X.; Yao, Z.; Cui, X.; Wang, C. CO2 gasiﬁcation of woody biomass: Experimental study from a lab-scale reactor to a
+small-scale autothermal gasiﬁer. Energy 2019, 170, 497–506. [CrossRef]"
+292,"12. Gao, N.; ´Sliz, M.; Quan, C.; Bieniek, A.; Magdziarz, A. Biomass CO2 gasiﬁcation with CaO looping for syngas production in a"
+293,"ﬁxed-bed reactor. Renew. Energy 2021, 167, 652–661. [CrossRef]"
+294,"13. Mongkolsiri, P.; Jitkeaw, S.; Patcharavorachot, Y.; Arpornwichanop, A.; Authayanun, S. Comparative analysis of biomass and
+coal based co-gasiﬁcation processes with and without CO2 capture for HT-PEMFCs. Int. J. Hydrog. Energy 2019, 44, 2216–2229.
+[CrossRef]"
+295,"Energies 2023, 16, 2728"
+296,17 of 17
+297,"14. Hu, J.; Shao, J.; Yang, H.; Lin, G.; Chen, Y.; Wang, X.; Zhang, W.; Chen, H. Co-gasiﬁcation of coal and biomass: Synergy,"
+298,"characterization and reactivity of the residual char. Bioresour. Technol. 2017, 244, 1–7. [CrossRef]"
+299,"15. Xiao, Y.; Xu, S.; Liu, Y.; Qiao, C. Catalytic steam co-gasiﬁcation of biomass and coal in a dual loop gasiﬁcation system with olivine"
+300,16.
+301,"catalysts. J. Energy Inst. 2020, 93, 1074–1082. [CrossRef]
+Shahabuddin, M.; Bhattacharya, S. Co-Gasiﬁcation Characteristics of Coal and Biomass Using CO2 Reactant under Thermody-
+namic Equilibrium Modelling. Energies 2021, 14, 7384. [CrossRef]"
+302,"17. Howaniec, N.; Smolinski, A.; Sta ´nczyk, K.; Pichlak, M. Steam co-gasiﬁcation of coal and biomass derived chars with synergy"
+303,18.
+304,19.
+305,"effect as an innovative way of hydrogen-rich gas production. Int. J. Hydrog. Energy 2011, 36, 14455–14463. [CrossRef]
+Seçer, A.; Fakı, E.; Üzden, S.T.; Hasano˘glu, A. Hydrothermal co-gasiﬁcation of sorghum biomass and çan lignite in mild conditions:
+An optimization study for high yield hydrogen production. Int. J. Hydrog. Energy 2020, 45, 2668–2680. [CrossRef]
+Shaikh, A.R.; Wang, Q.; Han, L.; Feng, Y.; Sharif, Z.; Li, Z.; Cen, J.; Kumar, S. Techno-Economic Analysis of Hydrogen and
+Electricity Production by Biomass Calcium Looping Gasiﬁcation. Sustainability 2022, 14, 2189. [CrossRef]"
+306,"20. Teixeira, P.; Bacariza, C.; Correia, P.; Pinheiro, C.I.C.; Cabrita, I. Hydrogen Production with In Situ CO2 Capture at High and"
+307,"Medium Temperatures Using Solid Sorbents. Energies 2022, 15, 4039. [CrossRef]"
+308,22.
+309,"21. Wang, Y.; Li, Y.; Yang, L.; Fan, X.; Chu, L. Revealing the effects of Ni on sorption-enhanced water-gas shift reaction of CaO for H2"
+310,"production by density functional theory. Process Saf. Environ. Prot. 2022, 157, 254–265. [CrossRef]
+Stadler, T.J.; Barbig, P.; Kiehl, J.; Schulz, R.; Klövekorn, T.; Pfeifer, P. Sorption-Enhanced Water-Gas Shift Reaction for Synthesis Gas
+Production from Pure CO: Investigation of Sorption Parameters and Reactor Conﬁgurations. Energies 2021, 14, 355. [CrossRef]
+23. Hu, Y.; Cheng, Z.; Zhou, Z. High-purity H2 production by sorption-enhanced water gas shift on a K2CO3-promoted Cu/MgO–"
+311,"Al2O3 difunctional material. Sustain. Energy Fuels 2021, 5, 3340–3350. [CrossRef]"
+312,"24. Ojha, B.; Schober, M.; Turad, S.; Jochum, J.; Kohler, H. Gasiﬁcation of Biomass: The Very Sensitive Monitoring of Tar in Syngas by"
+313,"the Determination of the Oxygen Demand—A Proof of Concept. Processes 2022, 10, 1270. [CrossRef]"
+314,"25. Montgomery, D.C. Design and Analysis of Experiments, 5th ed.; John Wiley & Sons Ltd.: New York, NY, USA, 2001.
+26. Bet Sarkis, R.; Zare, V. Proposal and analysis of two novel integrated conﬁgurations for hybrid solar-biomass power generation"
+315,"systems: Thermodynamic and economic evaluation. Energy Convers. Manag. 2018, 160, 411–425. [CrossRef]"
+316,"27. Loha, C.; Chatterjee, P.; Chattopadhyay, H. Performance of ﬂuidized bed steam gasiﬁcation of biomass–Modeling and experiment."
+317,"Energy Convers. Manag. 2011, 52, 1583–1588. [CrossRef]"
+318,"28. Minutillo, M.; Alessandra, P.; Elio, J.; Viviana, C.; Suk, W.N.; Sung, P.Y. Coupling of Biomass Gasiﬁcation and SOFC–Gas Turbine"
+319,"Hybrid System for Small Scale Cogeneration Applications. Energy Procedia 2017, 105, 730–737. [CrossRef]"
+320,"29. Mota, R.; Krishnamoorthy, G.; Dada, O.; Benson, S.A. Hydrogen Rich Syngas Production from Oxy-Steam Gasiﬁcation of a Lignite"
+321,"Coal–A Design and Optimization Study. Appl. Therm. Eng. 2015, 90, 13–22. [CrossRef]"
+322,"30. Atsonios, K.; Zeneli, M.; Nikolopoulos, A.; Nikolopoulos, N.; Grammelis, P.; Kakaras, E. Calcium looping process simulation"
+323,"based on an advanced thermodynamic model combined with CFD analysis. Fuel 2015, 153, 370–381. [CrossRef]"
+324,"31. Krerkkaiwan, S.; Fushimi, C.; Tsutsumi, A.; Kuchonthara, P. Synergetic effect during copyrolysis/gasiﬁcation of biomass and"
+325,"sub-bituminous coal. Fuel Process. Technol. 2013, 115, 11–18. [CrossRef]"
+326,"32. Ongkabin, T. Syngas from Coal and Biomass Gasiﬁcation Integrated with Combustion in Circulating Fluidized Bed. Master’s
+Thesis, Chulalongkorn University, Krung Thep Maha Nakhon, Thailand, 2017. Available online: http://cuir.car.chula.ac.th/
+bitstream/123456789/38326/1/Tassanai_on.pdf (accessed on 10 April 2022)."
+327,"Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content."
